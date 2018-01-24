@@ -1,5 +1,17 @@
 # Python Cheatsheet
 
+Table of Content:
+- [Python Basics](#python-basics)
+    - [Math Operators](#math-operators)
+    - [Data Types](#data-types)
+    - [String Concatenation and Replication](#string-concatenation-and-replication)
+    - [Variables](#variables)
+    - [Comments](#comments)
+    - [The print() Function](#the-print-function)
+    - [The input() Function](#the-input-function)
+    - [The len() Function](#the-len-function)
+    - [The str(), int(), and float() Functions](#the-str-int-and-float-functions)
+
 ## Python Basics
 
 ### Math Operators
@@ -86,12 +98,13 @@ Inline comment:
 # This is a comment
 ```
 
-Multiline Comment
+Multiline Comment:
 
 ```python
 """
 This is a Multiline Comment
-You can also use: ''' multiline comment '''
+You can also use:
+''' multiline comment '''
 """
 ```
 
