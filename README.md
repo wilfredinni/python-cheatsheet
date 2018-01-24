@@ -1,3 +1,3 @@
 # python_cheat_sheet
 
-Basic cheat sheet for Python
+Basic cheatsheet for Python based on ATSWP
