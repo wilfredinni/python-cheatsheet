@@ -185,6 +185,7 @@ Float to Integer:
 >>> int(7.7) + 1
 8
 ```
+<<<<<<< HEAD
 
 ## Flow Control
 
@@ -431,3 +432,5 @@ while True:
         sys.exit()
     print('You typed ' + response + '.')
 ```
+=======
+>>>>>>> d3db1a5689aaf56bf91128cc7158b8e09530027f

@@ -22,6 +22,7 @@ Based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python
     - The input() Function
     - The len() Function
     - The str(), int(), and float() Functions
+<<<<<<< HEAD
 - Flow Control
     - Comparison Operators
     - Boolean Operators
@@ -35,3 +36,5 @@ Based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python
     - for Loops and the range() Function
     - Importing Modules
     - Ending a Program Early with sys.exit()
+=======
+>>>>>>> d3db1a5689aaf56bf91128cc7158b8e09530027f
