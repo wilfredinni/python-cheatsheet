@@ -1,10 +1,10 @@
 # Python Cheatsheet
 
-Basic cheatsheet for Python based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) under the [**Creative Commons license**](https://creativecommons.org/licenses/by-nc-sa/3.0/).
+Basic cheatsheet for Python based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/3.0/).
 
 ## PDF Version
 
-[Download]()
+[Download](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
 
 ### Table of Content:
 
