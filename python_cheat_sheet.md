@@ -324,12 +324,12 @@ while spam < 5:
  If the execution reaches a break statement, it immediately exits the while loop’s clause.
 
 ```python
-while True:                         # (1)
+while True:
     print('Please type your name.')
-    name = input()                  # (2)
-    if name == 'your name':         # (3)
-        break                       # (4)
-print('Thank you!')                 # (5)
+    name = input()
+    if name == 'your name':
+        break
+print('Thank you!')
 ```
 
 ### continue Statements
