@@ -4,7 +4,7 @@ Basic cheatsheet for Python.
 
 ## Credit
 
-Based on the book writted by Al Sweigart, [**Automate the Boring Stuff with Python**](https://automatetheboringstuff.com/) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/3.0/).
+Based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/3.0/).
 
 ## PDF Version
 
