@@ -1,6 +1,13 @@
 # Python Cheatsheet
 
-Table of Content:
+Basic cheatsheet for Python based on the book writted by Al Sweigart, [**Automate the Boring Stuff with Python**](https://automatetheboringstuff.com/) under the [**Creative Commons license**](https://creativecommons.org/licenses/by-nc-sa/3.0/).
+
+## PDF Version
+
+[**Download**]()
+
+### Table of Content:
+
 - [Python Basics](#python-basics)
     - [Math Operators](#math-operators)
     - [Data Types](#data-types)
