@@ -199,7 +199,7 @@ Float to Integer:
 | <=       | Less than or Equal to    |
 | >=       | Greater than or Equal to |
 
-These operators evaluate to True or False depending on the values you give them. Let’s try some operators now, starting with == and !=.
+These operators evaluate to True or False depending on the values you give them:
 
 Examples:
 
@@ -431,6 +431,3 @@ while True:
         sys.exit()
     print('You typed ' + response + '.')
 ```
-lfjjdsgf
-fgsdgf
-sdgfsdjgfñdsj
