@@ -22,3 +22,16 @@ Based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python
     - The input() Function
     - The len() Function
     - The str(), int(), and float() Functions
+- Flow Control
+    - Comparison Operators
+    - Boolean Operators
+    - Mixing Boolean and Comparison Operators
+    - if Statements
+    - else Statements
+    - elif Statements
+    - while Loop Statements
+    - break Statements
+    - continue Statements
+    - for Loops and the range() Function
+    - Importing Modules
+    - Ending a Program Early with sys.exit()
