@@ -35,3 +35,10 @@ Based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python
     - for Loops and the range() Function
     - Importing Modules
     - Ending a Program Early with sys.exit()
+- Functions
+    - Return Values and return Statements
+    - The None Value
+    - Keyword Arguments and print()
+    - Local and Global Scope
+    - The global Statement
+- Exception Handling

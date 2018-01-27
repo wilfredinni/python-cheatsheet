@@ -31,6 +31,13 @@ Basic cheatsheet for Python based on the book writted by Al Sweigart, [Automate 
     - [for Loops and the range() Function](#for-loops-and-the-range-function)
     - [Importing Modules](#importing-modules)
     - [Ending a Program Early with sys.exit()](#ending-a-program-early-with-sysexit)
+- [Functions](#functions)
+    - [Return Values and return Statements](#return-values-and-return-statements)
+    - [The None Value](#the-none-value)
+    - [Keyword Arguments and print()](#keyword-arguments-and-print)
+    - [Local and Global Scope](#local-and-global-scope)
+    - [The global Statement](#the-global-statement)
+- [Exception Handling](#exception-handling)
 
 ## Python Basics
 
