@@ -2,7 +2,7 @@
 
 Basic cheatsheet for Python.
 
-## Credit
+## Credits
 
 Based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/3.0/).
 
@@ -61,3 +61,22 @@ Based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python
   - Justifying Text with rjust(), ljust(), and center()
   - Removing Whitespace with strip(), rstrip(), and lstrip()
   - Copying and Pasting Strings with the pyperclip Module
+- Regular Expressions
+  - Matching Regex Objects
+  - Grouping with Parentheses
+  - Matching Multiple Groups with the Pipe
+  - Optional Matching with the Question Mark
+  - Matching Zero or More with the Star
+  - Matching One or More with the Plus
+  - Matching Specific Repetitions with Curly Brackets
+  - Greedy and Nongreedy Matching
+  - The findall() Method
+  - Making Your Own Character Classes
+  - The Caret and Dollar Sign Characters
+  - The Wildcard Character
+  - Matching Everything with Dot-Star
+  - Matching Newlines with the Dot Character
+  - Review of Regex Symbols
+  - Case-Insensitive Matching
+  - Substituting Strings with the sub() Method
+  - Managing Complex Regexes
