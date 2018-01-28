@@ -1350,13 +1350,11 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 
 ```python
 >>> noNewlineRegex = re.compile('.*')
->>> noNewlineRegex.search('Serve the public trust.\nProtect the innocent.
-\nUphold the law.').group()
+>>> noNewlineRegex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
 'Serve the public trust.'
 
 >>> newlineRegex = re.compile('.*', re.DOTALL)
->>> newlineRegex.search('Serve the public trust.\nProtect the innocent.
-\nUphold the law.').group()
+>>> newlineRegex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
 'Serve the public trust.\nProtect the innocent.\nUphold the law.'
 ```
 
