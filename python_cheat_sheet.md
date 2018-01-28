@@ -28,7 +28,7 @@ Basic cheatsheet for Python based on the book writted by Al Sweigart, [Automate 
   - [while Loop Statements](#while-loop-statements)
   - [break Statements](#break-statements)
   - [continue Statements](#continue-statements)
-  - [for Loops and the range() Function](#for-loops-and-the-range-function)
+  - [for Loops and the range() Function]loops-and-the-range-function)
   - [Importing Modules](#importing-modules)
   - [Ending a Program Early with sys.exit()](#ending-a-program-early-with-sysexit)
 - [Functions](#functions)
@@ -38,6 +38,12 @@ Basic cheatsheet for Python based on the book writted by Al Sweigart, [Automate 
   - [Local and Global Scope](#local-and-global-scope)
   - [The global Statement](#the-global-statement)
 - [Exception Handling](#exception-handling)
+- [Dictionaries and Structuring Data](#dictionaries-and-structuring-data)
+  - [The keys(), values(), and items() Methods](#the-keys-values-and-items-methods)
+  - [Checking Whether a Key or Value Exists in a Dictionary](#checking-whether-a-key-or-value-exists-in-a-dictionary)
+  - [The get() Method](#the-get-method)
+  - [The setdefault() Method](#the-setdefault-method)
+  - [Pretty Printing](#pretty-printing)
 
 ## Python Basics
 
@@ -586,4 +592,163 @@ Output:
 Error: Invalid argument.
 None
 42.0
+```
+
+## Dictionaries and Structuring Data
+
+Example Dictionary:
+
+```python
+myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
+```
+
+### The keys(), values(), and items() Methods
+
+#### values()
+
+```python
+>>> spam = {'color': 'red', 'age': 42}
+>>> for v in spam.values():
+        print(v)
+```
+
+Output:
+
+```python
+red
+42
+```
+
+#### keys()
+
+```python
+>>> for k in spam.keys():
+        print(k)
+```
+
+Output:
+
+```python
+color
+age
+```
+
+#### items()
+
+```python
+>>> for i in spam.items():
+        print(i)
+```
+
+Output:
+
+```python
+('color', 'red')
+('age', 42)
+```
+Using the keys(), values(), and items() methods, a for loop can iterate over the keys, values, or key-value pairs in a dictionary, respectively
+
+```python
+
+>>> spam = {'color': 'red', 'age': 42}
+>>> for k, v in spam.items():
+        print('Key: ' + k + ' Value: ' + str(v))
+```
+
+Output:
+
+```python
+Key: age Value: 42
+Key: color Value: red
+```
+
+### Checking Whether a Key or Value Exists in a Dictionary
+
+```python
+>>> spam = {'name': 'Zophie', 'age': 7}
+>>> 'name' in spam.keys()
+True
+>>> 'Zophie' in spam.values()
+True
+>>> 'color' in spam.keys()
+False
+>>> 'color' not in spam.keys()
+True
+>>> 'color' in spam
+False
+```
+
+### The get() Method
+
+```python
+>>> picnicItems = {'apples': 5, 'cups': 2}
+>>> 'I am bringing ' + str(picnicItems.get('cups', 0)) + ' cups.'
+'I am bringing 2 cups.'
+>>> 'I am bringing ' + str(picnicItems.get('eggs', 0)) + ' eggs.'
+'I am bringing 0 eggs.'
+```
+
+### The setdefault() Method
+
+```python
+spam = {'name': 'Pooka', 'age': 5}
+if 'color' not in spam:
+    spam['color'] = 'black'
+```
+
+The above code is equal to:
+
+```python
+>>> spam = {'name': 'Pooka', 'age': 5}
+>>> spam.setdefault('color', 'black')
+'black'
+>>> spam
+{'color': 'black', 'age': 5, 'name': 'Pooka'}
+>>> spam.setdefault('color', 'white')
+'black'
+>>> spam
+{'color': 'black', 'age': 5, 'name': 'Pooka'}
+```
+
+### Pretty Printing
+
+```python
+import pprint
+message = 'It was a bright cold day in April, and the clocks were striking
+thirteen.'
+count = {}
+
+for character in message:
+    count.setdefault(character, 0)
+    count[character] = count[character] + 1
+
+pprint.pprint(count)
+```
+
+Output:
+
+```python
+{' ': 13,
+ ',': 1,
+ '.': 1,
+ 'A': 1,
+ 'I': 1,
+ 'a': 4,
+ 'b': 1,
+ 'c': 3,
+ 'd': 3,
+ 'e': 5,
+ 'g': 2,
+ 'h': 3,
+ 'i': 6,
+ 'k': 2,
+ 'l': 3,
+ 'n': 4,
+ 'o': 2,
+ 'p': 1,
+ 'r': 5,
+ 's': 3,
+ 't': 6,
+ 'w': 2,
+ 'y': 1}
 ```

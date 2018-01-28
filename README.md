@@ -42,3 +42,9 @@ Based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python
     - Local and Global Scope
     - The global Statement
 - Exception Handling
+- Dictionaries and Structuring Data
+  - The keys(), values(), and items() Methods
+  - Checking Whether a Key or Value Exists in a Dictionary
+  - The get() Method
+  - The setdefault() Method
+  - Pretty Printing
