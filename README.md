@@ -98,3 +98,17 @@ Based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python
   - Case-Insensitive Matching
   - Substituting Strings with the sub() Method
   - Managing Complex Regexes
+- Reading and Writing Files
+  - Backslash on Windows and Forward Slash on OS X and Linux
+  - The Current Working Directory
+  - Absolute vs. Relative Paths
+  - Creating New Folders with os.makedirs()
+  - Handling Absolute and Relative Paths
+  - Finding File Sizes and Folder Contents
+  - Checking Path Validity
+  - The File Reading/Writing Process
+  - Opening Files with the open() Function
+  - Reading the Contents of Files
+  - Writing to Files
+  - Saving Variables with the shelve Module
+  - Saving Variables with the pprint.pformat() Function

@@ -89,6 +89,20 @@
         - [Case-Insensitive Matching](#case-insensitive-matching)
         - [Substituting Strings with the sub() Method](#substituting-strings-with-the-sub-method)
         - [Managing Complex Regexes](#managing-complex-regexes)
+    - [Reading and Writing Files](#reading-and-writing-files)
+        - [Backslash on Windows and Forward Slash on OS X and Linux](#backslash-on-windows-and-forward-slash-on-os-x-and-linux)
+        - [The Current Working Directory](#the-current-working-directory)
+        - [Absolute vs. Relative Paths](#absolute-vs-relative-paths)
+        - [Creating New Folders with os.makedirs()](#creating-new-folders-with-osmakedirs)
+        - [Handling Absolute and Relative Paths](#handling-absolute-and-relative-paths)
+        - [Finding File Sizes and Folder Contents](#finding-file-sizes-and-folder-contents)
+        - [Checking Path Validity](#checking-path-validity)
+        - [The File Reading/Writing Process](#the-file-readingwriting-process)
+        - [Opening Files with the open() Function](#opening-files-with-the-open-function)
+        - [Reading the Contents of Files](#reading-the-contents-of-files)
+        - [Writing to Files](#writing-to-files)
+        - [Saving Variables with the shelve Module](#saving-variables-with-the-shelve-module)
+        - [Saving Variables with the pprint.pformat() Function](#saving-variables-with-the-pprintpformat-function)
 
 ## Python Basics
 
@@ -1814,4 +1828,229 @@ phoneRegex = re.compile(r'''(
     \d{4}                         # last 4 digits
     (\s*(ext|x|ext.)\s*\d{2,5})?  # extension
     )''', re.VERBOSE)
+```
+
+## Reading and Writing Files
+
+### Backslash on Windows and Forward Slash on OS X and Linux
+
+On Windows, paths are written using backslashes (\) as the separator between folder names. OS X and Linux, however, use the forward slash (/) as their path separator.
+
+Fortunately, this is simple to do with the os.path.join() function. If you pass it the string values of individual file and folder names in your path, os.path.join() will return a string with a file path using the correct path separators. 
+
+```python
+>>> import os
+
+>>> os.path.join('usr', 'bin', 'spam')
+'usr\\bin\\spam'
+```
+
+The *os.path.join()* function is helpful if you need to create strings for filenames:
+
+```python
+>>> myFiles = ['accounts.txt', 'details.csv', 'invite.docx']
+
+>>> for filename in myFiles:
+        print(os.path.join('C:\\Users\\asweigart', filename))
+
+C:\Users\asweigart\accounts.txt
+C:\Users\asweigart\details.csv
+C:\Users\asweigart\invite.docx
+```
+
+### The Current Working Directory
+
+```python
+>>> import os
+
+>>> os.getcwd()
+'C:\\Python34'
+>>> os.chdir('C:\\Windows\\System32')
+
+>>> os.getcwd()
+'C:\\Windows\\System32'
+```
+
+### Absolute vs. Relative Paths
+
+There are two ways to specify a file path.
+
+- An absolute path, which always begins with the root folder
+- A relative path, which is relative to the program’s current working directory
+
+There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period (“dot”) for a folder name is shorthand for “this directory.” Two periods (“dot-dot”) means “the parent folder.”
+
+### Creating New Folders with os.makedirs()
+
+```python
+>>> import os
+>>> os.makedirs('C:\\delicious\\walnut\\waffles')
+```
+
+### Handling Absolute and Relative Paths
+
+- Calling os.path.abspath(path) will return a string of the absolute path of the argument. This is an easy way to convert a relative path into an absolute one.
+- Calling os.path.isabs(path) will return True if the argument is an absolute path and False if it is a relative path.
+
+- Calling os.path.relpath(path, start) will return a string of a relative path from the start path to path. If start is not provided,the current working directory is used as the start path.
+
+### Finding File Sizes and Folder Contents
+
+- Calling os.path.getsize(path) will return the size in bytes of the file in the path argument.
+- Calling os.listdir(path) will return a list of filename strings for each file in the path argument. (Note that this function is in the os module, not os.path.)
+
+```python
+>>> os.path.getsize('C:\\Windows\\System32\\calc.exe')
+776192
+
+>>> os.listdir('C:\\Windows\\System32')
+['0409', '12520437.cpx', '12520850.cpx', '5U877.ax', 'aaclient.dll',
+--snip--
+'xwtpdui.dll', 'xwtpw32.dll', 'zh-CN', 'zh-HK', 'zh-TW', 'zipfldr.dll']
+```
+
+To find the total size of all the files in this directory, use os.path.getsize() and os.listdir() together:
+
+```python
+>>> totalSize = 0
+
+>>> for filename in os.listdir('C:\\Windows\\System32'):
+      totalSize = totalSize + os.path.getsize(os.path.join('C:\\Windows\\System32', filename))
+
+>>> print(totalSize)
+1117846456
+```
+
+### Checking Path Validity
+
+- Calling os.path.exists(path) will return True if the file or er referred to in the argument exists and will return False t does not exist.
+
+- Calling os.path.isfile(path) will return True if the path ment exists and is a file and will return False otherwise.
+
+- Calling os.path.isdir(path) will return True if the path ment exists and is a folder and will return False otherwise.
+
+### The File Reading/Writing Process
+
+There are three steps to reading or writing files in Python.
+
+1. Call the open() function to return a File object.
+
+2. Call the read() or write() method on the File object.
+
+3. Close the file by calling the close() method on the File object.
+
+### Opening Files with the open() Function
+
+```python
+>>> helloFile = open('C:\\Users\\your_home_folder\\hello.txt')
+```
+
+### Reading the Contents of Files
+
+```python
+>>> helloContent = helloFile.read()
+
+>>> helloContent
+'Hello world!'
+```
+
+Alternatively, you can use the *readlines()* method to get a list of string values from the file, one string for each line of text:
+
+```python
+>>> sonnetFile = open('sonnet29.txt')
+
+>>> sonnetFile.readlines()
+[When, in disgrace with fortune and men's eyes,\n', ' I all alone beweep my
+outcast state,\n', And trouble deaf heaven with my bootless cries,\n', And
+look upon myself and curse my fate,']
+```
+
+### Writing to Files
+
+```python
+>>> baconFile = open('bacon.txt', 'w')
+
+>>> baconFile.write('Hello world!\n')
+13
+
+>>> baconFile.close()
+
+>>> baconFile = open('bacon.txt', 'a')
+
+>>> baconFile.write('Bacon is not a vegetable.')
+25
+
+>>> baconFile.close()
+
+>>> baconFile = open('bacon.txt')
+
+>>> content = baconFile.read()
+
+>>> baconFile.close()
+
+>>> print(content)
+Hello world!
+Bacon is not a vegetable.
+```
+
+### Saving Variables with the shelve Module
+
+To save variables:
+
+```python
+>>> import shelve
+
+>>> shelfFile = shelve.open('mydata')
+
+>>> cats = ['Zophie', 'Pooka', 'Simon']
+
+>>> shelfFile['cats'] = cats
+
+>>> shelfFile.close()
+```
+
+To open and read variables:
+
+```python
+>>> shelfFile = shelve.open('mydata')
+
+>>> type(shelfFile)
+<class 'shelve.DbfilenameShelf'>
+
+>>> shelfFile['cats']
+['Zophie', 'Pooka', 'Simon']
+
+>>> shelfFile.close()
+```
+
+Just like dictionaries, shelf values have keys() and values() methods that will return list-like values of the keys and values in the shelf. Since these methods return list-like values instead of true lists, you should pass them to the list() function to get them in list form.
+
+```python
+>>> shelfFile = shelve.open('mydata')
+
+>>> list(shelfFile.keys())
+['cats']
+
+>>> list(shelfFile.values())
+[['Zophie', 'Pooka', 'Simon']]
+
+>>> shelfFile.close()
+```
+
+### Saving Variables with the pprint.pformat() Function
+
+```python
+>>> import pprint
+
+>>> cats = [{'name': 'Zophie', 'desc': 'chubby'}, {'name': 'Pooka', 'desc': 'fluffy'}]
+
+>>> pprint.pformat(cats)
+"[{'desc': 'chubby', 'name': 'Zophie'}, {'desc': 'fluffy', 'name': 'Pooka'}]"
+
+>>> fileObj = open('myCats.py', 'w')
+
+>>> fileObj.write('cats = ' + pprint.pformat(cats) + '\n')
+83
+
+>>> fileObj.close()
 ```
