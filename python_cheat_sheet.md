@@ -33,6 +33,24 @@
         - [Local and Global Scope](#local-and-global-scope)
         - [The global Statement](#the-global-statement)
     - [Exception Handling](#exception-handling)
+    - [Lists](#lists)
+        - [Getting Individual Values in a List with Indexes](#getting-individual-values-in-a-list-with-indexes)
+        - [Negative Indexes](#negative-indexes)
+        - [Getting Sublists with Slices](#getting-sublists-with-slices)
+        - [Getting a List’s Length with len()](#getting-a-list%E2%80%99s-length-with-len)
+        - [Changing Values in a List with Indexes](#changing-values-in-a-list-with-indexes)
+        - [List Concatenation and List Replication](#list-concatenation-and-list-replication)
+        - [Removing Values from Lists with del Statements](#removing-values-from-lists-with-del-statements)
+        - [Using for Loops with Lists](#using-for-loops-with-lists)
+        - [The in and not in Operators](#the-in-and-not-in-operators)
+        - [The Multiple Assignment Trick](#the-multiple-assignment-trick)
+        - [Augmented Assignment Operators](#augmented-assignment-operators)
+        - [Finding a Value in a List with the index() Method](#finding-a-value-in-a-list-with-the-index-method)
+        - [Adding Values to Lists with the append() and insert() Methods](#adding-values-to-lists-with-the-append-and-insert-methods)
+        - [Removing Values from Lists with remove()](#removing-values-from-lists-with-remove)
+        - [Sorting the Values in a List with the sort() Method](#sorting-the-values-in-a-list-with-the-sort-method)
+        - [Tuple Data Type](#tuple-data-type)
+        - [Converting Types with the list() and tuple() Functions](#converting-types-with-the-list-and-tuple-functions)
     - [Dictionaries and Structuring Data](#dictionaries-and-structuring-data)
         - [The keys(), values(), and items() Methods](#the-keys-values-and-items-methods)
         - [Checking Whether a Key or Value Exists in a Dictionary](#checking-whether-a-key-or-value-exists-in-a-dictionary)
@@ -391,13 +409,13 @@ When the program execution reaches a continue statement, the program execution i
 while True:
   print('Who are you?')
   name = input()
-  if name != 'Joe':       #(1)
-    continue              #(2)
+  if name != 'Joe':
+    continue
   print('Hello, Joe. What is the password? (It is a fish.)') 
-  password = input()      #(3)
+  password = input()
   if password == 'swordfish':
-    break                 #(4)
-print('Access granted.')  #(5)
+    break
+print('Access granted.')
 ```
 
 ### for Loops and the range() Function
@@ -617,6 +635,341 @@ Output:
     Error: Invalid argument.
     None
     42.0
+
+## Lists
+
+```python
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> spam
+['cat', 'bat', 'rat', 'elephant']
+```
+
+### Getting Individual Values in a List with Indexes
+
+```python
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> spam[0]
+'cat'
+
+>>> spam[1]
+'bat'
+
+>>> spam[2]
+'rat'
+
+>>> spam[3]
+'elephant'
+```
+
+### Negative Indexes
+
+```python
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> spam[-1]
+'elephant'
+
+>>> spam[-3]
+'bat'
+
+>>> 'The ' + spam[-1] + ' is afraid of the ' + spam[-3] + '.'
+'The elephant is afraid of the bat.'
+```
+
+### Getting Sublists with Slices
+
+```python
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> spam[0:4]
+['cat', 'bat', 'rat', 'elephant']
+
+>>> spam[1:3]
+['bat', 'rat']
+
+>>> spam[0:-1]
+['cat', 'bat', 'rat']
+```
+
+```python
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> spam[:2]
+['cat', 'bat']
+
+>>> spam[1:]
+['bat', 'rat', 'elephant']
+
+>>> spam[:]
+['cat', 'bat', 'rat', 'elephant']
+```
+
+### Getting a List’s Length with len()
+
+```python
+>>> spam = ['cat', 'dog', 'moose']
+>>> len(spam)
+3
+```
+
+### Changing Values in a List with Indexes
+
+```python
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+
+>>> spam[1] = 'aardvark'
+
+>>> spam
+['cat', 'aardvark', 'rat', 'elephant']
+
+>>> spam[2] = spam[1]
+
+>>> spam
+['cat', 'aardvark', 'aardvark', 'elephant']
+
+>>> spam[-1] = 12345
+
+>>> spam
+['cat', 'aardvark', 'aardvark', 12345]
+```
+
+### List Concatenation and List Replication
+
+```python
+>>> [1, 2, 3] + ['A', 'B', 'C']
+[1, 2, 3, 'A', 'B', 'C']
+
+>>> ['X', 'Y', 'Z'] * 3
+['X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'Y', 'Z']
+
+>>> spam = [1, 2, 3]
+
+>>> spam = spam + ['A', 'B', 'C']
+
+>>> spam
+[1, 2, 3, 'A', 'B', 'C']
+```
+
+### Removing Values from Lists with del Statements
+
+```python
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+
+>>> del spam[2]
+
+>>> spam
+['cat', 'bat', 'elephant']
+
+>>> del spam[2]
+
+>>> spam
+['cat', 'bat']
+```
+
+### Using for Loops with Lists
+
+```python
+>>> supplies = ['pens', 'staplers', 'flame-throwers', 'binders']
+
+>>> for i in range(len(supplies)):
+    print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
+```
+
+Output:
+
+    Index 0 in supplies is: pens
+    Index 1 in supplies is: staplers
+    Index 2 in supplies is: flame-throwers
+    Index 3 in supplies is: binders
+
+### The in and not in Operators
+
+```python
+>>> 'howdy' in ['hello', 'hi', 'howdy', 'heyas']
+True
+
+>>> spam = ['hello', 'hi', 'howdy', 'heyas']
+
+>>> 'cat' in spam
+False
+
+>>> 'howdy' not in spam
+False
+
+>>> 'cat' not in spam
+True
+```
+
+### The Multiple Assignment Trick
+
+The multiple assignment trick is a shortcut that lets you assign multiple variables with the values in a list in one line of code. So instead of doing this:
+
+```python
+>>> cat = ['fat', 'orange', 'loud']
+
+>>> size = cat[0]
+
+>>> color = cat[1]
+
+>>> disposition = cat[2]
+```
+
+you could type this line of code:
+
+```python
+>>> cat = ['fat', 'orange', 'loud']
+
+>>> size, color, disposition = cat
+```
+
+The multiple assignment trick can also be used to swap the values in two variables:
+
+```python
+>>> a, b = 'Alice', 'Bob'
+
+>>> a, b = b, a
+
+>>> print(a)
+'Bob'
+
+>>> print(b)
+'Alice'
+```
+
+### Augmented Assignment Operators
+
+| Operator  | Equivalent      |
+| --------- | --------------- |
+| spam += 1 | spam = spam + 1 |
+| spam -= 1 | spam = spam - 1 |
+| spam *= 1 | spam = spam * 1 |
+| spam /= 1 | spam = spam / 1 |
+| spam %= 1 | spam = spam % 1 |
+
+Examples:
+
+```python
+>>> spam = 'Hello'
+>>> spam += ' world!'
+>>> spam
+'Hello world!'
+
+>>> bacon = ['Zophie']
+>>> bacon *= 3
+>>> bacon
+['Zophie', 'Zophie', 'Zophie']
+```
+
+### Finding a Value in a List with the index() Method
+
+```python
+>>> spam = ['Zophie', 'Pooka', 'Fat-tail', 'Pooka']
+
+>>> spam.index('Pooka')
+1
+```
+
+### Adding Values to Lists with the append() and insert() Methods
+
+**append()**:
+
+```python
+>>> spam = ['cat', 'dog', 'bat']
+
+>>> spam.append('moose')
+
+>>> spam
+['cat', 'dog', 'bat', 'moose']
+```
+
+**insert()**:
+
+```python
+>>> spam = ['cat', 'dog', 'bat']
+
+>>> spam.insert(1, 'chicken')
+
+>>> spam
+['cat', 'chicken', 'dog', 'bat']
+```
+
+### Removing Values from Lists with remove()
+
+```python
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+
+>>> spam.remove('bat')
+
+>>> spam
+['cat', 'rat', 'elephant']
+```
+
+If the value appears multiple times in the list, only the first instance of the value will be removed.
+
+### Sorting the Values in a List with the sort() Method
+
+```python
+>>> spam = [2, 5, 3.14, 1, -7]
+
+>>> spam.sort()
+
+>>> spam
+[-7, 1, 2, 3.14, 5]
+
+>>> spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
+
+>>> spam.sort()
+
+>>> spam
+['ants', 'badgers', 'cats', 'dogs', 'elephants']
+```
+
+You can also pass True for the reverse keyword argument to have sort() sort the values in reverse order:
+
+```python
+>>> spam.sort(reverse=True)
+
+>>> spam
+['elephants', 'dogs', 'cats', 'badgers', 'ants']
+```
+
+If you need to sort the values in regular alphabetical order, pass str. lower for the key keyword argument in the sort() method call:
+
+```python
+>>> spam = ['a', 'z', 'A', 'Z']
+
+>>> spam.sort(key=str.lower)
+
+>>> spam
+['a', 'A', 'z', 'Z']
+```
+
+### Tuple Data Type
+
+```python
+>>> eggs = ('hello', 42, 0.5)
+
+>>> eggs[0]
+'hello'
+
+>>> eggs[1:3]
+(42, 0.5)
+
+>>> len(eggs)
+3
+```
+
+The main way that tuples are different from lists is that tuples, like strings, are immutable.
+
+### Converting Types with the list() and tuple() Functions
+
+```python
+>>> tuple(['cat', 'dog', 5])
+('cat', 'dog', 5)
+
+>>> list(('cat', 'dog', 5))
+['cat', 'dog', 5]
+
+>>> list('hello')
+['h', 'e', 'l', 'l', 'o']
+```
 
 ## Dictionaries and Structuring Data
 
@@ -1376,7 +1729,7 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 | \d, \w, and \s     | a digit, word, or space character, ectively.                 |
 | \D, \W, and \S     | anything except a digit, word, or space acter, respectively. |
 | [abc]              | any character between the brackets (such as a, b, ).         |
-| [^abc]             | any character that isn’t between the brackets.               |
+| [^abc]             | any character that isn’t between the brackets.              |
 
 ### Case-Insensitive Matching
 

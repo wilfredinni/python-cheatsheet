@@ -42,6 +42,24 @@ Based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python
   - Local and Global Scope
   - The global Statement
 - Exception Handling
+- Lists
+  - Getting Individual Values in a List with Indexes
+  - Negative Indexes
+  - Getting Sublists with Slices
+  - Getting a List’s Length with len()
+  - Changing Values in a List with Indexes
+  - List Concatenation and List Replication
+  - Removing Values from Lists with del Statements
+  - Using for Loops with Lists
+  - The in and not in Operators
+  - The Multiple Assignment Trick
+  - Augmented Assignment Operators
+  - Finding a Value in a List with the index() Method
+  - Adding Values to Lists with the append() and insert() Methods
+  - Removing Values from Lists with remove()
+  - Sorting the Values in a List with the sort() Method
+  - Tuple Data Type
+  - Converting Types with the list() and tuple() Functions
 - Dictionaries and Structuring Data
   - The keys(), values(), and items() Methods
   - Checking Whether a Key or Value Exists in a Dictionary
