@@ -428,7 +428,7 @@ for i in range(5):
 
 Output:
 
-My name is
+    My name is
     Jimmy Five Times (0)
     Jimmy Five Times (1)
     Jimmy Five Times (2)
@@ -550,6 +550,7 @@ print(fortune)
 ```python
 >>> spam = print('Hello!')
 Hello!
+
 >>> None == spam
 True
 ```
@@ -640,6 +641,7 @@ Output:
 
 ```python
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
+
 >>> spam
 ['cat', 'bat', 'rat', 'elephant']
 ```
@@ -648,6 +650,7 @@ Output:
 
 ```python
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
+
 >>> spam[0]
 'cat'
 
@@ -679,6 +682,7 @@ Output:
 
 ```python
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
+
 >>> spam[0:4]
 ['cat', 'bat', 'rat', 'elephant']
 
@@ -691,6 +695,7 @@ Output:
 
 ```python
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
+
 >>> spam[:2]
 ['cat', 'bat']
 
@@ -705,6 +710,7 @@ Output:
 
 ```python
 >>> spam = ['cat', 'dog', 'moose']
+
 >>> len(spam)
 3
 ```
@@ -769,7 +775,7 @@ Output:
 >>> supplies = ['pens', 'staplers', 'flame-throwers', 'binders']
 
 >>> for i in range(len(supplies)):
-    print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
+        print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
 ```
 
 Output:
@@ -985,6 +991,7 @@ myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
 
 ```python
 >>> spam = {'color': 'red', 'age': 42}
+
 >>> for v in spam.values():
         print(v)
 ```
@@ -1023,6 +1030,7 @@ Using the keys(), values(), and items() methods, a for loop can iterate over the
 ```python
 
 >>> spam = {'color': 'red', 'age': 42}
+
 >>> for k, v in spam.items():
         print('Key: ' + k + ' Value: ' + str(v))
 ```
@@ -1057,8 +1065,10 @@ False
 
 ```python
 >>> picnicItems = {'apples': 5, 'cups': 2}
+
 >>> 'I am bringing ' + str(picnicItems.get('cups', 0)) + ' cups.'
 'I am bringing 2 cups.'
+
 >>> 'I am bringing ' + str(picnicItems.get('eggs', 0)) + ' eggs.'
 'I am bringing 0 eggs.'
 ```
@@ -1067,6 +1077,7 @@ False
 
 ```python
 spam = {'name': 'Pooka', 'age': 5}
+
 if 'color' not in spam:
     spam['color'] = 'black'
 ```
@@ -1075,12 +1086,16 @@ The above code is equal to:
 
 ```python
 >>> spam = {'name': 'Pooka', 'age': 5}
+
 >>> spam.setdefault('color', 'black')
 'black'
+
 >>> spam
 {'color': 'black', 'age': 5, 'name': 'Pooka'}
+
 >>> spam.setdefault('color', 'white')
 'black'
+
 >>> spam
 {'color': 'black', 'age': 5, 'name': 'Pooka'}
 ```
@@ -1089,6 +1104,7 @@ The above code is equal to:
 
 ```python
 import pprint
+
 message = 'It was a bright cold day in April, and the clocks were striking
 thirteen.'
 count = {}
@@ -1491,6 +1507,7 @@ You can also use the pipe to match one of several patterns as part of your regex
 
 ```python
 >>> batRegex = re.compile(r'Bat(man|mobile|copter|bat)')
+
 >>> mo = batRegex.search('Batmobile lost a wheel')
 
 >>> mo.group()
@@ -1592,6 +1609,7 @@ In addition to the search() method, Regex objects also have a findall() method. 
 
 ```python
 >>> phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d') # has no groups
+
 >>> phoneNumRegex.findall('Cell: 415-555-9999 Work: 212-555-0000')
 ['415-555-9999', '212-555-0000']
 ```
@@ -1608,6 +1626,7 @@ There are times when you want to match a set of characters but the shorthand cha
 
 ```python
 >>> vowelRegex = re.compile(r'[aeiouAEIOU]')
+
 >>> vowelRegex.findall('Robocop eats baby food. BABY FOOD.')
 ['o', 'o', 'o', 'e', 'a', 'a', 'o', 'o', 'A', 'O', 'O']
 ```
@@ -1665,6 +1684,7 @@ The . (or dot) character in a regular expression is called a wildcard and will m
 
 ```python
 >>> atRegex = re.compile(r'.at')
+
 >>> atRegex.findall('The cat in the hat sat on the flat mat.')
 ['cat', 'hat', 'sat', 'lat', 'mat']
 ```
@@ -1737,6 +1757,7 @@ To make your regex case-insensitive, you can pass re.IGNORECASE or re.I as a sec
 
 ```python
 >>> robocop = re.compile(r'robocop', re.I)
+
 >>> robocop.search('Robocop is part man, part machine, all cop.').group()
 'Robocop'
 
