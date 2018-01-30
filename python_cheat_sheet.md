@@ -103,6 +103,14 @@
         - [Writing to Files](#writing-to-files)
         - [Saving Variables with the shelve Module](#saving-variables-with-the-shelve-module)
         - [Saving Variables with the pprint.pformat() Function](#saving-variables-with-the-pprintpformat-function)
+        - [Copying Files and Folders](#copying-files-and-folders)
+        - [Moving and Renaming Files and Folders](#moving-and-renaming-files-and-folders)
+        - [Permanently Deleting Files and Folders](#permanently-deleting-files-and-folders)
+        - [Safe Deletes with the send2trash Module](#safe-deletes-with-the-send2trash-module)
+        - [Walking a Directory Tree](#walking-a-directory-tree)
+        - [Reading ZIP Files](#reading-zip-files)
+        - [Extracting from ZIP Files](#extracting-from-zip-files)
+        - [Creating and Adding to ZIP Files](#creating-and-adding-to-zip-files)
 
 ## Python Basics
 
@@ -2054,3 +2062,180 @@ Just like dictionaries, shelf values have keys() and values() methods that will 
 
 >>> fileObj.close()
 ```
+
+### Copying Files and Folders
+
+The shutil module provides functions for copying files, as well as entire folders.
+
+```python
+>>> import shutil, os
+
+>>> os.chdir('C:\\')
+
+>>> shutil.copy('C:\\spam.txt', 'C:\\delicious')
+   'C:\\delicious\\spam.txt'
+
+>>> shutil.copy('eggs.txt', 'C:\\delicious\\eggs2.txt')
+   'C:\\delicious\\eggs2.txt'
+```
+
+While shutil.copy() will copy a single file, shutil.copytree() will copy an entire folder and every folder and file contained in it:
+
+```python
+>>> import shutil, os
+
+>>> os.chdir('C:\\')
+
+>>> shutil.copytree('C:\\bacon', 'C:\\bacon_backup')
+'C:\\bacon_backup'
+```
+
+### Moving and Renaming Files and Folders
+
+```python
+>>> import shutil
+>>> shutil.move('C:\\bacon.txt', 'C:\\eggs')
+'C:\\eggs\\bacon.txt'
+```
+
+The destination path can also specify a filename. In the following example, the source file is moved and renamed:
+
+```python
+>>> shutil.move('C:\\bacon.txt', 'C:\\eggs\\new_bacon.txt')
+'C:\\eggs\\new_bacon.txt'
+```
+
+ If there is no eggs folder, then move() will rename bacon.txt to a file named eggs.
+
+```python
+>>> shutil.move('C:\\bacon.txt', 'C:\\eggs')
+'C:\\eggs'
+```
+
+### Permanently Deleting Files and Folders
+
+- Calling os.unlink(path) will delete the file at path.
+
+- Calling os.rmdir(path) will delete the folder at path. This folder must be empty of any files or folders.
+
+- Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
+
+### Safe Deletes with the send2trash Module
+
+ You can install this module by running pip install send2trash from a Terminal window.
+
+```python
+>>> import send2trash
+
+>>> baconFile = open('bacon.txt', 'a') # creates the file
+
+>>> baconFile.write('Bacon is not a vegetable.')
+25
+
+>>> baconFile.close()
+
+>>> send2trash.send2trash('bacon.txt')
+```
+
+### Walking a Directory Tree
+
+```python
+import os
+
+for folderName, subfolders, filenames in os.walk('C:\\delicious'):
+    print('The current folder is ' + folderName)
+
+    for subfolder in subfolders:
+        print('SUBFOLDER OF ' + folderName + ': ' + subfolder)
+    for filename in filenames:
+        print('FILE INSIDE ' + folderName + ': '+ filename)
+
+    print('')
+```
+
+Output:
+
+```python
+The current folder is C:\delicious
+SUBFOLDER OF C:\delicious: cats
+SUBFOLDER OF C:\delicious: walnut
+FILE INSIDE C:\delicious: spam.txt
+
+The current folder is C:\delicious\cats
+FILE INSIDE C:\delicious\cats: catnames.txt
+FILE INSIDE C:\delicious\cats: zophie.jpg
+
+The current folder is C:\delicious\walnut
+SUBFOLDER OF C:\delicious\walnut: waffles
+
+The current folder is C:\delicious\walnut\waffles
+FILE INSIDE C:\delicious\walnut\waffles: butter.txt.
+```
+
+### Reading ZIP Files
+
+```python
+>>> import zipfile, os
+
+>>> os.chdir('C:\\')    # move to the folder with example.zip
+
+>>> exampleZip = zipfile.ZipFile('example.zip')
+
+>>> exampleZip.namelist()
+['spam.txt', 'cats/', 'cats/catnames.txt', 'cats/zophie.jpg']
+
+>>> spamInfo = exampleZip.getinfo('spam.txt')
+
+>>> spamInfo.file_size
+13908
+
+>>> spamInfo.compress_size
+3828
+
+>>> 'Compressed file is %sx smaller!' % (round(spamInfo.file_size / spamInfo.compress_size, 2))
+'Compressed file is 3.63x smaller!'
+
+>>> exampleZip.close()
+```
+
+### Extracting from ZIP Files
+
+The extractall() method for ZipFile objects extracts all the files and folders from a ZIP file into the current working directory.
+
+```python
+>>> import zipfile, os
+
+>>> os.chdir('C:\\')    # move to the folder with example.zip
+
+>>> exampleZip = zipfile.ZipFile('example.zip')
+
+>>> exampleZip.extractall()
+
+>>> exampleZip.close()
+```
+
+The extract() method for ZipFile objects will extract a single file from the ZIP file. Continue the interactive shell example:
+
+```python
+>>> exampleZip.extract('spam.txt')
+'C:\\spam.txt'
+
+>>> exampleZip.extract('spam.txt', 'C:\\some\\new\\folders')
+'C:\\some\\new\\folders\\spam.txt'
+
+>>> exampleZip.close()
+```
+
+### Creating and Adding to ZIP Files
+
+```python
+>>> import zipfile
+
+>>> newZip = zipfile.ZipFile('new.zip', 'w')
+
+>>> newZip.write('spam.txt', compress_type=zipfile.ZIP_DEFLATED)
+
+>>> newZip.close()
+```
+
+This code will create a new ZIP file named new.zip that has the compressed contents of spam.txt.

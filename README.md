@@ -112,3 +112,11 @@ Based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python
   - Writing to Files
   - Saving Variables with the shelve Module
   - Saving Variables with the pprint.pformat() Function
+  - Copying Files and Folders
+  - Moving and Renaming Files and Folders
+  - Permanently Deleting Files and Folders
+  - Safe Deletes with the send2trash Module
+  - Walking a Directory Tree
+  - Reading ZIP Files
+  - Extracting from ZIP Files
+  - Creating and Adding to ZIP Files
