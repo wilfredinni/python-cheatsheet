@@ -120,3 +120,11 @@ Based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python
   - Reading ZIP Files
   - Extracting from ZIP Files
   - Creating and Adding to ZIP Files
+- Debugging
+  - Raising Exceptions
+  - Getting the Traceback as a String
+  - Assertions
+  - Logging
+  - Logging Levels
+  - Disabling Logging
+  - Logging to a File
