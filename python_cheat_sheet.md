@@ -119,6 +119,8 @@
         - [Logging Levels](#logging-levels)
         - [Disabling Logging](#disabling-logging)
         - [Logging to a File](#logging-to-a-file)
+    - [Virtual Environment](#virtual-environment)
+        - [Windows](#windows)
 
 ## Python Basics
 
@@ -2434,3 +2436,45 @@ import logging
 
 logging.basicConfig(filename='myProgramLog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 ```
+
+## Virtual Environment
+
+The use of a Virtual Environment is to test python code in encapsulated environments and to also avoid filling the base Python installation with libraries we might use for only one project.
+
+### Windows
+
+1. Install virtualenv:
+
+        pip install virtualenv
+
+1. Install virtualenvwrapper-win:
+
+        pip install virtualenvwrapper-win
+
+Usage:
+
+1. Make a Virtual Environemt:
+
+        mkvirtualenv HelloWold
+
+    Anything we install now will be specific to this project. And available to the projects we connect to this environment.
+
+1. Set Project Directory:
+
+    To bind our virtualenv with our current working directory we simply enter:
+
+        setprojectdir .
+
+1. Deactivate:
+
+    To move onto something else in the command line type ‘deactivate’ to deactivate your environment.
+
+        deactivate
+
+    Notice how the parenthesis disappear.
+
+1. Workon:
+
+    Open up the command prompt and type ‘workon HelloWold’ to activate the environment and move into your root project folder:
+
+        workon HelloWold

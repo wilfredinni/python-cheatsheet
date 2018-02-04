@@ -128,3 +128,5 @@ Based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python
   - Logging Levels
   - Disabling Logging
   - Logging to a File
+- Virtual Environment
+  - Windows
