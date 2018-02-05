@@ -2165,22 +2165,20 @@ for folderName, subfolders, filenames in os.walk('C:\\delicious'):
 
 Output:
 
-```python
-The current folder is C:\delicious
-SUBFOLDER OF C:\delicious: cats
-SUBFOLDER OF C:\delicious: walnut
-FILE INSIDE C:\delicious: spam.txt
+    The current folder is C:\delicious
+    SUBFOLDER OF C:\delicious: cats
+    SUBFOLDER OF C:\delicious: walnut
+    FILE INSIDE C:\delicious: spam.txt
 
-The current folder is C:\delicious\cats
-FILE INSIDE C:\delicious\cats: catnames.txt
-FILE INSIDE C:\delicious\cats: zophie.jpg
+    The current folder is C:\delicious\cats
+    FILE INSIDE C:\delicious\cats: catnames.txt
+    FILE INSIDE C:\delicious\cats: zophie.jpg
 
-The current folder is C:\delicious\walnut
-SUBFOLDER OF C:\delicious\walnut: waffles
+    The current folder is C:\delicious\walnut
+    SUBFOLDER OF C:\delicious\walnut: waffles
 
-The current folder is C:\delicious\walnut\waffles
-FILE INSIDE C:\delicious\walnut\waffles: butter.txt.
-```
+    The current folder is C:\delicious\walnut\waffles
+    FILE INSIDE C:\delicious\walnut\waffles: butter.txt
 
 ### Reading ZIP Files
 
