@@ -121,6 +121,8 @@
         - [Logging to a File](#logging-to-a-file)
     - [Virtual Environment](#virtual-environment)
         - [Windows](#windows)
+    - [Lambda Functions](#lambda-functions)
+    - [One line if statement in Python (ternary conditional operator)](#one-line-if-statement-in-python-ternary-conditional-operator)
 
 ## Python Basics
 
@@ -2476,3 +2478,81 @@ Usage:
     Open up the command prompt and type ‘workon HelloWold’ to activate the environment and move into your root project folder:
 
         workon HelloWold
+
+## Lambda Functions
+
+This function:
+
+```python
+>>> def add(x, y):
+        return x + y
+
+>>> add(5, 3)
+8
+```
+
+Is equivalente to the *lambda* function:
+
+```python
+>>> add = lambda x, y: x + y
+>>> add(5, 3)
+8
+```
+
+It's not even need to bind it to a name like add before:
+
+```python
+>>> (lambda x, y: x + y)(5, 3)
+8
+```
+
+Like regular nested functions, lambdas also work as lexical closures:
+
+```python
+>>> def make_adder(n):
+        return lambda x: x + n
+
+>>> plus_3 = make_adder(3)
+>>> plus_5 = make_adder(5)
+
+>>> plus_3(4)
+7
+>>> plus_5(4)
+9
+```
+
+## One line if statement in Python (ternary conditional operator)
+
+Many programming languages have a ternary operator, which define a conditional expression. The most common usage is to make a terse simple conditional assignment statement. In other words, it offers one-line code to evaluate the first expression if the condition is true, otherwise it evaluates the second expression. 
+
+    <expression1> if <condition> else <expression2>
+
+Example:
+
+```python
+>>> age = 15
+
+>>> print('kid' if age < 18 else 'adult')
+kid
+```
+
+Ternary operators can be changed:
+
+```python
+>>> age = 15
+
+>>> print('kid' if age < 13 else 'teenager' if age < 18 else 'adult')
+teenager
+```
+
+The code above is equivalent to:
+
+```python
+if age < 18:
+    if age < 12:
+        print('kid')
+    else:
+        print('teenager')
+else:
+    print('adult')
+```

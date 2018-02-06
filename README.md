@@ -4,7 +4,7 @@ Basic cheatsheet for Python.
 
 ## Credits
 
-Based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/3.0/).
+Mostly based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/3.0/) and many other sources.
 
 ## PDF Version
 
@@ -130,3 +130,5 @@ Based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python
   - Logging to a File
 - Virtual Environment
   - Windows
+- Lambda Functions
+- One line if statement in Python (ternary conditional operator)
