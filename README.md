@@ -131,4 +131,4 @@ Basic cheatsheet for Python mostly based on the book writted by Al Sweigart, [Au
 - [Lambda Functions](python_cheat_sheet.md#lambda-functions)
 - [Ternary Conditional Operator](python_cheat_sheet.md#ternary-conditional-operator)
 
-[*Return to the Top*](#python-cheatsheet)
+[*Return to the Top*](#about)
