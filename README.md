@@ -132,3 +132,4 @@ Mostly based on the book writted by Al Sweigart, [Automate the Boring Stuff with
   - Windows
 - Lambda Functions
 - Ternary Conditional Operator
+- [I'm a relative reference to a repository file](python_cheat_sheet.md#local-and-global-scope)
