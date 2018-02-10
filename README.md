@@ -131,4 +131,4 @@ Mostly based on the book writted by Al Sweigart, [Automate the Boring Stuff with
 - Virtual Environment
   - Windows
 - Lambda Functions
-- One line if statement in Python (ternary conditional operator)
+- Ternary Conditional Operator
