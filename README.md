@@ -8,12 +8,11 @@ Mostly based on the book writted by Al Sweigart, [Automate the Boring Stuff with
 
 ## Read It
 
-- [Online](python_cheat_sheet.md)
+- [Online](https://wilfredinni.github.io/python-cheatsheet/python_cheat_sheet.htm)
 - [Github](https://github.com/wilfredinni/python-cheatsheet)
 - [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
 
 ## Current Progress
-
 
 - [Python Basics](python_cheat_sheet.md#python-basics)
   - [Math Operators](python_cheat_sheet.md#math-operators)
