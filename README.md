@@ -4,7 +4,7 @@ Basic cheatsheet for Python mostly based on the book writted by Al Sweigart, [Au
 
 ## Read It
 
-- [Online](https://wilfredinni.github.io/python-cheatsheet/python_cheat_sheet.htm)
+- [Online](https://wilfredinni.github.io/python-cheatsheet/)
 - [Github](https://github.com/wilfredinni/python-cheatsheet)
 - [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
 
