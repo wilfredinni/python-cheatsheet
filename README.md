@@ -226,12 +226,14 @@ Inline comment:
 ```
 
 Multiline comment:
+
 ```Python
 # This is a
 # multiline comment
 ```
 
 Function docstring:
+
 ```python
 def foo():
     """
