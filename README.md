@@ -1194,10 +1194,11 @@ True
 >>> 'Zophie' in spam.values()
 True
 
->>> 'color' in spam.keys()
+>>> # You can omit the call to keys() when checking for a key
+>>> 'color' in spam
 False
 
->>> 'color' not in spam.keys()
+>>> 'color' not in spam
 True
 
 >>> 'color' in spam
