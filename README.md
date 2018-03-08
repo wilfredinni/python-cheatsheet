@@ -225,14 +225,20 @@ Inline comment:
 # This is a comment
 ```
 
-Multiline Comment:
+Multiline comment:
+```Python
+# This is a
+# multiline comment
+```
 
+Function docstring:
 ```python
-"""
-This is a Multiline Comment
-You can also use:
-''' multiline comment '''
-"""
+def foo():
+    """
+    This is a function docstring
+    You can also use:
+    ''' Function Docstring '''
+    """
 ```
 
 [*Return to the Top*](#python-cheatsheet)
