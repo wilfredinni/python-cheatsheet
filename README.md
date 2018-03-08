@@ -140,10 +140,10 @@ From **Higuest** to **Lowest** precedence:
 | Operators | Operation        | Example       |
 | --------- | ---------------- | ------------- |
 | **        | Exponent         | 2 ** 3 = 8    |
-| %         | Modulus/Remaider | 22 % 8 = 16   |
+| %         | Modulus/Remaider | 22 % 8 = 6    |
 | //        | Integer division | 22 // 8 = 2   |
 | /         | Division         | 22 / 8 = 2.75 |
-| *         | Multiplication   | 3 * 3 = 9    |
+| *         | Multiplication   | 3 * 3 = 9     |
 | -         | Subtraction      | 5 - 2 = 3     |
 | +         | Addition         | 2 + 2 = 4     |
 
