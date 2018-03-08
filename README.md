@@ -1210,12 +1210,12 @@ False
 ### The get() Method
 
 ```python
->>> picnicItems = {'apples': 5, 'cups': 2}
+>>> picnic_items = {'apples': 5, 'cups': 2}
 
->>> 'I am bringing ' + str(picnicItems.get('cups', 0)) + ' cups.'
+>>> 'I am bringing ' + str(picnic_items.get('cups', 0)) + ' cups.'
 'I am bringing 2 cups.'
 
->>> 'I am bringing ' + str(picnicItems.get('eggs', 0)) + ' eggs.'
+>>> 'I am bringing ' + str(picnic_items.get('eggs', 0)) + ' eggs.'
 'I am bringing 0 eggs.'
 ```
 
@@ -1620,9 +1620,9 @@ All the regex functions in Python are in the re module:
 ### Matching Regex Objects
 
 ```python
->>> phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+>>> phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
 
->>> mo = phoneNumRegex.search('My number is 415-555-4242.')
+>>> mo = phone_num_regex.search('My number is 415-555-4242.')
 
 >>> print('Phone number found: ' + mo.group())
 Phone number found: 415-555-4242
@@ -1633,9 +1633,9 @@ Phone number found: 415-555-4242
 ### Grouping with Parentheses
 
 ```python
->>> phoneNumRegex = re.compile(r'(\d\d\d)-(\d\d\d-\d\d\d\d)')
+>>> phone_num_regex = re.compile(r'(\d\d\d)-(\d\d\d-\d\d\d\d)')
 
->>> mo = phoneNumRegex.search('My number is 415-555-4242.')
+>>> mo = phone_num_regex.search('My number is 415-555-4242.')
 
 >>> mo.group(1)
 '415'
@@ -1656,12 +1656,12 @@ To retrieve all the groups at once: groups() method—note the plural form for t
 >>> mo.groups()
 ('415', '555-4242')
 
->>> areaCode, mainNumber = mo.groups()
+>>> area_code, main_number = mo.groups()
 
->>> print(areaCode)
+>>> print(area_code)
 415
 
->>> print(mainNumber)
+>>> print(main_number)
 555-4242
 ```
 
@@ -1672,14 +1672,14 @@ To retrieve all the groups at once: groups() method—note the plural form for t
 The | character is called a pipe. You can use it anywhere you want to match one of many expressions. For example, the regular expression r'Batman|Tina Fey' will match either 'Batman' or 'Tina Fey'.
 
 ```python
->>> heroRegex = re.compile (r'Batman|Tina Fey')
+>>> hero_regex = re.compile (r'Batman|Tina Fey')
 
->>> mo1 = heroRegex.search('Batman and Tina Fey.')
+>>> mo1 = hero_regex.search('Batman and Tina Fey.')
 
 >>> mo1.group()
 'Batman'
 
->>> mo2 = heroRegex.search('Tina Fey and Batman.')
+>>> mo2 = hero_regex.search('Tina Fey and Batman.')
 
 >>> mo2.group()
 'Tina Fey'
@@ -1688,9 +1688,9 @@ The | character is called a pipe. You can use it anywhere you want to match one 
 You can also use the pipe to match one of several patterns as part of your regex:
 
 ```python
->>> batRegex = re.compile(r'Bat(man|mobile|copter|bat)')
+>>> bat_regex = re.compile(r'Bat(man|mobile|copter|bat)')
 
->>> mo = batRegex.search('Batmobile lost a wheel')
+>>> mo = bat_regex.search('Batmobile lost a wheel')
 
 >>> mo.group()
 'Batmobile'
@@ -1706,12 +1706,12 @@ You can also use the pipe to match one of several patterns as part of your regex
 The ? character flags the group that precedes it as an optional part of the pattern.
 
 ```python
->>> batRegex = re.compile(r'Bat(wo)?man')
->>> mo1 = batRegex.search('The Adventures of Batman')
+>>> bat_regex = re.compile(r'Bat(wo)?man')
+>>> mo1 = bat_regex.search('The Adventures of Batman')
 >>> mo1.group()
 'Batman'
 
->>> mo2 = batRegex.search('The Adventures of Batwoman')
+>>> mo2 = bat_regex.search('The Adventures of Batwoman')
 >>> mo2.group()
 'Batwoman'
 ```
@@ -1723,16 +1723,16 @@ The ? character flags the group that precedes it as an optional part of the patt
 The * (called the star or asterisk) means “match zero or more”—the group that precedes the star can occur any number of times in the text.
 
 ```python
->>> batRegex = re.compile(r'Bat(wo)*man')
->>> mo1 = batRegex.search('The Adventures of Batman')
+>>> bat_regex = re.compile(r'Bat(wo)*man')
+>>> mo1 = bat_regex.search('The Adventures of Batman')
 >>> mo1.group()
 'Batman'
 
->>> mo2 = batRegex.search('The Adventures of Batwoman')
+>>> mo2 = bat_regex.search('The Adventures of Batwoman')
 >>> mo2.group()
 'Batwoman'
 
->>> mo3 = batRegex.search('The Adventures of Batwowowowoman')
+>>> mo3 = bat_regex.search('The Adventures of Batwowowowoman')
 >>> mo3.group()
 'Batwowowowoman'
 ```
@@ -1744,17 +1744,17 @@ The * (called the star or asterisk) means “match zero or more”—the group t
 While * means “match zero or more,” the + (or plus) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:
 
 ```python
->>> batRegex = re.compile(r'Bat(wo)+man')
->>> mo1 = batRegex.search('The Adventures of Batwoman')
+>>> bat_regex = re.compile(r'Bat(wo)+man')
+>>> mo1 = bat_regex.search('The Adventures of Batwoman')
 >>> mo1.group()
 'Batwoman'
 
->>> mo2 = batRegex.search('The Adventures of Batwowowowoman')
+>>> mo2 = bat_regex.search('The Adventures of Batwowowowoman')
 >>> mo2.group()
 'Batwowowowoman'
 
->>> mo3 = batRegex.search('The Adventures of Batman')
->>> mo3 == None
+>>> mo3 = bat_regex.search('The Adventures of Batman')
+>>> mo3 is None
 True
 ```
 
@@ -1767,13 +1767,13 @@ If you have a group that you want to repeat a specific number of times, follow t
 Instead of one number, you can specify a range by writing a minimum, a comma, and a maximum in between the curly brackets. For example, the regex (Ha){3,5} will match 'HaHaHa', 'HaHaHaHa', and 'HaHaHaHaHa'.
 
 ```python
->>> haRegex = re.compile(r'(Ha){3}')
->>> mo1 = haRegex.search('HaHaHa')
+>>> ha_regex = re.compile(r'(Ha){3}')
+>>> mo1 = ha_regex.search('HaHaHa')
 >>> mo1.group()
 'HaHaHa'
 
->>> mo2 = haRegex.search('Ha')
->>> mo2 == None
+>>> mo2 = ha_regex.search('Ha')
+>>> mo2 is None
 True
 ```
 
@@ -1784,13 +1784,13 @@ True
 Python’s regular expressions are greedy by default, which means that in ambiguous situations they will match the longest string possible. The non-greedy version of the curly brackets, which matches the shortest string possible, has the closing curly bracket followed by a question mark.
 
 ```python
->>> greedyHaRegex = re.compile(r'(Ha){3,5}')
->>> mo1 = greedyHaRegex.search('HaHaHaHaHa')
+>>> greedy_ha_regex = re.compile(r'(Ha){3,5}')
+>>> mo1 = greedy_ha_regex.search('HaHaHaHaHa')
 >>> mo1.group()
 'HaHaHaHaHa'
 
->>> nongreedyHaRegex = re.compile(r'(Ha){3,5}?')
->>> mo2 = nongreedyHaRegex.search('HaHaHaHaHa')
+>>> nongreedy_ha_regex = re.compile(r'(Ha){3,5}?')
+>>> mo2 = nongreedy_ha_regex.search('HaHaHaHaHa')
 >>> mo2.group()
 'HaHaHa'
 ```
@@ -1802,9 +1802,9 @@ Python’s regular expressions are greedy by default, which means that in ambigu
 In addition to the search() method, Regex objects also have a findall() method. While search() will return a Match object of the first matched text in the searched string, the findall() method will return the strings of every match in the searched string.
 
 ```python
->>> phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d') # has no groups
+>>> phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d') # has no groups
 
->>> phoneNumRegex.findall('Cell: 415-555-9999 Work: 212-555-0000')
+>>> phone_num_regex.findall('Cell: 415-555-9999 Work: 212-555-0000')
 ['415-555-9999', '212-555-0000']
 ```
 
@@ -1821,9 +1821,9 @@ To summarize what the findall() method returns, remember the following:
 There are times when you want to match a set of characters but the shorthand character classes (\d, \w, \s, and so on) are too broad. You can define your own character class using square brackets. For example, the character class [aeiouAEIOU] will match any vowel, both lowercase and uppercase.
 
 ```python
->>> vowelRegex = re.compile(r'[aeiouAEIOU]')
+>>> vowel_regex = re.compile(r'[aeiouAEIOU]')
 
->>> vowelRegex.findall('Robocop eats baby food. BABY FOOD.')
+>>> vowel_regex.findall('Robocop eats baby food. BABY FOOD.')
 ['o', 'o', 'o', 'e', 'a', 'a', 'o', 'o', 'A', 'O', 'O']
 ```
 
@@ -1832,9 +1832,9 @@ You can also include ranges of letters or numbers by using a hyphen. For example
 By placing a caret character (^) just after the character class’s opening bracket, you can make a negative character class. A negative character class will match all the characters that are not in the character class. For example, enter the following into the interactive shell:
 
 ```python
->>> consonantRegex = re.compile(r'[^aeiouAEIOU]')
+>>> consonant_regex = re.compile(r'[^aeiouAEIOU]')
 
->>> consonantRegex.findall('Robocop eats baby food. BABY FOOD.')
+>>> consonant_regex.findall('Robocop eats baby food. BABY FOOD.')
 ['R', 'b', 'c', 'p', ' ', 't', 's', ' ', 'b', 'b', 'y', ' ', 'f', 'd', '.', '
 ', 'B', 'B', 'Y', ' ', 'F', 'D', '.']
 ```
@@ -1852,27 +1852,27 @@ By placing a caret character (^) just after the character class’s opening brac
 The r'^Hello' regular expression string matches strings that begin with 'Hello':
 
 ```python
->>> beginsWithHello = re.compile(r'^Hello')
+>>> begins_with_hello = re.compile(r'^Hello')
 
->>> beginsWithHello.search('Hello world!')
+>>> begins_with_hello.search('Hello world!')
 <_sre.SRE_Match object; span=(0, 5), match='Hello'>
 
->>> beginsWithHello.search('He said hello.') == None
+>>> begins_with_hello.search('He said hello.') is None
 True
 ```
 
 The r'\d$' regular expression string matches strings that end with a numeric character from 0 to 9:
 
 ```python
->>> wholeStringIsNum = re.compile(r'^\d+$')
+>>> whole_string_is_num = re.compile(r'^\d+$')
 
->>> wholeStringIsNum.search('1234567890')
+>>> whole_string_is_num.search('1234567890')
 <_sre.SRE_Match object; span=(0, 10), match='1234567890'>
 
->>> wholeStringIsNum.search('12345xyz67890') == None
+>>> whole_string_is_num.search('12345xyz67890') is None
 True
 
->>> wholeStringIsNum.search('12 34567890') == None
+>>> whole_string_is_num.search('12 34567890') is None
 True
 ```
 
@@ -1883,9 +1883,9 @@ True
 The . (or dot) character in a regular expression is called a wildcard and will match any character except for a newline:
 
 ```python
->>> atRegex = re.compile(r'.at')
+>>> at_regex = re.compile(r'.at')
 
->>> atRegex.findall('The cat in the hat sat on the flat mat.')
+>>> at_regex.findall('The cat in the hat sat on the flat mat.')
 ['cat', 'hat', 'sat', 'lat', 'mat']
 ```
 
@@ -1894,9 +1894,9 @@ The . (or dot) character in a regular expression is called a wildcard and will m
 ### Matching Everything with Dot-Star
 
 ```python
->>> nameRegex = re.compile(r'First Name: (.*) Last Name: (.*)')
+>>> name_regex = re.compile(r'First Name: (.*) Last Name: (.*)')
 
->>> mo = nameRegex.search('First Name: Al Last Name: Sweigart')
+>>> mo = name_regex.search('First Name: Al Last Name: Sweigart')
 
 >>> mo.group(1)
 'Al'
@@ -1908,13 +1908,13 @@ The . (or dot) character in a regular expression is called a wildcard and will m
 The dot-star uses greedy mode: It will always try to match as much text as possible. To match any and all text in a nongreedy fashion, use the dot, star, and question mark (.*?). The question mark tells Python to match in a nongreedy way:
 
 ```python
->>> nongreedyRegex = re.compile(r'<.*?>')
->>> mo = nongreedyRegex.search('<To serve man> for dinner.>')
+>>> nongreedy_regex = re.compile(r'<.*?>')
+>>> mo = nongreedy_regex.search('<To serve man> for dinner.>')
 >>> mo.group()
 '<To serve man>'
 
->>> greedyRegex = re.compile(r'<.*>')
->>> mo = greedyRegex.search('<To serve man> for dinner.>')
+>>> greedy_regex = re.compile(r'<.*>')
+>>> mo = greedy_regex.search('<To serve man> for dinner.>')
 >>> mo.group()
 '<To serve man> for dinner.>'
 ```
@@ -1926,12 +1926,12 @@ The dot-star uses greedy mode: It will always try to match as much text as possi
 The dot-star will match everything except a newline. By passing re.DOTALL as the second argument to re.compile(), you can make the dot character match all characters, including the newline character:
 
 ```python
->>> noNewlineRegex = re.compile('.*')
->>> noNewlineRegex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
+>>> no_newline_regex = re.compile('.*')
+>>> no_newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
 'Serve the public trust.'
 
->>> newlineRegex = re.compile('.*', re.DOTALL)
->>> newlineRegex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
+>>> newline_regex = re.compile('.*', re.DOTALL)
+>>> newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
 'Serve the public trust.\nProtect the innocent.\nUphold the law.'
 ```
 
@@ -1988,18 +1988,18 @@ The sub() method for Regex objects is passed two arguments:
 The sub() method returns a string with the substitutions applied:
 
 ```python
->>> namesRegex = re.compile(r'Agent \w+')
+>>> names_regex = re.compile(r'Agent \w+')
 
->>> namesRegex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob.')
+>>> names_regex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob.')
 'CENSORED gave the secret documents to CENSORED.'
 ```
 
 Another example:
 
 ```python
->>> agentNamesRegex = re.compile(r'Agent (\w)\w*')
+>>> agent_names_regex = re.compile(r'Agent (\w)\w*')
 
->>> agentNamesRegex.sub(r'\1****', 'Agent Alice told Agent Carol that Agent Eve knew Agent Bob was a double agent.')
+>>> agent_names_regex.sub(r'\1****', 'Agent Alice told Agent Carol that Agent Eve knew Agent Bob was a double agent.')
 A**** told C**** that E**** knew B**** was a double agent.'
 ```
 
@@ -2012,13 +2012,13 @@ To tell the re.compile() function to ignore whitespace and comments inside the r
 Now instead of a hard-to-read regular expression like this:
 
 ```python
-phoneRegex = re.compile(r'((\d{3}|\(\d{3}\))?(\s|-|\.)?\d{3}(\s|-|\.)\d{4}(\s*(ext|x|ext.)\s*\d{2,5})?)')
+phone_regex = re.compile(r'((\d{3}|\(\d{3}\))?(\s|-|\.)?\d{3}(\s|-|\.)\d{4}(\s*(ext|x|ext.)\s*\d{2,5})?)')
 ```
 
 you can spread the regular expression over multiple lines with comments like this:
 
 ```python
-phoneRegex = re.compile(r'''(
+phone_regex = re.compile(r'''(
     (\d{3}|\(\d{3}\))?            # area code
     (\s|-|\.)?                    # separator
     \d{3}                         # first 3 digits
@@ -2124,12 +2124,12 @@ There are also the dot (.) and dot-dot (..) folders. These are not real folders 
 To find the total size of all the files in this directory, use os.path.getsize() and os.listdir() together:
 
 ```python
->>> totalSize = 0
+>>> total_size = 0
 
 >>> for filename in os.listdir('C:\\Windows\\System32'):
-      totalSize = totalSize + os.path.getsize(os.path.join('C:\\Windows\\System32', filename))
+      total_size = total_size + os.path.getsize(os.path.join('C:\\Windows\\System32', filename))
 
->>> print(totalSize)
+>>> print(total_size)
 1117846456
 ```
 
@@ -2160,7 +2160,7 @@ There are three steps to reading or writing files in Python.
 ### Opening Files with the open() Function
 
 ```python
->>> helloFile = open('C:\\Users\\your_home_folder\\hello.txt')
+>>> hello_file = open('C:\\Users\\your_home_folder\\hello.txt')
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -2168,18 +2168,18 @@ There are three steps to reading or writing files in Python.
 ### Reading the Contents of Files
 
 ```python
->>> helloContent = helloFile.read()
+>>> hello_content = hello_file.read()
 
->>> helloContent
+>>> hello_content
 'Hello world!'
 ```
 
 Alternatively, you can use the *readlines()* method to get a list of string values from the file, one string for each line of text:
 
 ```python
->>> sonnetFile = open('sonnet29.txt')
+>>> sonnet_file = open('sonnet29.txt')
 
->>> sonnetFile.readlines()
+>>> sonnet_file.readlines()
 [When, in disgrace with fortune and men's eyes,\n', ' I all alone beweep my
 outcast state,\n', And trouble deaf heaven with my bootless cries,\n', And
 look upon myself and curse my fate,']
@@ -2190,25 +2190,25 @@ look upon myself and curse my fate,']
 ### Writing to Files
 
 ```python
->>> baconFile = open('bacon.txt', 'w')
+>>> bacon_file = open('bacon.txt', 'w')
 
->>> baconFile.write('Hello world!\n')
+>>> bacon_file.write('Hello world!\n')
 13
 
->>> baconFile.close()
+>>> bacon_file.close()
 
->>> baconFile = open('bacon.txt', 'a')
+>>> bacon_file = open('bacon.txt', 'a')
 
->>> baconFile.write('Bacon is not a vegetable.')
+>>> bacon_file.write('Bacon is not a vegetable.')
 25
 
->>> baconFile.close()
+>>> bacon_file.close()
 
->>> baconFile = open('bacon.txt')
+>>> bacon_file = open('bacon.txt')
 
->>> content = baconFile.read()
+>>> content = bacon_file.read()
 
->>> baconFile.close()
+>>> bacon_file.close()
 
 >>> print(content)
 Hello world!
@@ -2224,41 +2224,41 @@ To save variables:
 ```python
 >>> import shelve
 
->>> shelfFile = shelve.open('mydata')
+>>> shelf_file = shelve.open('mydata')
 
 >>> cats = ['Zophie', 'Pooka', 'Simon']
 
->>> shelfFile['cats'] = cats
+>>> shelf_file['cats'] = cats
 
->>> shelfFile.close()
+>>> shelf_file.close()
 ```
 
 To open and read variables:
 
 ```python
->>> shelfFile = shelve.open('mydata')
+>>> shelf_file = shelve.open('mydata')
 
->>> type(shelfFile)
+>>> type(shelf_file)
 <class 'shelve.DbfilenameShelf'>
 
->>> shelfFile['cats']
+>>> shelf_file['cats']
 ['Zophie', 'Pooka', 'Simon']
 
->>> shelfFile.close()
+>>> shelf_file.close()
 ```
 
 Just like dictionaries, shelf values have keys() and values() methods that will return list-like values of the keys and values in the shelf. Since these methods return list-like values instead of true lists, you should pass them to the list() function to get them in list form.
 
 ```python
->>> shelfFile = shelve.open('mydata')
+>>> shelf_file = shelve.open('mydata')
 
->>> list(shelfFile.keys())
+>>> list(shelf_file.keys())
 ['cats']
 
->>> list(shelfFile.values())
+>>> list(shelf_file.values())
 [['Zophie', 'Pooka', 'Simon']]
 
->>> shelfFile.close()
+>>> shelf_file.close()
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -2273,12 +2273,12 @@ Just like dictionaries, shelf values have keys() and values() methods that will 
 >>> pprint.pformat(cats)
 "[{'desc': 'chubby', 'name': 'Zophie'}, {'desc': 'fluffy', 'name': 'Pooka'}]"
 
->>> fileObj = open('myCats.py', 'w')
+>>> file_obj = open('myCats.py', 'w')
 
->>> fileObj.write('cats = ' + pprint.pformat(cats) + '\n')
+>>> file_obj.write('cats = ' + pprint.pformat(cats) + '\n')
 83
 
->>> fileObj.close()
+>>> file_obj.close()
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -2353,12 +2353,12 @@ The destination path can also specify a filename. In the following example, the 
 ```python
 >>> import send2trash
 
->>> baconFile = open('bacon.txt', 'a') # creates the file
+>>> bacon_file = open('bacon.txt', 'a') # creates the file
 
->>> baconFile.write('Bacon is not a vegetable.')
+>>> bacon_file.write('Bacon is not a vegetable.')
 25
 
->>> baconFile.close()
+>>> bacon_file.close()
 
 >>> send2trash.send2trash('bacon.txt')
 ```
@@ -2370,13 +2370,13 @@ The destination path can also specify a filename. In the following example, the 
 ```python
 import os
 
-for folderName, subfolders, filenames in os.walk('C:\\delicious'):
-    print('The current folder is ' + folderName)
+for folder_name, subfolders, filenames in os.walk('C:\\delicious'):
+    print('The current folder is ' + folder_name)
 
     for subfolder in subfolders:
-        print('SUBFOLDER OF ' + folderName + ': ' + subfolder)
+        print('SUBFOLDER OF ' + folder_name + ': ' + subfolder)
     for filename in filenames:
-        print('FILE INSIDE ' + folderName + ': '+ filename)
+        print('FILE INSIDE ' + folder_name + ': '+ filename)
 
     print('')
 ```
@@ -2407,12 +2407,12 @@ Output:
 
 >>> os.chdir('C:\\')    # move to the folder with example.zip
 
->>> exampleZip = zipfile.ZipFile('example.zip')
+>>> example_zip = zipfile.ZipFile('example.zip')
 
->>> exampleZip.namelist()
+>>> example_zip.namelist()
 ['spam.txt', 'cats/', 'cats/catnames.txt', 'cats/zophie.jpg']
 
->>> spamInfo = exampleZip.getinfo('spam.txt')
+>>> spamInfo = example_zip.getinfo('spam.txt')
 
 >>> spamInfo.file_size
 13908
@@ -2423,7 +2423,7 @@ Output:
 >>> 'Compressed file is %sx smaller!' % (round(spamInfo.file_size / spamInfo.compress_size, 2))
 'Compressed file is 3.63x smaller!'
 
->>> exampleZip.close()
+>>> example_zip.close()
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -2437,23 +2437,23 @@ The extractall() method for ZipFile objects extracts all the files and folders f
 
 >>> os.chdir('C:\\')    # move to the folder with example.zip
 
->>> exampleZip = zipfile.ZipFile('example.zip')
+>>> example_zip = zipfile.ZipFile('example.zip')
 
->>> exampleZip.extractall()
+>>> example_zip.extractall()
 
->>> exampleZip.close()
+>>> example_zip.close()
 ```
 
 The extract() method for ZipFile objects will extract a single file from the ZIP file. Continue the interactive shell example:
 
 ```python
->>> exampleZip.extract('spam.txt')
+>>> example_zip.extract('spam.txt')
 'C:\\spam.txt'
 
->>> exampleZip.extract('spam.txt', 'C:\\some\\new\\folders')
+>>> example_zip.extract('spam.txt', 'C:\\some\\new\\folders')
 'C:\\some\\new\\folders\\spam.txt'
 
->>> exampleZip.close()
+>>> example_zip.close()
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -2463,11 +2463,11 @@ The extract() method for ZipFile objects will extract a single file from the ZIP
 ```python
 >>> import zipfile
 
->>> newZip = zipfile.ZipFile('new.zip', 'w')
+>>> new_zip = zipfile.ZipFile('new.zip', 'w')
 
->>> newZip.write('spam.txt', compress_type=zipfile.ZIP_DEFLATED)
+>>> new_zip.write('spam.txt', compress_type=zipfile.ZIP_DEFLATED)
 
->>> newZip.close()
+>>> new_zip.close()
 ```
 
 This code will create a new ZIP file named new.zip that has the compressed contents of spam.txt.
@@ -2495,7 +2495,7 @@ Exception: This is the error message.
 Often it’s the code that calls the function, not the function itself, that knows how to handle an expection. So you will commonly see a raise statement inside a function and the try and except statements in the code calling the function.
 
 ```python
-def boxPrint(symbol, width, height):
+def box_print(symbol, width, height):
     if len(symbol) != 1:
       raise Exception('Symbol must be a single character string.')
     if width <= 2:
@@ -2508,7 +2508,7 @@ def boxPrint(symbol, width, height):
     print(symbol * width)
 for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
     try:
-        boxPrint(sym, w, h)
+        box_print(sym, w, h)
   except Exception as err:
       print('An exception happened: ' + str(err))
 ```
@@ -2525,9 +2525,9 @@ The traceback is displayed by Python whenever a raised exception goes unhandled.
 >>> try:
          raise Exception('This is the error message.')
     except:
-         errorFile = open('errorInfo.txt', 'w')
-         errorFile.write(traceback.format_exc())
-         errorFile.close()
+         error_file = open('errorInfo.txt', 'w')
+         error_file.write(traceback.format_exc())
+         error_file.close()
          print('The traceback info was written to errorInfo.txt.')
 ```
 
@@ -2554,17 +2554,17 @@ An assertion is a sanity check to make sure your code isn’t doing something ob
 - A string to display when the condition is False
 
 ```python
->>> podBayDoorStatus = 'open'
+>>> pod_bay_door_status = 'open'
 
->>> assert podBayDoorStatus == 'open', 'The pod bay doors need to be "open".'
+>>> assert pod_bay_door_status == 'open', 'The pod bay doors need to be "open".'
 
->>> podBayDoorStatus = 'I\'m sorry, Dave. I\'m afraid I can\'t do that.'
+>>> pod_bay_door_status = 'I\'m sorry, Dave. I\'m afraid I can\'t do that.'
 
->>> assert podBayDoorStatus == 'open', 'The pod bay doors need to be "open".'
+>>> assert pod_bay_door_status == 'open', 'The pod bay doors need to be "open".'
 
 Traceback (most recent call last):
   File "<pyshell#10>", line 1, in <module>
-    assert podBayDoorStatus == 'open', 'The pod bay doors need to be "open".'
+    assert pod_bay_door_status == 'open', 'The pod bay doors need to be "open".'
 AssertionError: The pod bay doors need to be "open".
 ```
 
