@@ -2147,42 +2147,36 @@ To find the total size of all the files in this directory, use os.path.getsize()
 
 ### The File Reading/Writing Process
 
-There are three steps to reading or writing files in Python.
-
-1. Call the open() function to return a File object.
-
-2. Call the read() or write() method on the File object.
-
-3. Close the file by calling the close() method on the File object.
+To read/write to a file in Python, you will want to use the `with`
+statement, which will close the file for you after you are done.
 
 [*Return to the Top*](#python-cheatsheet)
 
-### Opening Files with the open() Function
+### Opening and reading files with the open() function
 
 ```python
->>> hello_file = open('C:\\Users\\your_home_folder\\hello.txt')
-```
-
-[*Return to the Top*](#python-cheatsheet)
-
-### Reading the Contents of Files
-
-```python
->>> hello_content = hello_file.read()
-
+>>> with open('C:\\Users\\your_home_folder\\hello.txt') as hello_file:
+...     hello_content = hello_file.read()
 >>> hello_content
-'Hello world!'
-```
+'Hello World!'
 
-Alternatively, you can use the *readlines()* method to get a list of string values from the file, one string for each line of text:
+>>> # Alternatively, you can use the *readlines()* method to get a list of string values from the file, one string for each line of text:
 
-```python
->>> sonnet_file = open('sonnet29.txt')
-
->>> sonnet_file.readlines()
+>>> with open('sonnet29.txt') as sonnet_file:
+...     sonnet_file.readlines()
 [When, in disgrace with fortune and men's eyes,\n', ' I all alone beweep my
 outcast state,\n', And trouble deaf heaven with my bootless cries,\n', And
 look upon myself and curse my fate,']
+
+>>> # You can also iterate through the file line by line:
+>>> with open('sonnet29.txt') as sonnet_file:
+...     for line in sonnet_file: # note the new line character will be included in the line
+...         print(line, end='')
+
+When, in disgrace with fortune and men's eyes,
+I all alone beweep my outcast state,
+And trouble deaf heaven with my bootless cries,
+And look upon myself and curse my fate,
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -2190,25 +2184,16 @@ look upon myself and curse my fate,']
 ### Writing to Files
 
 ```python
->>> bacon_file = open('bacon.txt', 'w')
-
->>> bacon_file.write('Hello world!\n')
+>>> with open('bacon.txt', 'w') as bacon_file:
+...     bacon_file.write('Hello world!\n')
 13
 
->>> bacon_file.close()
-
->>> bacon_file = open('bacon.txt', 'a')
-
->>> bacon_file.write('Bacon is not a vegetable.')
+>>> with open('bacon.txt', 'a') as bacon_file:
+...     bacon_file.write('Bacon is not a vegetable.')
 25
 
->>> bacon_file.close()
-
->>> bacon_file = open('bacon.txt')
-
->>> content = bacon_file.read()
-
->>> bacon_file.close()
+>>> with open('bacon.txt') as bacon_file:
+...     content = bacon_file.read()
 
 >>> print(content)
 Hello world!
@@ -2224,41 +2209,29 @@ To save variables:
 ```python
 >>> import shelve
 
->>> shelf_file = shelve.open('mydata')
-
 >>> cats = ['Zophie', 'Pooka', 'Simon']
-
->>> shelf_file['cats'] = cats
-
->>> shelf_file.close()
+>>> with shelve.open('mydata') as shelf_file:
+...     shelf_file['cats'] = cats
 ```
 
 To open and read variables:
 
 ```python
->>> shelf_file = shelve.open('mydata')
-
->>> type(shelf_file)
+>>> with shelve.open('mydata') as shelf_file:
+...     print(type(shelf_file))
+...     print(shelf_file['cats'])
 <class 'shelve.DbfilenameShelf'>
-
->>> shelf_file['cats']
 ['Zophie', 'Pooka', 'Simon']
-
->>> shelf_file.close()
 ```
 
 Just like dictionaries, shelf values have keys() and values() methods that will return list-like values of the keys and values in the shelf. Since these methods return list-like values instead of true lists, you should pass them to the list() function to get them in list form.
 
 ```python
->>> shelf_file = shelve.open('mydata')
-
->>> list(shelf_file.keys())
+>>> with shelve.open('mydata') as shelf_file:
+...     print(list(shelf_file.keys()))
+...     print(list(shelf_file.values()))
 ['cats']
-
->>> list(shelf_file.values())
 [['Zophie', 'Pooka', 'Simon']]
-
->>> shelf_file.close()
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -2273,12 +2246,9 @@ Just like dictionaries, shelf values have keys() and values() methods that will 
 >>> pprint.pformat(cats)
 "[{'desc': 'chubby', 'name': 'Zophie'}, {'desc': 'fluffy', 'name': 'Pooka'}]"
 
->>> file_obj = open('myCats.py', 'w')
-
->>> file_obj.write('cats = ' + pprint.pformat(cats) + '\n')
+>>> with open('myCats.py', 'w') as file_obj:
+...     file_obj.write('cats = ' + pprint.pformat(cats) + '\n')
 83
-
->>> file_obj.close()
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -2353,12 +2323,9 @@ The destination path can also specify a filename. In the following example, the 
 ```python
 >>> import send2trash
 
->>> bacon_file = open('bacon.txt', 'a') # creates the file
-
->>> bacon_file.write('Bacon is not a vegetable.')
+>>> with open('bacon.txt', 'a') as bacon_file: # creates the file
+...     bacon_file.write('Bacon is not a vegetable.')
 25
-
->>> bacon_file.close()
 
 >>> send2trash.send2trash('bacon.txt')
 ```
@@ -2406,24 +2373,17 @@ Output:
 >>> import zipfile, os
 
 >>> os.chdir('C:\\')    # move to the folder with example.zip
+>>> with zipfile.ZipFile('example.zip') as example_zip:
+...     print(example_zip.namelist())
+...     spam_info = example_zip.getinfo('spam.txt')
+...     print(spam_info.file_size)
+...     print(spam_info.compress_size)
+...     print('Compressed file is %sx smaller!' % (round(spam_info.file_size / spam_info.compress_size, 2)))
 
->>> example_zip = zipfile.ZipFile('example.zip')
-
->>> example_zip.namelist()
 ['spam.txt', 'cats/', 'cats/catnames.txt', 'cats/zophie.jpg']
-
->>> spamInfo = example_zip.getinfo('spam.txt')
-
->>> spamInfo.file_size
 13908
-
->>> spamInfo.compress_size
 3828
-
->>> 'Compressed file is %sx smaller!' % (round(spamInfo.file_size / spamInfo.compress_size, 2))
 'Compressed file is 3.63x smaller!'
-
->>> example_zip.close()
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -2437,23 +2397,18 @@ The extractall() method for ZipFile objects extracts all the files and folders f
 
 >>> os.chdir('C:\\')    # move to the folder with example.zip
 
->>> example_zip = zipfile.ZipFile('example.zip')
-
->>> example_zip.extractall()
-
->>> example_zip.close()
+>>> with zipfile.ZipFile('example.zip') as example_zip:
+...     example_zip.extractall()
 ```
 
 The extract() method for ZipFile objects will extract a single file from the ZIP file. Continue the interactive shell example:
 
 ```python
->>> example_zip.extract('spam.txt')
+>>> with zipfile.ZipFile('example.zip') as example_zip:
+...     print(example_zip.extract('spam.txt'))
+...     print(example_zip.extract('spam.txt', 'C:\\some\\new\\folders'))
 'C:\\spam.txt'
-
->>> example_zip.extract('spam.txt', 'C:\\some\\new\\folders')
 'C:\\some\\new\\folders\\spam.txt'
-
->>> example_zip.close()
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -2463,11 +2418,8 @@ The extract() method for ZipFile objects will extract a single file from the ZIP
 ```python
 >>> import zipfile
 
->>> new_zip = zipfile.ZipFile('new.zip', 'w')
-
->>> new_zip.write('spam.txt', compress_type=zipfile.ZIP_DEFLATED)
-
->>> new_zip.close()
+>>> with zipfile.ZipFile('new.zip', 'w') as new_zip:
+...     new_zip.write('spam.txt', compress_type=zipfile.ZIP_DEFLATED)
 ```
 
 This code will create a new ZIP file named new.zip that has the compressed contents of spam.txt.
@@ -2525,9 +2477,8 @@ The traceback is displayed by Python whenever a raised exception goes unhandled.
 >>> try:
          raise Exception('This is the error message.')
     except:
-         error_file = open('errorInfo.txt', 'w')
-         error_file.write(traceback.format_exc())
-         error_file.close()
+         with open('errorInfo.txt', 'w') as error_file:
+             error_file.write(traceback.format_exc())
          print('The traceback info was written to errorInfo.txt.')
 ```
 
