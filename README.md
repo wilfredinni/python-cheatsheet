@@ -1,6 +1,6 @@
 # About
 
-Basic cheatsheet for Python mostly based on the book writted by Al Sweigart, [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/3.0/) and many other sources.
+Basic cheatsheet for Python mostly based on the book written by Al Sweigart, [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/3.0/) and many other sources.
 
 ## Read It
 
@@ -135,7 +135,7 @@ Basic cheatsheet for Python mostly based on the book writted by Al Sweigart, [Au
 
 ### Math Operators
 
-From **Higuest** to **Lowest** precedence:
+From **Highest** to **Lowest** precedence:
 
 | Operators | Operation        | Example       |
 | --------- | ---------------- | ------------- |
