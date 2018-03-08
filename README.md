@@ -135,7 +135,7 @@ Basic cheatsheet for Python mostly based on the book written by Al Sweigart, [Au
 
 ### Math Operators
 
-From **Higuest** to **Lowest** precedence:
+From **Highest** to **Lowest** precedence:
 
 | Operators | Operation        | Example       |
 | --------- | ---------------- | ------------- |
