@@ -644,7 +644,7 @@ print(fortune)
 >>> spam = print('Hello!')
 Hello!
 
->>> None == spam
+>>> spam is None
 True
 ```
 
