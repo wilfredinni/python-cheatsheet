@@ -4,7 +4,7 @@ Basic cheatsheet for Python mostly based on the book written by Al Sweigart, [Au
 
 ## Contribute
 
-All contributions will be welcome. You can:
+All contributions are welcome. You can:
 
 - Read the issues, Fork the project and do a Pull Request.
 - Request a new topic creating a `New issue` with the  `enhancement` tag.
