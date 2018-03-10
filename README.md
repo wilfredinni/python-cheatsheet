@@ -9,7 +9,7 @@ All contributions are welcome. You can:
 - Read the issues, Fork the project and do a Pull Request.
 - Request a new topic creating a `New issue` with the  `enhancement` tag.
 - Find any kind of errors in the cheat sheet and create a `New issue` with the details.
-- Suggest better or more pythonic ways for existing examples ( create a `New issue` with details and examples).
+- Suggest a better or more pythonic way for existing examples ( create a `New issue` with details and examples).
 
 ## Read It
 
