@@ -2,6 +2,15 @@
 
 Basic cheatsheet for Python mostly based on the book written by Al Sweigart, [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/3.0/) and many other sources.
 
+## Contribute
+
+All contributions will be welcome. You can:
+
+- Read the issues, Fork the project and do a Pull Request.
+- Request a new topic creating a `New issue` with the  `enhancement` tag.
+- Find any kind of errors in the cheat sheet and create a `New issue` with the details.
+- Suggest better or more pythonic ways for existing examples ( create a `New issue` with details and examples).
+
 ## Read It
 
 - [Online](https://wilfredinni.github.io/python-cheatsheet/)
