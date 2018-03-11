@@ -17,6 +17,21 @@ All contributions are welcome. You can:
 - [Github](https://github.com/wilfredinni/python-cheatsheet)
 - [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
 
+## Foreword
+
+This document uses the Python REPL syntax, that allow to show some Python commands and the actual
+result on the console:
+
+- code lines start with `>>>`
+- Output lines start directly
+
+Example:
+
+```python
+>>> 1 + 2
+3
+```
+
 ## Python Cheatsheet
 
 - [Python Basics](#python-basics)
@@ -40,6 +55,7 @@ All contributions are welcome. You can:
     - [break Statements](#break-statements)
     - [continue Statements](#continue-statements)
     - [for Loops and the range() Function](#for-loops-and-the-range-function)
+    - [For else statement](#for-else-statement)
     - [Importing Modules](#importing-modules)
     - [Ending a Program Early with sys.exit()](#ending-a-program-early-with-sysexit)
 - [Functions](#functions)
@@ -49,6 +65,8 @@ All contributions are welcome. You can:
     - [Local and Global Scope](#local-and-global-scope)
     - [The global Statement](#the-global-statement)
 - [Exception Handling](#exception-handling)
+    - [Basic exception handling](#basic-exception-handling)
+    - [Final code in exception handling](#final-code-in-exception-handling)
 - [Lists](#lists)
     - [Getting Individual Values in a List with Indexes](#getting-individual-values-in-a-list-with-indexes)
     - [Negative Indexes](#negative-indexes)
@@ -73,6 +91,10 @@ All contributions are welcome. You can:
     - [The get() Method](#the-get-method)
     - [The setdefault() Method](#the-setdefault-method)
     - [Pretty Printing](#pretty-printing)
+- [Comprehensions](#comprehensions)
+    - [List comprehension](#list-comprehension)
+    - [Set comprehension](#set-comprehension)
+    - [Dict comprehension](#dict-comprehension)
 - [Manipulating Strings](#manipulating-strings)
     - [Escape Characters](#escape-characters)
     - [Raw Strings](#raw-strings)
@@ -89,6 +111,7 @@ All contributions are welcome. You can:
 - [String Formatting](#string-formatting)
     - [% operator](#operator)
     - [String Formatting (str.format)](#string-formatting-strformat)
+    - [Lazy string formatting](#lazy-string-formatting)
     - [Formatted String Literals (Python 3.6+)](#formatted-string-literals-python-36)
     - [Template Strings](#template-strings)
 - [Regular Expressions](#regular-expressions)
@@ -132,6 +155,10 @@ All contributions are welcome. You can:
     - [Reading ZIP Files](#reading-zip-files)
     - [Extracting from ZIP Files](#extracting-from-zip-files)
     - [Creating and Adding to ZIP Files](#creating-and-adding-to-zip-files)
+- [JSON, YAML and configuration files](#json-yaml-and-configuration-files)
+    - [JSON](#json)
+    - [YAML](#yaml)
+    - [Anyconfig](#anyconfig)
 - [Debugging](#debugging)
     - [Raising Exceptions](#raising-exceptions)
     - [Getting the Traceback as a String](#getting-the-traceback-as-a-string)
@@ -151,34 +178,44 @@ All contributions are welcome. You can:
 
 From **Highest** to **Lowest** precedence:
 
-| Operators | Operation        | Example       |
-| --------- | ---------------- | ------------- |
-| **        | Exponent         | 2 ** 3 = 8    |
-| %         | Modulus/Remaider | 22 % 8 = 6    |
-| //        | Integer division | 22 // 8 = 2   |
-| /         | Division         | 22 / 8 = 2.75 |
-| *         | Multiplication   | 3 * 3 = 9     |
-| -         | Subtraction      | 5 - 2 = 3     |
-| +         | Addition         | 2 + 2 = 4     |
+| Operators | Operation        | Example         |
+| --------- | ---------------- | --------------- |
+| **        | Exponent         | `2 ** 3 = 8`    |
+| %         | Modulus/Remaider | `22 % 8 = 6`    |
+| //        | Integer division | `22 // 8 = 2`   |
+| /         | Division         | `22 / 8 = 2.75` |
+| *         | Multiplication   | `3 * 3 = 9`     |
+| -         | Subtraction      | `5 - 2 = 3`     |
+| +         | Addition         | `2 + 2 = 4`     |
 
 Examples of expressions in the interactive shell:
 
 ```python
 >>> 2 + 3 * 6
 20
+```
 
+```python
 >>> (2 + 3) * 6
 30
+```
 
+```python
 >>> 2 ** 8
 256
+```
 
+```python
 >>> 23 // 7
 3
+```
 
+```python
 >>> 23 % 7
 2
+```
 
+```python
 >>> (5 - 1) * ((7 + 1) / (3 - 1))
 16.0
 ```
@@ -187,11 +224,11 @@ Examples of expressions in the interactive shell:
 
 ### Data Types
 
-| Data Type              | Examples                                |
-| ---------------------- | --------------------------------------- |
-| Integers               | -2, -1, 0, 1, 2, 3, 4, 5                |
-| Floating-point numbers | -1.25, -1.0, --0.5, 0.0, 0.5, 1.0, 1.25 |
-| Strings                | 'a', 'aa', 'aaa', 'Hello!', '11 cats'   |
+| Data Type              | Examples                                  |
+| ---------------------- | ----------------------------------------- |
+| Integers               | `-2, -1, 0, 1, 2, 3, 4, 5`                |
+| Floating-point numbers | `-1.25, -1.0, --0.5, 0.0, 0.5, 1.0, 1.25` |
+| Strings                | `'a', 'aa', 'aaa', 'Hello!', '11 cats'`   |
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -200,9 +237,11 @@ Examples of expressions in the interactive shell:
 String concatenation:
 
 ```python
->>> 'Alice' + 'Bob'
+>>> 'Alice' 'Bob'
 'AliceBob'
 ```
+
+PS: Avoid `+` operator for string concatenation. Prefer string formatting.
 
 String Replication:
 
@@ -218,8 +257,9 @@ String Replication:
 You can name a variable anything as long as it obeys the following three rules:
 
 1. It can be only one word.
-1. It can use only letters, numbers, and the underscore (_) character.
+1. It can use only letters, numbers, and the underscore (`_`) character.
 1. It can’t begin with a number.
+1. Variable name starting with an underscore (`_`) are considered as "unuseful`
 
 Example:
 
@@ -228,6 +268,12 @@ Example:
 >>> spam
 'Hello'
 ```
+
+```python
+>>> _spam = 'Hello'
+```
+
+`_spam` should not be used again in the code.
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -245,6 +291,14 @@ Multiline comment:
 # This is a
 # multiline comment
 ```
+
+Code with a comment
+
+```python
+a = 1  # initialization
+```
+
+Please note the two spaces in front of the comment
 
 Function docstring:
 
@@ -266,6 +320,12 @@ def foo():
 Hello world!
 ```
 
+```python
+>>> a = 1
+>>> print('Hello world!', a)
+Hello world! 1
+```
+
 [*Return to the Top*](#python-cheatsheet)
 
 ### The input() Function
@@ -273,16 +333,13 @@ Hello world!
 Example Code:
 
 ```python
->>> print('What is your name?')    # ask for their name
+>>> print('What is your name?')   # ask for their name
 >>> myName = input()
->>> print('It is good to meet you, ' + myName)
+>>> print('It is good to meet you, {}'.format(myName))
+What is your name?
+Al
+It is good to meet you, Al
 ```
-
-Output:
-
-    What is your name?
-    Al
-    It is good to meet you, Al
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -293,6 +350,15 @@ Evaluates to the integer value of the number of characters in a string:
 ```python
 >>> len('hello')
 5
+```
+
+PS: test of emptiness of strings, lists, dictionary, etc, should **not** use len, but prefer direct
+boolean evaluation.
+
+```python
+>>> a = [1, 2, 3]
+>>> if a:
+>>>     print("the list is not empty!")
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -306,10 +372,14 @@ Integer to String or Float:
 ```python
 >>> str(29)
 '29'
+```
 
+```python
 >>> print('I am ' + str(29) + ' years old.')
 I am 29 years old.
+```
 
+```python
 >>> str(-3.14)
 '-3.14'
 ```
@@ -319,7 +389,9 @@ Float to Integer:
 ```python
 >>> int(7.7)
 7
+```
 
+```python
 >>> int(7.7) + 1
 8
 ```
@@ -332,12 +404,12 @@ Float to Integer:
 
 | Operator | Meaning                  |
 | -------- | ------------------------ |
-| ==       | Equal to                 |
-| !=       | Not equal to             |
-| <        | Less than                |
-| >        | Greater Than             |
-| <=       | Less than or Equal to    |
-| >=       | Greater than or Equal to |
+| `==`     | Equal to                 |
+| `!=`     | Not equal to             |
+| `<`      | Less than                |
+| `>`      | Greater Than             |
+| `<=`     | Less than or Equal to    |
+| `>=`     | Greater than or Equal to |
 
 These operators evaluate to True or False depending on the values you give them:
 
@@ -359,17 +431,56 @@ False
 >>> 'dog' != 'cat'
 True
 
->>> True == True
-True
-
->>> True != False
-True
-
 >>> 42 == 42.0
 True
 
 >>> 42 == '42'
 False
+```
+
+### Boolean evaluation
+
+Never use `==` or `!=` operator to evaluate boolean operation. Use the `is` or `is not` operators,
+or use implicit boolean evaluation.
+
+NO (even if they are valid Python):
+
+```python
+>>> True == True
+True
+
+>>> True != False
+True
+```
+
+YES (even if they are valid Python):
+
+```python
+>>> True is True
+True
+
+>>> True is not False
+True
+```
+
+These two statements are equivalent:
+
+```Python
+>>> if a is True:
+
+>>> if a is not False:
+
+>>> if a:
+```
+
+And these two as well:
+
+```Python
+>>> if a is False:
+
+>>> if a is not True:
+
+>>> if not a:
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -380,28 +491,28 @@ There are three Boolean operators: and, or, and not.
 
 The *and* Operator’s *Truth* Table:
 
-| Expression      | Evaluates to |
-| --------------- | ------------ |
-| True and True   | True         |
-| True and False  | False        |
-| False and True  | False        |
-| False and False | False        |
+| Expression        | Evaluates to |
+| ----------------- | ------------ |
+| `True and True`   | `True`      |
+| `True and False`  | `False`     |
+| `False and True`  | `False`     |
+| `False and False` | `False`     |
 
 The *or* Operator’s *Truth* Table:
 
-| Expression     | Evaluates to |
-| -------------- | ------------ |
-| True or True   | True         |
-| True or False  | True         |
-| False or True  | True         |
-| False or False | False        |
+| Expression       | Evaluates to   |
+| ---------------- | -------------- |
+| `True or True`   | `True`         |
+| `True or False`  | `True`         |
+| `False or True`  | `True`         |
+| `False or False` | `False`        |
 
 The *not* Operator’s *Truth* Table:
 
-| Expression | Evaluates to |
-| ---------- | ------------ |
-| not True   | False        |
-| not False  | True         |
+| Expression   | Evaluates to  |
+| ------------ | ------------- |
+| `not True`   | `False`       |
+| `not False`  | `True`        |
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -504,14 +615,14 @@ When the program execution reaches a continue statement, the program execution i
 
 ```python
 while True:
-  print('Who are you?')
-  name = input()
-  if name != 'Joe':
-    continue
-  print('Hello, Joe. What is the password? (It is a fish.)')
-  password = input()
-  if password == 'swordfish':
-    break
+    print('Who are you?')
+    name = input()
+    if name != 'Joe':
+        continue
+    print('Hello, Joe. What is the password? (It is a fish.)')
+    password = input()
+    if password == 'swordfish':
+        break
 print('Access granted.')
 ```
 
@@ -520,50 +631,54 @@ print('Access granted.')
 ### for Loops and the range() Function
 
 ```python
-print('My name is')
-for i in range(5):
-    print('Jimmy Five Times (' + str(i) + ')')
+>>> print('My name is')
+>>> for i in range(5):
+>>>     print('Jimmy Five Times (' + str(i) + ')')
+My name is
+Jimmy Five Times (0)
+Jimmy Five Times (1)
+Jimmy Five Times (2)
+Jimmy Five Times (3)
+Jimmy Five Times (4)
 ```
-
-Output:
-
-    My name is
-    Jimmy Five Times (0)
-    Jimmy Five Times (1)
-    Jimmy Five Times (2)
-    Jimmy Five Times (3)
-    Jimmy Five Times (4)
 
 The *range()* function can also be called with three arguments. The first two arguments will be the start and stop values, and the third will be the step argument. The step is the amount that the variable is increased by after each iteration.
 
 ```python
-for i in range(0, 10, 2):
-    print(i)
+>>> for i in range(0, 10, 2):
+>>>    print(i)
+0
+2
+4
+6
+8
 ```
-
-Output:
-
-    0
-    2
-    4
-    6
-    8
 
 You can even use a negative number for the step argument to make the for loop count down instead of up.
 
 ```python
-for i in range(5, -1, -1):
-    print(i)
+>>> for i in range(5, -1, -1):
+>>>     print(i)
+5
+4
+3
+2
+1
+0
 ```
 
-Output:
+### For else statement
 
-    5
-    4
-    3
-    2
-    1
-    0
+This allows to specify a statement to execute in case of the full loop has been executed. Only
+useful when a `break` condition can occur in the loop
+
+```python
+>>> for i in [1, 2, 3, 4, 5]:
+>>>    if i == 3:
+>>>        break
+>>> else:
+>>>    print("only executed when no item of the list is equal to 3")
+```
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -603,17 +718,14 @@ while True:
 ## Functions
 
 ```python
-def hello(name):
-    print('Hello ' + name)
-
-hello('Alice')
-hello('Bob')
+>>> def hello(name):
+>>>     print('Hello ' + name)
+>>> 
+>>> hello('Alice')
+>>> hello('Bob')
+Hello Alice
+Hello Bob
 ```
-
-Output:
-
-    Hello Alice
-    Hello Bob
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -659,23 +771,24 @@ print(fortune)
 ```python
 >>> spam = print('Hello!')
 Hello!
+```
 
+```python
 >>> spam is None
 True
 ```
+
+PS: nevel compares to None with the `==` operator.
 
 [*Return to the Top*](#python-cheatsheet)
 
 ### Keyword Arguments and print()
 
 ```python
-print('Hello', end='')
-print('World')
+>>> print('Hello', end='')
+>>> print('World')
+HelloWorld
 ```
-
-Output:
-
-    HelloWorld
 
 ```python
 >>> print('cats', 'dogs', 'mice')
@@ -706,18 +819,15 @@ cats,dogs,mice
 If you need to modify a global variable from within a function, use the global statement:
 
 ```python
-def spam():
-    global eggs
-    eggs = 'spam'
-
-eggs = 'global'
-spam()
-print(eggs)
+>>> def spam():
+>>>     global eggs
+>>>     eggs = 'spam'
+>>> 
+>>> eggs = 'global'
+>>> spam()
+>>> print(eggs)
+spam
 ```
-
-Output:
-
-    spam
 
 There are four rules to tell whether a variable is in a local scope or global scope:
 
@@ -733,26 +843,56 @@ There are four rules to tell whether a variable is in a local scope or global sc
 
 ## Exception Handling
 
-```python
-def spam(divideBy):
-    try:
-        return 42 / divideBy
-    except ZeroDivisionError:
-        print('Error: Invalid argument.')
+### Basic exception handling
 
-print(spam(2))
-print(spam(12))
-print(spam(0))
-print(spam(1))
+```python
+>>> def spam(divideBy):
+>>>     try:
+>>>         return 42 / divideBy
+>>>     except ZeroDivisionError as e:
+>>>         print('Error: Invalid argument: {}'.format(e))
+>>> 
+>>> print(spam(2))
+>>> print(spam(12))
+>>> print(spam(0))
+>>> print(spam(1))
+21.0
+3.5
+Error: Invalid argument: division by zero
+None
+42.0
 ```
 
-Output:
+[*Return to the Top*](#python-cheatsheet)
 
-    21.0
-    3.5
-    Error: Invalid argument.
-    None
-    42.0
+### Final code in exception handling
+
+Code inside the `finally` section is always executed, no matter if an exception has been raised or
+not, and even if an exception is not caught.
+
+```python
+>>> def spam(divideBy):
+>>>     try:
+>>>         return 42 / divideBy
+>>>     except ZeroDivisionError as e:
+>>>         print('Error: Invalid argument: {}'.format(e))
+>>>     finally:
+>>>         print("-- division finished --")
+>>> print(spam(12))
+>>> print(spam(0))
+21.0
+-- division finished --
+3.5
+-- division finished --
+Error: Invalid argument: division by zero
+-- division finished --
+None
+-- division finished --
+42.0
+-- division finished --
+```
+
+
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -908,17 +1048,13 @@ Output:
 
 ```python
 >>> supplies = ['pens', 'staplers', 'flame-throwers', 'binders']
-
 >>> for i, supply in enumerate(supplies):
-        print('Index ' + str(i) + ' in supplies is: ' + supply)
+>>>     print('Index ' + str(i) + ' in supplies is: ' + supply)
+Index 0 in supplies is: pens
+Index 1 in supplies is: staplers
+Index 2 in supplies is: flame-throwers
+Index 3 in supplies is: binders
 ```
-
-Output:
-
-    Index 0 in supplies is: pens
-    Index 1 in supplies is: staplers
-    Index 2 in supplies is: flame-throwers
-    Index 3 in supplies is: binders
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -982,13 +1118,13 @@ The multiple assignment trick can also be used to swap the values in two variabl
 
 ### Augmented Assignment Operators
 
-| Operator  | Equivalent      |
-| --------- | --------------- |
-| spam += 1 | spam = spam + 1 |
-| spam -= 1 | spam = spam - 1 |
-| spam *= 1 | spam = spam * 1 |
-| spam /= 1 | spam = spam / 1 |
-| spam %= 1 | spam = spam % 1 |
+| Operator    | Equivalent        |
+| ----------- | ----------------- |
+| `spam += 1` | `spam = spam + 1` |
+| `spam -= 1` | `spam = spam - 1` |
+| `spam *= 1` | `spam = spam * 1` |
+| `spam /= 1` | `spam = spam / 1` |
+| `spam %= 1` | `spam = spam % 1` |
 
 Examples:
 
@@ -1148,54 +1284,42 @@ myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
 
 ```python
 >>> spam = {'color': 'red', 'age': 42}
-
 >>> for v in spam.values():
-        print(v)
+>>>     print(v)
+red
+42
 ```
-
-Output:
-
-    red
-    42
 
 **keys():**
 
 ```python
 >>> for k in spam.keys():
-        print(k)
+>>>     print(k)
+color
+age
 ```
-
-Output:
-
-    color
-    age
 
 **items():**
 
 ```python
 >>> for i in spam.items():
-        print(i)
+>>>     print(i)
+('color', 'red')
+('age', 42)
 ```
-
-Output:
-
-    ('color', 'red')
-    ('age', 42)
 
 Using the keys(), values(), and items() methods, a for loop can iterate over the keys, values, or key-value pairs in a dictionary, respectively.
 
 ```python
 
 >>> spam = {'color': 'red', 'age': 42}
-
+>>>
 >>> for k, v in spam.items():
-        print('Key: ' + k + ' Value: ' + str(v))
+>>>     print('Key: ' + k + ' Value: ' + str(v))
+Key: age Value: 42
+Key: color Value: red
 ```
 
-Output:
-
-    Key: age Value: 42
-    Key: color Value: red
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -1203,20 +1327,30 @@ Output:
 
 ```python
 >>> spam = {'name': 'Zophie', 'age': 7}
+```
 
+```python
 >>> 'name' in spam.keys()
 True
+```
 
+```python
 >>> 'Zophie' in spam.values()
 True
+```
 
+```python
 >>> # You can omit the call to keys() when checking for a key
 >>> 'color' in spam
 False
+```
 
+```python
 >>> 'color' not in spam
 True
+```
 
+```python
 >>> 'color' in spam
 False
 ```
@@ -1269,70 +1403,101 @@ The above code is equal to:
 ### Pretty Printing
 
 ```python
-import pprint
-
-message = 'It was a bright cold day in April, and the clocks were striking
-thirteen.'
-count = {}
-
-for character in message:
-    count.setdefault(character, 0)
-    count[character] = count[character] + 1
-
-pprint.pprint(count)
+>>> import pprint
+>>> 
+>>> message = 'It was a bright cold day in April, and the clocks were striking
+>>> thirteen.'
+>>> count = {}
+>>> 
+>>> for character in message:
+>>>     count.setdefault(character, 0)
+>>>     count[character] = count[character] + 1
+>>> 
+>>> pprint.pprint(count)
+{' ': 13,
+ ',': 1,
+ '.': 1,
+ 'A': 1,
+ 'I': 1,
+ 'a': 4,
+ 'b': 1,
+ 'c': 3,
+ 'd': 3,
+ 'e': 5,
+ 'g': 2,
+ 'h': 3,
+ 'i': 6,
+ 'k': 2,
+ 'l': 3,
+ 'n': 4,
+ 'o': 2,
+ 'p': 1,
+ 'r': 5,
+ 's': 3,
+ 't': 6,
+ 'w': 2,
+ 'y': 1}
 ```
 
-Output:
-
-    {' ': 13,
-     ',': 1,
-     '.': 1,
-     'A': 1,
-     'I': 1,
-     'a': 4,
-     'b': 1,
-     'c': 3,
-     'd': 3,
-     'e': 5,
-     'g': 2,
-     'h': 3,
-     'i': 6,
-     'k': 2,
-     'l': 3,
-     'n': 4,
-     'o': 2,
-     'p': 1,
-     'r': 5,
-     's': 3,
-     't': 6,
-     'w': 2,
-     'y': 1}
-
 [*Return to the Top*](#python-cheatsheet)
+
+## Comprehensions
+
+### List comprehension
+
+```python
+>>> a = [1, 3, 5, 7, 9, 11]
+
+>>> [i - 1 for i in a]
+[0, 2, 4, 6, 8, 10]
+```
+
+### Set comprehension
+
+```python
+>>> b = {"abc", "def}
+
+>>> {s.upper() for s in b}
+{"ABC", "DEF}
+```
+
+### Dict comprehension
+
+```python
+>>> c = {'name': 'Pooka', 'age': 5}
+
+>>> {v, k for k, v in c.items()}
+{'Pooka': 'name', 5: 'age'}
+```
+
+A List comprehension can be generated from a dictionary:
+
+```python
+>>> c = {'name': 'Pooka', 'first_name': 'Oooka'}
+>>> ["{}:{}".format(k.upper(), v.upper()) for k, v in c.items()]
+['NAME:POOKA', 'FIRST_NAME:OOOKA']
+```
 
 ## Manipulating Strings
 
 ### Escape Characters
 
-| Escape character | Prints as            |
-| ---------------- | -------------------- |
-| \'               | Single quote         |
-| \"               | Double quote         |
-| \t               | Tab                  |
-| \n               | Newline (line break) |
-| \\               | Backslash            |
+| Escape character   | Prints as            |
+| ------------------ | -------------------- |
+| `\'`               | Single quote         |
+| `\"`               | Double quote         |
+| `\t`               | Tab                  |
+| `\n`               | Newline (line break) |
+| `\\`               | Backslash            |
 
 Example:
 
 ```python
 >>> print("Hello there!\nHow are you?\nI\'m doing fine.")
+Hello there!
+How are you?
+I'm doing fine.
 ```
-
-Output:
-
-    Hello there!
-    How are you?
-    I'm doing fine.
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -1342,33 +1507,47 @@ A raw string completely ignores all escape characters and prints any backslash t
 
 ```python
 >>> print(r'That is Carol\'s cat.')
+That is Carol\'s cat.
 ```
 
-Output:
-
-    That is Carol\'s cat.
-
 [*Return to the Top*](#python-cheatsheet)
+
+PS: mostly used for regular expression definition (see `re` package)
 
 ### Multiline Strings with Triple Quotes
 
 ```python
-print('''Dear Alice,
+>>> print('''Dear Alice,
+>>> 
+>>> Eve's cat has been arrested for catnapping, cat burglary, and extortion.
+>>> 
+>>> Sincerely,
+>>> Bob''')
+Dear Alice,
 
 Eve's cat has been arrested for catnapping, cat burglary, and extortion.
 
 Sincerely,
-Bob''')
+Bob
 ```
 
-Output:
+To keep a nicer flow in your code, you can use the `dedent` function from the `textwrap` standard package.
 
-    Dear Alice,
+```python
+>>> from textwrap import dedent
+>>> 
+>>> def my_function():
+>>>     print('''
+>>>         Dear Alice,
+>>> 
+>>>         Eve's cat has been arrested for catnapping, cat burglary, and extortion.
+>>> 
+>>>         Sincerely,
+>>>         Bob
+>>>         ''').strip()
+```
 
-    Eve's cat has been arrested for catnapping, cat burglary, and extortion.
-
-    Sincerely,
-    Bob
+This generates the same string than before.
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -1382,30 +1561,54 @@ Output:
 
 >>> spam[0]
 'H'
+```
 
+```python
 >>> spam[4]
 'o'
+```
 
+```python
 >>> spam[-1]
 '!'
-
->>> spam[0:5]
-'Hello'
-
->>> spam[:5]
-'Hello'
-
->>> spam[6:]
-'world!'
 ```
 
 Slicing:
 
 ```python
+
+>>> spam[0:5]
+'Hello'
+```
+
+```python
+>>> spam[:5]
+'Hello'
+```
+
+```python
+>>> spam[6:]
+'world!'
+```
+
+```python
+>>> spam[6:-1]
+'world'
+```
+
+```python
+>>> spam[:-1]
+'Hello world'
+```
+
+```python
+>>> spam[::-1]
+'!dlrow olleH'
+```
+
+```python
 >>> spam = 'Hello world!'
-
 >>> fizz = spam[0:5]
-
 >>> fizz
 'Hello'
 ```
@@ -1417,60 +1620,89 @@ Slicing:
 ```python
 >>> 'Hello' in 'Hello World'
 True
+```
 
+```python
 >>> 'Hello' in 'Hello'
 True
+```
 
+```python
 >>> 'HELLO' in 'Hello World'
 False
+```
 
+```python
 >>> '' in 'spam'
 True
+```
 
+```python
 >>> 'cats' not in 'cats and dogs'
 False
+```
+
+### The in and not in Operators with list
+
+```python
+>>> a = [1, 2, 3, 4]
+>>> 5 in a
+False
+```
+
+```python
+>>> 2 in a
+True
 ```
 
 [*Return to the Top*](#python-cheatsheet)
 
 ### The upper(), lower(), isupper(), and islower() String Methods
 
-upper() and lower():
+`upper()` and `lower()`:
 
 ```python
 >>> spam = 'Hello world!'
-
 >>> spam = spam.upper()
-
 >>> spam
 'HELLO WORLD!'
+```
 
+```python
 >>> spam = spam.lower()
-
 >>> spam
 'hello world!'
 ```
 
- isupper() and islower():
+isupper() and islower():
 
 ```python
 >>> spam = 'Hello world!'
-
 >>> spam.islower()
 False
+```
 
+```python
 >>> spam.isupper()
 False
+```
 
+```python
 >>> 'HELLO'.isupper()
 True
+```
 
+```python
 >>> 'abc12345'.islower()
 True
+```
 
+```python
 >>> '12345'.islower()
 False
+```
 
+```python
 >>> '12345'.isupper()
 False
 ```
@@ -1492,19 +1724,29 @@ False
 ```python
 >>> 'Hello world!'.startswith('Hello')
 True
+```
 
+```python
 >>> 'Hello world!'.endswith('world!')
 True
+```
 
+```python
 >>> 'abc123'.startswith('abcdef')
 False
+```
 
+```python
 >>> 'abc123'.endswith('12')
 False
+```
 
+```python
 >>> 'Hello world!'.startswith('Hello world!')
 True
+```
 
+```python
 >>> 'Hello world!'.endswith('Hello world!')
 True
 ```
@@ -1518,10 +1760,14 @@ join():
 ```python
 >>> ', '.join(['cats', 'rats', 'bats'])
 'cats, rats, bats'
+```
 
+```python
 >>> ' '.join(['My', 'name', 'is', 'Simon'])
 'My name is Simon'
+```
 
+```python
 >>> 'ABC'.join(['My', 'name', 'is', 'Simon'])
 'MyABCnameABCisABCSimon'
 ```
@@ -1531,10 +1777,14 @@ split():
 ```python
 >>> 'My name is Simon'.split()
 ['My', 'name', 'is', 'Simon']
+```
 
+```python
 >>> 'MyABCnameABCisABCSimon'.split('ABC')
 ['My', 'name', 'is', 'Simon']
+```
 
+```python
 >>> 'My name is Simon'.split('m')
 ['My na', 'e is Si', 'on']
 ```
@@ -1548,13 +1798,19 @@ rjust() and ljust():
 ```python
 >>> 'Hello'.rjust(10)
 '     Hello'
+```
 
+```python
 >>> 'Hello'.rjust(20)
 '               Hello'
+```
 
+```python
 >>> 'Hello World'.rjust(20)
 '         Hello World'
+```
 
+```python
 >>> 'Hello'.ljust(10)
 'Hello     '
 ```
@@ -1564,7 +1820,9 @@ An optional second argument to rjust() and ljust() will specify a fill character
 ```python
 >>> 'Hello'.rjust(20, '*')
 '***************Hello'
+```
 
+```python
 >>> 'Hello'.ljust(20, '-')
 'Hello---------------'
 ```
@@ -1574,7 +1832,9 @@ center():
 ```python
 >>> 'Hello'.center(20)
 '       Hello       '
+```
 
+```python
 >>> 'Hello'.center(20, '=')
 '=======Hello========'
 ```
@@ -1585,13 +1845,16 @@ center():
 
 ```python
 >>> spam = '    Hello World     '
-
 >>> spam.strip()
 'Hello World'
+```
 
+```python
 >>> spam.lstrip()
 'Hello World '
+```
 
+```python
 >>> spam.rstrip()
 '    Hello World'
 ```
@@ -1599,13 +1862,12 @@ center():
 ```python
 >>> spam = 'SpamSpamBaconSpamEggsSpamSpam'
 >>> spam.strip('ampS')
-
 'BaconSpamEggs'
 ```
 
 [*Return to the Top*](#python-cheatsheet)
 
-### Copying and Pasting Strings with the pyperclip Module
+### Copying and Pasting Strings with the pyperclip Module (need pip install)
 
 ```python
 >>> import pyperclip
@@ -1622,6 +1884,8 @@ center():
 
 ### % operator
 
+Note: For new code prefere using str.format over the `%` operator.
+
 ```python
 >>> name = 'Pete'
 >>> 'Hello %s' % name
@@ -1636,6 +1900,7 @@ We can use the `%x` format specifier to convert an int value to a string:
 "I have 5 apples"
 ```
 
+
 [*Return to the Top*](#python-cheatsheet)
 
 ### String Formatting (str.format)
@@ -1644,13 +1909,46 @@ Python 3 introduced a new way to do string formatting that was later back-ported
 
 ```python
 >>> name = 'John'
->>> 'Hello {}'.format(name)
-'Hello John'
+>>> age = 20'
+
+>>> "Hello I'm {}, my age is {}".format(name, age)
+"Hello I'm John, my age is 20"
+```
+
+```python
+>>> "Hello I'm {0}, my age is {1}".format(name, age)
+"Hello I'm John, my age is 20"
 ```
 
 The official [Python 3.x documentation](https://docs.python.org/3/library/stdtypes.html?highlight=sprintf#printf-style-string-formatting) recommend `str.format` over the `%` operator:
 
 > The formatting operations described here exhibit a variety of quirks that lead to a number of common errors (such as failing to display tuples and dictionaries correctly). Using the newer formatted string literals or the str.format() interface helps avoid these errors. These alternatives also provide more powerful, flexible and extensible approaches to formatting text.
+
+[*Return to the Top*](#python-cheatsheet)
+
+### Lazy string formatting
+
+You would only use `%s` string formatting on functions that can do lazy parameters evaluation,
+the most common being logging:
+
+Prefer:
+
+```python
+>>> name = "alice"
+>>> logging.debug("User name: %s", name)
+```
+
+Over:
+
+```python
+>>> logging.debug("User name: {}".format(name))
+```
+
+Or:
+
+```python
+>>> logging.debug("User name: " + name)
+```
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -1689,10 +1987,10 @@ It is even possible to do inline arithmetic with it:
 
 ## Regular Expressions
 
-1. Import the regex module with import re.
-1. Create a Regex object with the re.compile() function. (Remember to use a raw string.)
-1. Pass the string you want to search into the Regex object’s search() method. This returns a Match object.
-1. Call the Match object’s group() method to return a string of the actual matched text.
+1. Import the regex module with `import re`.
+1. Create a Regex object with the `re.compile()` function. (Remember to use a raw string.)
+1. Pass the string you want to search into the Regex object’s `search()` method. This returns a `Match` object.
+1. Call the Match object’s `group()` method to return a string of the actual matched text.
 
 All the regex functions in Python are in the re module:
 
@@ -2024,23 +2322,23 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 
 ### Review of Regex Symbols
 
-| Symbol             | Matches                                                      |
-| ------------------ | ------------------------------------------------------------ |
-| ?                  | zero or one of the preceding group.                          |
-| *                  | zero or more of the preceding group.                         |
-| +                  | one or more of the preceding group.                          |
-| {n}                | exactly n of the preceding group.                            |
-| {n,}               | n or more of the preceding group.                            |
-| {,m}               | 0 to m of the preceding group.                               |
-| {n,m}              | at least n and at most m of the preceding p.                 |
-| {n,m}? or *? or +? | performs a nongreedy match of the preceding p.               |
-| ^spam              | means the string must begin with spam.                       |
-| spam$              | means the string must end with spam.                         |
-| .                  | any character, except newline characters.                    |
-| \d, \w, and \s     | a digit, word, or space character, ectively.                 |
-| \D, \W, and \S     | anything except a digit, word, or space acter, respectively. |
-| [abc]              | any character between the brackets (such as a, b, ).         |
-| [^abc]             | any character that isn’t between the brackets.              |
+| Symbol                   | Matches                                                      |
+| ------------------------ | ------------------------------------------------------------ |
+| `?`                      | zero or one of the preceding group.                          |
+| `*`                      | zero or more of the preceding group.                         |
+| `+`                      | one or more of the preceding group.                          |
+| `{n}`                    | exactly n of the preceding group.                            |
+| `{n,}`                   | n or more of the preceding group.                            |
+| `{,m}`                   | 0 to m of the preceding group.                               |
+| `{n,m}`                  | at least n and at most m of the preceding p.                 |
+| `{n,m}?` or `*?` or `+?` | performs a nongreedy match of the preceding p.               |
+| `^spam`                  | means the string must begin with spam.                       |
+| `spam$`                  | means the string must end with spam.                         |
+| `.`                      | any character, except newline characters.                    |
+| `\d`, `\w`, and `\s`     | a digit, word, or space character, ectively.                 |
+| `\D`, `\W`, and `\S`     | anything except a digit, word, or space acter, respectively. |
+| `[abc]`                  | any character between the brackets (such as a, b, ).         |
+| `[^abc]`                 | any character that isn’t between the brackets.               |
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -2174,14 +2472,11 @@ Using `os.path.join` on Windows:
 >>> my_files = ['accounts.txt', 'details.csv', 'invite.docx']
 
 >>> for filename in my_files:
-        print(os.path.join('C:\\Users\\asweigart', filename))
+>>>     print(os.path.join('C:\\Users\\asweigart', filename))
+C:\Users\asweigart\accounts.txt
+C:\Users\asweigart\details.csv
+C:\Users\asweigart\invite.docx
 ```
-
-Output:
-
-    C:\Users\asweigart\accounts.txt
-    C:\Users\asweigart\details.csv
-    C:\Users\asweigart\invite.docx
 
 Using `pathlib` on \*nix:
 
@@ -2189,14 +2484,11 @@ Using `pathlib` on \*nix:
 >>> my_files = ['accounts.txt', 'details.csv', 'invite.docx']
 >>> home = Path.home()
 >>> for filename in my_files:
-        print(home / filename)
+>>>     print(home / filename)
+/home/asweigart/accounts.txt
+/home/asweigart/details.csv
+/home/asweigart/invite.docx
 ```
-
-Output:
-
-    /home/asweigart/accounts.txt
-    /home/asweigart/details.csv
-    /home/asweigart/invite.docx
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -2472,22 +2764,19 @@ Listing directory contents using `pathlib` on \*nix:
 ```python
 >>> from pathlib import Path
 >>> for f in Path('/usr/bin').iterdir():
-...     print(f)
+>>>     print(f)
+...
+/usr/bin/tiff2rgba
+/usr/bin/iconv
+/usr/bin/ldd
+/usr/bin/cache_restore
+/usr/bin/udiskie
+/usr/bin/unix2dos
+/usr/bin/t1reencode
+/usr/bin/epstopdf
+/usr/bin/idle3
+...
 ```
-
-Output (truncated):
-
-    ...
-    /usr/bin/tiff2rgba
-    /usr/bin/iconv
-    /usr/bin/ldd
-    /usr/bin/cache_restore
-    /usr/bin/udiskie
-    /usr/bin/unix2dos
-    /usr/bin/t1reencode
-    /usr/bin/epstopdf
-    /usr/bin/idle3
-    ...
 
 To find the total size of all the files in this directory:
 
@@ -2604,35 +2893,32 @@ The destination path can also specify a filename. In the following example, the 
 ### Walking a Directory Tree
 
 ```python
-import os
+>>> import os
+>>> 
+>>> for folder_name, subfolders, filenames in os.walk('C:\\delicious'):
+>>>     print('The current folder is ' + folder_name)
+>>> 
+>>>     for subfolder in subfolders:
+>>>         print('SUBFOLDER OF ' + folder_name + ': ' + subfolder)
+>>>     for filename in filenames:
+>>>         print('FILE INSIDE ' + folder_name + ': '+ filename)
+>>> 
+>>>     print('')
+The current folder is C:\delicious
+SUBFOLDER OF C:\delicious: cats
+SUBFOLDER OF C:\delicious: walnut
+FILE INSIDE C:\delicious: spam.txt
 
-for folder_name, subfolders, filenames in os.walk('C:\\delicious'):
-    print('The current folder is ' + folder_name)
+The current folder is C:\delicious\cats
+FILE INSIDE C:\delicious\cats: catnames.txt
+FILE INSIDE C:\delicious\cats: zophie.jpg
 
-    for subfolder in subfolders:
-        print('SUBFOLDER OF ' + folder_name + ': ' + subfolder)
-    for filename in filenames:
-        print('FILE INSIDE ' + folder_name + ': '+ filename)
+The current folder is C:\delicious\walnut
+SUBFOLDER OF C:\delicious\walnut: waffles
 
-    print('')
+The current folder is C:\delicious\walnut\waffles
+FILE INSIDE C:\delicious\walnut\waffles: butter.txt
 ```
-
-Output:
-
-    The current folder is C:\delicious
-    SUBFOLDER OF C:\delicious: cats
-    SUBFOLDER OF C:\delicious: walnut
-    FILE INSIDE C:\delicious: spam.txt
-
-    The current folder is C:\delicious\cats
-    FILE INSIDE C:\delicious\cats: catnames.txt
-    FILE INSIDE C:\delicious\cats: zophie.jpg
-
-    The current folder is C:\delicious\walnut
-    SUBFOLDER OF C:\delicious\walnut: waffles
-
-    The current folder is C:\delicious\walnut\waffles
-    FILE INSIDE C:\delicious\walnut\waffles: butter.txt
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -2811,6 +3097,77 @@ This code will create a new ZIP file named new.zip that has the compressed conte
 
 [*Return to the Top*](#python-cheatsheet)
 
+## JSON, YAML and configuration files
+
+### JSON
+
+Open a JSON file with:
+
+```python
+import json
+with open("filename.json", "r") as f:
+    content = json.loads(f.read())
+```
+
+Write a JSON file with:
+
+```python
+import json
+
+content = {"name": "Joe", "age": 20}
+with open("filename.json", "w") as f:
+    f.write(json.dumps(content, indent=2))
+```
+
+[*Return to the Top*](#python-cheatsheet)
+
+### YAML
+
+Compared to JSON, YAML allows a much better humain maintainance and gives ability to add comments.
+It is a convinient choice for configuration files where human will have to edit.
+
+There are two main librairies allowing to access to YAML files:
+
+- [PyYaml](https://pypi.python.org/pypi/PyYAML)
+- [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
+
+Install them using `pip install` in your virtual environment.
+
+The first one it easier to use but the second one, Ruamel, implements much better the YAML 
+specification, and allow for example to modify a YAML content without altering comments.
+
+Open a YAML file with:
+
+```python
+from ruamel.yaml import YAML
+
+with open("filename.yaml") as f:
+    yaml=YAML()
+    yaml.load(f)
+```
+
+[*Return to the Top*](#python-cheatsheet)
+
+### Anyconfig
+
+[Anyconfig](https://pypi.python.org/pypi/anyconfig) is a very handy package allowing to abstract completly the underlying configuration file format. It allows to load a Python dictionary from JSON, YAML, TOML, and so on. 
+
+Install it with:
+
+```bash
+pip install anyconfig
+```
+
+Usage:
+
+```python
+import anyconfig
+
+conf1 = anyconfig.load("/path/to/foo/conf.d/a.yml")
+```
+
+[*Return to the Top*](#python-cheatsheet)
+
 ## Debugging
 
 ### Raising Exceptions
@@ -2860,17 +3217,14 @@ The traceback is displayed by Python whenever a raised exception goes unhandled.
 >>> import traceback
 
 >>> try:
-         raise Exception('This is the error message.')
-    except:
-         with open('errorInfo.txt', 'w') as error_file:
-             error_file.write(traceback.format_exc())
-         print('The traceback info was written to errorInfo.txt.')
+>>>      raise Exception('This is the error message.')
+>>> except:
+>>>      with open('errorInfo.txt', 'w') as error_file:
+>>>          error_file.write(traceback.format_exc())
+>>>      print('The traceback info was written to errorInfo.txt.')
+116
+The traceback info was written to errorInfo.txt.
 ```
-
-Output:
-
-    116
-    The traceback info was written to errorInfo.txt.
 
 The 116 is the return value from the write() method, since 116 characters were written to the file. The traceback text was written to errorInfo.txt.
 
@@ -2925,42 +3279,39 @@ logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s- %
 Say you wrote a function to calculate the factorial of a number. In mathematics, factorial 4 is 1 × 2 × 3 × 4, or 24. Factorial 7 is 1 × 2 × 3 × 4 × 5 × 6 × 7, or 5,040. Open a new file editor window and enter the following code. It has a bug in it, but you will also enter several log messages to help yourself figure out what is going wrong. Save the program as factorialLog.py.
 
 ```python
-import logging
-
-logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s- %(message)s')
-
-logging.debug('Start of program')
-
-def factorial(n):
-
-    logging.debug('Start of factorial(%s)' % (n))
-    total = 1
-
-    for i in range(n + 1):
-        total *= i
-        logging.debug('i is ' + str(i) + ', total is ' + str(total))
-
-    logging.debug('End of factorial(%s)' % (n))
-
-    return total
-
-print(factorial(5))
-logging.debug('End of program')
+>>> import logging
+>>> 
+>>> logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s- %(message)s')
+>>> 
+>>> logging.debug('Start of program')
+>>> 
+>>> def factorial(n):
+>>> 
+>>>     logging.debug('Start of factorial(%s)' % (n))
+>>>     total = 1
+>>> 
+>>>     for i in range(n + 1):
+>>>         total *= i
+>>>         logging.debug('i is ' + str(i) + ', total is ' + str(total))
+>>> 
+>>>     logging.debug('End of factorial(%s)' % (n))
+>>> 
+>>>     return total
+>>> 
+>>> print(factorial(5))
+>>> logging.debug('End of program')
+2015-05-23 16:20:12,664 - DEBUG - Start of program
+2015-05-23 16:20:12,664 - DEBUG - Start of factorial(5)
+2015-05-23 16:20:12,665 - DEBUG - i is 0, total is 0
+2015-05-23 16:20:12,668 - DEBUG - i is 1, total is 0
+2015-05-23 16:20:12,670 - DEBUG - i is 2, total is 0
+2015-05-23 16:20:12,673 - DEBUG - i is 3, total is 0
+2015-05-23 16:20:12,675 - DEBUG - i is 4, total is 0
+2015-05-23 16:20:12,678 - DEBUG - i is 5, total is 0
+2015-05-23 16:20:12,680 - DEBUG - End of factorial(5)
+0
+2015-05-23 16:20:12,684 - DEBUG - End of program
 ```
-
-Output:
-
-    2015-05-23 16:20:12,664 - DEBUG - Start of program
-    2015-05-23 16:20:12,664 - DEBUG - Start of factorial(5)
-    2015-05-23 16:20:12,665 - DEBUG - i is 0, total is 0
-    2015-05-23 16:20:12,668 - DEBUG - i is 1, total is 0
-    2015-05-23 16:20:12,670 - DEBUG - i is 2, total is 0
-    2015-05-23 16:20:12,673 - DEBUG - i is 3, total is 0
-    2015-05-23 16:20:12,675 - DEBUG - i is 4, total is 0
-    2015-05-23 16:20:12,678 - DEBUG - i is 5, total is 0
-    2015-05-23 16:20:12,680 - DEBUG - End of factorial(5)
-    0
-    2015-05-23 16:20:12,684 - DEBUG - End of program
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -2968,13 +3319,13 @@ Output:
 
 Logging levels provide a way to categorize your log messages by importance. There are five logging levels, described in Table 10-1 from least to most important. Messages can be logged at each level using a different logging function.
 
-| Level    | Logging Function   | Description                                                                                                                    |
-| -------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| DEBUG    | logging.debug()    | The lowest level. Used for small details. Usually you care about these messages only when diagnosing problems.                 |
-| INFO     | logging.info()     | Used to record information on general events in your program or confirm that things are working at their point in the program. |
-| WARNING  | logging.warning()  | Used to indicate a potential problem that doesn’t prevent the program from working but might do so in the future.             |
-| ERROR    | logging.error()    | Used to record an error that caused the program to fail to do something.                                                       |
-| CRITICAL | logging.critical() | The highest level. Used to indicate a fatal error that has caused or is about to cause the program to stop running entirely.   |
+| Level      | Logging Function     | Description                                                                                                                    |
+| ---------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `DEBUG`    | `logging.debug()`    | The lowest level. Used for small details. Usually you care about these messages only when diagnosing problems.                 |
+| `INFO`     | `logging.info()`     | Used to record information on general events in your program or confirm that things are working at their point in the program. |
+| `WARNING`  | `logging.warning()`  | Used to indicate a potential problem that doesn’t prevent the program from working but might do so in the future.              |
+| `ERROR`    | `logging.error()`    | Used to record an error that caused the program to fail to do something.                                                       |
+| `CRITICAL` | `logging.critical()` | The highest level. Used to indicate a fatal error that has caused or is about to cause the program to stop running entirely.   |
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -3098,6 +3449,8 @@ Like regular nested functions, lambdas also work as lexical closures:
 >>> plus_5(4)
 9
 ```
+
+PS: lambda can only evaluate an expression, like a single line of code.
 
 [*Return to the Top*](#python-cheatsheet)
 
