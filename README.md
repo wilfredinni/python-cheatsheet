@@ -241,7 +241,7 @@ String concatenation:
 'AliceBob'
 ```
 
-PS: Avoid `+` operator for string concatenation. Prefer string formatting.
+Note: Avoid `+` operator for string concatenation. Prefer string formatting.
 
 String Replication:
 
@@ -259,7 +259,7 @@ You can name a variable anything as long as it obeys the following three rules:
 1. It can be only one word.
 1. It can use only letters, numbers, and the underscore (`_`) character.
 1. It can’t begin with a number.
-1. Variable name starting with an underscore (`_`) are considered as "unuseful`
+1. Variable name starting with an underscore (`_`) are considered as "unuseful`.
 
 Example:
 
@@ -292,13 +292,13 @@ Multiline comment:
 # multiline comment
 ```
 
-Code with a comment
+Code with a comment:
 
 ```python
 a = 1  # initialization
 ```
 
-Please note the two spaces in front of the comment
+Please note the two spaces in front of the comment.
 
 Function docstring:
 
@@ -352,8 +352,8 @@ Evaluates to the integer value of the number of characters in a string:
 5
 ```
 
-PS: test of emptiness of strings, lists, dictionary, etc, should **not** use len, but prefer direct
-boolean evaluation.
+Test of emptiness of strings, lists, dictionary, etc, should **not** use len, but prefer direct
+boolean evaluation:
 
 ```python
 >>> a = [1, 2, 3]
@@ -364,8 +364,6 @@ boolean evaluation.
 [*Return to the Top*](#python-cheatsheet)
 
 ### The str(), int(), and float() Functions
-
-Convert Between Data Types:
 
 Integer to String or Float:
 
@@ -670,7 +668,7 @@ You can even use a negative number for the step argument to make the for loop co
 ### For else statement
 
 This allows to specify a statement to execute in case of the full loop has been executed. Only
-useful when a `break` condition can occur in the loop
+useful when a `break` condition can occur in the loop.
 
 ```python
 >>> for i in [1, 2, 3, 4, 5]:
@@ -778,7 +776,7 @@ Hello!
 True
 ```
 
-PS: nevel compares to None with the `==` operator.
+Never compare to None with the `==` operator.
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -1509,7 +1507,7 @@ That is Carol\'s cat.
 
 [*Return to the Top*](#python-cheatsheet)
 
-PS: mostly used for regular expression definition (see `re` package)
+Note: mostly used for regular expression definition (see `re` package).
 
 ### Multiline Strings with Triple Quotes
 
@@ -1555,7 +1553,6 @@ This generates the same string than before.
 
 ```python
 >>> spam = 'Hello world!'
-
 >>> spam[0]
 'H'
 ```
@@ -1573,7 +1570,6 @@ This generates the same string than before.
 Slicing:
 
 ```python
-
 >>> spam[0:5]
 'Hello'
 ```
@@ -1656,7 +1652,7 @@ True
 
 ### The upper(), lower(), isupper(), and islower() String Methods
 
-`upper()` and `lower()`:
+upper() and lower():
 
 ```python
 >>> spam = 'Hello world!'
@@ -1881,8 +1877,6 @@ center():
 
 ### % operator
 
-Note: For new code prefere using str.format over the `%` operator.
-
 ```python
 >>> name = 'Pete'
 >>> 'Hello %s' % name
@@ -1896,6 +1890,8 @@ We can use the `%x` format specifier to convert an int value to a string:
 >>> 'I have %x apples' % num
 "I have 5 apples"
 ```
+
+Note: For new code prefer using str.format over the `%` operator.
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -2064,7 +2060,7 @@ The | character is called a pipe. You can use it anywhere you want to match one 
 'Tina Fey'
 ```
 
-You can also use the pipe to match one of several patterns as part of your regex:
+You can also use pipe to match one of several patterns as part of your regex:
 
 ```python
 >>> bat_regex = re.compile(r'Bat(man|mobile|copter|bat)')
@@ -2559,12 +2555,12 @@ And all is good :)
 
 ### Absolute vs. Relative Paths
 
-There are two ways to specify a file path.
+There are two ways to specify a file path:
 
-- An absolute path, which always begins with the root folder
-- A relative path, which is relative to the program’s current working directory
+- An absolute path, which always begins with the root folder.
+- A relative path, which is relative to the program’s current working directory.
 
-There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period (“dot”) for a folder name is shorthand for “this directory.” Two periods (“dot-dot”) means “the parent folder.”
+There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period (“dot”) for a folder name is shorthand for “this directory.” Two periods (“dot-dot”) means “the parent folder”.
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -2592,7 +2588,7 @@ True
 False
 ```
 
-You can extract an absolute path with both `os.path` and `pathlib`
+*You can extract an absolute path with both `os.path` and `pathlib`*
 
 Using `os.path` on \*nix:
 
@@ -2614,7 +2610,7 @@ print(Path('..').resolve())
 /home
 ```
 
-You can get a relative path from a starting path to another path.
+You can get a relative path from a starting path to another path:
 
 Using `os.path` on \*nix:
 
@@ -2635,8 +2631,6 @@ etc/passwd
 [*Return to the Top*](#python-cheatsheet)
 
 ### Checking Path Validity
-
-Checking if a file/directory exists:
 
 Using `os.path` on \*nix:
 
@@ -2721,8 +2715,6 @@ False
 [*Return to the Top*](#python-cheatsheet)
 
 ### Finding File Sizes and Folder Contents
-
-Getting a file's size in bytes:
 
 Using `os.path` on Windows:
 
@@ -2916,13 +2908,13 @@ The current folder is C:\delicious\walnut\waffles
 FILE INSIDE C:\delicious\walnut\waffles: butter.txt
 ```
 
-[*Return to the Top*](#python-cheatsheet)
-
 `pathlib` provides a lot more functionality than the ones listed above,
 like getting file name, getting file extension, reading/writing a file without
 manually opening it, etc. Check out the
 [official documentation](https://docs.python.org/3/library/pathlib.html)
 if you want to know more!
+
+[*Return to the Top*](#python-cheatsheet)
 
 ## Reading and Writing Files
 
@@ -3170,9 +3162,9 @@ conf1 = anyconfig.load("/path/to/foo/conf.d/a.yml")
 
 Exceptions are raised with a raise statement. In code, a raise statement consists of the following:
 
-- The raise keyword
-- A call to the Exception() function
-- A string with a helpful error message passed to the Exception() function
+- The raise keyword.
+- A call to the Exception() function.
+- A string with a helpful error message passed to the Exception() function.
 
 ```python
 >>> raise Exception('This is the error message.')
@@ -3446,7 +3438,7 @@ Like regular nested functions, lambdas also work as lexical closures:
 9
 ```
 
-PS: lambda can only evaluate an expression, like a single line of code.
+Note: lambda can only evaluate an expression, like a single line of code.
 
 [*Return to the Top*](#python-cheatsheet)
 
