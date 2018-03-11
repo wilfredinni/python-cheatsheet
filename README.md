@@ -461,7 +461,7 @@ True
 True
 ```
 
-These two statements are equivalent:
+These statements are equivalent:
 
 ```Python
 >>> if a is True:
@@ -471,7 +471,7 @@ These two statements are equivalent:
 >>> if a:
 ```
 
-And these two as well:
+And these as well:
 
 ```Python
 >>> if a is False:
@@ -1194,16 +1194,12 @@ If the value appears multiple times in the list, only the first instance of the 
 
 ```python
 >>> spam = [2, 5, 3.14, 1, -7]
-
 >>> spam.sort()
-
 >>> spam
 [-7, 1, 2, 3.14, 5]
 
 >>> spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
-
 >>> spam.sort()
-
 >>> spam
 ['ants', 'badgers', 'cats', 'dogs', 'elephants']
 ```
@@ -1221,11 +1217,17 @@ If you need to sort the values in regular alphabetical order, pass str. lower fo
 
 ```python
 >>> spam = ['a', 'z', 'A', 'Z']
-
 >>> spam.sort(key=str.lower)
-
 >>> spam
 ['a', 'A', 'z', 'Z']
+```
+
+You can use the built-in function `sorted` to return a new list:
+
+```python
+>>> spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
+>>> sorted(spam)
+['ants', 'badgers', 'cats', 'dogs', 'elephants']
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -1254,10 +1256,14 @@ The main way that tuples are different from lists is that tuples, like strings, 
 ```python
 >>> tuple(['cat', 'dog', 5])
 ('cat', 'dog', 5)
+```
 
+```python
 >>> list(('cat', 'dog', 5))
 ['cat', 'dog', 5]
+```
 
+```python
 >>> list('hello')
 ['h', 'e', 'l', 'l', 'o']
 ```
