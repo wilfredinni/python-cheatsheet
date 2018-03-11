@@ -241,7 +241,7 @@ String concatenation:
 'AliceBob'
 ```
 
-PS: Avoid `+` operator for string concatenation. Prefer string formatting.
+Note: Avoid `+` operator for string concatenation. Prefer string formatting.
 
 String Replication:
 
@@ -259,7 +259,7 @@ You can name a variable anything as long as it obeys the following three rules:
 1. It can be only one word.
 1. It can use only letters, numbers, and the underscore (`_`) character.
 1. It can’t begin with a number.
-1. Variable name starting with an underscore (`_`) are considered as "unuseful`
+1. Variable name starting with an underscore (`_`) are considered as "unuseful`.
 
 Example:
 
@@ -292,13 +292,13 @@ Multiline comment:
 # multiline comment
 ```
 
-Code with a comment
+Code with a comment:
 
 ```python
 a = 1  # initialization
 ```
 
-Please note the two spaces in front of the comment
+Please note the two spaces in front of the comment.
 
 Function docstring:
 
@@ -352,7 +352,7 @@ Evaluates to the integer value of the number of characters in a string:
 5
 ```
 
-PS: test of emptiness of strings, lists, dictionary, etc, should **not** use len, but prefer direct
+Note: test of emptiness of strings, lists, dictionary, etc, should **not** use len, but prefer direct
 boolean evaluation.
 
 ```python
@@ -364,8 +364,6 @@ boolean evaluation.
 [*Return to the Top*](#python-cheatsheet)
 
 ### The str(), int(), and float() Functions
-
-Convert Between Data Types:
 
 Integer to String or Float:
 
@@ -411,7 +409,7 @@ Float to Integer:
 | `<=`     | Less than or Equal to    |
 | `>=`     | Greater than or Equal to |
 
-These operators evaluate to True or False depending on the values you give them:
+These operators evaluate to True or False depending on the values you give them.
 
 Examples:
 
@@ -596,7 +594,7 @@ while spam < 5:
 
 ### break Statements
 
- If the execution reaches a break statement, it immediately exits the while loop’s clause.
+ If the execution reaches a break statement, it immediately exits the while loop’s clause:
 
 ```python
 while True:
@@ -670,7 +668,7 @@ You can even use a negative number for the step argument to make the for loop co
 ### For else statement
 
 This allows to specify a statement to execute in case of the full loop has been executed. Only
-useful when a `break` condition can occur in the loop
+useful when a `break` condition can occur in the loop:
 
 ```python
 >>> for i in [1, 2, 3, 4, 5]:
@@ -778,7 +776,7 @@ Hello!
 True
 ```
 
-PS: never compare to `None` with the `==` operator. Always use `is`.
+Note: never compare to `None` with the `==` operator. Always use `is`.
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -986,7 +984,6 @@ None
 
 ```python
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
-
 >>> spam[1] = 'aardvark'
 
 >>> spam
@@ -1285,7 +1282,7 @@ myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
 
 ### The keys(), values(), and items() Methods
 
-**values():**
+values():
 
 ```python
 >>> spam = {'color': 'red', 'age': 42}
@@ -1295,7 +1292,7 @@ red
 42
 ```
 
-**keys():**
+keys():
 
 ```python
 >>> for k in spam.keys():
@@ -1304,7 +1301,7 @@ color
 age
 ```
 
-**items():**
+items():
 
 ```python
 >>> for i in spam.items():
@@ -1516,7 +1513,7 @@ That is Carol\'s cat.
 
 [*Return to the Top*](#python-cheatsheet)
 
-PS: mostly used for regular expression definition (see `re` package)
+Note: mostly used for regular expression definition (see `re` package)
 
 ### Multiline Strings with Triple Quotes
 
@@ -1888,8 +1885,6 @@ center():
 
 ### % operator
 
-Note: For new code prefere using str.format over the `%` operator.
-
 ```python
 >>> name = 'Pete'
 >>> 'Hello %s' % name
@@ -1903,6 +1898,8 @@ We can use the `%x` format specifier to convert an int value to a string:
 >>> 'I have %x apples' % num
 "I have 5 apples"
 ```
+
+Note: For new code prefere using str.format over the `%` operator.
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -3453,7 +3450,7 @@ Like regular nested functions, lambdas also work as lexical closures:
 9
 ```
 
-PS: lambda can only evaluate an expression, like a single line of code.
+Note: lambda can only evaluate an expression, like a single line of code.
 
 [*Return to the Top*](#python-cheatsheet)
 
