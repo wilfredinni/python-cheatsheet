@@ -16,6 +16,7 @@ All contributions are welcome. You can:
 - [Online](https://wilfredinni.github.io/python-cheatsheet/)
 - [Github](https://github.com/wilfredinni/python-cheatsheet)
 - [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
+- [Jupyter Notebook](https://github.com/wilfredinni/python-cheatsheet/blob/master/python_cheat_sheet.ipynb)
 
 ## Foreword
 
@@ -416,22 +417,34 @@ Examples:
 ```python
 >>> 42 == 42
 True
+```
 
+```python
 >>> 40 == 42
 False
+```
 
+```python
 >>> 'hello' == 'hello'
 True
+```
 
+```python
 >>> 'hello' == 'Hello'
 False
+```
 
+```python
 >>> 'dog' != 'cat'
 True
+```
 
+```python
 >>> 42 == 42.0
 True
+```
 
+```python
 >>> 42 == '42'
 False
 ```
@@ -446,7 +459,9 @@ NO (even if they are valid Python):
 ```python
 >>> True == True
 True
+```
 
+```python
 >>> True != False
 True
 ```
@@ -456,7 +471,9 @@ YES (even if they are valid Python):
 ```python
 >>> True is True
 True
+```
 
+```python
 >>> True is not False
 True
 ```
@@ -465,20 +482,22 @@ These statements are equivalent:
 
 ```Python
 >>> if a is True:
-
+>>>    pass
 >>> if a is not False:
-
+>>>    pass
 >>> if a:
+>>>    pass
 ```
 
 And these as well:
 
 ```Python
 >>> if a is False:
-
+>>>    pass
 >>> if a is not True:
-
+>>>    pass
 >>> if not a:
+>>>    pass
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -519,10 +538,14 @@ The *not* Operator’s *Truth* Table:
 ```python
 >>> (4 < 5) and (5 < 6)
 True
+```
 
+```python
 >>> (4 < 5) and (9 < 6)
 False
+```
 
+```python
 >>> (1 == 2) or (2 == 2)
 True
 ```
@@ -907,16 +930,21 @@ None
 
 ```python
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
-
 >>> spam[0]
 'cat'
+```
 
+```python
 >>> spam[1]
 'bat'
+```
 
+```python
 >>> spam[2]
 'rat'
+```
 
+```python
 >>> spam[3]
 'elephant'
 ```
@@ -929,10 +957,14 @@ None
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> spam[-1]
 'elephant'
+```
 
+```python
 >>> spam[-3]
 'bat'
+```
 
+```python
 >>> 'The ' + spam[-1] + ' is afraid of the ' + spam[-3] + '.'
 'The elephant is afraid of the bat.'
 ```
@@ -943,26 +975,32 @@ None
 
 ```python
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
-
 >>> spam[0:4]
 ['cat', 'bat', 'rat', 'elephant']
+```
 
+```python
 >>> spam[1:3]
 ['bat', 'rat']
+```
 
+```python
 >>> spam[0:-1]
 ['cat', 'bat', 'rat']
 ```
 
 ```python
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
-
 >>> spam[:2]
 ['cat', 'bat']
+```
 
+```python
 >>> spam[1:]
 ['bat', 'rat', 'elephant']
+```
 
+```python
 >>> spam[:]
 ['cat', 'bat', 'rat', 'elephant']
 ```
@@ -973,7 +1011,6 @@ None
 
 ```python
 >>> spam = ['cat', 'dog', 'moose']
-
 >>> len(spam)
 3
 ```
@@ -1025,14 +1062,13 @@ None
 
 ```python
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
-
 >>> del spam[2]
-
 >>> spam
 ['cat', 'bat', 'elephant']
+```
 
+```python
 >>> del spam[2]
-
 >>> spam
 ['cat', 'bat']
 ```
@@ -1058,15 +1094,20 @@ Index 3 in supplies is: binders
 ```python
 >>> 'howdy' in ['hello', 'hi', 'howdy', 'heyas']
 True
+```
 
+```python
 >>> spam = ['hello', 'hi', 'howdy', 'heyas']
-
 >>> 'cat' in spam
 False
+```
 
+```python
 >>> 'howdy' not in spam
 False
+```
 
+```python
 >>> 'cat' not in spam
 True
 ```
@@ -1087,7 +1128,7 @@ The multiple assignment trick is a shortcut that lets you assign multiple variab
 >>> disposition = cat[2]
 ```
 
-you could type this line of code:
+You could type this line of code:
 
 ```python
 >>> cat = ['fat', 'orange', 'loud']
@@ -1099,12 +1140,12 @@ The multiple assignment trick can also be used to swap the values in two variabl
 
 ```python
 >>> a, b = 'Alice', 'Bob'
-
 >>> a, b = b, a
-
 >>> print(a)
 'Bob'
+```
 
+```python
 >>> print(b)
 'Alice'
 ```
@@ -1236,13 +1277,16 @@ You can use the built-in function `sorted` to return a new list:
 
 ```python
 >>> eggs = ('hello', 42, 0.5)
-
 >>> eggs[0]
 'hello'
+```
 
+```python
 >>> eggs[1:3]
 (42, 0.5)
+```
 
+```python
 >>> len(eggs)
 3
 ```
@@ -1365,7 +1409,9 @@ False
 
 >>> 'I am bringing ' + str(picnic_items.get('cups', 0)) + ' cups.'
 'I am bringing 2 cups.'
+```
 
+```python
 >>> 'I am bringing ' + str(picnic_items.get('eggs', 0)) + ' eggs.'
 'I am bringing 0 eggs.'
 ```
@@ -1374,6 +1420,8 @@ False
 
 ### The setdefault() Method
 
+Let's consider this code:
+
 ```python
 spam = {'name': 'Pooka', 'age': 5}
 
@@ -1381,20 +1429,25 @@ if 'color' not in spam:
     spam['color'] = 'black'
 ```
 
-The above code is equal to:
+Using `setdefault` we could make the same code more shortly:
 
 ```python
 >>> spam = {'name': 'Pooka', 'age': 5}
-
 >>> spam.setdefault('color', 'black')
 'black'
+```
 
+```python
 >>> spam
 {'color': 'black', 'age': 5, 'name': 'Pooka'}
+```
 
+```python
 >>> spam.setdefault('color', 'white')
 'black'
+```
 
+```python
 >>> spam
 {'color': 'black', 'age': 5, 'name': 'Pooka'}
 ```
@@ -1456,8 +1509,7 @@ The above code is equal to:
 ### Set comprehension
 
 ```python
->>> b = {"abc", "def}
-
+>>> b = {"abc", "def"}
 >>> {s.upper() for s in b}
 {"ABC", "DEF}
 ```
@@ -1466,7 +1518,6 @@ The above code is equal to:
 
 ```python
 >>> c = {'name': 'Pooka', 'age': 5}
-
 >>> {v, k for k, v in c.items()}
 {'Pooka': 'name', 5: 'age'}
 ```
@@ -2131,11 +2182,15 @@ While * means “match zero or more,” the + (or plus) means “match one or mo
 >>> mo1 = bat_regex.search('The Adventures of Batwoman')
 >>> mo1.group()
 'Batwoman'
+```
 
+```python
 >>> mo2 = bat_regex.search('The Adventures of Batwowowowoman')
 >>> mo2.group()
 'Batwowowowoman'
+```
 
+```python
 >>> mo3 = bat_regex.search('The Adventures of Batman')
 >>> mo3 is None
 True
@@ -2154,7 +2209,9 @@ Instead of one number, you can specify a range by writing a minimum, a comma, an
 >>> mo1 = ha_regex.search('HaHaHa')
 >>> mo1.group()
 'HaHaHa'
+```
 
+```python
 >>> mo2 = ha_regex.search('Ha')
 >>> mo2 is None
 True
@@ -2171,7 +2228,9 @@ Python’s regular expressions are greedy by default, which means that in ambigu
 >>> mo1 = greedy_ha_regex.search('HaHaHaHaHa')
 >>> mo1.group()
 'HaHaHaHaHa'
+```
 
+```python
 >>> nongreedy_ha_regex = re.compile(r'(Ha){3,5}?')
 >>> mo2 = nongreedy_ha_regex.search('HaHaHaHaHa')
 >>> mo2.group()
@@ -2283,7 +2342,9 @@ The . (or dot) character in a regular expression is called a wildcard and will m
 
 >>> mo.group(1)
 'Al'
+```
 
+```python
 >>> mo.group(2)
 'Sweigart'
 ```
@@ -2295,7 +2356,9 @@ The dot-star uses greedy mode: It will always try to match as much text as possi
 >>> mo = nongreedy_regex.search('<To serve man> for dinner.>')
 >>> mo.group()
 '<To serve man>'
+```
 
+```python
 >>> greedy_regex = re.compile(r'<.*>')
 >>> mo = greedy_regex.search('<To serve man> for dinner.>')
 >>> mo.group()
@@ -2312,7 +2375,9 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 >>> no_newline_regex = re.compile('.*')
 >>> no_newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
 'Serve the public trust.'
+```
 
+```python
 >>> newline_regex = re.compile('.*', re.DOTALL)
 >>> newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
 'Serve the public trust.\nProtect the innocent.\nUphold the law.'
@@ -2351,10 +2416,14 @@ To make your regex case-insensitive, you can pass re.IGNORECASE or re.I as a sec
 
 >>> robocop.search('Robocop is part man, part machine, all cop.').group()
 'Robocop'
+```
 
+```python
 >>> robocop.search('ROBOCOP protects the innocent.').group()
 'ROBOCOP'
+```
 
+```python
 >>> robocop.search('Al, why does your programming book talk about robocop so much?').group()
 'robocop'
 ```
