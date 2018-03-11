@@ -720,7 +720,7 @@ while True:
 ```python
 >>> def hello(name):
 >>>     print('Hello ' + name)
->>> 
+>>>
 >>> hello('Alice')
 >>> hello('Bob')
 Hello Alice
@@ -822,7 +822,7 @@ If you need to modify a global variable from within a function, use the global s
 >>> def spam():
 >>>     global eggs
 >>>     eggs = 'spam'
->>> 
+>>>
 >>> eggs = 'global'
 >>> spam()
 >>> print(eggs)
@@ -851,7 +851,7 @@ There are four rules to tell whether a variable is in a local scope or global sc
 >>>         return 42 / divideBy
 >>>     except ZeroDivisionError as e:
 >>>         print('Error: Invalid argument: {}'.format(e))
->>> 
+>>>
 >>> print(spam(2))
 >>> print(spam(12))
 >>> print(spam(0))
@@ -891,8 +891,6 @@ None
 42.0
 -- division finished --
 ```
-
-
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -1320,7 +1318,6 @@ Key: age Value: 42
 Key: color Value: red
 ```
 
-
 [*Return to the Top*](#python-cheatsheet)
 
 ### Checking Whether a Key or Value Exists in a Dictionary
@@ -1404,15 +1401,15 @@ The above code is equal to:
 
 ```python
 >>> import pprint
->>> 
+>>>
 >>> message = 'It was a bright cold day in April, and the clocks were striking
 >>> thirteen.'
 >>> count = {}
->>> 
+>>>
 >>> for character in message:
 >>>     count.setdefault(character, 0)
 >>>     count[character] = count[character] + 1
->>> 
+>>>
 >>> pprint.pprint(count)
 {' ': 13,
  ',': 1,
@@ -1518,9 +1515,9 @@ PS: mostly used for regular expression definition (see `re` package)
 
 ```python
 >>> print('''Dear Alice,
->>> 
+>>>
 >>> Eve's cat has been arrested for catnapping, cat burglary, and extortion.
->>> 
+>>>
 >>> Sincerely,
 >>> Bob''')
 Dear Alice,
@@ -1535,13 +1532,13 @@ To keep a nicer flow in your code, you can use the `dedent` function from the `t
 
 ```python
 >>> from textwrap import dedent
->>> 
+>>>
 >>> def my_function():
 >>>     print('''
 >>>         Dear Alice,
->>> 
+>>>
 >>>         Eve's cat has been arrested for catnapping, cat burglary, and extortion.
->>> 
+>>>
 >>>         Sincerely,
 >>>         Bob
 >>>         ''').strip()
@@ -1899,7 +1896,6 @@ We can use the `%x` format specifier to convert an int value to a string:
 >>> 'I have %x apples' % num
 "I have 5 apples"
 ```
-
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -2894,15 +2890,15 @@ The destination path can also specify a filename. In the following example, the 
 
 ```python
 >>> import os
->>> 
+>>>
 >>> for folder_name, subfolders, filenames in os.walk('C:\\delicious'):
 >>>     print('The current folder is ' + folder_name)
->>> 
+>>>
 >>>     for subfolder in subfolders:
 >>>         print('SUBFOLDER OF ' + folder_name + ': ' + subfolder)
 >>>     for filename in filenames:
 >>>         print('FILE INSIDE ' + folder_name + ': '+ filename)
->>> 
+>>>
 >>>     print('')
 The current folder is C:\delicious
 SUBFOLDER OF C:\delicious: cats
@@ -3133,7 +3129,7 @@ There are two main librairies allowing to access to YAML files:
 
 Install them using `pip install` in your virtual environment.
 
-The first one it easier to use but the second one, Ruamel, implements much better the YAML 
+The first one it easier to use but the second one, Ruamel, implements much better the YAML
 specification, and allow for example to modify a YAML content without altering comments.
 
 Open a YAML file with:
@@ -3150,7 +3146,7 @@ with open("filename.yaml") as f:
 
 ### Anyconfig
 
-[Anyconfig](https://pypi.python.org/pypi/anyconfig) is a very handy package allowing to abstract completly the underlying configuration file format. It allows to load a Python dictionary from JSON, YAML, TOML, and so on. 
+[Anyconfig](https://pypi.python.org/pypi/anyconfig) is a very handy package allowing to abstract completly the underlying configuration file format. It allows to load a Python dictionary from JSON, YAML, TOML, and so on.
 
 Install it with:
 
@@ -3280,24 +3276,24 @@ Say you wrote a function to calculate the factorial of a number. In mathematics,
 
 ```python
 >>> import logging
->>> 
+>>>
 >>> logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s- %(message)s')
->>> 
+>>>
 >>> logging.debug('Start of program')
->>> 
+>>>
 >>> def factorial(n):
->>> 
+>>>
 >>>     logging.debug('Start of factorial(%s)' % (n))
 >>>     total = 1
->>> 
+>>>
 >>>     for i in range(n + 1):
 >>>         total *= i
 >>>         logging.debug('i is ' + str(i) + ', total is ' + str(total))
->>> 
+>>>
 >>>     logging.debug('End of factorial(%s)' % (n))
->>> 
+>>>
 >>>     return total
->>> 
+>>>
 >>> print(factorial(5))
 >>> logging.debug('End of program')
 2015-05-23 16:20:12,664 - DEBUG - Start of program
