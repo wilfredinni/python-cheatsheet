@@ -5,7 +5,8 @@ def clean_notebook(json_content):
     for cell in json_content['cells']:
         lines = cell["source"]
         if lines and lines[0].startswith(">>>"):
-            cell["source"] = [l.replace('>>> ', '') for l in lines if l.startswith(">>>")]
+            cell["source"] = [l.replace('>>> ', '').replace('>>>\n', '\n')
+                              for l in lines if l.startswith(">>>")]
             cell["source"][-1] =cell["source"][-1].replace('\n', '')
 
 if __name__ == '__main__':

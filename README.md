@@ -463,7 +463,7 @@ True
 True
 ```
 
-These two statements are equivalent:
+These statements are equivalent:
 
 ```Python
 >>> if a is True:
@@ -473,7 +473,7 @@ These two statements are equivalent:
 >>> if a:
 ```
 
-And these two as well:
+And these as well:
 
 ```Python
 >>> if a is False:
@@ -778,7 +778,7 @@ Hello!
 True
 ```
 
-PS: nevel compares to None with the `==` operator.
+PS: never compare to `None` with the `==` operator. Always use `is`.
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -1196,16 +1196,14 @@ If the value appears multiple times in the list, only the first instance of the 
 
 ```python
 >>> spam = [2, 5, 3.14, 1, -7]
-
 >>> spam.sort()
-
 >>> spam
 [-7, 1, 2, 3.14, 5]
+```
 
+```python
 >>> spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
-
 >>> spam.sort()
-
 >>> spam
 ['ants', 'badgers', 'cats', 'dogs', 'elephants']
 ```
@@ -1214,7 +1212,6 @@ You can also pass True for the reverse keyword argument to have sort() sort the 
 
 ```python
 >>> spam.sort(reverse=True)
-
 >>> spam
 ['elephants', 'dogs', 'cats', 'badgers', 'ants']
 ```
@@ -1223,11 +1220,17 @@ If you need to sort the values in regular alphabetical order, pass str. lower fo
 
 ```python
 >>> spam = ['a', 'z', 'A', 'Z']
-
 >>> spam.sort(key=str.lower)
-
 >>> spam
 ['a', 'A', 'z', 'Z']
+```
+
+You can use the built-in function `sorted` to return a new list:
+
+```python
+>>> spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
+>>> sorted(spam)
+['ants', 'badgers', 'cats', 'dogs', 'elephants']
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -1256,10 +1259,14 @@ The main way that tuples are different from lists is that tuples, like strings, 
 ```python
 >>> tuple(['cat', 'dog', 5])
 ('cat', 'dog', 5)
+```
 
+```python
 >>> list(('cat', 'dog', 5))
 ['cat', 'dog', 5]
+```
 
+```python
 >>> list('hello')
 ['h', 'e', 'l', 'l', 'o']
 ```
@@ -3286,7 +3293,7 @@ Say you wrote a function to calculate the factorial of a number. In mathematics,
 >>>     logging.debug('Start of factorial(%s)' % (n))
 >>>     total = 1
 >>>
->>>     for i in range(n + 1):
+>>>     for i in range(1, n + 1):
 >>>         total *= i
 >>>         logging.debug('i is ' + str(i) + ', total is ' + str(total))
 >>>
