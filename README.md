@@ -1182,7 +1182,7 @@ Output:
     ('color', 'red')
     ('age', 42)
 
-Using the keys(), values(), and items() methods, a for loop can iterate over the keys, values, or key-value pairs in a dictionary, respectively
+Using the keys(), values(), and items() methods, a for loop can iterate over the keys, values, or key-value pairs in a dictionary, respectively.
 
 ```python
 
@@ -1735,7 +1735,7 @@ Phone number found: 415-555-4242
 '415-555-4242'
 ```
 
-To retrieve all the groups at once: groups() method—note the plural form for the name.
+To retrieve all the groups at once: use the groups() method—note the plural form for the name.
 
 ```python
 >>> mo.groups()
@@ -2492,8 +2492,7 @@ Output (truncated):
 To find the total size of all the files in this directory:
 
 **WARNING**: Directories themselves also have a size! So you might want to
-check for whether a path is a file or directory using the methods in the methods
-discussed in the above section!
+check for whether a path is a file or directory using the methods in the methods discussed in the above section!
 
 Using `os.path.getsize()` and `os.listdir()` together on Windows:
 
@@ -3070,7 +3069,7 @@ This function:
 8
 ```
 
-Is equivalente to the *lambda* function:
+Is equivalent to the *lambda* function:
 
 ```python
 >>> add = lambda x, y: x + y
