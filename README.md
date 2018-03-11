@@ -778,7 +778,7 @@ Hello!
 True
 ```
 
-PS: nevel compares to None with the `==` operator.
+PS: never compare to `None` with the `==` operator. Always use `is`.
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -1199,7 +1199,9 @@ If the value appears multiple times in the list, only the first instance of the 
 >>> spam.sort()
 >>> spam
 [-7, 1, 2, 3.14, 5]
+```
 
+```python
 >>> spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
 >>> spam.sort()
 >>> spam
@@ -1210,7 +1212,6 @@ You can also pass True for the reverse keyword argument to have sort() sort the 
 
 ```python
 >>> spam.sort(reverse=True)
-
 >>> spam
 ['elephants', 'dogs', 'cats', 'badgers', 'ants']
 ```
@@ -3292,7 +3293,7 @@ Say you wrote a function to calculate the factorial of a number. In mathematics,
 >>>     logging.debug('Start of factorial(%s)' % (n))
 >>>     total = 1
 >>>
->>>     for i in range(n + 1):
+>>>     for i in range(1, n + 1):
 >>>         total *= i
 >>>         logging.debug('i is ' + str(i) + ', total is ' + str(total))
 >>>
