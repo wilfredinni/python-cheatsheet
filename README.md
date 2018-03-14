@@ -16,7 +16,7 @@ All contributions are welcome. You can:
 - [Online](https://wilfredinni.github.io/python-cheatsheet/)
 - [Github](https://github.com/wilfredinni/python-cheatsheet)
 - [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
-- [Online Jupyter Notebook](https://hub.mybinder.org/user/wilfredinni-python-cheatsheet-p3thwgv6/notebooks/python_cheat_sheet.ipynb)
+- [Online Jupyter Notebook](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=python_cheat_sheet.ipynb)
 
 ## Foreword
 
