@@ -111,7 +111,7 @@ Example:
     - [The join() and split() String Methods](#the-join-and-split-string-methods)
     - [Justifying Text with rjust(), ljust(), and center()](#justifying-text-with-rjust-ljust-and-center)
     - [Removing Whitespace with strip(), rstrip(), and lstrip()](#removing-whitespace-with-strip-rstrip-and-lstrip)
-    - [Copying and Pasting Strings with the pyperclip Module (need pip install)(#copying-and-pasting-strings-with-the-pyperclip-module-need-pip-install)
+    - [Copying and Pasting Strings with the pyperclip Module](#copying-and-pasting-strings-with-the-pyperclip-module-need-pip-install)
 - [String Formatting](#string-formatting)
     - [% operator](#operator)
     - [String Formatting (str.format)](#string-formatting-strformat)
