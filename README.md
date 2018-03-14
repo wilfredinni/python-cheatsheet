@@ -16,7 +16,7 @@ All contributions are welcome. You can:
 - [Online](https://wilfredinni.github.io/python-cheatsheet/)
 - [Github](https://github.com/wilfredinni/python-cheatsheet)
 - [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
-- [Online Jupyter Notebook](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=python_cheat_sheet.ipynb)
+- [Jupyter Notebook](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=python_cheat_sheet.ipynb)
 
 ## Foreword
 
@@ -47,6 +47,7 @@ Example:
     - [The str(), int(), and float() Functions](#the-str-int-and-float-functions)
 - [Flow Control](#flow-control)
     - [Comparison Operators](#comparison-operators)
+    - [Boolean evaluation](#boolean-evaluation)
     - [Boolean Operators](#boolean-operators)
     - [Mixing Boolean and Comparison Operators](#mixing-boolean-and-comparison-operators)
     - [if Statements](#if-statements)
@@ -77,6 +78,7 @@ Example:
     - [List Concatenation and List Replication](#list-concatenation-and-list-replication)
     - [Removing Values from Lists with del Statements](#removing-values-from-lists-with-del-statements)
     - [Using for Loops with Lists](#using-for-loops-with-lists)
+    - [Looping Through Multiple Lists with zip()](#looping-through-multiple-lists-with-zip)
     - [The in and not in Operators](#the-in-and-not-in-operators)
     - [The Multiple Assignment Trick](#the-multiple-assignment-trick)
     - [Augmented Assignment Operators](#augmented-assignment-operators)
@@ -102,13 +104,14 @@ Example:
     - [Multiline Strings with Triple Quotes](#multiline-strings-with-triple-quotes)
     - [Indexing and Slicing Strings](#indexing-and-slicing-strings)
     - [The in and not in Operators with Strings](#the-in-and-not-in-operators-with-strings)
+    - [The in and not in Operators with list](#the-in-and-not-in-operators-with-list)
     - [The upper(), lower(), isupper(), and islower() String Methods](#the-upper-lower-isupper-and-islower-string-methods)
     - [The isX String Methods](#the-isx-string-methods)
     - [The startswith() and endswith() String Methods](#the-startswith-and-endswith-string-methods)
     - [The join() and split() String Methods](#the-join-and-split-string-methods)
     - [Justifying Text with rjust(), ljust(), and center()](#justifying-text-with-rjust-ljust-and-center)
     - [Removing Whitespace with strip(), rstrip(), and lstrip()](#removing-whitespace-with-strip-rstrip-and-lstrip)
-    - [Copying and Pasting Strings with the pyperclip Module](#copying-and-pasting-strings-with-the-pyperclip-module)
+    - [Copying and Pasting Strings with the pyperclip Module (need pip install)(#copying-and-pasting-strings-with-the-pyperclip-module-need-pip-install)
 - [String Formatting](#string-formatting)
     - [% operator](#operator)
     - [String Formatting (str.format)](#string-formatting-strformat)
@@ -1088,6 +1091,18 @@ Index 3 in supplies is: binders
 ```
 
 [*Return to the Top*](#python-cheatsheet)
+
+### Looping Through Multiple Lists with zip()
+
+```python
+>>> name = ['Pete', 'John', 'Elizabeth']
+>>> age = [6, 23, 44]
+>>> for n, a in zip(name, age):
+>>>     print('{} is {} years old'.format(n, a))
+Pete is 6 years old
+John is 23 years old
+Alice is 44 years old
+```
 
 ### The in and not in Operators
 
