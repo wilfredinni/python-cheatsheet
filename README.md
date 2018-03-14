@@ -18,7 +18,6 @@ All contributions are welcome. You can:
 - [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
 - [Online Jupyter Notebook](https://hub.mybinder.org/user/wilfredinni-python-cheatsheet-p3thwgv6/notebooks/python_cheat_sheet.ipynb)
 
-
 ## Foreword
 
 This document uses the Python REPL syntax, that allow to show some Python commands and the actual
