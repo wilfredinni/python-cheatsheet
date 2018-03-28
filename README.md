@@ -190,10 +190,11 @@ Example:
     - [Logging Levels](#logging-levels)
     - [Disabling Logging](#disabling-logging)
     - [Logging to a File](#logging-to-a-file)
-- [Virtual Environment](#virtual-environment)
-    - [Windows](#windows)
 - [Lambda Functions](#lambda-functions)
 - [Ternary Conditional Operator](#ternary-conditional-operator)
+- [Virtual Environment](#virtual-environment)
+    - [virtualenv](#virtualenv)
+    - [pipenv](#pipenv)
 
 ## Python Basics
 
@@ -3987,52 +3988,6 @@ logging.basicConfig(filename='myProgramLog.txt', level=logging.DEBUG, format='%(
 
 [*Return to the Top*](#python-cheatsheet)
 
-## Virtual Environment
-
-The use of a Virtual Environment is to test python code in encapsulated environments and to also avoid filling the base Python installation with libraries we might use for only one project.
-
-[*Return to the Top*](#python-cheatsheet)
-
-### Windows
-
-1. Install virtualenv:
-
-        pip install virtualenv
-
-1. Install virtualenvwrapper-win:
-
-        pip install virtualenvwrapper-win
-
-Usage:
-
-1. Make a Virtual Environemt:
-
-        mkvirtualenv HelloWold
-
-    Anything we install now will be specific to this project. And available to the projects we connect to this environment.
-
-1. Set Project Directory:
-
-    To bind our virtualenv with our current working directory we simply enter:
-
-        setprojectdir .
-
-1. Deactivate:
-
-    To move onto something else in the command line type ‘deactivate’ to deactivate your environment.
-
-        deactivate
-
-    Notice how the parenthesis disappear.
-
-1. Workon:
-
-    Open up the command prompt and type ‘workon HelloWold’ to activate the environment and move into your root project folder:
-
-        workon HelloWold
-
-[*Return to the Top*](#python-cheatsheet)
-
 ## Lambda Functions
 
 This function:
@@ -4114,5 +4069,84 @@ if age < 18:
 else:
     print('adult')
 ```
+
+[*Return to the Top*](#python-cheatsheet)
+
+## Virtual Environment
+
+The use of a Virtual Environment is to test python code in encapsulated environments and to also avoid filling the base Python installation with libraries we might use for only one project.
+
+[*Return to the Top*](#python-cheatsheet)
+
+### virtualenv
+
+1. Install virtualenv
+
+        pip install virtualenv
+
+1. Install virtualenvwrapper-win (Windows)
+
+        pip install virtualenvwrapper-win
+
+Usage:
+
+1. Make a Virtual Environment
+
+        mkvirtualenv HelloWold
+
+    Anything we install now will be specific to this project. And available to the projects we connect to this environment.
+
+1. Set Project Directory
+
+    To bind our virtualenv with our current working directory we simply enter:
+
+        setprojectdir .
+
+1. Deactivate
+
+    To move onto something else in the command line type ‘deactivate’ to deactivate your environment.
+
+        deactivate
+
+    Notice how the parenthesis disappear.
+
+1. Workon
+
+    Open up the command prompt and type ‘workon HelloWold’ to activate the environment and move into your root project folder
+
+        workon HelloWold
+
+[*Return to the Top*](#python-cheatsheet)
+
+### pipenv
+
+> Pipenv — the officially recommended Python packaging tool from Python.org, free (as in freedom).
+
+1. Install pipenv
+
+        pip install pipenv
+
+1. Enter your Project directory and install the Packages for your project
+
+        cd my_project
+        pipenv install <package>
+
+    Anything we install now will be specific to this project.
+
+    Pipenv will install your package and create a Pipfile for you in your project’s directory. The Pipfile is used to track which dependencies your project needs in case you need to re-install them.
+
+1. Uninstall Packages
+
+        pipenv uninstall <package>
+
+1. Activate the Virtual Environment associated with your Python project
+
+        pipenv shell
+
+1. Exit the Virtual Environment
+
+        exit
+
+Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/).
 
 [*Return to the Top*](#python-cheatsheet)
