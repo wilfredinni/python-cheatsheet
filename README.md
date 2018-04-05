@@ -18,21 +18,6 @@ All contributions are welcome:
 - [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
 - [Jupyter Notebook](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=python_cheat_sheet.ipynb)
 
-## Foreword
-
-This document uses the Python REPL syntax, that allow to show some Python commands and the actual
-result on the console:
-
-- code lines start with `>>>`
-- Output lines start directly
-
-Example:
-
-```python
->>> 1 + 2
-3
-```
-
 ## Python Cheatsheet
 
 - [Python Basics](#python-basics)
