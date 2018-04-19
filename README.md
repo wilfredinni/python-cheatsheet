@@ -8,8 +8,8 @@ All contributions are welcome:
 
 - Read the issues, Fork the project and do a Pull Request.
 - Request a new topic creating a `New issue` with the  `enhancement` tag.
-- Find any kind of errors in the cheat sheet and create a `New issue` with the details.
-- Suggest a better or more pythonic way for existing examples ( create a `New issue` with details and examples).
+- Find any kind of errors in the cheat sheet and create a `New issue` with the details or fork the project and do a Pull Request.
+- Suggest a better or more pythonic way for existing examples.
 
 ## Read It
 
@@ -4115,8 +4115,6 @@ Usage:
 
         cd my_project
         pipenv install <package>
-
-    Anything we install now will be specific to this project.
 
     Pipenv will install your package and create a Pipfile for you in your project’s directory. The Pipfile is used to track which dependencies your project needs in case you need to re-install them.
 
