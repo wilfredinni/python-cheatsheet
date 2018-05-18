@@ -382,7 +382,7 @@ Integer to String or Float:
 ```
 
 ```python
->>> print('I am ' + str(29) + ' years old.')
+>>> print('I am {} years old.'.format(str(29)))
 I am 29 years old.
 ```
 
@@ -662,7 +662,7 @@ print('Access granted.')
 ```python
 >>> print('My name is')
 >>> for i in range(5):
->>>     print('Jimmy Five Times (' + str(i) + ')')
+>>>     print('Jimmy Five Times ({})'.format(str(i)))
 My name is
 Jimmy Five Times (0)
 Jimmy Five Times (1)
@@ -739,7 +739,7 @@ while True:
     response = input()
     if response == 'exit':
         sys.exit()
-    print('You typed ' + response + '.')
+    print('You typed {}.'.format(response))
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -748,7 +748,7 @@ while True:
 
 ```python
 >>> def hello(name):
->>>     print('Hello ' + name)
+>>>     print('Hello {}'.format(name))
 >>>
 >>> hello('Alice')
 >>> hello('Bob')
@@ -973,7 +973,7 @@ None
 ```
 
 ```python
->>> 'The ' + spam[-1] + ' is afraid of the ' + spam[-3] + '.'
+>>> 'The {} is afraid of the {}.'.format(spam[-1], spam[-3])
 'The elephant is afraid of the bat.'
 ```
 
@@ -1088,7 +1088,7 @@ None
 ```python
 >>> supplies = ['pens', 'staplers', 'flame-throwers', 'binders']
 >>> for i, supply in enumerate(supplies):
->>>     print('Index ' + str(i) + ' in supplies is: ' + supply)
+>>>     print('Index {} in supplies is: {}'.format(str(i), supply))
 Index 0 in supplies is: pens
 Index 1 in supplies is: staplers
 Index 2 in supplies is: flame-throwers
@@ -1381,7 +1381,7 @@ Using the keys(), values(), and items() methods, a for loop can iterate over the
 >>> spam = {'color': 'red', 'age': 42}
 >>>
 >>> for k, v in spam.items():
->>>     print('Key: ' + k + ' Value: ' + str(v))
+>>>     print('Key: {} Value: {}'.format(k, str(v)))
 Key: age Value: 42
 Key: color Value: red
 ```
@@ -1427,12 +1427,12 @@ False
 ```python
 >>> picnic_items = {'apples': 5, 'cups': 2}
 
->>> 'I am bringing ' + str(picnic_items.get('cups', 0)) + ' cups.'
+>>> 'I am bringing {} cups.'.format(str(picnic_items.get('cups', 0)))
 'I am bringing 2 cups.'
 ```
 
 ```python
->>> 'I am bringing ' + str(picnic_items.get('eggs', 0)) + ' eggs.'
+>>> 'I am bringing {} eggs.'.format(str(picnic_items.get('eggs', 0)))
 'I am bringing 0 eggs.'
 ```
 
@@ -2600,7 +2600,7 @@ All the regex functions in Python are in the re module:
 
 >>> mo = phone_num_regex.search('My number is 415-555-4242.')
 
->>> print('Phone number found: ' + mo.group())
+>>> print('Phone number found: {}'.format(mo.group()))
 Phone number found: 415-555-4242
 ```
 
@@ -3507,12 +3507,12 @@ The destination path can also specify a filename. In the following example, the 
 >>> import os
 >>>
 >>> for folder_name, subfolders, filenames in os.walk('C:\\delicious'):
->>>     print('The current folder is ' + folder_name)
+>>>     print('The current folder is {}'.format(folder_name))
 >>>
 >>>     for subfolder in subfolders:
->>>         print('SUBFOLDER OF ' + folder_name + ': ' + subfolder)
+>>>         print('SUBFOLDER OF {}: {}'.format(folder_name, subfolder))
 >>>     for filename in filenames:
->>>         print('FILE INSIDE ' + folder_name + ': '+ filename)
+>>>         print('FILE INSIDE {}: {}'.format(folder_name, filename))
 >>>
 >>>     print('')
 The current folder is C:\delicious
@@ -3643,7 +3643,7 @@ Just like dictionaries, shelf values have keys() and values() methods that will 
 "[{'desc': 'chubby', 'name': 'Zophie'}, {'desc': 'fluffy', 'name': 'Pooka'}]"
 
 >>> with open('myCats.py', 'w') as file_obj:
-...     file_obj.write('cats = ' + pprint.pformat(cats) + '\n')
+...     file_obj.write('cats = {}\n'.format(pprint.pformat(cats)))
 83
 ```
 
