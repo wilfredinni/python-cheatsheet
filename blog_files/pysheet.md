@@ -46,8 +46,6 @@ Examples of expressions in the interactive shell:
 16.0
 ```
 
-[*Return to the Top*](#python-cheatsheet)
-
 ### Data Types
 
 | Data Type              | Examples                                  |
