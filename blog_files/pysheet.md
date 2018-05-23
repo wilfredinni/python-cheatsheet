@@ -4,15 +4,15 @@
 
 From **Highest** to **Lowest** precedence:
 
-| Operators | Operation        | Example         |
-| --------- | ---------------- | --------------- |
-| **        | Exponent         | `2 ** 3 = 8`    |
-| %         | Modulus/Remaider | `22 % 8 = 6`    |
-| //        | Integer division | `22 // 8 = 2`   |
-| /         | Division         | `22 / 8 = 2.75` |
-| *         | Multiplication   | `3 * 3 = 9`     |
-| -         | Subtraction      | `5 - 2 = 3`     |
-| +         | Addition         | `2 + 2 = 4`     |
+| Operators | Operation        | Example       |
+| --------- | ---------------- | ------------- |
+| **        | Exponent         | 2 ** 3 = 8    |
+| %         | Modulus/Remaider | 22 % 8 = 6    |
+| //        | Integer division | 22 // 8 = 2   |
+| /         | Division         | 22 / 8 = 2.75 |
+| *         | Multiplication   | 3 * 3 = 9     |
+| -         | Subtraction      | 5 - 2 = 3     |
+| +         | Addition         | 2 + 2 = 4     |
 
 Examples of expressions in the interactive shell:
 
@@ -48,11 +48,11 @@ Examples of expressions in the interactive shell:
 
 ### Data Types
 
-| Data Type              | Examples                                  |
-| ---------------------- | ----------------------------------------- |
-| Integers               | `-2, -1, 0, 1, 2, 3, 4, 5`                |
-| Floating-point numbers | `-1.25, -1.0, --0.5, 0.0, 0.5, 1.0, 1.25` |
-| Strings                | `'a', 'aa', 'aaa', 'Hello!', '11 cats'`   |
+| Data Type              | Examples                                |
+| ---------------------- | --------------------------------------- |
+| Integers               | -2, -1, 0, 1, 2, 3, 4, 5                |
+| Floating-point numbers | -1.25, -1.0, --0.5, 0.0, 0.5, 1.0, 1.25 |
+| Strings                | 'a', 'aa', 'aaa', 'Hello!', '11 cats'   |
 
 ### String Concatenation and Replication
 
@@ -210,12 +210,12 @@ Float to Integer:
 
 | Operator | Meaning                  |
 | -------- | ------------------------ |
-| `==`     | Equal to                 |
-| `!=`     | Not equal to             |
-| `<`      | Less than                |
-| `>`      | Greater Than             |
-| `<=`     | Less than or Equal to    |
-| `>=`     | Greater than or Equal to |
+| ==       | Equal to                 |
+| !=       | Not equal to             |
+| <        | Less than                |
+| >        | Greater Than             |
+| <=       | Less than or Equal to    |
+| >=       | Greater than or Equal to |
 
 These operators evaluate to True or False depending on the values you give them.
 
@@ -313,28 +313,28 @@ There are three Boolean operators: and, or, and not.
 
 The *and* Operator’s *Truth* Table:
 
-| Expression        | Evaluates to |
-| ----------------- | ------------ |
-| `True and True`   | `True`      |
-| `True and False`  | `False`     |
-| `False and True`  | `False`     |
-| `False and False` | `False`     |
+| Expression      | Evaluates to |
+| --------------- | ------------ |
+| True and True   | True         |
+| True and False  | False        |
+| False and True  | False        |
+| False and False | False        |
 
 The *or* Operator’s *Truth* Table:
 
-| Expression       | Evaluates to   |
-| ---------------- | -------------- |
-| `True or True`   | `True`         |
-| `True or False`  | `True`         |
-| `False or True`  | `True`         |
-| `False or False` | `False`        |
+| Expression     | Evaluates to   |
+| -------------- | -------------- |
+| True or True   | True           |
+| True or False  | True           |
+| False or True  | True           |
+| False or False | False          |
 
 The *not* Operator’s *Truth* Table:
 
-| Expression   | Evaluates to  |
-| ------------ | ------------- |
-| `not True`   | `False`       |
-| `not False`  | `True`        |
+| Expression  | Evaluates to  |
+| ----------- | ------------- |
+| not True    | False         |
+| not False   | True          |
 
 ### Mixing Boolean and Comparison Operators
 
@@ -911,13 +911,13 @@ The multiple assignment trick can also be used to swap the values in two variabl
 
 ### Augmented Assignment Operators
 
-| Operator    | Equivalent        |
-| ----------- | ----------------- |
-| `spam += 1` | `spam = spam + 1` |
-| `spam -= 1` | `spam = spam - 1` |
-| `spam *= 1` | `spam = spam * 1` |
-| `spam /= 1` | `spam = spam / 1` |
-| `spam %= 1` | `spam = spam % 1` |
+| Operator  | Equivalent      |
+| --------- | --------------- |
+| spam += 1 | spam = spam + 1 |
+| spam -= 1 | spam = spam - 1 |
+| spam *= 1 | spam = spam * 1 |
+| spam /= 1 | spam = spam / 1 |
+| spam %= 1 | spam = spam % 1 |
 
 Examples:
 
@@ -1751,11 +1751,11 @@ A List comprehension can be generated from a dictionary:
 
 | Escape character   | Prints as            |
 | ------------------ | -------------------- |
-| `\'`               | Single quote         |
-| `\"`               | Double quote         |
-| `\t`               | Tab                  |
-| `\n`               | Newline (line break) |
-| `\\`               | Backslash            |
+| \'                 | Single quote         |
+| \"                 | Double quote         |
+| \t                 | Tab                  |
+| \n                 | Newline (line break) |
+| \\                 | Backslash            |
 
 Example:
 
