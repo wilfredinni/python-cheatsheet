@@ -32,8 +32,7 @@ This project and everyone who participates in it is governed by the [Contributor
 
 If you don't know were to start, check this out:
 
-* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-* [Mastering Issues](https://guides.github.com/features/issues/)
-* [Forking Projects](https://guides.github.com/activities/forking/)
-
-Read the rest of the [GitHub Guides](https://guides.github.com/)
+* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
+* [Mastering Issues](https://guides.github.com/features/issues/).
+* [Forking Projects](https://guides.github.com/activities/forking/).
+* Read the rest of the [GitHub Guides](https://guides.github.com/).
