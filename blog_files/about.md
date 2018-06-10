@@ -25,6 +25,6 @@ Build with the [Flask](http://flask.pocoo.org/) microframework, this... website 
 
 In the frontend is [Bulma](https://github.com/jgthms/bulma), a great and easy to use CSS framework along with some vanilla Javascript.
 
-![flask](https://raw.githubusercontent.com/wilfredinni/python-cheatsheet/master/blog_files/screen_shot.jpg)
+![flask](https://raw.githubusercontent.com/wilfredinni/pysheetBlog/master/img/new_post.png)
 
 For more information visit the [Project Page](https://github.com/wilfredinni/pysheetBlog).
