@@ -2,7 +2,7 @@
 
 This is a basic [cheatsheet](https://www.pythoncheatsheet.org) for Python mostly based on the book written by Al Sweigart, [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/3.0/) and many other sources.
 
-> Anyone can forget how to make [character classes for a regex](#Making-Your-Own-Character-Classes), [slice a list](#Getting-Sublists-with-Slices) or do a [for loop](#Using-for-Loops-with-Lists). This cheatsheet tries to provide a basic reference for beginner and advanced developers, lower the entry barrier for newcomers and help veterans refresh the old tricks.
+> Anyone can forget how to make [character classes for a regex](https://www.pythoncheatsheet.org/index#Making-Your-Own-Character-Classes), [slice a list](https://www.pythoncheatsheet.org/index#Getting-Sublists-with-Slices) or do a [for loop](https://www.pythoncheatsheet.org/index#Using-for-Loops-with-Lists). This cheatsheet tries to provide a basic reference for beginner and advanced developers, lower the entry barrier for newcomers and help veterans refresh the old tricks.
 
 ## About the Website
 
