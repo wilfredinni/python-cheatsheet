@@ -2494,7 +2494,7 @@ We can use the `%x` format specifier to convert an int value to a string:
 "I have 5 apples"
 ```
 
-Note: For new code prefere using str.format over the `%` operator.
+Note: For new code, using str.format or f-strings is strongly recommended over the `%` operator.
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -2547,7 +2547,7 @@ Or:
 
 [*Return to the Top*](#python-cheatsheet)
 
-### Formatted String Literals (Python 3.6+)
+### Formatted String Literals or f-strings (Python 3.6+)
 
 ```python
 >>> name = 'Elizabeth'
