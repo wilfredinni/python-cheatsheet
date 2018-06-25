@@ -120,7 +120,7 @@ All contributions are welcome:
     - [% operator](#operator)
     - [String Formatting (str.format)](#string-formatting-strformat)
     - [Lazy string formatting](#lazy-string-formatting)
-    - [Formatted String Literals (Python 3.6+)](#formatted-string-literals-python-36)
+    - [Formatted String Literals or f-strings (Python 3.6+)](#formatted-string-literals-or-f-strings-python-36)
     - [Template Strings](#template-strings)
 - [Regular Expressions](#regular-expressions)
     - [Matching Regex Objects](#matching-regex-objects)
