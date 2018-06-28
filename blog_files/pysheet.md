@@ -1633,7 +1633,7 @@ Example:
 The opposite of dropwhile(). Makes an iterator and returns elements from the iterable as long as the predicate is true.
 
 ```python
-itertools.takwwhile(predicate, iterable)
+itertools.takewhile(predicate, iterable)
 ```
 
 Example:
