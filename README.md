@@ -115,7 +115,7 @@ All contributions are welcome:
     - [The join() and split() String Methods](#the-join-and-split-string-methods)
     - [Justifying Text with rjust(), ljust(), and center()](#justifying-text-with-rjust-ljust-and-center)
     - [Removing Whitespace with strip(), rstrip(), and lstrip()](#removing-whitespace-with-strip-rstrip-and-lstrip)
-    - [Copying and Pasting Strings with the pyperclip Module (need pip install)](#copying-and-pasting-strings-with-the-pyperclip-module-need-pip-install)
+    - [Copying and Pasting Strings with the pyperclip Module (need pip install)(#copying-and-pasting-strings-with-the-pyperclip-module-need-pip-install)
 - [String Formatting](#string-formatting)
     - [% operator](#operator)
     - [String Formatting (str.format)](#string-formatting-strformat)
@@ -177,6 +177,9 @@ All contributions are welcome:
     - [Logging to a File](#logging-to-a-file)
 - [Lambda Functions](#lambda-functions)
 - [Ternary Conditional Operator](#ternary-conditional-operator)
+- [args and kwargs](#args-and-kwargs)
+    - [Thinks to Remember(args)](#thinks-to-rememberargs)
+    - [Thinks to remember(kwargs)](#thinks-to-rememberkwargs)
 - [Virtual Environment](#virtual-environment)
     - [virtualenv](#virtualenv)
     - [pipenv](#pipenv)
@@ -4056,6 +4059,66 @@ if age < 18:
 else:
     print('adult')
 ```
+
+[*Return to the Top*](#python-cheatsheet)
+
+## args and kwargs
+
+The names ```args and kwargs``` are arbitrary - the important thing are the ```*``` and ```**``` operators. They can mean:
+
+1. In a function declaration, ```*``` means “pack all remaining positional arguments into a tuple named <name>”, while ```**``` is the same for keyword arguments (except it uses a dictionary, not a tuple).
+
+2. In a function call, ```*``` means “unpack tuple or list named <name> to positional arguments at this position”, while ```**``` is the same for keyword arguments.
+
+For example you can make a function that you can use to call any other function, no matter what parameters it has:
+
+```python
+def forward(f, *args, **kwargs):
+    return f(*args, **kwargs)
+```
+
+Inside forward, args is a tuple (of all positional arguments except the first one, because we specified it - the f), kwargs is a dict. Then we call f and unpack them so they become normal arguments to f.
+
+You use ```*args``` when you have an indefinite amount of positional arguments.
+
+```python
+>>> def fruits(*args):
+>>>    for fruit in args:
+>>>       print(fruit)
+
+>>> fruits("apples", "bananas", "grapes")
+
+"apples"
+"bananas"
+"grapes"
+```
+
+Similarly, you use ```**kwargs``` when you have an indefinite number of keyword arguments.
+
+```python
+>>> def fruit(**kwargs):
+>>>    for key, value in kwargs.items():
+>>>        print("{0}: {1}".format(key, value))
+
+>>> fruit(name = "apple", color = "red")
+
+name: apple
+color: red
+```
+
+### Thinks to Remember(args)
+
+1. Functions can accept a variable number of positional arguments by using ```*args``` in the def statement.
+2. You can use the items from a sequence as the positional arguments for a function with the ```*``` operator.
+3. Using the ```*``` operator with a generator may cause your program to run out of memory and crash.
+4. Adding new positional parameters to functions that accept ```*args``` can introduce hard-to-find bugs.
+
+### Thinks to remember(kwargs)
+
+1. Function arguments can be specified by position or by keyword.
+2. Keywords make it clear what the purpose of each argument is when it would be confusing with only positional arguments.
+3. Keyword arguments with default values make it easy to add new behaviors to a function, especially when the function has existing callers.
+4. Optional keyword arguments should always be passed by keyword instead of by position.
 
 [*Return to the Top*](#python-cheatsheet)
 
