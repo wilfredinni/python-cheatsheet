@@ -2551,7 +2551,7 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 | `^spam`                  | means the string must begin with spam.                       |
 | `spam$`                  | means the string must end with spam.                         |
 | `.`                      | any character, except newline characters.                    |
-| `\d`, `\w`, and `\s`     | a digit, word, or space character, ectively.                 |
+| `\d`, `\w`, and `\s`     | a digit, word, or space character, resectively.                 |
 | `\D`, `\W`, and `\S`     | anything except a digit, word, or space acter, respectively. |
 | `[abc]`                  | any character between the brackets (such as a, b, ).         |
 | `[^abc]`                 | any character that isn’t between the brackets.               |
