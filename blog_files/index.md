@@ -15,4 +15,5 @@
 - [Debugging](#debugging)
 - [Lambda Functions](#lambda-functions)
 - [Ternary Conditional Operator](#ternary-conditional-operator)
+- [args and kwargs](#args-and-kwargs)
 - [Virtual Environment](#virtual-environment)
