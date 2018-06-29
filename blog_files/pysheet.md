@@ -3594,7 +3594,7 @@ else:
 
 ## args and kwargs
 
-the names ```args and kwargs``` are arbitrary - the important thing are the ```*``` and ```**``` operators. They can mean:
+The names ```args and kwargs``` are arbitrary - the important thing are the ```*``` and ```**``` operators. They can mean:
 
 1. In a function declaration, ```*``` means “pack all remaining positional arguments into a tuple named <name>”, while ```**``` is the same for keyword arguments (except it uses a dictionary, not a tuple).
 
