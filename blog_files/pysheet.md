@@ -3636,6 +3636,45 @@ name: apple
 color: red
 ```
 
+```python
+>>> def show(arg1, arg2, *args, kwarg1=None, kwarg2=None, **kwargs):
+>>>   print(arg1)
+>>>   print(arg2)
+>>>   print(args)
+>>>   print(kwarg1)
+>>>   print(kwarg2)
+>>>   print(kwargs)
+
+>>> data1 = [1,2,3]
+>>> data2 = [4,5,6]
+>>> data3 = {'a':7,'b':8,'c':9}
+
+>>> show(*data1,*data2, kwarg1="python",kwarg2="cheatsheet",**data3)
+1
+2
+(3, 4, 5, 6)
+python
+cheatsheet
+{'a': 7, 'b': 8, 'c': 9}
+
+>>> show(*data1, *data2, **data3)
+1
+2
+(3, 4, 5, 6)
+None
+None
+{'a': 7, 'b': 8, 'c': 9}
+
+# If you do not specify ** for kwargs
+>>> show(*data1, *data2, *data3)
+1
+2
+(3, 4, 5, 6, "a", "b", "c")
+None
+None
+{}
+```
+
 ### Thinks to Remember(args)
 
 1. Functions can accept a variable number of positional arguments by using ```*args``` in the def statement.
