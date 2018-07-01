@@ -1017,8 +1017,14 @@ None
 ['bat', 'rat', 'elephant']
 ```
 
+Slicing the complete list will perform a copy:
 ```python
->>> spam[:]
+>>> spam2 = spam[:]
+['cat', 'bat', 'rat', 'elephant']
+>>> spam.append('dog')
+>>> spam
+['cat', 'bat', 'rat', 'elephant', 'dog']
+>>> spam2
 ['cat', 'bat', 'rat', 'elephant']
 ```
 
@@ -2113,9 +2119,9 @@ A raw string completely ignores all escape characters and prints any backslash t
 That is Carol\'s cat.
 ```
 
-[*Return to the Top*](#python-cheatsheet)
-
 Note: mostly used for regular expression definition (see `re` package)
+
+[*Return to the Top*](#python-cheatsheet)
 
 ### Multiline Strings with Triple Quotes
 
