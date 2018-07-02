@@ -16,4 +16,5 @@
 - [Lambda Functions](#lambda-functions)
 - [Ternary Conditional Operator](#ternary-conditional-operator)
 - [args and kwargs](#args-and-kwargs)
+- [Context Manager](#context-manager)
 - [Virtual Environment](#virtual-environment)
