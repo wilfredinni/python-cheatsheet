@@ -4,6 +4,7 @@
 - [Exception Handling](#exception-handling)
 - [Lists](#lists)
 - [Dictionaries and Structuring Data](#dictionaries-and-structuring-data)
+- [sets](#sets)
 - [itertools Module](#itertools-module)
 - [Comprehensions](#comprehensions)
 - [Manipulating Strings](#manipulating-strings)
