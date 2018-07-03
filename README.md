@@ -1026,6 +1026,7 @@ None
 ```
 
 Slicing the complete list will perform a copy:
+
 ```python
 >>> spam2 = spam[:]
 ['cat', 'bat', 'rat', 'elephant']
