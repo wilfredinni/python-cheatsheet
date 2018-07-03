@@ -192,6 +192,8 @@ All contributions are welcome:
 - [Context Manager](#context-manager)
     - [with statement](#with-statement)
     - [Writing your own contextmanager using generator syntax](#writing-your-own-contextmanager-using-generator-syntax)
+- [__main__ Top-level script environment](#main-top-level-script-environment)
+    - [Advantages](#advantages)
 - [Virtual Environment](#virtual-environment)
     - [virtualenv](#virtualenv)
     - [pipenv](#pipenv)
@@ -213,8 +215,6 @@ From **Highest** to **Lowest** precedence:
 | +         | Addition         | `2 + 2 = 4`     |
 
 Examples of expressions in the interactive shell:
-
-
 
 ```python
 >>> 2 + 3 * 6
@@ -4222,9 +4222,9 @@ else:
 
 The names ```args and kwargs``` are arbitrary - the important thing are the ```*``` and ```**``` operators. They can mean:
 
-1. In a function declaration, ```*``` means “pack all remaining positional arguments into a tuple named <name>”, while ```**``` is the same for keyword arguments (except it uses a dictionary, not a tuple).
+1. In a function declaration, ```*``` means “pack all remaining positional arguments into a tuple named `<name>`”, while ```**``` is the same for keyword arguments (except it uses a dictionary, not a tuple).
 
-2. In a function call, ```*``` means “unpack tuple or list named <name> to positional arguments at this position”, while ```**``` is the same for keyword arguments.
+2. In a function call, ```*``` means “unpack tuple or list named `<name>` to positional arguments at this position”, while ```**``` is the same for keyword arguments.
 
 For example you can make a function that you can use to call any other function, no matter what parameters it has:
 
@@ -4358,6 +4358,49 @@ Exit
 
 >>>
 ```
+
+[*Return to the Top*](#python-cheatsheet)
+
+## __main__  Top-level script environment
+
+`__main__` is the name of the scope in which top-level code executes.
+A module’s __name__ is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
+
+A module can discover whether or not it is running in the main scope by checking its own `__name__`, which allows a common idiom for conditionally executing code in a module when it is run as a script or with `python -m` but not when it is imported:
+
+```python
+>>> if __name__ == "__main__":
+...     # execute only if run as a script
+...     main()
+```
+
+For a package, the same effect can be achieved by including a __main__.py module, the contents of which will be executed when the module is run with -m
+
+For example we are developing script which is designed to be used as module, we should do:
+
+```python
+>>> # Python program to execute function directly
+>>> def add(a, b):
+...     return a+b
+...
+>>> add(10, 20) # we can test it by calling the function save it as calculate.py
+30
+>>> # Now if we want to use that module by importing we have to comment out our call,
+>>> # Instead we can write like this in calculate.py
+>>> if __name__ == "__main__":
+...     add(3, 5)
+...
+>>> import calculate
+>>> calculate.add(3, 5)
+8
+```
+
+### Advantages
+
+1. Every Python module has it’s `__name__` defined and if this is `__main__`, it implies that the module is being run standalone by the user and we can do corresponding appropriate actions.
+2. If you import this script as a module in another script, the __name__ is set to the name of the script/module.
+3. Python files can act as either reusable modules, or as standalone programs.
+4. if `__name__ == “main”:` is used to execute some code only if the file was run directly, and not imported.
 
 [*Return to the Top*](#python-cheatsheet)
 
