@@ -18,5 +18,5 @@
 - [Ternary Conditional Operator](#ternary-conditional-operator)
 - [args and kwargs](#args-and-kwargs)
 - [Context Manager](#context-manager)
-- [__main__ Top-level script environment](#main-top-level-script-environment)
+- [`__main__` Top-level script environment](#main-top-level-script-environment)
 - [Virtual Environment](#virtual-environment)
