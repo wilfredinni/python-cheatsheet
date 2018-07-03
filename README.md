@@ -1664,7 +1664,7 @@ update()
 
 ### set symetric_difference
 
-`symetric_difference` or `^` will return all the elements that are different between them.
+`symetric_difference` or `^` will return all the elements that are not common between them.
 
 ```python
 >>> s1 = {1, 2, 3}
