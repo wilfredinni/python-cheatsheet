@@ -192,7 +192,7 @@ All contributions are welcome:
 - [Context Manager](#context-manager)
     - [with statement](#with-statement)
     - [Writing your own contextmanager using generator syntax](#writing-your-own-contextmanager-using-generator-syntax)
-- [__main__ Top-level script environment](#main-top-level-script-environment)
+- [`__main__` Top-level script environment](#main-top-level-script-environment)
     - [Advantages](#advantages)
 - [Virtual Environment](#virtual-environment)
     - [virtualenv](#virtualenv)
@@ -4361,7 +4361,7 @@ Exit
 
 [*Return to the Top*](#python-cheatsheet)
 
-## __main__  Top-level script environment
+## `__main__` Top-level script environment
 
 `__main__` is the name of the scope in which top-level code executes.
 A module’s __name__ is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
