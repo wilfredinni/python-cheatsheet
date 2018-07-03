@@ -3756,7 +3756,8 @@ For example we are developing script which is designed to be used as module, we 
 ...
 >>> add(10, 20) # we can test it by calling the function save it as calculate.py
 30
->>> # Now if we want to use that module by importing we have to comment out our call, Instead we can write like this in calculate.py
+>>> # Now if we want to use that module by importing we have to comment out our call, 
+>>> # Instead we can write like this in calculate.py
 >>> if __name__ == "__main__":
 ...     add(3, 5)
 ...
