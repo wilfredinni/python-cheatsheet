@@ -19,4 +19,5 @@
 - [args and kwargs](#args-and-kwargs)
 - [Context Manager](#context-manager)
 - [`__main__` Top-level script environment](#main-top-level-script-environment)
+- [setup.py](#setup.py)
 - [Virtual Environment](#virtual-environment)

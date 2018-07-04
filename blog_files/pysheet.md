@@ -3915,8 +3915,8 @@ The `setup.py` file is at the heart of a Python project. It describes all of the
 
 This allows you to easily install Python packages. Often it's enough to write:
 
-```
-$ python setup.py install 
+```bash
+python setup.py install
 ```
 
 and module will install itself.
@@ -3934,7 +3934,7 @@ Our initial setup.py will also include information about the license and will re
 ... )
 ```
 
-Find more information visit http://docs.python.org/install/index.html.
+Find more information visit [http://docs.python.org/install/index.html](http://docs.python.org/install/index.html).
 
 ## Virtual Environment
 
