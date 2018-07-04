@@ -1226,6 +1226,141 @@ Using `setdefault` we could make the same code more shortly:
  'y': 1}
 ```
 
+## sets
+
+From the Python 3 [documentation](https://docs.python.org/3/tutorial/datastructures.html)
+
+> A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.
+
+### Initializing a set
+
+There are two ways to create sets: using curly braces `{}` and the bult-in function `set()`
+
+```python
+>>> s = {1, 2, 3}
+>>> s = set([1, 2, 3])
+```
+
+When creating an empty set, be sure to not use the curly braces `{}`  or you will get an empty dictionary instead.
+
+```python
+>>> s = {}
+>>> type(s)
+<class 'dict'>
+```
+
+### sets: unordered collections of unique elements
+
+A set automatically remove all the duplicate values.
+
+```python
+>>> s = {1, 2, 3, 2, 3, 4}
+>>> s
+{1, 2, 3, 4}
+```
+
+And as an unordered data type, they can't be indexed.
+
+```python
+>>> s = {1, 2, 3}
+>>> s(0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object is not callable
+>>>
+```
+
+### set add() and update()
+
+Using the `add()` method we can add a single element to the set.
+
+```python
+>>> s = {1, 2, 3}
+>>> s.add(4)
+>>> s
+{1, 2, 3, 4}
+```
+
+And with `update()`, multiple ones .
+
+```python
+>>> s = {1, 2, 3}
+>>> s.update([2, 3, 4, 5, 6])
+>>> s
+{1, 2, 3, 4, 5, 6}  # remember, sets automatically remove duplicates
+```
+
+### set remove() and discard()
+
+Both methods will remove an element from the set, but `remove()` will raise a `key error` if the value doesn't exist.
+
+```python
+>>> s = {1, 2, 3}
+>>> s.remove(3)
+>>> s
+{1, 2}
+>>> s.remove(3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 3
+```
+
+update()
+
+```python
+>>> s = {1, 2, 3}
+>>> s.discard(3)
+>>> s
+{1, 2}
+>>> s.discard(3)
+>>>
+```
+
+### set union()
+
+`union()` or `|` will create a new set that contains all the elements from the sets provided.
+
+```python
+>>> s1 = {1, 2, 3}
+>>> s2 = {3, 4, 5}
+>>> s1.union(s2)  # or 's1 | s2'
+{1, 2, 3, 4, 5}
+```
+
+### set  intersection
+
+`intersection`  or `&`  will return a set containing only the elements that are common to all of them.
+
+```python
+>>> s1 = {1, 2, 3}
+>>> s2 = {2, 3, 4}
+>>> s3 = {3, 4, 5}
+>>> s1.intersection(s2, s3)  # or 's1 & s2 & s3'
+{3}
+```
+
+### set  difference
+
+`difference` or `-` will return only the elements that are in one of the sets.
+
+```python
+>>> s1 = {1, 2, 3}
+>>> s2 = {2, 3, 4}
+>>> s1.difference(s2)  # or 's1 - s2'
+{1}
+```
+
+### set symetric_difference
+
+`symetric_difference` or `^` will return all the elements that are not common between them.
+
+```python
+>>> s1 = {1, 2, 3}
+>>> s2 = {2, 3, 4}
+>>> s1.symmetric_difference(s2)  # or 's1 ^ s2'
+{1, 4}
+```
+
 ## itertools Module
 
 The *itertools* module is a collection of tools intented to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
@@ -3596,9 +3731,9 @@ else:
 
 The names ```args and kwargs``` are arbitrary - the important thing are the ```*``` and ```**``` operators. They can mean:
 
-1. In a function declaration, ```*``` means “pack all remaining positional arguments into a tuple named <name>”, while ```**``` is the same for keyword arguments (except it uses a dictionary, not a tuple).
+1. In a function declaration, ```*``` means “pack all remaining positional arguments into a tuple named `<name>`”, while ```**``` is the same for keyword arguments (except it uses a dictionary, not a tuple).
 
-2. In a function call, ```*``` means “unpack tuple or list named <name> to positional arguments at this position”, while ```**``` is the same for keyword arguments.
+2. In a function call, ```*``` means “unpack tuple or list named `<name>` to positional arguments at this position”, while ```**``` is the same for keyword arguments.
 
 For example you can make a function that you can use to call any other function, no matter what parameters it has:
 
@@ -3728,23 +3863,22 @@ It is also possible to write a context manager using generator syntax thanks to 
 Enter
 Right in the middle with cm = 3
 Exit
-
 >>>
-
 ```
 
-## __main__  Top-level script environment
+## `__main__` Top-level script environment
 
-```__main__``` is the name of the scope in which top-level code executes.
-A module’s __name__ is set equal to ```__main__``` when read from standard input, a script, or from an interactive prompt.
+`__main__` is the name of the scope in which top-level code executes.
+A module’s __name__ is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
 
-A module can discover whether or not it is running in the main scope by checking its own ```__name__```, which allows a common idiom for conditionally executing code in a module when it is run as a script or with ```python -m``` but not when it is imported:
+A module can discover whether or not it is running in the main scope by checking its own `__name__`, which allows a common idiom for conditionally executing code in a module when it is run as a script or with `python -m` but not when it is imported:
 
 ```python
 >>> if __name__ == "__main__":
 ...     # execute only if run as a script
 ...     main()
 ```
+
 For a package, the same effect can be achieved by including a __main__.py module, the contents of which will be executed when the module is run with -m.
 
 For example we are developing script which is designed to be used as module, we should do:
@@ -3756,7 +3890,7 @@ For example we are developing script which is designed to be used as module, we 
 ...
 >>> add(10, 20) # we can test it by calling the function save it as calculate.py
 30
->>> # Now if we want to use that module by importing we have to comment out our call, 
+>>> # Now if we want to use that module by importing we have to comment out our call,
 >>> # Instead we can write like this in calculate.py
 >>> if __name__ == "__main__":
 ...     add(3, 5)
@@ -3766,25 +3900,26 @@ For example we are developing script which is designed to be used as module, we 
 8
 ```
 
-### Advantages:
-1. Every Python module has it’s ```__name__``` defined and if this is ```__main__```, it implies that the module is being run standalone by the user and we can do corresponding appropriate actions.
+### Advantages
+
+1. Every Python module has it’s `__name__` defined and if this is `__main__`, it implies that the module is being run standalone by the user and we can do corresponding appropriate actions.
 2. If you import this script as a module in another script, the __name__ is set to the name of the script/module.
 3. Python files can act as either reusable modules, or as standalone programs.
-4. if ```__name__ == “main”:``` is used to execute some code only if the file was run directly, and not imported.
+4. if `__name__ == “main”:` is used to execute some code only if the file was run directly, and not imported.
 
 ## setup.py
 
 The setup script is the centre of all activity in building, distributing, and installing modules using the Distutils. The main purpose of the setup script is to describe your module distribution to the Distutils, so that the various commands that operate on your modules do the right thing.
 
-The ```setup.py``` file is at the heart of a Python project. It describes all of the metadata about your project. There a quite a few fields you can add to a project to give it a rich set of metadata describing the project. However, there are only three required fields: name, version, and packages. The name field must be unique if you wish to publish your package on the Python Package Index (PyPI). The version field keeps track of different releases of the project. The packages field describes where you’ve put the Python source code within your project.
+The `setup.py` file is at the heart of a Python project. It describes all of the metadata about your project. There a quite a few fields you can add to a project to give it a rich set of metadata describing the project. However, there are only three required fields: name, version, and packages. The name field must be unique if you wish to publish your package on the Python Package Index (PyPI). The version field keeps track of different releases of the project. The packages field describes where you’ve put the Python source code within your project.
 
 This allows you to easily install Python packages. Often it's enough to write:
 
 ```
 $ python setup.py install 
 ```
-and module will install itself.
 
+and module will install itself.
 
 Our initial setup.py will also include information about the license and will re-use the README.txt file for the long_description field. This will look like:
 

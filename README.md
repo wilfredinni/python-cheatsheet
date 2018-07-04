@@ -20,173 +20,183 @@ All contributions are welcome:
 
 ## Python Cheatsheet
 
-- [About ![Binder](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master)](#about-binderhttpsmybinderorgv2ghwilfredinnipython-cheatsheetmaster)
-    - [Contribute](#contribute)
-    - [Read It](#read-it)
-    - [Python Cheatsheet](#python-cheatsheet)
-    - [Python Basics](#python-basics)
-        - [Math Operators](#math-operators)
-        - [Data Types](#data-types)
-        - [String Concatenation and Replication](#string-concatenation-and-replication)
-        - [Variables](#variables)
-        - [Comments](#comments)
-        - [The print() Function](#the-print-function)
-        - [The input() Function](#the-input-function)
-        - [The len() Function](#the-len-function)
-        - [The str(), int(), and float() Functions](#the-str-int-and-float-functions)
-    - [Flow Control](#flow-control)
-        - [Comparison Operators](#comparison-operators)
-        - [Boolean evaluation](#boolean-evaluation)
-        - [Boolean Operators](#boolean-operators)
-        - [Mixing Boolean and Comparison Operators](#mixing-boolean-and-comparison-operators)
-        - [if Statements](#if-statements)
-        - [else Statements](#else-statements)
-        - [elif Statements](#elif-statements)
-        - [while Loop Statements](#while-loop-statements)
-        - [break Statements](#break-statements)
-        - [continue Statements](#continue-statements)
-        - [for Loops and the range() Function](#for-loops-and-the-range-function)
-        - [For else statement](#for-else-statement)
-        - [Importing Modules](#importing-modules)
-        - [Ending a Program Early with sys.exit()](#ending-a-program-early-with-sysexit)
-    - [Functions](#functions)
-        - [Return Values and return Statements](#return-values-and-return-statements)
-        - [The None Value](#the-none-value)
-        - [Keyword Arguments and print()](#keyword-arguments-and-print)
-        - [Local and Global Scope](#local-and-global-scope)
-        - [The global Statement](#the-global-statement)
-    - [Exception Handling](#exception-handling)
-        - [Basic exception handling](#basic-exception-handling)
-        - [Final code in exception handling](#final-code-in-exception-handling)
-    - [Lists](#lists)
-        - [Getting Individual Values in a List with Indexes](#getting-individual-values-in-a-list-with-indexes)
-        - [Negative Indexes](#negative-indexes)
-        - [Getting Sublists with Slices](#getting-sublists-with-slices)
-        - [Getting a List’s Length with len()](#getting-a-list%E2%80%99s-length-with-len)
-        - [Changing Values in a List with Indexes](#changing-values-in-a-list-with-indexes)
-        - [List Concatenation and List Replication](#list-concatenation-and-list-replication)
-        - [Removing Values from Lists with del Statements](#removing-values-from-lists-with-del-statements)
-        - [Using for Loops with Lists](#using-for-loops-with-lists)
-        - [Looping Through Multiple Lists with zip()](#looping-through-multiple-lists-with-zip)
-        - [The in and not in Operators](#the-in-and-not-in-operators)
-        - [The Multiple Assignment Trick](#the-multiple-assignment-trick)
-        - [Augmented Assignment Operators](#augmented-assignment-operators)
-        - [Finding a Value in a List with the index() Method](#finding-a-value-in-a-list-with-the-index-method)
-        - [Adding Values to Lists with the append() and insert() Methods](#adding-values-to-lists-with-the-append-and-insert-methods)
-        - [Removing Values from Lists with remove()](#removing-values-from-lists-with-remove)
-        - [Sorting the Values in a List with the sort() Method](#sorting-the-values-in-a-list-with-the-sort-method)
-        - [Tuple Data Type](#tuple-data-type)
-        - [Converting Types with the list() and tuple() Functions](#converting-types-with-the-list-and-tuple-functions)
-    - [Dictionaries and Structuring Data](#dictionaries-and-structuring-data)
-        - [The keys(), values(), and items() Methods](#the-keys-values-and-items-methods)
-        - [Checking Whether a Key or Value Exists in a Dictionary](#checking-whether-a-key-or-value-exists-in-a-dictionary)
-        - [The get() Method](#the-get-method)
-        - [The setdefault() Method](#the-setdefault-method)
-        - [Pretty Printing](#pretty-printing)
-    - [itertools Module](#itertools-module)
-        - [accumulate()](#accumulate)
-        - [combinations()](#combinations)
-        - [combinations_with_replacement()](#combinationswithreplacement)
-        - [count()](#count)
-        - [cycle()](#cycle)
-        - [chain()](#chain)
-        - [compress()](#compress)
-        - [dropwhile()](#dropwhile)
-        - [filterfalse()](#filterfalse)
-        - [groupby()](#groupby)
-        - [islice()](#islice)
-        - [permutations()](#permutations)
-        - [product()](#product)
-        - [repeat()](#repeat)
-        - [starmap()](#starmap)
-        - [takewhile()](#takewhile)
-        - [tee()](#tee)
-        - [zip_longest()](#ziplongest)
-    - [Comprehensions](#comprehensions)
-        - [List comprehension](#list-comprehension)
-        - [Set comprehension](#set-comprehension)
-        - [Dict comprehension](#dict-comprehension)
-    - [Manipulating Strings](#manipulating-strings)
-        - [Escape Characters](#escape-characters)
-        - [Raw Strings](#raw-strings)
-        - [Multiline Strings with Triple Quotes](#multiline-strings-with-triple-quotes)
-        - [Indexing and Slicing Strings](#indexing-and-slicing-strings)
-        - [The in and not in Operators with Strings](#the-in-and-not-in-operators-with-strings)
-        - [The in and not in Operators with list](#the-in-and-not-in-operators-with-list)
-        - [The upper(), lower(), isupper(), and islower() String Methods](#the-upper-lower-isupper-and-islower-string-methods)
-        - [The isX String Methods](#the-isx-string-methods)
-        - [The startswith() and endswith() String Methods](#the-startswith-and-endswith-string-methods)
-        - [The join() and split() String Methods](#the-join-and-split-string-methods)
-        - [Justifying Text with rjust(), ljust(), and center()](#justifying-text-with-rjust-ljust-and-center)
-        - [Removing Whitespace with strip(), rstrip(), and lstrip()](#removing-whitespace-with-strip-rstrip-and-lstrip)
-        - [Copying and Pasting Strings with the pyperclip Module (need pip install)](#copying-and-pasting-strings-with-the-pyperclip-module-need-pip-install)
-    - [String Formatting](#string-formatting)
-        - [% operator](#operator)
-        - [String Formatting (str.format)](#string-formatting-strformat)
-        - [Lazy string formatting](#lazy-string-formatting)
-        - [Formatted String Literals or f-strings (Python 3.6+)](#formatted-string-literals-or-f-strings-python-36)
-        - [Template Strings](#template-strings)
-    - [Regular Expressions](#regular-expressions)
-        - [Matching Regex Objects](#matching-regex-objects)
-        - [Grouping with Parentheses](#grouping-with-parentheses)
-        - [Matching Multiple Groups with the Pipe](#matching-multiple-groups-with-the-pipe)
-        - [Optional Matching with the Question Mark](#optional-matching-with-the-question-mark)
-        - [Matching Zero or More with the Star](#matching-zero-or-more-with-the-star)
-        - [Matching One or More with the Plus](#matching-one-or-more-with-the-plus)
-        - [Matching Specific Repetitions with Curly Brackets](#matching-specific-repetitions-with-curly-brackets)
-        - [Greedy and Nongreedy Matching](#greedy-and-nongreedy-matching)
-        - [The findall() Method](#the-findall-method)
-        - [Making Your Own Character Classes](#making-your-own-character-classes)
-        - [The Caret and Dollar Sign Characters](#the-caret-and-dollar-sign-characters)
-        - [The Wildcard Character](#the-wildcard-character)
-        - [Matching Everything with Dot-Star](#matching-everything-with-dot-star)
-        - [Matching Newlines with the Dot Character](#matching-newlines-with-the-dot-character)
-        - [Review of Regex Symbols](#review-of-regex-symbols)
-        - [Case-Insensitive Matching](#case-insensitive-matching)
-        - [Substituting Strings with the sub() Method](#substituting-strings-with-the-sub-method)
-        - [Managing Complex Regexes](#managing-complex-regexes)
-    - [Handling File and Directory Paths](#handling-file-and-directory-paths)
-        - [Backslash on Windows and Forward Slash on OS X and Linux](#backslash-on-windows-and-forward-slash-on-os-x-and-linux)
-        - [The Current Working Directory](#the-current-working-directory)
-        - [Creating New Folders](#creating-new-folders)
-        - [Absolute vs. Relative Paths](#absolute-vs-relative-paths)
-        - [Handling Absolute and Relative Paths](#handling-absolute-and-relative-paths)
-        - [Checking Path Validity](#checking-path-validity)
-        - [Finding File Sizes and Folder Contents](#finding-file-sizes-and-folder-contents)
-        - [Copying Files and Folders](#copying-files-and-folders)
-        - [Moving and Renaming Files and Folders](#moving-and-renaming-files-and-folders)
-        - [Permanently Deleting Files and Folders](#permanently-deleting-files-and-folders)
-        - [Safe Deletes with the send2trash Module](#safe-deletes-with-the-send2trash-module)
-        - [Walking a Directory Tree](#walking-a-directory-tree)
-    - [Reading and Writing Files](#reading-and-writing-files)
-        - [The File Reading/Writing Process](#the-file-readingwriting-process)
-        - [Opening and reading files with the open() function](#opening-and-reading-files-with-the-open-function)
-        - [Writing to Files](#writing-to-files)
-        - [Saving Variables with the shelve Module](#saving-variables-with-the-shelve-module)
-        - [Saving Variables with the pprint.pformat() Function](#saving-variables-with-the-pprintpformat-function)
-        - [Reading ZIP Files](#reading-zip-files)
-        - [Extracting from ZIP Files](#extracting-from-zip-files)
-        - [Creating and Adding to ZIP Files](#creating-and-adding-to-zip-files)
-    - [JSON, YAML and configuration files](#json-yaml-and-configuration-files)
-        - [JSON](#json)
-        - [YAML](#yaml)
-        - [Anyconfig](#anyconfig)
-    - [Debugging](#debugging)
-        - [Raising Exceptions](#raising-exceptions)
-        - [Getting the Traceback as a String](#getting-the-traceback-as-a-string)
-        - [Assertions](#assertions)
-        - [Logging](#logging)
-        - [Logging Levels](#logging-levels)
-        - [Disabling Logging](#disabling-logging)
-        - [Logging to a File](#logging-to-a-file)
-    - [Lambda Functions](#lambda-functions)
-    - [Ternary Conditional Operator](#ternary-conditional-operator)
-    - [args and kwargs](#args-and-kwargs)
-        - [Thinks to Remember(args)](#thinks-to-rememberargs)
-        - [Thinks to remember(kwargs)](#thinks-to-rememberkwargs)
-    - [Virtual Environment](#virtual-environment)
-        - [virtualenv](#virtualenv)
-        - [pipenv](#pipenv)
+- [Python Basics](#python-basics)
+    - [Math Operators](#math-operators)
+    - [Data Types](#data-types)
+    - [String Concatenation and Replication](#string-concatenation-and-replication)
+    - [Variables](#variables)
+    - [Comments](#comments)
+    - [The print() Function](#the-print-function)
+    - [The input() Function](#the-input-function)
+    - [The len() Function](#the-len-function)
+    - [The str(), int(), and float() Functions](#the-str-int-and-float-functions)
+- [Flow Control](#flow-control)
+    - [Comparison Operators](#comparison-operators)
+    - [Boolean evaluation](#boolean-evaluation)
+    - [Boolean Operators](#boolean-operators)
+    - [Mixing Boolean and Comparison Operators](#mixing-boolean-and-comparison-operators)
+    - [if Statements](#if-statements)
+    - [else Statements](#else-statements)
+    - [elif Statements](#elif-statements)
+    - [while Loop Statements](#while-loop-statements)
+    - [break Statements](#break-statements)
+    - [continue Statements](#continue-statements)
+    - [for Loops and the range() Function](#for-loops-and-the-range-function)
+    - [For else statement](#for-else-statement)
+    - [Importing Modules](#importing-modules)
+    - [Ending a Program Early with sys.exit()](#ending-a-program-early-with-sysexit)
+- [Functions](#functions)
+    - [Return Values and return Statements](#return-values-and-return-statements)
+    - [The None Value](#the-none-value)
+    - [Keyword Arguments and print()](#keyword-arguments-and-print)
+    - [Local and Global Scope](#local-and-global-scope)
+    - [The global Statement](#the-global-statement)
+- [Exception Handling](#exception-handling)
+    - [Basic exception handling](#basic-exception-handling)
+    - [Final code in exception handling](#final-code-in-exception-handling)
+- [Lists](#lists)
+    - [Getting Individual Values in a List with Indexes](#getting-individual-values-in-a-list-with-indexes)
+    - [Negative Indexes](#negative-indexes)
+    - [Getting Sublists with Slices](#getting-sublists-with-slices)
+    - [Getting a List’s Length with len()](#getting-a-list%E2%80%99s-length-with-len)
+    - [Changing Values in a List with Indexes](#changing-values-in-a-list-with-indexes)
+    - [List Concatenation and List Replication](#list-concatenation-and-list-replication)
+    - [Removing Values from Lists with del Statements](#removing-values-from-lists-with-del-statements)
+    - [Using for Loops with Lists](#using-for-loops-with-lists)
+    - [Looping Through Multiple Lists with zip()](#looping-through-multiple-lists-with-zip)
+    - [The in and not in Operators](#the-in-and-not-in-operators)
+    - [The Multiple Assignment Trick](#the-multiple-assignment-trick)
+    - [Augmented Assignment Operators](#augmented-assignment-operators)
+    - [Finding a Value in a List with the index() Method](#finding-a-value-in-a-list-with-the-index-method)
+    - [Adding Values to Lists with the append() and insert() Methods](#adding-values-to-lists-with-the-append-and-insert-methods)
+    - [Removing Values from Lists with remove()](#removing-values-from-lists-with-remove)
+    - [Sorting the Values in a List with the sort() Method](#sorting-the-values-in-a-list-with-the-sort-method)
+    - [Tuple Data Type](#tuple-data-type)
+    - [Converting Types with the list() and tuple() Functions](#converting-types-with-the-list-and-tuple-functions)
+- [Dictionaries and Structuring Data](#dictionaries-and-structuring-data)
+    - [The keys(), values(), and items() Methods](#the-keys-values-and-items-methods)
+    - [Checking Whether a Key or Value Exists in a Dictionary](#checking-whether-a-key-or-value-exists-in-a-dictionary)
+    - [The get() Method](#the-get-method)
+    - [The setdefault() Method](#the-setdefault-method)
+    - [Pretty Printing](#pretty-printing)
+- [sets](#sets)
+    - [Initializing a set](#initializing-a-set)
+    - [sets: unordered collections of unique elements](#sets-unordered-collections-of-unique-elements)
+    - [set add() and update()](#set-add-and-update)
+    - [set remove() and discard()](#set-remove-and-discard)
+    - [set union()](#set-union)
+    - [set intersection](#set-intersection)
+    - [set difference](#set-difference)
+    - [set symetric_difference](#set-symetricdifference)
+- [itertools Module](#itertools-module)
+    - [accumulate()](#accumulate)
+    - [combinations()](#combinations)
+    - [combinations_with_replacement()](#combinationswithreplacement)
+    - [count()](#count)
+    - [cycle()](#cycle)
+    - [chain()](#chain)
+    - [compress()](#compress)
+    - [dropwhile()](#dropwhile)
+    - [filterfalse()](#filterfalse)
+    - [groupby()](#groupby)
+    - [islice()](#islice)
+    - [permutations()](#permutations)
+    - [product()](#product)
+    - [repeat()](#repeat)
+    - [starmap()](#starmap)
+    - [takewhile()](#takewhile)
+    - [tee()](#tee)
+    - [zip_longest()](#ziplongest)
+- [Comprehensions](#comprehensions)
+    - [List comprehension](#list-comprehension)
+    - [Set comprehension](#set-comprehension)
+    - [Dict comprehension](#dict-comprehension)
+- [Manipulating Strings](#manipulating-strings)
+    - [Escape Characters](#escape-characters)
+    - [Raw Strings](#raw-strings)
+    - [Multiline Strings with Triple Quotes](#multiline-strings-with-triple-quotes)
+    - [Indexing and Slicing Strings](#indexing-and-slicing-strings)
+    - [The in and not in Operators with Strings](#the-in-and-not-in-operators-with-strings)
+    - [The in and not in Operators with list](#the-in-and-not-in-operators-with-list)
+    - [The upper(), lower(), isupper(), and islower() String Methods](#the-upper-lower-isupper-and-islower-string-methods)
+    - [The isX String Methods](#the-isx-string-methods)
+    - [The startswith() and endswith() String Methods](#the-startswith-and-endswith-string-methods)
+    - [The join() and split() String Methods](#the-join-and-split-string-methods)
+    - [Justifying Text with rjust(), ljust(), and center()](#justifying-text-with-rjust-ljust-and-center)
+    - [Removing Whitespace with strip(), rstrip(), and lstrip()](#removing-whitespace-with-strip-rstrip-and-lstrip)
+    - [Copying and Pasting Strings with the pyperclip Module (need pip install)](#copying-and-pasting-strings-with-the-pyperclip-module-need-pip-install)
+- [String Formatting](#string-formatting)
+    - [% operator](#operator)
+    - [String Formatting (str.format)](#string-formatting-strformat)
+    - [Lazy string formatting](#lazy-string-formatting)
+    - [Formatted String Literals or f-strings (Python 3.6+)](#formatted-string-literals-or-f-strings-python-36)
+    - [Template Strings](#template-strings)
+- [Regular Expressions](#regular-expressions)
+    - [Matching Regex Objects](#matching-regex-objects)
+    - [Grouping with Parentheses](#grouping-with-parentheses)
+    - [Matching Multiple Groups with the Pipe](#matching-multiple-groups-with-the-pipe)
+    - [Optional Matching with the Question Mark](#optional-matching-with-the-question-mark)
+    - [Matching Zero or More with the Star](#matching-zero-or-more-with-the-star)
+    - [Matching One or More with the Plus](#matching-one-or-more-with-the-plus)
+    - [Matching Specific Repetitions with Curly Brackets](#matching-specific-repetitions-with-curly-brackets)
+    - [Greedy and Nongreedy Matching](#greedy-and-nongreedy-matching)
+    - [The findall() Method](#the-findall-method)
+    - [Making Your Own Character Classes](#making-your-own-character-classes)
+    - [The Caret and Dollar Sign Characters](#the-caret-and-dollar-sign-characters)
+    - [The Wildcard Character](#the-wildcard-character)
+    - [Matching Everything with Dot-Star](#matching-everything-with-dot-star)
+    - [Matching Newlines with the Dot Character](#matching-newlines-with-the-dot-character)
+    - [Review of Regex Symbols](#review-of-regex-symbols)
+    - [Case-Insensitive Matching](#case-insensitive-matching)
+    - [Substituting Strings with the sub() Method](#substituting-strings-with-the-sub-method)
+    - [Managing Complex Regexes](#managing-complex-regexes)
+- [Handling File and Directory Paths](#handling-file-and-directory-paths)
+    - [Backslash on Windows and Forward Slash on OS X and Linux](#backslash-on-windows-and-forward-slash-on-os-x-and-linux)
+    - [The Current Working Directory](#the-current-working-directory)
+    - [Creating New Folders](#creating-new-folders)
+    - [Absolute vs. Relative Paths](#absolute-vs-relative-paths)
+    - [Handling Absolute and Relative Paths](#handling-absolute-and-relative-paths)
+    - [Checking Path Validity](#checking-path-validity)
+    - [Finding File Sizes and Folder Contents](#finding-file-sizes-and-folder-contents)
+    - [Copying Files and Folders](#copying-files-and-folders)
+    - [Moving and Renaming Files and Folders](#moving-and-renaming-files-and-folders)
+    - [Permanently Deleting Files and Folders](#permanently-deleting-files-and-folders)
+    - [Safe Deletes with the send2trash Module](#safe-deletes-with-the-send2trash-module)
+    - [Walking a Directory Tree](#walking-a-directory-tree)
+- [Reading and Writing Files](#reading-and-writing-files)
+    - [The File Reading/Writing Process](#the-file-readingwriting-process)
+    - [Opening and reading files with the open() function](#opening-and-reading-files-with-the-open-function)
+    - [Writing to Files](#writing-to-files)
+    - [Saving Variables with the shelve Module](#saving-variables-with-the-shelve-module)
+    - [Saving Variables with the pprint.pformat() Function](#saving-variables-with-the-pprintpformat-function)
+    - [Reading ZIP Files](#reading-zip-files)
+    - [Extracting from ZIP Files](#extracting-from-zip-files)
+    - [Creating and Adding to ZIP Files](#creating-and-adding-to-zip-files)
+- [JSON, YAML and configuration files](#json-yaml-and-configuration-files)
+    - [JSON](#json)
+    - [YAML](#yaml)
+    - [Anyconfig](#anyconfig)
+- [Debugging](#debugging)
+    - [Raising Exceptions](#raising-exceptions)
+    - [Getting the Traceback as a String](#getting-the-traceback-as-a-string)
+    - [Assertions](#assertions)
+    - [Logging](#logging)
+    - [Logging Levels](#logging-levels)
+    - [Disabling Logging](#disabling-logging)
+    - [Logging to a File](#logging-to-a-file)
+- [Lambda Functions](#lambda-functions)
+- [Ternary Conditional Operator](#ternary-conditional-operator)
+- [args and kwargs](#args-and-kwargs)
+    - [Thinks to Remember(args)](#thinks-to-rememberargs)
+    - [Thinks to remember(kwargs)](#thinks-to-rememberkwargs)
+- [Context Manager](#context-manager)
+    - [with statement](#with-statement)
+    - [Writing your own contextmanager using generator syntax](#writing-your-own-contextmanager-using-generator-syntax)
+- [`__main__` Top-level script environment](#main-top-level-script-environment)
+    - [Advantages](#advantages)
+- [Virtual Environment](#virtual-environment)
+    - [virtualenv](#virtualenv)
+    - [pipenv](#pipenv)
 
 ## Python Basics
 
@@ -205,8 +215,6 @@ From **Highest** to **Lowest** precedence:
 | +         | Addition         | `2 + 2 = 4`     |
 
 Examples of expressions in the interactive shell:
-
-
 
 ```python
 >>> 2 + 3 * 6
@@ -1018,6 +1026,7 @@ None
 ```
 
 Slicing the complete list will perform a copy:
+
 ```python
 >>> spam2 = spam[:]
 ['cat', 'bat', 'rat', 'elephant']
@@ -1526,6 +1535,143 @@ Using `setdefault` we could make the same code more shortly:
  't': 6,
  'w': 2,
  'y': 1}
+```
+
+[*Return to the Top*](#python-cheatsheet)
+
+## sets
+
+From the Python 3 [documentation](https://docs.python.org/3/tutorial/datastructures.html)
+
+> A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.
+
+### Initializing a set
+
+There are two ways to create sets: using curly braces `{}` and the bult-in function `set()`
+
+```python
+>>> s = {1, 2, 3}
+>>> s = set([1, 2, 3])
+```
+
+When creating an empty set, be sure to not use the curly braces `{}`  or you will get an empty dictionary instead.
+
+```python
+>>> s = {}
+>>> type(s)
+<class 'dict'>
+```
+
+### sets: unordered collections of unique elements
+
+A set automatically remove all the duplicate values.
+
+```python
+>>> s = {1, 2, 3, 2, 3, 4}
+>>> s
+{1, 2, 3, 4}
+```
+
+And as an unordered data type, they can't be indexed.
+
+```python
+>>> s = {1, 2, 3}
+>>> s(0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object is not callable
+>>>
+```
+
+### set add() and update()
+
+Using the `add()` method we can add a single element to the set.
+
+```python
+>>> s = {1, 2, 3}
+>>> s.add(4)
+>>> s
+{1, 2, 3, 4}
+```
+
+And with `update()`, multiple ones .
+
+```python
+>>> s = {1, 2, 3}
+>>> s.update([2, 3, 4, 5, 6])
+>>> s
+{1, 2, 3, 4, 5, 6}  # remember, sets automatically remove duplicates
+```
+
+### set remove() and discard()
+
+Both methods will remove an element from the set, but `remove()` will raise a `key error` if the value doesn't exist.
+
+```python
+>>> s = {1, 2, 3}
+>>> s.remove(3)
+>>> s
+{1, 2}
+>>> s.remove(3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 3
+```
+
+update()
+
+```python
+>>> s = {1, 2, 3}
+>>> s.discard(3)
+>>> s
+{1, 2}
+>>> s.discard(3)
+>>>
+```
+
+### set union()
+
+`union()` or `|` will create a new set that contains all the elements from the sets provided.
+
+```python
+>>> s1 = {1, 2, 3}
+>>> s2 = {3, 4, 5}
+>>> s1.union(s2)  # or 's1 | s2'
+{1, 2, 3, 4, 5}
+```
+
+### set  intersection
+
+`intersection`  or `&`  will return a set containing only the elements that are common to all of them.
+
+```python
+>>> s1 = {1, 2, 3}
+>>> s2 = {2, 3, 4}
+>>> s3 = {3, 4, 5}
+>>> s1.intersection(s2, s3)  # or 's1 & s2 & s3'
+{3}
+```
+
+### set  difference
+
+`difference` or `-` will return only the elements that are in one of the sets.
+
+```python
+>>> s1 = {1, 2, 3}
+>>> s2 = {2, 3, 4}
+>>> s1.difference(s2)  # or 's1 - s2'
+{1}
+```
+
+### set symetric_difference
+
+`symetric_difference` or `^` will return all the elements that are not common between them.
+
+```python
+>>> s1 = {1, 2, 3}
+>>> s2 = {2, 3, 4}
+>>> s1.symmetric_difference(s2)  # or 's1 ^ s2'
+{1, 4}
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -4076,9 +4222,9 @@ else:
 
 The names ```args and kwargs``` are arbitrary - the important thing are the ```*``` and ```**``` operators. They can mean:
 
-1. In a function declaration, ```*``` means “pack all remaining positional arguments into a tuple named <name>”, while ```**``` is the same for keyword arguments (except it uses a dictionary, not a tuple).
+1. In a function declaration, ```*``` means “pack all remaining positional arguments into a tuple named `<name>`”, while ```**``` is the same for keyword arguments (except it uses a dictionary, not a tuple).
 
-2. In a function call, ```*``` means “unpack tuple or list named <name> to positional arguments at this position”, while ```**``` is the same for keyword arguments.
+2. In a function call, ```*``` means “unpack tuple or list named `<name>` to positional arguments at this position”, while ```**``` is the same for keyword arguments.
 
 For example you can make a function that you can use to call any other function, no matter what parameters it has:
 
@@ -4168,6 +4314,93 @@ None
 2. Keywords make it clear what the purpose of each argument is when it would be confusing with only positional arguments.
 3. Keyword arguments with default values make it easy to add new behaviors to a function, especially when the function has existing callers.
 4. Optional keyword arguments should always be passed by keyword instead of by position.
+
+[*Return to the Top*](#python-cheatsheet)
+
+## Context Manager
+
+While Python's context managers are widely used, few understand the purpose behind their use. These statements, commonly used with reading and writing files, assist the application in conserving system memory and improve resource management by ensuring specific resources are only in use for certain processes.
+
+### with statement
+
+A context manager is an object that is notified when a context (a block of code) starts and ends. You commonly use one with the with statement. It takes care of the notifying.
+
+For example, file objects are context managers. When a context ends, the file object is closed automatically:
+
+```python
+>>> with open(filename) as f:
+>>>     file_contents = f.read()
+
+# the open_file object has automatically been closed.
+```
+
+Anything that ends execution of the block causes the context manager's exit method to be called. This includes exceptions, and can be useful when an error causes you to prematurely exit from an open file or connection. Exiting a script without properly closing files/connections is a bad idea, that may cause data loss or other problems. By using a context manager you can ensure that precautions are always taken to prevent damage or loss in this way.
+
+### Writing your own contextmanager using generator syntax
+
+It is also possible to write a context manager using generator syntax thanks to the ```contextlib.contextmanager``` decorator:
+
+```python
+>>> import contextlib
+>>> @contextlib.contextmanager
+... def context_manager(num):
+...     print('Enter')
+...     yield num + 1
+...     print('Exit')
+>>> with context_manager(2) as cm:
+...     # the following instructions are run when the 'yield' point of the context
+...     # manager is reached.
+...     # 'cm' will have the value that was yielded
+...     print('Right in the middle with cm = {}'.format(cm))
+Enter
+Right in the middle with cm = 3
+Exit
+
+>>>
+```
+
+[*Return to the Top*](#python-cheatsheet)
+
+## `__main__` Top-level script environment
+
+`__main__` is the name of the scope in which top-level code executes.
+A module’s __name__ is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
+
+A module can discover whether or not it is running in the main scope by checking its own `__name__`, which allows a common idiom for conditionally executing code in a module when it is run as a script or with `python -m` but not when it is imported:
+
+```python
+>>> if __name__ == "__main__":
+...     # execute only if run as a script
+...     main()
+```
+
+For a package, the same effect can be achieved by including a __main__.py module, the contents of which will be executed when the module is run with -m
+
+For example we are developing script which is designed to be used as module, we should do:
+
+```python
+>>> # Python program to execute function directly
+>>> def add(a, b):
+...     return a+b
+...
+>>> add(10, 20) # we can test it by calling the function save it as calculate.py
+30
+>>> # Now if we want to use that module by importing we have to comment out our call,
+>>> # Instead we can write like this in calculate.py
+>>> if __name__ == "__main__":
+...     add(3, 5)
+...
+>>> import calculate
+>>> calculate.add(3, 5)
+8
+```
+
+### Advantages
+
+1. Every Python module has it’s `__name__` defined and if this is `__main__`, it implies that the module is being run standalone by the user and we can do corresponding appropriate actions.
+2. If you import this script as a module in another script, the __name__ is set to the name of the script/module.
+3. Python files can act as either reusable modules, or as standalone programs.
+4. if `__name__ == “main”:` is used to execute some code only if the file was run directly, and not imported.
 
 [*Return to the Top*](#python-cheatsheet)
 
