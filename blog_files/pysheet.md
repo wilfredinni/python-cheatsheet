@@ -1305,7 +1305,7 @@ Traceback (most recent call last):
 KeyError: 3
 ```
 
-update()
+`discard()` won't raise any errors.
 
 ```python
 >>> s = {1, 2, 3}
