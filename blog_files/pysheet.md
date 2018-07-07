@@ -3936,11 +3936,10 @@ Our initial setup.py will also include information about the license and will re
 
 Find more information visit [http://docs.python.org/install/index.html](http://docs.python.org/install/index.html).
 
-
 ## Dataclasses
 
-```Dataclasses``` are python classes but are suited for storing data objects.
-This module provides a decorator and functions for automatically adding generated special methods such as ```__init__()``` and ```__repr__()``` to user-defined classes.
+`Dataclasses` are python classes but are suited for storing data objects.
+This module provides a decorator and functions for automatically adding generated special methods such as `__init__()` and `__repr__()` to user-defined classes.
 
 ### Features
 
@@ -3951,6 +3950,7 @@ This module provides a decorator and functions for automatically adding generate
 Python 3.7 provides a decorator dataclass that is used to convert a class into a dataclass.
 
 python 2.7
+
 ```python
 >>> class Number:
 ...     def __init__(self, val):
@@ -3960,6 +3960,7 @@ python 2.7
 >>> obj.val
 2
 ```
+
 with dataclass
 
 ```python
@@ -3971,6 +3972,7 @@ with dataclass
 >>> obj.val
 2
 ```
+
 ## Virtual Environment
 
 The use of a Virtual Environment is to test python code in encapsulated environments and to also avoid filling the base Python installation with libraries we might use for only one project.

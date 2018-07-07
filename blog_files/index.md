@@ -20,4 +20,5 @@
 - [Context Manager](#context-manager)
 - <a href="#__main__-Top-level-script-environment">__main__ Top-level script environment</a>
 - [setup.py](#setup.py)
+- [Dataclasses](#dataclasses)
 - [Virtual Environment](#virtual-environment)
