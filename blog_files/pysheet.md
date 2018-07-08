@@ -1225,6 +1225,22 @@ Using `setdefault` we could make the same code more shortly:
  'w': 2,
  'y': 1}
 ```
+### Merge two dictionaries
+
+```python
+# in Python 3.5+:
+>>> x = {'a': 1, 'b': 2}
+>>> y = {'b': 3, 'c': 4}
+>>> z = {**x, **y}
+>>> z
+{'c': 4, 'a': 1, 'b': 3}
+
+# in Python 2.7
+>>> z = dict(x, **y)
+>>> z
+{'c': 4, 'a': 1, 'b': 3}
+```
+
 
 ## sets
 
