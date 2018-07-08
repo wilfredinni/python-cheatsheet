@@ -4,15 +4,15 @@
 
 From **Highest** to **Lowest** precedence:
 
-| Operators | Example          |
-| --------- | ---------------- |
-| **        |  `2 ** 3 = 8`    |
-| %         |  `22 % 8 = 6`    |
-| //        |  `22 // 8 = 2`   |
-| /         |  `22 / 8 = 2.75` |
-| *         |  `3 * 3 = 9`     |
-| -         |  `5 - 2 = 3`     |
-| +         |  `2 + 2 = 4`     |
+| Operators | Operation        | Example         |
+| --------- | ---------------- | --------------- |
+| **        | Exponent         | `2 ** 3 = 8`    |
+| %         | Modulus/Remaider | `22 % 8 = 6`    |
+| //        | Integer division | `22 // 8 = 2`   |
+| /         | Division         | `22 / 8 = 2.75` |
+| *         | Multiplication   | `3 * 3 = 9`     |
+| -         | Subtraction      | `5 - 2 = 3`     |
+| +         | Addition         | `2 + 2 = 4`     |
 
 Examples of expressions in the interactive shell:
 
@@ -1225,6 +1225,7 @@ Using `setdefault` we could make the same code more shortly:
  'w': 2,
  'y': 1}
 ```
+
 ### Merge two dictionaries
 
 ```python
@@ -1240,7 +1241,6 @@ Using `setdefault` we could make the same code more shortly:
 >>> z
 {'c': 4, 'a': 1, 'b': 3}
 ```
-
 
 ## sets
 

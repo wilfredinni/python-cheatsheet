@@ -79,6 +79,7 @@ All contributions are welcome:
     - [The get() Method](#the-get-method)
     - [The setdefault() Method](#the-setdefault-method)
     - [Pretty Printing](#pretty-printing)
+    - [Merge two dictionaries](#merge-two-dictionaries)
 - [sets](#sets)
     - [Initializing a set](#initializing-a-set)
     - [sets: unordered collections of unique elements](#sets-unordered-collections-of-unique-elements)
@@ -1541,6 +1542,22 @@ Using `setdefault` we could make the same code more shortly:
 ```
 
 [*Return to the Top*](#python-cheatsheet)
+
+### Merge two dictionaries
+
+```python
+# in Python 3.5+:
+>>> x = {'a': 1, 'b': 2}
+>>> y = {'b': 3, 'c': 4}
+>>> z = {**x, **y}
+>>> z
+{'c': 4, 'a': 1, 'b': 3}
+
+# in Python 2.7
+>>> z = dict(x, **y)
+>>> z
+{'c': 4, 'a': 1, 'b': 3}
+```
 
 ## sets
 
