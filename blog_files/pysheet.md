@@ -847,7 +847,7 @@ Index 3 in supplies is: binders
 >>>     print('{} is {} years old'.format(n, a))
 Pete is 6 years old
 John is 23 years old
-Alice is 44 years old
+Elizabeth is 44 years old
 ```
 
 ### The in and not in Operators
@@ -2807,7 +2807,7 @@ And using `pathlib` on \*nix:
 ```python
 >>> from pathlib import Path
 
->>> print(Path('usr').joinpath('bin').joinpath('spam')
+>>> print(Path('usr').joinpath('bin').joinpath('spam'))
 usr/bin/spam
 ```
 
