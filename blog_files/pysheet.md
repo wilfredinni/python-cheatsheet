@@ -322,19 +322,19 @@ The *and* Operator’s *Truth* Table:
 
 The *or* Operator’s *Truth* Table:
 
-| Expression     | Evaluates to   |
-| -------------- | -------------- |
-| True or True   | True           |
-| True or False  | True           |
-| False or True  | True           |
-| False or False | False          |
+| Expression     | Evaluates to |
+| -------------- | ------------ |
+| True or True   | True         |
+| True or False  | True         |
+| False or True  | True         |
+| False or False | False        |
 
 The *not* Operator’s *Truth* Table:
 
-| Expression  | Evaluates to  |
-| ----------- | ------------- |
-| not True    | False         |
-| not False   | True          |
+| Expression | Evaluates to |
+| ---------- | ------------ |
+| not True   | False        |
+| not False  | True         |
 
 ### Mixing Boolean and Comparison Operators
 
@@ -1900,13 +1900,13 @@ A List comprehension can be generated from a dictionary:
 
 ### Escape Characters
 
-| Escape character   | Prints as            |
-| ------------------ | -------------------- |
-| `\'`               | Single quote         |
-| `\"`               | Double quote         |
-| `\t`               | Tab                  |
-| `\n`               | Newline (line break) |
-| `\\`               | Backslash            |
+| Escape character | Prints as            |
+| ---------------- | -------------------- |
+| `\'`             | Single quote         |
+| `\"`             | Double quote         |
+| `\t`             | Tab                  |
+| `\n`             | Newline (line break) |
+| `\\`             | Backslash            |
 
 Example:
 
@@ -2702,10 +2702,10 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 | `^spam`                  | means the string must begin with spam.                       |
 | `spam$`                  | means the string must end with spam.                         |
 | `.`                      | any character, except newline characters.                    |
-| `\d`, `\w`, and `\s`     | a digit, word, or space character, resectively.                 |
+| `\d`, `\w`, and `\s`     | a digit, word, or space character, resectively.              |
 | `\D`, `\W`, and `\S`     | anything except a digit, word, or space acter, respectively. |
 | `[abc]`                  | any character between the brackets (such as a, b, ).         |
-| `[^abc]`                 | any character that isn’t between the brackets.               |
+| `[^abc]`                 | any character that isn’t between the brackets.              |
 
 ### Case-Insensitive Matching
 
@@ -3518,8 +3518,8 @@ def box_print(symbol, width, height):
 for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
     try:
         box_print(sym, w, h)
-  except Exception as err:
-      print('An exception happened: ' + str(err))
+    except Exception as err:
+        print('An exception happened: ' + str(err))
 ```
 
 ### Getting the Traceback as a String
@@ -3630,7 +3630,7 @@ Logging levels provide a way to categorize your log messages by importance. Ther
 | ---------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | `DEBUG`    | `logging.debug()`    | The lowest level. Used for small details. Usually you care about these messages only when diagnosing problems.                 |
 | `INFO`     | `logging.info()`     | Used to record information on general events in your program or confirm that things are working at their point in the program. |
-| `WARNING`  | `logging.warning()`  | Used to indicate a potential problem that doesn’t prevent the program from working but might do so in the future.              |
+| `WARNING`  | `logging.warning()`  | Used to indicate a potential problem that doesn’t prevent the program from working but might do so in the future.             |
 | `ERROR`    | `logging.error()`    | Used to record an error that caused the program to fail to do something.                                                       |
 | `CRITICAL` | `logging.critical()` | The highest level. Used to indicate a fatal error that has caused or is about to cause the program to stop running entirely.   |
 

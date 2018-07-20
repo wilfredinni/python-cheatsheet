@@ -3995,8 +3995,8 @@ def box_print(symbol, width, height):
 for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
     try:
         box_print(sym, w, h)
-  except Exception as err:
-      print('An exception happened: ' + str(err))
+    except Exception as err:
+        print('An exception happened: ' + str(err))
 ```
 
 [*Return to the Top*](#python-cheatsheet)
