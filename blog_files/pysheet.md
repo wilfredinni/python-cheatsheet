@@ -3988,6 +3988,40 @@ with dataclass
 >>> obj.val
 2
 ```
+### Default values
+
+It is easy to add default values to the fields of your data class.
+
+```python
+>>> @dataclass
+... class Product:
+...     name: str
+...     count: int = 0
+...     price: float = 0.0
+...
+>>> obj = Product("Python")
+>>> obj.name
+Python
+>>> obj.count
+0
+>>> obj.price
+0.0
+```
+
+### Type hints
+
+It is mandatory to define the data type in dataclass. However, If you don't want specify the datatype then, use ```typing.Any```.
+
+```python
+>>> from dataclasses import dataclass
+>>> from typing import Any
+
+>>> @dataclass
+... class WithoutExplicitTypes:
+...    name: Any
+...    value: Any = 42
+...
+``` 
 
 ## Virtual Environment
 
