@@ -3988,6 +3988,7 @@ with dataclass
 >>> obj.val
 2
 ```
+
 ### Default values
 
 It is easy to add default values to the fields of your data class.
@@ -4021,7 +4022,7 @@ It is mandatory to define the data type in dataclass. However, If you don't want
 ...    name: Any
 ...    value: Any = 42
 ...
-``` 
+```
 
 ## Virtual Environment
 

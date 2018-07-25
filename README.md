@@ -198,6 +198,8 @@ All contributions are welcome:
 - [setup.py](#setuppy)
 - [Dataclasses](#dataclasses)
     - [Features](#features)
+    - [Default values](#default-values)
+    - [Type hints](#type-hints)
 - [Virtual Environment](#virtual-environment)
     - [virtualenv](#virtualenv)
     - [pipenv](#pipenv)
@@ -539,26 +541,26 @@ The *and* Operator’s *Truth* Table:
 
 | Expression        | Evaluates to |
 | ----------------- | ------------ |
-| `True and True`   | `True`      |
-| `True and False`  | `False`     |
-| `False and True`  | `False`     |
-| `False and False` | `False`     |
+| `True and True`   | `True`       |
+| `True and False`  | `False`      |
+| `False and True`  | `False`      |
+| `False and False` | `False`      |
 
 The *or* Operator’s *Truth* Table:
 
-| Expression       | Evaluates to   |
-| ---------------- | -------------- |
-| `True or True`   | `True`         |
-| `True or False`  | `True`         |
-| `False or True`  | `True`         |
-| `False or False` | `False`        |
+| Expression       | Evaluates to |
+| ---------------- | ------------ |
+| `True or True`   | `True`       |
+| `True or False`  | `True`       |
+| `False or True`  | `True`       |
+| `False or False` | `False`      |
 
 The *not* Operator’s *Truth* Table:
 
-| Expression   | Evaluates to  |
-| ------------ | ------------- |
-| `not True`   | `False`       |
-| `not False`  | `True`        |
+| Expression  | Evaluates to |
+| ----------- | ------------ |
+| `not True`  | `False`      |
+| `not False` | `True`       |
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -2257,13 +2259,13 @@ A List comprehension can be generated from a dictionary:
 
 ### Escape Characters
 
-| Escape character   | Prints as            |
-| ------------------ | -------------------- |
-| `\'`               | Single quote         |
-| `\"`               | Double quote         |
-| `\t`               | Tab                  |
-| `\n`               | Newline (line break) |
-| `\\`               | Backslash            |
+| Escape character | Prints as            |
+| ---------------- | -------------------- |
+| `\'`             | Single quote         |
+| `\"`             | Double quote         |
+| `\t`             | Tab                  |
+| `\n`             | Newline (line break) |
+| `\\`             | Backslash            |
 
 Example:
 
@@ -3126,7 +3128,7 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 | `\d`, `\w`, and `\s`     | a digit, word, or space character, ectively.                 |
 | `\D`, `\W`, and `\S`     | anything except a digit, word, or space acter, respectively. |
 | `[abc]`                  | any character between the brackets (such as a, b, ).         |
-| `[^abc]`                 | any character that isn’t between the brackets.               |
+| `[^abc]`                 | any character that isn’t between the brackets.              |
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -4115,7 +4117,7 @@ Logging levels provide a way to categorize your log messages by importance. Ther
 | ---------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | `DEBUG`    | `logging.debug()`    | The lowest level. Used for small details. Usually you care about these messages only when diagnosing problems.                 |
 | `INFO`     | `logging.info()`     | Used to record information on general events in your program or confirm that things are working at their point in the program. |
-| `WARNING`  | `logging.warning()`  | Used to indicate a potential problem that doesn’t prevent the program from working but might do so in the future.              |
+| `WARNING`  | `logging.warning()`  | Used to indicate a potential problem that doesn’t prevent the program from working but might do so in the future.             |
 | `ERROR`    | `logging.error()`    | Used to record an error that caused the program to fail to do something.                                                       |
 | `CRITICAL` | `logging.critical()` | The highest level. Used to indicate a fatal error that has caused or is about to cause the program to stop running entirely.   |
 
@@ -4490,6 +4492,43 @@ with dataclass
 >>> obj = Number(2)
 >>> obj.val
 2
+```
+
+[*Return to the Top*](#python-cheatsheet)
+
+### Default values
+
+It is easy to add default values to the fields of your data class.
+
+```python
+>>> @dataclass
+... class Product:
+...     name: str
+...     count: int = 0
+...     price: float = 0.0
+...
+>>> obj = Product("Python")
+>>> obj.name
+Python
+>>> obj.count
+0
+>>> obj.price
+0.0
+```
+
+### Type hints
+
+It is mandatory to define the data type in dataclass. However, If you don't want specify the datatype then, use ```typing.Any```.
+
+```python
+>>> from dataclasses import dataclass
+>>> from typing import Any
+
+>>> @dataclass
+... class WithoutExplicitTypes:
+...    name: Any
+...    value: Any = 42
+...
 ```
 
 [*Return to the Top*](#python-cheatsheet)
