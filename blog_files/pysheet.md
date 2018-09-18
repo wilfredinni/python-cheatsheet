@@ -1313,7 +1313,7 @@ And as an unordered data type, they can't be indexed.
 >>> s(0)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-TypeError: 'set' object is not callable
+TypeError: 'set' object does not support indexing
 >>>
 ```
 
