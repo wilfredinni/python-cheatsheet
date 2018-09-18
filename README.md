@@ -1632,7 +1632,7 @@ And as an unordered data type, they can't be indexed.
 
 ```python
 >>> s = {1, 2, 3}
->>> s(0)
+>>> s[0]
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'set' object is not callable
