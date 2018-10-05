@@ -204,6 +204,7 @@ All contributions are welcome:
 - [Virtual Environment](#virtual-environment)
     - [virtualenv](#virtualenv)
     - [pipenv](#pipenv)
+    - [anaconda](#anaconda)
 
 ## The Zen of Python
 
@@ -4641,5 +4642,28 @@ Usage:
         exit
 
 Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/).
+
+[*Return to the Top*](#python-cheatsheet)
+
+### anaconda
+
+Anaconda is another popular tool to manage python packages.
+
+Usage:
+
+1. Make a Virtual Environment
+
+        conda create -n HelloWorld
+
+2. To use the Virtual Environment, activate it by:
+
+        conda activate HelloWorld
+
+    Anything installed now will be specific to the project HelloWorld
+
+3. Exit the Virtual Environment
+
+        conda deactivate
+
 
 [*Return to the Top*](#python-cheatsheet)
