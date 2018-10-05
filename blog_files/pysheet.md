@@ -4107,7 +4107,7 @@ Usage:
 
 ### pipenv
 
-> Pipenv — the officially recommended Python packaging tool from Python.org, free (as in freedom).
+> [Pipenv](https://pipenv.readthedocs.io/en/latest/) is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world. Windows is a first-class citizen, in our world.
 
 1. Install pipenv
 
@@ -4133,3 +4133,26 @@ Usage:
         exit
 
 Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/).
+
+### anaconda
+
+[Anaconda](https://anaconda.org/) is another popular tool to manage python packages.
+
+> Where packages, notebooks, projects and environments are shared. 
+Your place for free public conda package hosting.
+
+Usage:
+
+1. Make a Virtual Environment
+
+        conda create -n HelloWorld
+
+2. To use the Virtual Environment, activate it by:
+
+        conda activate HelloWorld
+
+    Anything installed now will be specific to the project HelloWorld
+
+3. Exit the Virtual Environment
+
+        conda deactivate
