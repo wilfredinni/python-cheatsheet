@@ -1,0 +1,11 @@
+[tool.poetry]
+name = "python-cheatsheet"
+version = "0.1.0"
+description = ""
+authors = ["'Carlos <'carlos.w.montecinos@gmail.com'>"]
+
+[tool.poetry.dependencies]
+python = "*"
+notedown = "^1.5"
+
+[tool.poetry.dev-dependencies]
