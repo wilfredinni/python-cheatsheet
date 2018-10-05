@@ -4616,7 +4616,7 @@ Usage:
 
 ### pipenv
 
-> Pipenv — the officially recommended Python packaging tool from Python.org, free (as in freedom).
+> [Pipenv](https://pipenv.readthedocs.io/en/latest/) is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world. Windows is a first-class citizen, in our world.
 
 1. Install pipenv
 
@@ -4647,7 +4647,10 @@ Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/)
 
 ### anaconda
 
-Anaconda is another popular tool to manage python packages.
+[Anaconda](https://anaconda.org/) is another popular tool to manage python packages.
+
+> Where packages, notebooks, projects and environments are shared. 
+Your place for free public conda package hosting.
 
 Usage:
 
