@@ -1,4 +1,3 @@
 README.html
 .ipynb_checkpoints/*.ipynb
-jupyter/markdown/.ipynb_checkpoints/*.ipynb
-jupyter/.ipynb_checkpoints/*.ipynb
+jupyter_notebooks/.ipynb_checkpoints/*.ipynb

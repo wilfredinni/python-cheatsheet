@@ -7,7 +7,7 @@ Basic cheatsheet for Python mostly based on the book written by Al Sweigart, [Au
 - [Website](https://www.pythoncheatsheet.org)
 - [Github](https://github.com/wilfredinni/python-cheatsheet)
 - [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
-- [Jupyter Notebook](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=python_cheat_sheet.ipynb)
+- [Jupyter Notebook](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks)
 
 ## Functions
 
