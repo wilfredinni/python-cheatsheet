@@ -1,1 +1,4 @@
 README.html
+.ipynb_checkpoints/*.ipynb
+jupyter/markdown/.ipynb_checkpoints/*.ipynb
+jupyter/.ipynb_checkpoints/*.ipynb
