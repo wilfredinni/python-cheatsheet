@@ -6,7 +6,7 @@ This is a basic [cheatsheet](https://www.pythoncheatsheet.org) for Python mostly
 
 ## About the Website
 
-Build with the [Flask](http://flask.pocoo.org/) microframework, this website provides a simple managment system with the following features:
+Build with the [Flask](http://flask.pocoo.org/) microframework, this website provides a simple management system with the following features:
 
 ### Features
 
@@ -18,8 +18,8 @@ Build with the [Flask](http://flask.pocoo.org/) microframework, this website pro
 - Custom Profiles for users.
 - Quick search for static pages.
 - Elasticsearch integration.
-- Users Managment (create, edit, delete).
-- Articles Managment (create, edit, delete).
+- Users Management (create, edit, delete).
+- Articles Management (create, edit, delete).
 - Licensed [MIT](https://github.com/wilfredinni/pysheetBlog/blob/master/LICENSE).
 
 In the frontend is [Bulma](https://github.com/jgthms/bulma), a great and easy to use CSS framework along with some vanilla Javascript.
