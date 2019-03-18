@@ -24,14 +24,14 @@ This project and everyone who participates in it is governed by the [Contributor
 **Important!** Edit only the README.md and if you can, use [Notedown](https://github.com/aaren/notedown) to convert it to a Jupyter Notebook (no problem if you can't).
 
 * Use `##` headers for titles.
-* Use `###` for the sub categories.
+* Use `###` for the subcategories.
 * Add a link to your section to the table of contents.
 * Make sure to include examples and keep explanations short.
-* At the end of your section or sub category, add a [*Return to the Top*](#python-cheatsheet) link.
+* At the end of your section or subcategory, add a [*Return to the Top*](#python-cheatsheet) link.
 
 ### What you need to Know
 
-If you don't know were to start, please check this out:
+If you don't know where to start, please check this out:
 
 * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
 * [Mastering Issues](https://guides.github.com/features/issues/).
