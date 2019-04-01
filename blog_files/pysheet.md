@@ -1915,7 +1915,7 @@ Example:
 
 ```python
 >>> c = {'name': 'Pooka', 'age': 5}
->>> {v, k for k, v in c.items()}
+>>> {v: k for k, v in c.items()}
 {'Pooka': 'name', 5: 'age'}
 ```
 
