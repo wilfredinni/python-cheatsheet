@@ -7,5 +7,6 @@ authors = ["'Carlos <'carlos.w.montecinos@gmail.com'>"]
 [tool.poetry.dependencies]
 python = "^3.7"
 notedown = "^1.5"
+jupyter = "^1.0"
 
 [tool.poetry.dev-dependencies]
