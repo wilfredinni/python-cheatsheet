@@ -1,3 +1,4 @@
 README.html
 .ipynb_checkpoints/*.ipynb
 jupyter_notebooks/.ipynb_checkpoints/*.ipynb
+.vscode
