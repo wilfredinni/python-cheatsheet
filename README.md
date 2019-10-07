@@ -4253,7 +4253,7 @@ Example:
 kid
 ```
 
-Ternary operators can be changed:
+Ternary operators can be chained:
 
 ```python
 >>> age = 15
