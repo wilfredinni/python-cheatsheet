@@ -189,8 +189,8 @@ All contributions are welcome:
 - [Lambda Functions](#lambda-functions)
 - [Ternary Conditional Operator](#ternary-conditional-operator)
 - [args and kwargs](#args-and-kwargs)
-    - [Thinks to Remember(args)](#thinks-to-rememberargs)
-    - [Thinks to remember(kwargs)](#thinks-to-rememberkwargs)
+    - [Things to Remember(args)](#things-to-rememberargs)
+    - [Things to Remember(kwargs)](#things-to-rememberkwargs)
 - [Context Manager](#context-manager)
     - [with statement](#with-statement)
     - [Writing your own contextmanager using generator syntax](#writing-your-own-contextmanager-using-generator-syntax)
@@ -4354,14 +4354,14 @@ None
 {}
 ```
 
-### Thinks to Remember(args)
+### Things to Remember(args)
 
 1. Functions can accept a variable number of positional arguments by using ```*args``` in the def statement.
 2. You can use the items from a sequence as the positional arguments for a function with the ```*``` operator.
 3. Using the ```*``` operator with a generator may cause your program to run out of memory and crash.
 4. Adding new positional parameters to functions that accept ```*args``` can introduce hard-to-find bugs.
 
-### Thinks to remember(kwargs)
+### Things to Remember(kwargs)
 
 1. Function arguments can be specified by position or by keyword.
 2. Keywords make it clear what the purpose of each argument is when it would be confusing with only positional arguments.
