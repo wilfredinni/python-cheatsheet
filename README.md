@@ -4266,7 +4266,7 @@ The code above is equivalent to:
 
 ```python
 if age < 18:
-    if age < 12:
+    if age < 13:
         print('kid')
     else:
         print('teenager')
