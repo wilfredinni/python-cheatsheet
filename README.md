@@ -1481,11 +1481,6 @@ False
 True
 ```
 
-```python
->>> 'color' in spam
-False
-```
-
 [*Return to the Top*](#python-cheatsheet)
 
 ### The get() Method
