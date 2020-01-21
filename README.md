@@ -1515,7 +1515,7 @@ if 'color' not in spam:
     spam['color'] = 'black'
 ```
 
-Using `setdefault` we could make the same code more shortly:
+Using `setdefault` we could write the same code more succinctly:
 
 ```python
 >>> spam = {'name': 'Pooka', 'age': 5}
