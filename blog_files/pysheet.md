@@ -160,7 +160,7 @@ def foo():
     """
 ```
 
-### The print Function
+### The print() Function
 
 ```python
 >>> print('Hello world!')
@@ -173,7 +173,7 @@ Hello world!
 Hello world! 1
 ```
 
-### The input Function
+### The input() Function
 
 Example Code:
 
@@ -186,7 +186,7 @@ Al
 It is good to meet you, Al
 ```
 
-### The len Function
+### The len() Function
 
 Evaluates to the integer value of the number of characters in a string:
 
@@ -204,7 +204,7 @@ boolean evaluation.
 >>>     print("the list is not empty!")
 ```
 
-### The str, int, and float Functions
+### The str(), int(), and float() Functions
 
 Integer to String or Float:
 
@@ -344,28 +344,28 @@ There are three Boolean operators: and, or, and not.
 
 The *and* Operator’s *Truth* Table:
 
-| Expression      | Evaluates to |
-| --------------- | ------------ |
-| True and True   | True         |
-| True and False  | False        |
-| False and True  | False        |
-| False and False | False        |
+| Expression        | Evaluates to |
+| ----------------- | ------------ |
+| `True and True`   | `True`       |
+| `True and False`  | `False`      |
+| `False and True`  | `False`      |
+| `False and False` | `False`      |
 
 The *or* Operator’s *Truth* Table:
 
-| Expression     | Evaluates to |
-| -------------- | ------------ |
-| True or True   | True         |
-| True or False  | True         |
-| False or True  | True         |
-| False or False | False        |
+| Expression       | Evaluates to |
+| ---------------- | ------------ |
+| `True or True`   | `True`       |
+| `True or False`  | `True`       |
+| `False or True`  | `True`       |
+| `False or False` | `False`      |
 
 The *not* Operator’s *Truth* Table:
 
-| Expression | Evaluates to |
-| ---------- | ------------ |
-| not True   | False        |
-| not False  | True         |
+| Expression  | Evaluates to |
+| ----------- | ------------ |
+| `not True`  | `False`      |
+| `not False` | `True`       |
 
 ### Mixing Boolean and Comparison Operators
 
@@ -537,7 +537,7 @@ import random, sys, os, math
 from random import *.
 ```
 
-### Ending a Program with sys.exit
+### Ending a Program Early with sys.exit()
 
 ```python
 import sys
@@ -611,7 +611,7 @@ True
 
 Note: never compare to `None` with the `==` operator. Always use `is`.
 
-### print Keyword Arguments
+### Keyword Arguments and print()
 
 ```python
 >>> print('Hello', end='')
@@ -792,12 +792,19 @@ None
 ['bat', 'rat', 'elephant']
 ```
 
+Slicing the complete list will perform a copy:
+
 ```python
->>> spam[:]
+>>> spam2 = spam[:]
+['cat', 'bat', 'rat', 'elephant']
+>>> spam.append('dog')
+>>> spam
+['cat', 'bat', 'rat', 'elephant', 'dog']
+>>> spam2
 ['cat', 'bat', 'rat', 'elephant']
 ```
 
-### Getting a list Length with len
+### Getting a List’s Length with len()
 
 ```python
 >>> spam = ['cat', 'dog', 'moose']
@@ -869,7 +876,7 @@ Index 2 in supplies is: flame-throwers
 Index 3 in supplies is: binders
 ```
 
-### Looping Through Multiple Lists with zip
+### Looping Through Multiple Lists with zip()
 
 ```python
 >>> name = ['Pete', 'John', 'Elizabeth']
@@ -964,7 +971,7 @@ Examples:
 ['Zophie', 'Zophie', 'Zophie']
 ```
 
-### Finding a Value in a List with the index Method
+### Finding a Value in a List with the index() Method
 
 ```python
 >>> spam = ['Zophie', 'Pooka', 'Fat-tail', 'Pooka']
@@ -973,7 +980,7 @@ Examples:
 1
 ```
 
-### Adding Values to Lists with append and insert
+### Adding Values to Lists with the append() and insert() Methods
 
 **append()**:
 
@@ -997,7 +1004,7 @@ Examples:
 ['cat', 'chicken', 'dog', 'bat']
 ```
 
-### Removing Values from Lists with remove
+### Removing Values from Lists with remove()
 
 ```python
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
@@ -1010,7 +1017,7 @@ Examples:
 
 If the value appears multiple times in the list, only the first instance of the value will be removed.
 
-### Sorting the Values in a List with sort
+### Sorting the Values in a List with the sort() Method
 
 ```python
 >>> spam = [2, 5, 3.14, 1, -7]
@@ -1071,7 +1078,7 @@ You can use the built-in function `sorted` to return a new list:
 
 The main way that tuples are different from lists is that tuples, like strings, are immutable.
 
-### Converting Types with the list and tuple Functions
+### Converting Types with the list() and tuple() Functions
 
 ```python
 >>> tuple(['cat', 'dog', 5])
@@ -1096,7 +1103,7 @@ Example Dictionary:
 myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
 ```
 
-### The keys, values, and items Methods
+### The keys(), values(), and items() Methods
 
 values():
 
@@ -1138,7 +1145,7 @@ Key: age Value: 42
 Key: color Value: red
 ```
 
-### Checking if a Key or Value Exists in a Dictionary
+### Checking Whether a Key or Value Exists in a Dictionary
 
 ```python
 >>> spam = {'name': 'Zophie', 'age': 7}
@@ -1165,12 +1172,7 @@ False
 True
 ```
 
-```python
->>> 'color' in spam
-False
-```
-
-### The get Method
+### The get() Method
 
 ```python
 >>> picnic_items = {'apples': 5, 'cups': 2}
@@ -1184,7 +1186,7 @@ False
 'I am bringing 0 eggs.'
 ```
 
-### The setdefault Method
+### The setdefault() Method
 
 Let's consider this code:
 
@@ -1195,7 +1197,7 @@ if 'color' not in spam:
     spam['color'] = 'black'
 ```
 
-Using `setdefault` we could make the same code more shortly:
+Using `setdefault` we could write the same code more succinctly:
 
 ```python
 >>> spam = {'name': 'Pooka', 'age': 5}
@@ -1310,14 +1312,14 @@ And as an unordered data type, they can't be indexed.
 
 ```python
 >>> s = {1, 2, 3}
->>> s(0)
+>>> s[0]
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'set' object does not support indexing
 >>>
 ```
 
-### set add and update
+### set add() and update()
 
 Using the `add()` method we can add a single element to the set.
 
@@ -1337,7 +1339,7 @@ And with `update()`, multiple ones .
 {1, 2, 3, 4, 5, 6}  # remember, sets automatically remove duplicates
 ```
 
-### set remove and discard
+### set remove() and discard()
 
 Both methods will remove an element from the set, but `remove()` will raise a `key error` if the value doesn't exist.
 
@@ -1363,7 +1365,7 @@ KeyError: 3
 >>>
 ```
 
-### set union
+### set union()
 
 `union()` or `|` will create a new set that contains all the elements from the sets provided.
 
@@ -1374,7 +1376,7 @@ KeyError: 3
 {1, 2, 3, 4, 5}
 ```
 
-### set intersection
+### set  intersection
 
 `intersection`  or `&`  will return a set containing only the elements that are common to all of them.
 
@@ -1386,7 +1388,7 @@ KeyError: 3
 {3}
 ```
 
-### set difference
+### set  difference
 
 `difference` or `-` will return only the elements that are in one of the sets.
 
@@ -1410,7 +1412,7 @@ KeyError: 3
 
 ## itertools Module
 
-The *itertools* module is a collection of tools intented to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
+The *itertools* module is a colection of tools intented to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
 
 From the official [Python 3.x documentation](https://docs.python.org/3/library/itertools.html):
 
@@ -1420,7 +1422,7 @@ The *itertools* module comes in the standard library and must be imported.
 
 The [operator](https://docs.python.org/3/library/operator.html) module will also be used. This module is not necessary when using itertools, but needed for some of the examples below.
 
-### accumulate
+### accumulate()
 
 Makes an iterator that returns the results of a function.
 
@@ -1483,7 +1485,7 @@ If no function is designated the items will be summed:
 31 + 1 = 32
 ```
 
-### combinations
+### combinations()
 
 Takes an iterable and a integer. This will create all the unique combination that have r members.
 
@@ -1503,7 +1505,7 @@ Example:
 ('triangle', 'square')
 ```
 
-### combinations_with_replacement
+### combinations_with_replacement()
 
 Just like combinations(), but allows individual elements to be repeated more than once.
 
@@ -1526,7 +1528,7 @@ Example:
 ('square', 'square')
 ```
 
-### count
+### count()
 
 Makes an iterator that returns evenly spaced values starting with number start.
 
@@ -1548,7 +1550,7 @@ Example:
 22
 ```
 
-### cycle
+### cycle()
 
 This function cycles through an iterator endlessly.
 
@@ -1574,7 +1576,7 @@ orange
 
 When reached the end of the iterable it start over again from the beginning.
 
-### chain
+### chain()
 
 Take a series of iterables and return them as one long iterable.
 
@@ -1601,7 +1603,7 @@ square
 pentagon
 ```
 
-### compress
+### compress()
 
 Filters one iterable with another.
 
@@ -1621,7 +1623,7 @@ circle
 square
 ```
 
-### dropwhile
+### dropwhile()
 
 Make an iterator that drops elements from the iterable as long as the predicate is true; afterwards, returns every element.
 
@@ -1645,7 +1647,7 @@ Example:
 1
 ```
 
-### filterfalse
+### filterfalse()
 
 Makes an iterator that filters elements from iterable returning only those for which the predicate is False.
 
@@ -1668,7 +1670,7 @@ Example:
 10
 ```
 
-### groupby
+### groupby()
 
 Simply put, this function groups things together.
 
@@ -1711,7 +1713,7 @@ decepticon
 [{'name': 'megatron', 'faction': 'decepticon'}, {'name': 'starcream', 'faction': 'decepticon'}]
 ```
 
-### islice
+### islice()
 
 This function is very much like slices. This allows you to cut out a piece of an iterable.
 
@@ -1730,7 +1732,7 @@ red
 orange
 ```
 
-### permutations
+### permutations()
 
 ```python
 itertools.permutations(iterable, r=None)
@@ -1751,7 +1753,7 @@ Example:
 ('c', 'b', 'a')
 ```
 
-### product
+### product()
 
 Creates the cartesian products from a series of iterables.
 
@@ -1772,7 +1774,7 @@ Creates the cartesian products from a series of iterables.
 (3, 'c')
 ```
 
-### repeat
+### repeat()
 
 This function will repeat an object over and over again. Unless, there is a times argument.
 
@@ -1790,7 +1792,7 @@ spam
 spam
 ```
 
-### starmap
+### starmap()
 
 Makes an iterator that computes the function using arguments obtained from the iterable.
 
@@ -1810,12 +1812,12 @@ Example:
 21
 ```
 
-### takewhile
+### takewhile()
 
 The opposite of dropwhile(). Makes an iterator and returns elements from the iterable as long as the predicate is true.
 
 ```python
-itertools.takewhile(predicate, iterable)
+itertools.takwwhile(predicate, iterable)
 ```
 
 Example:
@@ -1831,7 +1833,7 @@ Example:
 4
 ```
 
-### tee
+### tee()
 
 Return n independent iterators from a single iterable.
 
@@ -1865,7 +1867,7 @@ green
 blue
 ```
 
-### zip_longest
+### zip_longest()
 
 Makes an iterator that aggregates elements from each of the iterables. If the iterables are of uneven length, missing values are filled-in with fillvalue. Iteration continues until the longest iterable is exhausted.
 
@@ -2096,7 +2098,7 @@ False
 True
 ```
 
-### The upper, lower, isupper, and islower String Methods
+### The upper(), lower(), isupper(), and islower() String Methods
 
 `upper()` and `lower()`:
 
@@ -2154,7 +2156,7 @@ False
 - **isspace()** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
 - **istitle()** returns True if the string consists only of wordsthat begin with an uppercase letter followed by onlylowercase letters.
 
-### The startswith and endswith String Methods
+### The startswith() and endswith() String Methods
 
 ```python
 >>> 'Hello world!'.startswith('Hello')
@@ -2186,7 +2188,7 @@ True
 True
 ```
 
-### The join and split String Methods
+### The join() and split() String Methods
 
 join():
 
@@ -2222,7 +2224,7 @@ split():
 ['My na', 'e is Si', 'on']
 ```
 
-### Justifying Text with rjust, ljust, and center
+### Justifying Text with rjust(), ljust(), and center()
 
 rjust() and ljust():
 
@@ -2270,7 +2272,7 @@ center():
 '=======Hello========'
 ```
 
-### Removing Whitespace with strip, rstrip, and lstrip
+### Removing Whitespace with strip(), rstrip(), and lstrip()
 
 ```python
 >>> spam = '    Hello World     '
@@ -2294,13 +2296,7 @@ center():
 'BaconSpamEggs'
 ```
 
-### Copying and Pasting Strings with the pyperclip Module
-
-First, install `pypeerclip` with pip:
-
-```shell
-pip install pyperclip
-```
+### Copying and Pasting Strings with the pyperclip Module (need pip install)
 
 ```python
 >>> import pyperclip
@@ -2329,9 +2325,9 @@ We can use the `%x` format specifier to convert an int value to a string:
 "I have 5 apples"
 ```
 
-Note: For new code, using str.format or f-strings is strongly recommended over the `%` operator.
+Note: For new code, using [str.format](#string-formatting-strformat) or [f-strings](#formatted-string-literals-or-f-strings-python-36) (Python 3.6+) is strongly recommended over the `%` operator.
 
-### str.format
+### String Formatting (str.format)
 
 Python 3 introduced a new way to do string formatting that was later back-ported to Python 2.7. This makes the syntax for string formatting more regular.
 
@@ -2376,9 +2372,7 @@ Or:
 >>> logging.debug("User name: " + name)
 ```
 
-### Formatted String Literals or f-strings
-
-Python 3.6+
+### Formatted String Literals or f-strings (Python 3.6+)
 
 ```python
 >>> name = 'Elizabeth'
@@ -2410,9 +2404,9 @@ It is even possible to do inline arithmetic with it:
 ## Regular Expressions
 
 1. Import the regex module with `import re`.
-2. Create a Regex object with the `re.compile()` function. (Remember to use a raw string.)
-3. Pass the string you want to search into the Regex object’s `search()` method. This returns a `Match` object.
-4. Call the Match object’s `group()` method to return a string of the actual matched text.
+1. Create a Regex object with the `re.compile()` function. (Remember to use a raw string.)
+1. Pass the string you want to search into the Regex object’s `search()` method. This returns a `Match` object.
+1. Call the Match object’s `group()` method to return a string of the actual matched text.
 
 All the regex functions in Python are in the re module:
 
@@ -2592,7 +2586,7 @@ Python’s regular expressions are greedy by default, which means that in ambigu
 'HaHaHa'
 ```
 
-### The findall Method
+### The findall() Method
 
 In addition to the search() method, Regex objects also have a findall() method. While search() will return a Match object of the first matched text in the searched string, the findall() method will return the strings of every match in the searched string.
 
@@ -2741,10 +2735,12 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 | `^spam`                  | means the string must begin with spam.                       |
 | `spam$`                  | means the string must end with spam.                         |
 | `.`                      | any character, except newline characters.                    |
-| `\d`, `\w`, and `\s`     | a digit, word, or space character, resectively.              |
+| `\d`, `\w`, and `\s`     | a digit, word, or space character, ectively.                 |
 | `\D`, `\W`, and `\S`     | anything except a digit, word, or space acter, respectively. |
 | `[abc]`                  | any character between the brackets (such as a, b, ).         |
 | `[^abc]`                 | any character that isn’t between the brackets.              |
+
+
 
 ### Case-Insensitive Matching
 
@@ -3311,7 +3307,7 @@ if you want to know more!
 To read/write to a file in Python, you will want to use the `with`
 statement, which will close the file for you after you are done.
 
-### Opening and reading files with the open function
+### Opening and reading files with the open() function
 
 ```python
 >>> with open('C:\\Users\\your_home_folder\\hello.txt') as hello_file:
@@ -3389,7 +3385,7 @@ Just like dictionaries, shelf values have keys() and values() methods that will 
 [['Zophie', 'Pooka', 'Simon']]
 ```
 
-### Saving Variables with pprint.pformat
+### Saving Variables with the pprint.pformat() Function
 
 ```python
 >>> import pprint
@@ -3761,7 +3757,7 @@ Example:
 kid
 ```
 
-Ternary operators can be changed:
+Ternary operators can be chained:
 
 ```python
 >>> age = 15
@@ -3774,7 +3770,7 @@ The code above is equivalent to:
 
 ```python
 if age < 18:
-    if age < 12:
+    if age < 13:
         print('kid')
     else:
         print('teenager')
@@ -3865,14 +3861,14 @@ None
 {}
 ```
 
-### Thinks to Remember(args)
+### Things to Remember(args)
 
 1. Functions can accept a variable number of positional arguments by using ```*args``` in the def statement.
 2. You can use the items from a sequence as the positional arguments for a function with the ```*``` operator.
 3. Using the ```*``` operator with a generator may cause your program to run out of memory and crash.
 4. Adding new positional parameters to functions that accept ```*args``` can introduce hard-to-find bugs.
 
-### Thinks to remember(kwargs)
+### Things to Remember(kwargs)
 
 1. Function arguments can be specified by position or by keyword.
 2. Keywords make it clear what the purpose of each argument is when it would be confusing with only positional arguments.
@@ -3914,10 +3910,10 @@ It is also possible to write a context manager using generator syntax thanks to 
 ...     # manager is reached.
 ...     # 'cm' will have the value that was yielded
 ...     print('Right in the middle with cm = {}'.format(cm))
-
 Enter
 Right in the middle with cm = 3
 Exit
+
 >>>
 ```
 
@@ -3934,7 +3930,7 @@ A module can discover whether or not it is running in the main scope by checking
 ...     main()
 ```
 
-For a package, the same effect can be achieved by including a __main__.py module, the contents of which will be executed when the module is run with -m.
+For a package, the same effect can be achieved by including a __main__.py module, the contents of which will be executed when the module is run with -m
 
 For example we are developing script which is designed to be used as module, we should do:
 
