@@ -46,6 +46,38 @@ The official [Python 3.x documentation](https://docs.python.org/3/library/stdtyp
 
 > The formatting operations described here exhibit a variety of quirks that lead to a number of common errors (such as failing to display tuples and dictionaries correctly). Using the newer formatted string literals or the str.format() interface helps avoid these errors. These alternatives also provide more powerful, flexible and extensible approaches to formatting text.
 
+### F strings
+
+In version 3.6, one could start using the new f-style strings. This is discussed in [PEP-498](https://www.python.org/dev/peps/pep-0498/).
+
+F-strings provide a way to embed expressions inside string literals, using a minimal syntax. It should be noted that an f-string is really an expression evaluated at run time, not a constant value. In Python source code, an f-string is a literal string, prefixed with 'f', which contains expressions inside braces. The expressions are replaced with their values.
+
+Below is an example:
+
+```python
+>>> world = 'world'
+
+>>> f'Hello {world}'
+'Hello world'
+
+>>> f'I had {2 + 3} apples and I ate 1. I have {2 + 3 - 1} apples left.'
+'I had 5 apples and I ate 1. I have 4 apples left.'
+
+>>> name = 'Paul'
+
+>>> f'Hi {name} it is nice to meet you!'
+'Hi Paul it is nice to meet you!'
+```
+
+Some limitations are that globals() and locals() cannot be used. In addition to 'f', 'F' may also be used. 'f' may be combined with 'r' or 'R', in either order, to produce raw f-string literals. 'f' may not be combined with 'b': An f-style string does not propose to add binary f-strings. 'f' may not be combined with 'u'.
+
+Lambdas must be enclosed in parenthesis like so:
+
+```python
+>>> f'{(lambda x : x * 2)(5)}'
+'10'
+```
+
 ### Lazy string formatting
 
 You would only use `%s` string formatting on functions that can do lazy parameters evaluation,
