@@ -258,7 +258,7 @@ for i in range(5, -1, -1):
 
 ### For else statement
 
-This allows to specify a statement to execute in case of the full loop has been executed. Only
+This allows you to specify a statement to execute after the full loop has been executed. Only
 useful when a `break` condition can occur in the loop:
 
 ```python
