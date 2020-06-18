@@ -249,7 +249,7 @@ From **Highest** to **Lowest** precedence:
 | Operators | Operation        | Example         |
 | --------- | ---------------- | --------------- |
 | **        | Exponent         | `2 ** 3 = 8`    |
-| %         | Modulus/Remaider | `22 % 8 = 6`    |
+| %         | Modulus/Remainder| `22 % 8 = 6`    |
 | //        | Integer division | `22 // 8 = 2`   |
 | /         | Division         | `22 / 8 = 2.75` |
 | *         | Multiplication   | `3 * 3 = 9`     |
