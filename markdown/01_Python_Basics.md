@@ -87,7 +87,7 @@ String Replication:
 
 ### Variables
 
-You can name a variable anything as long as it obeys the following three rules:
+You can name a variable anything as long as it obeys the following rules:
 
 1. It can be only one word.
 2. It can use only letters, numbers, and the underscore (`_`) character.

@@ -18,9 +18,9 @@ to handle file system paths.
 
 ### Backslash on Windows and Forward Slash on OS X and Linux
 
-On Windows, paths are written using backslashes (\) as the separator between
+On Windows, paths are written using backslashes (`\`) as the separator between
 folder names. On Unix based operating system such as macOS, Linux, and BSDs,
-the forward slash (/) is used as the path separator. Joining paths can be
+the forward slash (`/`) is used as the path separator. Joining paths can be
 a headache if your code needs to work on different platforms.
 
 Fortunately, Python provides easy ways to handle this. We will showcase
