@@ -283,7 +283,7 @@ import random, sys, os, math
 ```
 
 ```python
-from random import *.
+from random import *
 ```
 
 ### Ending a Program with sys.exit

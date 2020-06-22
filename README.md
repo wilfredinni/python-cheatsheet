@@ -322,7 +322,7 @@ String Replication:
 
 ### Variables
 
-You can name a variable anything as long as it obeys the following three rules:
+You can name a variable anything as long as it obeys the following rules:
 
 1. It can be only one word.
 1. It can use only letters, numbers, and the underscore (`_`) character.
@@ -783,7 +783,7 @@ import random, sys, os, math
 ```
 
 ```python
-from random import *.
+from random import *
 ```
 
 [*Return to the Top*](#python-cheatsheet)
@@ -2267,7 +2267,7 @@ Example:
 ```python
 >>> b = {"abc", "def"}
 >>> {s.upper() for s in b}
-{"ABC", "DEF}
+{"ABC", "DEF"}
 ```
 
 ### Dict comprehension
@@ -3010,7 +3010,7 @@ To summarize what the findall() method returns, remember the following:
 
 - When called on a regex with no groups, such as \d-\d\d\d-\d\d\d\d, the method findall() returns a list of ng matches, such as ['415-555-9999', '212-555-0000'].
 
-- When called on a regex that has groups, such as (\d\d\d)-d\d)-(\d\ d\d\d), the method findall() returns a list of es of strings (one string for each group), such as [('415', ', '9999'), ('212', '555', '0000')].
+- When called on a regex that has groups, such as (\d\d\d)-(d\d)-(\d\d\d\d), the method findall() returns a list of es of strings (one string for each group), such as [('415', '555', '9999'), ('212', '555', '0000')].
 
 [*Return to the Top*](#python-cheatsheet)
 
@@ -3249,9 +3249,9 @@ to handle file system paths.
 
 ### Backslash on Windows and Forward Slash on OS X and Linux
 
-On Windows, paths are written using backslashes (\) as the separator between
+On Windows, paths are written using backslashes (`\`) as the separator between
 folder names. On Unix based operating system such as macOS, Linux, and BSDs,
-the forward slash (/) is used as the path separator. Joining paths can be
+the forward slash (`/`) is used as the path separator. Joining paths can be
 a headache if your code needs to work on different platforms.
 
 Fortunately, Python provides easy ways to handle this. We will showcase
