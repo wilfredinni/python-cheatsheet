@@ -3948,8 +3948,8 @@ with open("filename.json", "w") as f:
 
 ### YAML
 
-Compared to JSON, YAML allows a much better humain maintainance and gives ability to add comments.
-It is a convinient choice for configuration files where human will have to edit.
+Compared to JSON, YAML allows for much better human maintainability and gives you the option to add comments.
+It is a convinient choice for configuration files where humans will have to edit it.
 
 There are two main librairies allowing to access to YAML files:
 
