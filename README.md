@@ -1486,6 +1486,8 @@ True
 
 ### The get() Method
 
+Get has two parameters: key and default value if the key did not exist
+
 ```python
 >>> picnic_items = {'apples': 5, 'cups': 2}
 
