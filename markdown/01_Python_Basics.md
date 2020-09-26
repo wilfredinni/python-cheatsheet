@@ -156,8 +156,7 @@ print('Hello world!', a)
 Example Code:
 
 ```python
-print('What is your name?')   # ask for their name
-myName = input()
+myName = input('What is your name?') # ask for their name
 print('It is good to meet you, {}'.format(myName))
 ```
 
