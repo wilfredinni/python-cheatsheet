@@ -1710,13 +1710,15 @@ KeyError: 3
 
 ### set  difference
 
-`difference` or `-` will return only the elements that are in one of the sets.
+`difference` or `-` will return only the elements that are unique to the first set (invoked set). 
 
 ```python
 >>> s1 = {1, 2, 3}
 >>> s2 = {2, 3, 4}
 >>> s1.difference(s2)  # or 's1 - s2'
 {1}
+>>> s2.difference(s1) # or 's2 - s1'
+{4}
 ```
 
 ### set symetric_difference
