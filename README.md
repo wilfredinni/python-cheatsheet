@@ -35,6 +35,7 @@ All contributions are welcome:
     - [Comparison Operators](#comparison-operators)
     - [Boolean evaluation](#boolean-evaluation)
     - [Boolean Operators](#boolean-operators)
+    - [Arithmetic Operators]
     - [Mixing Boolean and Comparison Operators](#mixing-boolean-and-comparison-operators)
     - [if Statements](#if-statements)
     - [else Statements](#else-statements)
