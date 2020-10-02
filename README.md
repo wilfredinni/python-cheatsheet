@@ -1607,7 +1607,7 @@ From the Python 3 [documentation](https://docs.python.org/3/tutorial/datastructu
 
 ### Initializing a set
 
-There are two ways to create sets: using curly braces `{}` and the bult-in function `set()`
+There are two ways to create sets: using curly braces `{}` and the built-in function `set()`
 
 ```python
 >>> s = {1, 2, 3}
@@ -1740,7 +1740,7 @@ KeyError: 3
 
 ## itertools Module
 
-The _itertools_ module is a colection of tools intented to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
+The _itertools_ module is a collection of tools intended to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
 
 From the official [Python 3.x documentation](https://docs.python.org/3/library/itertools.html):
 
@@ -3152,23 +3152,23 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 
 ### Review of Regex Symbols
 
-| Symbol                   | Matches                                                      |
-| ------------------------ | ------------------------------------------------------------ |
-| `?`                      | zero or one of the preceding group.                          |
-| `*`                      | zero or more of the preceding group.                         |
-| `+`                      | one or more of the preceding group.                          |
-| `{n}`                    | exactly n of the preceding group.                            |
-| `{n,}`                   | n or more of the preceding group.                            |
-| `{,m}`                   | 0 to m of the preceding group.                               |
-| `{n,m}`                  | at least n and at most m of the preceding p.                 |
-| `{n,m}?` or `*?` or `+?` | performs a nongreedy match of the preceding p.               |
-| `^spam`                  | means the string must begin with spam.                       |
-| `spam$`                  | means the string must end with spam.                         |
-| `.`                      | any character, except newline characters.                    |
-| `\d`, `\w`, and `\s`     | a digit, word, or space character, respectively.             |
-| `\D`, `\W`, and `\S`     | anything except a digit, word, or space acter, respectively. |
-| `[abc]`                  | any character between the brackets (such as a, b, ).         |
-| `[^abc]`                 | any character that isn’t between the brackets.               |
+| Symbol                   | Matches                                                |
+| ------------------------ | ------------------------------------------------------ |
+| `?`                      | zero or one of the preceding group.                    |
+| `*`                      | zero or more of the preceding group.                   |
+| `+`                      | one or more of the preceding group.                    |
+| `{n}`                    | exactly n of the preceding group.                      |
+| `{n,}`                   | n or more of the preceding group.                      |
+| `{,m}`                   | 0 to m of the preceding group.                         |
+| `{n,m}`                  | at least n and at most m of the preceding p.           |
+| `{n,m}?` or `*?` or `+?` | performs a nongreedy match of the preceding p.         |
+| `^spam`                  | means the string must begin with spam.                 |
+| `spam$`                  | means the string must end with spam.                   |
+| `.`                      | any character, except newline characters.              |
+| `\d`, `\w`, and `\s`     | a digit, word, or space character, respectively.       |
+| `\D`, `\W`, and `\S`     | anything except a digit, word, or space, respectively. |
+| `[abc]`                  | any character between the brackets (such as a, b, ).   |
+| `[^abc]`                 | any character that isn’t between the brackets.         |
 
 [_Return to the Top_](#python-cheatsheet)
 
@@ -3958,9 +3958,9 @@ with open("filename.json", "w") as f:
 ### YAML
 
 Compared to JSON, YAML allows for much better human maintainability and gives you the option to add comments.
-It is a convinient choice for configuration files where humans will have to edit it.
+It is a convenient choice for configuration files where humans will have to edit it.
 
-There are two main librairies allowing to access to YAML files:
+There are two main libraries allowing to access to YAML files:
 
 - [PyYaml](https://pypi.python.org/pypi/PyYAML)
 - [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
@@ -3984,7 +3984,7 @@ with open("filename.yaml") as f:
 
 ### Anyconfig
 
-[Anyconfig](https://pypi.python.org/pypi/anyconfig) is a very handy package allowing to abstract completly the underlying configuration file format. It allows to load a Python dictionary from JSON, YAML, TOML, and so on.
+[Anyconfig](https://pypi.python.org/pypi/anyconfig) is a very handy package allowing to abstract completely the underlying configuration file format. It allows to load a Python dictionary from JSON, YAML, TOML, and so on.
 
 Install it with:
 
@@ -4020,7 +4020,7 @@ Traceback (most recent call last):
 Exception: This is the error message.
 ```
 
-Often it’s the code that calls the function, not the function itself, that knows how to handle an expection. So you will commonly see a raise statement inside a function and the try and except statements in the code calling the function.
+Often it’s the code that calls the function, not the function itself, that knows how to handle an exception. So you will commonly see a raise statement inside a function and the try and except statements in the code calling the function.
 
 ```python
 def box_print(symbol, width, height):
