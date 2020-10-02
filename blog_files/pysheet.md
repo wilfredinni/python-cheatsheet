@@ -35,15 +35,15 @@ Namespaces are one honking great idea -- let's do more of those!
 
 From **Highest** to **Lowest** precedence:
 
-| Operators | Operation        | Example         |
-| --------- | ---------------- | --------------- |
-| **        | Exponent         | `2 ** 3 = 8`    |
-| %         | Modulus/Remaider | `22 % 8 = 6`    |
-| //        | Integer division | `22 // 8 = 2`   |
-| /         | Division         | `22 / 8 = 2.75` |
-| *         | Multiplication   | `3 * 3 = 9`     |
-| -         | Subtraction      | `5 - 2 = 3`     |
-| +         | Addition         | `2 + 2 = 4`     |
+| Operators | Operation         | Example         |
+| --------- | ----------------- | --------------- |
+| \*\*      | Exponent          | `2 ** 3 = 8`    |
+| %         | Modulus/Remainder | `22 % 8 = 6`    |
+| //        | Integer division  | `22 // 8 = 2`   |
+| /         | Division          | `22 / 8 = 2.75` |
+| \*        | Multiplication    | `3 * 3 = 9`     |
+| -         | Subtraction       | `5 - 2 = 3`     |
+| +         | Addition          | `2 + 2 = 4`     |
 
 Examples of expressions in the interactive shell:
 
@@ -105,7 +105,7 @@ String Replication:
 
 ### Variables
 
-You can name a variable anything as long as it obeys the following three rules:
+You can name a variable anything as long as it obeys the following rules:
 
 1. It can be only one word.
 1. It can use only letters, numbers, and the underscore (`_`) character.
@@ -342,7 +342,7 @@ And these as well:
 
 There are three Boolean operators: and, or, and not.
 
-The *and* Operator’s *Truth* Table:
+The _and_ Operator’s _Truth_ Table:
 
 | Expression        | Evaluates to |
 | ----------------- | ------------ |
@@ -351,7 +351,7 @@ The *and* Operator’s *Truth* Table:
 | `False and True`  | `False`      |
 | `False and False` | `False`      |
 
-The *or* Operator’s *Truth* Table:
+The _or_ Operator’s _Truth_ Table:
 
 | Expression       | Evaluates to |
 | ---------------- | ------------ |
@@ -360,7 +360,7 @@ The *or* Operator’s *Truth* Table:
 | `False or True`  | `True`       |
 | `False or False` | `False`      |
 
-The *not* Operator’s *Truth* Table:
+The _not_ Operator’s _Truth_ Table:
 
 | Expression  | Evaluates to |
 | ----------- | ------------ |
@@ -441,7 +441,7 @@ while spam < 5:
 
 ### break Statements
 
- If the execution reaches a break statement, it immediately exits the while loop’s clause:
+If the execution reaches a break statement, it immediately exits the while loop’s clause:
 
 ```python
 while True:
@@ -483,7 +483,7 @@ Jimmy Five Times (3)
 Jimmy Five Times (4)
 ```
 
-The *range()* function can also be called with three arguments. The first two arguments will be the start and stop values, and the third will be the step argument. The step is the amount that the variable is increased by after each iteration.
+The _range()_ function can also be called with three arguments. The first two arguments will be the start and stop values, and the third will be the step argument. The step is the amount that the variable is increased by after each iteration.
 
 ```python
 >>> for i in range(0, 10, 2):
@@ -534,7 +534,7 @@ import random, sys, os, math
 ```
 
 ```python
-from random import *.
+from random import *
 ```
 
 ### Ending a Program Early with sys.exit()
@@ -699,18 +699,19 @@ not, and even if an exception is not caught.
 >>>         print('Error: Invalid argument: {}'.format(e))
 >>>     finally:
 >>>         print("-- division finished --")
->>> print(spam(12))
->>> print(spam(0))
+>>> print(spam(2))
+-- division finished --
 21.0
+>>> print(spam(12))
 -- division finished --
 3.5
--- division finished --
-Error: Invalid argument: division by zero
+>>> print(spam(0))
+Error: Invalid Argument division by zero
 -- division finished --
 None
+>>> print(spam(1))
 -- division finished --
 42.0
--- division finished --
 ```
 
 ## Lists
@@ -1174,6 +1175,8 @@ True
 
 ### The get() Method
 
+Get has two parameters: key and default value if the key did not exist
+
 ```python
 >>> picnic_items = {'apples': 5, 'cups': 2}
 
@@ -1290,7 +1293,7 @@ There are two ways to create sets: using curly braces `{}` and the bult-in funct
 >>> s = set([1, 2, 3])
 ```
 
-When creating an empty set, be sure to not use the curly braces `{}`  or you will get an empty dictionary instead.
+When creating an empty set, be sure to not use the curly braces `{}` or you will get an empty dictionary instead.
 
 ```python
 >>> s = {}
@@ -1376,9 +1379,9 @@ KeyError: 3
 {1, 2, 3, 4, 5}
 ```
 
-### set  intersection
+### set intersection
 
-`intersection`  or `&`  will return a set containing only the elements that are common to all of them.
+`intersection` or `&` will return a set containing only the elements that are common to all of them.
 
 ```python
 >>> s1 = {1, 2, 3}
@@ -1388,15 +1391,17 @@ KeyError: 3
 {3}
 ```
 
-### set  difference
+### set difference
 
-`difference` or `-` will return only the elements that are in one of the sets.
+`difference` or `-` will return only the elements that are unique to the first set (invoked set).
 
 ```python
 >>> s1 = {1, 2, 3}
 >>> s2 = {2, 3, 4}
 >>> s1.difference(s2)  # or 's1 - s2'
 {1}
+>>> s2.difference(s1) # or 's2 - s1'
+{4}
 ```
 
 ### set symetric_difference
@@ -1412,13 +1417,13 @@ KeyError: 3
 
 ## itertools Module
 
-The *itertools* module is a colection of tools intented to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
+The _itertools_ module is a colection of tools intented to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
 
 From the official [Python 3.x documentation](https://docs.python.org/3/library/itertools.html):
 
 > The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.
 
-The *itertools* module comes in the standard library and must be imported.
+The _itertools_ module comes in the standard library and must be imported.
 
 The [operator](https://docs.python.org/3/library/operator.html) module will also be used. This module is not necessary when using itertools, but needed for some of the examples below.
 
@@ -1658,7 +1663,7 @@ itertools.filterfalse(predicate, iterable)
 Example:
 
 ```python
->>> data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1]
 >>> result = itertools.filterfalse(lambda x: x<5, data)
 >>> for each in result:
 >>>    print(each)
@@ -1910,7 +1915,7 @@ Example:
 ```python
 >>> b = {"abc", "def"}
 >>> {s.upper() for s in b}
-{"ABC", "DEF}
+{"ABC", "DEF"}
 ```
 
 ### Dict comprehension
@@ -2151,10 +2156,10 @@ False
 ### The isX String Methods
 
 - **isalpha()** returns True if the string consists only of letters and is not blank.
-- **isalnum()** returns True if the string consists only of lettersand numbers and is not blank.
-- **isdecimal()** returns True if the string consists only ofnumeric characters and is not blank.
+- **isalnum()** returns True if the string consists only of letters and numbers and is not blank.
+- **isdecimal()** returns True if the string consists only of numeric characters and is not blank.
 - **isspace()** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
-- **istitle()** returns True if the string consists only of wordsthat begin with an uppercase letter followed by onlylowercase letters.
+- **istitle()** returns True if the string consists only of words that begin with an uppercase letter followed by only lowercase letters.
 
 ### The startswith() and endswith() String Methods
 
@@ -2391,7 +2396,7 @@ It is even possible to do inline arithmetic with it:
 
 ### Template Strings
 
- A simpler and less powerful mechanism, but it is recommended when handling format strings generated by users. Due to their reduced complexity template strings are a safer choice.
+A simpler and less powerful mechanism, but it is recommended when handling format strings generated by users. Due to their reduced complexity template strings are a safer choice.
 
 ```python
 >>> from string import Template
@@ -2509,7 +2514,7 @@ The ? character flags the group that precedes it as an optional part of the patt
 
 ### Matching Zero or More with the Star
 
-The * (called the star or asterisk) means “match zero or more”—the group that precedes the star can occur any number of times in the text.
+The \* (called the star or asterisk) means “match zero or more”—the group that precedes the star can occur any number of times in the text.
 
 ```python
 >>> bat_regex = re.compile(r'Bat(wo)*man')
@@ -2528,7 +2533,7 @@ The * (called the star or asterisk) means “match zero or more”—the group t
 
 ### Matching One or More with the Plus
 
-While * means “match zero or more,” the + (or plus) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:
+While \* means “match zero or more,” the + (or plus) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:
 
 ```python
 >>> bat_regex = re.compile(r'Bat(wo)+man')
@@ -2601,7 +2606,7 @@ To summarize what the findall() method returns, remember the following:
 
 - When called on a regex with no groups, such as \d-\d\d\d-\d\d\d\d, the method findall() returns a list of ng matches, such as ['415-555-9999', '212-555-0000'].
 
-- When called on a regex that has groups, such as (\d\d\d)-d\d)-(\d\ d\d\d), the method findall() returns a list of es of strings (one string for each group), such as [('415', ', '9999'), ('212', '555', '0000')].
+- When called on a regex that has groups, such as (\d\d\d)-(d\d)-(\d\d\d\d), the method findall() returns a list of es of strings (one string for each group), such as [('415', '555', '9999'), ('212', '555', '0000')].
 
 ### Making Your Own Character Classes
 
@@ -2630,9 +2635,9 @@ By placing a caret character (^) just after the character class’s opening brac
 
 - You can also use the caret symbol (^) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
 
-- Likewise, you can put a dollar sign ($) at the end of the regex to indicate the string must end with this regex pattern.
+- Likewise, you can put a dollar sign (\$) at the end of the regex to indicate the string must end with this regex pattern.
 
-- And you can use the ^ and $ together to indicate that the entire string must match the regex—that is, it’s not enough for a match to be made on some subset of the string.
+- And you can use the ^ and \$ together to indicate that the entire string must match the regex—that is, it’s not enough for a match to be made on some subset of the string.
 
 The r'^Hello' regular expression string matches strings that begin with 'Hello':
 
@@ -2646,7 +2651,7 @@ The r'^Hello' regular expression string matches strings that begin with 'Hello':
 True
 ```
 
-The r'\d$' regular expression string matches strings that end with a numeric character from 0 to 9:
+The r'\d\$' regular expression string matches strings that end with a numeric character from 0 to 9:
 
 ```python
 >>> whole_string_is_num = re.compile(r'^\d+$')
@@ -2688,7 +2693,7 @@ The . (or dot) character in a regular expression is called a wildcard and will m
 'Sweigart'
 ```
 
-The dot-star uses greedy mode: It will always try to match as much text as possible. To match any and all text in a nongreedy fashion, use the dot, star, and question mark (.*?). The question mark tells Python to match in a nongreedy way:
+The dot-star uses greedy mode: It will always try to match as much text as possible. To match any and all text in a nongreedy fashion, use the dot, star, and question mark (.\*?). The question mark tells Python to match in a nongreedy way:
 
 ```python
 >>> nongreedy_regex = re.compile(r'<.*?>')
@@ -2735,12 +2740,10 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 | `^spam`                  | means the string must begin with spam.                       |
 | `spam$`                  | means the string must end with spam.                         |
 | `.`                      | any character, except newline characters.                    |
-| `\d`, `\w`, and `\s`     | a digit, word, or space character, ectively.                 |
+| `\d`, `\w`, and `\s`     | a digit, word, or space character, respectively.             |
 | `\D`, `\W`, and `\S`     | anything except a digit, word, or space acter, respectively. |
 | `[abc]`                  | any character between the brackets (such as a, b, ).         |
-| `[^abc]`                 | any character that isn’t between the brackets.              |
-
-
+| `[^abc]`                 | any character that isn’t between the brackets.               |
 
 ### Case-Insensitive Matching
 
@@ -2820,9 +2823,9 @@ to handle file system paths.
 
 ### Backslash on Windows and Forward Slash on OS X and Linux
 
-On Windows, paths are written using backslashes (\) as the separator between
+On Windows, paths are written using backslashes (`\`) as the separator between
 folder names. On Unix based operating system such as macOS, Linux, and BSDs,
-the forward slash (/) is used as the path separator. Joining paths can be
+the forward slash (`/`) is used as the path separator. Joining paths can be
 a headache if your code needs to work on different platforms.
 
 Fortunately, Python provides easy ways to handle this. We will showcase
@@ -3235,7 +3238,7 @@ The destination path can also specify a filename. In the following example, the 
 'C:\\eggs\\new_bacon.txt'
 ```
 
- If there is no eggs folder, then move() will rename bacon.txt to a file named eggs.
+If there is no eggs folder, then move() will rename bacon.txt to a file named eggs.
 
 ```python
 >>> shutil.move('C:\\bacon.txt', 'C:\\eggs')
@@ -3252,7 +3255,7 @@ The destination path can also specify a filename. In the following example, the 
 
 ### Safe Deletes with the send2trash Module
 
- You can install this module by running pip install send2trash from a Terminal window.
+You can install this module by running pip install send2trash from a Terminal window.
 
 ```python
 >>> import send2trash
@@ -3477,8 +3480,8 @@ with open("filename.json", "w") as f:
 
 ### YAML
 
-Compared to JSON, YAML allows a much better humain maintainance and gives ability to add comments.
-It is a convinient choice for configuration files where human will have to edit.
+Compared to JSON, YAML allows for much better human maintainability and gives you the option to add comments.
+It is a convinient choice for configuration files where humans will have to edit it.
 
 There are two main librairies allowing to access to YAML files:
 
@@ -3665,7 +3668,7 @@ Logging levels provide a way to categorize your log messages by importance. Ther
 | ---------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | `DEBUG`    | `logging.debug()`    | The lowest level. Used for small details. Usually you care about these messages only when diagnosing problems.                 |
 | `INFO`     | `logging.info()`     | Used to record information on general events in your program or confirm that things are working at their point in the program. |
-| `WARNING`  | `logging.warning()`  | Used to indicate a potential problem that doesn’t prevent the program from working but might do so in the future.             |
+| `WARNING`  | `logging.warning()`  | Used to indicate a potential problem that doesn’t prevent the program from working but might do so in the future.              |
 | `ERROR`    | `logging.error()`    | Used to record an error that caused the program to fail to do something.                                                       |
 | `CRITICAL` | `logging.critical()` | The highest level. Used to indicate a fatal error that has caused or is about to cause the program to stop running entirely.   |
 
@@ -3710,7 +3713,7 @@ This function:
 8
 ```
 
-Is equivalent to the *lambda* function:
+Is equivalent to the _lambda_ function:
 
 ```python
 >>> add = lambda x, y: x + y
@@ -3780,11 +3783,11 @@ else:
 
 ## args and kwargs
 
-The names ```args and kwargs``` are arbitrary - the important thing are the ```*``` and ```**``` operators. They can mean:
+The names `args and kwargs` are arbitrary - the important thing are the `*` and `**` operators. They can mean:
 
-1. In a function declaration, ```*``` means “pack all remaining positional arguments into a tuple named `<name>`”, while ```**``` is the same for keyword arguments (except it uses a dictionary, not a tuple).
+1. In a function declaration, `*` means “pack all remaining positional arguments into a tuple named `<name>`”, while `**` is the same for keyword arguments (except it uses a dictionary, not a tuple).
 
-2. In a function call, ```*``` means “unpack tuple or list named `<name>` to positional arguments at this position”, while ```**``` is the same for keyword arguments.
+2. In a function call, `*` means “unpack tuple or list named `<name>` to positional arguments at this position”, while `**` is the same for keyword arguments.
 
 For example you can make a function that you can use to call any other function, no matter what parameters it has:
 
@@ -3795,7 +3798,7 @@ def forward(f, *args, **kwargs):
 
 Inside forward, args is a tuple (of all positional arguments except the first one, because we specified it - the f), kwargs is a dict. Then we call f and unpack them so they become normal arguments to f.
 
-You use ```*args``` when you have an indefinite amount of positional arguments.
+You use `*args` when you have an indefinite amount of positional arguments.
 
 ```python
 >>> def fruits(*args):
@@ -3809,7 +3812,7 @@ You use ```*args``` when you have an indefinite amount of positional arguments.
 "grapes"
 ```
 
-Similarly, you use ```**kwargs``` when you have an indefinite number of keyword arguments.
+Similarly, you use `**kwargs` when you have an indefinite number of keyword arguments.
 
 ```python
 >>> def fruit(**kwargs):
@@ -3863,10 +3866,10 @@ None
 
 ### Things to Remember(args)
 
-1. Functions can accept a variable number of positional arguments by using ```*args``` in the def statement.
-2. You can use the items from a sequence as the positional arguments for a function with the ```*``` operator.
-3. Using the ```*``` operator with a generator may cause your program to run out of memory and crash.
-4. Adding new positional parameters to functions that accept ```*args``` can introduce hard-to-find bugs.
+1. Functions can accept a variable number of positional arguments by using `*args` in the def statement.
+2. You can use the items from a sequence as the positional arguments for a function with the `*` operator.
+3. Using the `*` operator with a generator may cause your program to run out of memory and crash.
+4. Adding new positional parameters to functions that accept `*args` can introduce hard-to-find bugs.
 
 ### Things to Remember(kwargs)
 
@@ -3896,7 +3899,7 @@ Anything that ends execution of the block causes the context manager's exit meth
 
 ### Writing your own contextmanager using generator syntax
 
-It is also possible to write a context manager using generator syntax thanks to the ```contextlib.contextmanager``` decorator:
+It is also possible to write a context manager using generator syntax thanks to the `contextlib.contextmanager` decorator:
 
 ```python
 >>> import contextlib
@@ -3920,7 +3923,7 @@ Exit
 ## `__main__` Top-level script environment
 
 `__main__` is the name of the scope in which top-level code executes.
-A module’s __name__ is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
+A module’s **name** is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
 
 A module can discover whether or not it is running in the main scope by checking its own `__name__`, which allows a common idiom for conditionally executing code in a module when it is run as a script or with `python -m` but not when it is imported:
 
@@ -3930,7 +3933,7 @@ A module can discover whether or not it is running in the main scope by checking
 ...     main()
 ```
 
-For a package, the same effect can be achieved by including a __main__.py module, the contents of which will be executed when the module is run with -m
+For a package, the same effect can be achieved by including a **main**.py module, the contents of which will be executed when the module is run with -m
 
 For example we are developing script which is designed to be used as module, we should do:
 
@@ -3954,7 +3957,7 @@ For example we are developing script which is designed to be used as module, we 
 ### Advantages
 
 1. Every Python module has it’s `__name__` defined and if this is `__main__`, it implies that the module is being run standalone by the user and we can do corresponding appropriate actions.
-2. If you import this script as a module in another script, the __name__ is set to the name of the script/module.
+2. If you import this script as a module in another script, the **name** is set to the name of the script/module.
 3. Python files can act as either reusable modules, or as standalone programs.
 4. if `__name__ == “main”:` is used to execute some code only if the file was run directly, and not imported.
 
@@ -4046,7 +4049,7 @@ Python
 
 ### Type hints
 
-It is mandatory to define the data type in dataclass. However, If you don't want specify the datatype then, use ```typing.Any```.
+It is mandatory to define the data type in dataclass. However, If you don't want specify the datatype then, use `typing.Any`.
 
 ```python
 >>> from dataclasses import dataclass
@@ -4065,29 +4068,29 @@ The use of a Virtual Environment is to test python code in encapsulated environm
 
 ### virtualenv
 
-1. Install virtualenv
+1.  Install virtualenv
 
         pip install virtualenv
 
-1. Install virtualenvwrapper-win (Windows)
+1.  Install virtualenvwrapper-win (Windows)
 
         pip install virtualenvwrapper-win
 
 Usage:
 
-1. Make a Virtual Environment
+1.  Make a Virtual Environment
 
         mkvirtualenv HelloWold
 
     Anything we install now will be specific to this project. And available to the projects we connect to this environment.
 
-1. Set Project Directory
+1.  Set Project Directory
 
     To bind our virtualenv with our current working directory we simply enter:
 
         setprojectdir .
 
-1. Deactivate
+1.  Deactivate
 
     To move onto something else in the command line type ‘deactivate’ to deactivate your environment.
 
@@ -4095,7 +4098,7 @@ Usage:
 
     Notice how the parenthesis disappear.
 
-1. Workon
+1.  Workon
 
     Open up the command prompt and type ‘workon HelloWold’ to activate the environment and move into your root project folder
 
@@ -4105,11 +4108,11 @@ Usage:
 
 > [Poetry](https://poetry.eustace.io/) is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
 
-1. Install Poetry
+1.  Install Poetry
 
         pip install --user poetry
 
-2. Create a new project
+2.  Create a new project
 
         poetry new my-project
 
@@ -4138,7 +4141,7 @@ Usage:
         [tool.poetry.dev-dependencies]
         pytest = "^3.4"
 
-3. Packages
+3.  Packages
 
     To add dependencies to your project, you can specify them in the tool.poetry.dependencies section:
 
@@ -4163,26 +4166,26 @@ For more information, check the [documentation](https://poetry.eustace.io/docs/)
 
 > [Pipenv](https://pipenv.readthedocs.io/en/latest/) is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world. Windows is a first-class citizen, in our world.
 
-1. Install pipenv
+1.  Install pipenv
 
         pip install pipenv
 
-1. Enter your Project directory and install the Packages for your project
+1.  Enter your Project directory and install the Packages for your project
 
         cd my_project
         pipenv install <package>
 
     Pipenv will install your package and create a Pipfile for you in your project’s directory. The Pipfile is used to track which dependencies your project needs in case you need to re-install them.
 
-1. Uninstall Packages
+1.  Uninstall Packages
 
         pipenv uninstall <package>
 
-1. Activate the Virtual Environment associated with your Python project
+1.  Activate the Virtual Environment associated with your Python project
 
         pipenv shell
 
-1. Exit the Virtual Environment
+1.  Exit the Virtual Environment
 
         exit
 
@@ -4192,21 +4195,21 @@ Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/)
 
 [Anaconda](https://anaconda.org/) is another popular tool to manage python packages.
 
-> Where packages, notebooks, projects and environments are shared. 
-Your place for free public conda package hosting.
+> Where packages, notebooks, projects and environments are shared.
+> Your place for free public conda package hosting.
 
 Usage:
 
-1. Make a Virtual Environment
+1.  Make a Virtual Environment
 
         conda create -n HelloWorld
 
-2. To use the Virtual Environment, activate it by:
+2.  To use the Virtual Environment, activate it by:
 
         conda activate HelloWorld
 
     Anything installed now will be specific to the project HelloWorld
 
-3. Exit the Virtual Environment
+3.  Exit the Virtual Environment
 
         conda deactivate
