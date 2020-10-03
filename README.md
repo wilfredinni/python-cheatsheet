@@ -1321,6 +1321,25 @@ If the value appears multiple times in the list, only the first instance of the 
 
 [_Return to the Top_](#python-cheatsheet)
 
+
+### Removing Values from Lists with pop()
+
+```python
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+
+>>> spam.pop()
+
+>>> spam
+['cat', 'bat', 'rat']
+
+>>> spam.pop(0)
+
+>>> spam
+['bat', 'rat']
+```
+
+[_Return to the Top_](#python-cheatsheet)
+
 ### Sorting the Values in a List with the sort() Method
 
 ```python
