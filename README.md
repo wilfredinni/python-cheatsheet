@@ -75,6 +75,7 @@ All contributions are welcome:
     - [Finding a Value in a List with the index() Method](#finding-a-value-in-a-list-with-the-index-method)
     - [Adding Values to Lists with the append() and insert() Methods](#adding-values-to-lists-with-the-append-and-insert-methods)
     - [Removing Values from Lists with remove()](#removing-values-from-lists-with-remove)
+    - [Removing Values from Lists with pop()](#removing-values-from-lists-with-pop)
     - [Sorting the Values in a List with the sort() Method](#sorting-the-values-in-a-list-with-the-sort-method)
     - [Tuple Data Type](#tuple-data-type)
     - [Converting Types with the list() and tuple() Functions](#converting-types-with-the-list-and-tuple-functions)
@@ -1318,6 +1319,27 @@ Examples:
 ```
 
 If the value appears multiple times in the list, only the first instance of the value will be removed.
+
+[_Return to the Top_](#python-cheatsheet)
+
+
+### Removing Values from Lists with pop()
+
+```python
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+
+>>> spam.pop()
+'elephant'
+
+>>> spam
+['cat', 'bat', 'rat']
+
+>>> spam.pop(0)
+'cat'
+
+>>> spam
+['bat', 'rat']
+```
 
 [_Return to the Top_](#python-cheatsheet)
 
