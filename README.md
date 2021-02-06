@@ -20,7 +20,7 @@ All contributions are welcome:
 
 ## Python Cheatsheet
 
-- [About ![Binder](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks)](#about-img-srchttpsmybinderorgbadgesvg-altbinder)
+- [About ![Binder](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks)](#about-)
   - [Contribute](#contribute)
   - [Read It](#read-it)
   - [Python Cheatsheet](#python-cheatsheet)
