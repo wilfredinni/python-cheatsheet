@@ -10,7 +10,6 @@ This project and everyone who participates in it is governed by the [Contributor
 
 ### You Can
 
-* [Buy me a Coffee](https://www.buymeacoffee.com/8owKkSBUC) 😄 
 * Propose changes to the cheatsheet.
 * Improve existing topics and examples.
 * Add new topics or resources.
