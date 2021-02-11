@@ -206,6 +206,7 @@ All contributions are welcome:
     - [Features](#features)
     - [Default values](#default-values)
     - [Type hints](#type-hints)
+  - [Metaclasses](#metaclasses)
   - [Virtual Environment](#virtual-environment)
     - [virtualenv](#virtualenv)
     - [poetry](#poetry)
@@ -4592,6 +4593,61 @@ It is mandatory to define the data type in dataclass. However, If you don't want
 ...    value: Any = 42
 ...
 ```
+
+[_Return to the Top_](#python-cheatsheet)
+
+```python
+>>> from dataclasses import dataclass
+>>> from typing import Any
+
+>>> @dataclass
+... class WithoutExplicitTypes:
+...    name: Any
+...    value: Any = 42
+...
+```
+
+## Metaclasses
+
+`Metaclasses` let you change the class automatically.
+
+- In Python everything is an object, so everything has a class.
+- A class is an object of a metaclass.
+- `type` is metaclass.
+
+```python
+>>> type(1)
+<class 'int'>
+
+>>> class Foo:
+...     pass
+... 
+>>> type(Foo)
+<class 'type'>
+
+>>> type(type)
+<class 'type'>
+
+>>> class MessageMetaclass(type):
+...     def __new__(cls, name, parents, dct):
+...         # cls is this class
+...         # name is the name of the class to be created
+...         # parents is the list of the class's parent classes
+...         # dct is the list of class's attributes (methods, static variables)
+...         # here all of the attributes can be modified before creating the class, e.g.
+...         dct["message"] = "hello"  # now the class will have a static variable message = "hello"
+...         # return value is the new class. super will take care of that
+...         return super(MessageMetaclass, cls).__new__(cls, name, parents, dct)
+... 
+>>> class MessageClass(metaclass=MessageMetaclass):
+...     def print_message(self):
+...         print(self.message)
+... 
+>>> MessageClass().print_message()
+hello
+```
+
+The main use case for a metaclass is creating an API (Django).
 
 [_Return to the Top_](#python-cheatsheet)
 
