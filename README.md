@@ -4596,16 +4596,6 @@ It is mandatory to define the data type in dataclass. However, If you don't want
 
 [_Return to the Top_](#python-cheatsheet)
 
-```python
->>> from dataclasses import dataclass
->>> from typing import Any
-
->>> @dataclass
-... class WithoutExplicitTypes:
-...    name: Any
-...    value: Any = 42
-...
-```
 
 ## Metaclasses
 
