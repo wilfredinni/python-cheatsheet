@@ -20,7 +20,7 @@ All contributions are welcome:
 
 ## Python Cheatsheet
 
-- [About](#about-)
+- [About](#about)
   - [Contribute](#contribute)
   - [Read It](#read-it)
   - [Python Cheatsheet](#python-cheatsheet)
