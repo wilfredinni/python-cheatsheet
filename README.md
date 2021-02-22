@@ -20,7 +20,7 @@ All contributions are welcome:
 
 ## Python Cheatsheet
 
-- [About ![Binder](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks)](#about-)
+- [About](#about-)
   - [Contribute](#contribute)
   - [Read It](#read-it)
   - [Python Cheatsheet](#python-cheatsheet)
@@ -1321,7 +1321,6 @@ Examples:
 If the value appears multiple times in the list, only the first instance of the value will be removed.
 
 [_Return to the Top_](#python-cheatsheet)
-
 
 ### Removing Values from Lists with pop()
 
