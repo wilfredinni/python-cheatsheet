@@ -2338,7 +2338,7 @@ Python 3 introduced a new way to do string formatting that was later back-ported
 
 ```python
 >>> name = 'John'
->>> age = 20'
+>>> age = 20
 
 >>> "Hello I'm {}, my age is {}".format(name, age)
 "Hello I'm John, my age is 20"
