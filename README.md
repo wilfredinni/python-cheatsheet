@@ -2394,8 +2394,12 @@ This generates the same string than before.
 
 ### Indexing and Slicing Strings
 
+The index of a string starts from zero, as in the following example for the string 'Hello world!':
+
     H   e   l   l   o       w   o   r   l   d    !
     0   1   2   3   4   5   6   7   8   9   10   11
+
+We can access the characters at each index by writing the name of the string, then specifying the index in brackets as follows:
 
 ```python
 >>> spam = 'Hello world!'
@@ -2414,7 +2418,7 @@ This generates the same string than before.
 '!'
 ```
 
-Slicing:
+We can extract a certain subset of characters in a string by slicing it. In slicing we just specify the desired start and end index with a colon in between as follows:
 
 ```python
 
@@ -2422,15 +2426,28 @@ Slicing:
 'Hello'
 ```
 
+However if we want to start from the beginning of the string we do not need to specify any integer before the colon:
+
 ```python
 >>> spam[:5]
 'Hello'
 ```
 
 ```python
+>>> spam = 'Hello world!'
+>>> fizz = spam[0:5]
+>>> fizz
+'Hello'
+```
+
+Similarly if we want to start from the end of the string we do not need to specify any integer after the colon:
+
+```python
 >>> spam[6:]
 'world!'
 ```
+
+We can use a negative integer to remove the last n characters in a string, for example:
 
 ```python
 >>> spam[6:-1]
@@ -2442,16 +2459,11 @@ Slicing:
 'Hello world'
 ```
 
+We can also use slicing to print the string backwards as follows: 
+
 ```python
 >>> spam[::-1]
 '!dlrow olleH'
-```
-
-```python
->>> spam = 'Hello world!'
->>> fizz = spam[0:5]
->>> fizz
-'Hello'
 ```
 
 [_Return to the Top_](#python-cheatsheet)
