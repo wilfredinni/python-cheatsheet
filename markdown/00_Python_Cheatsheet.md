@@ -1738,6 +1738,8 @@ fizz
 
 ### The in and not in Operators with Strings
 
+in returns True if a sequence with the specified value is present in the object. 
+
 ```python
 'Hello' in 'Hello World'
 ```
@@ -1753,6 +1755,7 @@ fizz
 ```python
 '' in 'spam'
 ```
+not in returns True if a sequence with the specified value is not present in the object. 
 
 ```python
 'cats' not in 'cats and dogs'
