@@ -56,14 +56,14 @@ To keep a nicer flow in your code, you can use the `dedent` function from the `t
 from textwrap import dedent
 
 def my_function():
-    print('''
+    print(dedent('''
         Dear Alice,
 
         Eve's cat has been arrested for catnapping, cat burglary, and extortion.
 
         Sincerely,
         Bob
-        ''').strip()
+        ''')).strip()
 ```
 
 This generates the same string than before.
