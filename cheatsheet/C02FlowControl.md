@@ -2,18 +2,30 @@
 title: Flow Control
 ---
 
-## Flow Control
+<script setup lang="ts">
+  const comparisonHeaders = ['Operator', "Meaning"]
+  const comparisonItems = [
+    {operator: '==', value: 'Equal to'},
+    {operator: '!=', value: 'Not equal to'},
+    {operator: '<', value: 'Less than'},
+    {operator: '>', value: 'Greater than'},
+    {operator: '<=', value: 'Less than or Equal to'},
+    {operator: '>=', value: 'Greater than or Equal to'},
+  ]
+</script>
 
-### Comparison Operators
+# Flow Control
 
-| Operator | Meaning                  |
-| -------- | ------------------------ |
-| `==`     | Equal to                 |
-| `!=`     | Not equal to             |
-| `<`      | Less than                |
-| `>`      | Greater Than             |
-| `<=`     | Less than or Equal to    |
-| `>=`     | Greater than or Equal to |
+## Comparison Operators
+
+<div>
+  <base-table :title-headers="['Operator', 'Meaning']">
+    <base-table-row v-for="item in comparisonItems" :key="item.operator">
+      <base-table-item>{{ item.operator }}</base-table-item>
+      <base-table-item>{{ item.value }}</base-table-item>
+    </base-table-row>
+  </base-table>
+</div>
 
 These operators evaluate to True or False depending on the values you give them.
 
@@ -47,7 +59,7 @@ Examples:
 42 == '42'
 ```
 
-### Boolean evaluation
+## Boolean evaluation
 
 Never use `==` or `!=` operator to evaluate boolean operation. Use the `is` or `is not` operators,
 or use implicit boolean evaluation.
@@ -94,7 +106,7 @@ if not a:
    pass
 ```
 
-### Boolean Operators
+## Boolean Operators
 
 There are three Boolean operators: and, or, and not.
 
@@ -123,7 +135,7 @@ The _not_ Operator’s _Truth_ Table:
 | not True   | False        |
 | not False  | True         |
 
-### Mixing Boolean and Comparison Operators
+## Mixing Boolean and Comparison Operators
 
 ```python
 (4 < 5) and (5 < 6)
@@ -143,14 +155,14 @@ You can also use multiple Boolean operators in an expression, along with the com
 2 + 2 == 4 and not 2 + 2 == 5 and 2 * 2 == 2 + 2
 ```
 
-### if Statements
+## if Statements
 
 ```python
 if name == 'Alice':
     print('Hi, Alice.')
 ```
 
-### else Statements
+## else Statements
 
 ```python
 name = 'Bob'
@@ -161,7 +173,7 @@ else:
     print('Hello, stranger.')
 ```
 
-### elif Statements
+## elif Statements
 
 ```python
 name = 'Bob'
@@ -185,7 +197,7 @@ else:
     print('You are neither Alice nor a little kid.')
 ```
 
-### while Loop Statements
+## while Loop Statements
 
 ```python
 spam = 0
@@ -195,7 +207,7 @@ while spam < 5:
     spam = spam + 1
 ```
 
-### break Statements
+## break Statements
 
 If the execution reaches a break statement, it immediately exits the while loop’s clause:
 
@@ -209,7 +221,7 @@ while True:
 print('Thank you!')
 ```
 
-### continue Statements
+## continue Statements
 
 When the program execution reaches a continue statement, the program execution immediately jumps back to the start of the loop.
 
@@ -227,7 +239,7 @@ while True:
 print('Access granted.')
 ```
 
-### for Loops and the range() Function
+## for Loops and the range() Function
 
 ```python
 print('My name is')
@@ -249,7 +261,7 @@ for i in range(5, -1, -1):
     print(i)
 ```
 
-### For else statement
+## For else statement
 
 This allows you to specify a statement to execute after the full loop has been executed. Only
 useful when a `break` condition can occur in the loop:
@@ -262,7 +274,7 @@ else:
    print("only executed when no item of the list is equal to 3")
 ```
 
-### Importing Modules
+## Importing Modules
 
 ```python
 import random
@@ -279,7 +291,7 @@ import random, sys, os, math
 from random import *
 ```
 
-### Ending a Program with sys.exit
+## Ending a Program with sys.exit
 
 ```python
 import sys
