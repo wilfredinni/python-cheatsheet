@@ -5,5 +5,5 @@ module.exports = {
   singleQuote: true,
   bracketSpacing: true,
   arrowParens: 'always',
-  tailwindConfig: './tailwind.config.js',
+  plugins: [require('prettier-plugin-tailwindcss')],
 }
