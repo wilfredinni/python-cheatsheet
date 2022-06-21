@@ -5,6 +5,7 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    BaseThemeLocal: typeof import('./components/ui/BaseThemeLocal.vue')['default']
     BaseThemeToggle: typeof import('./components/ui/BaseThemeToggle.vue')['default']
     C01Basics: typeof import('./../cheatsheet/C01Basics.md')['default']
     C02FlowControl: typeof import('./../cheatsheet/C02FlowControl.md')['default']
@@ -30,6 +31,7 @@ declare module '@vue/runtime-core' {
     C22Dataclasses: typeof import('./../cheatsheet/C22Dataclasses.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Switch: typeof import('@headlessui/vue')['Switch']
     User: typeof import('./components/User.vue')['default']
   }
 }
