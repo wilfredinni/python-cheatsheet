@@ -29,6 +29,7 @@ declare module '@vue/runtime-core' {
     C20Main: typeof import('./../cheatsheet/C20Main.md')['default']
     C21Setup: typeof import('./../cheatsheet/C21Setup.md')['default']
     C22Dataclasses: typeof import('./../cheatsheet/C22Dataclasses.md')['default']
+    Markdown: typeof import('./components/Markdown.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Switch: typeof import('@headlessui/vue')['Switch']

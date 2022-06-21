@@ -1,14 +1,3 @@
-# Python Cheat Sheet
-
-Basic cheatsheet for Python mostly based on the book written by Al Sweigart, [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/3.0/) and many other sources.
-
-## Read It
-
-- [Website](https://www.pythoncheatsheet.org)
-- [Github](https://github.com/wilfredinni/python-cheatsheet)
-- [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
-- [Jupyter Notebook](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks)
-
 ## The Zen of Python
 
 From the [PEP 20 -- The Zen of Python](https://www.python.org/dev/peps/pep-0020/):
@@ -25,15 +14,15 @@ import this
 
 From **Highest** to **Lowest** precedence:
 
-| Operators | Operation        | Example         |
-| --------- | ---------------- | --------------- |
-| **        | Exponent         | `2 ** 3 = 8`    |
+| Operators | Operation         | Example         |
+| --------- | ----------------- | --------------- |
+| \*\*      | Exponent          | `2 ** 3 = 8`    |
 | %         | Modulus/Remainder | `22 % 8 = 6`    |
-| //        | Integer division | `22 // 8 = 2`   |
-| /         | Division         | `22 / 8 = 2.75` |
-| *         | Multiplication   | `3 * 3 = 9`     |
-| -         | Subtraction      | `5 - 2 = 3`     |
-| +         | Addition         | `2 + 2 = 4`     |
+| //        | Integer division  | `22 // 8 = 2`   |
+| /         | Division          | `22 / 8 = 2.75` |
+| \*        | Multiplication    | `3 * 3 = 9`     |
+| -         | Subtraction       | `5 - 2 = 3`     |
+| +         | Addition          | `2 + 2 = 4`     |
 
 Examples of expressions in the interactive shell:
 

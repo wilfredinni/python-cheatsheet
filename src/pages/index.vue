@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
+  <markdown>
     <c-01-basics />
-  </div>
+  </markdown>
 </template>

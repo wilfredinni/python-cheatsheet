@@ -13,9 +13,6 @@ import Markdown from 'vite-plugin-md'
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
 
-const markdownWrapperClasses =
-  'prose m-auto text-left dark:text-gray-200 prose-a:text-red-400 dark:prose-strong:text-gray-200'
-
 // https://vitejs.dev/config/
 export default defineConfig({
   resolve: {
@@ -69,7 +66,6 @@ export default defineConfig({
     }),
 
     Markdown({
-      wrapperClasses: markdownWrapperClasses,
       headEnabled: true,
       markdownItSetup(md) {
         // https://prismjs.com/
