@@ -5,7 +5,7 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    BaseThemeLocal: typeof import('./components/ui/BaseThemeLocal.vue')['default']
+    BaseThemeLocale: typeof import('./components/ui/BaseThemeLocale.vue')['default']
     BaseThemeToggle: typeof import('./components/ui/BaseThemeToggle.vue')['default']
     C01Basics: typeof import('./../cheatsheet/C01Basics.md')['default']
     C02FlowControl: typeof import('./../cheatsheet/C02FlowControl.md')['default']
@@ -29,7 +29,14 @@ declare module '@vue/runtime-core' {
     C20Main: typeof import('./../cheatsheet/C20Main.md')['default']
     C21Setup: typeof import('./../cheatsheet/C21Setup.md')['default']
     C22Dataclasses: typeof import('./../cheatsheet/C22Dataclasses.md')['default']
+    Disclosure: typeof import('@headlessui/vue')['Disclosure']
+    DisclosureButton: typeof import('@headlessui/vue')['DisclosureButton']
+    DisclosurePanel: typeof import('@headlessui/vue')['DisclosurePanel']
     Markdown: typeof import('./components/Markdown.vue')['default']
+    Menu: typeof import('@headlessui/vue')['Menu']
+    MenuButton: typeof import('@headlessui/vue')['MenuButton']
+    MenuItem: typeof import('@headlessui/vue')['MenuItem']
+    MenuItems: typeof import('@headlessui/vue')['MenuItems']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Switch: typeof import('@headlessui/vue')['Switch']
