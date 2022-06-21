@@ -5,9 +5,13 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/vue/outline'
 
 <template>
   <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-    <Disclosure v-slot="{ open }" as="nav" class="bg-white shadow">
+    <Disclosure
+      v-slot="{ open }"
+      as="nav"
+      class="bg-white shadow dark:border-b dark:border-gray-800 dark:bg-gray-900"
+    >
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 justify-between">
+        <div class="relative flex h-12 justify-between">
           <!-- Mobile menu button -->
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <DisclosureButton
@@ -25,7 +29,7 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/vue/outline'
           >
             <div class="flex flex-shrink-0 items-center">
               <img
-                class="h-8 w-auto"
+                class="h-5 w-auto"
                 src="https://raw.githubusercontent.com/wilfredinni/merken/master/static/merken/img/snake.svg"
                 alt="Workflow"
               />
@@ -34,19 +38,19 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/vue/outline'
               <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
               <a
                 href="#"
-                class="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
+                class="inline-flex items-center border-b-2 border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900 dark:text-gray-200"
               >
                 Cheatsheet
               </a>
               <a
                 href="#"
-                class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-200"
               >
                 Blog
               </a>
               <a
                 href="#"
-                class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-200"
               >
                 About
               </a>
