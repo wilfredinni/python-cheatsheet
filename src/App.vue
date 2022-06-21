@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'Python Cheat Sheet',
+  title: 'Python Cheatsheet',
   meta: [
     {
       name: 'description',

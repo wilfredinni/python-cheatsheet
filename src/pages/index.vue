@@ -1,10 +1,7 @@
-<script setup lang="ts">
-useHead({
-  title: 'Home',
-  meta: [{ name: 'description', content: 'Opinionated Vite Starter Template' }],
-})
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div></div>
+  <div>
+    <c-01-basics />
+  </div>
 </template>
