@@ -8,7 +8,7 @@
       <base-theme-toggle />
     </div>
 
-    <div class="mt-10 flex justify-center">
+    <div class="flex justify-center">
       <RouterView />
     </div>
   </main>

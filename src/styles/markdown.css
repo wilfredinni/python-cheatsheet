@@ -1,8 +1,8 @@
 /* https://github.com/antfu/prism-theme-vars */
-@import "prism-theme-vars/base.css";
+@import 'prism-theme-vars/base.css';
 
 .prose {
-  --prism-font-family: "DM Mono", monospace;
+  --prism-font-family: 'DM Mono', monospace;
 }
 
 .prose img {

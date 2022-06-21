@@ -1,7 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <markdown>
-    <c-01-basics />
-  </markdown>
+  <div>
+    <markdown>
+      <c-01-basics />
+      <c-02-flow-control />
+    </markdown>
+  </div>
 </template>

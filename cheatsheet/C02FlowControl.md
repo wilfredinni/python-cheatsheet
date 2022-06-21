@@ -1,14 +1,3 @@
-# Python Cheat Sheet
-
-Basic cheatsheet for Python mostly based on the book written by Al Sweigart, [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/3.0/) and many other sources.
-
-## Read It
-
-- [Website](https://www.pythoncheatsheet.org)
-- [Github](https://github.com/wilfredinni/python-cheatsheet)
-- [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
-- [Jupyter Notebook](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks)
-
 ## Flow Control
 
 ### Comparison Operators
@@ -105,7 +94,7 @@ if not a:
 
 There are three Boolean operators: and, or, and not.
 
-The *and* Operator’s *Truth* Table:
+The _and_ Operator’s _Truth_ Table:
 
 | Expression      | Evaluates to |
 | --------------- | ------------ |
@@ -114,7 +103,7 @@ The *and* Operator’s *Truth* Table:
 | False and True  | False        |
 | False and False | False        |
 
-The *or* Operator’s *Truth* Table:
+The _or_ Operator’s _Truth_ Table:
 
 | Expression     | Evaluates to |
 | -------------- | ------------ |
@@ -123,7 +112,7 @@ The *or* Operator’s *Truth* Table:
 | False or True  | True         |
 | False or False | False        |
 
-The *not* Operator’s *Truth* Table:
+The _not_ Operator’s _Truth_ Table:
 
 | Expression | Evaluates to |
 | ---------- | ------------ |
@@ -204,7 +193,7 @@ while spam < 5:
 
 ### break Statements
 
- If the execution reaches a break statement, it immediately exits the while loop’s clause:
+If the execution reaches a break statement, it immediately exits the while loop’s clause:
 
 ```python
 while True:
@@ -242,7 +231,7 @@ for i in range(5):
     print('Jimmy Five Times ({})'.format(str(i)))
 ```
 
-The *range()* function can also be called with three arguments. The first two arguments will be the start and stop values, and the third will be the step argument. The step is the amount that the variable is increased by after each iteration.
+The _range()_ function can also be called with three arguments. The first two arguments will be the start and stop values, and the third will be the step argument. The step is the amount that the variable is increased by after each iteration.
 
 ```python
 for i in range(0, 10, 2):
