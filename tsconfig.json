@@ -36,6 +36,6 @@
     "postcss.config.js",
     "tailwind.config.js",
     "coverage",
-    "markdown"
+    "cheatsheet"
   ],
 }
