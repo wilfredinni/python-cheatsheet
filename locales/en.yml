@@ -1,0 +1,7 @@
+index:
+  title: Vinilo
+  description: Like Vitesse, but with Tailwind, Heroicons and Headless Ui
+  about: About
+user:
+  set_name: Set name
+  salute: Hello,

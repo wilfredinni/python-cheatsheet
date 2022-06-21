@@ -1,0 +1,7 @@
+index:
+  title: Vinilo
+  description: Como Vitesse, pero con Tailwind, Heroicons y Headless Ui
+  about: Acerca de
+user:
+  set_name: Establecer nombre
+  salute: Hola,
