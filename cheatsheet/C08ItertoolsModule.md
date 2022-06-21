@@ -1,15 +1,8 @@
-# Python Cheat Sheet
+---
+title: Itertools Module
+---
 
-Basic cheatsheet for Python mostly based on the book written by Al Sweigart, [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/3.0/) and many other sources.
-
-## Read It
-
-- [Website](https://www.pythoncheatsheet.org)
-- [Github](https://github.com/wilfredinni/python-cheatsheet)
-- [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
-- [Jupyter Notebook](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks)
-
-## itertools Module
+## Itertools Module
 
 The _itertools_ module is a collection of tools intented to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
 

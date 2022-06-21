@@ -1,13 +1,6 @@
-# Python Cheat Sheet
-
-Basic cheatsheet for Python mostly based on the book written by Al Sweigart, [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/3.0/) and many other sources.
-
-## Read It
-
-- [Website](https://www.pythoncheatsheet.org)
-- [Github](https://github.com/wilfredinni/python-cheatsheet)
-- [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
-- [Jupyter Notebook](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks)
+---
+title: Regular Expressions
+---
 
 ## Regular Expressions
 
@@ -109,7 +102,7 @@ mo2.group()
 
 ### Matching Zero or More with the Star
 
-The * (called the star or asterisk) means “match zero or more”—the group that precedes the star can occur any number of times in the text.
+The \* (called the star or asterisk) means “match zero or more”—the group that precedes the star can occur any number of times in the text.
 
 ```python
 bat_regex = re.compile(r'Bat(wo)*man')
@@ -129,7 +122,7 @@ mo3.group()
 
 ### Matching One or More with the Plus
 
-While * means “match zero or more,” the + (or plus) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:
+While \* means “match zero or more,” the + (or plus) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:
 
 ```python
 bat_regex = re.compile(r'Bat(wo)+man')
@@ -268,7 +261,7 @@ mo.group(1)
 mo.group(2)
 ```
 
-The dot-star uses greedy mode: It will always try to match as much text as possible. To match any and all text in a nongreedy fashion, use the dot, star, and question mark (.*?). The question mark tells Python to match in a nongreedy way:
+The dot-star uses greedy mode: It will always try to match as much text as possible. To match any and all text in a nongreedy fashion, use the dot, star, and question mark (.\*?). The question mark tells Python to match in a nongreedy way:
 
 ```python
 nongreedy_regex = re.compile(r'<.*?>')
@@ -314,7 +307,7 @@ newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the
 | `\d`, `\w`, and `\s`     | a digit, word, or space character, resectively.              |
 | `\D`, `\W`, and `\S`     | anything except a digit, word, or space acter, respectively. |
 | `[abc]`                  | any character between the brackets (such as a, b, ).         |
-| `[^abc]`                 | any character that isn’t between the brackets.              |
+| `[^abc]`                 | any character that isn’t between the brackets.               |
 
 ### Case-Insensitive Matching
 

@@ -30,6 +30,11 @@ export default defineConfig({
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
       extensions: ['vue', 'md'],
+      dirs: [
+        { dir: 'src/pages', baseRoute: '' },
+        { dir: 'cheatsheet', baseRoute: 'docs' },
+      ],
+      // importMode: 'sync',
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
@@ -56,7 +61,7 @@ export default defineConfig({
     // https://github.com/antfu/unplugin-vue-components
     Components({
       // allow auto load markdown components under `./src/components/`
-      dirs: ['src/components', 'cheatsheet'],
+      dirs: ['src/components'],
       extensions: ['vue', 'md'],
       // allow auto import and register components used in markdown
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],

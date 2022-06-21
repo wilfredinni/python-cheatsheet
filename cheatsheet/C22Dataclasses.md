@@ -1,13 +1,6 @@
-# Python Cheat Sheet
-
-Basic cheatsheet for Python mostly based on the book written by Al Sweigart, [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/3.0/) and many other sources.
-
-## Read It
-
-- [Website](https://www.pythoncheatsheet.org)
-- [Github](https://github.com/wilfredinni/python-cheatsheet)
-- [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
-- [Jupyter Notebook](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks)
+---
+title: Dataclasses
+---
 
 ## Dataclasses
 

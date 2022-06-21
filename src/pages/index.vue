@@ -1,10 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+// const router = useRouter()
+</script>
 
 <template>
   <div>
-    <markdown>
-      <c-01-basics />
-      <c-02-flow-control />
-    </markdown>
+    <!-- <markdown> </markdown> -->
+    <!-- <pre>{{ router.getRoutes() }}</pre> -->
   </div>
 </template>
