@@ -118,11 +118,14 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/vue/outline'
         class="mx-auto max-w-3xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-12 lg:gap-4 lg:px-8"
       >
         <div class="hidden pt-6 lg:col-span-3 lg:block xl:col-span-3">
-          <nav aria-label="Sidebar" class="sticky top-6">
+          <nav
+            aria-label="Sidebar"
+            class="fixed inset-0 top-[3.655rem] left-[max(0px,calc(50%-45rem))] right-auto z-20 hidden w-[19.5rem] overflow-y-auto px-8 pt-5 lg:block"
+          >
             <div
               v-for="route in $router.getRoutes()"
               :key="route.path"
-              class="pb-1 dark:text-slate-400"
+              class="pb-2 dark:text-slate-400"
             >
               <router-link :to="route.path">
                 {{ route.name }}
