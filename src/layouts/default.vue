@@ -24,14 +24,53 @@ import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 
           <!-- menu -->
           <div
-            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+            class="flex flex-1 items-center justify-center space-x-8 sm:items-center sm:justify-start"
           >
-            <div class="flex flex-shrink-0 items-center">
+            <router-link to="/" class="flex flex-shrink-0 items-center">
               <img
                 class="h-5 w-auto"
                 src="https://raw.githubusercontent.com/wilfredinni/merken/master/static/merken/img/snake.svg"
                 alt="Workflow"
               />
+            </router-link>
+
+            <div
+              class="pointer-events-auto relative bg-white dark:bg-slate-900"
+            >
+              <button
+                type="button"
+                class="dark:highlight-white/5 hidden w-full items-center rounded-md py-1.5 pl-2 pr-3 text-sm leading-6 text-slate-400 shadow-sm ring-1 ring-slate-900/10 hover:ring-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 lg:flex"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  aria-hidden="true"
+                  class="mr-3 flex-none"
+                >
+                  <path
+                    d="m19 19-3.5-3.5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <circle
+                    cx="11"
+                    cy="11"
+                    r="6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></circle>
+                </svg>
+                Quick search...<span
+                  class="ml-auto flex-none pl-3 text-xs font-semibold"
+                >
+                  Ctrl K
+                </span>
+              </button>
             </div>
           </div>
 
@@ -119,12 +158,12 @@ import { MenuIcon, XIcon } from '@heroicons/vue/outline'
         <div class="hidden pt-6 lg:col-span-3 lg:block xl:col-span-3">
           <nav
             aria-label="Sidebar"
-            class="fixed inset-0 top-[3.655rem] left-[max(0px,calc(50%-45rem))] right-auto z-20 hidden w-[19.5rem] overflow-y-auto px-8 pt-5 lg:block"
+            class="fixed inset-0 top-[3.655rem] left-[max(0px,calc(50%-40rem))] right-auto z-20 hidden w-[19.5rem] overflow-y-auto px-8 pt-5 lg:block"
           >
             <div
               v-for="route in $router.getRoutes()"
               :key="route.path"
-              class="pb-2 dark:text-slate-400"
+              class="pb-1.5 dark:text-slate-400"
             >
               <router-link :to="route.path">
                 {{ route.name }}
