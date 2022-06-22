@@ -3,31 +3,36 @@ title: Basics
 ---
 
 <script setup lang="ts">
-  const comparisonItems = [
-    {operator: '==', value: 'Equal to'},
-    {operator: '!=', value: 'Not equal to'},
-    {operator: '<', value: 'Less than'},
-    {operator: '>', value: 'Greater than'},
-    {operator: '<=', value: 'Less than or Equal to'},
-    {operator: '>=', value: 'Greater than or Equal to'},
+  const operatorItems = [
+    {operator: '**', operation: 'Exponent', example: '2 ** 3 = 8'},
+    {operator: '%', operation: 'Modulus/Remainder', example: '22 % 8 = 6'},
+    {operator: '//', operation: 'Integer division', example: '22 // 8 = 2'},
+    {operator: '/', operation: 'Division', example: '22 / 8 = 2.75'},
+    {operator: '*', operation: 'Multiplication', example: '3 * 3 = 9'},
+    {operator: '-', operation: 'Subtraction', example: '5 - 2 = 3'},
+    {operator: '+', operation: 'Addition', example: '2 + 2 = 4'},
+  ]
+
+  const dataTypeItems = [
+    {type: 'Integers', example: '-2, -1, 0, 1, 2, 3, 4, 5'},
+    {type: 'Floating-point numbers', example: '-1.25, -1.0, --0.5, 0.0, 0.5, 1.0, 1.25'},
+    {type: 'Strings', example: "'a', 'aa', 'aaa', 'Hello!', '11 cats'"},
   ]
 </script>
 
-## Python Basics
+# Python Basics
 
-### Math Operators
+## Math Operators
 
 From **Highest** to **Lowest** precedence:
 
-| Operators | Operation         | Example         |
-| --------- | ----------------- | --------------- |
-| \*\*      | Exponent          | `2 ** 3 = 8`    |
-| %         | Modulus/Remainder | `22 % 8 = 6`    |
-| //        | Integer division  | `22 // 8 = 2`   |
-| /         | Division          | `22 / 8 = 2.75` |
-| \*        | Multiplication    | `3 * 3 = 9`     |
-| -         | Subtraction       | `5 - 2 = 3`     |
-| +         | Addition          | `2 + 2 = 4`     |
+<base-table :title-headers="['Operator', 'Operation', 'Example']">
+  <base-table-row v-for="item in operatorItems" :key="item.operator">
+    <base-table-item>{{ item.operator }}</base-table-item>
+    <base-table-item>{{ item.operation }}</base-table-item>
+    <base-table-item>{{ item.example }}</base-table-item>
+  </base-table-row>
+</base-table>
 
 Examples of expressions in the interactive shell:
 
@@ -55,15 +60,16 @@ Examples of expressions in the interactive shell:
 (5 - 1) * ((7 + 1) / (3 - 1))
 ```
 
-### Data Types
+## Data Types
 
-| Data Type              | Examples                                  |
-| ---------------------- | ----------------------------------------- |
-| Integers               | `-2, -1, 0, 1, 2, 3, 4, 5`                |
-| Floating-point numbers | `-1.25, -1.0, --0.5, 0.0, 0.5, 1.0, 1.25` |
-| Strings                | `'a', 'aa', 'aaa', 'Hello!', '11 cats'`   |
+<base-table :title-headers="['Data Type', 'Example']">
+  <base-table-row v-for="item in dataTypeItems" :key="item.operator">
+    <base-table-item>{{ item.type }}</base-table-item>
+    <base-table-item>{{ item.example }}</base-table-item>
+  </base-table-row>
+</base-table>
 
-### String Concatenation and Replication
+## String Concatenation and Replication
 
 String concatenation:
 
@@ -79,7 +85,7 @@ String Replication:
 'Alice' * 5
 ```
 
-### Variables
+## Variables
 
 You can name a variable anything as long as it obeys the following rules:
 
@@ -100,7 +106,7 @@ _spam = 'Hello'
 
 `_spam` should not be used again in the code.
 
-### Comments
+## Comments
 
 Inline comment:
 
@@ -134,7 +140,7 @@ def foo():
     """
 ```
 
-### The print Function
+## The print Function
 
 ```python
 print('Hello world!')
@@ -145,7 +151,7 @@ a = 1
 print('Hello world!', a)
 ```
 
-### The input Function
+## The input Function
 
 Example Code:
 
@@ -154,7 +160,7 @@ myName = input('What is your name?') # ask for their name
 print('It is good to meet you, {}'.format(myName))
 ```
 
-### The len Function
+## The len Function
 
 Evaluates to the integer value of the number of characters in a string:
 
@@ -171,7 +177,7 @@ if a:
     print("the list is not empty!")
 ```
 
-### The str, int, and float Functions
+## The str, int, and float Functions
 
 Integer to String or Float:
 
