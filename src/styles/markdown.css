@@ -33,7 +33,7 @@ html:not(.dark) .prose {
 
 html.dark .prose {
   --prism-foreground: #d4cfbf;
-  --prism-background: #151515;
+  --prism-background: #1e293b;
   --prism-comment: #758575;
   --prism-string: #d48372;
   --prism-literal: #429988;
