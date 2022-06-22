@@ -34,7 +34,6 @@ export default defineConfig({
         { dir: 'src/pages', baseRoute: '' },
         { dir: 'cheatsheet', baseRoute: 'docs' },
       ],
-      // importMode: 'sync',
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
@@ -75,7 +74,7 @@ export default defineConfig({
       headEnabled: true,
       markdownItSetup(md) {
         // https://prismjs.com/
-        md.use(Prism)
+        md.use(Prism, {})
         md.use(LinkAttributes, {
           matcher: (link: string) => /^https?:\/\//.test(link),
           attrs: {

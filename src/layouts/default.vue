@@ -8,10 +8,10 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/vue/outline'
     <Disclosure
       v-slot="{ open }"
       as="nav"
-      class="bg-white shadow dark:border-b dark:border-gray-800 dark:bg-gray-900"
+      class="sticky top-0 z-40 w-full flex-none bg-white/25 backdrop-blur dark:border-slate-50/[0.06] dark:bg-transparent lg:z-50 lg:border-b lg:border-slate-900/10"
     >
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-12 justify-between">
+        <div class="relative flex h-14 justify-between">
           <!-- Mobile menu button -->
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <DisclosureButton
@@ -106,7 +106,7 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/vue/outline'
             <div
               v-for="route in $router.getRoutes()"
               :key="route.path"
-              class="dark:text-slate-400"
+              class="pb-1 dark:text-slate-400"
             >
               <router-link :to="route.path">
                 {{ route.name }}

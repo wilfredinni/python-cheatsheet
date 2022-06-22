@@ -1,3 +1,8 @@
+---
+title: Zen of Python
+meta:
+---
+
 # The Zen of Python
 
 From the [PEP 20 -- The Zen of Python](https://www.python.org/dev/peps/pep-0020/):
