@@ -29,8 +29,23 @@ useHead({
 </template>
 
 <style>
-.dark ::-webkit-scrollbar {
-  width: 6px;
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8f9399;
+}
+
+/* Track */
+.dark ::-webkit-scrollbar-track {
+  background: #6b7280;
+}
+
+/* Handle */
+.dark ::-webkit-scrollbar-thumb {
+  background: #374151;
 }
 
 /* Track */
@@ -41,11 +56,5 @@ useHead({
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #9ca3af;
-  border-radius: 2px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #8f9399;
 }
 </style>
