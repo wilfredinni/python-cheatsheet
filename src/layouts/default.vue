@@ -26,13 +26,15 @@ import { MenuIcon, XIcon } from '@heroicons/vue/outline'
           <div
             class="flex flex-1 items-center justify-center space-x-8 sm:items-center sm:justify-start"
           >
-            <router-link to="/" class="flex flex-shrink-0 items-center">
-              <img
-                class="h-5 w-auto"
-                src="https://raw.githubusercontent.com/wilfredinni/merken/master/static/merken/img/snake.svg"
-                alt="Workflow"
-              />
-            </router-link>
+            <div class="flex flex-shrink-0 items-center">
+              <a href="/">
+                <img
+                  class="h-5 w-auto"
+                  src="https://raw.githubusercontent.com/wilfredinni/merken/master/static/merken/img/snake.svg"
+                  alt="Workflow"
+                />
+              </a>
+            </div>
 
             <div
               class="pointer-events-auto relative bg-white dark:bg-slate-900"
@@ -169,12 +171,10 @@ import { MenuIcon, XIcon } from '@heroicons/vue/outline'
                 {{ route.name }}
               </router-link>
             </div>
-            <!-- Your content -->
           </nav>
         </div>
 
         <main class="px-3 sm:px-0 lg:col-span-9 xl:col-span-7">
-          <!-- Your content -->
           <markdown>
             <RouterView />
           </markdown>
