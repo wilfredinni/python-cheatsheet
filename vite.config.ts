@@ -70,6 +70,7 @@ export default defineConfig({
       resolvers: [HeadlessUiResolver()],
     }),
 
+    // https://github.com/antfu/vite-plugin-md
     Markdown({
       headEnabled: true,
       markdownItSetup(md) {

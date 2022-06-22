@@ -1,5 +1,8 @@
 ---
 title: Basics
+meta:
+  - name: description
+    content: Python basics
 ---
 
 <script setup lang="ts">
