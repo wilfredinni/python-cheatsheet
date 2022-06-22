@@ -3,7 +3,6 @@ title: Flow Control
 ---
 
 <script setup lang="ts">
-  const comparisonHeaders = ['Operator', "Meaning"]
   const comparisonItems = [
     {operator: '==', value: 'Equal to'},
     {operator: '!=', value: 'Not equal to'},
