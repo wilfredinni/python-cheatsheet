@@ -32,7 +32,7 @@ export default defineConfig({
       extensions: ['vue', 'md'],
       dirs: [
         { dir: 'src/pages', baseRoute: '' },
-        { dir: 'cheatsheet', baseRoute: 'docs' },
+        { dir: 'cheatsheet', baseRoute: 'chapter' },
       ],
     }),
 

@@ -18,6 +18,7 @@ declare module '@vue/runtime-core' {
     RouterView: typeof import('vue-router')['RouterView']
     Switch: typeof import('@headlessui/vue')['Switch']
     TheNavbar: typeof import('./components/layout/TheNavbar.vue')['default']
+    TheSidebar: typeof import('./components/layout/TheSidebar.vue')['default']
   }
 }
 
