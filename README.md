@@ -20,7 +20,7 @@ All contributions are welcome:
 
 ## Python Cheatsheet
 
-- [About](#about)
+- [About ![Binder](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks)](#about-)
   - [Contribute](#contribute)
   - [Read It](#read-it)
   - [Python Cheatsheet](#python-cheatsheet)
@@ -360,7 +360,7 @@ Inline comment:
 
 Multiline comment:
 
-```Python
+```python
 # This is a
 # multiline comment
 ```
@@ -552,7 +552,7 @@ True
 
 These statements are equivalent:
 
-```Python
+```python
 >>> if a is True:
 >>>    pass
 >>> if a is not False:
@@ -563,7 +563,7 @@ These statements are equivalent:
 
 And these as well:
 
-```Python
+```python
 >>> if a is False:
 >>>    pass
 >>> if a is not True:

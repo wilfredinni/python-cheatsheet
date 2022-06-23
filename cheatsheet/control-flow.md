@@ -85,7 +85,7 @@ True is not False
 
 These statements are equivalent:
 
-```Python
+```python
 if a is True:
    pass
 if a is not False:
@@ -96,7 +96,7 @@ if a:
 
 And these as well:
 
-```Python
+```python
 if a is False:
    pass
 if a is not True:
