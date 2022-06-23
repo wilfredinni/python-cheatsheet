@@ -5,6 +5,7 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    BaseAlert: typeof import('./components/ui/alert/BaseAlert.vue')['default']
     BaseTable: typeof import('./components/ui/table/BaseTable.vue')['default']
     BaseTableItem: typeof import('./components/ui/table/BaseTableItem.vue')['default']
     BaseTableRow: typeof import('./components/ui/table/BaseTableRow.vue')['default']
@@ -14,6 +15,7 @@ declare module '@vue/runtime-core' {
     DisclosureButton: typeof import('@headlessui/vue')['DisclosureButton']
     DisclosurePanel: typeof import('@headlessui/vue')['DisclosurePanel']
     Markdown: typeof import('./components/Markdown.vue')['default']
+    Readme: typeof import('./components/ui/alert/Readme.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Switch: typeof import('@headlessui/vue')['Switch']

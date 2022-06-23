@@ -30,6 +30,8 @@
     "@tailwindcss/typography": "^0.5.2",
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
     "@vitejs/plugin-vue": "^2.3.3",
     "@vue/test-utils": "^2.0.0",
     "autoprefixer": "^10.4.7",
