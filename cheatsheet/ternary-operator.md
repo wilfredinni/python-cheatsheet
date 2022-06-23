@@ -1,4 +1,4 @@
-## Ternary Conditional Operator
+# Ternary Conditional Operator
 
 Many programming languages have a ternary operator, which define a conditional expression. The most common usage is to make a terse simple conditional assignment statement. In other words, it offers one-line code to evaluate the first expression if the condition is true, otherwise it evaluates the second expression.
 

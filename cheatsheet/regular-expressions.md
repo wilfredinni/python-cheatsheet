@@ -2,7 +2,7 @@
 title: Regular Expressions
 ---
 
-## Regular Expressions
+# Regular Expressions
 
 1. Import the regex module with `import re`.
 2. Create a Regex object with the `re.compile()` function. (Remember to use a raw string.)
@@ -15,7 +15,7 @@ All the regex functions in Python are in the re module:
 import re
 ```
 
-### Matching Regex Objects
+## Matching Regex Objects
 
 ```python
 phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
@@ -23,7 +23,7 @@ mo = phone_num_regex.search('My number is 415-555-4242.')
 print('Phone number found: {}'.format(mo.group()))
 ```
 
-### Grouping with Parentheses
+## Grouping with Parentheses
 
 ```python
 phone_num_regex = re.compile(r'(\d\d\d)-(\d\d\d-\d\d\d\d)')
@@ -58,7 +58,7 @@ print(area_code)
 print(main_number)
 ```
 
-### Matching Multiple Groups with the Pipe
+## Matching Multiple Groups with the Pipe
 
 The | character is called a pipe. You can use it anywhere you want to match one of many expressions. For example, the regular expression r'Batman|Tina Fey' will match either 'Batman' or 'Tina Fey'.
 
@@ -85,7 +85,7 @@ mo.group()
 mo.group(1)
 ```
 
-### Optional Matching with the Question Mark
+## Optional Matching with the Question Mark
 
 The ? character flags the group that precedes it as an optional part of the pattern.
 
@@ -100,7 +100,7 @@ mo2 = bat_regex.search('The Adventures of Batwoman')
 mo2.group()
 ```
 
-### Matching Zero or More with the Star
+## Matching Zero or More with the Star
 
 The \* (called the star or asterisk) means “match zero or more”—the group that precedes the star can occur any number of times in the text.
 
@@ -120,7 +120,7 @@ mo3 = bat_regex.search('The Adventures of Batwowowowoman')
 mo3.group()
 ```
 
-### Matching One or More with the Plus
+## Matching One or More with the Plus
 
 While \* means “match zero or more,” the + (or plus) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:
 
@@ -140,7 +140,7 @@ mo3 = bat_regex.search('The Adventures of Batman')
 mo3 is None
 ```
 
-### Matching Specific Repetitions with Curly Brackets
+## Matching Specific Repetitions with Curly Brackets
 
 If you have a group that you want to repeat a specific number of times, follow the group in your regex with a number in curly brackets. For example, the regex (Ha){3} will match the string 'HaHaHa', but it will not match 'HaHa', since the latter has only two repeats of the (Ha) group.
 
@@ -157,7 +157,7 @@ mo2 = ha_regex.search('Ha')
 mo2 is None
 ```
 
-### Greedy and Nongreedy Matching
+## Greedy and Nongreedy Matching
 
 Python’s regular expressions are greedy by default, which means that in ambiguous situations they will match the longest string possible. The non-greedy version of the curly brackets, which matches the shortest string possible, has the closing curly bracket followed by a question mark.
 
@@ -173,7 +173,7 @@ mo2 = nongreedy_ha_regex.search('HaHaHaHaHa')
 mo2.group()
 ```
 
-### The findall Method
+## The findall Method
 
 In addition to the search() method, Regex objects also have a findall() method. While search() will return a Match object of the first matched text in the searched string, the findall() method will return the strings of every match in the searched string.
 
@@ -188,7 +188,7 @@ To summarize what the findall() method returns, remember the following:
 
 - When called on a regex that has groups, such as (\d\d\d)-(d\d)-(\d\d\d\d), the method findall() returns a list of es of strings (one string for each group), such as [('415', '555', '9999'), ('212', '555', '0000')].
 
-### Making Your Own Character Classes
+## Making Your Own Character Classes
 
 There are times when you want to match a set of characters but the shorthand character classes (\d, \w, \s, and so on) are too broad. You can define your own character class using square brackets. For example, the character class [aeiouAEIOU] will match any vowel, both lowercase and uppercase.
 
@@ -206,7 +206,7 @@ consonant_regex = re.compile(r'[^aeiouAEIOU]')
 consonant_regex.findall('Robocop eats baby food. BABY FOOD.')
 ```
 
-### The Caret and Dollar Sign Characters
+## The Caret and Dollar Sign Characters
 
 - You can also use the caret symbol (^) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
 
@@ -240,7 +240,7 @@ whole_string_is_num.search('12345xyz67890') is None
 whole_string_is_num.search('12 34567890') is None
 ```
 
-### The Wildcard Character
+## The Wildcard Character
 
 The . (or dot) character in a regular expression is called a wildcard and will match any character except for a newline:
 
@@ -249,7 +249,7 @@ at_regex = re.compile(r'.at')
 at_regex.findall('The cat in the hat sat on the flat mat.')
 ```
 
-### Matching Everything with Dot-Star
+## Matching Everything with Dot-Star
 
 ```python
 name_regex = re.compile(r'First Name: (.*) Last Name: (.*)')
@@ -275,7 +275,7 @@ mo = greedy_regex.search('<To serve man> for dinner.>')
 mo.group()
 ```
 
-### Matching Newlines with the Dot Character
+## Matching Newlines with the Dot Character
 
 The dot-star will match everything except a newline. By passing re.DOTALL as the second argument to re.compile(), you can make the dot character match all characters, including the newline character:
 
@@ -289,7 +289,7 @@ newline_regex = re.compile('.*', re.DOTALL)
 newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
 ```
 
-### Review of Regex Symbols
+## Review of Regex Symbols
 
 | Symbol                   | Matches                                                      |
 | ------------------------ | ------------------------------------------------------------ |
@@ -309,7 +309,7 @@ newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the
 | `[abc]`                  | any character between the brackets (such as a, b, ).         |
 | `[^abc]`                 | any character that isn’t between the brackets.               |
 
-### Case-Insensitive Matching
+## Case-Insensitive Matching
 
 To make your regex case-insensitive, you can pass re.IGNORECASE or re.I as a second argument to re.compile():
 
@@ -326,7 +326,7 @@ robocop.search('ROBOCOP protects the innocent.').group()
 robocop.search('Al, why does your programming book talk about robocop so much?').group()
 ```
 
-### Substituting Strings with the sub() Method
+## Substituting Strings with the sub() Method
 
 The sub() method for Regex objects is passed two arguments:
 
@@ -347,7 +347,7 @@ agent_names_regex = re.compile(r'Agent (\w)\w*')
 agent_names_regex.sub(r'\1****', 'Agent Alice told Agent Carol that Agent Eve knew Agent Bob was a double agent.')
 ```
 
-### Managing Complex Regexes
+## Managing Complex Regexes
 
 To tell the re.compile() function to ignore whitespace and comments inside the regular expression string, “verbose mode” can be enabled by passing the variable re.VERBOSE as the second argument to re.compile().
 

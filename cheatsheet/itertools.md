@@ -2,7 +2,7 @@
 title: Itertools Module
 ---
 
-## Itertools Module
+# Itertools Module
 
 The _itertools_ module is a collection of tools intented to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
 
@@ -19,7 +19,7 @@ import itertools
 import operator
 ```
 
-### accumulate
+## accumulate
 
 Makes an iterator that returns the results of a function.
 
@@ -76,7 +76,7 @@ If no function is designated the items will be summed:
 31 + 1 = 32
 ```
 
-### combinations
+## combinations
 
 Takes an iterable and a integer. This will create all the unique combination that have r members.
 
@@ -94,7 +94,7 @@ for each in result:
    print(each)
 ```
 
-### combinations_with_replacement
+## combinations_with_replacement
 
 Just like combinations(), but allows individual elements to be repeated more than once.
 
@@ -112,7 +112,7 @@ for each in result:
    print(each)
 ```
 
-### count
+## count
 
 Makes an iterator that returns evenly spaced values starting with number start.
 
@@ -129,7 +129,7 @@ for i in itertools.count(10,3):
        break
 ```
 
-### cycle
+## cycle
 
 This function cycles through an iterator endlessly.
 
@@ -147,7 +147,7 @@ for color in itertools.cycle(colors):
 
 When reached the end of the iterable it start over again from the beginning.
 
-### chain
+## chain
 
 Take a series of iterables and return them as one long iterable.
 
@@ -166,7 +166,7 @@ for each in result:
    print(each)
 ```
 
-### compress
+## compress
 
 Filters one iterable with another.
 
@@ -185,7 +185,7 @@ for each in result:
    print(each)
 ```
 
-### dropwhile
+## dropwhile
 
 Make an iterator that drops elements from the iterable as long as the predicate is true; afterwards, returns every element.
 
@@ -203,7 +203,7 @@ for each in result:
    print(each)
 ```
 
-### filterfalse
+## filterfalse
 
 Makes an iterator that filters elements from iterable returning only those for which the predicate is False.
 
@@ -221,7 +221,7 @@ for each in result:
    print(each)
 ```
 
-### groupby
+## groupby
 
 Simply put, this function groups things together.
 
@@ -257,7 +257,7 @@ for key, group in itertools.groupby(robots, key=lambda x: x['faction']):
    print(list(group))
 ```
 
-### islice
+## islice
 
 This function is very much like slices. This allows you to cut out a piece of an iterable.
 
@@ -275,7 +275,7 @@ for each in few_colors:
    print(each)
 ```
 
-### permutations
+## permutations
 
 ```python
 itertools.permutations(iterable, r=None)
@@ -291,7 +291,7 @@ for each in result:
    print(each)
 ```
 
-### product
+## product
 
 Creates the cartesian products from a series of iterables.
 
@@ -304,7 +304,7 @@ for each in result:
     print(each)
 ```
 
-### repeat
+## repeat
 
 This function will repeat an object over and over again. Unless, there is a times argument.
 
@@ -319,7 +319,7 @@ for i in itertools.repeat("spam", 3):
     print(i)
 ```
 
-### starmap
+## starmap
 
 Makes an iterator that computes the function using arguments obtained from the iterable.
 
@@ -337,7 +337,7 @@ for each in result:
    print(each)
 ```
 
-### takewhile
+## takewhile
 
 The opposite of dropwhile(). Makes an iterator and returns elements from the iterable as long as the predicate is true.
 
@@ -355,7 +355,7 @@ for each in result:
    print(each)
 ```
 
-### tee
+## tee
 
 Return n independent iterators from a single iterable.
 
@@ -381,7 +381,7 @@ for each in beta_colors:
    print(each)
 ```
 
-### zip_longest
+## zip_longest
 
 Makes an iterator that aggregates elements from each of the iterables. If the iterables are of uneven length, missing values are filled-in with fillvalue. Iteration continues until the longest iterable is exhausted.
 

@@ -2,7 +2,7 @@
 title: Main function
 ---
 
-## `__main__` Top-level script environment
+# `__main__` Top-level script environment
 
 `__main__` is the name of the scope in which top-level code executes.
 A module’s **name** is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
@@ -40,7 +40,7 @@ import calculate
 calculate.add(3, 5)
 ```
 
-### Advantages
+## Advantages
 
 1. Every Python module has it’s `__name__` defined and if this is `__main__`, it implies that the module is being run standalone by the user and we can do corresponding appropriate actions.
 2. If you import this script as a module in another script, the **name** is set to the name of the script/module.

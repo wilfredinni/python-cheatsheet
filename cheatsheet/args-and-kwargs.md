@@ -2,7 +2,7 @@
 title: Args and Kwargs
 ---
 
-## args and kwargs
+# Args and Kwargs
 
 The names `args and kwargs` are arbitrary - the important thing are the `*` and `**` operators. They can mean:
 
@@ -65,14 +65,14 @@ If you do not specify \*\* for kwargs
 show(*data1, *data2, *data3)
 ```
 
-### Thinks to Remember(args)
+## Thinks to Remember(args)
 
 1. Functions can accept a variable number of positional arguments by using `*args` in the def statement.
 2. You can use the items from a sequence as the positional arguments for a function with the `*` operator.
 3. Using the `*` operator with a generator may cause your program to run out of memory and crash.
 4. Adding new positional parameters to functions that accept `*args` can introduce hard-to-find bugs.
 
-### Thinks to remember(kwargs)
+## Thinks to remember(kwargs)
 
 1. Function arguments can be specified by position or by keyword.
 2. Keywords make it clear what the purpose of each argument is when it would be confusing with only positional arguments.

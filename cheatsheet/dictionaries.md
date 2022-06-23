@@ -2,7 +2,7 @@
 title: Dictionaries
 ---
 
-## Dictionaries and Structuring Data
+# Dictionaries and Structuring Data
 
 Example Dictionary:
 
@@ -10,7 +10,7 @@ Example Dictionary:
 myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
 ```
 
-### The keys, values, and items Methods
+## The keys, values, and items Methods
 
 values():
 
@@ -44,7 +44,7 @@ for k, v in spam.items():
     print('Key: {} Value: {}'.format(k, str(v)))
 ```
 
-### Checking if a Key or Value Exists in a Dictionary
+## Checking if a Key or Value Exists in a Dictionary
 
 ```python
 spam = {'name': 'Zophie', 'age': 7}
@@ -68,7 +68,7 @@ spam = {'name': 'Zophie', 'age': 7}
 'color' in spam
 ```
 
-### The get Method
+## The get Method
 
 ```python
 picnic_items = {'apples': 5, 'cups': 2}
@@ -79,7 +79,7 @@ picnic_items = {'apples': 5, 'cups': 2}
 'I am bringing {} eggs.'.format(str(picnic_items.get('eggs', 0)))
 ```
 
-### The setdefault Method
+## The setdefault Method
 
 Let's consider this code:
 
@@ -108,7 +108,7 @@ spam.setdefault('color', 'white')
 spam
 ```
 
-### Pretty Printing
+## Pretty Printing
 
 ```python
 import pprint
@@ -123,7 +123,7 @@ for character in message:
 pprint.pprint(count)
 ```
 
-### Merge two dictionaries
+## Merge two dictionaries
 
 ```python
 # in Python 3.5+:

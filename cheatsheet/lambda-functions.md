@@ -1,4 +1,4 @@
-## Lambda Functions
+# Lambda Functions
 
 This function:
 

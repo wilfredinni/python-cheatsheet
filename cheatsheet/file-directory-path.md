@@ -1,11 +1,11 @@
-## Handling File and Directory Paths
+# Handling File and Directory Paths
 
 There are two main modules in Python that deals with path manipulation.
 One is the `os.path` module and the other is the `pathlib` module.
 The `pathlib` module was added in Python 3.4, offering an object-oriented way
 to handle file system paths.
 
-### Backslash on Windows and Forward Slash on OS X and Linux
+## Backslash on Windows and Forward Slash on OS X and Linux
 
 On Windows, paths are written using backslashes (`\`) as the separator between
 folder names. On Unix based operating system such as macOS, Linux, and BSDs,
@@ -73,7 +73,7 @@ Using `pathlib` on \*nix:
 /home/asweigart/invite.docx
 ```
 
-### The Current Working Directory
+## The Current Working Directory
 
 Using `os` on Windows:
 
@@ -102,7 +102,7 @@ Using `pathlib` on \*nix:
 /usr/lib/python3.6
 ```
 
-### Creating New Folders
+## Creating New Folders
 
 Using `os` on Windows:
 
@@ -138,7 +138,7 @@ it. To fix this, do:
 
 And all is good :)
 
-### Absolute vs. Relative Paths
+## Absolute vs. Relative Paths
 
 There are two ways to specify a file path.
 
@@ -147,7 +147,7 @@ There are two ways to specify a file path.
 
 There are also the dot (.) and dot-dot (..) folders. These are not real folders but special names that can be used in a path. A single period (“dot”) for a folder name is shorthand for “this directory.” Two periods (“dot-dot”) means “the parent folder.”
 
-### Handling Absolute and Relative Paths
+## Handling Absolute and Relative Paths
 
 To see if a path is an absolute path:
 
@@ -211,7 +211,7 @@ Using `pathlib` on \*nix:
 etc/passwd
 ```
 
-### Checking Path Validity
+## Checking Path Validity
 
 Checking if a file/directory exists:
 
@@ -295,7 +295,7 @@ False
 False
 ```
 
-### Finding File Sizes and Folder Contents
+## Finding File Sizes and Folder Contents
 
 Getting a file's size in bytes:
 
@@ -380,7 +380,7 @@ Using `pathlib` on \*nix:
 1903178911
 ```
 
-### Copying Files and Folders
+## Copying Files and Folders
 
 The shutil module provides functions for copying files, as well as entire folders.
 
@@ -407,7 +407,7 @@ While shutil.copy() will copy a single file, shutil.copytree() will copy an enti
 'C:\\bacon_backup'
 ```
 
-### Moving and Renaming Files and Folders
+## Moving and Renaming Files and Folders
 
 ```python
 >>> import shutil
@@ -429,7 +429,7 @@ If there is no eggs folder, then move() will rename bacon.txt to a file named eg
 'C:\\eggs'
 ```
 
-### Permanently Deleting Files and Folders
+## Permanently Deleting Files and Folders
 
 - Calling os.unlink(path) or Path.unlink() will delete the file at path.
 
@@ -437,7 +437,7 @@ If there is no eggs folder, then move() will rename bacon.txt to a file named eg
 
 - Calling shutil.rmtree(path) will remove the folder at path, and all files and folders it contains will also be deleted.
 
-### Safe Deletes with the send2trash Module
+## Safe Deletes with the send2trash Module
 
 You can install this module by running pip install send2trash from a Terminal window.
 
@@ -451,7 +451,7 @@ You can install this module by running pip install send2trash from a Terminal wi
 >>> send2trash.send2trash('bacon.txt')
 ```
 
-### Walking a Directory Tree
+## Walking a Directory Tree
 
 ```python
 >>> import os

@@ -2,14 +2,14 @@
 title: Reading and writing files
 ---
 
-## Reading and Writing Files
+# Reading and Writing Files
 
-### The File Reading/Writing Process
+## The File Reading/Writing Process
 
 To read/write to a file in Python, you will want to use the `with`
 statement, which will close the file for you after you are done.
 
-### Opening and reading files with the open function
+## Opening and reading files with the open function
 
 ```python
 with open('C:\\Users\\your_home_folder\\hello.txt') as hello_file:
@@ -33,7 +33,7 @@ with open('sonnet29.txt') as sonnet_file:
         print(line, end='')
 ```
 
-### Writing to Files
+## Writing to Files
 
 ```python
 with open('bacon.txt', 'w') as bacon_file:
@@ -52,7 +52,7 @@ with open('bacon.txt') as bacon_file:
 print(content)
 ```
 
-### Saving Variables with the shelve Module
+## Saving Variables with the shelve Module
 
 To save variables:
 
@@ -80,7 +80,7 @@ with shelve.open('mydata') as shelf_file:
     print(list(shelf_file.values()))
 ```
 
-### Saving Variables with pprint.pformat
+## Saving Variables with pprint.pformat
 
 ```python
 import pprint
@@ -94,7 +94,7 @@ with open('myCats.py', 'w') as file_obj:
     file_obj.write('cats = {}\n'.format(pprint.pformat(cats)))
 ```
 
-### Reading ZIP Files
+## Reading ZIP Files
 
 ```python
 import zipfile, os
@@ -108,7 +108,7 @@ with zipfile.ZipFile('example.zip') as example_zip:
     print('Compressed file is %sx smaller!' % (round(spam_info.file_size / spam_info.compress_size, 2)))
 ```
 
-### Extracting from ZIP Files
+## Extracting from ZIP Files
 
 The extractall() method for ZipFile objects extracts all the files and folders from a ZIP file into the current working directory.
 
@@ -129,7 +129,7 @@ with zipfile.ZipFile('example.zip') as example_zip:
     print(example_zip.extract('spam.txt', 'C:\\some\\new\\folders'))
 ```
 
-### Creating and Adding to ZIP Files
+## Creating and Adding to ZIP Files
 
 ```python
 import zipfile

@@ -2,13 +2,13 @@
 title: Sets
 ---
 
-## sets
+# sets
 
 From the Python 3 [documentation](https://docs.python.org/3/tutorial/datastructures.html)
 
 > A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.
 
-### Initializing a set
+## Initializing a set
 
 There are two ways to create sets: using curly braces `{}` and the bult-in function `set()`
 
@@ -24,7 +24,7 @@ s = {}
 type(s)
 ```
 
-### sets: unordered collections of unique elements
+## sets: unordered collections of unique elements
 
 A set automatically remove all the duplicate values.
 
@@ -40,7 +40,7 @@ s = {1, 2, 3}
 s(0)
 ```
 
-### set add and update
+## set add and update
 
 Using the `add()` method we can add a single element to the set.
 
@@ -58,7 +58,7 @@ s.update([2, 3, 4, 5, 6])
 s  # remember, sets automatically remove duplicates
 ```
 
-### set remove and discard
+## set remove and discard
 
 Both methods will remove an element from the set, but `remove()` will raise a `key error` if the value doesn't exist.
 
@@ -84,7 +84,7 @@ s
 s.discard(3)
 ```
 
-### set union
+## set union
 
 `union()` or `|` will create a new set that contains all the elements from the sets provided.
 
@@ -94,7 +94,7 @@ s2 = {3, 4, 5}
 s1.union(s2)  # or 's1 | s2'
 ```
 
-### set intersection
+## set intersection
 
 `intersection` or `&` will return a set containing only the elements that are common to all of them.
 
@@ -105,7 +105,7 @@ s3 = {3, 4, 5}
 s1.intersection(s2, s3)  # or 's1 & s2 & s3'
 ```
 
-### set difference
+## set difference
 
 `difference` or `-` will return only the elements that are in one of the sets.
 
@@ -115,7 +115,7 @@ s2 = {2, 3, 4}
 s1.difference(s2)  # or 's1 - s2'
 ```
 
-### set symetric_difference
+## set symetric_difference
 
 `symetric_difference` or `^` will return all the elements that are not common between them.
 

@@ -1,8 +1,8 @@
-## Virtual Environment
+# Virtual Environment
 
 The use of a Virtual Environment is to test python code in encapsulated environments and to also avoid filling the base Python installation with libraries we might use for only one project.
 
-### virtualenv
+## virtualenv
 
 1.  Install virtualenv
 
@@ -40,7 +40,7 @@ Usage:
 
         workon HelloWold
 
-### poetry
+## poetry
 
 > [Poetry](https://poetry.eustace.io/) is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
 
@@ -98,7 +98,7 @@ Usage:
 
 For more information, check the [documentation](https://poetry.eustace.io/docs/).
 
-### pipenv
+## pipenv
 
 > [Pipenv](https://pipenv.readthedocs.io/en/latest/) is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world. Windows is a first-class citizen, in our world.
 
@@ -127,7 +127,7 @@ For more information, check the [documentation](https://poetry.eustace.io/docs/)
 
 Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/).
 
-### anaconda
+## anaconda
 
 [Anaconda](https://anaconda.org/) is another popular tool to manage python packages.
 

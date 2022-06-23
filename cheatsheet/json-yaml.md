@@ -2,9 +2,9 @@
 title: Json and YAML
 ---
 
-## JSON, YAML and configuration files
+# JSON, YAML and configuration files
 
-### JSON
+## JSON
 
 Open a JSON file with:
 
@@ -24,7 +24,7 @@ with open("filename.json", "w") as f:
     f.write(json.dumps(content, indent=2))
 ```
 
-### YAML
+## YAML
 
 Compared to JSON, YAML allows a much better humain maintainance and gives ability to add comments.
 It is a convinient choice for configuration files where human will have to edit.
@@ -49,7 +49,7 @@ with open("filename.yaml") as f:
     yaml.load(f)
 ```
 
-### Anyconfig
+## Anyconfig
 
 [Anyconfig](https://pypi.python.org/pypi/anyconfig) is a very handy package allowing to abstract completly the underlying configuration file format. It allows to load a Python dictionary from JSON, YAML, TOML, and so on.
 

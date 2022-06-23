@@ -2,13 +2,13 @@
 title: Lists
 ---
 
-## Lists
+# Lists
 
 ```python
 ['cat', 'bat', 'rat', 'elephant']
 ```
 
-### Getting Individual Values in a List with Indexes
+## Getting Individual Values in a List with Indexes
 
 ```python
 spam = ['cat', 'bat', 'rat', 'elephant']
@@ -27,7 +27,7 @@ spam[2]
 spam[3]
 ```
 
-### Negative Indexes
+## Negative Indexes
 
 ```python
 spam = ['cat', 'bat', 'rat', 'elephant']
@@ -42,7 +42,7 @@ spam[-3]
 'The {} is afraid of the {}.'.format(spam[-1], spam[-3])
 ```
 
-### Getting Sublists with Slices
+## Getting Sublists with Slices
 
 ```python
 spam = ['cat', 'bat', 'rat', 'elephant']
@@ -70,14 +70,14 @@ spam[1:]
 spam[:]
 ```
 
-### Getting a list Length with len
+## Getting a list Length with len
 
 ```python
 spam = ['cat', 'dog', 'moose']
 len(spam)
 ```
 
-### Changing Values in a List with Indexes
+## Changing Values in a List with Indexes
 
 ```python
 spam = ['cat', 'bat', 'rat', 'elephant']
@@ -95,7 +95,7 @@ spam[-1] = 12345
 spam
 ```
 
-### List Concatenation and List Replication
+## List Concatenation and List Replication
 
 ```python
 [1, 2, 3] + ['A', 'B', 'C']
@@ -111,7 +111,7 @@ spam = spam + ['A', 'B', 'C']
 spam
 ```
 
-### Removing Values from Lists with del Statements
+## Removing Values from Lists with del Statements
 
 ```python
 spam = ['cat', 'bat', 'rat', 'elephant']
@@ -124,7 +124,7 @@ del spam[2]
 spam
 ```
 
-### Using for Loops with Lists
+## Using for Loops with Lists
 
 ```python
 supplies = ['pens', 'staplers', 'flame-throwers', 'binders']
@@ -133,7 +133,7 @@ for i, supply in enumerate(supplies):
     print('Index {} in supplies is: {}'.format(str(i), supply))
 ```
 
-### Looping Through Multiple Lists with zip
+## Looping Through Multiple Lists with zip
 
 ```python
 name = ['Pete', 'John', 'Elizabeth']
@@ -143,7 +143,7 @@ for n, a in zip(name, age):
     print('{} is {} years old'.format(n, a))
 ```
 
-### The in and not in Operators
+## The in and not in Operators
 
 ```python
 'howdy' in ['hello', 'hi', 'howdy', 'heyas']
@@ -162,7 +162,7 @@ False
 'cat' not in spam
 ```
 
-### The Multiple Assignment Trick
+## The Multiple Assignment Trick
 
 The multiple assignment trick is a shortcut that lets you assign multiple variables with the values in a list in one line of code. So instead of doing this:
 
@@ -192,7 +192,7 @@ print(a)
 print(b)
 ```
 
-### Augmented Assignment Operators
+## Augmented Assignment Operators
 
 | Operator    | Equivalent        |
 | ----------- | ----------------- |
@@ -216,14 +216,14 @@ bacon *= 3
 bacon
 ```
 
-### Finding a Value in a List with the index Method
+## Finding a Value in a List with the index Method
 
 ```python
 spam = ['Zophie', 'Pooka', 'Fat-tail', 'Pooka']
 spam.index('Pooka')
 ```
 
-### Adding Values to Lists with append and insert
+## Adding Values to Lists with append and insert
 
 **append()**:
 
@@ -241,7 +241,7 @@ spam.insert(1, 'chicken')
 spam
 ```
 
-### Removing Values from Lists with remove
+## Removing Values from Lists with remove
 
 ```python
 spam = ['cat', 'bat', 'rat', 'elephant']
@@ -251,7 +251,7 @@ spam
 
 If the value appears multiple times in the list, only the first instance of the value will be removed.
 
-### Sorting the Values in a List with sort
+## Sorting the Values in a List with sort
 
 ```python
 spam = [2, 5, 3.14, 1, -7]

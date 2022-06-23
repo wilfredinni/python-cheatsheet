@@ -2,9 +2,9 @@
 title: Exception Handling
 ---
 
-## Exception Handling
+# Exception Handling
 
-### Basic exception handling
+## Basic exception handling
 
 ```python
 def spam(divideBy):
@@ -19,7 +19,7 @@ print(spam(0))
 print(spam(1))
 ```
 
-### Final code in exception handling
+## Final code in exception handling
 
 Code inside the `finally` section is always executed, no matter if an exception has been raised or
 not, and even if an exception is not caught.

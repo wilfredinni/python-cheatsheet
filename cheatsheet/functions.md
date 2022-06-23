@@ -2,14 +2,14 @@
 title: Function
 ---
 
-## Functions
+# Functions
 
 ```python
 def hello(name):
     print('Hello {}'.format(name))
 ```
 
-### Return Values and return Statements
+## Return Values and return Statements
 
 When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following:
 
@@ -44,7 +44,7 @@ fortune = getAnswer(r)
 print(fortune)
 ```
 
-### The None Value
+## The None Value
 
 ```python
 spam = print('Hello!')
@@ -53,7 +53,7 @@ spam is None
 
 Note: never compare to `None` with the `==` operator. Always use `is`.
 
-### print Keyword Arguments
+## print Keyword Arguments
 
 ```python
 print('Hello', end='')
@@ -68,7 +68,7 @@ print('cats', 'dogs', 'mice')
 print('cats', 'dogs', 'mice', sep=',')
 ```
 
-### Local and Global Scope
+## Local and Global Scope
 
 - Code in the global scope cannot use any local variables.
 
@@ -78,7 +78,7 @@ print('cats', 'dogs', 'mice', sep=',')
 
 - You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
 
-### The global Statement
+## The global Statement
 
 If you need to modify a global variable from within a function, use the global statement:
 

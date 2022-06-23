@@ -2,11 +2,11 @@
 title: Context managers
 ---
 
-## Context Manager
+# Context Manager
 
 While Python's context managers are widely used, few understand the purpose behind their use. These statements, commonly used with reading and writing files, assist the application in conserving system memory and improve resource management by ensuring specific resources are only in use for certain processes.
 
-### with statement
+## with statement
 
 A context manager is an object that is notified when a context (a block of code) starts and ends. You commonly use one with the with statement. It takes care of the notifying.
 
@@ -21,7 +21,7 @@ with open(filename) as f:
 
 Anything that ends execution of the block causes the context manager's exit method to be called. This includes exceptions, and can be useful when an error causes you to prematurely exit from an open file or connection. Exiting a script without properly closing files/connections is a bad idea, that may cause data loss or other problems. By using a context manager you can ensure that precautions are always taken to prevent damage or loss in this way.
 
-### Writing your own contextmanager using generator syntax
+## Writing your own contextmanager using generator syntax
 
 It is also possible to write a context manager using generator syntax thanks to the `contextlib.contextmanager` decorator:
 

@@ -2,9 +2,9 @@
 title: Debugging
 ---
 
-## Debugging
+# Debugging
 
-### Raising Exceptions
+## Raising Exceptions
 
 Exceptions are raised with a raise statement. In code, a raise statement consists of the following:
 
@@ -41,7 +41,7 @@ for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
         print('An exception happened: ' + str(err))
 ```
 
-### Getting the Traceback as a String
+## Getting the Traceback as a String
 
 The traceback is displayed by Python whenever a raised exception goes unhandled. But can also obtain it as a string by calling traceback.format_exc(). This function is useful if you want the information from an exception’s traceback but also want an except statement to gracefully handle the exception. You will need to import Python’s traceback module before calling this function.
 
@@ -62,7 +62,7 @@ The 116 is the return value from the write() method, since 116 characters were w
       File "<pyshell#28>", line 2, in <module>
     Exception: This is the error message.
 
-### Assertions
+## Assertions
 
 An assertion is a sanity check to make sure your code isn’t doing something obviously wrong. These sanity checks are performed by assert statements. If the sanity check fails, then an AssertionError exception is raised. In code, an assert statement consists of the following:
 
@@ -87,7 +87,7 @@ Disabling Assertions
 
 Assertions can be disabled by passing the -O option when running Python.
 
-### Logging
+## Logging
 
 To enable the logging module to display log messages on your screen as your program runs, copy the following to the top of your program (but under the #! python shebang line):
 
@@ -123,7 +123,7 @@ print(factorial(5))
 logging.debug('End of program')
 ```
 
-### Logging Levels
+## Logging Levels
 
 Logging levels provide a way to categorize your log messages by importance. There are five logging levels, described in Table 10-1 from least to most important. Messages can be logged at each level using a different logging function.
 
@@ -135,7 +135,7 @@ Logging levels provide a way to categorize your log messages by importance. Ther
 | `ERROR`    | `logging.error()`    | Used to record an error that caused the program to fail to do something.                                                       |
 | `CRITICAL` | `logging.critical()` | The highest level. Used to indicate a fatal error that has caused or is about to cause the program to stop running entirely.   |
 
-### Disabling Logging
+## Disabling Logging
 
 After you’ve debugged your program, you probably don’t want all these log messages cluttering the screen. The logging.disable() function disables these so that you don’t have to go into your program and remove all the logging calls by hand.
 
@@ -149,7 +149,7 @@ logging.critical('Critical error! Critical error!')
 logging.error('Error! Error!')
 ```
 
-### Logging to a File
+## Logging to a File
 
 Instead of displaying the log messages to the screen, you can write them to a text file. The logging.basicConfig() function takes a filename keyword argument, like so:
 

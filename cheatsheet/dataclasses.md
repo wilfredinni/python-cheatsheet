@@ -2,12 +2,12 @@
 title: Dataclasses
 ---
 
-## Dataclasses
+# Dataclasses
 
 `Dataclasses` are python classes but are suited for storing data objects.
 This module provides a decorator and functions for automatically adding generated special methods such as `__init__()` and `__repr__()` to user-defined classes.
 
-### Features
+## Features
 
 1. They store data and represent a certain data type. Ex: A number. For people familiar with ORMs, a model instance is a data object. It represents a specific kind of entity. It holds attributes that define or represent the entity.
 
@@ -39,7 +39,7 @@ obj = Number(2)
 obj.val
 ```
 
-### Default values
+## Default values
 
 It is easy to add default values to the fields of your data class.
 
@@ -64,7 +64,7 @@ obj.count
 obj.price
 ```
 
-### Type hints
+## Type hints
 
 It is mandatory to define the data type in dataclass. However, If you don't want specify the datatype then, use `typing.Any`.
 

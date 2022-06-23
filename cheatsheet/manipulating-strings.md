@@ -2,9 +2,9 @@
 title: Manipulation strings
 ---
 
-## Manipulating Strings
+# Manipulating Strings
 
-### Escape Characters
+## Escape Characters
 
 | Escape character | Prints as            |
 | ---------------- | -------------------- |
@@ -22,7 +22,7 @@ Hello there!
 How are you?
 ```
 
-### Raw Strings
+## Raw Strings
 
 A raw string completely ignores all escape characters and prints any backslash that appears in the string.
 
@@ -32,7 +32,7 @@ print(r'That is Carol\'s cat.')
 
 Note: mostly used for regular expression definition (see `re` package)
 
-### Multiline Strings with Triple Quotes
+## Multiline Strings with Triple Quotes
 
 ```python
 print('''Dear Alice,
@@ -61,7 +61,7 @@ def my_function():
 
 This generates the same string than before.
 
-### Indexing and Slicing Strings
+## Indexing and Slicing Strings
 
     H   e   l   l   o       w   o   r   l   d    !
     0   1   2   3   4   5   6   7   8   9   10   11
@@ -112,7 +112,7 @@ fizz = spam[0:5]
 fizz
 ```
 
-### The in and not in Operators with Strings
+## The in and not in Operators with Strings
 
 ```python
 'Hello' in 'Hello World'
@@ -134,7 +134,7 @@ fizz
 'cats' not in 'cats and dogs'
 ```
 
-### The in and not in Operators with list
+## The in and not in Operators with list
 
 ```python
 a = [1, 2, 3, 4]
@@ -145,7 +145,7 @@ a = [1, 2, 3, 4]
 2 in a
 ```
 
-### The upper, lower, isupper, and islower String Methods
+## The upper, lower, isupper, and islower String Methods
 
 `upper()` and `lower()`:
 
@@ -187,7 +187,7 @@ spam.isupper()
 '12345'.isupper()
 ```
 
-### The isX String Methods
+## The isX String Methods
 
 - **isalpha()** returns True if the string consists only of letters and is not blank.
 - **isalnum()** returns True if the string consists only of lettersand numbers and is not blank.
@@ -195,7 +195,7 @@ spam.isupper()
 - **isspace()** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
 - **istitle()** returns True if the string consists only of wordsthat begin with an uppercase letter followed by onlylowercase letters.
 
-### The startswith and endswith String Methods
+## The startswith and endswith String Methods
 
 ```python
 'Hello world!'.startswith('Hello')
@@ -221,7 +221,7 @@ spam.isupper()
 'Hello world!'.endswith('Hello world!')
 ```
 
-### The join and split String Methods
+## The join and split String Methods
 
 join():
 
@@ -251,7 +251,7 @@ split():
 'My name is Simon'.split('m')
 ```
 
-### Justifying Text with rjust, ljust, and center
+## Justifying Text with rjust, ljust, and center
 
 rjust() and ljust():
 
@@ -291,7 +291,7 @@ center():
 'Hello'.center(20, '=')
 ```
 
-### Removing Whitespace with strip, rstrip, and lstrip
+## Removing Whitespace with strip, rstrip, and lstrip
 
 ```python
 spam = '    Hello World     '
@@ -311,7 +311,7 @@ spam = 'SpamSpamBaconSpamEggsSpamSpam'
 spam.strip('ampS')
 ```
 
-### Copying and Pasting Strings with the pyperclip Module
+## Copying and Pasting Strings with the pyperclip Module
 
 First, install `pypeerclip` with pip:
 

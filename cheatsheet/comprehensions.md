@@ -2,23 +2,23 @@
 title: Comprehensions
 ---
 
-## Comprehensions
+# Comprehensions
 
-### List comprehension
+## List comprehension
 
 ```python
 a = [1, 3, 5, 7, 9, 11]
 [i - 1 for i in a]
 ```
 
-### Set comprehension
+## Set comprehension
 
 ```python
 b = {"abc", "def"}
 {s.upper() for s in b}
 ```
 
-### Dict comprehension
+## Dict comprehension
 
 ```python
 c = {'name': 'Pooka', 'age': 5}
