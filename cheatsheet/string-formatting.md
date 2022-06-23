@@ -35,11 +35,14 @@ age = 20
 "Hello I'm {0}, my age is {1}".format(name, age)
 ```
 
-The official [Python 3.x documentation](https://docs.python.org/3/library/stdtypes.html?highlight=sprintf#printf-style-string-formatting) recommend `str.format` over the `%` operator:
-
-<base-alert alert-type="info">
-   The formatting operations described here exhibit a variety of quirks that lead to a number of common errors (such as failing to display tuples and dictionaries correctly). Using the newer formatted string literals or the str.format() interface helps avoid these errors. These alternatives also provide more powerful, flexible and extensible approaches to formatting text.
-</base-alert>
+<base-disclaimer>
+  <base-disclaimer-title>
+    From the Python official <a href="https://docs.python.org/3/library/stdtypes.html?highlight=sprintf#printf-style-string-formatting">Python 3 documentation</a>
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+    The formatting operations described here exhibit a variety of quirks that lead to a number of common errors (such as failing to display tuples and dictionaries correctly). Using the newer formatted string literals or the str.format() interface helps avoid these errors. These alternatives also provide more powerful, flexible and extensible approaches to formatting text.
+  </base-disclaimer-content>
+</base-disclaimer>
 
 ## Lazy string formatting
 

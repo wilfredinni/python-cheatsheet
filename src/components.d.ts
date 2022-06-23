@@ -6,6 +6,9 @@ import '@vue/runtime-core'
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     BaseAlert: typeof import('./components/ui/alert/BaseAlert.vue')['default']
+    BaseDisclaimer: typeof import('./components/ui/disclaimer/BaseDisclaimer.vue')['default']
+    BaseDisclaimerContent: typeof import('./components/ui/disclaimer/BaseDisclaimerContent.vue')['default']
+    BaseDisclaimerTitle: typeof import('./components/ui/disclaimer/BaseDisclaimerTitle.vue')['default']
     BaseTable: typeof import('./components/ui/table/BaseTable.vue')['default']
     BaseTableItem: typeof import('./components/ui/table/BaseTableItem.vue')['default']
     BaseTableRow: typeof import('./components/ui/table/BaseTableRow.vue')['default']

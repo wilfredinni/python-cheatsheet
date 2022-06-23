@@ -6,11 +6,15 @@ title: Itertools Module
 
 The _itertools_ module is a collection of tools intented to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
 
-From the official [Python 3.x documentation](https://docs.python.org/3/library/itertools.html):
-
-<base-alert alert-type="info">
-   The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.
-</base-alert>
+<base-disclaimer>
+  <base-disclaimer-title>
+    From the Python official <a href="https://docs.python.org/3/library/itertools.html">Python 3 documentation</a>
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+    The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination.
+    Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.
+  </base-disclaimer-content>
+</base-disclaimer>
 
 The _itertools_ module comes in the standard library and must be imported.
 

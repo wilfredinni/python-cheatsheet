@@ -42,9 +42,14 @@ Usage:
 
 ## poetry
 
-<base-alert alert-type="info">
-   Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
-</base-alert>
+<base-disclaimer>
+  <base-disclaimer-title>
+    From <a href="https://python-poetry.org/">Poetry website</a>
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+    Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
+  </base-disclaimer-content>
+</base-disclaimer>
 
 1.  Install Poetry
 
@@ -102,9 +107,14 @@ For more information, check the [documentation](https://poetry.eustace.io/docs/)
 
 ## pipenv
 
-<base-alert alert-type="info">
-   Pipenv is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world. Windows is a first-class citizen, in our world.
-</base-alert>
+<base-disclaimer>
+  <base-disclaimer-title>
+    From <a target="_blanc" href="https://pipenv.pypa.io/en/latest/">Pipenv website</a>
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+    Pipenv is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world. Windows is a first-class citizen, in our world.
+  </base-disclaimer-content>
+</base-disclaimer>
 
 1.  Install pipenv
 
@@ -133,11 +143,14 @@ Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/)
 
 ## anaconda
 
-[Anaconda](https://anaconda.org/) is another popular tool to manage python packages.
-
-<base-alert alert-type="info">
-   Where packages, notebooks, projects and environments are shared. Your place for free public conda package hosting.
-</base-alert>
+<base-disclaimer>
+  <base-disclaimer-title>
+    <a target="_blanc" href="https://pipenv.pypa.io/en/latest/">Anaconda</a> is another popular tool to manage python packages.
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+    Where packages, notebooks, projects and environments are shared. Your place for free public conda package hosting.
+  </base-disclaimer-content>
+</base-disclaimer>
 
 Usage:
 
