@@ -22,6 +22,11 @@ useHead({
     },
   ],
 })
+
+const route = useRoute()
+watch(route, () => {
+  window.scrollTo(0, 0)
+})
 </script>
 
 <template>
