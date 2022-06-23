@@ -40,12 +40,12 @@ useHead({
 
 /* Track */
 .dark ::-webkit-scrollbar-track {
-  background: #6b7280;
+  background: #374151;
 }
 
 /* Handle */
 .dark ::-webkit-scrollbar-thumb {
-  background: #374151;
+  background: #6b7280;
 }
 
 /* Track */
