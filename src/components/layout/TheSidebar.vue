@@ -100,11 +100,24 @@ const pages = [
 </script>
 
 <template>
-  <div
-    v-for="item in pages"
-    :key="item.name"
-    class="pb-1.5 dark:text-slate-400"
+  <h5 class="mb-8 font-semibold text-slate-900 dark:text-slate-200 lg:mb-3">
+    Cheatsheet
+  </h5>
+  <ul
+    class="space-y-6 border-l border-slate-100 dark:border-slate-800 lg:space-y-2"
   >
-    <router-link :to="item.path"> {{ item.name }} </router-link>
-  </div>
+    <li v-for="item in pages" :key="item.name">
+      <router-link
+        :to="item.path"
+        class="-ml-px block border-l border-transparent pl-4"
+        :class="
+          $route.path === item.path
+            ? 'font-semibold text-sky-500 dark:text-sky-400'
+            : 'text-slate-700 hover:border-slate-400 hover:text-slate-900 dark:text-slate-400 dark:hover:border-slate-500 dark:hover:text-slate-300'
+        "
+      >
+        {{ item.name }}
+      </router-link>
+    </li>
+  </ul>
 </template>
