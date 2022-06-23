@@ -105,8 +105,22 @@ const pages = [
       Cheatsheet
     </h5>
     <ul
-      class="space-y-6 border-l border-slate-100 dark:border-slate-800 lg:space-y-2"
+      class="space-y-6 border-l border-slate-100 pb-8 dark:border-slate-800 lg:space-y-2"
     >
+      <!-- <li class="relative">
+        <a
+          class="block w-full pl-3.5 font-semibold text-sky-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-sky-500"
+          href="/docs/installation"
+          >Installation</a
+        >
+      </li>
+      <li class="relative">
+        <a
+          class="block w-full pl-3.5 text-slate-500 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:hidden before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300"
+          href="/docs/introduction-to-string-theory"
+          >Introduction to string theory</a
+        >
+      </li> -->
       <li v-for="item in pages" :key="item.name">
         <router-link
           :to="item.path"
