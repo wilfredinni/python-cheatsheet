@@ -123,31 +123,19 @@ const topMenu = [
 
     <DisclosurePanel class="sm:hidden">
       <div class="space-y-1 pt-2 pb-4">
-        <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
         <DisclosureButton
-          as="a"
-          href="#"
-          class="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700"
-          >Dashboard</DisclosureButton
+          v-for="item in topMenu"
+          :key="item.name"
+          as="div"
+          class="block py-2 pl-3 pr-4 text-base font-medium"
+          :class="
+            route.path === item.path
+              ? 'border-l-4 border-cyan-500 bg-cyan-50 text-cyan-700 dark:bg-cyan-50/5 dark:text-cyan-400'
+              : 'text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 dark:text-gray-400'
+          "
         >
-        <DisclosureButton
-          as="a"
-          href="#"
-          class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-          >Team</DisclosureButton
-        >
-        <DisclosureButton
-          as="a"
-          href="#"
-          class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-          >Projects</DisclosureButton
-        >
-        <DisclosureButton
-          as="a"
-          href="#"
-          class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-          >Calendar</DisclosureButton
-        >
+          <router-link :to="item.path">{{ item.name }}</router-link>
+        </DisclosureButton>
       </div>
     </DisclosurePanel>
   </Disclosure>
