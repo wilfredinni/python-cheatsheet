@@ -1,10 +1,11 @@
 <script setup>
 import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 
+const route = useRoute()
+
 const topMenu = [
-  { name: 'Cheatsheet', to: '/' },
-  { name: 'Blog', to: '/' },
-  { name: 'About', to: '/' },
+  { name: 'Cheatsheet', path: '/' },
+  { name: 'About', path: '/about' },
 ]
 </script>
 
@@ -89,17 +90,16 @@ const topMenu = [
             <router-link
               v-for="item in topMenu"
               :key="item.name"
-              :to="item.to"
-              class="inline-flex items-center px-1 pt-1 text-sm font-medium text-sky-600 dark:text-sky-300"
+              :to="item.path"
+              class="inline-flex items-center px-1 pt-1 text-sm font-medium"
+              :class="
+                route.path === item.path
+                  ? 'text-sky-600 dark:text-sky-400'
+                  : 'text-gray-500 hover:text-sky-500 dark:text-gray-200 dark:hover:text-sky-400'
+              "
             >
               {{ item.name }}
             </router-link>
-            <!-- <a
-              href="#"
-              class="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-sky-500 dark:text-gray-200 dark:hover:text-sky-400"
-            >
-              Blog
-            </a> -->
           </div>
           <base-theme-toggle />
           <a
