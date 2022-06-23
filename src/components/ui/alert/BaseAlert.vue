@@ -19,7 +19,7 @@ defineProps({
 
 const alertBackground: colorObject = {
   success: 'bg-green-50',
-  info: 'bg-blue-50',
+  info: 'bg-sky-50',
   warning: 'bg-yellow-50',
   error: 'bg-red-50',
 }
@@ -33,14 +33,14 @@ const alertIcon: iconObject = {
 
 const alertIconColor: colorObject = {
   success: 'text-green-400',
-  info: 'text-blue-400',
+  info: 'text-sky-400',
   warning: 'text-yellow-400',
   error: 'text-red-400',
 }
 
 const alertTextColor: colorObject = {
   success: 'text-green-800',
-  info: 'text-blue-800',
+  info: 'text-sky-800',
   warning: 'text-yellow-800',
   error: 'text-red-800',
 }

@@ -12,19 +12,6 @@ From the official [Python 3.x documentation](https://docs.python.org/3/library/i
    The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.
 </base-alert>
 
-<!-- <div class="rounded-md bg-green-50 p-4">
-    <div class="flex">
-      <div class="flex-shrink-0">
-        <CheckCircleIcon class="h-5 w-5 text-green-400" aria-hidden="true" />
-      </div>
-      <div class="ml-3">
-        <div class="mt-2 text-sm text-green-700">
-          <p class="text-sm font-medium text-green-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.</p>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
 The _itertools_ module comes in the standard library and must be imported.
 
 The [operator](https://docs.python.org/3/library/operator.html) module will also be used. This module is not necessary when using itertools, but needed for some of the examples below.

@@ -42,7 +42,9 @@ Usage:
 
 ## poetry
 
-> [Poetry](https://poetry.eustace.io/) is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
+<base-alert alert-type="info">
+   Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
+</base-alert>
 
 1.  Install Poetry
 
@@ -100,28 +102,30 @@ For more information, check the [documentation](https://poetry.eustace.io/docs/)
 
 ## pipenv
 
-> [Pipenv](https://pipenv.readthedocs.io/en/latest/) is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world. Windows is a first-class citizen, in our world.
+<base-alert alert-type="info">
+   Pipenv is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world. Windows is a first-class citizen, in our world.
+</base-alert>
 
 1.  Install pipenv
 
         pip install pipenv
 
-1.  Enter your Project directory and install the Packages for your project
+2.  Enter your Project directory and install the Packages for your project
 
         cd my_project
         pipenv install <package>
 
     Pipenv will install your package and create a Pipfile for you in your project’s directory. The Pipfile is used to track which dependencies your project needs in case you need to re-install them.
 
-1.  Uninstall Packages
+3.  Uninstall Packages
 
         pipenv uninstall <package>
 
-1.  Activate the Virtual Environment associated with your Python project
+4.  Activate the Virtual Environment associated with your Python project
 
         pipenv shell
 
-1.  Exit the Virtual Environment
+5.  Exit the Virtual Environment
 
         exit
 
@@ -131,8 +135,9 @@ Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/)
 
 [Anaconda](https://anaconda.org/) is another popular tool to manage python packages.
 
-> Where packages, notebooks, projects and environments are shared.
-> Your place for free public conda package hosting.
+<base-alert alert-type="info">
+   Where packages, notebooks, projects and environments are shared. Your place for free public conda package hosting.
+</base-alert>
 
 Usage:
 
