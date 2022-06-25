@@ -1,6 +1,6 @@
 @import './markdown.css';
-@tailwind base;
 @import './fonts.css';
 @import './prism.css';
+@tailwind base;
 @tailwind components;
 @tailwind utilities;

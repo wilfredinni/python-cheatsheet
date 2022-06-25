@@ -25,9 +25,9 @@ watch(route, () => {
 
 <template>
   <nav aria-labelledby="on-this-page-title" className="w-56">
-    <h2 class="font-display text-sm font-medium text-slate-900 dark:text-white">
+    <h3 class="font-display text-sm font-medium text-slate-900 dark:text-white">
       On this page
-    </h2>
+    </h3>
 
     <ul class="mt-4 text-sm">
       <li v-for="(item, index) in content" :key="item">
