@@ -4,32 +4,41 @@
   <div class="min-h-screen bg-white dark:bg-gray-900">
     <the-navbar />
 
-    <div class="pb-6">
-      <div
-        class="mx-auto max-w-3xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-12 lg:gap-4 lg:px-8"
-      >
-        <div class="hidden pt-6 lg:col-span-3 lg:block xl:col-span-3">
-          <nav
-            aria-label="Sidebar"
-            class="fixed inset-0 top-[3.8125rem] left-[max(0px,calc(50%-40rem))] right-auto z-20 hidden w-[19.5rem] overflow-y-auto px-8 pt-5 lg:block"
-          >
-            <the-sidebar />
-          </nav>
-        </div>
-
-        <main class="px-3 sm:px-0 lg:col-span-9 xl:col-span-7">
-          <markdown>
-            <RouterView />
-          </markdown>
-        </main>
-
-        <aside class="hidden xl:col-span-2 xl:block">
+    <div
+      class="relative mx-auto flex min-h-screen max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12"
+    >
+      <!-- sidebar -->
+      <div class="hidden lg:relative lg:block lg:flex-none">
+        <div class="absolute inset-y-0 right-0 w-[50vw] dark:hidden" />
+        <div
+          class="sticky top-[3.6rem] -ml-0.5 h-[calc(100vh-3.6rem)] overflow-y-auto overflow-x-hidden py-10 pl-0.5"
+        >
           <div
-            class="fixed top-[3.8125rem] bottom-0 right-[max(0px,calc(50%-45rem))] z-20 hidden w-[19.5rem] overflow-y-auto py-10 px-8 xl:block"
-          >
-            <the-toc></the-toc>
+            class="absolute top-16 bottom-0 right-0 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block"
+          />
+          <div
+            class="absolute top-28 bottom-0 right-0 hidden w-px bg-slate-800 dark:block"
+          />
+          <div class="w-64 pr-8 xl:w-72 xl:pr-16">
+            <the-sidebar />
           </div>
-        </aside>
+        </div>
+      </div>
+
+      <!-- article -->
+      <div
+        class="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16"
+      >
+        <article>
+          <markdown><RouterView /></markdown>
+        </article>
+      </div>
+
+      <!-- table of content -->
+      <div
+        class="hidden overflow-x-hidden xl:sticky xl:top-[3.6rem] xl:-mr-6 xl:block xl:h-[calc(100vh-3.6rem)] xl:flex-none xl:overflow-y-auto xl:py-10 xl:pr-6"
+      >
+        <the-toc />
       </div>
     </div>
   </div>

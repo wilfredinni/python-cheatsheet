@@ -19,14 +19,33 @@ const createContents = () => {
 const route = useRoute()
 onMounted(() => createContents())
 watch(route, () => {
-  nextTick(() => {
-    createContents()
-  })
+  nextTick(() => createContents())
 })
 </script>
 
 <template>
-  <h5
+  <nav aria-labelledby="on-this-page-title" className="w-56">
+    <h2 class="font-display text-sm font-medium text-slate-900 dark:text-white">
+      On this page
+    </h2>
+
+    <ul class="mt-4 space-y-1 text-sm">
+      <li v-for="(item, index) in content" :key="item">
+        <a
+          :href="`#${slugify(item)}`"
+          class="block py-1 font-medium"
+          :class="
+            index === 0
+              ? 'text-sky-500 '
+              : 'font-normal text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300'
+          "
+        >
+          {{ item }}
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- <h5
     class="mb-4 text-sm font-semibold leading-6 text-slate-900 dark:text-slate-100"
   >
     On this page
@@ -45,5 +64,5 @@ watch(route, () => {
         {{ item }}
       </a>
     </li>
-  </ul>
+  </ul> -->
 </template>

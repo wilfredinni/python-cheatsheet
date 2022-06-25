@@ -100,14 +100,14 @@ const pages = [
 </script>
 
 <template>
-  <div class="mt-5">
-    <h5 class="mb-8 font-semibold text-slate-900 dark:text-slate-200 lg:mb-3">
+  <nav class="text-base lg:text-sm">
+    <h2 class="font-display font-medium text-slate-900 dark:text-white">
       Cheatsheet
-    </h5>
+    </h2>
     <ul
-      class="mb-8 space-y-6 border-l border-slate-100 dark:border-slate-800 lg:space-y-2"
+      class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-1.5 lg:border-slate-200"
     >
-      <li v-for="item in pages" :key="item.name">
+      <li v-for="item in pages" :key="item.name" class="relative">
         <router-link
           :to="item.path"
           class="-ml-px block border-l border-transparent pl-4"
@@ -121,5 +121,5 @@ const pages = [
         </router-link>
       </li>
     </ul>
-  </div>
+  </nav>
 </template>
