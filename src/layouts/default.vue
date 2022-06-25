@@ -27,7 +27,7 @@
 
       <!-- article -->
       <div
-        class="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16"
+        class="min-w-0 max-w-2xl flex-auto px-4 py-12 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16"
       >
         <article>
           <markdown><RouterView /></markdown>

@@ -29,7 +29,7 @@ watch(route, () => {
       On this page
     </h2>
 
-    <ul class="mt-4 space-y-1 text-sm">
+    <ul class="mt-4 text-sm">
       <li v-for="(item, index) in content" :key="item">
         <a
           :href="`#${slugify(item)}`"
@@ -37,7 +37,7 @@ watch(route, () => {
           :class="
             index === 0
               ? 'text-sky-500 '
-              : 'font-normal text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300'
+              : ' text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300'
           "
         >
           {{ item }}
