@@ -24,6 +24,7 @@ declare module '@vue/runtime-core' {
     Switch: typeof import('@headlessui/vue')['Switch']
     TheNavbar: typeof import('./components/layout/TheNavbar.vue')['default']
     TheSidebar: typeof import('./components/layout/TheSidebar.vue')['default']
+    TheToc: typeof import('./components/layout/TheToc.vue')['default']
   }
 }
 
