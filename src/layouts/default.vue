@@ -1,6 +1,14 @@
 <script setup>
 const content = ref([])
 
+const slugify = (str) =>
+  str
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/[\s_-]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+
 const createContents = () => {
   const h2 = document.getElementsByTagName('h2')
   return Array.from(h2).map((item) => item.innerText)
@@ -50,7 +58,7 @@ watch(route, () => {
             <ul class="text-sm leading-6">
               <li v-for="(item, index) in content" :key="item">
                 <a
-                  href="#overview"
+                  :href="`#${slugify(item)}`"
                   class="block py-1 font-medium"
                   :class="
                     index === 0
