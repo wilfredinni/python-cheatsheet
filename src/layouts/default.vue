@@ -1,11 +1,24 @@
 <script setup>
 const content = ref([])
-onMounted(() => {
+
+const createContents = () => {
   const h2 = document.getElementsByTagName('h2')
-  Array.from(h2).forEach((item) => {
-    content.value.push(item.innerText)
-  })
+  return Array.from(h2).map((item) => item.innerText)
+}
+
+onMounted(() => (content.value = createContents()))
+onDeactivated(() => {
+  const h2 = document.getElementsByTagName('h2')
+  content.value = Array.from(h2).map((item) => item.innerText)
 })
+
+// const route = useRoute()
+// watch(route, () => {
+//   onMounted(() => (content.value = createContents()))
+// })
+// watch(document.getElementsByTagName('h2'), () => {
+//   content.value = createContents()
+// })
 </script>
 
 <template>
