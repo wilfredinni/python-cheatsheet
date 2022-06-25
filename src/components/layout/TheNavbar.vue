@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 
 const route = useRoute()
