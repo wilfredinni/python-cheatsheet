@@ -6,19 +6,13 @@ const createContents = () => {
   return Array.from(h2).map((item) => item.innerText)
 }
 
+const route = useRoute()
 onMounted(() => (content.value = createContents()))
-onDeactivated(() => {
-  const h2 = document.getElementsByTagName('h2')
-  content.value = Array.from(h2).map((item) => item.innerText)
+watch(route, () => {
+  nextTick(() => {
+    content.value = createContents()
+  })
 })
-
-// const route = useRoute()
-// watch(route, () => {
-//   onMounted(() => (content.value = createContents()))
-// })
-// watch(document.getElementsByTagName('h2'), () => {
-//   content.value = createContents()
-// })
 </script>
 
 <template>
