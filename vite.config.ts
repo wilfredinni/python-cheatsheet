@@ -77,6 +77,7 @@ export default defineConfig({
       headEnabled: true,
       markdownItSetup(md) {
         // https://prismjs.com/
+        md.use(require('markdown-it-anchor'))
         md.use(Prism, {})
         md.use(LinkAttributes, {
           matcher: (link: string) => /^https?:\/\//.test(link),
