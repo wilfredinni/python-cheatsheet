@@ -180,7 +180,7 @@ if a:
     print("the list is not empty!")
 ```
 
-## The str, int, and float Functions
+## The str int and float Functions
 
 Integer to String or Float:
 

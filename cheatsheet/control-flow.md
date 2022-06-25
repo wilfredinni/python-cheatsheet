@@ -290,7 +290,7 @@ import random, sys, os, math
 from random import *
 ```
 
-## Ending a Program with sys.exit
+## Ending a Program with sys exit
 
 ```python
 import sys

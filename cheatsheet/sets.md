@@ -30,7 +30,7 @@ s = {}
 type(s)
 ```
 
-## sets: unordered collections of unique elements
+## Unordered collections of unique elements
 
 A set automatically remove all the duplicate values.
 

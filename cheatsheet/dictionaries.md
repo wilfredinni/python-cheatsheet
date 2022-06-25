@@ -10,7 +10,7 @@ Example Dictionary:
 myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
 ```
 
-## The keys, values, and items Methods
+## The keys-values and items Methods
 
 values():
 

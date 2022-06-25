@@ -145,7 +145,7 @@ a = [1, 2, 3, 4]
 2 in a
 ```
 
-## The upper, lower, isupper, and islower String Methods
+## The upper-lower-isupper-islower Methods
 
 `upper()` and `lower()`:
 
@@ -251,7 +251,7 @@ split():
 'My name is Simon'.split('m')
 ```
 
-## Justifying Text with rjust, ljust, and center
+## Justifying Text with rjust-ljust-center
 
 rjust() and ljust():
 
