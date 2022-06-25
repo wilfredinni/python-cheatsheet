@@ -105,7 +105,7 @@ const pages = [
       Cheatsheet
     </h5>
     <ul
-      class="space-y-6 border-l border-slate-100 pb-8 dark:border-slate-800 lg:space-y-2"
+      class="mb-8 space-y-6 border-l border-slate-100 dark:border-slate-800 lg:space-y-2"
     >
       <li v-for="item in pages" :key="item.name">
         <router-link
