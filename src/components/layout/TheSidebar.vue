@@ -100,12 +100,14 @@ const pages = [
 </script>
 
 <template>
-  <nav class="text-base">
-    <h3 class="font-display font-medium text-slate-900 dark:text-white">
+  <nav class="">
+    <h3
+      class="font-display text-base font-medium text-slate-900 dark:text-white"
+    >
       Cheatsheet
     </h3>
     <ul
-      class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-0 lg:border-slate-200"
+      class="mt-2 space-y-2 border-l-2 border-slate-100 text-base dark:border-slate-800 lg:mt-4 lg:space-y-1.5 lg:border-slate-200 lg:text-sm"
     >
       <li v-for="item in pages" :key="item.name" class="relative">
         <router-link

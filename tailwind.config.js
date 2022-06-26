@@ -1,4 +1,4 @@
-// const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -21,10 +21,10 @@ module.exports = {
       '9xl': ['8rem', { lineHeight: '1' }],
     },
     extend: {
-      // fontFamily: {
-      //   sans: ['Inter', ...defaultTheme.fontFamily.sans],
-      //   display: ['Lexend', ...defaultTheme.fontFamily.sans],
-      // },
+      fontFamily: {
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        display: ['Lexend', ...defaultTheme.fontFamily.sans],
+      },
       maxWidth: {
         '8xl': '88rem',
       },
