@@ -7,19 +7,19 @@
   >
     <defs>
       <radialGradient
-        id=":rb:-gradient"
+        id=":r1d:-gradient"
         cx="0"
         cy="0"
         r="1"
         gradientUnits="userSpaceOnUse"
-        gradientTransform="matrix(0 21 -21 0 20 3)"
+        gradientTransform="matrix(0 21 -21 0 20 11)"
       >
         <stop stop-color="#0EA5E9"></stop>
         <stop stop-color="#22D3EE" offset=".527"></stop>
         <stop stop-color="#818CF8" offset="1"></stop>
       </radialGradient>
       <radialGradient
-        id=":rb:-gradient-dark"
+        id=":r1d:-gradient-dark-1"
         cx="0"
         cy="0"
         r="1"
@@ -30,38 +30,62 @@
         <stop stop-color="#22D3EE" offset=".527"></stop>
         <stop stop-color="#818CF8" offset="1"></stop>
       </radialGradient>
+      <radialGradient
+        id=":r1d:-gradient-dark-2"
+        cx="0"
+        cy="0"
+        r="1"
+        gradientUnits="userSpaceOnUse"
+        gradientTransform="matrix(0 14 -14 0 16 10)"
+      >
+        <stop stop-color="#0EA5E9"></stop>
+        <stop stop-color="#22D3EE" offset=".527"></stop>
+        <stop stop-color="#818CF8" offset="1"></stop>
+      </radialGradient>
     </defs>
     <g class="dark:hidden">
-      <circle cx="20" cy="12" r="12" fill="url(#:rb:-gradient)"></circle>
+      <circle cx="20" cy="20" r="12" fill="url(#:r1d:-gradient)"></circle>
       <g
-        class="fill-[var(--icon-background)] stroke-[color:var(--icon-foreground)]"
         fill-opacity="0.5"
+        class="fill-[var(--icon-background)] stroke-[color:var(--icon-foreground)]"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
       >
+        <path d="M3 9v14l12 6V15L3 9Z"></path>
+        <path d="M27 9v14l-12 6V15l12-6Z"></path>
+      </g>
+      <path
+        d="M11 4h8v2l6 3-10 6L5 9l6-3V4Z"
+        fill-opacity="0.5"
+        class="fill-[var(--icon-background)]"
+      ></path>
+      <g
+        class="stroke-[color:var(--icon-foreground)]"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M20 5.5 27 9l-12 6L3 9l7-3.5"></path>
         <path
-          d="M3 5v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2Z"
-        ></path>
-        <path
-          d="M18 17v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V17a2 2 0 0 0-2-2h-7a2 2 0 0 0-2 2Z"
-        ></path>
-        <path
-          d="M18 5v4a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-7a2 2 0 0 0-2 2Z"
-        ></path>
-        <path
-          d="M3 25v2a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2Z"
+          d="M20 5c0 1.105-2.239 2-5 2s-5-.895-5-2m10 0c0-1.105-2.239-2-5-2s-5 .895-5 2m10 0v3c0 1.105-2.239 2-5 2s-5-.895-5-2V5"
         ></path>
       </g>
     </g>
-    <g class="hidden dark:inline" fill="url(#:rb:-gradient-dark)">
+    <g
+      class="hidden dark:inline"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M3 17V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm16 10v-9a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2Zm0-23v5a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1ZM3 28v-3a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"
+        d="M17.676 3.38a3.887 3.887 0 0 0-3.352 0l-9 4.288C3.907 8.342 3 9.806 3 11.416v9.168c0 1.61.907 3.073 2.324 3.748l9 4.288a3.887 3.887 0 0 0 3.352 0l9-4.288C28.093 23.657 29 22.194 29 20.584v-9.168c0-1.61-.907-3.074-2.324-3.748l-9-4.288Z"
+        stroke="url(#:r1d:-gradient-dark-1)"
       ></path>
       <path
-        d="M2 4v13h2V4H2Zm2-2a2 2 0 0 0-2 2h2V2Zm8 0H4v2h8V2Zm2 2a2 2 0 0 0-2-2v2h2Zm0 13V4h-2v13h2Zm-2 2a2 2 0 0 0 2-2h-2v2Zm-8 0h8v-2H4v2Zm-2-2a2 2 0 0 0 2 2v-2H2Zm16 1v9h2v-9h-2Zm3-3a3 3 0 0 0-3 3h2a1 1 0 0 1 1-1v-2Zm6 0h-6v2h6v-2Zm3 3a3 3 0 0 0-3-3v2a1 1 0 0 1 1 1h2Zm0 9v-9h-2v9h2Zm-3 3a3 3 0 0 0 3-3h-2a1 1 0 0 1-1 1v2Zm-6 0h6v-2h-6v2Zm-3-3a3 3 0 0 0 3 3v-2a1 1 0 0 1-1-1h-2Zm2-18V4h-2v5h2Zm0 0h-2a2 2 0 0 0 2 2V9Zm8 0h-8v2h8V9Zm0 0v2a2 2 0 0 0 2-2h-2Zm0-5v5h2V4h-2Zm0 0h2a2 2 0 0 0-2-2v2Zm-8 0h8V2h-8v2Zm0 0V2a2 2 0 0 0-2 2h2ZM2 25v3h2v-3H2Zm2-2a2 2 0 0 0-2 2h2v-2Zm9 0H4v2h9v-2Zm2 2a2 2 0 0 0-2-2v2h2Zm0 3v-3h-2v3h2Zm-2 2a2 2 0 0 0 2-2h-2v2Zm-9 0h9v-2H4v2Zm-2-2a2 2 0 0 0 2 2v-2H2Z"
+        d="M16.406 8.087a.989.989 0 0 0-.812 0l-7 3.598A1.012 1.012 0 0 0 8 12.61v6.78c0 .4.233.762.594.925l7 3.598a.989.989 0 0 0 .812 0l7-3.598c.361-.163.594-.525.594-.925v-6.78c0-.4-.233-.762-.594-.925l-7-3.598Z"
+        fill="url(#:r1d:-gradient-dark-2)"
+        stroke="url(#:r1d:-gradient-dark-2)"
       ></path>
     </g>
   </svg>
