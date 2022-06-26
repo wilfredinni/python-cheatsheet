@@ -33,13 +33,13 @@ const topMenu = [
           class="flex flex-1 items-center justify-center space-x-8 sm:items-center sm:justify-start"
         >
           <div class="flex flex-shrink-0 items-center">
-            <a href="/">
+            <router-link to="/">
               <img
                 class="h-5 w-auto"
                 src="https://raw.githubusercontent.com/wilfredinni/merken/master/static/merken/img/snake.svg"
                 alt="Workflow"
               />
-            </a>
+            </router-link>
           </div>
 
           <div class="pointer-events-auto relative bg-white dark:bg-slate-900">
