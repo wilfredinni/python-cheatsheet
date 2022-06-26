@@ -121,33 +121,17 @@ const mainPages = [
       <li v-for="page in mainPages" :key="page.path">
         <router-link
           :to="page.path"
-          class="group flex items-center font-medium text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300 lg:text-sm lg:leading-6"
+          class="group flex items-center font-medium lg:text-sm lg:leading-6"
           :class="
-            route.path === page.path ? 'text-sky-500 dark:text-sky-400' : ''
+            route.path === page.path
+              ? 'font-semibold text-sky-500 dark:text-sky-400'
+              : 'text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300'
           "
         >
           <component :is="page.icon" class="mr-2 h-5" />
           {{ page.name }}
         </router-link>
       </li>
-      <!-- <li>
-        <router-link
-          to="/"
-          class="group flex items-center font-semibold text-sky-500 dark:text-sky-400 lg:text-sm lg:leading-6"
-        >
-          <arrow-icon class="mr-2 h-5" />
-          Getting started</router-link
-        >
-      </li>
-      <li>
-        <router-link
-          to="/contributing"
-          class="group flex items-center font-medium text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300 lg:text-sm lg:leading-6"
-        >
-          <grid-icon class="mr-2 h-5" />
-          Contributing</router-link
-        >
-      </li> -->
     </ul>
     <h3
       class="font-display text-base font-medium text-slate-900 dark:text-white"
