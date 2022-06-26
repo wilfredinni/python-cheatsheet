@@ -5,6 +5,7 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    ArrowIcon: typeof import('./components/icons/ArrowIcon.vue')['default']
     BaseAlert: typeof import('./components/ui/alert/BaseAlert.vue')['default']
     BaseDisclaimer: typeof import('./components/ui/disclaimer/BaseDisclaimer.vue')['default']
     BaseDisclaimerContent: typeof import('./components/ui/disclaimer/BaseDisclaimerContent.vue')['default']
@@ -17,14 +18,19 @@ declare module '@vue/runtime-core' {
     Disclosure: typeof import('@headlessui/vue')['Disclosure']
     DisclosureButton: typeof import('@headlessui/vue')['DisclosureButton']
     DisclosurePanel: typeof import('@headlessui/vue')['DisclosurePanel']
+    GridIcon: typeof import('./components/icons/GridIcon.vue')['default']
+    LightBulbIcon: typeof import('./components/icons/LightBulbIcon.vue')['default']
     Markdown: typeof import('./components/Markdown.vue')['default']
+    PluginIcon: typeof import('./components/icons/PluginIcon.vue')['default']
     Readme: typeof import('./components/ui/alert/Readme.md')['default']
+    ReferenceIcon: typeof import('./components/icons/ReferenceIcon.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Switch: typeof import('@headlessui/vue')['Switch']
     TheNavbar: typeof import('./components/layout/TheNavbar.vue')['default']
     TheSidebar: typeof import('./components/layout/TheSidebar.vue')['default']
     TheToc: typeof import('./components/layout/TheToc.vue')['default']
+    WarningIcon: typeof import('./components/icons/WarningIcon.vue')['default']
   }
 }
 
