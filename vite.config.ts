@@ -10,7 +10,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Markdown from 'vite-plugin-md'
-// import Prism from 'markdown-it-prism'
+import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
 
 // https://vitejs.dev/config/
@@ -78,7 +78,7 @@ export default defineConfig({
       markdownItSetup(md) {
         // https://prismjs.com/
         md.use(require('markdown-it-anchor'))
-        // md.use(Prism, {})
+        md.use(Prism, {})
         md.use(LinkAttributes, {
           matcher: (link: string) => /^https?:\/\//.test(link),
           attrs: {
