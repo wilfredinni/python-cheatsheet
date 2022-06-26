@@ -2,6 +2,7 @@
 import type { Ref } from 'vue'
 
 const content: Ref<string[]> = ref([])
+const currentSection = ref('')
 
 const slugify = (str: string) =>
   str
@@ -16,10 +17,35 @@ const createContents = () => {
   content.value = Array.from(h2).map((item) => item.innerText)
 }
 
+const getObserver = () => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio > 0) {
+          currentSection.value = entry.target.getAttribute('id') as string
+        }
+      })
+    },
+    {
+      rootMargin: '0px 0px -80% 0px',
+    }
+  )
+  document.querySelectorAll('article h2').forEach((section) => {
+    observer.observe(section)
+  })
+}
+
 const route = useRoute()
-onMounted(() => createContents())
+onMounted(() => {
+  createContents()
+  getObserver()
+})
+
 watch(route, () => {
-  nextTick(() => createContents())
+  nextTick(() => {
+    createContents()
+    getObserver()
+  })
 })
 </script>
 
@@ -30,12 +56,12 @@ watch(route, () => {
     </h3>
 
     <ul class="mt-4 text-sm">
-      <li v-for="(item, index) in content" :key="item">
+      <li v-for="item in content" :key="item">
         <a
           :href="`#${slugify(item)}`"
           class="block py-1 font-medium"
           :class="
-            index === 0
+            currentSection === slugify(item)
               ? 'text-sky-500 '
               : ' text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300'
           "
@@ -45,24 +71,4 @@ watch(route, () => {
       </li>
     </ul>
   </nav>
-  <!-- <h5
-    class="mb-4 text-sm font-semibold leading-6 text-slate-900 dark:text-slate-100"
-  >
-    On this page
-  </h5>
-  <ul class="text-sm leading-6">
-    <li v-for="(item, index) in content" :key="item">
-      <a
-        :href="`#${slugify(item)}`"
-        class="block py-1 font-medium"
-        :class="
-          index === 0
-            ? 'text-sky-500 dark:text-sky-400'
-            : 'text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300'
-        "
-      >
-        {{ item }}
-      </a>
-    </li>
-  </ul> -->
 </template>
