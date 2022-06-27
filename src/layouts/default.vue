@@ -1,16 +1,21 @@
 <script setup lang="ts">
+const core = useCoreStore()
 const repository = 'https://github.com/wilfredinni/python-cheatsheet/blob/next/'
 </script>
 
 <template>
   <div class="min-h-screen bg-white dark:bg-gray-900">
-    <the-navbar />
+    <the-navbar v-show="!core.reader" />
+    <the-reader-mode-navbar v-show="core.reader" />
 
     <div
       class="relative mx-auto flex min-h-screen max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12"
     >
       <!-- sidebar -->
-      <div class="hidden lg:relative lg:block lg:flex-none">
+      <div
+        v-show="!core.reader"
+        class="hidden lg:relative lg:block lg:flex-none"
+      >
         <div class="absolute inset-y-0 right-0 w-[50vw] dark:hidden" />
         <div
           class="sticky top-[3.6rem] -ml-0.5 h-[calc(100vh-3.6rem)] overflow-y-auto overflow-x-hidden py-10 pl-0.5"
@@ -29,7 +34,8 @@ const repository = 'https://github.com/wilfredinni/python-cheatsheet/blob/next/'
 
       <!-- article -->
       <div
-        class="min-w-0 max-w-2xl flex-auto px-4 py-12 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16"
+        class="min-w-0 flex-auto px-4 py-12 lg:pr-0 lg:pl-8 xl:px-16"
+        :class="[core.reader ? 'max-w-2xl lg:max-w-4xl' : 'lg:max-w-none']"
       >
         <article>
           <prose><RouterView /></prose>
@@ -48,6 +54,7 @@ const repository = 'https://github.com/wilfredinni/python-cheatsheet/blob/next/'
 
       <!-- table of content -->
       <div
+        v-show="!core.reader"
         class="hidden overflow-x-hidden xl:sticky xl:top-[3.6rem] xl:-mr-6 xl:block xl:h-[calc(100vh-3.6rem)] xl:flex-none xl:overflow-y-auto xl:py-10 xl:pr-6"
       >
         <the-toc />

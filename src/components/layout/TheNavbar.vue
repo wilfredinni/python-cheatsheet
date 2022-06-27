@@ -100,7 +100,9 @@ const topMenu = [
             >
               {{ item.name }}
             </router-link>
+            <base-reader-mode />
           </div>
+
           <base-theme-toggle />
           <a
             target="_blank"

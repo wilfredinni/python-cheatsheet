@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const core = useCoreStore()
+</script>
+
 <template>
   <div
     :class="[
@@ -18,6 +22,8 @@
       'prose-thead:leading-6 prose-th:font-semibold prose-th:text-slate-700 prose-td:font-mono prose-td:font-bold prose-td:leading-6 prose-td:text-sky-500 prose-th:dark:text-slate-300 prose-td:dark:text-sky-400',
       // code
       'prose-code:text-sky-500 prose-code:dark:text-sky-400',
+      // reader
+      core.reader ? 'prose-xl' : '',
     ]"
   >
     <slot />
