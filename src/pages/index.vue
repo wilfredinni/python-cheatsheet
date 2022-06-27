@@ -42,7 +42,7 @@ const links = [
         </base-warning-content>
       </base-warning>
 
-      <h2>Overview</h2>
+      <h2 id="overview">Overview</h2>
       Anyone can forget how to
       <a href="">make character classes</a> for a regex,
       <a href="">slice a list</a> or do a <a href="">for loop</a>. This Python
