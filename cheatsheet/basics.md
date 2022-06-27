@@ -3,79 +3,69 @@ title: Basics
 description: The basics of python
 ---
 
-<script setup lang="ts">
-  const operatorItems = [
-    {operator: '**', operation: 'Exponent', example: '2 ** 3 = 8'},
-    {operator: '%', operation: 'Modulus/Remainder', example: '22 % 8 = 6'},
-    {operator: '//', operation: 'Integer division', example: '22 // 8 = 2'},
-    {operator: '/', operation: 'Division', example: '22 / 8 = 2.75'},
-    {operator: '*', operation: 'Multiplication', example: '3 * 3 = 9'},
-    {operator: '-', operation: 'Subtraction', example: '5 - 2 = 3'},
-    {operator: '+', operation: 'Addition', example: '2 + 2 = 4'},
-  ]
-
-  const dataTypeItems = [
-    {type: 'Integers', example: '-2, -1, 0, 1, 2, 3, 4, 5'},
-    {type: 'Floating-point numbers', example: '-1.25, -1.0, --0.5, 0.0, 0.5, 1.0, 1.25'},
-    {type: 'Strings', example: "'a', 'aa', 'aaa', 'Hello!', '11 cats'"},
-  ]
-</script>
-
 # Python Basics
 
 ## Math Operators
 
 From **Highest** to **Lowest** precedence:
 
-<base-table :title-headers="['Operator', 'Operation', 'Example']">
-  <base-table-row v-for="item in operatorItems" :key="item.operator">
-    <base-table-item>{{ item.operator }}</base-table-item>
-    <base-table-item>{{ item.operation }}</base-table-item>
-    <base-table-item>{{ item.example }}</base-table-item>
-  </base-table-row>
-</base-table>
+| Operators | Operation         | Example         |
+| --------- | ----------------- | --------------- |
+| \*\*      | Exponent          | `2 ** 3 = 8`    |
+| %         | Modulus/Remainder | `22 % 8 = 6`    |
+| //        | Integer division  | `22 // 8 = 2`   |
+| /         | Division          | `22 / 8 = 2.75` |
+| \*        | Multiplication    | `3 * 3 = 9`     |
+| -         | Subtraction       | `5 - 2 = 3`     |
+| +         | Addition          | `2 + 2 = 4`     |
 
 Examples of expressions in the interactive shell:
 
 ```python
-2 + 3 * 6
+>>> 2 + 3 * 6
+20
 ```
 
 ```python
-(2 + 3) * 6
+>>> (2 + 3) * 6
+30
 ```
 
 ```python
-2 ** 8
+>>> 2 ** 8
+256
 ```
 
 ```python
-23 // 7
+>>> 23 // 7
+3
 ```
 
 ```python
-23 % 7
+>>> 23 % 7
+2
 ```
 
 ```python
-(5 - 1) * ((7 + 1) / (3 - 1))
+>>> (5 - 1) * ((7 + 1) / (3 - 1))
+16.0
 ```
 
 ## Data Types
 
-<base-table :title-headers="['Data Type', 'Example']">
-  <base-table-row v-for="item in dataTypeItems" :key="item.operator">
-    <base-table-item>{{ item.type }}</base-table-item>
-    <base-table-item>{{ item.example }}</base-table-item>
-  </base-table-row>
-</base-table>
+| Data Type              | Examples                                  |
+| ---------------------- | ----------------------------------------- |
+| Integers               | `-2, -1, 0, 1, 2, 3, 4, 5`                |
+| Floating-point numbers | `-1.25, -1.0, --0.5, 0.0, 0.5, 1.0, 1.25` |
+| Strings                | `'a', 'aa', 'aaa', 'Hello!', '11 cats'`   |
 
-## String Concatenation and Replication
+## Concatenation and Replication
 
 String concatenation:
 
 ```python
-'Alice' 'Bob'
+>>> 'Alice' 'Bob'
+'AliceBob'
 ```
 
 Note: Avoid `+` operator for string concatenation. Prefer string formatting.
@@ -83,7 +73,8 @@ Note: Avoid `+` operator for string concatenation. Prefer string formatting.
 String Replication:
 
 ```python
-'Alice' * 5
+>>> 'Alice' * 5
+'AliceAliceAliceAliceAlice'
 ```
 
 ## Variables
@@ -91,18 +82,20 @@ String Replication:
 You can name a variable anything as long as it obeys the following rules:
 
 1. It can be only one word.
-2. It can use only letters, numbers, and the underscore (`_`) character.
-3. It can’t begin with a number.
-4. Variable name starting with an underscore (`_`) are considered as "unuseful`.
+1. It can use only letters, numbers, and the underscore (`_`) character.
+1. It can’t begin with a number.
+1. Variable name starting with an underscore (`_`) are considered as "unuseful`.
 
 Example:
 
 ```python
-spam = 'Hello'
+>>> spam = 'Hello'
+>>> spam
+'Hello'
 ```
 
 ```python
-_spam = 'Hello'
+>>> _spam = 'Hello'
 ```
 
 `_spam` should not be used again in the code.
@@ -141,65 +134,77 @@ def foo():
     """
 ```
 
-## The print Function
+## The print() Function
 
 ```python
-print('Hello world!')
+>>> print('Hello world!')
+Hello world!
 ```
 
 ```python
-a = 1
-print('Hello world!', a)
+>>> a = 1
+>>> print('Hello world!', a)
+Hello world! 1
 ```
 
-## The input Function
+## The input() Function
 
 Example Code:
 
 ```python
-myName = input('What is your name?') # ask for their name
-print('It is good to meet you, {}'.format(myName))
+>>> print('What is your name?')   # ask for their name
+>>> myName = input()
+>>> print('It is good to meet you, {}'.format(myName))
+What is your name?
+Al
+It is good to meet you, Al
 ```
 
-## The len Function
+## The len() Function
 
 Evaluates to the integer value of the number of characters in a string:
 
 ```python
-len('hello')
+>>> len('hello')
+5
 ```
 
 Note: test of emptiness of strings, lists, dictionary, etc, should **not** use len, but prefer direct
 boolean evaluation.
 
 ```python
-a = [1, 2, 3]
-if a:
-    print("the list is not empty!")
+>>> a = [1, 2, 3]
+>>> if a:
+>>>     print("the list is not empty!")
 ```
 
-## The str int and float Functions
+## The str(), int(), and float() Functions
 
 Integer to String or Float:
 
 ```python
-str(29)
+>>> str(29)
+'29'
 ```
 
 ```python
-print('I am {} years old.'.format(str(29)))
+>>> print('I am {} years old.'.format(str(29)))
+I am 29 years old.
 ```
 
 ```python
-str(-3.14)
+>>> str(-3.14)
+'-3.14'
 ```
 
 Float to Integer:
 
 ```python
-int(7.7)
+>>> int(7.7)
+7
 ```
 
 ```python
-int(7.7) + 1
+>>> int(7.7) + 1
+8
 ```
