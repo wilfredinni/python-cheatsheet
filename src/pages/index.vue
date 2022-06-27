@@ -1,51 +1,69 @@
 <script setup lang="ts">
-// const router = useRouter()
+import ArrowIcon from '~/components/icons/ArrowIcon.vue'
+import ReferenceIcon from '~/components/icons/ReferenceIcon.vue'
+import PluginIcon from '~/components/icons/PluginIcon.vue'
+
+const links = [
+  {
+    path: '/',
+    name: 'Download',
+    description: 'Choose between PDF, Epub, Markdown or Jupyter Notebook.',
+    icon: ArrowIcon,
+  },
+  {
+    path: '/',
+    name: 'Blog',
+    description: `Read detailed articles about Python and it's ecosystem.`,
+    icon: ReferenceIcon,
+  },
+  {
+    path: '/',
+    name: 'Contribute',
+    description: `Get to know how easy is to contribute to this project.`,
+    icon: PluginIcon,
+  },
+]
 </script>
 
 <template>
-  <div>
-    <!-- <h1>test</h1>
-    <base-disclaimer>
-      <base-disclaimer-title> Anyone can forget</base-disclaimer-title>
-      <base-disclaimer-content>
-        Anyone can forget how to make character classes for a regex, slice a
-        list or do a for loop. This cheat sheet tries to provide a basic
-        reference for beginner and advanced developers, lower the entry barrier
-        for newcomers and help veterans refresh the old tricks.
-      </base-disclaimer-content>
-    </base-disclaimer> -->
-    <div class="relative z-10 text-center">
-      <div class="relative">
-        <p
-          class="inline bg-gradient-to-r from-indigo-300 via-sky-400 to-indigo-300 bg-clip-text font-display text-4xl tracking-tight text-transparent"
-        >
-          Welcome to the Python Cheatsheet.
-        </p>
-        <markdown>
-          <p class="mt-3 text-xl tracking-tight text-slate-400">
-            Anyone can forget how to make
-            <router-link to="/contributing"
-              >character classes for a regex</router-link
-            >, slice a list or do a for loop. This cheat sheet tries to provide
-            a basic reference for beginner and advanced developers, lower the
-            entry barrier for newcomers and help veterans refresh the old
-            tricks.
-          </p>
-        </markdown>
-        <div class="mt-8 flex justify-center space-x-4">
-          <a
-            class="rounded-full bg-sky-300 py-2 px-4 text-sm font-semibold text-slate-900 hover:bg-sky-200 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300/50 active:bg-sky-500"
-            href="/"
-            >Get started</a
-          ><a
-            class="rounded-full bg-slate-800 py-2 px-4 text-sm font-medium text-white hover:bg-slate-700 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50 active:text-slate-400"
-            href="/"
-            >View on GitHub</a
+  <article>
+    <markdown>
+      <h1>Getting started</h1>
+
+      Anyone can forget how to
+      <a href="">make character classes for a regex</a>,
+      <a href="">slice a list</a> or do a <a href="">for loop</a>. This Python
+      cheatsheet tries to provide basic reference for beginner and advanced
+      developers, lower the entry barrier for newcomers and help veterans
+      refresh the old tricks.
+    </markdown>
+
+    <div className="not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
+      <div
+        v-for="link in links"
+        :key="link.name"
+        class="group relative rounded-xl border border-slate-200 dark:border-slate-800"
+      >
+        <div
+          class="absolute -inset-px rounded-xl border-2 border-transparent opacity-0 [background:linear-gradient(var(--link-grid-hover-bg,theme(colors.sky.50)),var(--link-grid-hover-bg,theme(colors.sky.50)))_padding-box,linear-gradient(to_top,theme(colors.indigo.400),theme(colors.cyan.400),theme(colors.sky.500))_border-box] group-hover:opacity-100 dark:[--link-grid-hover-bg:theme(colors.slate.800)]"
+        />
+        <div class="relative overflow-hidden rounded-xl p-6">
+          <component :is="link.icon" class="h-8 w-8" />
+          <h3
+            class="mt-4 font-display text-base text-slate-900 dark:text-white"
           >
+            <router-link :to="link.path">
+              <span class="absolute -inset-px rounded-xl" />
+              {{ link.name }}
+            </router-link>
+          </h3>
+          <p class="mt-1 text-sm text-slate-700 dark:text-slate-400">
+            {{ link.description }}
+          </p>
         </div>
       </div>
     </div>
-  </div>
+  </article>
 </template>
 
 <route lang="yaml">

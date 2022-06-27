@@ -40,7 +40,7 @@ watch(route, () => {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #8f9399;
+  background: #868686;
 }
 
 /* Track */
@@ -55,7 +55,7 @@ watch(route, () => {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #dfe0e2;
 }
 
 /* Handle */
