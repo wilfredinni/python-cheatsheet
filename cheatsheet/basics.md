@@ -5,6 +5,19 @@ description: The basics of python
 
 # Python Basics
 
+We all need to start somewhere, so how about doing it here.
+
+<base-disclaimer>
+  <base-disclaimer-title>
+    From the Python official <a href="https://docs.python.org/3/tutorial/index.html">Python 3 tutorial</a>
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+    Python is an easy to learn, powerful programming language [...] Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development.
+  </base-disclaimer-content>
+</base-disclaimer>
+
+For a more complete list of resources check the article [Who to Follow, What to Read and Where to Ask](https://www.pythoncheatsheet.org/blog/python-follow-read-and-ask/).
+
 ## Math Operators
 
 From **Highest** to **Lowest** precedence:
@@ -19,36 +32,26 @@ From **Highest** to **Lowest** precedence:
 | -         | Subtraction       | `5 - 2 = 3`     |
 | +         | Addition          | `2 + 2 = 4`     |
 
-Examples of expressions in the interactive shell:
+Examples of expressions:
 
 ```python
 >>> 2 + 3 * 6
-20
-```
+# 20
 
-```python
->>> (2 + 3) * 6
-30
-```
+>>> (2 + 3) \* 6
+# 30
 
-```python
 >>> 2 ** 8
-256
-```
+#256
 
-```python
 >>> 23 // 7
-3
-```
+# 3
 
-```python
 >>> 23 % 7
-2
-```
+# 2
 
-```python
 >>> (5 - 1) * ((7 + 1) / (3 - 1))
-16.0
+# 16.0
 ```
 
 ## Data Types
@@ -65,16 +68,14 @@ String concatenation:
 
 ```python
 >>> 'Alice' 'Bob'
-'AliceBob'
+# 'AliceBob'
 ```
-
-Note: Avoid `+` operator for string concatenation. Prefer string formatting.
 
 String Replication:
 
 ```python
 >>> 'Alice' * 5
-'AliceAliceAliceAliceAlice'
+# 'AliceAliceAliceAliceAlice'
 ```
 
 ## Variables
@@ -91,7 +92,7 @@ Example:
 ```python
 >>> spam = 'Hello'
 >>> spam
-'Hello'
+# 'Hello'
 ```
 
 ```python
@@ -136,28 +137,40 @@ def foo():
 
 ## The print() Function
 
-```python
->>> print('Hello world!')
-Hello world!
-```
+The `print()` function writes the value of the argument(s) it is given. [...] it handles multiple arguments, floating point quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely:
 
 ```python
+>>> print('Hello world!')
+# Hello world!
+
 >>> a = 1
 >>> print('Hello world!', a)
-Hello world! 1
+# Hello world! 1
+```
+
+The keyword argument `end` can be used to avoid the newline after the output, or end the output with a different string:
+
+```python
+phrase = ['printed', 'with', 'a', 'dash', 'in', 'between']
+>>> for word in phrase:
+        print(word, end='-')
+
+# printed-with-a-dash-in-between-
 ```
 
 ## The input() Function
+
+This function first takes the input from the user and converts it into a string.
 
 Example Code:
 
 ```python
 >>> print('What is your name?')   # ask for their name
->>> myName = input()
->>> print('It is good to meet you, {}'.format(myName))
-What is your name?
-Al
-It is good to meet you, Al
+>>> my_name = input()
+>>> print('Hi, {}'.format(my_name))
+# What is your name?
+# Martha
+# Hi, Martha
 ```
 
 ## The len() Function
@@ -169,42 +182,48 @@ Evaluates to the integer value of the number of characters in a string:
 5
 ```
 
-Note: test of emptiness of strings, lists, dictionary, etc, should **not** use len, but prefer direct
-boolean evaluation.
+<base-warning>
+  <base-warning-title>Test of emptiness</base-warning-title>
+  <base-warning-content>
+    Test of emptiness of strings, lists, dictionaries, etc, should <b>not</b> use
+    len, but prefer direct boolean evaluation.
+  </base-warning-content>
+</base-warning>
+
+Test of emptiness example:
 
 ```python
 >>> a = [1, 2, 3]
->>> if a:
+
+# bad
+>>> if len(a) > 0:  # evaluates to false
 >>>     print("the list is not empty!")
+# the list is not empty!
+
+# good
+>>> if a: # evaluates to false
+        print("the list is not empty!")
+# the list is not empty!
 ```
 
 ## The str(), int(), and float() Functions
 
-Integer to String or Float:
+These functions allows you to change the type of a variable. For example, you can transform from an `integer` or `float` to a `string`:
 
 ```python
 >>> str(29)
-'29'
-```
+# '29'
 
-```python
->>> print('I am {} years old.'.format(str(29)))
-I am 29 years old.
-```
-
-```python
 >>> str(-3.14)
-'-3.14'
+# '-3.14'
 ```
 
-Float to Integer:
+From a `string` to an `integer` or `float`:
 
 ```python
->>> int(7.7)
-7
-```
+>>> int('11')
+# 11
 
-```python
->>> int(7.7) + 1
-8
+>>> float('3.14')
+# 3.14
 ```
