@@ -2,8 +2,15 @@
 import ArrowIcon from '~/components/icons/ArrowIcon.vue'
 import ReferenceIcon from '~/components/icons/ReferenceIcon.vue'
 import PluginIcon from '~/components/icons/PluginIcon.vue'
+import GridIcon from '~/components/icons/GridIcon.vue'
 
 const links = [
+  {
+    path: '/',
+    name: 'Subscribe',
+    description: 'Timeless Python is bullshit free weekly newsletter',
+    icon: GridIcon,
+  },
   {
     path: '/',
     name: 'Download',

@@ -4,8 +4,8 @@ import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 const route = useRoute()
 
 const topMenu = [
-  { name: 'Cheatsheet', path: '/' },
-  { name: 'About', path: '/about' },
+  { name: 'Blog', path: '/blog' },
+  { name: 'Timeless Python', path: '/blog' },
 ]
 </script>
 
