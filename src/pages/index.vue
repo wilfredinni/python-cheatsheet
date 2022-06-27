@@ -49,16 +49,6 @@ const links = [
       cheatsheet tries to provide basic reference for beginner and advanced
       developers, lower the entry barrier for newcomers and help veterans
       refresh the old tricks.
-
-      <!-- <base-warning>
-        <base-warning-title>You need to careful!</base-warning-title>
-        <base-warning-content>
-          This site is under heavy development and the content may be
-          incomplete, change at any time or be plain wrong. Consider going to
-          the <a href="https://www.pythoncheatsheet.org">Python Cheatsheet</a>
-          <code>stable</code> version
-        </base-warning-content>
-      </base-warning> -->
     </prose>
 
     <div className="not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
