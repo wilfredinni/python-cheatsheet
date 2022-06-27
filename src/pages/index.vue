@@ -7,8 +7,8 @@ import GridIcon from '~/components/icons/GridIcon.vue'
 const links = [
   {
     path: '/',
-    name: 'Subscribe',
-    description: 'Timeless Python is bullshit free weekly newsletter',
+    name: 'Timeless Python',
+    description: 'Timeless Python is a bullshit free weekly newsletter',
     icon: GridIcon,
   },
   {
@@ -37,8 +37,17 @@ const links = [
     <markdown>
       <h1>Getting started</h1>
 
+      <p class="lead">
+        Basic cheatsheet for Python mostly based on the book
+        <a href="https://automatetheboringstuff.com/">
+          Automate the Boring Stuff with Python
+        </a>
+        and many other sources.
+      </p>
+
+      <h2>Overview</h2>
       Anyone can forget how to
-      <a href="">make character classes for a regex</a>,
+      <a href="">make character classes</a> for a regex,
       <a href="">slice a list</a> or do a <a href="">for loop</a>. This Python
       cheatsheet tries to provide basic reference for beginner and advanced
       developers, lower the entry barrier for newcomers and help veterans
