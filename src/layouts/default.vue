@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const repository = 'https://github.com/wilfredinni/python-cheatsheet/blob/next/'
+</script>
 
 <template>
   <div class="min-h-screen bg-white dark:bg-gray-900">
@@ -32,6 +34,16 @@
         <article>
           <markdown><RouterView /></markdown>
         </article>
+
+        <div class="mt-10 flex justify-end border-t dark:border-t-slate-800">
+          <a
+            target="_blanc"
+            :href="`${repository}${$route.path}.md`"
+            class="mt-5 flex items-center space-x-1.5 text-sm text-slate-600 hover:text-sky-500 dark:text-sky-500"
+          >
+            <span>Edit this page on github</span>
+          </a>
+        </div>
       </div>
 
       <!-- table of content -->

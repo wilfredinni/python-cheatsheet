@@ -4,99 +4,99 @@ import ArrowIcon from '~/components/icons/ArrowIcon.vue'
 const pages = [
   {
     name: 'Basics',
-    path: '/chapter/basics',
+    path: '/cheatsheet/basics',
   },
   {
     name: 'Control flow',
-    path: '/chapter/control-flow',
+    path: '/cheatsheet/control-flow',
   },
   {
     name: 'Functions',
-    path: '/chapter/functions',
+    path: '/cheatsheet/functions',
   },
   {
     name: 'Exception handling',
-    path: '/chapter/exception-handling',
+    path: '/cheatsheet/exception-handling',
   },
   {
     name: 'List and Tuples',
-    path: '/chapter/lists-and-tuples',
+    path: '/cheatsheet/lists-and-tuples',
   },
   {
     name: 'Dictionaries',
-    path: '/chapter/dictionaries',
+    path: '/cheatsheet/dictionaries',
   },
   {
     name: 'Sets',
-    path: '/chapter/sets',
+    path: '/cheatsheet/sets',
   },
   {
     name: 'Itertools module',
-    path: '/chapter/itertools',
+    path: '/cheatsheet/itertools',
   },
   {
     name: 'Comprehensions',
-    path: '/chapter/comprehensions',
+    path: '/cheatsheet/comprehensions',
   },
   {
     name: 'Manipulating strings',
-    path: '/chapter/manipulating-strings',
+    path: '/cheatsheet/manipulating-strings',
   },
   {
     name: 'String formatting',
-    path: '/chapter/string-formatting',
+    path: '/cheatsheet/string-formatting',
   },
   {
     name: 'Regular expressions',
-    path: '/chapter/regular-expressions',
+    path: '/cheatsheet/regular-expressions',
   },
   {
     name: 'Files and directory paths',
-    path: '/chapter/file-directory-path',
+    path: '/cheatsheet/file-directory-path',
   },
   {
     name: 'Reading and writing files',
-    path: '/chapter/reading-and-writing-files',
+    path: '/cheatsheet/reading-and-writing-files',
   },
   {
     name: 'Json and Yaml',
-    path: '/chapter/json-yaml',
+    path: '/cheatsheet/json-yaml',
   },
   {
     name: 'Debugging',
-    path: '/chapter/debugging',
+    path: '/cheatsheet/debugging',
   },
   {
     name: 'Lambda functions',
-    path: '/chapter/lambda-functions',
+    path: '/cheatsheet/lambda-functions',
   },
   {
     name: 'Ternary conditional operator',
-    path: '/chapter/ternary-operator',
+    path: '/cheatsheet/ternary-operator',
   },
   {
     name: 'Args and Kwargs',
-    path: '/chapter/args-and-kwargs',
+    path: '/cheatsheet/args-and-kwargs',
   },
   {
     name: 'Context manager',
-    path: '/chapter/context-manager',
+    path: '/cheatsheet/context-manager',
   },
   {
     name: 'Main: top level script',
-    path: '/chapter/main',
+    path: '/cheatsheet/main',
   },
   {
     name: 'setup.py',
-    path: '/chapter/setup-py',
+    path: '/cheatsheet/setup-py',
   },
   {
     name: 'Dataclasses',
-    path: '/chapter/dataclasses',
+    path: '/cheatsheet/dataclasses',
   },
   {
     name: 'Virtual environments',
-    path: '/chapter/virtual-environments',
+    path: '/cheatsheet/virtual-environments',
   },
 ]
 
