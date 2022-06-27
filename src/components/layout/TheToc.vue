@@ -50,7 +50,7 @@ watch(route, () => {
 </script>
 
 <template>
-  <nav aria-labelledby="on-this-page-title" className="w-56">
+  <nav aria-labelledby="on-this-page-title" class="w-56">
     <h3 class="font-display text-sm font-medium text-slate-900 dark:text-white">
       On this page
     </h3>
