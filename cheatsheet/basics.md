@@ -160,7 +160,7 @@ phrase = ['printed', 'with', 'a', 'dash', 'in', 'between']
 
 ## The input() Function
 
-This function first takes the input from the user and converts it into a string.
+This function takes the input from the user and converts it into a string.
 
 Example Code:
 
