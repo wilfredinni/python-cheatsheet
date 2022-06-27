@@ -34,9 +34,6 @@ export default defineConfig({
         { dir: 'src/pages', baseRoute: '' },
         { dir: 'cheatsheet', baseRoute: 'chapter' },
       ],
-      // onClientGenerated() {
-      //   window.scrollTo(0, 0)
-      // },
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts

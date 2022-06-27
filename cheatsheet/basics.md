@@ -1,5 +1,6 @@
 ---
 title: Basics
+description: The basics of python
 meta:
   - name: description
     content: Python basics
