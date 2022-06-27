@@ -32,7 +32,7 @@ const repository = 'https://github.com/wilfredinni/python-cheatsheet/blob/next/'
         class="min-w-0 max-w-2xl flex-auto px-4 py-12 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16"
       >
         <article>
-          <markdown><RouterView /></markdown>
+          <prose><RouterView /></prose>
         </article>
 
         <div class="mt-10 flex justify-end border-t dark:border-t-slate-800">

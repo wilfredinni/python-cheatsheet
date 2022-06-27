@@ -1,30 +1,16 @@
 <script setup lang="ts">
-import ArrowIcon from '~/components/icons/ArrowIcon.vue'
 import ReferenceIcon from '~/components/icons/ReferenceIcon.vue'
 import PluginIcon from '~/components/icons/PluginIcon.vue'
-import GridIcon from '~/components/icons/GridIcon.vue'
 
 const links = [
   {
-    path: '/',
-    name: 'Timeless Python',
-    description: 'Timeless Python is a bullshit free weekly newsletter',
-    icon: GridIcon,
-  },
-  {
-    path: '/',
-    name: 'Download',
-    description: 'Choose between PDF, Epub, Markdown or Jupyter Notebook.',
-    icon: ArrowIcon,
-  },
-  {
-    path: '/',
+    path: '/blog',
     name: 'Blog',
     description: `Read detailed articles about Python and it's ecosystem.`,
     icon: ReferenceIcon,
   },
   {
-    path: '/',
+    path: '/contributing',
     name: 'Contribute',
     description: `Get to know how easy is to contribute to this project.`,
     icon: PluginIcon,
@@ -34,7 +20,7 @@ const links = [
 
 <template>
   <article>
-    <markdown>
+    <prose>
       <h1>Getting started</h1>
 
       <p class="lead">
@@ -45,6 +31,17 @@ const links = [
         and many other sources.
       </p>
 
+      <base-warning>
+        <base-warning-title>You need to careful!</base-warning-title>
+        <base-warning-content>
+          This site is under heavy development and the content may be
+          incomplete, change at any time or be plain wrong. Consider going to
+          the <code>stable</code> version of the
+          <a href="https://www.pythoncheatsheet.org">Python Cheatsheet</a>
+          for a more complete experience.
+        </base-warning-content>
+      </base-warning>
+
       <h2>Overview</h2>
       Anyone can forget how to
       <a href="">make character classes</a> for a regex,
@@ -52,7 +49,17 @@ const links = [
       cheatsheet tries to provide basic reference for beginner and advanced
       developers, lower the entry barrier for newcomers and help veterans
       refresh the old tricks.
-    </markdown>
+
+      <!-- <base-warning>
+        <base-warning-title>You need to careful!</base-warning-title>
+        <base-warning-content>
+          This site is under heavy development and the content may be
+          incomplete, change at any time or be plain wrong. Consider going to
+          the <a href="https://www.pythoncheatsheet.org">Python Cheatsheet</a>
+          <code>stable</code> version
+        </base-warning-content>
+      </base-warning> -->
+    </prose>
 
     <div className="not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
       <div
