@@ -1,5 +1,6 @@
 <template>
   <div
+    class="prose-code:text-sky-500 prose-code:dark:text-sky-400"
     :class="[
       'prose prose-slate max-w-none dark:prose-invert dark:text-slate-400',
       // headings
@@ -14,6 +15,8 @@
       'prose-pre:rounded-lg prose-pre:bg-slate-900 prose-pre:shadow-lg dark:prose-pre:bg-slate-800/60 dark:prose-pre:shadow-none dark:prose-pre:ring-1 dark:prose-pre:ring-slate-300/10',
       // hr
       'dark:prose-hr:border-slate-800',
+      // table
+      'prose-thead:leading-6 prose-th:font-semibold prose-th:text-slate-700 prose-td:font-mono prose-td:font-bold prose-td:leading-6 prose-td:text-sky-500 prose-th:dark:text-slate-300 prose-td:dark:text-sky-400',
     ]"
   >
     <slot />
