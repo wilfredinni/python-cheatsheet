@@ -83,23 +83,41 @@ String Replication:
 You can name a variable anything as long as it obeys the following rules:
 
 1. It can be only one word.
-1. It can use only letters, numbers, and the underscore (`_`) character.
-1. It can’t begin with a number.
-1. Variable name starting with an underscore (`_`) are considered as "unuseful`.
-
-Example:
 
 ```python
->>> spam = 'Hello'
->>> spam
-# 'Hello'
+# bad
+my variable = 'Hello'
+
+# good
+var = 'Hello'
 ```
 
+2. It can use only letters, numbers, and the underscore (`_`) character.
+
 ```python
+# bad
+%$@variable = 'Hello'
+
+# good
+my_var = 'Hello'
+
+# good
+my_var_2 = 'Hello'
+```
+
+3. It can’t begin with a number.
+
+```python
+# this wont work
+23_var = 'hello'
+```
+
+4. Variable name starting with an underscore (`_`) are considered as "unuseful".
+
+```python
+# _span should not be used again in the code
 >>> _spam = 'Hello'
 ```
-
-`_spam` should not be used again in the code.
 
 ## Comments
 
