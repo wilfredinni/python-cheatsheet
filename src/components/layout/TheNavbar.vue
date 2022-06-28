@@ -109,6 +109,7 @@ const topMenu = [
             href="https://github.com/wilfredinni/python-cheatsheet/tree/next"
           >
             <github-icon />
+            <span class="sr-only">python cheatsheet repository</span>
           </a>
         </div>
       </div>
