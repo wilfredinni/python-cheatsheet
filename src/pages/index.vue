@@ -20,36 +20,34 @@ const links = [
 
 <template>
   <article>
-    <prose>
-      <h1>Getting started</h1>
+    <h1>Getting started</h1>
 
-      <p class="lead">
-        Basic cheatsheet for Python mostly based on the book
-        <a href="https://automatetheboringstuff.com/">
-          Automate the Boring Stuff with Python
-        </a>
-        and many other sources.
-      </p>
+    <p class="lead">
+      Basic cheatsheet for Python mostly based on the book
+      <a href="https://automatetheboringstuff.com/">
+        Automate the Boring Stuff with Python
+      </a>
+      and many other sources.
+    </p>
 
-      <base-warning>
-        <base-warning-title>You need to careful!</base-warning-title>
-        <base-warning-content>
-          This site is under heavy development and the content may be
-          incomplete, change at any time or be plain wrong. Consider going to
-          the <code>stable</code> version of the
-          <a href="https://www.pythoncheatsheet.org">Python Cheatsheet</a>
-          for a more complete experience.
-        </base-warning-content>
-      </base-warning>
+    <base-warning>
+      <base-warning-title>You need to careful!</base-warning-title>
+      <base-warning-content>
+        This site is under heavy development and the content may be incomplete,
+        change at any time or be plain wrong. Consider going to the
+        <code>stable</code> version of the
+        <a href="https://www.pythoncheatsheet.org">Python Cheatsheet</a>
+        for a more complete experience.
+      </base-warning-content>
+    </base-warning>
 
-      <h2 id="overview">Overview</h2>
-      Anyone can forget how to
-      <a href="">make character classes</a> for a regex,
-      <a href="">slice a list</a> or do a <a href="">for loop</a>. This Python
-      cheatsheet tries to provide basic reference for beginner and advanced
-      developers, lower the entry barrier for newcomers and help veterans
-      refresh the old tricks.
-    </prose>
+    <h2 id="overview">Overview</h2>
+    Anyone can forget how to
+    <a href="">make character classes</a> for a regex,
+    <a href="">slice a list</a> or do a <a href="">for loop</a>. This Python
+    cheatsheet tries to provide basic reference for beginner and advanced
+    developers, lower the entry barrier for newcomers and help veterans refresh
+    the old tricks.
 
     <div className="not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
       <div

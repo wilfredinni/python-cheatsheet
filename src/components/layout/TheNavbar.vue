@@ -5,7 +5,7 @@ const route = useRoute()
 
 const topMenu = [
   { name: 'Blog', path: '/blog' },
-  { name: 'Timeless Python', path: '/blog' },
+  { name: 'Timeless Python', path: '/timeless-python' },
 ]
 </script>
 
