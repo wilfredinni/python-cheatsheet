@@ -178,9 +178,7 @@ phrase = ['printed', 'with', 'a', 'dash', 'in', 'between']
 
 ## The input() Function
 
-This function takes the input from the user and converts it into a string.
-
-Example Code:
+This function takes the input from the user and converts it into a string:
 
 ```python
 >>> print('What is your name?')   # ask for their name
@@ -191,13 +189,25 @@ Example Code:
 # Hi, Martha
 ```
 
+This function can also set a default message without using `print`:
+
+```python
+>>> my_name = input('What is your name? ')  # default message
+>>> print('Hi, {}'.format(my_name))
+# What is your name? Martha
+# Hi, Martha
+```
+
 ## The len() Function
 
-Evaluates to the integer value of the number of characters in a string:
+Evaluates to the integer value of the number of characters in a string, list, dictionary, etc.:
 
 ```python
 >>> len('hello')
-5
+# 5
+
+>>> len(['cat', 3, 'dog'])
+# 3
 ```
 
 <base-warning>
@@ -236,7 +246,7 @@ These functions allows you to change the type of a variable. For example, you ca
 # '-3.14'
 ```
 
-From a `string` to an `integer` or `float`:
+Or from a `string` to an `integer` or `float`:
 
 ```python
 >>> int('11')
