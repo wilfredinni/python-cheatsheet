@@ -7,6 +7,9 @@ date: Mar 08, 2019
 <route lang="yaml">
 meta:
     layout: article
+    date: Mar 08, 2019
+    title: Python *args and **kwargs Made Easy
+    description: args and kwargs may seem scary, but the truth is that they are not that difficult to grasp and have the power to grant your functions with flexibility and readability.
 </route>
 
 <div>

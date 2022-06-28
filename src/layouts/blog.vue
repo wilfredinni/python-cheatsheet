@@ -1,0 +1,24 @@
+<script setup lang="ts">
+const core = useCoreStore()
+</script>
+
+<template>
+  <div class="min-h-screen bg-white dark:bg-gray-900">
+    <the-navbar v-show="!core.reader" />
+    <the-reader-mode-navbar v-show="core.reader" />
+
+    <div
+      class="relative mx-auto flex min-h-screen max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12"
+    >
+      <!-- article -->
+      <div
+        class="min-w-0 flex-auto px-4 py-12 lg:pr-0 lg:pl-8 xl:px-16"
+        :class="[core.reader ? 'max-w-2xl lg:max-w-4xl' : 'lg:max-w-4xl']"
+      >
+        <article>
+          <RouterView />
+        </article>
+      </div>
+    </div>
+  </div>
+</template>
