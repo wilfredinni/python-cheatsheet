@@ -33,6 +33,7 @@ export default defineConfig({
       dirs: [
         { dir: 'src/pages', baseRoute: '' },
         { dir: 'cheatsheet', baseRoute: 'cheatsheet' },
+        { dir: 'blog', baseRoute: 'blog' },
       ],
     }),
 
