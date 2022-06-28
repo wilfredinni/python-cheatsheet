@@ -1,10 +1,18 @@
 ---
 title: Python *args and **kwargs Made Easy
-description: The basics of python
-layout: article
+description: args and kwargs may seem scary, but the truth is that they are not that difficult to grasp and have the power to grant your functions with flexibility and readability.
+date: Mar 08, 2019
 ---
 
-# Python \*args and \*\*kwargs Made Easy
+<route lang="yaml">
+meta:
+    layout: article
+</route>
+
+<div>
+  <span class="font-display text-sm font-medium text-sky-500">Posted on {{frontmatter.date}}</span>
+  <h1>Python *args and **kwargs Made Easy</h1>
+</div>
 
 I do not know about you, but every time I saw some function with `*args` and `**kwargs` as parameters, I'd get a little scared. I've even "used" them while doing some backend work with Django without understanding a thing. If you're a self-taught developer like me, I know you've been there too.
 
@@ -39,11 +47,15 @@ def some_function(*arguments, **keywords):
     pass
 ```
 
-> A note about conventions:
->
-> Even if the above function works, don't do it. Conventions are there to help you write readable code for you and anyone that might be interested in your project.
->
-> Other conventions include the 4 space indentation, comments, and imports. Reading the [PEP 8 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/) is highly recommended.
+<base-warning>
+  <base-warning-title>
+    A note about conventions
+  </base-warning-title>
+  <base-warning-content>
+    Even if the above function works, don't do it. Conventions are there to help you write readable code for you and anyone that might be interested in your project.
+    Other conventions include the 4 space indentation, comments, and imports. Reading the <a target="_blanc" href="https://www.python.org/dev/peps/pep-0008/">PEP 8 -- Style Guide for Python Code</a> is highly recommended.
+  </base-warning-content>
+</base-warning>
 
 So, how does Python know that we want our function to accept multiple arguments and/or keywords? Yes, the answers are the `*` and `**` operators.
 
