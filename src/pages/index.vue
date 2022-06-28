@@ -78,8 +78,3 @@ const links = [
     </div>
   </article>
 </template>
-
-<route lang="yaml">
-meta:
-  layout: home
-</route>
