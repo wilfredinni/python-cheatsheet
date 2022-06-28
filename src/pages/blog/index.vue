@@ -23,12 +23,15 @@ const articles = computed(() => {
     </p>
   </prose>
 
-  <div>
+  <div class="mt-5">
     <ul>
-      <li v-for="article in articles" :key="article.path">
-        <h2>{{ article.children[0]?.meta?.title }}</h2>
+      <li v-for="article in articles" :key="article.path" class="mb-5">
+        <router-link :to="article.path">
+          {{ article.children[0]?.meta?.title }}
+        </router-link>
         <p>{{ article.children[0]?.meta?.date }}</p>
         <p>{{ article.children[0]?.meta?.description }}</p>
+        <p>{{ article.path }}</p>
       </li>
     </ul>
   </div>

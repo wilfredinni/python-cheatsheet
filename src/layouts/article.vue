@@ -34,7 +34,7 @@ const repository = 'https://github.com/wilfredinni/python-cheatsheet/blob/next/'
       <!-- table of content -->
       <div
         v-show="!core.reader"
-        class="hidden overflow-x-hidden xl:sticky xl:top-[3.6rem] xl:-mr-6 xl:block xl:h-[calc(100vh-3.6rem)] xl:flex-none xl:overflow-y-auto xl:py-10 xl:pr-6"
+        class="hidden overflow-x-hidden xl:sticky xl:top-[4.3rem] xl:-mr-6 xl:block xl:h-[calc(100vh-3.6rem)] xl:flex-none xl:overflow-y-auto xl:py-10 xl:pr-6"
       >
         <the-toc />
       </div>
