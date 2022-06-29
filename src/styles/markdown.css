@@ -14,6 +14,7 @@ html .prose {
   --prism-background: #2f2f2f;
   --prism-comment: #94a3b8;
   --prism-string: #a5e844;
+  --prism-interpolation: #ff6666;
   --prism-literal: #429988;
   --prism-keyword: #7bddff;
   --prism-operator: #7bddff;
