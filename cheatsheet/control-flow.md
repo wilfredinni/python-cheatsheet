@@ -270,7 +270,7 @@ useful when a `break` condition can occur in the loop:
 >>>    print("only executed when no item of the list is equal to 3")
 ```
 
-## Ending a Program Early with sys.exit()
+## Ending a Program with sys.exit()
 
 `exit()` function allows to exit from Python.
 
