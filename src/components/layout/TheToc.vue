@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Ref } from 'vue'
 
-const content: Ref<string[]> = ref([])
+const toc: Ref<string[]> = ref([])
 const currentSection = ref('')
 
 const slugify = (str: string) =>
@@ -12,9 +12,16 @@ const slugify = (str: string) =>
     .replace(/[\s-]+/g, '-')
     .replace(/^-+|-+$/g, '')
 
-const createContents = () => {
+const createToc = () => {
   const h2 = document.getElementsByTagName('h2')
-  content.value = Array.from(h2).map((item) => item.innerText)
+  toc.value = Array.from(h2).map((item) => item.innerText)
+}
+
+const insetH2Id = () => {
+  document.querySelectorAll('article h2').forEach((header) => {
+    const h2 = header as HTMLElement
+    header.setAttribute('id', slugify(h2.innerText))
+  })
 }
 
 const getObserver = () => {
@@ -37,13 +44,15 @@ const getObserver = () => {
 
 const route = useRoute()
 onMounted(() => {
-  createContents()
+  createToc()
+  insetH2Id()
   getObserver()
 })
 
 watch(route, () => {
   nextTick(() => {
-    createContents()
+    createToc()
+    insetH2Id()
     getObserver()
   })
 })
@@ -56,7 +65,7 @@ watch(route, () => {
     </h3>
 
     <ul class="mt-4 text-sm">
-      <li v-for="item in content" :key="item">
+      <li v-for="item in toc" :key="item">
         <a
           :href="`#${slugify(item)}`"
           class="block py-1 font-medium"
