@@ -10,15 +10,13 @@ const core = useCoreStore()
   >
     <div class="mx-auto max-w-4xl px-4 lg:pr-0 lg:pl-8 xl:px-16">
       <div class="relative flex h-14 justify-between">
-        <div
-          class="flex flex-1 items-center justify-between text-slate-400 sm:items-center"
-        >
+        <div class="flex flex-1 items-center justify-between sm:items-center">
           <button
-            class="rounded hover:bg-sky-100 hover:text-sky-600 dark:hover:bg-transparent"
+            class="rounded text-slate-400 hover:bg-sky-100 hover:text-sky-600 dark:hover:bg-transparent"
             @click="core.toggle()"
           >
             <span class="sr-only">close reader mode</span>
-            <x-icon class="h-4" />
+            <x-icon class="h-5" />
           </button>
 
           <base-theme-toggle />
