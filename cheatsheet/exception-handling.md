@@ -1,38 +1,108 @@
 ---
-title: Exception Handling
+title: Exception Handling - Python Cheatsheet
+description: In Python, exception handling is the process of responding to the occurrence of exceptions.
 ---
 
 # Exception Handling
 
+<base-disclaimer>
+  <base-disclaimer-title>
+    <a target="_blanc" href="https://en.wikipedia.org/wiki/Exception_handling">Exception handling</a>
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+    In computing and computer programming, exception handling is the process of responding to the occurrence of exceptions – anomalous or exceptional conditions requiring special processing.
+  </base-disclaimer-content>
+</base-disclaimer>
+
+Python has many [built-in exceptions](https://docs.python.org/3/library/exceptions.html) that are raised when a program encounters an error, and most external libraries, like the popular [Requests](https://requests.readthedocs.io/en/latest), include his own [custom exceptions](https://requests.readthedocs.io/en/latest/user/quickstart/#errors-and-exceptions) that we will need to deal to.
+
 ## Basic exception handling
 
-```python
-def spam(divideBy):
-    try:
-        return 42 / divideBy
-    except ZeroDivisionError as e:
-        print('Error: Invalid argument: {}'.format(e))
+You can't divide by zero, that is a mathematical true, and if you try to it in Python, the interpreter will raise the built-in exception [ZeroDivisionError](https://docs.python.org/3/library/exceptions.html#ZeroDivisionError):
 
-print(spam(2))
-print(spam(12))
-print(spam(0))
-print(spam(1))
+```python
+def divide(dividend , divisor):
+    print(dividend / divisor)
+
+divide(dividend=10, divisor=5)
+# 5
+
+divide(dividend=10, divisor=0)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# ZeroDivisionError: division by zero
+```
+
+Lets say we don't want our program to stop it's execution or show the user an output he will no understand. Say we want to print a useful and clear message, then we need to **_handle_** the exception with the `try` and `except` keywords:
+
+```python
+def divide(dividend , divisor):
+    try:
+        print(dividend / divisor)
+    except ZeroDivisionError:
+        print('You can not divide by 0')
+
+divide(dividend=10, divisor=5)
+# 5
+
+divide(dividend=10, divisor=0)
+# You can not divide by 0
 ```
 
 ## Final code in exception handling
 
-Code inside the `finally` section is always executed, no matter if an exception has been raised or
-not, and even if an exception is not caught.
+The code inside the `finally` section is always executed, no matter if an exception has been raised or not:
 
 ```python
-def spam(divideBy):
+def divide(dividend , divisor):
     try:
-        return 42 / divideBy
-    except ZeroDivisionError as e:
-        print('Error: Invalid argument: {}'.format(e))
+        print(dividend / divisor)
+    except ZeroDivisionError:
+        print('You can not divide by 0')
     finally:
-        print("-- division finished --")
+        print('Execution finished')
 
-print(spam(12))
-print(spam(0))
+divide(dividend=10, divisor=5)
+# 5
+# Execution finished
+
+divide(dividend=10, divisor=0)
+# You can not divide by 0
+# Execution finished
+```
+
+## Custom Exceptions
+
+Custom exceptions are created by creating a `class` that inherit from the base `Exception` class of Python, and are raised using the `raise` keyword:
+
+```python
+class MyCustomException(Exception):
+    pass
+
+raise MyCustomException
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# __main__.MyCustomException
+```
+
+To declare a custom exception message you can pass it as a parameter:
+
+```python
+class MyCustomException(Exception):
+    pass
+
+raise MyCustomException('A custom message for my custom exception')
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# __main__.MyCustomException: A custom message for my custom exception
+```
+
+Handling a custom exception is the same as any other:
+
+```python
+try:
+    raise MyCustomException('A custom message for my custom exception')
+except MyCustomException:
+    print('My custom exception was raised')
+# My custom exception was raised
 ```

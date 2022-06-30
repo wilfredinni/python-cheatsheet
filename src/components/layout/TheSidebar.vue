@@ -14,10 +14,7 @@ const pages = [
     name: 'Functions',
     path: '/cheatsheet/functions',
   },
-  {
-    name: 'Exception handling',
-    path: '/cheatsheet/exception-handling',
-  },
+
   {
     name: 'List and Tuples',
     path: '/cheatsheet/lists-and-tuples',
@@ -61,6 +58,10 @@ const pages = [
   {
     name: 'Json and Yaml',
     path: '/cheatsheet/json-yaml',
+  },
+  {
+    name: 'Exception handling',
+    path: '/cheatsheet/exception-handling',
   },
   {
     name: 'Debugging',
