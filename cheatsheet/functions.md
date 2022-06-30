@@ -4,68 +4,65 @@ title: Function
 
 # Functions
 
+<base-disclaimer>
+  <base-disclaimer-title>
+    <a target="_blanc" href="https://en.wikiversity.org/wiki/Programming_Fundamentals/Functions">Programming Functions</a>
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+    A function is a block of organized code that is used to perform a single task. They provide better modularity for your application and reuse-ability.
+  </base-disclaimer-content>
+</base-disclaimer>
+
+## Function arguments
+
+A function can take `arguments` and/or `return values`:
+
+In the following example, the function **say_hello** receives the argument "name" and prints a greeting:
+
 ```python
-def hello(name):
-    print('Hello {}'.format(name))
+def say_hello(name):
+    print(f'Hello {name}')
+
+say_hello('Carlos')
+# Hello Carlos
+
+say_hello('Wanda')
+# Hello Wanda
+
+say_hello('Rose')
+# Hello Rose
 ```
 
-## Return Values and return Statements
+## Keyword Arguments
 
-When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following:
+To improve or code readability we should be as explicit as possible. We can achieve this in our functions by using `Keyword Arguments`:
 
-- The return keyword.
+```python
+def say_hi(name, greeting):
+    print(f"{name} {greeting}")
+
+say_hi('John', 'Hello') # without keyword arguments
+# Hello John
+
+say_hi(name='Anna', greeting='Hi') # with keyword arguments
+# Hi Anna
+```
+
+## Return Values
+
+When creating a function using the `def` statement, you can specify what the return value should be with a `return`` statement. A return statement consists of the following:
+
+- The `return` keyword.
 
 - The value or expression that the function should return.
 
 ```python
-import random
-def getAnswer(answerNumber):
-    if answerNumber == 1:
-        return 'It is certain'
-    elif answerNumber == 2:
-        return 'It is decidedly so'
-    elif answerNumber == 3:
-        return 'Yes'
-    elif answerNumber == 4:
-        return 'Reply hazy try again'
-    elif answerNumber == 5:
-        return 'Ask again later'
-    elif answerNumber == 6:
-        return 'Concentrate and ask again'
-    elif answerNumber == 7:
-        return 'My reply is no'
-    elif answerNumber == 8:
-        return 'Outlook not so good'
-    elif answerNumber == 9:
-        return 'Very doubtful'
+def sum_two_numbers(number_1, number_2):
+    return number_1 + number_2
 
-r = random.randint(1, 9)
-fortune = getAnswer(r)
-print(fortune)
-```
-
-## The None Value
-
-```python
-spam = print('Hello!')
-spam is None
-```
-
-Note: never compare to `None` with the `==` operator. Always use `is`.
-
-## print Keyword Arguments
-
-```python
-print('Hello', end='')
-print('World')
-```
-
-```python
-print('cats', 'dogs', 'mice')
-```
-
-```python
-print('cats', 'dogs', 'mice', sep=',')
+result = sum_two_numbers(7, 8)
+print(result)
+# 15
 ```
 
 ## Local and Global Scope
@@ -77,6 +74,22 @@ print('cats', 'dogs', 'mice', sep=',')
 - Code in a function’s local scope cannot use variables in any other local scope.
 
 - You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
+
+```python
+global_variable = 'I am available everywhere'
+
+>>> def some_function():
+...     print(global_variable)  # because is global
+...     local_variable = "only available within this function"
+...     print(local_variable)
+
+>>> # the following code will trow error because
+>>> # 'local_variable' only exists inside 'some_function'
+>>> print(local_variable)
+Traceback (most recent call last):
+  File "<stdin>", line 10, in <module>
+NameError: name 'local_variable' is not defined
+```
 
 ## The global Statement
 
@@ -101,3 +114,58 @@ There are four rules to tell whether a variable is in a local scope or global sc
 1. Otherwise, if the variable is used in an assignment statement in the function, it is a local variable.
 
 1. But if the variable is not used in an assignment statement, it is a global variable.
+
+## Lambda Functions
+
+In Python, a lambda function is a single-line, anonymous function, which can have any number of arguments, but it can only have one expression.
+
+<base-disclaimer>
+  <base-disclaimer-title>
+    From the <a target="_blanc" href="https://docs.python.org/3/library/ast.html?highlight=lambda#function-and-class-definitions">Python 3 Tutorial</a>
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+    lambda is a minimal function definition that can be used inside an expression. Unlike FunctionDef, body holds a single node.
+  </base-disclaimer-content>
+</base-disclaimer>
+
+<base-warning>
+  <base-warning-title>
+    Single line expression
+  </base-warning-title>
+  <base-warning-content>
+    Lambda functions can only evaluate an expression, like a single line of code.
+  </base-warning-content>
+</base-warning>
+
+This function:
+
+```python
+>>> def add(x, y):
+        return x + y
+
+>>> add(5, 3)
+8
+```
+
+Is equivalent to the _lambda_ function:
+
+```python
+>>> add = lambda x, y: x + y
+>>> add(5, 3)
+8
+```
+
+Like regular nested functions, lambdas also work as lexical closures:
+
+```python
+>>> def make_adder(n):
+        return lambda x: x + n
+
+>>> plus_3 = make_adder(3)
+>>> plus_5 = make_adder(5)
+
+>>> plus_3(4)
+7
+>>> plus_5(4)
+9
+```

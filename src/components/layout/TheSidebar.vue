@@ -67,10 +67,6 @@ const pages = [
     path: '/cheatsheet/debugging',
   },
   {
-    name: 'Lambda functions',
-    path: '/cheatsheet/lambda-functions',
-  },
-  {
     name: 'Ternary conditional operator',
     path: '/cheatsheet/ternary-operator',
   },
