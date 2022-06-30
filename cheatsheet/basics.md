@@ -54,6 +54,35 @@ Examples of expressions:
 # 16.0
 ```
 
+## Augmented Assignment Operators
+
+| Operator   | Equivalent      |
+| ---------- | --------------- |
+| `var += 1` | `var = var + 1` |
+| `var -= 1` | `var = var - 1` |
+| `var *= 1` | `var = var * 1` |
+| `var /= 1` | `var = var / 1` |
+| `var %= 1` | `var = var % 1` |
+
+Examples:
+
+```python
+>>> greeting = 'Hello'
+>>> greeting += ' world!'
+>>> greeting
+# 'Hello world!'
+
+>>> number = 1
+>>> number += 1
+>>> number
+# 2
+
+>>> my_list = ['item']
+>>> my_list *= 3
+>>> my_list
+# ['item', 'item', 'item']
+```
+
 ## Data Types
 
 | Data Type              | Examples                                  |
