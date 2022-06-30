@@ -1,165 +1,167 @@
 ---
 title: Lists
+description: In python, Lists are are one of the 4 data types in Python used to store collections of data.
 ---
 
 # Lists
 
+Lists are are one of the 4 data types in Python used to store collections of data.
+
 ```python
-['cat', 'bat', 'rat', 'elephant']
+['John', 'Peter', 'Debora', 'Charles']
 ```
 
-## Getting Individual Values in a List with Indexes
+## Getting individual values with indexes
 
 ```python
-spam = ['cat', 'bat', 'rat', 'elephant']
-spam[0]
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+
+>>> furniture[0]
+# 'table'
+
+>>> furniture[1]
+# 'chair'
+
+>>> furniture[2]
+# 'rack'
+
+>>> furniture[3]
+# 'shelf'
 ```
 
+## Negative indexes
+
 ```python
-spam[1]
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+
+>>> furniture[-1]
+# 'shelf'
+
+>>> furniture[-3]
+# 'chair'
+
+>>> f'The {furniture[-1]} is bigger than the {furniture[-3]}'
+# 'The shelf is bigger than the chair'
 ```
 
+## Getting sublists with Slices
+
 ```python
-spam[2]
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+
+>>> furniture[0:4]
+# ['table', 'chair', 'rack', 'shelf']
+
+>>> furniture[1:3]
+# ['chair', 'rack']
+
+>>> furniture[0:-1]
+# ['table', 'chair', 'rack']
+
+>>> furniture[:2]
+# ['table', 'chair']
+
+>>> furniture[1:]
+# ['chair', 'rack', 'shelf']
+
+>>> furniture[:]
+# ['table', 'chair', 'rack', 'shelf']
 ```
 
+## Getting a list length with len()
+
 ```python
-spam[3]
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+>>> len(furniture)
+# 4
 ```
 
-## Negative Indexes
+## Changing values with indexes
 
 ```python
-spam = ['cat', 'bat', 'rat', 'elephant']
-spam[-1]
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+>>> furniture[0] = 'desk'
+>>> furniture
+# ['desk', 'chair', 'rack', 'shelf']
+
+>>> furniture[2] = furniture[1]
+>>> furniture
+# ['desk', 'chair', 'chair', 'shelf']
+
+>>> furniture[-1] = bed
+>>> furniture
+# ['desk', 'chair', 'chair', 'bed']
 ```
 
+## Concatenation and Replication
+
 ```python
-spam[-3]
+>>> [1, 2, 3] + ['A', 'B', 'C']
+# [1, 2, 3, 'A', 'B', 'C']
+
+>>> ['X', 'Y', 'Z'] * 3
+# ['X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'Y', 'Z']
+
+>>> my_list = [1, 2, 3]
+>>> my_list = my_list + ['A', 'B', 'C']
+>>> my_list
+# [1, 2, 3, 'A', 'B', 'C']
 ```
 
+## Using for loops with Lists
+
 ```python
-'The {} is afraid of the {}.'.format(spam[-1], spam[-3])
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+
+>>> for item in furniture:
+...     print(item)
+# table
+# chair
+# rack
+# shelf
 ```
 
-## Getting Sublists with Slices
+## Getting the index in a loop with enumerate()
 
 ```python
-spam = ['cat', 'bat', 'rat', 'elephant']
-spam[0:4]
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+
+>>> for index, item in enumerate(furniture):
+...     print(f'index: {index} - item: {item}')
+# index: 0 - item: table
+# index: 1 - item: chair
+# index: 2 - item: rack
+# index: 3 - item: shelf
 ```
 
+## Looping Through Multiple Lists with zip()
+
 ```python
-spam[1:3]
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+>>> price = [100, 50, 80, 40]
+
+>>> for item, amount in zip(furniture, price):
+...     print(f'The {item} costs ${amount}')
+# The table costs $100
+# The chair costs $50
+# The rack costs $80
+# The shelf costs $40
 ```
 
-```python
-spam[0:-1]
-```
+## The in and not in operators
 
 ```python
-spam = ['cat', 'bat', 'rat', 'elephant']
-spam[:2]
-```
+>>> 'rack' in ['table', 'chair', 'rack', 'shelf']
+# True
 
-```python
-spam[1:]
-```
+>>> 'bed' in ['table', 'chair', 'rack', 'shelf']
+# False
 
-```python
-spam[:]
-```
+>>> 'bed' not in furniture
+# True
 
-## Getting a list Length with len
-
-```python
-spam = ['cat', 'dog', 'moose']
-len(spam)
-```
-
-## Changing Values in a List with Indexes
-
-```python
-spam = ['cat', 'bat', 'rat', 'elephant']
-spam[1] = 'aardvark'
-spam
-```
-
-```python
-spam[2] = spam[1]
-spam
-```
-
-```python
-spam[-1] = 12345
-spam
-```
-
-## List Concatenation and List Replication
-
-```python
-[1, 2, 3] + ['A', 'B', 'C']
-```
-
-```python
-['X', 'Y', 'Z'] * 3
-```
-
-```python
-spam = [1, 2, 3]
-spam = spam + ['A', 'B', 'C']
-spam
-```
-
-## Removing Values from Lists with del Statements
-
-```python
-spam = ['cat', 'bat', 'rat', 'elephant']
-del spam[2]
-spam
-```
-
-```python
-del spam[2]
-spam
-```
-
-## Using for Loops with Lists
-
-```python
-supplies = ['pens', 'staplers', 'flame-throwers', 'binders']
-
-for i, supply in enumerate(supplies):
-    print('Index {} in supplies is: {}'.format(str(i), supply))
-```
-
-## Looping Through Multiple Lists with zip
-
-```python
-name = ['Pete', 'John', 'Elizabeth']
-age = [6, 23, 44]
-
-for n, a in zip(name, age):
-    print('{} is {} years old'.format(n, a))
-```
-
-## The in and not in Operators
-
-```python
-'howdy' in ['hello', 'hi', 'howdy', 'heyas']
-```
-
-```python
-spam = ['hello', 'hi', 'howdy', 'heyas']
-False
-```
-
-```python
-'howdy' not in spam
-```
-
-```python
-'cat' not in spam
+>>> 'rack' not in furniture
+# False
 ```
 
 ## The Multiple Assignment Trick
@@ -167,153 +169,187 @@ False
 The multiple assignment trick is a shortcut that lets you assign multiple variables with the values in a list in one line of code. So instead of doing this:
 
 ```python
-cat = ['fat', 'orange', 'loud']
-size = cat[0]
-color = cat[1]
-disposition = cat[2]
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+>>> table = furniture[0]
+>>> chair = furniture[1]
+>>> rack = furniture[2]
+>>> shelf = furniture[3]
 ```
 
 You could type this line of code:
 
 ```python
-cat = ['fat', 'orange', 'loud']
-size, color, disposition = cat
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+>>> table, chair, rack, shelf = furniture
+
+>>> table
+# 'table'
+
+>>> chair
+# 'chair'
+
+>>> rack
+# 'rack'
+
+>>> shelf
+# 'shelf'
 ```
 
 The multiple assignment trick can also be used to swap the values in two variables:
 
 ```python
-a, b = 'Alice', 'Bob'
-a, b = b, a
-print(a)
+>>> a, b = 'table', 'chair'
+>>> a, b = b, a
+>>> print(a)
+# chair
+
+>>> print(b)
+# table
 ```
 
+## Finding a value with the index Method
+
 ```python
-print(b)
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+>>> furniture.index('chair')
+# 1
 ```
 
-## Augmented Assignment Operators
+## Adding Values with append() and insert()
 
-| Operator    | Equivalent        |
-| ----------- | ----------------- |
-| `spam += 1` | `spam = spam + 1` |
-| `spam -= 1` | `spam = spam - 1` |
-| `spam *= 1` | `spam = spam * 1` |
-| `spam /= 1` | `spam = spam / 1` |
-| `spam %= 1` | `spam = spam % 1` |
+### append()
 
-Examples:
+`append` adds an element to the end of a `list`:
 
 ```python
-spam = 'Hello'
-spam += ' world!'
-spam
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+>>> furniture.append('bed')
+>>> furniture
+# ['table', 'chair', 'rack', 'shelf', 'bed']
 ```
 
+### insert()
+
+`insert` adds an element to a `list` at a given position:
+
 ```python
-bacon = ['Zophie']
-bacon *= 3
-bacon
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+>>> furniture.insert(1, 'bed')
+>>> furniture
+# ['table', 'bed', 'chair', 'rack', 'shelf']
 ```
 
-## Finding a Value in a List with the index Method
+## Removing values with del() and remove()
+
+### del()
+
+`del` removes an item using the index:
 
 ```python
-spam = ['Zophie', 'Pooka', 'Fat-tail', 'Pooka']
-spam.index('Pooka')
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+>>> del furniture[2]
+>>> furniture
+# ['table', 'chair', 'shelf']
+
+>>> del furniture[2]
+>>> furniture
+# ['table', 'chair']
 ```
 
-## Adding Values to Lists with append and insert
+### remove()
 
-**append()**:
+`remove` removes an item with using actual value of it:
 
 ```python
-spam = ['cat', 'dog', 'bat']
-spam.append('moose')
-spam
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+>>> furniture.remove('chair')
+>>> furniture
+# ['table', 'rack', 'shelf']
 ```
 
-**insert()**:
+<base-warning>
+  <base-warning-title>
+    Removing repeated items
+  </base-warning-title>
+  <base-warning-content>
+    If the value appears multiple times in the list, only the first instance of the value will be removed.
+  </base-warning-content>
+</base-warning>
+
+## Sorting values with sort
 
 ```python
-spam = ['cat', 'dog', 'bat']
-spam.insert(1, 'chicken')
-spam
+>>> numbers = [2, 5, 3.14, 1, -7]
+>>> numbers.sort()
+>>> numbers
+# [-7, 1, 2, 3.14, 5]
+
+furniture = ['table', 'chair', 'rack', 'shelf']
+furniture.sort()
+furniture
+# ['chair', 'rack', 'shelf', 'table']
 ```
 
-## Removing Values from Lists with remove
+You can also pass `True` for the `reverse` keyword argument to have `sort()` sort the values in reverse order:
 
 ```python
-spam = ['cat', 'bat', 'rat', 'elephant']
-spam.remove('bat')
-spam
+>>> furniture.sort(reverse=True)
+>>> furniture
+# ['table', 'shelf', 'rack', 'chair']
 ```
 
-If the value appears multiple times in the list, only the first instance of the value will be removed.
-
-## Sorting the Values in a List with sort
+If you need to sort the values in regular alphabetical order, pass `str.lower` for the key keyword argument in the sort() method call:
 
 ```python
-spam = [2, 5, 3.14, 1, -7]
-spam.sort()
-spam
-```
-
-```python
-spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
-spam.sort()
-spam
-```
-
-You can also pass True for the reverse keyword argument to have sort() sort the values in reverse order:
-
-```python
-spam.sort(reverse=True)
-spam
-```
-
-If you need to sort the values in regular alphabetical order, pass str. lower for the key keyword argument in the sort() method call:
-
-```python
-spam = ['a', 'z', 'A', 'Z']
-spam.sort(key=str.lower)
-spam
+>>> letters = ['a', 'z', 'A', 'Z']
+>>> letters.sort(key=str.lower)
+>>> letters
+# ['a', 'A', 'z', 'Z']
 ```
 
 You can use the built-in function `sorted` to return a new list:
 
 ```python
-spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
-sorted(spam)
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+>>> sorted(furniture)
+# ['chair', 'rack', 'shelf', 'table']
 ```
 
-## Tuple Data Type
+## The Tuple data type
+
+<base-disclaimer>
+  <base-disclaimer-title>
+    <a target="_blanc" href="https://towardsdatascience.com/python-tuples-when-to-use-them-over-lists-75e443f9dcd7#:~:text=key%20takeaways%20are%3B-,The%20key%20difference%20between%20the%20tuples%20and%20lists%20is%20that,memory%20efficient%20than%20the%20lists.">Tuples vs Lists</a>
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+    The key difference between the tuples and lists is that while the <code>tuples</code> are <i>immutable</i> objects the <code>lists</code> are <i>mutable</i>. This means that tuples cannot be changed while the lists can be modified. Tuples are more memory efficient than the lists.
+  </base-disclaimer-content>
+</base-disclaimer>
 
 ```python
-eggs = ('hello', 42, 0.5)
-eggs[0]
-```
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
 
-```python
-eggs[1:3]
-```
+>>> furniture[0]
+# 'table'
 
-```python
-len(eggs)
+>>> furniture[1:3]
+# ['chair', 'rack']
+
+>>> len(furniture)
+# 4
 ```
 
 The main way that tuples are different from lists is that tuples, like strings, are immutable.
 
-## Converting Types with the list and tuple Functions
+## Converting types with list() and tuple()
 
 ```python
-tuple(['cat', 'dog', 5])
-```
+>>> tuple(['cat', 'dog', 5])
+# ('cat', 'dog', 5)
 
-```python
-list(('cat', 'dog', 5))
-```
+>>> list(('cat', 'dog', 5))
+# ['cat', 'dog', 5]
 
-```python
-list('hello')
+>>> list('hello')
+# ['h', 'e', 'l', 'l', 'o']
 ```
