@@ -224,12 +224,12 @@ Test of emptiness example:
 >>> a = [1, 2, 3]
 
 # bad
->>> if len(a) > 0:  # evaluates to false
+>>> if len(a) > 0:  # evaluates to True
 >>>     print("the list is not empty!")
 # the list is not empty!
 
 # good
->>> if a: # evaluates to false
+>>> if a: # evaluates to True
         print("the list is not empty!")
 # the list is not empty!
 ```
