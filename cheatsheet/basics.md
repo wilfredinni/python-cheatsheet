@@ -1,5 +1,5 @@
 ---
-title: Basics
+title: Basics - Python Cheatsheet
 description: The basics of python
 ---
 

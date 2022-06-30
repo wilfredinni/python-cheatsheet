@@ -1,5 +1,5 @@
 ---
-title: Function
+title: Functions - Python Cheatsheet
 ---
 
 # Functions
