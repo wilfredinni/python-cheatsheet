@@ -176,6 +176,13 @@ phrase = ['printed', 'with', 'a', 'dash', 'in', 'between']
 # printed-with-a-dash-in-between-
 ```
 
+The keyword `sep` specify how to separate the objects, if there is more than one:
+
+```python
+print('cats', 'dogs', 'mice', sep=',')
+# cats,dogs,mice
+```
+
 ## The input() Function
 
 This function takes the input from the user and converts it into a string:
