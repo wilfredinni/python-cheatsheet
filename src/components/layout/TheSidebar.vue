@@ -67,10 +67,6 @@ const pages = [
     path: '/cheatsheet/debugging',
   },
   {
-    name: 'Ternary conditional operator',
-    path: '/cheatsheet/ternary-operator',
-  },
-  {
     name: 'Args and Kwargs',
     path: '/cheatsheet/args-and-kwargs',
   },
