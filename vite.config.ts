@@ -91,8 +91,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
       manifest: {
-        name: 'Vinilo',
-        short_name: 'Vinilo',
+        name: 'Python Cheatsheet',
+        short_name: 'Python Cheatsheet',
         theme_color: '#ffffff',
         icons: [
           {
