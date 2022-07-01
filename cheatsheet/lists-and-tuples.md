@@ -68,6 +68,20 @@ Lists are are one of the 4 data types in Python used to store collections of dat
 # ['table', 'chair', 'rack', 'shelf']
 ```
 
+Slicing the complete list will perform a copy:
+
+```python
+>>> spam2 = spam[:]
+# ['cat', 'bat', 'rat', 'elephant']
+
+>>> spam.append('dog')
+>>> spam
+# ['cat', 'bat', 'rat', 'elephant', 'dog']
+
+>>> spam2
+# ['cat', 'bat', 'rat', 'elephant']
+```
+
 ## Getting a list length with len()
 
 ```python
@@ -80,6 +94,7 @@ Lists are are one of the 4 data types in Python used to store collections of dat
 
 ```python
 >>> furniture = ['table', 'chair', 'rack', 'shelf']
+
 >>> furniture[0] = 'desk'
 >>> furniture
 # ['desk', 'chair', 'rack', 'shelf']
@@ -239,7 +254,7 @@ The multiple assignment trick can also be used to swap the values in two variabl
 # ['table', 'bed', 'chair', 'rack', 'shelf']
 ```
 
-## Removing values with del() and remove()
+## Removing values with del(), remove() and pop()
 
 ### del()
 
@@ -275,6 +290,26 @@ The multiple assignment trick can also be used to swap the values in two variabl
     If the value appears multiple times in the list, only the first instance of the value will be removed.
   </base-warning-content>
 </base-warning>
+
+### pop()
+
+`pop` will return the removed element:
+
+```python
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+
+>>> furniture.pop()
+'elephant'
+
+>>> furniture
+['cat', 'bat', 'rat']
+
+>>> furniture.pop(0)
+'cat'
+
+>>> furniture
+['bat', 'rat']
+```
 
 ## Sorting values with sort
 
