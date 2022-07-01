@@ -6,7 +6,7 @@ title: Sets
 
 <base-disclaimer>
   <base-disclaimer-title>
-    From the Python 3 <a href="https://docs.python.org/3/tutorial/datastructures.html#sets">documentation</a>
+    From the Python 3 <a targe="_blanc" href="https://docs.python.org/3/tutorial/datastructures.html#sets">documentation</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
     A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries.
