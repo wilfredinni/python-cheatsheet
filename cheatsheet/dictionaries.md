@@ -100,7 +100,7 @@ Using the `keys()`, `values()`, and `items()` methods, a for loop can iterate ov
 # False
 ```
 
-## The get Method
+## The get() Method
 
 The `get` method returns the value of an item with by using the key. If the key doesn't exist, it returns `None`:
 
@@ -126,7 +126,7 @@ You can also change the default `None` value for other of your choice:
 # 'She is deeply in love with sweetheart'
 ```
 
-## The setdefault Method
+## The setdefault() Method
 
 It's possible to add an item to a dictionary in this way:
 
@@ -136,7 +136,7 @@ It's possible to add an item to a dictionary in this way:
 ...     wife['has_hair'] = True
 ```
 
-Using `setdefault` we could make the same code more shortly:
+Using `setdefault` we could make the same code more short:
 
 ```python
 >>> wife = {'name': 'Rose', 'age': 33}
