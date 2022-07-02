@@ -11,6 +11,7 @@
     "cSpell.words": [
         "abspath",
         "Anyconfig",
+        "asctime",
         "Batmobile",
         "Batwowowowoman",
         "catnames",
@@ -34,6 +35,7 @@
         "isupper",
         "iterdir",
         "joinpath",
+        "levelname",
         "listdir",
         "ljust",
         "lstrip",
@@ -43,6 +45,7 @@
         "nlink",
         "pathlib",
         "pathobj",
+        "pyshell",
         "readlines",
         "Regexes",
         "relpath",
