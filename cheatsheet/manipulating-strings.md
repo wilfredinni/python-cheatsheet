@@ -1,10 +1,13 @@
 ---
 title: Manipulation strings
+description: An escape character is created by typing a backslash \ followed by the character you want to insert.
 ---
 
 # Manipulating Strings
 
-## Escape Characters
+## Escape characters
+
+An escape character is created by typing a backslash `\` followed by the character you want to insert.
 
 | Escape character | Prints as            |
 | ---------------- | -------------------- |
@@ -13,315 +16,268 @@ title: Manipulation strings
 | `\t`             | Tab                  |
 | `\n`             | Newline (line break) |
 | `\\`             | Backslash            |
-
-Example:
+| `\b`             | Backspace            |
+| `\ooo`           | Octal value          |
+| `\r`             | Carriage Return      |
 
 ```python
-print("Hello there!\nHow are you?\nI\'m doing fine.")
-Hello there!
-How are you?
+>>> print("Hello there!\nHow are you?\nI\'m doing fine.")
+# Hello there!
+# How are you?
+# I'm doing fine.
 ```
 
-## Raw Strings
+## Raw strings
 
 A raw string completely ignores all escape characters and prints any backslash that appears in the string.
 
 ```python
-print(r'That is Carol\'s cat.')
+>>> print(r"Hello there!\nHow are you?\nI\'m doing fine.")
+# Hello there!\nHow are you?\nI\'m doing fine.
 ```
 
-Note: mostly used for regular expression definition (see `re` package)
+Raw strings are mostly used for <router-link to="/cheatsheet/regular-expressions">regular expression</router-link> definition.
 
-## Multiline Strings with Triple Quotes
+## Multiline Strings with triple quotes
 
 ```python
-print('''Dear Alice,
+>>> print(
+... """Dear Alice,
+...
+... Eve's cat has been arrested for catnapping, cat burglary, and extortion.
+...
+... Sincerely,
+... Bob"""
+... )
 
-Eve's cat has been arrested for catnapping, cat burglary, and extortion.
+# Dear Alice,
 
-Sincerely,
-Bob''')
+# Eve's cat has been arrested for catnapping, cat burglary, and extortion.
+
+# Sincerely,
+# Bob
 ```
 
-To keep a nicer flow in your code, you can use the `dedent` function from the `textwrap` standard package.
-
-```python
-from textwrap import dedent
-
-def my_function():
-    print(dedent('''
-        Dear Alice,
-
-        Eve's cat has been arrested for catnapping, cat burglary, and extortion.
-
-        Sincerely,
-        Bob
-        ''')).strip()
-```
-
-This generates the same string than before.
-
-## Indexing and Slicing Strings
+## Indexing and Slicing strings
 
     H   e   l   l   o       w   o   r   l   d    !
     0   1   2   3   4   5   6   7   8   9   10   11
 
-```python
-spam = 'Hello world!'
-spam[0]
-```
+### Indexing
 
 ```python
-spam[4]
+>>> spam = 'Hello world!'
+
+>>> spam[0]
+# 'H'
+
+>>> spam[4]
+# 'o'
+
+>>> spam[-1]
+# '!'
 ```
+
+### Slicing
 
 ```python
-spam[-1]
+>>> spam = 'Hello world!'
+
+>>> spam[0:5]
+# 'Hello'
+
+>>> spam[:5]
+# 'Hello'
+
+>>> spam[6:]
+# 'world!'
+
+>>> spam[6:-1]
+# 'world'
+
+>>> spam[:-1]
+# 'Hello world'
+
+>>> spam[::-1]
+# '!dlrow olleH'
+
+>>> fizz = spam[0:5]
+>>> fizz
+# 'Hello'
 ```
 
-Slicing:
+## The in and not in operators
 
 ```python
+>>> 'Hello' in 'Hello World'
+# True
 
-spam[0:5]
+>>> 'Hello' in 'Hello'
+# True
+
+>>> 'HELLO' in 'Hello World'
+# False
+
+>>> '' in 'spam'
+# True
+
+>>> 'cats' not in 'cats and dogs'
+# False
 ```
+
+## upper() and lower() methods
+
+Transforms a string to upper and lower case:
 
 ```python
-spam[:5]
+>>> greet = 'Hello world!'
+>>> greet = greet.upper()
+>>> greet
+# 'HELLO WORLD!'
+
+>>> greet = greet.lower()
+>>> greet
+# 'hello world!'
 ```
+
+## isupper() and islower() methods
+
+Return `True` or `False` after evaluating if a string is in upper or lower case:
 
 ```python
-spam[6:]
+>>> spam = 'Hello world!'
+>>> spam.islower()
+False
+
+>>> spam.isupper()
+False
+
+>>> 'HELLO'.isupper()
+True
+
+>>> 'abc12345'.islower()
+True
+
+>>> '12345'.islower()
+False
+
+>>> '12345'.isupper()
+False
 ```
+
+## The isX string methods
+
+| Method      | Description                                                                                                                    |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| isalpha()   | returns `True` if the string consists only of letters.                                                                         |
+| isalnum()   | returns `True` if the string consists only of letters and numbers.                                                             |
+| isdecimal() | returns `True` if the string consists only of numbers.                                                                         |
+| isspace()   | returns `True` if the string consists only of spaces, tabs, and new-lines.                                                     |
+| istitle()   | returns `True` if the string consists only of words that begin with an uppercase letter followed by only lowercase characters. |
+
+## The startswith() and endswith() methods
 
 ```python
-spam[6:-1]
+>>> 'Hello world!'.startswith('Hello')
+# True
+
+>>> 'Hello world!'.endswith('world!')
+# True
+
+>>> 'abc123'.startswith('abcdef')
+# False
+
+>>> 'abc123'.endswith('12')
+# False
+
+>>> 'Hello world!'.startswith('Hello world!')
+# True
+
+>>> 'Hello world!'.endswith('Hello world!')
+# True
 ```
+
+## The join() and split() string methods
+
+### join()
+
+The `join()` method takes all the items in an iterable, like a <router-link to="/cheatsheet/lists-and-tuples">list</router-link>, <router-link to="/cheatsheet/dictionaries">dictionary</router-link>, <router-link to="/cheatsheet/lists-and-tuples#the-tuple-data-type">tuple</router-link> or <router-link to="/cheatsheet/sets">set</router-link>, and joins them into a string. You can also specify a separator.
 
 ```python
-spam[:-1]
+>>> ''.join(['My', 'name', 'is', 'Simon'])
+'MynameisSimon'
+
+>>> ', '.join(['cats', 'rats', 'bats'])
+# 'cats, rats, bats'
+
+>>> ' '.join(['My', 'name', 'is', 'Simon'])
+# 'My name is Simon'
+
+>>> 'ABC'.join(['My', 'name', 'is', 'Simon'])
+# 'MyABCnameABCisABCSimon'
 ```
+
+### split()
+
+The `split()` method splits a `string` into a `list`. By default it will use spaces to separate the items, but you can also set another character of choice:
 
 ```python
-spam[::-1]
+>>> 'My name is Simon'.split()
+# ['My', 'name', 'is', 'Simon']
+
+>>> 'MyABCnameABCisABCSimon'.split('ABC')
+# ['My', 'name', 'is', 'Simon']
+
+>>> 'My name is Simon'.split('m')
+# ['My na', 'e is Si', 'on']
 ```
+
+## Justifying text with rjust(), ljust() and center()
 
 ```python
-spam = 'Hello world!'
-fizz = spam[0:5]
-fizz
+>>> 'Hello'.rjust(10)
+# '     Hello'
+
+>>> 'Hello'.rjust(20)
+# '               Hello'
+
+>>> 'Hello World'.rjust(20)
+# '         Hello World'
+
+>>> 'Hello'.ljust(10)
+# 'Hello     '
+
+>>> 'Hello'.center(20)
+# '       Hello       '
 ```
 
-## The in and not in Operators with Strings
+An optional second argument to `rjust()` and `ljust()` will specify a fill character other than a space character:
 
 ```python
-'Hello' in 'Hello World'
+>>> 'Hello'.rjust(20, '*')
+# '***************Hello'
+
+>>> 'Hello'.ljust(20, '-')
+# 'Hello---------------'
+
+>>> 'Hello'.center(20, '=')
+# '=======Hello========'
 ```
+
+## Removing whitespace with strip(), rstrip(), and lstrip()
 
 ```python
-'Hello' in 'Hello'
-```
+>>> spam = '    Hello World     '
+>>> spam.strip()
+# 'Hello World'
 
-```python
-'HELLO' in 'Hello World'
-```
+>>> spam.lstrip()
+# 'Hello World '
 
-```python
-'' in 'spam'
-```
+>>> spam.rstrip()
+# '    Hello World'
 
-```python
-'cats' not in 'cats and dogs'
-```
-
-## The in and not in Operators with list
-
-```python
-a = [1, 2, 3, 4]
-5 in a
-```
-
-```python
-2 in a
-```
-
-## The upper-lower-isupper-islower Methods
-
-`upper()` and `lower()`:
-
-```python
-spam = 'Hello world!'
-spam = spam.upper()
-spam
-```
-
-```python
-spam = spam.lower()
-spam
-```
-
-isupper() and islower():
-
-```python
-spam = 'Hello world!'
-spam.islower()
-```
-
-```python
-spam.isupper()
-```
-
-```python
-'HELLO'.isupper()
-```
-
-```python
-'abc12345'.islower()
-```
-
-```python
-'12345'.islower()
-```
-
-```python
-'12345'.isupper()
-```
-
-## The isX String Methods
-
-- **isalpha()** returns True if the string consists only of letters and is not blank.
-- **isalnum()** returns True if the string consists only of lettersand numbers and is not blank.
-- **isdecimal()** returns True if the string consists only ofnumeric characters and is not blank.
-- **isspace()** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
-- **istitle()** returns True if the string consists only of wordsthat begin with an uppercase letter followed by onlylowercase letters.
-
-## The startswith and endswith String Methods
-
-```python
-'Hello world!'.startswith('Hello')
-```
-
-```python
-'Hello world!'.endswith('world!')
-```
-
-```python
-'abc123'.startswith('abcdef')
-```
-
-```python
-'abc123'.endswith('12')
-```
-
-```python
-'Hello world!'.startswith('Hello world!')
-```
-
-```python
-'Hello world!'.endswith('Hello world!')
-```
-
-## The join and split String Methods
-
-join():
-
-```python
-', '.join(['cats', 'rats', 'bats'])
-```
-
-```python
-' '.join(['My', 'name', 'is', 'Simon'])
-```
-
-```python
-'ABC'.join(['My', 'name', 'is', 'Simon'])
-```
-
-split():
-
-```python
-'My name is Simon'.split()
-```
-
-```python
-'MyABCnameABCisABCSimon'.split('ABC')
-```
-
-```python
-'My name is Simon'.split('m')
-```
-
-## Justifying Text with rjust-ljust-center
-
-rjust() and ljust():
-
-```python
-'Hello'.rjust(10)
-```
-
-```python
-'Hello'.rjust(20)
-```
-
-```python
-'Hello World'.rjust(20)
-```
-
-```python
-'Hello'.ljust(10)
-```
-
-An optional second argument to rjust() and ljust() will specify a fill character other than a space character. Enter the following into the interactive shell:
-
-```python
-'Hello'.rjust(20, '*')
-```
-
-```python
-'Hello'.ljust(20, '-')
-```
-
-center():
-
-```python
-'Hello'.center(20)
-```
-
-```python
-'Hello'.center(20, '=')
-```
-
-## Removing Whitespace with strip, rstrip, and lstrip
-
-```python
-spam = '    Hello World     '
-spam.strip()
-```
-
-```python
-spam.lstrip()
-```
-
-```python
-spam.rstrip()
-```
-
-```python
-spam = 'SpamSpamBaconSpamEggsSpamSpam'
-spam.strip('ampS')
-```
-
-## Copying and Pasting Strings with the pyperclip Module
-
-First, install `pypeerclip` with pip:
-
-```shell
-pip install pyperclip
-```
-
-```python
-import pyperclip
-
-pyperclip.copy('Hello world!')
-pyperclip.paste()
+>>> spam = 'SpamSpamBaconSpamEggsSpamSpam'
+>>> spam.strip('ampS')
+# 'BaconSpamEggs'
 ```
