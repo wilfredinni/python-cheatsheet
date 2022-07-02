@@ -1,5 +1,5 @@
 ---
-title: Args and Kwargs
+title: Args and Kwargs - Python Cheatsheet
 description: args and kwargs may seem scary, but the truth is that they are not that difficult to grasp and have the power to grant your functions with flexibility and readability
 ---
 
