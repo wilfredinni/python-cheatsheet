@@ -18,7 +18,8 @@
         "ljust",
         "lstrip",
         "rjust",
-        "rstrip"
+        "rstrip",
+        "strformat"
     ],
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#65c89b",
