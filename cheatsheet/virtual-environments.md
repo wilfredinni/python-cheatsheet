@@ -1,3 +1,8 @@
+---
+title: Virtual environments - Python Cheatsheet
+description: The use of a Virtual Environment is to test python code in encapsulated environments and to also avoid filling the base Python installation with libraries we might use for only one project.
+---
+
 # Virtual Environment
 
 The use of a Virtual Environment is to test python code in encapsulated environments and to also avoid filling the base Python installation with libraries we might use for only one project.
@@ -14,7 +19,7 @@ The use of a Virtual Environment is to test python code in encapsulated environm
 
 Usage:
 
-1.  Make a Virtual Environment
+1.  Make a Virtual Environment named `HelloWold`
 
         mkvirtualenv HelloWold
 
@@ -28,7 +33,7 @@ Usage:
 
 1.  Deactivate
 
-    To move onto something else in the command line type ‘deactivate’ to deactivate your environment.
+    To move onto something else in the command line type `deactivate` to deactivate your environment.
 
         deactivate
 
@@ -36,7 +41,7 @@ Usage:
 
 1.  Workon
 
-    Open up the command prompt and type ‘workon HelloWold’ to activate the environment and move into your root project folder
+    Open up the command prompt and type `workon HelloWold` to activate the environment and move into your root project folder
 
         workon HelloWold
 
@@ -103,7 +108,11 @@ Usage:
 
         poetry remove pendulum
 
-For more information, check the [documentation](https://poetry.eustace.io/docs/).
+For more information, check the [documentation](https://poetry.eustace.io/docs/) or read here:
+
+- [Python projects with Poetry and VSCode. Part 1](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1/)
+- [Python projects with Poetry and VSCode. Part 2](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-2/)
+- [Python projects with Poetry and VSCode. Part 3](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-3/)
 
 ## pipenv
 
