@@ -1,8 +1,11 @@
 ---
 title: Main function
+description: is the name of the scope in which top-level code executes. A module’s name is set equal to main when read from standard input, a script, or from an interactive prompt.
 ---
 
-# `__main__` Top-level script environment
+# Main top-level script environment
+
+## What is it
 
 `__main__` is the name of the scope in which top-level code executes.
 A module’s **name** is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
@@ -25,19 +28,11 @@ def add(a, b):
     return a+b
 
 add(10, 20) # we can test it by calling the function save it as calculate.py
-```
 
-```python
 # Now if we want to use that module by importing we have to comment out our call,
 # Instead we can write like this in calculate.py
 if __name__ == "__main__":
     add(3, 5)
-```
-
-```python
-import calculate
-
-calculate.add(3, 5)
 ```
 
 ## Advantages
