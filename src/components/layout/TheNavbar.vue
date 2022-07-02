@@ -13,7 +13,7 @@ const topMenu = [
   <Disclosure
     v-slot="{ open }"
     as="nav"
-    class="sticky top-0 z-40 w-full flex-none bg-white/25 backdrop-blur dark:border-slate-50/[0.06] dark:bg-transparent lg:z-50 lg:border-b lg:border-slate-900/10"
+    class="sticky top-0 z-40 w-full flex-none bg-white/40 backdrop-blur dark:border-slate-50/[0.06] dark:bg-transparent lg:z-50 lg:border-b lg:border-slate-900/10"
   >
     <div class="mx-auto max-w-8xl px-2 sm:px-6 lg:px-12">
       <div class="relative flex h-14 justify-between">
@@ -95,7 +95,7 @@ const topMenu = [
               :class="
                 route.path === item.path
                   ? 'text-sky-600 dark:text-sky-400'
-                  : 'text-gray-500 hover:text-sky-500 dark:text-gray-200 dark:hover:text-sky-400'
+                  : 'text-slate-700 hover:text-sky-500 dark:text-gray-200 dark:hover:text-sky-400'
               "
             >
               {{ item.name }}
