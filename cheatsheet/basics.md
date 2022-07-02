@@ -1,6 +1,6 @@
 ---
 title: Basics - Python Cheatsheet
-description: The basics of python
+description: The basics of python. We all need to start somewhere, so how about doing it here.
 ---
 
 # Python Basics
