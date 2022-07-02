@@ -1,12 +1,13 @@
 ---
 title: Json and YAML
+description: JSON stands for JavaScript Object Notation and is a lightweight format for storing and transporting data. Json is often used when data is sent from a server to a web page.
 ---
 
 # JSON, YAML and configuration files
 
 ## JSON
 
-Open a JSON file with:
+JSON stands for JavaScript Object Notation and is a lightweight format for storing and transporting data. Json is often used when data is sent from a server to a web page.
 
 ```python
 import json
@@ -26,10 +27,9 @@ with open("filename.json", "w") as f:
 
 ## YAML
 
-Compared to JSON, YAML allows a much better humain maintainance and gives ability to add comments.
-It is a convinient choice for configuration files where human will have to edit.
+Compared to JSON, YAML allows a much better human maintainability and gives ability to add comments. It is a convenient choice for configuration files where human will have to edit.
 
-There are two main librairies allowing to access to YAML files:
+There are two main libraries allowing to access to YAML files:
 
 - [PyYaml](https://pypi.python.org/pypi/PyYAML)
 - [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
@@ -51,7 +51,7 @@ with open("filename.yaml") as f:
 
 ## Anyconfig
 
-[Anyconfig](https://pypi.python.org/pypi/anyconfig) is a very handy package allowing to abstract completly the underlying configuration file format. It allows to load a Python dictionary from JSON, YAML, TOML, and so on.
+[Anyconfig](https://pypi.python.org/pypi/anyconfig) is a very handy package allowing to abstract completely the underlying configuration file format. It allows to load a Python dictionary from JSON, YAML, TOML, and so on.
 
 Install it with:
 
