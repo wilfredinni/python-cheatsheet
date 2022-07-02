@@ -19,6 +19,7 @@
         "contextlib",
         "contextmanager",
         "copytree",
+        "Distutils",
         "DOTALL",
         "Epub",
         "Errno",

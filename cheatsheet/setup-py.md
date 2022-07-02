@@ -1,8 +1,26 @@
 ---
 title: Setup.py
+description: The setup script is the centre of all activity in building, distributing, and installing modules using the Distutils. The main purpose of the setup script is to describe your module distribution to the Distutils, so that the various commands that operate on your modules do the right thing.
 ---
 
 # setup.py
+
+<base-warning>
+  <base-warning-title>
+    A 'controversial' opinion
+  </base-warning-title>
+  <base-warning-content>
+    Using `setup.py` to pack and distribute your python packages can be quite challenging sometimes. Tools like <a target="_blank" href="https://python-poetry.org/">Poetry</a> make not only the packaging a <b>lot easy</b>, but also help you to manage your dependencies in very convenient way.
+  </base-warning-content>
+</base-warning>
+
+If you want more information about Poetry you can read the following articles:
+
+- [Python projects with Poetry and VSCode. Part 1](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1/)
+- [Python projects with Poetry and VSCode. Part 2](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-2/)
+- [Python projects with Poetry and VSCode. Part 3](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-3/)
+
+## Introduction
 
 The setup script is the centre of all activity in building, distributing, and installing modules using the Distutils. The main purpose of the setup script is to describe your module distribution to the Distutils, so that the various commands that operate on your modules do the right thing.
 
@@ -15,6 +33,8 @@ python setup.py install
 ```
 
 and module will install itself.
+
+## Example
 
 Our initial setup.py will also include information about the license and will re-use the README.txt file for the long_description field. This will look like:
 
@@ -29,4 +49,4 @@ setup(
 )
 ```
 
-Find more information visit [http://docs.python.org/install/index.html](http://docs.python.org/install/index.html).
+Find more information visit the [official documentation](http://docs.python.org/install/index.html).
