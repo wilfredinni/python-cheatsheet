@@ -1,5 +1,6 @@
 ---
 title: Dataclasses
+description: Dataclasses are python classes but are suited for storing data objects. This module provides a decorator and functions for automatically adding generated special methods such as __init__() and __repr__() to user-defined classes.
 ---
 
 # Dataclasses
@@ -15,28 +16,26 @@ This module provides a decorator and functions for automatically adding generate
 
 Python 3.7 provides a decorator dataclass that is used to convert a class into a dataclass.
 
-python 2.7
-
 ```python
-class Number:
-    def __init__(self, val):
-        self.val = val
-
-obj = Number(2)
-obj.val
+>>> class Number:
+...     def __init__(self, val):
+...         self.val = val
+...
+>>> obj = Number(2)
+>>> obj.val
+# 2
 ```
 
 with dataclass
 
 ```python
-from dataclasses import dataclass
-
-@dataclass
-class Number:
-    val: int
-
-obj = Number(2)
-obj.val
+>>> @dataclass
+... class Number:
+...     val: int
+...
+>>> obj = Number(2)
+>>> obj.val
+# 2
 ```
 
 ## Default values
@@ -44,24 +43,21 @@ obj.val
 It is easy to add default values to the fields of your data class.
 
 ```python
-from dataclasses import dataclass
+>>> @dataclass
+... class Product:
+...     name: str
+...     count: int = 0
+...     price: float = 0.0
+...
+>>> obj = Product("Python")
+>>> obj.name
+# Python
 
-@dataclass
-class Product:
-    name: str
-    count: int = 0
-    price: float = 0.0
+>>> obj.count
+# 0
 
-obj = Product("Python")
-obj.name
-```
-
-```python
-obj.count
-```
-
-```python
-obj.price
+>>> obj.price
+# 0.0
 ```
 
 ## Type hints
@@ -69,11 +65,12 @@ obj.price
 It is mandatory to define the data type in dataclass. However, If you don't want specify the datatype then, use `typing.Any`.
 
 ```python
-from dataclasses import dataclass
-from typing import Any
+>>> from dataclasses import dataclass
+>>> from typing import Any
 
-@dataclass
-class WithoutExplicitTypes:
-   name: Any
-   value: Any = 42
+>>> @dataclass
+... class WithoutExplicitTypes:
+...    name: Any
+...    value: Any = 42
+...
 ```
