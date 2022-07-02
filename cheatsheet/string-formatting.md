@@ -1,5 +1,5 @@
 ---
-title: String Formatting
+title: String Formatting - Python Cheatsheet
 description: If your are using Python 3.6+, string f-strings are the recommended way to format strings.
 ---
 
