@@ -9,7 +9,12 @@
     "typescript.validate.enable": true,
     "editor.tabSize": 2,
     "cSpell.words": [
+        "Batmobile",
+        "Batwowowowoman",
+        "DOTALL",
         "Epub",
+        "findall",
+        "IGNORECASE",
         "isalpha",
         "isdecimal",
         "islower",
@@ -17,6 +22,7 @@
         "isupper",
         "ljust",
         "lstrip",
+        "Regexes",
         "rjust",
         "rstrip",
         "strformat"
@@ -42,4 +48,9 @@
     },
     "peacock.remoteColor": "#42b883",
     "cSpell.language": "en",
+    "cSpell.ignoreWords": [
+        "AEIOU",
+        "Robocop",
+        "Sweigart"
+    ],
 }
