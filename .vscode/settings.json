@@ -16,6 +16,8 @@
         "Batwowowowoman",
         "catnames",
         "chdir",
+        "contextlib",
+        "contextmanager",
         "copytree",
         "DOTALL",
         "Epub",
