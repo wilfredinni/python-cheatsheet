@@ -1,3 +1,18 @@
 {
-  "recommendations": ["Vue.volar"]
+  "recommendations": [
+    "vue.volar",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "johnpapa.vscode-peacock",
+    "csstools.postcss",
+    "bungcip.better-toml",
+    "streetsidesoftware.code-spell-checker",
+    "irongeek.vscode-env",
+    "dbaeumer.vscode-eslint",
+    "lokalise.i18n-ally",
+    "yzhang.markdown-all-in-one",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "shardulm94.trailing-spaces"
+  ]
 }
