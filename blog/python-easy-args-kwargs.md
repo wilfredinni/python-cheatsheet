@@ -1,5 +1,5 @@
 ---
-title: Python *args and **kwargs Made Easy
+title: Python *args and **kwargs Made Easy - Python Cheatsheet
 description: args and kwargs may seem scary, but the truth is that they are not that difficult to grasp and have the power to grant your functions with flexibility and readability.
 date: March 08, 2019
 updated: July 1, 2022
@@ -16,7 +16,7 @@ meta:
 
 <div>
   <span class="font-display text-sm font-medium text-sky-500">Posted on {{frontmatter.date}}</span>
-  <h1>{{frontmatter.title}}</h1>
+  <h1>Python *args and **kwargs Made Easy</h1>
 </div>
 
 I do not know about you, but every time I saw some function with `*args` and `**kwargs` as parameters, I'd get a little scared. I've even "used" them while doing some backend work with Django without understanding a thing. If you're a self-taught developer like me, I know you've been there too.
