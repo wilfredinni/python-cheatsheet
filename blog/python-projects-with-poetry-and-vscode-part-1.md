@@ -38,7 +38,7 @@ In this first part we will:
 - Create a Virtual Environment.
 - Manage dependencies.
 
-In the [Second Part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-2) we'll:
+In the <router-link to="/blog/python-projects-with-poetry-and-vscode-part-2">Second Part</router-link> we'll:
 
 - Add our virtual Environment to [VSCode](https://code.visualstudio.com/).
 - Integrate our dev dependencies:
@@ -68,7 +68,7 @@ $ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-po
 
 This way we will later be able to update poetry to the latest stable version with the `poetry self update` command.
 
-## Starting a New Project
+## Starting a new project
 
 We can now start a new Python project by using the `poetry new [project_name]` command. I will call it **_how-long_** and is going to be a very simple library to measure a function execution time:
 
@@ -93,7 +93,7 @@ how-long
 
 > Note: To be able to publish your project, you need an available name. Use the [PyPI](https://pypi.org/) search for this.
 
-### The pyproject.toml File
+### The pyproject.toml file
 
 The **pyproject.toml** file will manage the details and dependencies of the project:
 
@@ -148,11 +148,11 @@ After is done, a new file, `poetry.lock` will be created.
 
 > When Poetry has finished installing, it writes all the packages and the exact versions of them that it downloaded to the poetry.lock file, locking the project to those specific versions. You should commit the poetry.lock file to your project repo so that all people working on the project are locked to the same versions of dependencies.
 
-## Dependency Management
+## Dependency management
 
 One way to add or remove dependencies is to directly edit _pyproject.toml_ and then run `poetry install` to apply the changes. We will instead use the `add` and `remove` commands to avoid manual modifications.
 
-### Adding Dependencies
+### Adding dependencies
 
 Let's add two packages to the project, _pendulum_ and _coo_:
 
@@ -164,7 +164,7 @@ $ poetry add pendulum coo
 
 Open _pyproject.toml_ and _poetry.lock_ and see how they have updated.
 
-### Adding Dev Dependencies
+### Adding Dev dependencies
 
 These dependencies will be available only during development, Poetry will not include them when building and publishing the project.
 
@@ -192,7 +192,7 @@ $ poetry add -D black --allow-prereleases
 
 ![poetry-add-dev-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p1/poetry-add-dev.png)
 
-### Removing Dependencies
+### Removing dependencies
 
 You know what, I changed my mind, this project will use nor _coo_ nor _mypy_. Start by removing _coo_, a normal dependency of our project:
 
@@ -221,6 +221,6 @@ In this first part, we have started a new project, created a Virtual Environment
 | `poetry remove -D [package-name]` | Remove a dev package from a Virtual Environment.       |
 | `poetry self:update`              | Update poetry to the latest stable version.            |
 
-In the [Second Part](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-2), we will see more _Poetry_ commands, add our Virtual Environment to _VSCode_ and use the dev packages we installed to lint (Flake8), format (Black) and test (Pytest) our code inside the editor. Finally, in a third one, we will write and publish a sample library to _PyPI_.
+In a <router-link to="/blog/python-projects-with-poetry-and-vscode-part-2">second article</router-link>, we will see more _Poetry_ commands, add our Virtual Environment to _VSCode_ and use the dev packages we installed to lint (Flake8), format (Black) and test (Pytest) our code inside the editor. Finally, in a third one, we will write and publish a sample library to _PyPI_.
 
 Any doubt or suggestion? Please leave a comment.
