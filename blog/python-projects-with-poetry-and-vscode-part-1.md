@@ -38,7 +38,7 @@ In this first part we will:
 - Create a Virtual Environment.
 - Manage dependencies.
 
-In the <router-link to="/blog/python-projects-with-poetry-and-vscode-part-2">Second Part</router-link> we'll:
+In the <router-link to="/blog/python-projects-with-poetry-and-vscode-part-2">second article</router-link> we'll:
 
 - Add our virtual Environment to [VSCode](https://code.visualstudio.com/).
 - Integrate our dev dependencies:
@@ -46,7 +46,7 @@ In the <router-link to="/blog/python-projects-with-poetry-and-vscode-part-2">Sec
   - _Black_
   - _Pytest_
 
-And finally, in a [third](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-3) part we'll:
+And finally, in a <router-link to="/blog/python-projects-with-poetry-and-vscode-part-3">third article</router-link> we'll:
 
 - Write a sample library.
 - Build our project with _Poetry_.

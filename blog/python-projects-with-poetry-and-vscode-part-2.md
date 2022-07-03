@@ -40,7 +40,7 @@ In this second part we'll:
   - _Black_
   - _Pytest_
 
-And in a **third article** we will write a sample library, build our project with _Poetry_ and publish it on _PyPI_.
+And in a <router-link to="/blog/python-projects-with-poetry-and-vscode-part-3">third article</router-link> we will write a sample library, build our project with _Poetry_ and publish it on _PyPI_.
 
 Before we start, make sure you have installed [VSCode](https://code.visualstudio.com/), added the [Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python) extension and that you have followed and/or understood the <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">first article</router-link> of this series.
 
@@ -175,7 +175,7 @@ So far we have:
 - <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">Started a new project</router-link>, Created a Virtual Environment, and added, deleted and updated dependencies.
 - Added our [Virtual Environment to VSCode](#setting-up-poetry-on-vscode), [Configured _Flake8_](#flake8) to _lint_ our code as we type, choose [_Black_](#black) as the formatter and [included _Pytest_](#pytest) to run our tests in a visual way.
 
-Finally, in the [third](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-3) and last article we will:
+Finally, in the <router-link to="/blog/python-projects-with-poetry-and-vscode-part-3">third and last article</router-link> we will:
 
 - Write a sample library.
 - Build our project with _Poetry_.

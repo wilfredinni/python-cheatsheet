@@ -45,7 +45,7 @@ Usage:
 
         workon HelloWold
 
-## poetry
+## Poetry
 
 <base-disclaimer>
   <base-disclaimer-title>
@@ -110,11 +110,11 @@ Usage:
 
 For more information, check the [documentation](https://poetry.eustace.io/docs/) or read here:
 
-- [Python projects with Poetry and VSCode. Part 1](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1/)
-- [Python projects with Poetry and VSCode. Part 2](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-2/)
-- [Python projects with Poetry and VSCode. Part 3](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-3/)
+- <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">Python projects with Poetry and VSCode. Part 1</router-link>
+- <router-link to="/blog/python-projects-with-poetry-and-vscode-part-2">Python projects with Poetry and VSCode. Part 2</router-link>
+- <router-link to="/blog/python-projects-with-poetry-and-vscode-part-3">Python projects with Poetry and VSCode. Part 3</router-link>
 
-## pipenv
+## Pipenv
 
 <base-disclaimer>
   <base-disclaimer-title>
@@ -150,7 +150,7 @@ For more information, check the [documentation](https://poetry.eustace.io/docs/)
 
 Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/).
 
-## anaconda
+## Anaconda
 
 <base-disclaimer>
   <base-disclaimer-title>
