@@ -27,25 +27,12 @@ This project and everyone who participates in it is governed by the [Contributor
 - Ask for new topics by creating an [Issue](https://github.com/wilfredinni/python-cheatsheet/issues).
 - Read the issues, Fork the project and do a [Pull Request](https://github.com/wilfredinni/python-cheatsheet/pulls).
 - Report any kind of error or typo by creating an [Issue](https://github.com/wilfredinni/python-cheatsheet/issues) or fix it with a [Pull Request](https://github.com/wilfredinni/python-cheatsheet/pulls).
-- **Write an article** that _could_ be published in the [Blog](https://www.pythoncheatsheet.org/blog) and used in the [webpage](https://www.pythoncheatsheet.org) as reference.
-
-## Styling
-
-**Important!** Edit only the README.md and if you can, use [Notedown](https://github.com/aaren/notedown) to convert it to a Jupyter Notebook (no problem if you can't).
-
-- Use `##` headers for titles.
-- Use `##` for the subcategories.
-- Add a link to your section to the table of contents.
-- Make sure to include examples and keep explanations short.
-- At the end of your section or subcategory, add a [_Return to the Top_](#python-cheatsheet) link.
 
 ## What you need to Know
 
-If you don't know where to start, please check this out:
+If you don't know where to start:
 
 - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
 - [Mastering Issues](https://guides.github.com/features/issues/).
 - [Forking Projects](https://guides.github.com/activities/forking/).
 - And read the rest of the [GitHub Guides](https://guides.github.com/).
-
-That is all! thank you again for taking the time to check how to contribute.
