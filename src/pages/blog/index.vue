@@ -1,4 +1,15 @@
 <script setup>
+useHead({
+  title: 'Blog - Python Cheatsheet',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'These articles provide a deeper look to the the contents of the Python Cheatsheet.',
+    },
+  ],
+})
+
 const router = useRouter()
 
 const articles = computed(() => {
