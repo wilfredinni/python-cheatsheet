@@ -1,8 +1,15 @@
+---
+title: 'Contributing - Python Cheatsheet'
+description: The following is a set of guidelines for contributing to the Python cheatsheet. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document.
+date: June 09, 2018
+updated: July 3, 2022
+---
+
 # Contributing
 
 First off, thank you for taking the time to contribute!
 
-The following is a set of guidelines for contributing to the Python cheatsheet. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to [this document](https://github.com/wilfredinni/python-cheatsheet/blob/master/CONTRIBUTING.md) in a pull request.
+The following is a set of guidelines for contributing to the Python cheatsheet. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to [this document](https://github.com/wilfredinni/python-cheatsheet/blob/master/CONTRIBUTING.md).
 
 <base-warning>
   <base-warning-title>You need to careful!</base-warning-title>
