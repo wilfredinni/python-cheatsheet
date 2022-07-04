@@ -540,6 +540,6 @@ if you want to know more!
     Pathlib vs Os Module
   </base-disclaimer-title>
   <base-disclaimer-content>
-    `pathlib` provides a lot more functionality than the ones listed above, like getting file name, getting file extension, reading/writing a file without manually opening it, etc. Check out the <a targe="_blanc" href="https://docs.python.org/3/library/pathlib.html">official documentation</a> if you want to know more!
+    `pathlib` provides a lot more functionality than the ones listed above, like getting file name, getting file extension, reading/writing a file without manually opening it, etc. Check out the <a target="_blank" href="https://docs.python.org/3/library/pathlib.html">official documentation</a> if you want to know more!
   </base-disclaimer-content>
 </base-disclaimer>

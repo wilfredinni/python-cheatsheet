@@ -24,7 +24,7 @@ const links = [
 
     <p class="lead">
       Basic cheatsheet for Python mostly based on the book
-      <a href="https://automatetheboringstuff.com/">
+      <a target="_blank" href="https://automatetheboringstuff.com/">
         Automate the Boring Stuff with Python
       </a>
       and many other sources.

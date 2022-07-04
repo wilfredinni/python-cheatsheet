@@ -118,7 +118,7 @@ For more information, check the [documentation](https://poetry.eustace.io/docs/)
 
 <base-disclaimer>
   <base-disclaimer-title>
-    From <a target="_blanc" href="https://pipenv.pypa.io/en/latest/">Pipenv website</a>
+    From <a target="_blank" href="https://pipenv.pypa.io/en/latest/">Pipenv website</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
     Pipenv is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world. Windows is a first-class citizen, in our world.
@@ -154,7 +154,7 @@ Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/)
 
 <base-disclaimer>
   <base-disclaimer-title>
-    <a target="_blanc" href="https://pipenv.pypa.io/en/latest/">Anaconda</a> is another popular tool to manage python packages.
+    <a target="k" href="https://pipenv.pypa.io/en/latest/">Anaconda</a> is another popular tool to manage python packages.
   </base-disclaimer-title>
   <base-disclaimer-content>
     Where packages, notebooks, projects and environments are shared. Your place for free public conda package hosting.

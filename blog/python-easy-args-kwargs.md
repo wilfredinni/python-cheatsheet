@@ -62,7 +62,7 @@ def some_function(*arguments, **keywords):
   </base-warning-title>
   <base-warning-content>
     Even if the above function works, don't do it. Conventions are there to help you write readable code for you and anyone that might be interested in your project.
-    Other conventions include the 4 space indentation, comments, and imports. Reading the <a target="_blanc" href="https://www.python.org/dev/peps/pep-0008/">PEP 8 -- Style Guide for Python Code</a> is highly recommended.
+    Other conventions include the 4 space indentation, comments, and imports. Reading the <a target="_blank" href="https://www.python.org/dev/peps/pep-0008/">PEP 8 -- Style Guide for Python Code</a> is highly recommended.
   </base-warning-content>
 </base-warning>
 
