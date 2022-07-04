@@ -28,7 +28,7 @@ const articles = computed(() => {
       <li
         v-for="article in articles"
         :key="article.path"
-        class="my-4 flex rounded-2xl border-l border-l-sky-200 px-6 py-5 hover:bg-sky-50 dark:border-l-sky-900 hover:dark:bg-slate-800/60 hover:dark:ring-1 hover:dark:ring-slate-300/10"
+        class="my-4 flex rounded-2xl px-6 py-5 hover:bg-sky-50 hover:dark:bg-slate-800/60 hover:dark:ring-1 hover:dark:ring-slate-300/10"
       >
         <router-link :to="article.path">
           <span class="font-display text-sm font-semibold text-sky-500">
