@@ -20,7 +20,7 @@ const links = [
 
 <template>
   <article>
-    <h1>Getting started</h1>
+    <h1>Python Cheatsheet</h1>
 
     <p class="lead">
       Basic cheatsheet for Python mostly based on the book
@@ -41,15 +41,26 @@ const links = [
       </base-warning-content>
     </base-warning>
 
-    <h2 id="overview">Overview</h2>
+    <h2 id="getting-started">Getting started</h2>
     Anyone can forget how to
-    <a href="">make character classes</a> for a regex,
-    <a href="">slice a list</a> or do a <a href="">for loop</a>. This Python
-    cheatsheet tries to provide basic reference for beginner and advanced
-    developers, lower the entry barrier for newcomers and help veterans refresh
-    the old tricks.
+    <router-link
+      to="/cheatsheet/regular-expressions#making-your-own-character-classes"
+    >
+      make character classes
+    </router-link>
+    for a regex,
+    <router-link to="/cheatsheet/lists-and-tuples#getting-sublists-with-slices">
+      slice a list
+    </router-link>
+    or do a
+    <router-link to="/cheatsheet/control-flow#for-loop">for loop</router-link>.
+    This Python cheatsheet tries to provide basic reference for beginner and
+    advanced developers, lower the entry barrier for newcomers and help veterans
+    refresh the old tricks.
 
-    <div className="not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
+    <div
+      className="not-prose mt-10 mb-12 grid grid-cols-1 gap-6 sm:grid-cols-2"
+    >
       <div
         v-for="link in links"
         :key="link.name"
