@@ -7,7 +7,11 @@ const articles = computed(() => {
     const path = route.path.split('/')[1]
     return path === 'blog' && route.path !== '/blog'
   })
-  return posts
+  return posts.sort(function (a, b) {
+    return (
+      new Date(b.children[0]?.meta?.date) - new Date(a.children[0]?.meta?.date)
+    )
+  })
 })
 </script>
 
@@ -21,10 +25,11 @@ const articles = computed(() => {
       </a>
       and many other sources.
     </p>
+    <p class="lead"></p>
   </prose>
 
   <div class="mt-5">
-    <ul>
+    <ul class="border-l border-l-slate-200 pl-2 dark:border-l-slate-800">
       <li
         v-for="article in articles"
         :key="article.path"
@@ -41,6 +46,22 @@ const articles = computed(() => {
           <p class="text-slate-700 line-clamp-2 dark:text-slate-400">
             {{ article.children[0]?.meta?.description }}
           </p>
+          <div class="mt-3 flex items-center text-sm font-medium text-sky-500">
+            Read more
+            <svg
+              class="relative mt-px ml-2.5 overflow-visible text-sky-300 dark:text-sky-700"
+              width="3"
+              height="6"
+              viewBox="0 0 3 6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M0 0L3 3L0 6"></path>
+            </svg>
+          </div>
         </router-link>
       </li>
     </ul>
