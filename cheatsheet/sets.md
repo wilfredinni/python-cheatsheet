@@ -16,7 +16,7 @@ Python comes equipped with several built-in data types to help us organize our d
   </base-disclaimer-content>
 </base-disclaimer>
 
-Read [Python Sets: What, Why and How](https://www.pythoncheatsheet.org/blog/python-sets-what-why-how/) for a more in-deep reference.
+Read <router-link to="/blog/python-sets-what-why-how">Python Sets: What, Why and How</router-link> for a more in-deep reference.
 
 ## Initializing a set
 

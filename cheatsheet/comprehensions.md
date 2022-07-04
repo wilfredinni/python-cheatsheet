@@ -16,7 +16,7 @@ List Comprehensions are a special kind of syntax that let us create lists out of
   </base-disclaimer-content>
 </base-disclaimer>
 
-Read [Python Comprehensions: A step by step Introduction](https://www.pythoncheatsheet.org/blog/python-comprehensions-step-by-step/) for a more in-deep or introduction.
+Read <router-link to="/blog/python-comprehensions-step-by-step">Python Comprehensions: A step by step Introduction</router-link> for a more in-deep or introduction.
 
 ## List comprehension
 

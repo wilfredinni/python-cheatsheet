@@ -14,7 +14,7 @@ description: args and kwargs may seem scary, but the truth is that they are not 
   </base-disclaimer-content>
 </base-disclaimer>
 
-For a more in-deep article about `args and kwargs` you can read [Python \*args and \*\*kwargs Made Easy](/blog/python-easy-args-kwargs)
+For a more in-deep article about `args and kwargs` you can read <router-link to="/blog/python-easy-args-kwargs">Python \*args and \*\*kwargs Made Easy</router-link>.
 
 ## Introduction
 
