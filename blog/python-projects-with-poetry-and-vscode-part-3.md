@@ -15,7 +15,11 @@ meta:
 </route>
 
 <div>
-  <span class="font-display text-sm font-medium text-sky-500">Posted on {{frontmatter.date}}</span>
+  <div class="flex items-center">
+   <span class="font-display text-sm font-medium text-sky-500">Posted on {{frontmatter.date}}</span>
+   <span class="text-slate-400 ml-2">·</span>
+   <span class="font-display text-sm text-slate-400 ml-2">Updated on {{frontmatter.updated}}</span>
+  </div>
   <h1>Python projects with Poetry and VSCode Part 3</h1>
 </div>
 
