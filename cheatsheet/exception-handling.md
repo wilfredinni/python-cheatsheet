@@ -7,7 +7,7 @@ description: In Python, exception handling is the process of responding to the o
 
 <base-disclaimer>
   <base-disclaimer-title>
-    <a target="_blanc" href="https://en.wikipedia.org/wiki/Exception_handling">Exception handling</a>
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Exception_handling">Exception handling</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
     In computing and computer programming, exception handling is the process of responding to the occurrence of exceptions – anomalous or exceptional conditions requiring special processing.

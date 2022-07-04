@@ -27,7 +27,7 @@ Python comes equipped with several built-in data types to help us organize our d
 
 <base-disclaimer>
   <base-disclaimer-title>
-    From the <a target="_blanc" href="https://docs.python.org/3/tutorial/datastructures.html#sets">Python 3 documentation</a>
+    From the <a target="_blank" href="https://docs.python.org/3/tutorial/datastructures.html#sets">Python 3 documentation</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
     A <code>set</code> is an <b>unordered collection</b> with no <b>duplicate elements</b>. Basic uses include <b>membership testing</b> and <b>eliminating duplicate entries</b>. Set objects also support mathematical operations like <b>union</b>, <b>intersection</b>, <b>difference</b>, and <b>symmetric difference</b>
@@ -93,7 +93,7 @@ We can write code in more than a single way. Some are considered to be pretty ba
 
 <base-disclaimer>
   <base-disclaimer-title>
-    From <a target="_blanc" href="http://docs.python-guide.org/en/latest/">The Hitchhiker’s Guide to Python</a>
+    From <a target="_blank" href="http://docs.python-guide.org/en/latest/">The Hitchhiker’s Guide to Python</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
     When a veteran Python developer (a Pythonista) calls portions of code not “Pythonic”, they usually mean that these lines of code do not follow the common guidelines and fail to express its intent in what is considered the best (hear: most readable) way.

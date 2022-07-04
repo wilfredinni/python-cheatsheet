@@ -30,7 +30,7 @@ A Virtual Environment is an isolated Python installation designed to avoid filli
     Python Poetry
   </base-disclaimer-title>
   <base-disclaimer-content>
-    Poetry is a tool to handle dependency installation as well as building and packaging of Python packages. It only needs one file to do all of that: the new, <a target="_blanc" href="https://www.python.org/dev/peps/pep-0518/">standardized</a> <code>pyproject.toml</code>`. In other words, poetry uses <code>pyproject.toml</code> to replace <code>setup.py</code>, <code>requirements.txt</code>, <code>setup.cfg</code>, <code>MANIFEST.in</code> and the newly added <code>Pipfile</code>.
+    Poetry is a tool to handle dependency installation as well as building and packaging of Python packages. It only needs one file to do all of that: the new, <a target="_blank" href="https://www.python.org/dev/peps/pep-0518/">standardized</a> <code>pyproject.toml</code>`. In other words, poetry uses <code>pyproject.toml</code> to replace <code>setup.py</code>, <code>requirements.txt</code>, <code>setup.cfg</code>, <code>MANIFEST.in</code> and the newly added <code>Pipfile</code>.
   </base-disclaimer-content>
 </base-disclaimer>
 

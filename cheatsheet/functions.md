@@ -7,7 +7,7 @@ description: In Python, A function is a block of organized code that is used to 
 
 <base-disclaimer>
   <base-disclaimer-title>
-    <a target="_blanc" href="https://en.wikiversity.org/wiki/Programming_Fundamentals/Functions">Programming Functions</a>
+    <a target="_blank" href="https://en.wikiversity.org/wiki/Programming_Fundamentals/Functions">Programming Functions</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
     A function is a block of organized code that is used to perform a single task. They provide better modularity for your application and reuse-ability.
@@ -122,7 +122,7 @@ In Python, a lambda function is a single-line, anonymous function, which can hav
 
 <base-disclaimer>
   <base-disclaimer-title>
-    From the <a target="_blanc" href="https://docs.python.org/3/library/ast.html?highlight=lambda#function-and-class-definitions">Python 3 Tutorial</a>
+    From the <a target="_blank" href="https://docs.python.org/3/library/ast.html?highlight=lambda#function-and-class-definitions">Python 3 Tutorial</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
     lambda is a minimal function definition that can be used inside an expression. Unlike FunctionDef, body holds a single node.

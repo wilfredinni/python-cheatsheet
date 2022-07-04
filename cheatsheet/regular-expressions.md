@@ -7,7 +7,7 @@ description: A regular expression (shortened as regex) is a sequence of characte
 
 <base-disclaimer>
   <base-disclaimer-title>
-    <a targe="_blank" href="https://en.wikipedia.org/wiki/Regular_expression">Regular expressions</a>
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Regular_expression">Regular expressions</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
     A regular expression (shortened as regex [...]) is a sequence of characters that specifies a search pattern in text. [...] used by string-searching algorithms for "find" or "find and replace" operations on strings, or for input validation.
@@ -19,7 +19,7 @@ description: A regular expression (shortened as regex) is a sequence of characte
     A warning about this page
   </base-warning-title>
   <base-warning-content>
-    This is but an extract of the <a target="_blanc" href="https://automatetheboringstuff.com/2e/chapter7/">chapter 7</a> of the book <a target="_blanc" href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a>. Consider reading it there, or even better, buying a copy to support the author.
+    This is but an extract of the <a target="_blank" href="https://automatetheboringstuff.com/2e/chapter7/">chapter 7</a> of the book <a target="_blank" href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a>. Consider reading it there, or even better, buying a copy to support the author.
   </base-warning-content>
 </base-warning>
 
