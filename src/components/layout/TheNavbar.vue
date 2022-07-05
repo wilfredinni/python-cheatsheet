@@ -7,25 +7,125 @@ const topMenu = [
   { name: 'Blog', path: '/blog' },
   { name: 'Timeless Python', path: '/timeless-python' },
 ]
+
+const pages = [
+  {
+    name: 'Basics',
+    path: '/cheatsheet/basics',
+  },
+  {
+    name: 'Control flow',
+    path: '/cheatsheet/control-flow',
+  },
+  {
+    name: 'Functions',
+    path: '/cheatsheet/functions',
+  },
+
+  {
+    name: 'List and Tuples',
+    path: '/cheatsheet/lists-and-tuples',
+  },
+  {
+    name: 'Dictionaries',
+    path: '/cheatsheet/dictionaries',
+  },
+  {
+    name: 'Sets',
+    path: '/cheatsheet/sets',
+  },
+  {
+    name: 'Itertools module',
+    path: '/cheatsheet/itertools',
+  },
+  {
+    name: 'Comprehensions',
+    path: '/cheatsheet/comprehensions',
+  },
+  {
+    name: 'Manipulating strings',
+    path: '/cheatsheet/manipulating-strings',
+  },
+  {
+    name: 'String formatting',
+    path: '/cheatsheet/string-formatting',
+  },
+  {
+    name: 'Regular expressions',
+    path: '/cheatsheet/regular-expressions',
+  },
+  {
+    name: 'Files and directory paths',
+    path: '/cheatsheet/file-directory-path',
+  },
+  {
+    name: 'Reading and writing files',
+    path: '/cheatsheet/reading-and-writing-files',
+  },
+  {
+    name: 'Json and Yaml',
+    path: '/cheatsheet/json-yaml',
+  },
+  {
+    name: 'Exception handling',
+    path: '/cheatsheet/exception-handling',
+  },
+  {
+    name: 'Debugging',
+    path: '/cheatsheet/debugging',
+  },
+  {
+    name: 'Args and Kwargs',
+    path: '/cheatsheet/args-and-kwargs',
+  },
+  {
+    name: 'Context manager',
+    path: '/cheatsheet/context-manager',
+  },
+  {
+    name: 'Main: top level script',
+    path: '/cheatsheet/main',
+  },
+  {
+    name: 'setup.py',
+    path: '/cheatsheet/setup-py',
+  },
+  {
+    name: 'Dataclasses',
+    path: '/cheatsheet/dataclasses',
+  },
+  {
+    name: 'Virtual environments',
+    path: '/cheatsheet/virtual-environments',
+  },
+]
+
+const mainPages = [
+  {
+    name: 'Getting started',
+    path: '/',
+  },
+  {
+    name: 'Contributing',
+    path: '/contributing',
+  },
+]
+
+const isOpen = ref(false)
 </script>
 
 <template>
-  <Disclosure
-    v-slot="{ open }"
-    as="nav"
+  <nav
     class="sticky top-0 z-40 w-full flex-none bg-white/40 backdrop-blur dark:border-slate-50/[0.06] dark:bg-transparent lg:z-50 lg:border-b lg:border-slate-900/10"
   >
     <div class="mx-auto max-w-8xl px-2 sm:px-6 lg:px-12">
       <div class="relative flex h-14 justify-between">
         <!-- Mobile menu button -->
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <DisclosureButton
-            class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-          >
-            <span class="sr-only">Open main menu</span>
-            <MenuIcon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
-            <XIcon v-else class="block h-6 w-6" aria-hidden="true" />
-          </DisclosureButton>
+          <button type="button" class="relative" @click="isOpen = true">
+            <span class="sr-only">Open navigation</span>
+            <MenuIcon class="h-6 w-6 stroke-slate-400" aria-hidden="true" />
+          </button>
         </div>
 
         <!-- menu -->
@@ -116,22 +216,70 @@ const topMenu = [
       </div>
     </div>
 
-    <DisclosurePanel class="sm:hidden">
-      <div class="space-y-1 pt-2 pb-4">
-        <DisclosureButton
-          v-for="item in topMenu"
-          :key="item.name"
-          as="div"
-          class="block py-2 pl-3 pr-4 text-base font-medium"
-          :class="
-            route.path === item.path
-              ? 'border-l-4 border-cyan-500 bg-cyan-50 text-cyan-700 dark:bg-cyan-50/5 dark:text-cyan-400'
-              : 'text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 dark:text-gray-400'
-          "
-        >
-          <router-link :to="item.path">{{ item.name }}</router-link>
-        </DisclosureButton>
-      </div>
-    </DisclosurePanel>
-  </Disclosure>
+    <Dialog
+      class="fixed inset-0 z-50 flex items-start overflow-y-auto bg-slate-900/50 pr-10 backdrop-blur lg:hidden"
+      :open="isOpen"
+      @close="isOpen = false"
+    >
+      <DialogPanel
+        class="min-h-full w-full max-w-xs bg-white px-4 pt-5 pb-12 dark:bg-slate-900 sm:px-6"
+      >
+        <DialogTitle class="sr-only">Navigation</DialogTitle>
+        <div class="flex items-center">
+          <button type="button" @click="isOpen = false">
+            <span class="sr-only">Close navigation</span>
+            <XIcon class="h-6 w-6 stroke-slate-400" aria-hidden="true" />
+          </button>
+        </div>
+        <nav class="mt-10">
+          <h3
+            class="font-display text-base font-medium text-slate-900 dark:text-white"
+          >
+            Introduction
+          </h3>
+          <ul
+            class="mt-2 mb-6 space-y-2 border-l-2 border-slate-100 text-base dark:border-slate-800 lg:mt-4 lg:space-y-1.5 lg:border-slate-200 lg:text-sm"
+          >
+            <li v-for="item in mainPages" :key="item.name" class="relative">
+              <router-link
+                :to="item.path"
+                class="-ml-px block border-l border-transparent pl-4"
+                :class="
+                  $route.path === item.path
+                    ? 'border-current font-semibold text-sky-500 dark:text-sky-400'
+                    : 'text-slate-700 hover:border-slate-400 hover:text-slate-900 dark:text-slate-400 dark:hover:border-slate-500 dark:hover:text-slate-300'
+                "
+                @click="isOpen = false"
+              >
+                {{ item.name }}
+              </router-link>
+            </li>
+          </ul>
+          <h3
+            class="font-display text-base font-medium text-slate-900 dark:text-white"
+          >
+            Cheatsheet
+          </h3>
+          <ul
+            class="mt-2 space-y-2 border-l-2 border-slate-100 text-base dark:border-slate-800 lg:mt-4 lg:space-y-1.5 lg:border-slate-200 lg:text-sm"
+          >
+            <li v-for="item in pages" :key="item.name" class="relative">
+              <router-link
+                :to="item.path"
+                class="-ml-px block border-l border-transparent pl-4"
+                :class="
+                  $route.path === item.path
+                    ? 'border-current font-semibold text-sky-500 dark:text-sky-400'
+                    : 'text-slate-700 hover:border-slate-400 hover:text-slate-900 dark:text-slate-400 dark:hover:border-slate-500 dark:hover:text-slate-300'
+                "
+                @click="isOpen = false"
+              >
+                {{ item.name }}
+              </router-link>
+            </li>
+          </ul>
+        </nav>
+      </DialogPanel>
+    </Dialog>
+  </nav>
 </template>

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import GridIcon from '~/components/icons/GridIcon.vue'
-import ArrowIcon from '~/components/icons/ArrowIcon.vue'
 const pages = [
   {
     name: 'Basics',
@@ -97,12 +95,10 @@ const mainPages = [
   {
     name: 'Getting started',
     path: '/',
-    icon: ArrowIcon,
   },
   {
     name: 'Contributing',
     path: '/contributing',
-    icon: GridIcon,
   },
 ]
 </script>
