@@ -17,7 +17,9 @@ useHead({
       rel: 'icon',
       type: 'image/svg+xml',
       href: computed(() =>
-        preferredDark.value ? '/favicon-dark.svg' : '/favicon.svg'
+        preferredDark.value
+          ? 'https://raw.githubusercontent.com/wilfredinni/merken/master/static/merken/img/snake.svg'
+          : 'https://raw.githubusercontent.com/wilfredinni/merken/master/static/merken/img/snake.svg'
       ),
     },
   ],
