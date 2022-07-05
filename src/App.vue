@@ -12,17 +12,6 @@ useHead({
       content: computed(() => (isDark.value ? '#1f2937' : '#ffffff')),
     },
   ],
-  link: [
-    {
-      rel: 'icon',
-      type: 'image/svg+xml',
-      href: computed(() =>
-        preferredDark.value
-          ? 'https://raw.githubusercontent.com/wilfredinni/merken/master/static/merken/img/snake.svg'
-          : 'https://raw.githubusercontent.com/wilfredinni/merken/master/static/merken/img/snake.svg'
-      ),
-    },
-  ],
 })
 
 const route = useRoute()
