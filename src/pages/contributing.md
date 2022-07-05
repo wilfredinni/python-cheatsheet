@@ -11,17 +11,6 @@ First off, thank you for taking the time to contribute!
 
 The following is a set of guidelines for contributing to the Python cheatsheet. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to [this document](https://github.com/wilfredinni/python-cheatsheet/blob/master/CONTRIBUTING.md).
 
-<base-warning>
-  <base-warning-title>You need to careful!</base-warning-title>
-  <base-warning-content>
-    This site is under heavy development and the content may be
-    incomplete, change at any time or be plain wrong. Consider going to
-    the <code>stable</code> version of the
-    <a href="https://www.pythoncheatsheet.org">Python Cheatsheet</a>
-    for a more complete experience.
-  </base-warning-content>
-</base-warning>
-
 ## Code of Conduct
 
 This project and everyone who participates in it is governed by the [Contributor Covenant Code of Conduct](https://github.com/wilfredinni/python-cheatsheet/blob/master/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to services@github.com.
