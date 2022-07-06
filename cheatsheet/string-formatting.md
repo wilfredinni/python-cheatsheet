@@ -7,7 +7,7 @@ description: If your are using Python 3.6+, string f-strings are the recommended
 
 <base-disclaimer>
   <base-disclaimer-title>
-    From the official <a href="https://docs.python.org/3/library/stdtypes.html?highlight=sprintf#printf-style-string-formatting">Python 3 documentation</a>
+    From the <a href="https://docs.python.org/3/library/stdtypes.html?highlight=sprintf#printf-style-string-formatting">Python 3 documentation</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
     The formatting operations described here (<b>% operator</b>) exhibit a variety of quirks that lead to a number of common errors [...]. Using the newer <a href="#formatted-string-literals-or-f-strings">formatted string literals</a> [...] helps avoid these errors. These alternatives also provide more powerful, flexible and extensible approaches to formatting text.
@@ -60,7 +60,7 @@ If your are using Python 3.6+, string `f-strings` are the recommended way to for
 
 <base-disclaimer>
   <base-disclaimer-title>
-    From the official <a href="https://docs.python.org/3/reference/lexical_analysis.html#f-strings">Python 3 documentation</a>
+    From the <a href="https://docs.python.org/3/reference/lexical_analysis.html#f-strings">Python 3 documentation</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
     A formatted string literal or f-string is a string literal that is prefixed with `f` or `F`. These strings may contain replacement fields, which are expressions delimited by curly braces {}. While other string literals always have a constant value, formatted strings are really expressions evaluated at run time.

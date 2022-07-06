@@ -19,10 +19,10 @@ const links = [
 </script>
 
 <template>
-  <article>
-    <h1>Python Cheatsheet</h1>
+  <article class="">
+    <h1 class="text-center sm:text-start">Python Cheatsheet</h1>
 
-    <p class="lead">
+    <p class="lead text-center sm:text-start">
       Basic cheatsheet for Python mostly based on the book
       <a target="_blank" href="https://automatetheboringstuff.com/">
         Automate the Boring Stuff with Python
