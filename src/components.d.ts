@@ -33,6 +33,7 @@ declare module '@vue/runtime-core' {
     TheNavbar: typeof import('./components/layout/TheNavbar.vue')['default']
     TheReaderModeNavbar: typeof import('./components/layout/TheReaderModeNavbar.vue')['default']
     TheSidebar: typeof import('./components/layout/TheSidebar.vue')['default']
+    TheSidebarNavigation: typeof import('./components/layout/TheSidebarNavigation.vue')['default']
     TheToc: typeof import('./components/layout/TheToc.vue')['default']
     WarningIcon: typeof import('./components/icons/WarningIcon.vue')['default']
   }
