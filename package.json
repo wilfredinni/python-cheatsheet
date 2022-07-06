@@ -14,7 +14,7 @@
   "dependencies": {
     "@headlessui/vue": "^1.6.5",
     "@heroicons/vue": "^1.0.6",
-    "@vueuse/core": "^8.7.5",
+    "@vueuse/core": "^8.9.0",
     "@vueuse/head": "^0.7.6",
     "pinia": "^2.0.14",
     "prism-theme-vars": "^0.2.3",
@@ -29,7 +29,7 @@
     "@tailwindcss/typography": "^0.5.2",
     "@types/markdown-it": "^12.2.3",
     "@types/markdown-it-link-attributes": "^3.0.1",
-    "@types/node": "^18.0.2",
+    "@types/node": "^18.0.3",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
     "@vitejs/plugin-vue": "^2.3.3",
