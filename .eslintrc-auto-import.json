@@ -180,6 +180,7 @@
     "useMouseInElement": true,
     "useMousePressed": true,
     "useMutationObserver": true,
+    "useNavigationStore": true,
     "useNavigatorLanguage": true,
     "useNetwork": true,
     "useNow": true,
