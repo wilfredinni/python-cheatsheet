@@ -18,6 +18,7 @@ declare module '@vue/runtime-core' {
     BaseWarning: typeof import('./components/ui/warning/BaseWarning.vue')['default']
     BaseWarningContent: typeof import('./components/ui/warning/BaseWarningContent.vue')['default']
     BaseWarningTitle: typeof import('./components/ui/warning/BaseWarningTitle.vue')['default']
+    BlogTitleHeader: typeof import('./components/BlogTitleHeader.vue')['default']
     Dialog: typeof import('@headlessui/vue')['Dialog']
     DialogPanel: typeof import('@headlessui/vue')['DialogPanel']
     DialogTitle: typeof import('@headlessui/vue')['DialogTitle']

@@ -14,14 +14,7 @@ meta:
     updated: July 1, 2022
 </route>
 
-<div>
-  <div class="flex items-center">
-   <span class="font-display text-sm font-medium text-sky-500">Posted on {{frontmatter.date}}</span>
-   <span class="text-slate-400 ml-2">·</span>
-   <span class="font-display text-sm text-slate-400 ml-2">Updated on {{frontmatter.updated}}</span>
-  </div>
-  <h1>Python *args and **kwargs Made Easy</h1>
-</div>
+<blog-title-header :frontmatter="frontmatter" title="Python *args and **kwargs Made Easy" />
 
 I do not know about you, but every time I saw some function with `*args` and `**kwargs` as parameters, I'd get a little scared. I've even "used" them while doing some backend work with Django without understanding a thing. If you're a self-taught developer like me, I know you've been there too.
 

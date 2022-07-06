@@ -84,6 +84,8 @@ declare global {
   const refThrottled: typeof import('@vueuse/core')['refThrottled']
   const refWithControl: typeof import('@vueuse/core')['refWithControl']
   const resolveComponent: typeof import('vue')['resolveComponent']
+  const resolveRef: typeof import('@vueuse/core')['resolveRef']
+  const resolveUnref: typeof import('@vueuse/core')['resolveUnref']
   const shallowReactive: typeof import('vue')['shallowReactive']
   const shallowReadonly: typeof import('vue')['shallowReadonly']
   const shallowRef: typeof import('vue')['shallowRef']
@@ -152,6 +154,7 @@ declare global {
   const useEyeDropper: typeof import('@vueuse/core')['useEyeDropper']
   const useFavicon: typeof import('@vueuse/core')['useFavicon']
   const useFetch: typeof import('@vueuse/core')['useFetch']
+  const useFileDialog: typeof import('@vueuse/core')['useFileDialog']
   const useFileSystemAccess: typeof import('@vueuse/core')['useFileSystemAccess']
   const useFocus: typeof import('@vueuse/core')['useFocus']
   const useFocusWithin: typeof import('@vueuse/core')['useFocusWithin']
@@ -185,6 +188,7 @@ declare global {
   const useNavigatorLanguage: typeof import('@vueuse/core')['useNavigatorLanguage']
   const useNetwork: typeof import('@vueuse/core')['useNetwork']
   const useNow: typeof import('@vueuse/core')['useNow']
+  const useObjectUrl: typeof import('@vueuse/core')['useObjectUrl']
   const useOffsetPagination: typeof import('@vueuse/core')['useOffsetPagination']
   const useOnline: typeof import('@vueuse/core')['useOnline']
   const usePageLeave: typeof import('@vueuse/core')['usePageLeave']
@@ -210,12 +214,14 @@ declare global {
   const useSlots: typeof import('vue')['useSlots']
   const useSpeechRecognition: typeof import('@vueuse/core')['useSpeechRecognition']
   const useSpeechSynthesis: typeof import('@vueuse/core')['useSpeechSynthesis']
+  const useStepper: typeof import('@vueuse/core')['useStepper']
   const useStorage: typeof import('@vueuse/core')['useStorage']
   const useStorageAsync: typeof import('@vueuse/core')['useStorageAsync']
   const useStyleTag: typeof import('@vueuse/core')['useStyleTag']
   const useSwipe: typeof import('@vueuse/core')['useSwipe']
   const useTemplateRefsList: typeof import('@vueuse/core')['useTemplateRefsList']
   const useTextSelection: typeof import('@vueuse/core')['useTextSelection']
+  const useTextareaAutosize: typeof import('@vueuse/core')['useTextareaAutosize']
   const useThrottle: typeof import('@vueuse/core')['useThrottle']
   const useThrottleFn: typeof import('@vueuse/core')['useThrottleFn']
   const useThrottledRefHistory: typeof import('@vueuse/core')['useThrottledRefHistory']
@@ -242,6 +248,7 @@ declare global {
   const useWindowScroll: typeof import('@vueuse/core')['useWindowScroll']
   const useWindowSize: typeof import('@vueuse/core')['useWindowSize']
   const watch: typeof import('vue')['watch']
+  const watchArray: typeof import('@vueuse/core')['watchArray']
   const watchAtMost: typeof import('@vueuse/core')['watchAtMost']
   const watchDebounced: typeof import('@vueuse/core')['watchDebounced']
   const watchEffect: typeof import('vue')['watchEffect']
@@ -251,6 +258,7 @@ declare global {
   const watchPostEffect: typeof import('vue')['watchPostEffect']
   const watchSyncEffect: typeof import('vue')['watchSyncEffect']
   const watchThrottled: typeof import('@vueuse/core')['watchThrottled']
+  const watchTriggerable: typeof import('@vueuse/core')['watchTriggerable']
   const watchWithFilter: typeof import('@vueuse/core')['watchWithFilter']
   const whenever: typeof import('@vueuse/core')['whenever']
 }
@@ -341,6 +349,8 @@ declare module '@vue/runtime-core' {
     readonly refThrottled: UnwrapRef<typeof import('@vueuse/core')['refThrottled']>
     readonly refWithControl: UnwrapRef<typeof import('@vueuse/core')['refWithControl']>
     readonly resolveComponent: UnwrapRef<typeof import('vue')['resolveComponent']>
+    readonly resolveRef: UnwrapRef<typeof import('@vueuse/core')['resolveRef']>
+    readonly resolveUnref: UnwrapRef<typeof import('@vueuse/core')['resolveUnref']>
     readonly shallowReactive: UnwrapRef<typeof import('vue')['shallowReactive']>
     readonly shallowReadonly: UnwrapRef<typeof import('vue')['shallowReadonly']>
     readonly shallowRef: UnwrapRef<typeof import('vue')['shallowRef']>
@@ -409,6 +419,7 @@ declare module '@vue/runtime-core' {
     readonly useEyeDropper: UnwrapRef<typeof import('@vueuse/core')['useEyeDropper']>
     readonly useFavicon: UnwrapRef<typeof import('@vueuse/core')['useFavicon']>
     readonly useFetch: UnwrapRef<typeof import('@vueuse/core')['useFetch']>
+    readonly useFileDialog: UnwrapRef<typeof import('@vueuse/core')['useFileDialog']>
     readonly useFileSystemAccess: UnwrapRef<typeof import('@vueuse/core')['useFileSystemAccess']>
     readonly useFocus: UnwrapRef<typeof import('@vueuse/core')['useFocus']>
     readonly useFocusWithin: UnwrapRef<typeof import('@vueuse/core')['useFocusWithin']>
@@ -442,6 +453,7 @@ declare module '@vue/runtime-core' {
     readonly useNavigatorLanguage: UnwrapRef<typeof import('@vueuse/core')['useNavigatorLanguage']>
     readonly useNetwork: UnwrapRef<typeof import('@vueuse/core')['useNetwork']>
     readonly useNow: UnwrapRef<typeof import('@vueuse/core')['useNow']>
+    readonly useObjectUrl: UnwrapRef<typeof import('@vueuse/core')['useObjectUrl']>
     readonly useOffsetPagination: UnwrapRef<typeof import('@vueuse/core')['useOffsetPagination']>
     readonly useOnline: UnwrapRef<typeof import('@vueuse/core')['useOnline']>
     readonly usePageLeave: UnwrapRef<typeof import('@vueuse/core')['usePageLeave']>
@@ -467,12 +479,14 @@ declare module '@vue/runtime-core' {
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly useSpeechRecognition: UnwrapRef<typeof import('@vueuse/core')['useSpeechRecognition']>
     readonly useSpeechSynthesis: UnwrapRef<typeof import('@vueuse/core')['useSpeechSynthesis']>
+    readonly useStepper: UnwrapRef<typeof import('@vueuse/core')['useStepper']>
     readonly useStorage: UnwrapRef<typeof import('@vueuse/core')['useStorage']>
     readonly useStorageAsync: UnwrapRef<typeof import('@vueuse/core')['useStorageAsync']>
     readonly useStyleTag: UnwrapRef<typeof import('@vueuse/core')['useStyleTag']>
     readonly useSwipe: UnwrapRef<typeof import('@vueuse/core')['useSwipe']>
     readonly useTemplateRefsList: UnwrapRef<typeof import('@vueuse/core')['useTemplateRefsList']>
     readonly useTextSelection: UnwrapRef<typeof import('@vueuse/core')['useTextSelection']>
+    readonly useTextareaAutosize: UnwrapRef<typeof import('@vueuse/core')['useTextareaAutosize']>
     readonly useThrottle: UnwrapRef<typeof import('@vueuse/core')['useThrottle']>
     readonly useThrottleFn: UnwrapRef<typeof import('@vueuse/core')['useThrottleFn']>
     readonly useThrottledRefHistory: UnwrapRef<typeof import('@vueuse/core')['useThrottledRefHistory']>
@@ -499,6 +513,7 @@ declare module '@vue/runtime-core' {
     readonly useWindowScroll: UnwrapRef<typeof import('@vueuse/core')['useWindowScroll']>
     readonly useWindowSize: UnwrapRef<typeof import('@vueuse/core')['useWindowSize']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>
+    readonly watchArray: UnwrapRef<typeof import('@vueuse/core')['watchArray']>
     readonly watchAtMost: UnwrapRef<typeof import('@vueuse/core')['watchAtMost']>
     readonly watchDebounced: UnwrapRef<typeof import('@vueuse/core')['watchDebounced']>
     readonly watchEffect: UnwrapRef<typeof import('vue')['watchEffect']>
@@ -508,6 +523,7 @@ declare module '@vue/runtime-core' {
     readonly watchPostEffect: UnwrapRef<typeof import('vue')['watchPostEffect']>
     readonly watchSyncEffect: UnwrapRef<typeof import('vue')['watchSyncEffect']>
     readonly watchThrottled: UnwrapRef<typeof import('@vueuse/core')['watchThrottled']>
+    readonly watchTriggerable: UnwrapRef<typeof import('@vueuse/core')['watchTriggerable']>
     readonly watchWithFilter: UnwrapRef<typeof import('@vueuse/core')['watchWithFilter']>
     readonly whenever: UnwrapRef<typeof import('@vueuse/core')['whenever']>
   }

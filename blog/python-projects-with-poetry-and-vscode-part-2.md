@@ -14,14 +14,7 @@ meta:
     updated: July 3, 2022
 </route>
 
-<div>
-  <div class="flex items-center">
-   <span class="font-display text-sm font-medium text-sky-500">Posted on {{frontmatter.date}}</span>
-   <span class="text-slate-400 ml-2">·</span>
-   <span class="font-display text-sm text-slate-400 ml-2">Updated on {{frontmatter.updated}}</span>
-  </div>
-  <h1>Python projects with Poetry and VSCode Part 2</h1>
-</div>
+<blog-title-header :frontmatter="frontmatter" title="Python projects with Poetry and VSCode Part 2" />
 
 In the <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">first article</router-link> we learned what the `pyproject.toml` file is and how to work with it, used [Poetry](https://poetry.eustace.io/) to start a new project, create a Virtual Environment and to add and remove dependencies. All of that with the following commands:
 

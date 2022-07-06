@@ -14,14 +14,7 @@ meta:
     updated: July 3, 2022
 </route>
 
-<div>
-  <div class="flex items-center">
-   <span class="font-display text-sm font-medium text-sky-500">Posted on {{frontmatter.date}}</span>
-   <span class="text-slate-400 ml-2">·</span>
-   <span class="font-display text-sm text-slate-400 ml-2">Updated on {{frontmatter.updated}}</span>
-  </div>
-  <h1>Python Sets: What, Why and How</h1>
-</div>
+<blog-title-header :frontmatter="frontmatter" title="Python Sets: What, Why and How" />
 
 Python comes equipped with several built-in data types to help us organize our data. These structures include `lists`, `dictionaries`, `tuples` and `sets`.
 

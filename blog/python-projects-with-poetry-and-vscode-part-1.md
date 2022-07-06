@@ -14,14 +14,7 @@ meta:
     updated: July 3, 2022
 </route>
 
-<div>
-  <div class="flex items-center">
-   <span class="font-display text-sm font-medium text-sky-500">Posted on {{frontmatter.date}}</span>
-   <span class="text-slate-400 ml-2">·</span>
-   <span class="font-display text-sm text-slate-400 ml-2">Updated on {{frontmatter.updated}}</span>
-  </div>
-  <h1>Python projects with Poetry and VSCode Part 1</h1>
-</div>
+<blog-title-header :frontmatter="frontmatter" title="Python projects with Poetry and VSCode Part 1" />
 
 A Virtual Environment is an isolated Python installation designed to avoid filling our base one with libraries we might use for only one project. It also allows us to manage multiple versions of the same package in different projects. We could, for example, need Django 4.1 for one and 1.9 in other.
 

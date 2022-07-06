@@ -14,14 +14,7 @@ meta:
     updated: July 3, 2022
 </route>
 
-<div>
-  <div class="flex items-center">
-   <span class="font-display text-sm font-medium text-sky-500">Posted on {{frontmatter.date}}</span>
-   <span class="text-slate-400 ml-2">·</span>
-   <span class="font-display text-sm text-slate-400 ml-2">Updated on {{frontmatter.updated}}</span>
-  </div>
-  <h1>Python Comprehensions: A step by step Introduction</h1>
-</div>
+<blog-title-header :frontmatter="frontmatter" title="Python Comprehensions: A step by step Introduction" />
 
 _List Comprehensions_ are a special kind of syntax that let us create lists out of other lists ([Wikipedia](https://en.wikipedia.org/wiki/List_comprehension), [The Python Tutorial](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)). They are incredible useful when dealing with numbers and with one or two level of nested _for loops_, but beyond that, they can become a little too hard to read.
 
