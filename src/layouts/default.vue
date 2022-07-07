@@ -6,7 +6,7 @@ const repository = 'https://github.com/wilfredinni/python-cheatsheet/blob/next/'
 <template>
   <div class="min-h-screen bg-white dark:bg-gray-900">
     <the-navbar v-show="!core.reader" />
-    <the-reader-mode-navbar v-show="core.reader" />
+    <the-navbar-reader v-show="core.reader" />
 
     <div
       class="relative mx-auto flex min-h-screen max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12"
@@ -27,7 +27,7 @@ const repository = 'https://github.com/wilfredinni/python-cheatsheet/blob/next/'
             class="absolute top-28 bottom-0 right-0 hidden w-px bg-slate-800 dark:block"
           />
           <div class="w-64 pr-8 xl:w-72 xl:pr-16">
-            <the-sidebar />
+            <the-sidebar-desktop />
           </div>
         </div>
       </div>
