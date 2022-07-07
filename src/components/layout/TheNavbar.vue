@@ -14,17 +14,15 @@ const isOpen = ref(false)
     <div class="mx-auto max-w-8xl px-2 sm:px-6 lg:px-12">
       <div class="relative flex h-14 justify-between">
         <!-- Mobile menu button -->
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <div class="absolute inset-y-0 left-1.5 flex items-center sm:hidden">
           <button type="button" class="relative" @click="isOpen = true">
             <span class="sr-only">Open navigation</span>
-            <MenuIcon class="h-6 w-6 stroke-slate-400" aria-hidden="true" />
+            <MenuIcon class="h-7 w-7 stroke-slate-400" aria-hidden="true" />
           </button>
         </div>
 
         <!-- menu -->
-        <div
-          class="flex flex-1 items-center justify-center space-x-8 sm:items-center sm:justify-start"
-        >
+        <div class="ml-14 flex flex-1 items-center space-x-8 sm:ml-0">
           <div class="flex flex-shrink-0 items-center">
             <router-link to="/">
               <img
@@ -75,7 +73,7 @@ const isOpen = ref(false)
 
         <!-- actions -->
         <div
-          class="absolute inset-y-0 right-0 flex items-center space-x-6 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+          class="absolute inset-y-0 right-0 flex items-center space-x-5 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
         >
           <div
             class="hidden border-r border-slate-200 pr-6 dark:border-slate-800 sm:ml-6 sm:flex sm:space-x-6"
@@ -100,7 +98,6 @@ const isOpen = ref(false)
           <a
             target="_blank"
             href="https://github.com/wilfredinni/python-cheatsheet/tree/next"
-            class="hidden sm:flex"
           >
             <github-icon />
             <span class="sr-only">python cheatsheet repository</span>
