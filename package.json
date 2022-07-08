@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite-ssg build",
     "preview": "vite preview",
     "test": "vitest --run",
     "lint": "eslint .",

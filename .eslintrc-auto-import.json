@@ -1,12 +1,5 @@
 {
   "globals": {
-    "$": true,
-    "$$": true,
-    "$computed": true,
-    "$customRef": true,
-    "$ref": true,
-    "$shallowRef": true,
-    "$toRef": true,
     "EffectScope": true,
     "asyncComputed": true,
     "autoResetRef": true,

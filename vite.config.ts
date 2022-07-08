@@ -46,7 +46,6 @@ export default defineConfig({
         'vue',
         'vue-router',
         'vue-i18n',
-        'vue/macros',
         '@vueuse/head',
         '@vueuse/core',
       ],
@@ -127,7 +126,7 @@ export default defineConfig({
   ssgOptions: {
     script: 'async',
     formatting: 'minify',
-    format: 'cjs',
+    // format: 'cjs',
     onFinished() {
       generateSitemap()
     },

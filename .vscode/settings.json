@@ -55,6 +55,7 @@
         "pipenv",
         "Pipfile",
         "prereleases",
+        "prismjs",
         "Pylint",
         "Pypi",
         "pyproject",
