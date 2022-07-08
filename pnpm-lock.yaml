@@ -2,7 +2,6 @@ lockfileVersion: 5.4
 
 specifiers:
   '@headlessui/vue': ^1.6.6
-  '@heroicons/vue': ^1.0.6
   '@intlify/vite-plugin-vue-i18n': ^3.4.0
   '@tailwindcss/forms': ^0.5.2
   '@tailwindcss/line-clamp': ^0.4.0
@@ -52,7 +51,6 @@ specifiers:
 
 dependencies:
   '@headlessui/vue': 1.6.6_vue@3.2.37
-  '@heroicons/vue': 1.0.6_vue@3.2.37
   '@vueuse/core': 8.9.1_vue@3.2.37
   '@vueuse/head': 0.7.6_vue@3.2.37
   pinia: 2.0.14_j6bzmzd4ujpabbp5objtwxyjp4
@@ -1282,14 +1280,6 @@ packages:
     engines: {node: '>=10'}
     peerDependencies:
       vue: ^3.2.0
-    dependencies:
-      vue: 3.2.37
-    dev: false
-
-  /@heroicons/vue/1.0.6_vue@3.2.37:
-    resolution: {integrity: sha512-ng2YcCQrdoQWEFpw+ipFl2rZo8mZ56v0T5+MyfQQvNqfKChwgP6DMloZLW+rl17GEcHkE3H82UTAMKBKZr4+WA==}
-    peerDependencies:
-      vue: '>= 3'
     dependencies:
       vue: 3.2.37
     dev: false
