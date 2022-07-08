@@ -63,7 +63,7 @@ def my_function():
 
         Sincerely,
         Bob
-        ''')).strip()
+        '''))
 ```
 
 This generates the same string than before.
