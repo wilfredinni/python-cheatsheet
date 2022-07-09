@@ -597,15 +597,13 @@ svg.DocSearch-Hit-Select-Icon {
   .DocSearch-Button {
     width: auto;
     height: auto;
-    margin: 0 0 0 0px;
     background: rgba(0, 0, 0, 0) !important;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
   }
 
   .DocSearch-Search-Icon {
-    stroke-width: 2;
-    width: 18px;
-    height: 18px;
+    width: 19px;
+    height: 19px;
   }
 }

@@ -24,7 +24,7 @@ onMounted(() => {
         <the-sidebar-mobile />
 
         <!-- menu -->
-        <div class="ml-14 flex flex-1 items-center space-x-8 lg:ml-0">
+        <div class="ml-14 flex flex-1 items-center space-x-6 lg:ml-0">
           <div class="flex flex-shrink-0 items-center">
             <router-link to="/">
               <img
@@ -35,9 +35,9 @@ onMounted(() => {
             </router-link>
           </div>
 
-          <div class="pointer-events-auto relative bg-transparent">
-            <div id="docsearch"></div>
-          </div>
+          <!-- <div class="pointer-events-auto bg-transparent"> -->
+          <div id="docsearch"></div>
+          <!-- </div> -->
         </div>
 
         <!-- actions -->
@@ -62,6 +62,7 @@ onMounted(() => {
             </router-link>
             <base-reader-mode />
           </div>
+          <!-- <div id="docsearch"></div> -->
 
           <base-theme-toggle />
           <a
