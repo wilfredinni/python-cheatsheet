@@ -20,10 +20,14 @@ const links = [
 
 <template>
   <article class="">
-    <h1 class="text-center sm:text-start">Python Cheatsheet</h1>
+    <h1
+      class="mb-0 bg-gradient-to-r from-indigo-400 via-sky-400 to-indigo-300 bg-clip-text text-center font-display text-5xl tracking-tight text-transparent dark:from-indigo-200 dark:via-sky-400 dark:to-indigo-200 sm:text-start"
+    >
+      Python Cheatsheet
+    </h1>
 
     <p class="lead text-center sm:text-start">
-      Basic cheatsheet for Python mostly based on the book
+      Basic Python Cheatsheet based on the book
       <a target="_blank" href="https://automatetheboringstuff.com/">
         Automate the Boring Stuff with Python
       </a>
