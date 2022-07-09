@@ -1,6 +1,18 @@
 <script setup lang="ts">
+import docsearch from '@docsearch/js'
+import '~/styles/docsearch.css'
+
 const navigation = useNavigationStore()
 const route = useRoute()
+
+onMounted(() => {
+  docsearch({
+    container: '#docsearch',
+    appId: 'R2IYF7ETH7',
+    indexName: 'docsearch',
+    apiKey: '599cec31baffa4868cae4e79f180729b',
+  })
+})
 </script>
 
 <template>
@@ -24,40 +36,7 @@ const route = useRoute()
           </div>
 
           <div class="pointer-events-auto relative bg-white dark:bg-slate-900">
-            <button
-              type="button"
-              class="dark:highlight-white/5 hidden w-full items-center rounded-md py-1.5 pl-2 pr-3 text-sm leading-6 text-slate-400 shadow-sm ring-1 ring-slate-900/10 hover:ring-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 lg:flex"
-            >
-              <svg
-                width="24"
-                height="24"
-                fill="none"
-                aria-hidden="true"
-                class="mr-3 flex-none"
-              >
-                <path
-                  d="m19 19-3.5-3.5"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <circle
-                  cx="11"
-                  cy="11"
-                  r="6"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></circle>
-              </svg>
-              Quick search...<span
-                class="ml-auto flex-none pl-3 text-xs font-semibold"
-              >
-                Ctrl K
-              </span>
-            </button>
+            <div id="docsearch"></div>
           </div>
         </div>
 

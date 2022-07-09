@@ -12,6 +12,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@docsearch/js": "3",
     "@headlessui/vue": "^1.6.6",
     "@vueuse/core": "^8.9.1",
     "@vueuse/head": "^0.7.6",

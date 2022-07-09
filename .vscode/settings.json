@@ -21,6 +21,7 @@
         "copytree",
         "dataclass",
         "Distutils",
+        "docsearch",
         "DOTALL",
         "Epub",
         "Errno",
