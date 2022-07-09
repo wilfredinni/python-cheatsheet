@@ -19,15 +19,11 @@ const links = [
 </script>
 
 <template>
-  <article class="">
-    <h1
-      class="mb-0 bg-gradient-to-r from-indigo-400 via-sky-400 to-indigo-300 bg-clip-text text-center font-display text-5xl tracking-tight text-transparent dark:from-indigo-200 dark:via-sky-400 dark:to-indigo-200 sm:text-start"
-    >
-      Python Cheatsheet
-    </h1>
+  <article>
+    <h1 class="text-center sm:text-start">Python Cheatsheet</h1>
 
     <p class="lead text-center sm:text-start">
-      Basic Python Cheatsheet based on the book
+      Basic Python cheatsheet based on the book
       <a target="_blank" href="https://automatetheboringstuff.com/">
         Automate the Boring Stuff with Python
       </a>
@@ -71,7 +67,7 @@ const links = [
         class="group relative rounded-xl border border-slate-200 dark:border-slate-800"
       >
         <div
-          class="absolute -inset-px rounded-xl border-2 border-transparent opacity-0 [background:linear-gradient(var(--link-grid-hover-bg,theme(colors.sky.50)),var(--link-grid-hover-bg,theme(colors.sky.50)))_padding-box,linear-gradient(to_top,theme(colors.indigo.400),theme(colors.cyan.400),theme(colors.sky.500))_border-box] group-hover:opacity-100 dark:[--link-grid-hover-bg:theme(colors.slate.800)]"
+          class="absolute -inset-px rounded-xl border-2 border-transparent opacity-0 transition duration-300 [background:linear-gradient(var(--link-grid-hover-bg,theme(colors.sky.50)),var(--link-grid-hover-bg,theme(colors.sky.50)))_padding-box,linear-gradient(to_top,theme(colors.indigo.400),theme(colors.cyan.400),theme(colors.sky.500))_border-box] group-hover:opacity-100 dark:[--link-grid-hover-bg:theme(colors.slate.800)]"
         />
         <div class="relative overflow-hidden rounded-xl p-6">
           <component :is="link.icon" class="h-8 w-8" />
