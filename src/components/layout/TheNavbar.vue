@@ -24,7 +24,7 @@ onMounted(() => {
         <the-sidebar-mobile />
 
         <!-- menu -->
-        <div class="ml-14 flex flex-1 items-center space-x-8 sm:ml-0">
+        <div class="ml-14 flex flex-1 items-center space-x-8 lg:ml-0">
           <div class="flex flex-shrink-0 items-center">
             <router-link to="/">
               <img
@@ -35,7 +35,7 @@ onMounted(() => {
             </router-link>
           </div>
 
-          <div class="pointer-events-auto relative bg-white dark:bg-slate-900">
+          <div class="pointer-events-auto relative bg-transparent">
             <div id="docsearch"></div>
           </div>
         </div>
@@ -45,7 +45,7 @@ onMounted(() => {
           class="absolute inset-y-0 right-0 flex items-center space-x-5 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
         >
           <div
-            class="hidden border-r border-slate-200 pr-6 dark:border-slate-800 sm:ml-6 sm:flex sm:space-x-6"
+            class="hidden border-r border-slate-200 pr-6 dark:border-slate-800 sm:ml-6 sm:space-x-6 lg:flex"
           >
             <router-link
               v-for="item in navigation.navbarNavigation"

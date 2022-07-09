@@ -4,7 +4,7 @@ const navigation = useNavigationStore()
 </script>
 
 <template>
-  <div class="absolute inset-y-0 left-1.5 flex items-center sm:hidden">
+  <div class="absolute inset-y-0 left-1.5 flex items-center lg:hidden">
     <button type="button" class="relative" @click="isOpen = true">
       <span class="sr-only">Open navigation</span>
       <svg
