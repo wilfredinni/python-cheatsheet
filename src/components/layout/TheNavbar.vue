@@ -35,9 +35,7 @@ onMounted(() => {
             </router-link>
           </div>
 
-          <!-- <div class="pointer-events-auto bg-transparent"> -->
-          <div id="docsearch"></div>
-          <!-- </div> -->
+          <div id="docsearch" />
         </div>
 
         <!-- actions -->
@@ -47,22 +45,34 @@ onMounted(() => {
           <div
             class="hidden border-r border-slate-200 pr-6 dark:border-slate-800 sm:ml-6 sm:space-x-6 lg:flex"
           >
-            <router-link
+            <template
               v-for="item in navigation.navbarNavigation"
               :key="item.name"
-              :to="item.path"
-              class="inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-300"
-              :class="
-                route.path === item.path
-                  ? 'text-sky-600 dark:text-sky-400'
-                  : 'text-slate-700 hover:text-sky-500 dark:text-gray-200 dark:hover:text-sky-400'
-              "
             >
-              {{ item.name }}
-            </router-link>
+              <router-link
+                v-if="item.internal"
+                :to="item.path"
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-300"
+                :class="
+                  route.path === item.path
+                    ? 'text-sky-600 dark:text-sky-400'
+                    : 'text-slate-700 hover:text-sky-500 dark:text-gray-200 dark:hover:text-sky-400'
+                "
+              >
+                {{ item.name }}
+              </router-link>
+
+              <a
+                v-else
+                :href="item.path"
+                target="_blank"
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-slate-700 transition duration-300 hover:text-sky-500 dark:text-gray-200 dark:hover:text-sky-400"
+              >
+                {{ item.name }}
+              </a>
+            </template>
             <base-reader-mode />
           </div>
-          <!-- <div id="docsearch"></div> -->
 
           <base-theme-toggle />
           <a

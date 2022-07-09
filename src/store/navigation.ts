@@ -3,8 +3,12 @@ import { acceptHMRUpdate, defineStore } from 'pinia'
 export const useNavigationStore = defineStore('navigation', {
   state: () => ({
     navbarNavigation: [
-      { name: 'Blog', path: '/blog' },
-      { name: 'Timeless Python', path: '/timeless-python' },
+      { name: 'Blog', path: '/blog', internal: true },
+      {
+        name: 'Timeless Python',
+        path: 'https://timelesspython.com/',
+        internal: false,
+      },
     ],
     cheatsheetNavigation: [
       {
