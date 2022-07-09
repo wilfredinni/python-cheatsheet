@@ -14,15 +14,6 @@ description: A regular expression (shortened as regex) is a sequence of characte
   </base-disclaimer-content>
 </base-disclaimer>
 
-<base-warning>
-  <base-warning-title>
-    A warning about this page
-  </base-warning-title>
-  <base-warning-content>
-    This is but an extract of the <a target="_blank" href="https://automatetheboringstuff.com/2e/chapter7/">chapter 7</a> of the book <a target="_blank" href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a>. Consider reading it there, or even better, buying a copy to support the author.
-  </base-warning-content>
-</base-warning>
-
 1. Import the regex module with `import re`.
 2. Create a Regex object with the `re.compile()` function. (Remember to use a raw string.)
 3. Pass the string you want to search into the Regex object’s `search()` method. This returns a `Match` object.
