@@ -511,9 +511,9 @@ svg.DocSearch-Hit-Select-Icon {
   cursor: pointer;
   display: flex;
   font-weight: 500;
-  height: 38px;
+  height: 35px;
   justify-content: space-between;
-  margin: 0 0 0 14px;
+  margin: 0 0 0 22px;
   padding: 0 12px 0 12px;
   user-select: none;
   width: 140px;
