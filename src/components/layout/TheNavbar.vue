@@ -30,7 +30,7 @@ onMounted(() => {
               <img
                 class="h-5 w-auto"
                 src="https://raw.githubusercontent.com/wilfredinni/merken/master/static/merken/img/snake.svg"
-                alt="Workflow"
+                alt="python-cheatsheet"
               />
             </router-link>
           </div>

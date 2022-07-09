@@ -1,39 +1,54 @@
+<script setup lang="ts">
+useHead({
+  title: 'Not Found',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'These articles provide a deeper look to the the contents of the Python Cheatsheet.',
+    },
+  ],
+})
+</script>
+
 <template>
-  <main
-    class="min-h-full bg-cover bg-top sm:bg-top"
-    style="
-      background-image: url('https://images.unsplash.com/photo-1545972154-9bb223aac798?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3050&q=80&exp=8&con=-15&sat=-75');
-    "
-  >
-    <div
-      class="mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-48"
+  <div class="flex min-h-full flex-col bg-gray-900 pt-16 pb-12">
+    <main
+      class="mx-auto flex w-full max-w-7xl flex-grow flex-col justify-center px-4 sm:px-6 lg:px-8"
     >
-      <p
-        class="text-sm font-semibold uppercase tracking-wide text-black text-opacity-50"
-      >
-        404 error
-      </p>
-      <h1
-        class="mt-2 text-4xl font-extrabold tracking-tight text-white sm:text-5xl"
-      >
-        Uh oh! I think you’re lost.
-      </h1>
-      <p class="mt-2 text-lg font-medium text-black text-opacity-50">
-        It looks like the page you’re looking for doesn't exist.
-      </p>
-      <div class="mt-6">
-        <router-link
-          to="/"
-          class="inline-flex items-center rounded-md border border-transparent bg-white bg-opacity-75 px-4 py-2 text-sm font-medium text-black text-opacity-75 sm:bg-opacity-25 sm:hover:bg-opacity-50"
-        >
-          Go back home
+      <div class="flex flex-shrink-0 justify-center">
+        <router-link to="/" class="inline-flex">
+          <span class="sr-only">Python Cheatsheet</span>
+          <img
+            class="h-12 w-auto"
+            src="https://raw.githubusercontent.com/wilfredinni/merken/master/static/merken/img/snake.svg"
+            alt="python-cheatsheet"
+          />
         </router-link>
       </div>
-    </div>
-  </main>
+      <div class="py-12">
+        <div class="text-center">
+          <p class="text-sm font-semibold uppercase tracking-wide text-sky-400">
+            404 error
+          </p>
+          <h1
+            class="mt-2 text-4xl font-extrabold tracking-tight text-slate-200 sm:text-5xl"
+          >
+            Page not found.
+          </h1>
+          <p class="mt-2 text-base text-slate-500">
+            Sorry, we couldn’t find the page you’re looking for.
+          </p>
+          <div class="mt-6">
+            <router-link
+              to="/"
+              class="text-base font-medium text-sky-400 hover:text-sky-500"
+            >
+              Go back home<span aria-hidden="true"> &rarr;</span>
+            </router-link>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
 </template>
-
-<route lang="yaml">
-meta:
-  layout: empty
-</route>
