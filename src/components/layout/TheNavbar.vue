@@ -51,7 +51,7 @@ onMounted(() => {
               v-for="item in navigation.navbarNavigation"
               :key="item.name"
               :to="item.path"
-              class="inline-flex items-center px-1 pt-1 text-sm font-medium"
+              class="inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-300"
               :class="
                 route.path === item.path
                   ? 'text-sky-600 dark:text-sky-400'

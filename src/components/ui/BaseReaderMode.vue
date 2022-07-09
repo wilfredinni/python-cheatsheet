@@ -4,7 +4,7 @@ const core = useCoreStore()
 
 <template>
   <button
-    class="flex w-auto items-center rounded-full bg-sky-400/10 py-1 px-3 text-xs font-medium leading-5 text-sky-600 hover:bg-sky-400/20 dark:text-sky-400"
+    class="flex w-auto items-center rounded-full bg-sky-400/10 py-1 px-3 text-xs font-medium leading-5 text-sky-600 transition duration-300 hover:bg-sky-400/20 dark:text-sky-400"
     @click="core.toggle()"
   >
     <strong class="font-semibold"> Enter reader mode </strong>

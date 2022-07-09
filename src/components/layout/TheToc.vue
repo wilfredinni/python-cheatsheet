@@ -68,7 +68,7 @@ watch(route, () => {
       <li v-for="item in toc" :key="item">
         <a
           :href="`#${slugify(item)}`"
-          class="block py-1 font-medium"
+          class="block py-1 font-medium transition duration-200"
           :class="
             currentSection === slugify(item)
               ? 'text-sky-500 '

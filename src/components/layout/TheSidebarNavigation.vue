@@ -21,7 +21,7 @@ defineProps<{
     <li v-for="item in navigation" :key="item.name" class="relative">
       <router-link
         :to="item.path"
-        class="-ml-px block border-l border-transparent pl-4"
+        class="-ml-px block border-l border-transparent pl-4 transition duration-150"
         :class="
           $route.path === item.path
             ? 'border-current font-semibold text-sky-500 dark:text-sky-400'
