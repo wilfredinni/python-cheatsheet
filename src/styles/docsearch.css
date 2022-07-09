@@ -502,26 +502,22 @@ svg.DocSearch-Hit-Select-Icon {
   }
 }
 
-.dark .DocSearch-Button {
-  background: #1e293b !important;
-}
-
 .DocSearch-Button {
   align-items: center;
-  background: #f1f5f9 !important;
+  background: #f3f4f6 !important;
   border: 1px solid transparent;
   border-radius: 8px;
   color: var(--docsearch-muted-color);
   cursor: pointer;
   display: flex;
   font-weight: 500;
-  height: 35px;
+  height: 38px;
   justify-content: space-between;
   margin: 0 0 0 14px;
   padding: 0 12px 0 12px;
   user-select: none;
   width: 140px;
-  transition: border-color 0.25s;
+  transition: border-color 0.3s;
 }
 .dark .DocSearch-Button:active,
 .dark .DocSearch-Button:focus,
@@ -550,7 +546,7 @@ svg.DocSearch-Hit-Select-Icon {
   stroke-width: 2;
   width: 14px;
   height: 14px;
-  transition: color 0.25s;
+  transition: color 0.3s;
 }
 .DocSearch-Button .DocSearch-Search-Icon {
   color: var(--docsearch-text-color);
@@ -560,7 +556,7 @@ svg.DocSearch-Hit-Select-Icon {
   font-size: 13px;
   font-weight: 500;
   padding: 0 12px 0 6px;
-  transition: color 0.25s;
+  transition: color 0.3s;
 }
 .DocSearch-Button-Keys {
   display: flex;
@@ -583,16 +579,33 @@ svg.DocSearch-Hit-Select-Icon {
   font-weight: 500;
   border: 0;
   width: 16px;
-  transition: color 0.25s, border-color 0.25s;
+  transition: color 0.3s, border-color 0.3s;
 }
-@media (max-width: 750px) {
+
+@screen md {
+  .dark .DocSearch-Button {
+    background: #1e293b !important;
+  }
+}
+
+@media (max-width: 768px) {
   .DocSearch-Button-Keys,
   .DocSearch-Button-Placeholder {
     display: none;
   }
 
   .DocSearch-Button {
-    width: 40px;
+    width: auto;
+    height: auto;
     margin: 0 0 0 0px;
+    background: rgba(0, 0, 0, 0) !important;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+
+  .DocSearch-Search-Icon {
+    stroke-width: 2;
+    width: 18px;
+    height: 18px;
   }
 }
