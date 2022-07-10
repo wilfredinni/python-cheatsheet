@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const core = useCoreStore()
-const repository = 'https://github.com/wilfredinni/python-cheatsheet/blob/next/'
+const repository = 'https://github.com/wilfredinni/python-cheatsheet/blob/next'
 </script>
 
 <template>
@@ -42,7 +42,10 @@ const repository = 'https://github.com/wilfredinni/python-cheatsheet/blob/next/'
           <router-view v-else />
         </article>
 
-        <div class="mt-10 flex justify-end border-t dark:border-t-slate-800">
+        <div
+          v-if="$route.name !== 'index'"
+          class="mt-10 flex justify-end border-t dark:border-t-slate-800"
+        >
           <a
             target="_blank"
             :href="`${repository}${$route.path}.md`"

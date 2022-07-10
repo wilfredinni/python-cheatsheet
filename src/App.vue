@@ -10,6 +10,36 @@ useHead({
         'Anyone can forget how to make character classes for a regex, slice a list or do a for loop. This cheat sheet tries to provide a basic reference for beginner and advanced developers, lower the entry barrier for newcomers and help veterans refresh the old tricks.',
     },
     {
+      name: 'author',
+      content: 'Python Cheatsheet',
+    },
+    {
+      property: 'og:type',
+      content: 'article',
+    },
+    {
+      property: 'og:image',
+      content:
+        'https://raw.githubusercontent.com/wilfredinni/pysheetBlog/master/img/logo.png',
+    },
+    {
+      property: 'twitter:image',
+      content:
+        'https://raw.githubusercontent.com/wilfredinni/pysheetBlog/master/img/logo.png',
+    },
+    {
+      name: 'twitter:site',
+      content: '@pyCheatsheet',
+    },
+    {
+      name: 'twitter:creator',
+      content: '@pyCheatsheet',
+    },
+    {
+      name: 'twitter:card',
+      content: 'summary',
+    },
+    {
       name: 'theme-color',
       content: computed(() => (isDark.value ? '#1f2937' : '#ffffff')),
     },
@@ -42,6 +72,7 @@ watch(route, () => {
 <template>
   <Head>
     <link rel="canonical" :href="`https://${base_url}${$route.path}`" />
+    <meta property="og:url" :href="`https://${base_url}${$route.path}`" />
   </Head>
   <RouterView />
 </template>
