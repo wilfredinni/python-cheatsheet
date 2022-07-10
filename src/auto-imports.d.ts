@@ -116,6 +116,7 @@ declare global {
   const useClipboard: typeof import('@vueuse/core')['useClipboard']
   const useColorMode: typeof import('@vueuse/core')['useColorMode']
   const useConfirmDialog: typeof import('@vueuse/core')['useConfirmDialog']
+  const useContributorsStore: typeof import('./store/contributors')['useContributorsStore']
   const useCoreStore: typeof import('./store/core')['useCoreStore']
   const useCounter: typeof import('@vueuse/core')['useCounter']
   const useCssModule: typeof import('vue')['useCssModule']
@@ -374,6 +375,7 @@ declare module '@vue/runtime-core' {
     readonly useClipboard: UnwrapRef<typeof import('@vueuse/core')['useClipboard']>
     readonly useColorMode: UnwrapRef<typeof import('@vueuse/core')['useColorMode']>
     readonly useConfirmDialog: UnwrapRef<typeof import('@vueuse/core')['useConfirmDialog']>
+    readonly useContributorsStore: UnwrapRef<typeof import('./store/contributors')['useContributorsStore']>
     readonly useCoreStore: UnwrapRef<typeof import('./store/core')['useCoreStore']>
     readonly useCounter: UnwrapRef<typeof import('@vueuse/core')['useCounter']>
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>

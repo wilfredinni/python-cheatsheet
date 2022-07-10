@@ -44,6 +44,7 @@
     "markdown-it-anchor": "^8.6.4",
     "markdown-it-link-attributes": "^4.0.0",
     "markdown-it-prism": "^2.2.4",
+    "ohmyfetch": "^0.4.18",
     "pnpm": "^7.5.0",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",

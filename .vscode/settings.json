@@ -51,6 +51,7 @@
         "mypy",
         "namelist",
         "nlink",
+        "ohmyfetch",
         "pathlib",
         "pathobj",
         "pipenv",
