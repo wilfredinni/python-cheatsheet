@@ -37,6 +37,5 @@
     "tailwind.config.js",
     "coverage",
     "cheatsheet",
-    "scripts"
   ],
 }

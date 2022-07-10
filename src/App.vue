@@ -1,6 +1,8 @@
 <script setup>
+import { Head } from '@vueuse/head'
+
 useHead({
-  title: 'Python Cheatsheet',
+  title: 'Python Cheatsheet - Python Cheatsheet',
   meta: [
     {
       name: 'description',
@@ -31,12 +33,16 @@ if (inProduction) {
 }
 
 const route = useRoute()
+const base_url = import.meta.env.VITE_BASE_URL || 'localhost:3000'
 watch(route, () => {
   window.scrollTo(0, 0)
 })
 </script>
 
 <template>
+  <Head>
+    <link rel="canonical" :href="`https://${base_url}${$route.path}`" />
+  </Head>
   <RouterView />
 </template>
 
