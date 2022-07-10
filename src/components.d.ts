@@ -32,6 +32,7 @@ declare module '@vue/runtime-core' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Switch: typeof import('@headlessui/vue')['Switch']
+    TheFooter: typeof import('./components/layout/TheFooter.vue')['default']
     TheNavbar: typeof import('./components/layout/TheNavbar.vue')['default']
     TheNavbarReader: typeof import('./components/layout/TheNavbarReader.vue')['default']
     TheSidebarDesktop: typeof import('./components/layout/TheSidebarDesktop.vue')['default']

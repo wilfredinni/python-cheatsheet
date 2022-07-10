@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const core = useCoreStore()
-const repository = 'https://github.com/wilfredinni/python-cheatsheet/blob/next'
 </script>
 
 <template>
@@ -42,18 +41,14 @@ const repository = 'https://github.com/wilfredinni/python-cheatsheet/blob/next'
           <router-view v-else />
         </article>
 
-        <div
+        <the-footer
           v-if="$route.name !== 'index'"
-          class="mt-10 flex justify-end border-t dark:border-t-slate-800"
-        >
-          <a
-            target="_blank"
-            :href="`${repository}${$route.path}.md`"
-            class="mt-5 flex items-center space-x-1.5 text-sm text-slate-600 hover:text-sky-500 dark:text-sky-500"
-          >
-            <span>Edit this page on github</span>
-          </a>
-        </div>
+          :repository="
+            $route.name !== 'contributing'
+              ? 'https://github.com/wilfredinni/python-cheatsheet/blob/next'
+              : 'https://github.com/wilfredinni/python-cheatsheet/blob/next/src/pages'
+          "
+        />
       </div>
 
       <!-- table of content -->
