@@ -17,44 +17,11 @@ const links = [
     icon: PluginIcon,
   },
 ]
-
-// interface Contributor {
-//   login: string
-// }
-
-// async function fetchContributors(page = 1) {
-//   const collaborators: string[] = []
-//   const data =
-//     (await $fetch<Contributor[]>(
-//       `https://api.github.com/repos/wilfredinni/python-cheatsheet/contributors?per_page=100&page=${page}`,
-//       {
-//         method: 'get',
-//         headers: {
-//           'content-type': 'application/json',
-//         },
-//       }
-//     )) || []
-//   collaborators.push(...data.map((i) => i.login))
-//   if (data.length === 100)
-//     collaborators.push(...(await fetchContributors(page + 1)))
-//   return collaborators
-// }
-
-// async function generate() {
-//   const collaborators = await fetchContributors()
-//   return collaborators
-// }
-
-// const collaborators = generate()
-const contributors = useContributorsStore()
-contributors.fetchContributors()
 </script>
 
 <template>
   <article>
     <h1 class="text-center sm:text-start">Python Cheatsheet</h1>
-
-    {{ contributors.contributors }}
 
     <p class="lead text-center sm:text-start">
       Basic Python cheatsheet based on the book

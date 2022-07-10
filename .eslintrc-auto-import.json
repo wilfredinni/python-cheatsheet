@@ -115,7 +115,6 @@
     "useClipboard": true,
     "useColorMode": true,
     "useConfirmDialog": true,
-    "useContributorsStore": true,
     "useCoreStore": true,
     "useCounter": true,
     "useCssModule": true,
