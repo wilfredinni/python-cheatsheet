@@ -54,6 +54,7 @@
         "namelist",
         "nlink",
         "ohmyfetch",
+        "pathe",
         "pathlib",
         "pathobj",
         "pipenv",

@@ -7,6 +7,7 @@ specifiers:
   '@tailwindcss/forms': ^0.5.2
   '@tailwindcss/line-clamp': ^0.4.0
   '@tailwindcss/typography': ^0.5.3
+  '@types/fs-extra': ^9.0.13
   '@types/markdown-it': ^12.2.3
   '@types/markdown-it-link-attributes': ^3.0.1
   '@types/node': ^18.0.3
@@ -21,6 +22,7 @@ specifiers:
   eslint-config-prettier: ^8.5.0
   eslint-plugin-vue: ^9.2.0
   esno: ^0.16.3
+  fs-extra: ^10.1.0
   happy-dom: ^5.4.0
   husky: ^8.0.1
   markdown-it: ^13.0.1
@@ -68,6 +70,7 @@ devDependencies:
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.1.5
   '@tailwindcss/line-clamp': 0.4.0_tailwindcss@3.1.5
   '@tailwindcss/typography': 0.5.3_tailwindcss@3.1.5
+  '@types/fs-extra': 9.0.13
   '@types/markdown-it': 12.2.3
   '@types/markdown-it-link-attributes': 3.0.1
   '@types/node': 18.0.3
@@ -80,6 +83,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.19.0
   eslint-plugin-vue: 9.2.0_eslint@8.19.0
   esno: 0.16.3
+  fs-extra: 10.1.0
   happy-dom: 5.4.0
   husky: 8.0.1
   markdown-it: 13.0.1
@@ -1776,6 +1780,12 @@ packages:
 
   /@types/form-data/0.0.33:
     resolution: {integrity: sha512-8BSvG1kGm83cyJITQMZSulnl6QV8jqAGreJsc5tPu1Jq0vTSOiY/k24Wx82JRpWwZSqrala6sd5rWi6aNXvqcw==}
+    dependencies:
+      '@types/node': 18.0.3
+    dev: true
+
+  /@types/fs-extra/9.0.13:
+    resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
     dependencies:
       '@types/node': 18.0.3
     dev: true

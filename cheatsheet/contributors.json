@@ -1,122 +1,26 @@
 [
-  {
-    "login": "wilfredinni",
-    "avatar_url": "https://avatars.githubusercontent.com/u/23016174?v=4",
-    "html_url": "https://github.com/wilfredinni"
-  },
-  {
-    "login": "Sonatrix",
-    "avatar_url": "https://avatars.githubusercontent.com/u/12120333?v=4",
-    "html_url": "https://github.com/Sonatrix"
-  },
-  {
-    "login": "MaT1g3R",
-    "avatar_url": "https://avatars.githubusercontent.com/u/15258494?v=4",
-    "html_url": "https://github.com/MaT1g3R"
-  },
-  {
-    "login": "samithamphk",
-    "avatar_url": "https://avatars.githubusercontent.com/u/4257445?v=4",
-    "html_url": "https://github.com/samithamphk"
-  },
-  {
-    "login": "gsemet",
-    "avatar_url": "https://avatars.githubusercontent.com/u/133498?v=4",
-    "html_url": "https://github.com/gsemet"
-  },
-  {
-    "login": "szTheory",
-    "avatar_url": "https://avatars.githubusercontent.com/u/28652?v=4",
-    "html_url": "https://github.com/szTheory"
-  },
-  {
-    "login": "ckartchner",
-    "avatar_url": "https://avatars.githubusercontent.com/u/23131083?v=4",
-    "html_url": "https://github.com/ckartchner"
-  },
-  {
-    "login": "matteodem",
-    "avatar_url": "https://avatars.githubusercontent.com/u/1301147?v=4",
-    "html_url": "https://github.com/matteodem"
-  },
-  {
-    "login": "azanbinzahid",
-    "avatar_url": "https://avatars.githubusercontent.com/u/47540683?v=4",
-    "html_url": "https://github.com/azanbinzahid"
-  },
-  {
-    "login": "rbuzzell",
-    "avatar_url": "https://avatars.githubusercontent.com/u/2417192?v=4",
-    "html_url": "https://github.com/rbuzzell"
-  },
-  {
-    "login": "michaelbaluja",
-    "avatar_url": "https://avatars.githubusercontent.com/u/39929823?v=4",
-    "html_url": "https://github.com/michaelbaluja"
-  },
-  {
-    "login": "aloklal99",
-    "avatar_url": "https://avatars.githubusercontent.com/u/362454?v=4",
-    "html_url": "https://github.com/aloklal99"
-  },
-  {
-    "login": "CodeWithBishal",
-    "avatar_url": "https://avatars.githubusercontent.com/u/69814108?v=4",
-    "html_url": "https://github.com/CodeWithBishal"
-  },
-  {
-    "login": "Gaura",
-    "avatar_url": "https://avatars.githubusercontent.com/u/12998572?v=4",
-    "html_url": "https://github.com/Gaura"
-  },
-  {
-    "login": "unixorn",
-    "avatar_url": "https://avatars.githubusercontent.com/u/23920?v=4",
-    "html_url": "https://github.com/unixorn"
-  },
-  {
-    "login": "hacktron95",
-    "avatar_url": "https://avatars.githubusercontent.com/u/17127035?v=4",
-    "html_url": "https://github.com/hacktron95"
-  },
-  {
-    "login": "roopeshvs",
-    "avatar_url": "https://avatars.githubusercontent.com/u/47831211?v=4",
-    "html_url": "https://github.com/roopeshvs"
-  },
-  {
-    "login": "senlog",
-    "avatar_url": "https://avatars.githubusercontent.com/u/8606000?v=4",
-    "html_url": "https://github.com/senlog"
-  },
-  {
-    "login": "Vishesh-dd4723",
-    "avatar_url": "https://avatars.githubusercontent.com/u/55729655?v=4",
-    "html_url": "https://github.com/Vishesh-dd4723"
-  },
-  {
-    "login": "ehmsu",
-    "avatar_url": "https://avatars.githubusercontent.com/u/35581029?v=4",
-    "html_url": "https://github.com/ehmsu"
-  },
-  {
-    "login": "gulu42",
-    "avatar_url": "https://avatars.githubusercontent.com/u/33633597?v=4",
-    "html_url": "https://github.com/gulu42"
-  },
-  {
-    "login": "omerts",
-    "avatar_url": "https://avatars.githubusercontent.com/u/4996164?v=4",
-    "html_url": "https://github.com/omerts"
-  },
-  {
-    "login": "paulwongx",
-    "avatar_url": "https://avatars.githubusercontent.com/u/20178251?v=4",
-    "html_url": "https://github.com/paulwongx"
-  },
-  {
-    "login": "qudongfang",
-    "avatar_url": "https://avatars.githubusercontent.com/u/2609651?v=4",
-    "html_url": "https://github.com/qudongfang"
-  }
+  "wilfredinni",
+  "Sonatrix",
+  "MaT1g3R",
+  "samithamphk",
+  "gsemet",
+  "szTheory",
+  "ckartchner",
+  "matteodem",
+  "azanbinzahid",
+  "rbuzzell",
+  "michaelbaluja",
+  "aloklal99",
+  "CodeWithBishal",
+  "Gaura",
+  "unixorn",
+  "hacktron95",
+  "roopeshvs",
+  "senlog",
+  "Vishesh-dd4723",
+  "ehmsu",
+  "gulu42",
+  "omerts",
+  "paulwongx",
+  "qudongfang"
 ]

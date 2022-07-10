@@ -3,12 +3,10 @@ import { $fetch } from 'ohmyfetch'
 
 interface Contributor {
   login: string
-  avatar_url: string
-  html_url: string
 }
 
 async function fetchContributors(page = 1) {
-  const collaborators: Contributor[] = []
+  const collaborators: string[] = []
   const data =
     (await $fetch<Contributor[]>(
       `https://api.github.com/repos/wilfredinni/python-cheatsheet/contributors?per_page=100&page=1`,
@@ -19,13 +17,7 @@ async function fetchContributors(page = 1) {
         },
       }
     )) || []
-  data.forEach((i) => {
-    collaborators.push({
-      login: i.login,
-      avatar_url: i.avatar_url,
-      html_url: i.html_url,
-    })
-  })
+  collaborators.push(...data.map((i) => i.login))
 
   if (data.length === 100)
     collaborators.push(...(await fetchContributors(page + 1)))
