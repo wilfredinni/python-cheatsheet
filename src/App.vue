@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 useHead({
   title: 'Python Cheatsheet',
   meta: [
@@ -13,6 +13,22 @@ useHead({
     },
   ],
 })
+
+const inProduction = import.meta.env.PROD
+if (inProduction) {
+  useScriptTag(
+    `https://www.googletagmanager.com/gtag/js?id=${import.meta.env.VITE_GTAG}`,
+    () => {
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        // eslint-disable-next-line no-undef
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+      gtag('config', import.meta.env.VITE_GTAG)
+    }
+  )
+}
 
 const route = useRoute()
 watch(route, () => {

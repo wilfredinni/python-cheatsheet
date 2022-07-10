@@ -7,10 +7,10 @@ const route = useRoute()
 
 onMounted(() => {
   docsearch({
-    container: '#docsearch',
-    appId: 'R2IYF7ETH7',
-    indexName: 'docsearch',
-    apiKey: '599cec31baffa4868cae4e79f180729b',
+    container: import.meta.env.VITE_DOCSEARCH_CONTAINER,
+    appId: import.meta.env.VITE_DOCSEARCH_APP_ID,
+    indexName: import.meta.env.VITE_DOCSEARCH_INDEX_NAME,
+    apiKey: import.meta.env.VITE_DOCSEARCH_API_KEY,
   })
 })
 </script>

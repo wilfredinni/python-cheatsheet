@@ -22,3 +22,4 @@ dist-ssr
 *.sw?
 .vite-ssg-temp
 coverage
+.env
