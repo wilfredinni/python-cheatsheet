@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import ReferenceIcon from '~/components/icons/ReferenceIcon.vue'
 import PluginIcon from '~/components/icons/PluginIcon.vue'
-// import { $fetch } from 'ohmyfetch'
 
 const links = [
   {

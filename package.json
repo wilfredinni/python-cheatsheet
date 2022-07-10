@@ -9,7 +9,8 @@
     "test": "vitest --run",
     "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "contributors": "esno scripts/fetch-contributors.ts"
   },
   "dependencies": {
     "@docsearch/js": "^3.1.1",
@@ -38,6 +39,7 @@
     "eslint": "^8.19.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-vue": "^9.2.0",
+    "esno": "^0.16.3",
     "happy-dom": "^5.4.0",
     "husky": "^8.0.1",
     "markdown-it": "^13.0.1",

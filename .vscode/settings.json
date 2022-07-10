@@ -25,6 +25,8 @@
         "DOTALL",
         "Epub",
         "Errno",
+        "esmo",
+        "esno",
         "extractall",
         "findall",
         "getcwd",
