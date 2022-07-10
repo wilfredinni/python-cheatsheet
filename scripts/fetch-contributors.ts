@@ -27,7 +27,7 @@ async function fetchContributors(page = 1) {
 async function generate() {
   const collaborators = await fetchContributors()
   await fs.writeFile(
-    './cheatsheet/contributors.json',
+    './contributors/contributors.json',
     JSON.stringify(collaborators, null, 2),
     'utf8'
   )

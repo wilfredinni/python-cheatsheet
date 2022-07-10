@@ -3,7 +3,7 @@ import fs from 'fs-extra'
 import { $fetch } from 'ohmyfetch'
 
 const docsDir = resolve(__dirname, '../')
-const pathContributors = resolve(docsDir, 'cheatsheet/contributors.json')
+const pathContributors = resolve(docsDir, 'contributors/contributors.json')
 const dirAvatars = resolve(docsDir, 'public/user-avatars/')
 
 let contributors: string[] = []

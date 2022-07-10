@@ -38,7 +38,8 @@ const repository = 'https://github.com/wilfredinni/python-cheatsheet/blob/next/'
         :class="[core.reader ? 'max-w-2xl lg:max-w-4xl' : 'lg:max-w-none']"
       >
         <article>
-          <prose><RouterView /></prose>
+          <prose v-if="$route.name !== 'index'"><router-view /></prose>
+          <router-view v-else />
         </article>
 
         <div class="mt-10 flex justify-end border-t dark:border-t-slate-800">
