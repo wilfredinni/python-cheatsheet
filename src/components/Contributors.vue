@@ -10,7 +10,6 @@ import { contributors } from '../../contributors/contributors'
       v-for="{ name, avatar, repository } of contributors"
       :key="name"
       :href="repository"
-      m-0
       rel="noopener noreferrer"
       :aria-label="`${name} on GitHub`"
     >
