@@ -16,7 +16,7 @@ meta:
 
 <blog-title-header :frontmatter="frontmatter" title="Python projects with Poetry and VSCode Part 3" />
 
-In the <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">first article</router-link> we started a new project, created a Virtual Environment and managed dependencies. In the <router-link to="/blog/python-projects-with-poetry-and-vscode-part-2">second part</router-link> added our virtual Environment to [VSCode](https://code.visualstudio.com/) and integrated our dev dependencies.
+In the <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">first article</router-link> we started a new project, created a Virtual Environment and managed dependencies. In the <router-link to="/blog/python-projects-with-poetry-and-vscode-part-2">second part</router-link>, added our virtual Environment to [VSCode](https://code.visualstudio.com/) and integrated our dev dependencies.
 
 And finally, in this third and last part we'll:
 
@@ -26,7 +26,7 @@ And finally, in this third and last part we'll:
 
 ## Poetry Commands
 
-Here is a table with the commands used in this series as well as their descriptions. For a full list read the [Poetry Documentation](https://poetry.eustace.io/docs/cli/).
+Here is a table with the commands used in this series as well as their descriptions. For a full list, read the [Poetry Documentation](https://poetry.eustace.io/docs/cli/).
 
 | Command                           | Description                                            |
 | --------------------------------- | ------------------------------------------------------ |
@@ -46,7 +46,7 @@ Here is a table with the commands used in this series as well as their descripti
 
 ## The Project
 
-You can download the source code from [GitHub](https://github.com/wilfredinni/how-long) if you want, but as mentioned earlier, this will be a very simple decorator that the only thing it will do is print to the console how long it takes for a function to run.
+You can download the source code from [GitHub](https://github.com/wilfredinni/how-long) if you like, but as mentioned earlier, this will be a simple decorator that will print to the console how long it takes for a function to run.
 
 It will work like this:
 
@@ -87,7 +87,7 @@ Before we start, check for package updates with the `poetry update` command:
 
 ![poetry update](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_update.png)
 
-Add a short description for the project in the `README.rst`:
+Add a brief description for the project in the `README.rst`:
 
 ```
 how_long
@@ -176,11 +176,11 @@ Execution Time: 705 ms.
 
 ## Building and Publishing
 
-Finally, the time to make this project available to the world has come! Make sure you have an account on [Pypi](https://pypi.or). Remember that the package name must be unique, if unsure use the [search](https://pypi.org/search/?q=) to check it out.
+Finally, the time to make this project available to the world has come! Make sure you have an account on [PyPI](https://pypi.org). Remember that the package name must be unique, if unsure, use the [search](https://pypi.org/search/?q=) to check it out.
 
 ### Build
 
-The `poetry build` command builds the source and [wheels](https://pythonwheels.com/) archives that will letter be uploaded as the source of the project:
+The `poetry build` command builds the source and [wheels](https://pythonwheels.com/) archives that will later be uploaded as the source of the project:
 
 ![poetry build](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_build.png)
 
@@ -188,7 +188,7 @@ The _how_long.egg-info_ directory will be created.
 
 ### Publish
 
-This command publishes the package to _Pypi_ and automatically register it before uploading if this is the first time it is submitted:
+This command publishes the package to _PyPI_ and automatically register it before uploading if this is the first time it is submitted:
 
 ![poetry publish](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_publish.png)
 

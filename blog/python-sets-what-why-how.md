@@ -93,7 +93,7 @@ We can write code in more than a single way. Some are considered to be pretty ba
   </base-disclaimer-content>
 </base-disclaimer>
 
-Let's start exploring the way that Python sets can help us not just with readability, but also with our programs execution time.
+Let's start exploring the way that Python sets can help us not just with readability, but also with our program's execution time.
 
 ## Unordered collection of elements
 
@@ -118,7 +118,7 @@ TypeError: 'set' object is not subscriptable
 
 _BUT_, if what we need is to remove duplicates, or do mathematical operations like combining lists (unions), we can, and _SHOULD_ always use sets.
 
-I have to mention that **when iterating over, sets are outperformed by lists**, so prefer them if that is what you need. Why? Well, this article does not intend to explain the inner workings of sets, but here are a couple of links where you can read about it:
+I have to mention that **when iterating over, lists outperform sets**, so prefer them if that is what you need. Why? Well, this article does not intend to explain the inner workings of sets, but here are a couple of links where you can read about it:
 
 - [Time Complexity](https://wiki.python.org/moin/TimeComplexity)
 - [How is set() implemented?](https://stackoverflow.com/questions/3949310/how-is-set-implemented)
@@ -127,7 +127,7 @@ I have to mention that **when iterating over, sets are outperformed by lists**, 
 
 ## No duplicate items
 
-While writing this I cannot stop thinking in all the times I used the _for_ loop and the _if_ statement to check and remove duplicate elements in a list. My face turns red remembering that, more than once, I wrote something like this:
+While writing this, I cannot stop thinking in all the times I used a _for_ loop and the _if_ statement to check and remove duplicate elements in a list. My face turns red remembering that, more than once, I wrote something like this:
 
 ```python
 >>> my_list = [1, 2, 3, 2, 3, 4]
@@ -191,7 +191,7 @@ Not only we write _fewer lines of code_ with sets than with lists comprehensions
     remember that sets are unordered
   </base-warning-title>
   <base-warning-content>
-    There is no guarantee that when converting them back to a list the order of the elements is going to be preserved.
+    There is no guarantee that when converting them back to a list, the order of the elements will be preserved.
   </base-warning-content>
 </base-warning>
 
@@ -202,7 +202,7 @@ From the [Zen of Python](https://www.python.org/dev/peps/pep-0020/):
 > Simple is better than complex.<br>
 > Flat is better than nested.
 
-Aren't sets just Beautiful, Explicit, Simple and Flat?
+Aren't sets just Beautiful, Explicit, Simple, and Flat?
 
 ## Membership tests
 
@@ -242,7 +242,7 @@ And sets are more performant than lists when doing them:
 
 The above tests come from this [Stack Overflow thread](https://stackoverflow.com/questions/2831212/python-sets-vs-lists).
 
-So if you are doing comparisons like this in huge lists, it should speed you a good bit if you convert that list into a set.
+So if you are doing comparisons like this in massive lists, it should speed you a good bit if you convert that list into a set.
 
 ## Adding Elements
 
@@ -270,7 +270,7 @@ Remember, sets remove duplicates.
 
 ## Removing Elements
 
-If you want to be alerted when your code tries to remove an element that is not in the set, use `remove()`. Otherwise, `discard()` provides a good alternative:
+If you want to be alerted when your code tries to remove an element that is not in the set, use `remove()`. Otherwise, `discard()` provides a suitable alternative:
 
 ```python
 >>> s = {1, 2, 3}

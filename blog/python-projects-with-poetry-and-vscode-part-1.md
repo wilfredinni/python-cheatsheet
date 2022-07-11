@@ -16,7 +16,7 @@ meta:
 
 <blog-title-header :frontmatter="frontmatter" title="Python projects with Poetry and VSCode Part 1" />
 
-A Virtual Environment is an isolated Python installation designed to avoid filling our base one with libraries we might use for only one project. It also allows us to manage multiple versions of the same package in different projects. We could, for example, need Django 4.1 for one and 1.9 in other.
+A Virtual Environment is an isolated Python installation designed to avoid filling our base one with libraries we might use for only one project. It also allows us to manage multiple versions of the same package in different projects. We could, for example, need Django 4.1 for one and 1.9 for the other.
 
 <base-disclaimer>
   <base-disclaimer-title>
@@ -29,13 +29,13 @@ A Virtual Environment is an isolated Python installation designed to avoid filli
 
 In this series of articles, we'll use [Poetry](https://poetry.eustace.io/) to manage our dependencies, build a simple project and, with a single command, publish it on [PyPI](https://pypi.org/).
 
-In this first part we will:
+In this first part, we will:
 
 - Start a new project.
 - Create a Virtual Environment.
 - Manage dependencies.
 
-In the <router-link to="/blog/python-projects-with-poetry-and-vscode-part-2">second article</router-link> we'll:
+In the <router-link to="/blog/python-projects-with-poetry-and-vscode-part-2">second article</router-link>, we'll:
 
 - Add our virtual Environment to [VSCode](https://code.visualstudio.com/).
 - Integrate our dev dependencies:
@@ -63,11 +63,11 @@ But we will use Poetry own installer to isolate it from the rest of the system b
 $ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 ```
 
-This way we will later be able to update poetry to the latest stable version with the `poetry self update` command.
+This way, we will later be able to update poetry to the latest stable version with the `poetry self update` command.
 
 ## Starting a new project
 
-We can now start a new Python project by using the `poetry new [project_name]` command. I will call it **_how-long_** and is going to be a very simple library to measure a function execution time:
+We can now start a new Python project by using the `poetry new [project_name]` command. I will call it **_how-long_** and will be a simple library to measure the execution time of a function:
 
 ```
 $ poetry new how-long
@@ -125,7 +125,7 @@ readme = "README.rst"
 
 #### [tool.poetry.dependencies]
 
-First is the Python version. Basically, this project will be compatible with Python 3.7 and up. Also, from now on, every package we install that is meant to be used in production will be listed here.
+First is the Python version. Basically, this project will be compatible with Python 3.7 and up. Furthermore, from now on, every package we install that is meant to be used in production will be listed here.
 
 #### [tool.poetry.dev-dependencies]
 
@@ -133,7 +133,7 @@ These packages are only for development and will not be included when we publish
 
 ## Creating a Virtual Environment
 
-To create a Virtual Environment and install _Pytest_ we will use the `poetry install` command:
+To create a Virtual Environment and install _Pytest_, we will use the `poetry install` command:
 
 ```
 $ poetry install
@@ -151,7 +151,7 @@ One way to add or remove dependencies is to directly edit _pyproject.toml_ and t
 
 ### Adding dependencies
 
-Let's add two packages to the project, _pendulum_ and _coo_:
+Let's add two packages to the project, _pendulum_, and _coo_:
 
 ```
 $ poetry add pendulum coo
@@ -181,7 +181,7 @@ Could not find a matching version of package black
 add [-D|--dev] [--git GIT] [--path PATH] [-E|--extras EXTRAS] [--optional] [--python PYTHON] [--platform PLATFORM] [--allow-prereleases] [--dry-run] [--] <name> (<name>)...
 ```
 
-This error happens because _black_ is in a pre-release state, so Poetry cannot find any stable version for us. But I really want it so let's install it anyway with the `--allow-prereleases` flag:
+This error happens because _black_ is in a pre-release state, so Poetry cannot find any stable version for us. But I really want it, so let's install it anyway with the `--allow-prereleases` flag:
 
 ```
 $ poetry add -D black --allow-prereleases

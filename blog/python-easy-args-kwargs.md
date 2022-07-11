@@ -18,7 +18,7 @@ meta:
 
 I do not know about you, but every time I saw some function with `*args` and `**kwargs` as parameters, I'd get a little scared. I've even "used" them while doing some backend work with Django without understanding a thing. If you're a self-taught developer like me, I know you've been there too.
 
-A few months ago I decided to stop being lazy and started to research it. To my surprise, they were very easy to grasp when playing with the interpreter but not so much when reading about them. I wrote this post trying to explain [args and kwargs](https://www.pythoncheatsheet.org/#args-and-kwargs) the way I would have liked someone explained them to me.
+A few months ago, I decided to stop being lazy and started to research it. To my surprise, they were easy to grasp when playing with the interpreter, but not so much when reading about them. I wrote this post trying to explain [args and kwargs](https://www.pythoncheatsheet.org/#args-and-kwargs) the way I would have liked someone explained them to me.
 
 ## Basics
 
@@ -59,13 +59,13 @@ def some_function(*arguments, **keywords):
   </base-warning-content>
 </base-warning>
 
-So, how does Python know that we want our function to accept multiple arguments and/or keywords? Yes, the answers are the `*` and `**` operators.
+So, how does Python know that we want our function to accept multiple arguments and keywords? Yes, the answers are the `*` and `**` operators.
 
 Now that we have covered the basics, let's work with them 👊.
 
 ## args
 
-We now know how to pass multiple arguments using `*args` as a parameter to our functions, but how do we work with them? It's easy: all the arguments are contained within the `args` variable as a [tuple](https://www.pythoncheatsheet.org/#Tuple-Data-Type):
+We now know how to pass multiple arguments using `*args` as a parameter to our functions, but how do we work with them? It's easy: all the arguments are within the `args` variable as a [tuple](https://www.pythoncheatsheet.org/#Tuple-Data-Type):
 
 ```python
 def some_function(*args):
@@ -115,7 +115,7 @@ Whatever you do with a [tuple](https://www.pythoncheatsheet.org/#Tuple-Data-Type
 
 ## kwargs
 
-While arguments are stored in the args variable, keywords are within `kwargs`, but this time as a [dictionary](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data) where the key is the keyword:
+While arguments are in the args variable, keywords are within `kwargs`, but this time as a [dictionary](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data) where the key is the keyword:
 
 ```python
 def some_function(**kwargs):
@@ -161,6 +161,4 @@ And a lot [more](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-
 
 Want to play with args and kwargs? [This](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks) is an online Jupyter Notebook for you to try.
 
-Also, some examples make use of `f-strings`, a relatively new way to format strings in Python 3.6+. [Here](https://www.pythoncheatsheet.org/#Formatted-String-Literals-or-f-strings) you can read more about it.
-
-Any doubt or suggestion? Please leave a comment and have a nice day!
+Some examples make use of `f-strings`, a relatively new way to format strings in Python 3.6+. [Here](https://www.pythoncheatsheet.org/#Formatted-String-Literals-or-f-strings) you can read more about it.
