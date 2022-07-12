@@ -38,4 +38,7 @@
     "coverage",
     "cheatsheet",
   ],
+  "typeRoots": [
+    "./src/types"
+  ]
 }

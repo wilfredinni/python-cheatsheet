@@ -32,6 +32,7 @@
         "getcwd",
         "getinfo",
         "getsize",
+        "gtag",
         "hashable",
         "IGNORECASE",
         "isabs",

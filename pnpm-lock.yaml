@@ -17,6 +17,7 @@ specifiers:
   '@vue/test-utils': ^2.0.2
   '@vueuse/core': ^8.9.1
   '@vueuse/head': ^0.7.6
+  add: ^2.0.6
   autoprefixer: ^10.4.7
   eslint: ^8.19.0
   eslint-config-prettier: ^8.5.0
@@ -50,6 +51,7 @@ specifiers:
   vite-ssg-sitemap: ^0.2.7
   vitest: ^0.16.0
   vue: ^3.2.37
+  vue-gtag: ^2.0.1
   vue-i18n: ^9.1.10
   vue-router: ^4.1.2
   vue-tsc: ^0.37.9
@@ -59,9 +61,11 @@ dependencies:
   '@headlessui/vue': 1.6.6_vue@3.2.37
   '@vueuse/core': 8.9.1_vue@3.2.37
   '@vueuse/head': 0.7.6_vue@3.2.37
+  add: 2.0.6
   pinia: 2.0.15_j6bzmzd4ujpabbp5objtwxyjp4
   prism-theme-vars: 0.2.3
   vue: 3.2.37
+  vue-gtag: 2.0.1_vue@3.2.37
   vue-i18n: 9.1.10_vue@3.2.37
   vue-router: 4.1.2_vue@3.2.37
 
@@ -2191,6 +2195,10 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
+
+  /add/2.0.6:
+    resolution: {integrity: sha512-j5QzrmsokwWWp6kUcJQySpbG+xfOBqqKnup3OIk1pz+kB/80SLorZ9V8zHFLO92Lcd+hbvq8bT+zOGoPkmBV0Q==}
+    dev: false
 
   /agent-base/6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
@@ -5602,6 +5610,14 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /vue-gtag/2.0.1_vue@3.2.37:
+    resolution: {integrity: sha512-aM4A58FVL0wV2ptYi+xzAjeg+pQVRyUcfBc5UkXAwQrR4t3WBhor50Izp2I+3Oo7+l+vWJ7u78DGcNzReb8S/A==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.2.37
+    dev: false
 
   /vue-i18n/9.1.10_vue@3.2.37:
     resolution: {integrity: sha512-jpr7gV5KPk4n+sSPdpZT8Qx3XzTcNDWffRlHV/cT2NUyEf+sEgTTmLvnBAibjOFJ0zsUyZlVTAWH5DDnYep+1g==}
