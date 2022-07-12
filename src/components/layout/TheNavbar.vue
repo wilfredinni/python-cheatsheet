@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import docsearch from '@docsearch/js'
-import '~/styles/docsearch.css'
 
 const navigation = useNavigationStore()
 const route = useRoute()
