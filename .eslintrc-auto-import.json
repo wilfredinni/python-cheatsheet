@@ -171,6 +171,7 @@
     "useMediaQuery": true,
     "useMemoize": true,
     "useMemory": true,
+    "useMeta": true,
     "useMounted": true,
     "useMouse": true,
     "useMouseInElement": true,
