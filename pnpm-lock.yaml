@@ -17,7 +17,6 @@ specifiers:
   '@vue/test-utils': ^2.0.2
   '@vueuse/core': ^8.9.1
   '@vueuse/head': ^0.7.6
-  add: ^2.0.6
   autoprefixer: ^10.4.7
   eslint: ^8.19.0
   eslint-config-prettier: ^8.5.0
@@ -61,7 +60,6 @@ dependencies:
   '@headlessui/vue': 1.6.6_vue@3.2.37
   '@vueuse/core': 8.9.1_vue@3.2.37
   '@vueuse/head': 0.7.6_vue@3.2.37
-  add: 2.0.6
   pinia: 2.0.15_j6bzmzd4ujpabbp5objtwxyjp4
   prism-theme-vars: 0.2.3
   vue: 3.2.37
@@ -2195,10 +2193,6 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
-
-  /add/2.0.6:
-    resolution: {integrity: sha512-j5QzrmsokwWWp6kUcJQySpbG+xfOBqqKnup3OIk1pz+kB/80SLorZ9V8zHFLO92Lcd+hbvq8bT+zOGoPkmBV0Q==}
-    dev: false
 
   /agent-base/6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
