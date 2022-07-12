@@ -1,5 +1,6 @@
 <script setup>
-import { Head } from '@vueuse/head'
+const route = useRoute()
+const base_url = import.meta.env.VITE_BASE_URL || 'localhost:3000'
 
 useHead({
   title: 'Python Cheatsheet - Python Cheatsheet',
@@ -43,6 +44,20 @@ useHead({
       name: 'theme-color',
       content: computed(() => (isDark.value ? '#1f2937' : '#ffffff')),
     },
+    {
+      name: 'theme-color',
+      content: computed(() => (isDark.value ? '#1f2937' : '#ffffff')),
+    },
+    {
+      property: 'og:url',
+      content: computed(() => `https://${base_url}${route.path}`),
+    },
+  ],
+  link: [
+    {
+      name: 'canonical',
+      content: computed(() => `https://${base_url}${route.path}`),
+    },
   ],
 })
 
@@ -62,18 +77,12 @@ if (inProduction) {
   )
 }
 
-const route = useRoute()
-const base_url = import.meta.env.VITE_BASE_URL || 'localhost:3000'
 watch(route, () => {
   window.scrollTo(0, 0)
 })
 </script>
 
 <template>
-  <Head>
-    <link rel="canonical" :href="`https://${base_url}${$route.path}`" />
-    <meta property="og:url" :href="`https://${base_url}${$route.path}`" />
-  </Head>
   <RouterView />
 </template>
 
