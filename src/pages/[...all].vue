@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'Not Found',
+  title: '404 Not Found',
   meta: [
     {
       name: 'description',
