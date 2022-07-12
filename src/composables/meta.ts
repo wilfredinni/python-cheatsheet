@@ -55,7 +55,7 @@ export function useMeta() {
       { name: 'twitter:image', content: cardImage },
       { name: 'twitter:card', content: 'summary' },
     ],
-    link: [{ name: 'canonical', content: url }],
+    link: [{ rel: 'canonical', href: url }],
   }
 
   return { meta }
