@@ -5,7 +5,7 @@ description: The use of a Virtual Environment is to test python code in encapsul
 
 # Virtual Environment
 
-The use of a Virtual Environment is to test python code in encapsulated environments and to also avoid filling the base Python installation with libraries we might use for only one project.
+The use of a Virtual Environment is to test python code in encapsulated environments, and to also avoid filling the base Python installation with libraries we might use for only one project.
 
 ## virtualenv
 

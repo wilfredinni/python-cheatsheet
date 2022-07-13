@@ -5,7 +5,7 @@ description: List comprehensions provide a concise way to create lists
 
 # Comprehensions
 
-List Comprehensions are a special kind of syntax that let us create lists out of other lists and are incredible useful when dealing with numbers and with one or two level of nested for loops.
+List Comprehensions are a special kind of syntax that let us create lists out of other lists, and are incredibly useful when dealing with numbers and with one or two levels of nested for loops.
 
 <base-disclaimer>
   <base-disclaimer-title>
@@ -45,7 +45,7 @@ And this is how we do the same with a List Comprehension:
 
 ## Comprehensions with conditionals
 
-If we want `new_list` to have only the names that start with C, with a for loop we would do it like this:
+If we want `new_list` to have only the names that start with C, with a for loop, we would do it like this:
 
 ```python
 >>> names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']

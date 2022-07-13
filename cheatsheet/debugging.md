@@ -30,7 +30,7 @@ Exceptions are raised with a raise statement. In code, a raise statement consist
 # Exception: This is the error message.
 ```
 
-Often it’s the code that calls the function, not the function itself, that knows how to handle an exception. So you will commonly see a raise statement inside a function and the `try` and `except` statements in the code calling the function.
+Typically, it’s the code that calls the function, not the function itself, that knows how to handle an exception. So, you will commonly see a raise statement inside a function and the `try` and `except` statements in the code calling the function.
 
 ```python
 >>> def box_print(symbol, width, height):

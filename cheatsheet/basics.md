@@ -16,7 +16,7 @@ We all need to start somewhere, so how about doing it here.
   </base-disclaimer-content>
 </base-disclaimer>
 
-For a more complete list of resources check the article [Who to Follow, What to Read and Where to Ask](https://www.pythoncheatsheet.org/blog/python-follow-read-and-ask/).
+For a more complete list of resources, check the article [Who to Follow, What to Read and Where to Ask](https://www.pythoncheatsheet.org/blog/python-follow-read-and-ask/).
 
 ## Math Operators
 
@@ -184,7 +184,7 @@ def foo():
 
 ## The print() Function
 
-The `print()` function writes the value of the argument(s) it is given. [...] it handles multiple arguments, floating point quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely:
+The `print()` function writes the value of the argument(s) it is given. [...] it handles multiple arguments, floating point-quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely:
 
 ```python
 >>> print('Hello world!')
@@ -195,6 +195,8 @@ The `print()` function writes the value of the argument(s) it is given. [...] it
 # Hello world! 1
 ```
 
+### The end keyword
+
 The keyword argument `end` can be used to avoid the newline after the output, or end the output with a different string:
 
 ```python
@@ -204,6 +206,8 @@ phrase = ['printed', 'with', 'a', 'dash', 'in', 'between']
 
 # printed-with-a-dash-in-between-
 ```
+
+### The sep keyword
 
 The keyword `sep` specify how to separate the objects, if there is more than one:
 
@@ -249,8 +253,8 @@ Evaluates to the integer value of the number of characters in a string, list, di
 <base-warning>
   <base-warning-title>Test of emptiness</base-warning-title>
   <base-warning-content>
-    Test of emptiness of strings, lists, dictionaries, etc, should <b>not</b> use
-    len, but prefer direct boolean evaluation.
+    Test of emptiness of strings, lists, dictionaries, etc., should not use
+    <code>len</code>, but prefer direct boolean evaluation.
   </base-warning-content>
 </base-warning>
 
@@ -272,7 +276,7 @@ Test of emptiness example:
 
 ## The str(), int(), and float() Functions
 
-These functions allows you to change the type of a variable. For example, you can transform from an `integer` or `float` to a `string`:
+These functions allow you to change the type of variable. For example, you can transform from an `integer` or `float` to a `string`:
 
 ```python
 >>> str(29)

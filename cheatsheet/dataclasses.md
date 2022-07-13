@@ -1,11 +1,11 @@
 ---
 title: Dataclasses - Python Cheatsheet
-description: Dataclasses are python classes but are suited for storing data objects. This module provides a decorator and functions for automatically adding generated special methods such as __init__() and __repr__() to user-defined classes.
+description: Dataclasses are python classes, but are suited for storing data objects. This module provides a decorator and functions for automatically adding generated special methods such as __init__() and __repr__() to user-defined classes.
 ---
 
 # Dataclasses
 
-`Dataclasses` are python classes but are suited for storing data objects.
+`Dataclasses` are python classes, but are suited for storing data objects.
 This module provides a decorator and functions for automatically adding generated special methods such as `__init__()` and `__repr__()` to user-defined classes.
 
 ## Features
@@ -62,7 +62,7 @@ It is easy to add default values to the fields of your data class.
 
 ## Type hints
 
-It is mandatory to define the data type in dataclass. However, If you don't want specify the datatype then, use `typing.Any`.
+It is mandatory to define the data type in dataclass. However, If you would rather not specify the datatype then, use `typing.Any`.
 
 ```python
 >>> from dataclasses import dataclass

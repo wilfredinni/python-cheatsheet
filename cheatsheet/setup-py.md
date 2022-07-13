@@ -10,7 +10,7 @@ description: The setup script is the centre of all activity in building, distrib
     A 'controversial' opinion
   </base-warning-title>
   <base-warning-content>
-    Using `setup.py` to pack and distribute your python packages can be quite challenging sometimes. Tools like <a target="_blank" href="https://python-poetry.org/">Poetry</a> make not only the packaging a <b>lot easy</b>, but also help you to manage your dependencies in a very convenient way.
+    Using `setup.py` to pack and distribute your python packages can be quite challenging every so often. Tools like <a target="_blank" href="https://python-poetry.org/">Poetry</a> make not only the packaging a <b>lot easy</b>, but also help you to manage your dependencies in a very convenient way.
   </base-warning-content>
 </base-warning>
 
@@ -22,9 +22,9 @@ If you want more information about Poetry you can read the following articles:
 
 ## Introduction
 
-The setup script is the centre of all activity in building, distributing, and installing modules using the Distutils. The main purpose of the setup script is to describe your module distribution to the Distutils, so that the various commands that operate on your modules do the right thing.
+The setup script is the center of all activity in building, distributing, and installing modules using the Distutils. The main purpose of the setup script is to describe your module distribution to the Distutils, so that the various commands that operate on your modules do the right thing.
 
-The `setup.py` file is at the heart of a Python project. It describes all of the metadata about your project. There a quite a few fields you can add to a project to give it a rich set of metadata describing the project. However, there are only three required fields: name, version, and packages. The name field must be unique if you wish to publish your package on the Python Package Index (PyPI). The version field keeps track of different releases of the project. The packages field describes where you’ve put the Python source code within your project.
+The `setup.py` file is at the heart of a Python project. It describes all the metadata about your project. There are quite a few fields you can add to a project to give it a rich set of metadata describing the project. However, there are only three required fields: name, version, and packages. The name field must be unique if you wish to publish your package on the Python Package Index (PyPI). The version field keeps track of different releases of the project. The package's field describes where you’ve put the Python source code within your project.
 
 This allows you to easily install Python packages. Often it's enough to write:
 

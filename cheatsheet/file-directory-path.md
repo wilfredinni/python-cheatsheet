@@ -25,7 +25,7 @@ the forward slash (`/`) is used as the path separator. Joining paths can be
 a headache if your code needs to work on different platforms.
 
 Fortunately, Python provides easy ways to handle this. We will showcase
-how to deal with this with both `os.path.join` and `pathlib.Path.joinpath`
+how to deal with both, `os.path.join` and `pathlib.Path.joinpath`
 
 Using `os.path.join` on Windows:
 
@@ -157,7 +157,7 @@ There are two ways to specify a file path.
 - An **absolute path**, which always begins with the root folder
 - A **relative path**, which is relative to the program’s current working directory
 
-There are also the dot (`.`) and dot-dot (`..`) folders. These are not real folders but special names that can be used in a path. A single period (“dot”) for a folder name is shorthand for “this directory.” Two periods (“dot-dot”) means “the parent folder.”
+There are also the dot (`.`) and dot-dot (`..`) folders. These are not real folders, but special names that can be used in a path. A single period (“dot”) for a folder name is shorthand for “this directory.” Two periods (“dot-dot”) means “the parent folder.”
 
 ## Handling Absolute and Relative paths
 
@@ -399,7 +399,7 @@ Listing directory contents using `pathlib` on \*nix:
     WARNING
   </base-warning-title>
   <base-warning-content>
-    Directories themselves also have a size! So you might want to check for whether a path is a file or directory using the methods in the methods discussed in the above section.
+    Directories themselves also have a size! So, you might want to check for whether a path is a file or directory using the methods in the methods discussed in the above section.
   </base-warning-content>
 </base-warning>
 
@@ -531,7 +531,7 @@ You can install this module by running `pip install send2trash` from a Terminal 
 
 `pathlib` provides a lot more functionality than the ones listed above,
 like getting file name, getting file extension, reading/writing a file without
-manually opening it, etc. Check out the
+manually opening it, etc. Refer to the
 [official documentation](https://docs.python.org/3/library/pathlib.html)
 if you want to know more!
 
@@ -540,6 +540,6 @@ if you want to know more!
     Pathlib vs Os Module
   </base-disclaimer-title>
   <base-disclaimer-content>
-    `pathlib` provides a lot more functionality than the ones listed above, like getting file name, getting file extension, reading/writing a file without manually opening it, etc. Check out the <a target="_blank" href="https://docs.python.org/3/library/pathlib.html">official documentation</a> if you want to know more!
+    `pathlib` provides a lot more functionality than the ones listed above, like getting file name, getting file extension, reading/writing a file without manually opening it, etc. See the <a target="_blank" href="https://docs.python.org/3/library/pathlib.html">official documentation</a> if you intend to know more.
   </base-disclaimer-content>
 </base-disclaimer>

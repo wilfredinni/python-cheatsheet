@@ -33,7 +33,7 @@ divide(dividend=10, divisor=0)
 # ZeroDivisionError: division by zero
 ```
 
-Lets say we don't want our program to stop it's execution or show the user an output he will no understand. Say we want to print a useful and clear message, then we need to **_handle_** the exception with the `try` and `except` keywords:
+Let's say we don't want our program to stop its execution or show the user an output he will not understand. Say we want to print a useful and clear message, then we need to **_handle_** the exception with the `try` and `except` keywords:
 
 ```python
 def divide(dividend , divisor):
@@ -73,7 +73,7 @@ divide(dividend=10, divisor=0)
 
 ## Custom Exceptions
 
-Custom exceptions are created by creating a `class` that inherit from the base `Exception` class of Python, and are raised using the `raise` keyword:
+Custom exceptions initialize by creating a `class` that inherit from the base `Exception` class of Python, and are raised using the `raise` keyword:
 
 ```python
 class MyCustomException(Exception):
@@ -85,7 +85,7 @@ raise MyCustomException
 # __main__.MyCustomException
 ```
 
-To declare a custom exception message you can pass it as a parameter:
+To declare a custom exception message, you can pass it as a parameter:
 
 ```python
 class MyCustomException(Exception):

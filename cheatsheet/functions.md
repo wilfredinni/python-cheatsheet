@@ -16,7 +16,7 @@ description: In Python, A function is a block of organized code that is used to 
 
 ## Function arguments
 
-A function can take `arguments` and/or `return values`:
+A function can take `arguments` and `return values`:
 
 In the following example, the function **say_hello** receives the argument "name" and prints a greeting:
 
@@ -36,7 +36,7 @@ say_hello('Rose')
 
 ## Keyword Arguments
 
-To improve or code readability we should be as explicit as possible. We can achieve this in our functions by using `Keyword Arguments`:
+To improve or code readability, we should be as explicit as possible. We can achieve this in our functions by using `Keyword Arguments`:
 
 ```python
 def say_hi(name, greeting):
@@ -51,7 +51,7 @@ say_hi(name='Anna', greeting='Hi') # with keyword arguments
 
 ## Return Values
 
-When creating a function using the `def` statement, you can specify what the return value should be with a `return`` statement. A return statement consists of the following:
+When creating a function using the `def` statement, you can specify what the return value should be with a `return` statement. A return statement consists of the following:
 
 - The `return` keyword.
 
@@ -108,7 +108,7 @@ print(eggs)
 
 There are four rules to tell whether a variable is in a local scope or global scope:
 
-1. If a variable is being used in the global scope (that is, outside of all functions), then it is always a global variable.
+1. If a variable is being used in the global scope (that is, outside all functions), then it is always a global variable.
 
 1. If there is a global statement for that variable in a function, it is a global variable.
 

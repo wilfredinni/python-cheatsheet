@@ -10,7 +10,7 @@ description: Control flow is the order in which individual statements, instructi
     Python control flow
   </base-disclaimer-title>
   <base-disclaimer-content>
-  Control flow is the order in which individual statements, instructions or function calls are executed or evaluated. The control flow of a Python program is regulated by conditional statements, loops, and function calls.
+  Control flow is the order in which individual statements, instructions, or function calls are executed or evaluated. The control flow of a Python program is regulated by conditional statements, loops, and function calls.
   </base-disclaimer-content>
 </base-disclaimer>
 
@@ -117,7 +117,7 @@ if name != 'George':
 # You are not George
 ```
 
-The `else` statement execute only if the evaluation of the `if` and all the `elif` expressions are `False`:
+The `else` statement executes only if the evaluation of the `if` and all the `elif` expressions are `False`:
 
 ```python
 name = 'Debora'
@@ -157,7 +157,7 @@ else:
 
 ## Ternary Conditional Operator
 
-Many programming languages have a ternary operator, which define a conditional expression. The most common usage is to make a terse simple conditional assignment statement. In other words, it offers one-line code to evaluate the first expression if the condition is true, otherwise it evaluates the second expression.
+Many programming languages have a ternary operator, which define a conditional expression. The most common usage is to make a terse, simple conditional assignment statement. In other words, it offers one-line code to evaluate the first expression if the condition is true, and otherwise it evaluates the second expression.
 
 ```
 <expression1> if <condition> else <expression2>
@@ -266,7 +266,7 @@ for pet in pets:
 
 ## The range() function
 
-The `range()` function returns a sequence of numbers. It start from 0, increments by 1, and stops before a specified number:
+The `range()` function returns a sequence of numbers. It starts from 0, increments by 1, and stops before a specified number:
 
 ```python
 >>> for i in range(5):
@@ -318,7 +318,7 @@ useful when a `break` condition can occur in the loop:
 
 ## Ending a Program with sys.exit()
 
-`exit()` function allows to exit from Python.
+`exit()` function allows exiting Python.
 
 ```python
 import sys

@@ -9,7 +9,7 @@ updated: July 3, 2022
 
 First off, thank you for taking the time to contribute!
 
-The following is a set of guidelines for contributing to the Python cheatsheet. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to [this document](https://github.com/wilfredinni/python-cheatsheet/blob/master/CONTRIBUTING.md).
+The following is a set of guidelines for contributing to the Python cheatsheet. These are mostly guidelines, not rules. Use your best judgment, and please don't hesitate to propose changes to [this document](https://github.com/wilfredinni/python-cheatsheet/blob/master/CONTRIBUTING.md).
 
 ## Code of Conduct
 
@@ -17,11 +17,11 @@ This project and everyone who participates in it is governed by the [Contributor
 
 ## You Can
 
-- Propose changes to the cheatsheet.
+- Submit changes to the cheatsheet.
 - Improve existing topics and examples.
 - Add new topics or resources.
 - Ask for new topics by creating an [Issue](https://github.com/wilfredinni/python-cheatsheet/issues).
-- Read the issues, Fork the project and do a [Pull Request](https://github.com/wilfredinni/python-cheatsheet/pulls).
+- Read the issues, fork the project and do a [Pull Request](https://github.com/wilfredinni/python-cheatsheet/pulls).
 - Report any kind of error or typo by creating an [Issue](https://github.com/wilfredinni/python-cheatsheet/issues) or fix it with a [Pull Request](https://github.com/wilfredinni/python-cheatsheet/pulls).
 
 ## What you need to Know

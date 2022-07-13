@@ -29,7 +29,7 @@ An escape character is created by typing a backslash `\` followed by the charact
 
 ## Raw strings
 
-A raw string completely ignores all escape characters and prints any backslash that appears in the string.
+A raw string entirely ignores all escape characters and prints any backslash that appears in the string.
 
 ```python
 >>> print(r"Hello there!\nHow are you?\nI\'m doing fine.")
@@ -142,7 +142,7 @@ Transforms a string to upper and lower case:
 
 ## isupper() and islower() methods
 
-Return `True` or `False` after evaluating if a string is in upper or lower case:
+Returns `True` or `False` after evaluating if a string is in upper or lower case:
 
 ```python
 >>> spam = 'Hello world!'
@@ -219,7 +219,7 @@ The `join()` method takes all the items in an iterable, like a <router-link to="
 
 ### split()
 
-The `split()` method splits a `string` into a `list`. By default it will use spaces to separate the items, but you can also set another character of choice:
+The `split()` method splits a `string` into a `list`. By default, it will use spaces to separate the items, but you can also set another character of choice:
 
 ```python
 >>> 'My name is Simon'.split()
@@ -251,7 +251,7 @@ The `split()` method splits a `string` into a `list`. By default it will use spa
 # '       Hello       '
 ```
 
-An optional second argument to `rjust()` and `ljust()` will specify a fill character other than a space character:
+An optional second argument to `rjust()` and `ljust()` will specify a fill character apart from a space character:
 
 ```python
 >>> 'Hello'.rjust(20, '*')

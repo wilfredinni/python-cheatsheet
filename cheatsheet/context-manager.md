@@ -9,7 +9,7 @@ While Python's context managers are widely used, few understand the purpose behi
 
 ## The with statement
 
-A context manager is an object that is notified when a context (a block of code) starts and ends. You commonly use one with the with statement. It takes care of the notifying.
+A context manager is an object that is notified when a context (a block of code) starts and ends. You commonly use one with the `with` statement. It takes care of the notifying.
 
 For example, file objects are context managers. When a context ends, the file object is closed automatically:
 
@@ -20,7 +20,7 @@ For example, file objects are context managers. When a context ends, the file ob
 # the open_file object has automatically been closed.
 ```
 
-Anything that ends execution of the block causes the context manager's exit method to be called. This includes exceptions, and can be useful when an error causes you to prematurely exit from an open file or connection. Exiting a script without properly closing files/connections is a bad idea, that may cause data loss or other problems. By using a context manager you can ensure that precautions are always taken to prevent damage or loss in this way.
+Anything that ends execution of the block causes the context manager's exit method to be called. This includes exceptions, and can be useful when an error causes you to prematurely exit an open file or connection. Exiting a script without properly closing files/connections is a bad idea, that may cause data loss or other problems. By using a context manager, you can ensure that precautions are always taken to prevent damage or loss in this way.
 
 ## Writing your own context manager
 
