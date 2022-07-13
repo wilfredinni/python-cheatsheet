@@ -1,5 +1,6 @@
 import { promises as fs } from 'fs'
 import { $fetch } from 'ohmyfetch'
+import { fetchAvatars } from './fetch-avatars'
 
 interface Contributor {
   login: string
@@ -34,3 +35,4 @@ async function generate() {
 }
 
 generate()
+fetchAvatars()

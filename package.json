@@ -10,8 +10,7 @@
     "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit",
     "prepare": "husky install",
-    "fetch-contributors": "esno scripts/fetch-contributors.ts",
-    "fetch-avatars": "esno scripts/fetch-avatars.ts"
+    "fetch-contributors": "esno scripts/fetch-contributors.ts"
   },
   "dependencies": {
     "@docsearch/js": "^3.1.1",

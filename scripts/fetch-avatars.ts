@@ -15,7 +15,7 @@ async function download(url: string, fileName: string) {
   await fs.writeFile(fileName, Buffer.from(image))
 }
 
-async function fetchAvatars() {
+export async function fetchAvatars() {
   await fs.ensureDir(dirAvatars)
   contributors = JSON.parse(
     await fs.readFile(pathContributors, { encoding: 'utf-8' })
@@ -30,5 +30,3 @@ async function fetchAvatars() {
     )
   )
 }
-
-fetchAvatars()
