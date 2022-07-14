@@ -15,7 +15,6 @@ declare module '@vue/runtime-core' {
     BaseTable: typeof import('./components/ui/table/BaseTable.vue')['default']
     BaseTableItem: typeof import('./components/ui/table/BaseTableItem.vue')['default']
     BaseTableRow: typeof import('./components/ui/table/BaseTableRow.vue')['default']
-    BaseThemeLocale: typeof import('./components/ui/BaseThemeLocale.vue')['default']
     BaseThemeToggle: typeof import('./components/ui/BaseThemeToggle.vue')['default']
     BaseWarning: typeof import('./components/ui/warning/BaseWarning.vue')['default']
     BaseWarningContent: typeof import('./components/ui/warning/BaseWarningContent.vue')['default']
