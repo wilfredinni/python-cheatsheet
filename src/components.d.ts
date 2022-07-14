@@ -3,6 +3,8 @@
 // Read more: https://github.com/vuejs/core/pull/3399
 import '@vue/runtime-core'
 
+export {}
+
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     ArrowIcon: typeof import('./components/icons/ArrowIcon.vue')['default']
@@ -42,5 +44,3 @@ declare module '@vue/runtime-core' {
     WarningIcon: typeof import('./components/icons/WarningIcon.vue')['default']
   }
 }
-
-export {}
