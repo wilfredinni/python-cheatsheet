@@ -54,6 +54,7 @@
         "mypy",
         "namelist",
         "nlink",
+        "nongreedy",
         "ohmyfetch",
         "pathe",
         "pathlib",

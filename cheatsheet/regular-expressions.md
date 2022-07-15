@@ -25,6 +25,26 @@ All the regex functions in Python are in the re module:
 >>> import re
 ```
 
+## Regex symbols
+
+| Symbol                   | Matches                                                |
+| ------------------------ | ------------------------------------------------------ |
+| `?`                      | zero or one of the preceding group.                    |
+| `*`                      | zero or more of the preceding group.                   |
+| `+`                      | one or more of the preceding group.                    |
+| `{n}`                    | exactly n of the preceding group.                      |
+| `{n,}`                   | n or more of the preceding group.                      |
+| `{,m}`                   | 0 to m of the preceding group.                         |
+| `{n,m}`                  | at least n and at most m of the preceding p.           |
+| `{n,m}?` or `*?` or `+?` | performs a non-greedy match of the preceding p.        |
+| `^spam`                  | means the string must begin with spam.                 |
+| `spam$`                  | means the string must end with spam.                   |
+| `.`                      | any character, except newline characters.              |
+| `\d`, `\w`, and `\s`     | a digit, word, or space character, respectively.       |
+| `\D`, `\W`, and `\S`     | anything except a digit, word, or space, respectively. |
+| `[abc]`                  | any character between the brackets (such as a, b, ).   |
+| `[^abc]`                 | any character that isn’t between the brackets.         |
+
 ## Matching regex objects
 
 ```python
@@ -55,7 +75,7 @@ All the regex functions in Python are in the re module:
 # '415-555-4242'
 ```
 
-To retrieve all the groups at once: use the groups() method—note the plural form for the name.
+To retrieve all the groups at once use the `groups()` method:
 
 ```python
 >>> mo.groups()
@@ -72,7 +92,7 @@ To retrieve all the groups at once: use the groups() method—note the plural fo
 
 ## Multiple groups with Pipe
 
-The `|` character is called a pipe. You can use it anywhere you want to match one of many expressions. For example, the regular expression _'Batman|Tina Fey'_ will match either _'Batman'_ or _'Tina Fey'_.
+You can use the `|` character anywhere you want to match one of many expressions.
 
 ```python
 >>> hero_regex = re.compile (r'Batman|Tina Fey')
@@ -117,7 +137,7 @@ The `?` character flags the group that precedes it as an optional part of the pa
 
 ## Matching zero or more with the Star
 
-The \* (called the star or asterisk) means “match zero or more”—the group that precedes the star can occur any number of times in the text.
+The `*` (star or asterisk) means “match zero or more”. The group that precedes the star can occur any number of times in the text.
 
 ```python
 >>> bat_regex = re.compile(r'Bat(wo)*man')
@@ -136,7 +156,7 @@ The \* (called the star or asterisk) means “match zero or more”—the group 
 
 ## Matching one or more with the Plus
 
-While \* means “match zero or more,” the `+` (or plus) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:
+The `+` (or plus) _means match one or more_. The group preceding a plus must appear at least once:
 
 ```python
 >>> bat_regex = re.compile(r'Bat(wo)+man')
@@ -156,9 +176,7 @@ While \* means “match zero or more,” the `+` (or plus) means “match one or
 
 ## Matching specific repetitions with Curly Brackets
 
-If you have a group that you want to repeat a specific number of times, follow the group in your regex with a number in curly brackets. For example, the regex `(Ha){3}` will match the string 'HaHaHa', but it will not match 'HaHa', since the latter has only two repeats of the (Ha) group.
-
-Instead of one number, you can specify a range by writing a minimum, a comma, and a maximum in between the curly brackets. For example, the regex (Ha){3,5} will match 'HaHaHa', 'HaHaHaHa', and 'HaHaHaHaHa'.
+If you have a group that you want to repeat a specific number of times, follow the group in your regex with a number in curly brackets:
 
 ```python
 >>> ha_regex = re.compile(r'(Ha){3}')
@@ -172,9 +190,18 @@ Instead of one number, you can specify a range by writing a minimum, a comma, an
 # True
 ```
 
+Instead of one number, you can specify a range with minimum and a maximum in between the curly brackets. For example, the regex (Ha){3,5} will match 'HaHaHa', 'HaHaHaHa', and 'HaHaHaHaHa'.
+
+```python
+>>> ha_regex = re.compile(r'(Ha){2,3}')
+>>> mo1 = ha_regex.search('HaHaHaHa')
+>>> mo1.group()
+# 'HaHaHa'
+```
+
 ## Greedy and non-greedy matching
 
-Python’s regular expressions are greedy by default, which means that in ambiguous situations they will match the longest string possible. The non-greedy version of the curly brackets, which matches the shortest string possible, has the closing curly bracket followed by a question mark.
+Python’s regular expressions are greedy by default: in ambiguous situations they will match the longest string possible. The non-greedy version of the curly brackets, which matches the shortest string possible, has the closing curly bracket followed by a question mark.
 
 ```python
 >>> greedy_ha_regex = re.compile(r'(Ha){3,5}')
@@ -191,7 +218,7 @@ Python’s regular expressions are greedy by default, which means that in ambigu
 
 ## The findall() method
 
-In addition to the `search()` method, Regex objects also have a `findall()` method. While `search()` will return a Match object of the first matched text in the searched string, the `findall()` method will return the strings of every match in the searched string.
+The `findall()` method will return the strings of every match in the searched string.
 
 ```python
 >>> phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d') # has no groups
@@ -200,15 +227,9 @@ In addition to the `search()` method, Regex objects also have a `findall()` meth
 # ['415-555-9999', '212-555-0000']
 ```
 
-To summarize what the findall() method returns, remember the following:
-
-- When called on a regex with no groups, such as \d-\d\d\d-\d\d\d\d, the method findall() returns a list of ng matches, such as ['415-555-9999', '212-555-0000'].
-
-- When called on a regex that has groups, such as (\d\d\d)-(d\d)-(\d\d\d\d), the method findall() returns a list of es of strings (one string for each group), such as [('415', '555', '9999'), ('212', '555', '0000')].
-
 ## Making your own character classes
 
-There are times when you want to match a set of characters but the shorthand character classes (\d, \w, \s, and so on) are too broad. You can define your own character class using square brackets. For example, the character class _[aeiouAEIOU]_ will match any vowel, both lowercase and uppercase.
+You can define your own character class using square brackets. For example, the character class _[aeiouAEIOU]_ will match any vowel, both lowercase and uppercase.
 
 ```python
 >>> vowel_regex = re.compile(r'[aeiouAEIOU]')
@@ -218,7 +239,7 @@ There are times when you want to match a set of characters but the shorthand cha
 
 You can also include ranges of letters or numbers by using a hyphen. For example, the character class _[a-zA-Z0-9]_ will match all lowercase letters, uppercase letters, and numbers.
 
-By placing a caret character (`^`) just after the character class’s opening bracket, you can make a negative character class. A negative character class will match all the characters that are not in the character class. For example, enter the following into the interactive shell:
+By placing a caret character (`^`) just after the character class’s opening bracket, you can make a negative character class that will match all the characters that are not in the character class:
 
 ```python
 >>> consonant_regex = re.compile(r'[^aeiouAEIOU]')
@@ -229,11 +250,11 @@ By placing a caret character (`^`) just after the character class’s opening br
 
 ## The Caret and Dollar sign characters
 
-- You can also use the caret symbol (`^`) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
+- You can also use the caret symbol `^` at the start of a regex to indicate that a match must occur at the beginning of the searched text.
 
-- Likewise, you can put a dollar sign (\$) at the end of the regex to indicate the string must end with this regex pattern.
+- Likewise, you can put a dollar sign `$` at the end of the regex to indicate the string must end with this regex pattern.
 
-- And you can use the `^` and \$ together to indicate that the entire string must match the regex—that is, it’s not enough for a match to be made on some subset of the string.
+- And you can use the `^` and `$` together to indicate that the entire string must match the regex.
 
 The `r'^Hello`' regular expression string matches strings that begin with 'Hello':
 
@@ -263,7 +284,7 @@ The `r'\d\$'` regular expression string matches strings that end with a numeric 
 
 ## The Wildcard character
 
-The `.` (or dot) character in a regular expression is called a wildcard and will match any character except for a newline:
+The `.` (or dot) character in a regular expression will match any character except for a newline:
 
 ```python
 >>> at_regex = re.compile(r'.at')
@@ -285,7 +306,7 @@ The `.` (or dot) character in a regular expression is called a wildcard and will
 'Sweigart'
 ```
 
-The dot-star uses greedy mode: It will always try to match as much text as possible. To match any and all text in a nongreedy fashion, use the dot, star, and question mark (.\*?). The question mark tells Python to match in a non-greedy way:
+The `.*` uses greedy mode: It will always try to match as much text as possible. To match any and all text in a non-greedy fashion, use the dot, star, and question mark (`.*?`). The question mark tells Python to match in a non-greedy way:
 
 ```python
 >>> non_greedy_regex = re.compile(r'<.*?>')
@@ -301,7 +322,7 @@ The dot-star uses greedy mode: It will always try to match as much text as possi
 
 ## Matching newlines with the Dot character
 
-The dot-star will match everything except a newline. By passing `re.DOTALL` as the second argument to re.compile(), you can make the dot character match all characters, including the newline character:
+The dot-star will match everything except a newline. By passing `re.DOTALL` as the second argument to `re.compile()`, you can make the dot character match all characters, including the newline character:
 
 ```python
 >>> no_newline_regex = re.compile('.*')
@@ -313,29 +334,9 @@ The dot-star will match everything except a newline. By passing `re.DOTALL` as t
 # 'Serve the public trust.\nProtect the innocent.\nUphold the law.'
 ```
 
-## Review of Regex symbols
-
-| Symbol                   | Matches                                                |
-| ------------------------ | ------------------------------------------------------ |
-| `?`                      | zero or one of the preceding group.                    |
-| `*`                      | zero or more of the preceding group.                   |
-| `+`                      | one or more of the preceding group.                    |
-| `{n}`                    | exactly n of the preceding group.                      |
-| `{n,}`                   | n or more of the preceding group.                      |
-| `{,m}`                   | 0 to m of the preceding group.                         |
-| `{n,m}`                  | at least n and at most m of the preceding p.           |
-| `{n,m}?` or `*?` or `+?` | performs a non-greedy match of the preceding p.        |
-| `^spam`                  | means the string must begin with spam.                 |
-| `spam$`                  | means the string must end with spam.                   |
-| `.`                      | any character, except newline characters.              |
-| `\d`, `\w`, and `\s`     | a digit, word, or space character, respectively.       |
-| `\D`, `\W`, and `\S`     | anything except a digit, word, or space, respectively. |
-| `[abc]`                  | any character between the brackets (such as a, b, ).   |
-| `[^abc]`                 | any character that isn’t between the brackets.         |
-
 ## Case-Insensitive matching
 
-To make your regex case-insensitive, you can pass `re.IGNORECASE` or re.I as a second argument to `re.compile()`:
+To make your regex case-insensitive, you can pass `re.IGNORECASE` or `re.I` as a second argument to `re.compile()`:
 
 ```python
 >>> robocop = re.compile(r'robocop', re.I)
