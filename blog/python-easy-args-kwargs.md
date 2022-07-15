@@ -1,6 +1,6 @@
 ---
 title: Python *args and **kwargs Made Easy - Python Cheatsheet
-description: args and kwargs may seem scary, but the truth is that they are not that difficult to grasp and have the power to grant your functions with flexibility and readability.
+description: args and kwargs may seem scary, but the truth is that they are not that difficult to grasp and have the power to grant your functions with lots of flexibility.
 date: March 08, 2019
 updated: July 1, 2022
 ---
@@ -9,9 +9,9 @@ updated: July 1, 2022
 meta:
     layout: article
     title: Python *args and **kwargs Made Easy
-    description: args and kwargs may seem scary, but the truth is that they are not that difficult to grasp and have the power to grant your functions with flexibility and readability.
+    description: args and kwargs may seem scary, but the truth is that they are not that difficult to grasp and have the power to grant your functions with lots of flexibility.
     date: March 08, 2019
-    updated: July 1, 2022
+    updated: July 14, 2022
 </route>
 
 <blog-title-header :frontmatter="frontmatter" title="Python *args and **kwargs Made Easy" />
@@ -157,7 +157,7 @@ And a lot [more](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-
 
 ## Conclusion
 
-`*args` and `**kwargs` may seem scary, but the truth is that they are not that difficult to grasp and have the power to grant your functions with flexibility and readability. If you know about [tuples](https://www.pythoncheatsheet.org/#Tuple-Data-Type) and [dictionaries](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data), you are ready to go.
+`*args` and `**kwargs` may seem scary, but the truth is that they are not that difficult to grasp and have the power to grant your functions with lots of flexibility. If you know about [tuples](https://www.pythoncheatsheet.org/#Tuple-Data-Type) and [dictionaries](https://www.pythoncheatsheet.org/#Dictionaries-and-Structuring-Data), you are ready to go.
 
 Want to play with args and kwargs? [This](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks) is an online Jupyter Notebook for you to try.
 
