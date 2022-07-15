@@ -16,7 +16,7 @@ onMounted(() => {
 
 <template>
   <nav
-    class="sticky top-0 z-40 w-full flex-none bg-white/40 backdrop-blur dark:border-slate-50/[0.06] dark:bg-transparent lg:z-50 lg:border-b lg:border-slate-900/10"
+    class="sticky top-0 z-40 w-full flex-none border-b border-slate-900/10 bg-white/40 backdrop-blur dark:border-slate-50/[0.06] dark:bg-transparent lg:z-50"
   >
     <div class="mx-auto max-w-8xl px-2 sm:px-6 lg:px-12">
       <div class="relative flex h-14 justify-between">
