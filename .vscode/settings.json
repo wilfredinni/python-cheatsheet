@@ -83,6 +83,7 @@
         "subfolders",
         "timeit",
         "unhashable",
+        "useb",
         "vendorizing",
         "venv",
         "virtualenv",

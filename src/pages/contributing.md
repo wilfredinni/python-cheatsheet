@@ -27,6 +27,40 @@ The following is a set of guidelines for contributing to the Python cheatsheet. 
 
 This project and everyone who participates in it is governed by the [Contributor Covenant Code of Conduct](https://github.com/wilfredinni/python-cheatsheet/blob/master/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to services@github.com.
 
+## Running the project locally
+
+1.  Install [pnpm](https://pnpm.io/installation) package manager.
+
+    Linux/macOS
+
+        curl -fsSL https://get.pnpm.io/install.sh | sh -
+
+    On Windows (PowerShell)
+
+        iwr https://get.pnpm.io/install.ps1 -useb | iex
+
+2.  Clone the project, change to the `next` branch and install the dependencies.
+
+        git clone https://github.com/wilfredinni/python-cheatsheet.git
+        cd python-cheatsheet
+        git checkout next
+        pnpm install
+
+3.  Create a new branch from `next`.
+
+        git branch fix_bug
+        git checkout fix_bug
+
+4.  Change/upgrade/add the changes you want.
+5.  Update the `README` if needed.
+6.  `Add`, `commit` and `push` your changes to Github.
+
+        git add .
+        git commit -m 'Add succinct explanation of what changed'
+        git push origin fix_bug
+
+7.  Open a [pull request](https://github.com/wilfredinni/python-cheatsheet/pulls).
+
 ## You Can
 
 - Submit changes to the cheatsheet.
