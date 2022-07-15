@@ -1,5 +1,5 @@
 ---
-title: Manipulation strings - Python Cheatsheet
+title: Manipulating strings - Python Cheatsheet
 description: An escape character is created by typing a backslash \ followed by the character you want to insert.
 ---
 
