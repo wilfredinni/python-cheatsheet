@@ -42,7 +42,7 @@ All contributions are welcome!
         git commit -m 'Add succinct explanation of what changed'
         git push origin fix_bug
 
-7.  Open a [pull request](https://github.com/wilfredinni/python-cheatsheet/pulls)
+7.  Open a [pull request](https://github.com/wilfredinni/python-cheatsheet/pulls).
 
 ## Code of Conduct
 
