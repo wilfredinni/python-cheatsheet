@@ -3,6 +3,7 @@ title: 'Python projects with Poetry and VSCode Part 1 - Python Cheatsheet'
 description: We'll use Poetry to start a simple project, manage dependencies and publish it on PyPI. We'll also integrate Pytest, Black, and Flake8 into VSCode directly from a Virtual Environment.
 date: April 12, 2019
 updated: July 3, 2022
+tags: python, intermediate, vscode, packaging
 ---
 
 <route lang="yaml">

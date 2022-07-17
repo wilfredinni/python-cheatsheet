@@ -3,6 +3,7 @@ title: 'Python Sets: What, Why and How - Python Cheatsheet'
 description: When writing code, you can do it in more than a single way. Some are considered to be bad, and others, clear, concise and maintainable. Or pythonic. In this Article we are going to explore the way that Python Sets can help us not just with readability, but also speeding up our programs execution time.
 date: July 27, 2018
 updated: July 3, 2022
+tags: python, basics
 ---
 
 <route lang="yaml">
