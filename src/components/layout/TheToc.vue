@@ -34,7 +34,7 @@ const getObserver = () => {
       })
     },
     {
-      rootMargin: '0px 0px -80% 0px',
+      rootMargin: '0px 0px -50% 0px',
     }
   )
   document.querySelectorAll('article h2').forEach((section) => {
