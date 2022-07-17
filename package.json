@@ -15,7 +15,7 @@
   "dependencies": {
     "@docsearch/js": "^3.1.1",
     "@headlessui/vue": "^1.6.7",
-    "@vueuse/core": "^8.9.3",
+    "@vueuse/core": "^8.9.4",
     "@vueuse/head": "^0.7.6",
     "pinia": "^2.0.16",
     "prism-theme-vars": "^0.2.4",
@@ -30,7 +30,7 @@
     "@types/fs-extra": "^9.0.13",
     "@types/markdown-it": "^12.2.3",
     "@types/markdown-it-link-attributes": "^3.0.1",
-    "@types/node": "^18.0.5",
+    "@types/node": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.30.6",
     "@typescript-eslint/parser": "^5.30.6",
     "@vitejs/plugin-vue": "^3.0.0",
@@ -65,7 +65,7 @@
     "vite-ssg": "^0.20.2",
     "vite-ssg-sitemap": "^0.3.1",
     "vitest": "^0.18.1",
-    "vue-tsc": "^0.38.7"
+    "vue-tsc": "^0.38.8"
   },
   "pnpm": {
     "peerDependencyRules": {

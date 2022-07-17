@@ -1,8 +1,4 @@
 <script setup lang="ts">
-defineProps<{
-  vertical?: boolean
-}>()
-
 const container = ref()
 let hasInitalized = false
 const loadCarbon = import.meta.env.VITE_LOAD_CARBON || false
@@ -26,10 +22,5 @@ onMounted(() => {
 </script>
 
 <template>
-  <div
-    v-if="loadCarbon === 'true'"
-    id="carbonads"
-    ref="container"
-    class="vertical"
-  />
+  <div v-if="loadCarbon === 'true'" id="carbonads" ref="container" />
 </template>
