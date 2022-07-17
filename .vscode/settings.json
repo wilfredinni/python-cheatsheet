@@ -90,6 +90,7 @@
         "virtualenv",
         "virtualenvwrapper",
         "Workon",
+        "xxxl",
         "zipfile",
         "zophie"
     ],

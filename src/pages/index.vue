@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
+import { breakpointsTailwind } from '@vueuse/core'
 import ReferenceIcon from '~/components/icons/ReferenceIcon.vue'
 import PluginIcon from '~/components/icons/PluginIcon.vue'
 
@@ -19,7 +19,6 @@ const links = [
 ]
 
 const breakpoints = useBreakpoints(breakpointsTailwind)
-
 const smAndLarger = breakpoints.greater('sm')
 </script>
 

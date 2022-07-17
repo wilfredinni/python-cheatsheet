@@ -12,42 +12,35 @@ function init() {
   }
 }
 onMounted(() => {
-  // if the page is loaded when aside is active, load carbon directly.
-  // otherwise, only load it if the page resizes to wide enough. this avoids
-  // loading carbon at all on mobile where it's never shown
   init()
 })
 </script>
 
 <template>
-  <!-- <script id="_carbonads_projs" type="text/javascript" src="https://srv.carbonads.net/ads/CK7D62JL.json?segment=placement:wwwpythoncheatsheetorg&amp;callback=_carbonads_go"></script> -->
-  <!-- <div id="carbonads" ref="container" class="mt-2" /> -->
   <div id="carbonads" ref="container" class="mt-2" />
 </template>
 
 <style scoped>
-body {
-  background: #eee;
-}
-
 #carbonads {
+  z-index: 1;
   display: block;
   overflow: hidden;
-  padding: 1em;
-  max-width: 158px;
+  padding: 0.7em;
+  max-width: 150px;
   background: #f8fafc;
   text-align: center;
   font-size: 13px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   line-height: 1.5;
-  border: 1px solid #0ea5e9;
+  border: 1px solid #cbd5e1;
   border-radius: 5px;
 }
 
 .dark #carbonads {
   background: #1e293b;
   color: #cbd5e1;
+  border: 1px solid #334155;
 }
 
 #carbonads a {
