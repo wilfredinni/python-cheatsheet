@@ -30,10 +30,12 @@ export default defineConfig({
     Pages({
       extensions: ['vue', 'md'],
       dirs: [
+        { dir: '', baseRoute: '' },
         { dir: 'src/pages', baseRoute: '' },
         { dir: 'cheatsheet', baseRoute: 'cheatsheet' },
         { dir: 'blog', baseRoute: 'blog' },
       ],
+      exclude: ['**/README.md'],
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
