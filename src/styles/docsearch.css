@@ -516,7 +516,7 @@ svg.DocSearch-Hit-Select-Icon {
   margin: 0 0 0 22px;
   padding: 0 12px 0 12px;
   user-select: none;
-  width: 140px;
+  width: 150px;
   transition: border-color 0.3s;
 }
 .dark .DocSearch-Button:active,
