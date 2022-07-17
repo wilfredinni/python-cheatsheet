@@ -24,7 +24,7 @@ export async function fetchAvatars() {
   await Promise.all(
     contributors.map((name) =>
       download(
-        `https://github.com/${name}.png?size=40`,
+        `https://github.com/${name}.png?size=48`,
         join(dirAvatars, `${name}.png`)
       )
     )
