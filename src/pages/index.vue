@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 import ReferenceIcon from '~/components/icons/ReferenceIcon.vue'
 import PluginIcon from '~/components/icons/PluginIcon.vue'
 
@@ -16,6 +17,10 @@ const links = [
     icon: PluginIcon,
   },
 ]
+
+const breakpoints = useBreakpoints(breakpointsTailwind)
+
+const smAndLarger = breakpoints.greater('sm')
 </script>
 
 <template>
@@ -28,12 +33,14 @@ const links = [
           alt="python-cheatsheet"
         />
       </div>
+
+      <h1 v-if="smAndLarger">Python Cheatsheet</h1>
       <h1
-        class="mb-2 bg-gradient-to-r from-indigo-400 to-green-400 bg-clip-text text-center font-display text-4xl font-medium tracking-tight text-transparent dark:from-sky-400 dark:via-teal-300 dark:to-orange-300 sm:hidden"
+        v-else
+        class="mb-2 bg-gradient-to-r from-indigo-400 to-green-400 bg-clip-text text-center font-display text-4xl font-medium tracking-tight text-transparent dark:from-sky-400 dark:via-teal-300 dark:to-orange-300"
       >
         Python Cheatsheet
       </h1>
-      <h1 class="hidden sm:block">Python Cheatsheet</h1>
 
       <p class="lead mt-0 text-center sm:text-start">
         Based on the book
