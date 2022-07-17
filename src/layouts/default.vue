@@ -45,8 +45,8 @@ const core = useCoreStore()
           v-if="$route.name !== 'index'"
           :repository="
             $route.name !== 'contributing'
-              ? 'https://github.com/wilfredinni/python-cheatsheet/blob/next'
-              : 'https://github.com/wilfredinni/python-cheatsheet/blob/next/src/pages'
+              ? 'https://github.com/wilfredinni/python-cheatsheet/blob/master'
+              : 'https://github.com/wilfredinni/python-cheatsheet/blob/master/src/pages'
           "
         />
       </div>
