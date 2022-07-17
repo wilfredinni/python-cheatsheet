@@ -57,14 +57,12 @@ const links = [
         />
         <div class="relative overflow-hidden rounded-xl p-6">
           <component :is="link.icon" class="h-8 w-8" />
-          <h3
-            class="mt-4 font-display text-base text-slate-900 dark:text-white"
-          >
+          <p class="mt-4 font-display text-base text-slate-900 dark:text-white">
             <router-link :to="link.path">
               <span class="absolute -inset-px rounded-xl" />
               {{ link.name }}
             </router-link>
-          </h3>
+          </p>
           <p class="mt-1 text-sm text-slate-700 dark:text-slate-400">
             {{ link.description }}
           </p>
