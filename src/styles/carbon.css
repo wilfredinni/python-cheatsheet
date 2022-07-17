@@ -1,0 +1,59 @@
+#carbonads * {
+  margin: initial;
+  padding: initial;
+  text-align: center;
+}
+
+#carbonads {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  display: inline-block;
+  font-size: 13px;
+}
+
+#carbonads a,
+#carbonads a:hover {
+  color: #444;
+  text-decoration: none;
+}
+
+#carbonads > span {
+  display: grid;
+  background-color: #f8fafc;
+  max-width: 150px;
+  padding: 0.7em;
+  box-sizing: border-box;
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+}
+
+.dark #carbonads > span {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+}
+
+#carbonads .carbon-wrap {
+  display: grid;
+  row-gap: 1em;
+}
+#carbonads .carbon-text {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+.dark #carbonads .carbon-text {
+  color: #e2e8f0;
+}
+
+#carbonads .carbon-poweredby {
+  opacity: 0.5;
+  font-size: 0.725em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05ch;
+}
+
+.dark #carbonads .carbon-poweredby {
+  color: #e2e8f0;
+}

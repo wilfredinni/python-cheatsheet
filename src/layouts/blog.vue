@@ -19,6 +19,13 @@ const core = useCoreStore()
           <RouterView />
         </article>
       </div>
+
+      <div
+        v-show="!core.reader"
+        class="hidden w-40 overflow-x-hidden xl:sticky xl:top-[3.6rem] xl:-mr-6 xl:block xl:h-[calc(100vh-3.6rem)] xl:flex-none xl:overflow-y-auto xl:py-10 xl:pr-6"
+      >
+        <carbon-ads />
+      </div>
     </div>
   </div>
 </template>
