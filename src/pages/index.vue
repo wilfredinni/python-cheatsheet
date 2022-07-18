@@ -105,4 +105,10 @@ const smAndLarger = breakpoints.greater('sm')
       <contributors class="py-10" />
     </div>
   </article>
+
+  <footer
+    class="flex items-center justify-end border-t pt-4 dark:border-t-slate-800"
+  >
+    <netlify-badge />
+  </footer>
 </template>
