@@ -28,6 +28,7 @@ declare module '@vue/runtime-core' {
     GithubIcon: typeof import('./components/icons/GithubIcon.vue')['default']
     GridIcon: typeof import('./components/icons/GridIcon.vue')['default']
     LightBulbIcon: typeof import('./components/icons/LightBulbIcon.vue')['default']
+    NetlifyBadge: typeof import('./components/NetlifyBadge.vue')['default']
     PluginIcon: typeof import('./components/icons/PluginIcon.vue')['default']
     Prose: typeof import('./components/Prose.vue')['default']
     ReferenceIcon: typeof import('./components/icons/ReferenceIcon.vue')['default']
