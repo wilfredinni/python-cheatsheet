@@ -78,7 +78,7 @@ onMounted(() => {
           <base-theme-toggle />
           <a
             target="_blank"
-            href="https://github.com/wilfredinni/python-cheatsheet/tree/next"
+            href="https://github.com/wilfredinni/python-cheatsheet/tree/master"
           >
             <github-icon />
             <span class="sr-only">python cheatsheet repository</span>
