@@ -23,13 +23,9 @@ For a package, the same effect can be achieved by including a **main**.py module
 For example, we are developing a script designed to be used as a module, we should do:
 
 ```python
-# Python program to execute function directly
 >>> def add(a, b):
 ...     return a+b
 ...
->>> add(10, 20) # we can test it by calling the function save it as calculate.py
->>> # Now if we want to use that module by importing we have to comment out our call,
->>> # Instead we can write like this in calculate.py
 >>> if __name__ == "__main__":
 ...     add(3, 5)
 ```

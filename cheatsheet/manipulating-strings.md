@@ -44,7 +44,8 @@ Raw strings are mostly used for <router-link to="/cheatsheet/regular-expressions
 >>> print(
 ... """Dear Alice,
 ...
-... Eve's cat has been arrested for catnapping, cat burglary, and extortion.
+... Eve's cat has been arrested for catnapping,
+... cat burglary, and extortion.
 ...
 ... Sincerely,
 ... Bob"""
@@ -52,7 +53,8 @@ Raw strings are mostly used for <router-link to="/cheatsheet/regular-expressions
 
 # Dear Alice,
 
-# Eve's cat has been arrested for catnapping, cat burglary, and extortion.
+# Eve's cat has been arrested for catnapping,
+# cat burglary, and extortion.
 
 # Sincerely,
 # Bob

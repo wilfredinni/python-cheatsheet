@@ -192,18 +192,18 @@ Ternary operators can be chained:
 >>> age = 15
 
 >>> # this ternary operator:
->>> print('kid' if age < 13 else 'teenager' if age < 18 else 'adult')
+>>> print('kid' if age < 13 else 'teen' if age < 18 else 'adult')
 
 >>> # is equivalent to this if statement:
 >>> if age < 18:
 ...     if age < 13:
 ...         print('kid')
 ...     else:
-...         print('teenager')
+...         print('teen')
 >>> else:
 ...     print('adult')
 ...
-# output: teenager
+# output: teen
 ```
 
 ## while Loop Statements
@@ -325,7 +325,7 @@ useful when a `break` condition can occur in the loop:
 ...    if i == 3:
 ...        break
 >>> else:
-...    print("only executed when no item of the list is equal to 3")
+...    print("only executed when no item is equal to 3")
 ```
 
 ## Ending a Program with sys.exit()

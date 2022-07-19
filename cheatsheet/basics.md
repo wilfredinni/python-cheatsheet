@@ -145,7 +145,7 @@ You can name a variable anything as long as it obeys the following rules:
 
 ```python
 >>> # _span should not be used again in the code
->>> >>> _spam = 'Hello'
+>>> _spam = 'Hello'
 ```
 
 ## Comments

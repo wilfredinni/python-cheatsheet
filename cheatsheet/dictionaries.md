@@ -125,8 +125,8 @@ You can also change the default `None` value for other of your choice:
 ```python
 >>> wife = {'name': 'Rose', 'age': 33}
 
->>> f'She is deeply in love with {wife.get("husband", "sweetheart")}'
-# 'She is deeply in love with sweetheart'
+>>> f'She is deeply in love with {wife.get("husband", "lover")}'
+# 'She is deeply in love with lover'
 ```
 
 ## The setdefault() Method

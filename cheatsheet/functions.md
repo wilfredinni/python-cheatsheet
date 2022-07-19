@@ -42,10 +42,12 @@ To improve or code readability, we should be as explicit as possible. We can ach
 >>> def say_hi(name, greeting):
 ...    print(f"{name} {greeting}")
 ...
->>> say_hi('John', 'Hello') # without keyword arguments
+>>> # without keyword arguments
+>>> say_hi('John', 'Hello')
 # Hello John
 
->>> say_hi(name='Anna', greeting='Hi') # with keyword arguments
+>>> # with keyword arguments
+>>> say_hi(name='Anna', greeting='Hi')
 # Hi Anna
 ```
 
