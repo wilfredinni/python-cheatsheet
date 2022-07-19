@@ -10,7 +10,7 @@ for a regex, [slice a list](https://www.pythoncheatsheet.org/cheatsheet/lists-an
 
 ## Contribute
 
-All contributions are welcome!
+[All contributions are welcome!](/src/pages/contributing.md)
 
 ### Running the project locally
 
