@@ -23,7 +23,7 @@ Read the article <router-link to="/blog/python-easy-args-kwargs">Python \*args a
 ```python
 >>> def some_function(*args, **kwargs):
 ...     pass
-
+...
 >>> # call some_function with any number of arguments
 >>> some_function(arg1, arg2, arg3)
 
@@ -53,8 +53,7 @@ You can access the _arguments_ through the `args` variable:
 ```python
 >>> def some_function(*args):
 ...     print(f'Arguments passed: {args} as {type(args)}')
-
-
+...
 >>> some_function('arg1', 'arg2', 'arg3')
 # Arguments passed: ('arg1', 'arg2', 'arg3') as <class 'tuple'>
 ```
@@ -66,8 +65,7 @@ Keywords are accessed through the `kwargs` variable:
 ```python
 >>> def some_function(**kwargs):
 ...     print(f'keywords: {kwargs} as {type(kwargs)}')
-
-
+...
 >>> some_function(key1='arg1', key2='arg2')
 # keywords: {'key1': 'arg1', 'key2': 'arg2'} as <class 'dict'>
 ```

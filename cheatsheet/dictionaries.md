@@ -34,6 +34,7 @@ Get the **values** of the dictionary:
 >>> pet = {'color': 'red', 'age': 42}
 >>> for value in pet.values():
 ...     print(value)
+...
 # red
 # 42
 ```
@@ -46,6 +47,7 @@ Get the **keys** of the dictionary:
 >>> pet = {'color': 'red', 'age': 42}
 >>> for key in pet.keys():
 ...     print(key)
+...
 # color
 # age
 ```
@@ -58,6 +60,7 @@ Get the **items** of a dictionary and return them as a [Tuple](/cheatsheet/lists
 >>> pet = {'color': 'red', 'age': 42}
 >>> for item in pet.items():
 ...     print(item)
+...
 # ('color', 'red')
 # ('age', 42)
 ```
@@ -68,6 +71,7 @@ Using the `keys()`, `values()`, and `items()` methods, a for loop can iterate ov
 >>> pet = {'color': 'red', 'age': 42}
 >>> for key, value in pet.items():
 ...     print(f'Key: {key} Value: {value}')
+...
 # Key: color Value: red
 # Key: age Value: 42
 ```

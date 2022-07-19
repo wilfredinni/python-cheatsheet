@@ -114,38 +114,38 @@ You can name a variable anything as long as it obeys the following rules:
 1. It can be only one word.
 
 ```python
-# bad
-my variable = 'Hello'
+>>> # bad
+>>> my variable = 'Hello'
 
-# good
-var = 'Hello'
+>>> # good
+>>> var = 'Hello'
 ```
 
 2. It can use only letters, numbers, and the underscore (`_`) character.
 
 ```python
-# bad
-%$@variable = 'Hello'
+>>> # bad
+>>> %$@variable = 'Hello'
 
-# good
-my_var = 'Hello'
+>>> # good
+>>> my_var = 'Hello'
 
-# good
-my_var_2 = 'Hello'
+>>> # good
+>>> my_var_2 = 'Hello'
 ```
 
 3. It can’t begin with a number.
 
 ```python
-# this wont work
-23_var = 'hello'
+>>> # this wont work
+>>> 23_var = 'hello'
 ```
 
 4. Variable name starting with an underscore (`_`) are considered as "unuseful".
 
 ```python
-# _span should not be used again in the code
->>> _spam = 'Hello'
+>>> # _span should not be used again in the code
+>>> >>> _spam = 'Hello'
 ```
 
 ## Comments
@@ -202,8 +202,8 @@ The keyword argument `end` can be used to avoid the newline after the output, or
 ```python
 phrase = ['printed', 'with', 'a', 'dash', 'in', 'between']
 >>> for word in phrase:
-        print(word, end='-')
-
+...     print(word, end='-')
+...
 # printed-with-a-dash-in-between-
 ```
 
@@ -265,12 +265,14 @@ Test of emptiness example:
 
 # bad
 >>> if len(a) > 0:  # evaluates to True
->>>     print("the list is not empty!")
+...     print("the list is not empty!")
+...
 # the list is not empty!
 
 # good
 >>> if a: # evaluates to True
-        print("the list is not empty!")
+...     print("the list is not empty!")
+...
 # the list is not empty!
 ```
 

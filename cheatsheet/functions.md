@@ -23,7 +23,7 @@ In the following example, the function **say_hello** receives the argument "name
 ```python
 >>> def say_hello(name):
 ...    print(f'Hello {name}')
-
+...
 >>> say_hello('Carlos')
 # Hello Carlos
 
@@ -41,7 +41,7 @@ To improve or code readability, we should be as explicit as possible. We can ach
 ```python
 >>> def say_hi(name, greeting):
 ...    print(f"{name} {greeting}")
-
+...
 >>> say_hi('John', 'Hello') # without keyword arguments
 # Hello John
 
@@ -60,7 +60,7 @@ When creating a function using the `def` statement, you can specify what the ret
 ```python
 >>> def sum_two_numbers(number_1, number_2):
 ...    return number_1 + number_2
-
+...
 >>> result = sum_two_numbers(7, 8)
 >>> print(result)
 # 15
@@ -83,7 +83,7 @@ global_variable = 'I am available everywhere'
 ...     print(global_variable)  # because is global
 ...     local_variable = "only available within this function"
 ...     print(local_variable)
-
+...
 >>> # the following code will trow error because
 >>> # 'local_variable' only exists inside 'some_function'
 >>> print(local_variable)
@@ -100,7 +100,7 @@ If you need to modify a global variable from within a function, use the global s
 >>> def spam():
 ...     global eggs
 ...     eggs = 'spam'
-
+...
 >>> eggs = 'global'
 >>> spam()
 >>> print(eggs)
@@ -143,7 +143,7 @@ This function:
 ```python
 >>> def add(x, y):
 ...     return x + y
-
+...
 >>> add(5, 3)
 # 8
 ```
@@ -161,7 +161,7 @@ Like regular nested functions, lambdas also work as lexical closures:
 ```python
 >>> def make_adder(n):
 ...     return lambda x: x + n
-
+...
 >>> plus_3 = make_adder(3)
 >>> plus_5 = make_adder(5)
 

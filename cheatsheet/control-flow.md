@@ -110,10 +110,12 @@ The `if` statement evaluates an expression, and if that expression is `True`, it
 
 >>> if name == 'Debora':
 ...    print('Hi, Debora')
+...
 # Hi, Debora
 
 >>> if name != 'George':
 ...    print('You are not George')
+...
 # You are not George
 ```
 
@@ -126,6 +128,7 @@ The `else` statement executes only if the evaluation of the `if` and all the `el
 ...    print('Hi, George.')
 >>> else:
 ...    print('You are not George')
+...
 # You are not George
 ```
 
@@ -138,6 +141,7 @@ Only after the `if` statement expression is `False`, the `elif` statement is eva
 ...    print('Hi Debora!')
 >>> elif name == 'George':
 ...    print('Hi George!')
+...
 # Hi George!
 ```
 
@@ -152,6 +156,7 @@ the `elif` and `else` parts are optional.
 ...    print('Hi George!')
 >>> else:
 ...    print('Who are you?')
+...
 # Who are you?
 ```
 
@@ -173,6 +178,7 @@ Example:
 ...    print('kid')
 >>> else:
 ...    print('adult')
+...
 # output: kid
 
 >>> # is equivalent to this ternary operator:
@@ -196,6 +202,7 @@ Ternary operators can be chained:
 ...         print('teenager')
 >>> else:
 ...     print('adult')
+...
 # output: teenager
 ```
 
@@ -208,6 +215,7 @@ The while statement is used for repeated execution as long as an expression is `
 >>> while spam < 5:
 ...     print('Hello, world.')
 ...     spam = spam + 1
+...
 # Hello, world.
 # Hello, world.
 # Hello, world.
@@ -224,6 +232,7 @@ If the execution reaches a `break` statement, it immediately exits the `while` l
 ...     name = input('Please type your name: ')
 ...     if name == 'your name':
 ...         break
+...
 >>> print('Thank you!')
 # Please type your name: your name
 # Thank you!
@@ -241,6 +250,7 @@ When the program execution reaches a `continue` statement, the program execution
 ...     password = input('Password? (It is a fish.): ')
 ...     if password == 'swordfish':
 ...         break
+...
 >>> print('Access granted.')
 # Who are you? Charles
 # Who are you? Debora
@@ -257,6 +267,7 @@ The `for` loop iterates over a `list`, `tuple`, `dictionary`, `set` or `string`:
 >>> pets = ['Bella', 'Milo', 'Loki']
 >>> for pet in pets:
 ...     print(pet)
+...
 # Bella
 # Milo
 # Loki
@@ -269,6 +280,7 @@ The `range()` function returns a sequence of numbers. It starts from 0, incremen
 ```python
 >>> for i in range(5):
 ...     print(f'Will stop at 5! or 4? ({i})')
+...
 # Will stop at 5! or 4? (0)
 # Will stop at 5! or 4? (1)
 # Will stop at 5! or 4? (2)
@@ -281,6 +293,7 @@ The `range()` function can also modify it's 3 defaults arguments. The first two 
 ```python
 >>> for i in range(start=0, stop=10, step=2):
 ...    print(i)
+...
 # 0
 # 2
 # 4
@@ -293,6 +306,7 @@ You can even use a negative number for the step argument to make the for loop co
 ```python
 >>> for i in range(5, -1, -1):
 ...     print(i)
+...
 # 5
 # 4
 # 3
@@ -326,7 +340,7 @@ useful when a `break` condition can occur in the loop:
 ...     if feedback == 'exit':
 ...         sys.exit()
 ...     print(f'You typed {feedback}.')
-
+...
 # Type exit to exit: open
 # Type exit to exit: close
 # Type exit to exit: exit

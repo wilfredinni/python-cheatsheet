@@ -28,7 +28,7 @@ This is how we create a new list from an existing collection with a For Loop:
 >>> new_list = []
 >>> for n in names:
 ...     new_list.append(n)
-
+...
 >>> new_list
 # ['Charles', 'Susan', 'Patrick', 'George']
 ```
@@ -54,7 +54,7 @@ If we want `new_list` to have only the names that start with C, with a for loop,
 >>> for n in names:
 ...     if n.startswith('C'):
 ...         new_list.append(n)
-
+...
 >>> print(new_list)
 # ['Charles', 'Carol']
 ```

@@ -41,6 +41,7 @@ Example:
 >>> result = itertools.accumulate(data, operator.mul)
 >>> for each in result:
 ...     print(each)
+...
 # 1
 # 2
 # 6
@@ -71,6 +72,7 @@ Passing a function is optional:
 >>> result = itertools.accumulate(data)
 >>> for each in result:
 ...     print(each)
+...
 # 5
 # 7
 # 13
@@ -107,6 +109,7 @@ Example:
 >>> result = itertools.combinations(shapes, 2)
 >>> for each in result:
 ...     print(each)
+...
 # ('circle', 'triangle')
 # ('circle', 'square')
 # ('triangle', 'square')
@@ -127,6 +130,7 @@ Example:
 >>> result = itertools.combinations_with_replacement(shapes, 2)
 >>> for each in result:
 ...     print(each)
+...
 # ('circle', 'circle')
 # ('circle', 'triangle')
 # ('circle', 'square')
@@ -150,6 +154,7 @@ Example:
 ...     print(i)
 ...     if i > 20:
 ...         break
+...
 # 10
 # 13
 # 16
@@ -171,6 +176,7 @@ Example:
 >>> colors = ['red', 'orange', 'yellow', 'green', 'blue', 'violet']
 >>> for color in itertools.cycle(colors):
 ...     print(color)
+...
 # red
 # orange
 # yellow
@@ -199,6 +205,7 @@ Example:
 >>> result = itertools.chain(colors, shapes)
 >>> for each in result:
 ...     print(each)
+...
 # red
 # orange
 # yellow
@@ -226,6 +233,7 @@ Example:
 >>> result = itertools.compress(shapes, selections)
 >>> for each in result:
 ...     print(each)
+...
 # circle
 # square
 ```
@@ -245,6 +253,7 @@ Example:
 >>> result = itertools.dropwhile(lambda x: x<5, data)
 >>> for each in result:
 ...     print(each)
+...
 # 5
 # 6
 # 7
@@ -269,6 +278,7 @@ Example:
 >>> result = itertools.filterfalse(lambda x: x<5, data)
 >>> for each in result:
 ...     print(each)
+...
 # 5
 # 6
 # 7
@@ -299,6 +309,7 @@ Example:
 >>> for key, group in itertools.groupby(robots, key=lambda x: x['faction']):
 ...     print(key)
 ...     print(list(group))
+...
 # autobot
 # [{'name': 'blaster', 'faction': 'autobot'}]
 # decepticon
@@ -324,6 +335,7 @@ Example:
 >>> few_colors = itertools.islice(colors, 2)
 >>> for each in few_colors:
 ...     print(each)
+...
 # red
 # orange
 ```
@@ -341,6 +353,7 @@ Example:
 >>> result = itertools.permutations(alpha_data)
 >>> for each in result:
 ...     print(each)
+...
 # ('a', 'b', 'c')
 # ('a', 'c', 'b')
 # ('b', 'a', 'c')
@@ -359,6 +372,7 @@ Creates the cartesian products from a series of iterables.
 >>> result = itertools.product(num_data, alpha_data)
 >>> for each in result:
 ...     print(each)
+...
 # (1, 'a')
 # (1, 'b')
 # (1, 'c')
@@ -383,6 +397,7 @@ Example:
 ```python
 >>> for i in itertools.repeat("spam", 3):
 ...     print(i)
+...
 # spam
 # spam
 # spam
@@ -403,6 +418,7 @@ Example:
 >>> result = itertools.starmap(operator.mul, data)
 >>> for each in result:
 ...     print(each)
+...
 # 12
 # 32
 # 21
@@ -423,6 +439,7 @@ Example:
 >>> result = itertools.takewhile(lambda x: x<5, data)
 >>> for each in result:
 ...     print(each)
+...
 # 1
 # 2
 # 3
@@ -444,6 +461,7 @@ Example:
 >>> alpha_colors, beta_colors = itertools.tee(colors)
 >>> for each in alpha_colors:
 ...     print(each)
+...
 # red
 # orange
 # yellow
@@ -456,6 +474,7 @@ Example:
 >>> alpha_colors, beta_colors = itertools.tee(colors)
 >>> for each in beta_colors:
 ...     print(each)
+...
 # red
 # orange
 # yellow
@@ -478,6 +497,7 @@ Example:
 >>> data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,]
 >>> for each in itertools.zip_longest(colors, data, fillvalue=None):
 ...     print(each)
+...
 # ('red', 1)
 # ('orange', 2)
 # ('yellow', 3)

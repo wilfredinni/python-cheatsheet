@@ -68,6 +68,7 @@ Using `os.path.join` on Windows:
 
 >>> for filename in my_files:
 ...     print(os.path.join('C:\\Users\\asweigart', filename))
+...
 # C:\Users\asweigart\accounts.txt
 # C:\Users\asweigart\details.csv
 # C:\Users\asweigart\invite.docx
@@ -80,6 +81,7 @@ Using `pathlib` on \*nix:
 >>> home = Path.home()
 >>> for filename in my_files:
 ...     print(home / filename)
+...
 # /home/asweigart/accounts.txt
 # /home/asweigart/details.csv
 # /home/asweigart/invite.docx
@@ -379,6 +381,7 @@ Listing directory contents using `pathlib` on \*nix:
 
 >>> for f in Path('/usr/bin').iterdir():
 ...     print(f)
+...
 # ...
 # /usr/bin/tiff2rgba
 # /usr/bin/iconv
@@ -411,7 +414,7 @@ Using `os.path.getsize()` and `os.listdir()` together on Windows:
 
 >>> for filename in os.listdir('C:\\Windows\\System32'):
 ...     total_size = total_size + os.path.getsize(os.path.join('C:\\Windows\\System32', filename))
-
+...
 >>> print(total_size)
 # 1117846456
 ```
@@ -424,7 +427,7 @@ Using `pathlib` on \*nix:
 >>> total_size = 0
 >>> for sub_path in Path('/usr/bin').iterdir():
 ...     total_size += sub_path.stat().st_size
->>>
+...
 >>> print(total_size)
 # 1903178911
 ```
@@ -494,6 +497,7 @@ You can install this module by running `pip install send2trash` from a Terminal 
 
 >>> with open('bacon.txt', 'a') as bacon_file: # creates the file
 ...     bacon_file.write('Bacon is not a vegetable.')
+...
 # 25
 
 >>> send2trash.send2trash('bacon.txt')
@@ -511,6 +515,7 @@ You can install this module by running `pip install send2trash` from a Terminal 
 ...     for filename in filenames:
 ...         print('FILE INSIDE {folder_name}: filename{filename}')
 ...     print('')
+...
 # The current folder is C:\delicious
 # SUBFOLDER OF C:\delicious: cats
 # SUBFOLDER OF C:\delicious: walnut

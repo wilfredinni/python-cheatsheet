@@ -72,5 +72,4 @@ It is mandatory to define the data type in dataclass. However, If you would rath
 ... class WithoutExplicitTypes:
 ...    name: Any
 ...    value: Any = 42
-...
 ```

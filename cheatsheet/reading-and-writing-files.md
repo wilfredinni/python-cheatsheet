@@ -13,8 +13,9 @@ statement, which will close the file for you after you are done, managing the av
 ## Opening and reading files with the open() function
 
 ```python
->>> with open('C:\\Users\\your_home_folder\\hello.txt') as hello_file:
+>>> with open('C:\\Users\\your_home_folder\\hi.txt') as hello_file:
 ...     hello_content = hello_file.read()
+...
 >>> hello_content
 'Hello World!'
 ```
@@ -24,8 +25,10 @@ Alternatively, you can use the _readlines()_ method to get a list of string valu
 ```python
 >>> with open('sonnet29.txt') as sonnet_file:
 ...     sonnet_file.readlines()
-# [When, in disgrace with fortune and men's eyes,\n', ' I all alone beweep my
-# outcast state,\n', And trouble deaf heaven with my bootless cries,\n', And
+...
+# [When, in disgrace with fortune and men's eyes,\n',
+# ' I all alone beweep my  outcast state,\n',
+# And trouble deaf heaven with my bootless cries,\n', And
 # look upon myself and curse my fate,']
 ```
 
@@ -35,7 +38,7 @@ You can also iterate through the file line by line:
 >>> with open('sonnet29.txt') as sonnet_file:
 ...     for line in sonnet_file:
 ...         print(line, end='')
-
+...
 # When, in disgrace with fortune and men's eyes,
 # I all alone beweep my outcast state,
 # And trouble deaf heaven with my bootless cries,
@@ -47,15 +50,17 @@ You can also iterate through the file line by line:
 ```python
 >>> with open('bacon.txt', 'w') as bacon_file:
 ...     bacon_file.write('Hello world!\n')
+...
 # 13
 
 >>> with open('bacon.txt', 'a') as bacon_file:
 ...     bacon_file.write('Bacon is not a vegetable.')
+...
 # 25
 
 >>> with open('bacon.txt') as bacon_file:
 ...     content = bacon_file.read()
-
+...
 >>> print(content)
 # Hello world!
 # Bacon is not a vegetable.
@@ -79,6 +84,7 @@ To open and read variables:
 >>> with shelve.open('mydata') as shelf_file:
 ...     print(type(shelf_file))
 ...     print(shelf_file['cats'])
+...
 # <class 'shelve.DbfilenameShelf'>
 # ['Zophie', 'Pooka', 'Simon']
 ```
@@ -89,6 +95,7 @@ Just like dictionaries, `shelf` values have `keys()` and `values()` methods that
 >>> with shelve.open('mydata') as shelf_file:
 ...     print(list(shelf_file.keys()))
 ...     print(list(shelf_file.values()))
+...
 # ['cats']
 # [['Zophie', 'Pooka', 'Simon']]
 ```
@@ -105,7 +112,7 @@ Just like dictionaries, `shelf` values have `keys()` and `values()` methods that
 ...     print(spam_info.file_size)
 ...     print(spam_info.compress_size)
 ...     print('Compressed file is %sx smaller!' % (round(spam_info.file_size / spam_info.compress_size, 2)))
-
+...
 # ['spam.txt', 'cats/', 'cats/catnames.txt', 'cats/zophie.jpg']
 # 13908
 # 3828
@@ -131,6 +138,7 @@ The `extract()` method for ZipFile objects will extract a single file from the Z
 >>> with zipfile.ZipFile('example.zip') as example_zip:
 ...     print(example_zip.extract('spam.txt'))
 ...     print(example_zip.extract('spam.txt', 'C:\\some\\new\\folders'))
+...
 # 'C:\\spam.txt'
 # 'C:\\some\\new\\folders\\spam.txt'
 ```

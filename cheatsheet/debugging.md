@@ -45,7 +45,6 @@ Typically, it’s the code that calls the function, not the function itself, tha
 ...         print(symbol + (' ' * (width - 2)) + symbol)
 ...     print(symbol * width)
 ...
->>>
 >>> for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
 ...     try:
 ...         box_print(sym, w, h)
@@ -80,6 +79,7 @@ The `traceback` is displayed by Python whenever a raised exception goes unhandle
 ...     with open('errorInfo.txt', 'w') as error_file:
 ...         error_file.write(traceback.format_exc())
 ...     print('The traceback info was written to errorInfo.txt.')
+...
 # 116
 # The traceback info was written to errorInfo.txt.
 ```
