@@ -1,6 +1,8 @@
 # Python Cheatsheet
 
-Based on the book [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) and many other sources.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a8d4511d-423a-49a9-bdf3-75307e997fb1/deploy-status)](https://app.netlify.com/sites/pythoncheatsheet/deploys)
+
+This [Python Cheatsheet](https://www.pythoncheatsheet.org/) is based on the book [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) and many other sources.
 
 Anyone can forget how to
 [make character classes](https://www.pythoncheatsheet.org/cheatsheet/regular-expressions#making-your-own-character-classes)
