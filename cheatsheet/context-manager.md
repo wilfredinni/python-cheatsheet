@@ -15,7 +15,7 @@ For example, file objects are context managers. When a context ends, the file ob
 
 ```python
 >>> with open(filename) as f:
->>>     file_contents = f.read()
+...     file_contents = f.read()
 
 # the open_file object has automatically been closed.
 ```

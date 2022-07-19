@@ -147,22 +147,22 @@ Returns `True` or `False` after evaluating if a string is in upper or lower case
 ```python
 >>> spam = 'Hello world!'
 >>> spam.islower()
-False
+# False
 
 >>> spam.isupper()
-False
+# False
 
 >>> 'HELLO'.isupper()
-True
+# True
 
 >>> 'abc12345'.islower()
-True
+# True
 
 >>> '12345'.islower()
-False
+# False
 
 >>> '12345'.isupper()
-False
+# False
 ```
 
 ## The isX string methods

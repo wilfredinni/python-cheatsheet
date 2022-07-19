@@ -10,19 +10,19 @@ description: JSON stands for JavaScript Object Notation and is a lightweight for
 JSON stands for JavaScript Object Notation and is a lightweight format for storing and transporting data. Json is often used when data is sent from a server to a web page.
 
 ```python
-import json
-with open("filename.json", "r") as f:
-    content = json.loads(f.read())
+>>> import json
+>>> with open("filename.json", "r") as f:
+...     content = json.loads(f.read())
 ```
 
 Write a JSON file with:
 
 ```python
-import json
+>>> import json
 
-content = {"name": "Joe", "age": 20}
-with open("filename.json", "w") as f:
-    f.write(json.dumps(content, indent=2))
+>>> content = {"name": "Joe", "age": 20}
+>>> with open("filename.json", "w") as f:
+...     f.write(json.dumps(content, indent=2))
 ```
 
 ## YAML
@@ -42,11 +42,11 @@ specification, and allow for example to modify a YAML content without altering c
 Open a YAML file with:
 
 ```python
-from ruamel.yaml import YAML
+>>> from ruamel.yaml import YAML
 
-with open("filename.yaml") as f:
-    yaml=YAML()
-    yaml.load(f)
+>>> with open("filename.yaml") as f:
+...     yaml=YAML()
+...     yaml.load(f)
 ```
 
 ## Anyconfig
@@ -62,7 +62,6 @@ pip install anyconfig
 Usage:
 
 ```python
-import anyconfig
-
-conf1 = anyconfig.load("/path/to/foo/conf.d/a.yml")
+>>> import anyconfig
+>>> conf1 = anyconfig.load("/path/to/foo/conf.d/a.yml")
 ```

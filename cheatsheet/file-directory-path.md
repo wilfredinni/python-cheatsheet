@@ -67,7 +67,7 @@ Using `os.path.join` on Windows:
 >>> my_files = ['accounts.txt', 'details.csv', 'invite.docx']
 
 >>> for filename in my_files:
->>>     print(os.path.join('C:\\Users\\asweigart', filename))
+...     print(os.path.join('C:\\Users\\asweigart', filename))
 # C:\Users\asweigart\accounts.txt
 # C:\Users\asweigart\details.csv
 # C:\Users\asweigart\invite.docx
@@ -79,7 +79,7 @@ Using `pathlib` on \*nix:
 >>> my_files = ['accounts.txt', 'details.csv', 'invite.docx']
 >>> home = Path.home()
 >>> for filename in my_files:
->>>     print(home / filename)
+...     print(home / filename)
 # /home/asweigart/accounts.txt
 # /home/asweigart/details.csv
 # /home/asweigart/invite.docx
@@ -234,7 +234,7 @@ Using `pathlib` on \*nix:
 Using `os.path` on \*nix:
 
 ```python
-import os
+>>> import os
 
 >>> os.path.exists('.')
 # True
@@ -378,7 +378,7 @@ Listing directory contents using `pathlib` on \*nix:
 >>> from pathlib import Path
 
 >>> for f in Path('/usr/bin').iterdir():
->>>     print(f)
+...     print(f)
 # ...
 # /usr/bin/tiff2rgba
 # /usr/bin/iconv
@@ -410,7 +410,7 @@ Using `os.path.getsize()` and `os.listdir()` together on Windows:
 >>> total_size = 0
 
 >>> for filename in os.listdir('C:\\Windows\\System32'):
-      total_size = total_size + os.path.getsize(os.path.join('C:\\Windows\\System32', filename))
+...     total_size = total_size + os.path.getsize(os.path.join('C:\\Windows\\System32', filename))
 
 >>> print(total_size)
 # 1117846456
@@ -505,14 +505,12 @@ You can install this module by running `pip install send2trash` from a Terminal 
 >>> import os
 >>>
 >>> for folder_name, subfolders, filenames in os.walk('C:\\delicious'):
->>>     print(f'The current folder is {folder_name}')
->>>
->>>     for subfolder in subfolders:
->>>         print('SUBFOLDER OF {folder_name}: {subfolder}')
->>>     for filename in filenames:
->>>         print('FILE INSIDE {folder_name}: filename{filename}')
->>>
->>>     print('')
+...     print(f'The current folder is {folder_name}')
+...     for subfolder in subfolders:
+...         print('SUBFOLDER OF {folder_name}: {subfolder}')
+...     for filename in filenames:
+...         print('FILE INSIDE {folder_name}: filename{filename}')
+...     print('')
 # The current folder is C:\delicious
 # SUBFOLDER OF C:\delicious: cats
 # SUBFOLDER OF C:\delicious: walnut

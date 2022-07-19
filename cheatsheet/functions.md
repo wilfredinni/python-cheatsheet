@@ -21,16 +21,16 @@ A function can take `arguments` and `return values`:
 In the following example, the function **say_hello** receives the argument "name" and prints a greeting:
 
 ```python
-def say_hello(name):
-    print(f'Hello {name}')
+>>> def say_hello(name):
+...    print(f'Hello {name}')
 
-say_hello('Carlos')
+>>> say_hello('Carlos')
 # Hello Carlos
 
-say_hello('Wanda')
+>>> say_hello('Wanda')
 # Hello Wanda
 
-say_hello('Rose')
+>>> say_hello('Rose')
 # Hello Rose
 ```
 
@@ -39,13 +39,13 @@ say_hello('Rose')
 To improve or code readability, we should be as explicit as possible. We can achieve this in our functions by using `Keyword Arguments`:
 
 ```python
-def say_hi(name, greeting):
-    print(f"{name} {greeting}")
+>>> def say_hi(name, greeting):
+...    print(f"{name} {greeting}")
 
-say_hi('John', 'Hello') # without keyword arguments
+>>> say_hi('John', 'Hello') # without keyword arguments
 # Hello John
 
-say_hi(name='Anna', greeting='Hi') # with keyword arguments
+>>> say_hi(name='Anna', greeting='Hi') # with keyword arguments
 # Hi Anna
 ```
 
@@ -58,11 +58,11 @@ When creating a function using the `def` statement, you can specify what the ret
 - The value or expression that the function should return.
 
 ```python
-def sum_two_numbers(number_1, number_2):
-    return number_1 + number_2
+>>> def sum_two_numbers(number_1, number_2):
+...    return number_1 + number_2
 
-result = sum_two_numbers(7, 8)
-print(result)
+>>> result = sum_two_numbers(7, 8)
+>>> print(result)
 # 15
 ```
 
@@ -97,13 +97,13 @@ NameError: name 'local_variable' is not defined
 If you need to modify a global variable from within a function, use the global statement:
 
 ```python
-def spam():
-    global eggs
-    eggs = 'spam'
+>>> def spam():
+...     global eggs
+...     eggs = 'spam'
 
-eggs = 'global'
-spam()
-print(eggs)
+>>> eggs = 'global'
+>>> spam()
+>>> print(eggs)
 ```
 
 There are four rules to tell whether a variable is in a local scope or global scope:
@@ -142,10 +142,10 @@ This function:
 
 ```python
 >>> def add(x, y):
-        return x + y
+...     return x + y
 
 >>> add(5, 3)
-8
+# 8
 ```
 
 Is equivalent to the _lambda_ function:
@@ -153,20 +153,20 @@ Is equivalent to the _lambda_ function:
 ```python
 >>> add = lambda x, y: x + y
 >>> add(5, 3)
-8
+# 8
 ```
 
 Like regular nested functions, lambdas also work as lexical closures:
 
 ```python
 >>> def make_adder(n):
-        return lambda x: x + n
+...     return lambda x: x + n
 
 >>> plus_3 = make_adder(3)
 >>> plus_5 = make_adder(5)
 
 >>> plus_3(4)
-7
+# 7
 >>> plus_5(4)
-9
+# 9
 ```

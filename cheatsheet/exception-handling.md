@@ -21,13 +21,13 @@ Python has many [built-in exceptions](https://docs.python.org/3/library/exceptio
 You can't divide by zero, that is a mathematical true, and if you try to it in Python, the interpreter will raise the built-in exception [ZeroDivisionError](https://docs.python.org/3/library/exceptions.html#ZeroDivisionError):
 
 ```python
-def divide(dividend , divisor):
-    print(dividend / divisor)
+>>> def divide(dividend , divisor):
+...     print(dividend / divisor)
 
-divide(dividend=10, divisor=5)
+>>> divide(dividend=10, divisor=5)
 # 5
 
-divide(dividend=10, divisor=0)
+>>> divide(dividend=10, divisor=0)
 # Traceback (most recent call last):
 #   File "<stdin>", line 1, in <module>
 # ZeroDivisionError: division by zero
@@ -36,16 +36,16 @@ divide(dividend=10, divisor=0)
 Let's say we don't want our program to stop its execution or show the user an output he will not understand. Say we want to print a useful and clear message, then we need to **_handle_** the exception with the `try` and `except` keywords:
 
 ```python
-def divide(dividend , divisor):
-    try:
-        print(dividend / divisor)
-    except ZeroDivisionError:
-        print('You can not divide by 0')
+>>> def divide(dividend , divisor):
+...     try:
+...         print(dividend / divisor)
+...     except ZeroDivisionError:
+...         print('You can not divide by 0')
 
-divide(dividend=10, divisor=5)
+>>> divide(dividend=10, divisor=5)
 # 5
 
-divide(dividend=10, divisor=0)
+>>> divide(dividend=10, divisor=0)
 # You can not divide by 0
 ```
 
@@ -54,19 +54,19 @@ divide(dividend=10, divisor=0)
 The code inside the `finally` section is always executed, no matter if an exception has been raised or not:
 
 ```python
-def divide(dividend , divisor):
-    try:
-        print(dividend / divisor)
-    except ZeroDivisionError:
-        print('You can not divide by 0')
-    finally:
-        print('Execution finished')
+>>> def divide(dividend , divisor):
+...     try:
+...         print(dividend / divisor)
+...     except ZeroDivisionError:
+...         print('You can not divide by 0')
+...     finally:
+...         print('Execution finished')
 
-divide(dividend=10, divisor=5)
+>>> divide(dividend=10, divisor=5)
 # 5
 # Execution finished
 
-divide(dividend=10, divisor=0)
+>>> divide(dividend=10, divisor=0)
 # You can not divide by 0
 # Execution finished
 ```
@@ -76,10 +76,10 @@ divide(dividend=10, divisor=0)
 Custom exceptions initialize by creating a `class` that inherit from the base `Exception` class of Python, and are raised using the `raise` keyword:
 
 ```python
-class MyCustomException(Exception):
-    pass
+>>> class MyCustomException(Exception):
+...     pass
 
-raise MyCustomException
+>>> raise MyCustomException
 # Traceback (most recent call last):
 #   File "<stdin>", line 1, in <module>
 # __main__.MyCustomException
@@ -88,10 +88,10 @@ raise MyCustomException
 To declare a custom exception message, you can pass it as a parameter:
 
 ```python
-class MyCustomException(Exception):
-    pass
+>>> class MyCustomException(Exception):
+...     pass
 
-raise MyCustomException('A custom message for my custom exception')
+>>> raise MyCustomException('A custom message for my custom exception')
 # Traceback (most recent call last):
 #   File "<stdin>", line 1, in <module>
 # __main__.MyCustomException: A custom message for my custom exception
@@ -100,9 +100,9 @@ raise MyCustomException('A custom message for my custom exception')
 Handling a custom exception is the same as any other:
 
 ```python
-try:
-    raise MyCustomException('A custom message for my custom exception')
-except MyCustomException:
-    print('My custom exception was raised')
+>>> try:
+...     raise MyCustomException('A custom message for my custom exception')
+>>> except MyCustomException:
+...     print('My custom exception was raised')
 # My custom exception was raised
 ```

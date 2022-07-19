@@ -83,7 +83,6 @@ Using the `keys()`, `values()`, and `items()` methods, a for loop can iterate ov
 >>> 'height' in person.keys()
 # False
 
-
 >>> 'skin' in person # You can omit keys()
 # False
 ```

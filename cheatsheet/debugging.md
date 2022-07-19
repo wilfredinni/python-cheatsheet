@@ -75,11 +75,11 @@ The `traceback` is displayed by Python whenever a raised exception goes unhandle
 >>> import traceback
 
 >>> try:
->>>      raise Exception('This is the error message.')
+...     raise Exception('This is the error message.')
 >>> except:
->>>      with open('errorInfo.txt', 'w') as error_file:
->>>          error_file.write(traceback.format_exc())
->>>      print('The traceback info was written to errorInfo.txt.')
+...     with open('errorInfo.txt', 'w') as error_file:
+...         error_file.write(traceback.format_exc())
+...     print('The traceback info was written to errorInfo.txt.')
 # 116
 # The traceback info was written to errorInfo.txt.
 ```
@@ -122,33 +122,26 @@ Assertions can be disabled by passing the `-O` option when running Python.
 To enable the `logging` module to display log messages on your screen as your program runs, copy the following to the top of your program:
 
 ```python
-import logging
-
-logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s- %(message)s')
+>>> import logging
+>>> logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s- %(message)s')
 ```
 
 Say you wrote a function to calculate the factorial of a number. In mathematics, factorial 4 is 1 × 2 × 3 × 4, or 24. Factorial 7 is 1 × 2 × 3 × 4 × 5 × 6 × 7, or 5,040. Open a new file editor window and enter the following code. It has a bug in it, but you will also enter several log messages to help yourself figure out what is going wrong. Save the program as factorialLog.py.
 
 ```python
 >>> import logging
->>>
 >>> logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s- %(message)s')
->>>
 >>> logging.debug('Start of program')
->>>
+
 >>> def factorial(n):
->>>
->>>     logging.debug('Start of factorial(%s)' % (n))
->>>     total = 1
->>>
->>>     for i in range(1, n + 1):
->>>         total *= i
->>>         logging.debug('i is ' + str(i) + ', total is ' + str(total))
->>>
->>>     logging.debug('End of factorial(%s)' % (n))
->>>
->>>     return total
->>>
+...     logging.debug('Start of factorial(%s)' % (n))
+...     total = 1
+...     for i in range(1, n + 1):
+...         total *= i
+...         logging.debug('i is ' + str(i) + ', total is ' + str(total))
+...     logging.debug('End of factorial(%s)' % (n))
+...     return total
+...
 >>> print(factorial(5))
 >>> logging.debug('End of program')
 # 2015-05-23 16:20:12,664 - DEBUG - Start of program
@@ -197,7 +190,6 @@ After you’ve debugged your program, you probably don’t want all these log me
 Instead of displaying the log messages to the screen, you can write them to a text file. The `logging.basicConfig()` function takes a filename keyword argument, like so:
 
 ```python
-import logging
-
-logging.basicConfig(filename='myProgramLog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+>>> import logging
+>>> logging.basicConfig(filename='myProgramLog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 ```

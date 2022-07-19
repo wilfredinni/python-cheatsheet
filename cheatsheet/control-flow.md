@@ -106,52 +106,52 @@ True
 The `if` statement evaluates an expression, and if that expression is `True`, it then executes the following indented code:
 
 ```python
-name = 'Debora'
+>>> name = 'Debora'
 
-if name == 'Debora':
-    print('Hi, Debora')
+>>> if name == 'Debora':
+...    print('Hi, Debora')
 # Hi, Debora
 
-if name != 'George':
-    print('You are not George')
+>>> if name != 'George':
+...    print('You are not George')
 # You are not George
 ```
 
 The `else` statement executes only if the evaluation of the `if` and all the `elif` expressions are `False`:
 
 ```python
-name = 'Debora'
+>>> name = 'Debora'
 
-if name == 'George':
-    print('Hi, George.')
-else:
-    print('You are not George')
+>>> if name == 'George':
+...    print('Hi, George.')
+>>> else:
+...    print('You are not George')
 # You are not George
 ```
 
 Only after the `if` statement expression is `False`, the `elif` statement is evaluated and executed:
 
 ```python
-name = 'George'
+>>> name = 'George'
 
-if name == 'Debora':
-    print('Hi Debora!')
-elif name == 'George':
-    print('Hi George!')
+>>> if name == 'Debora':
+...    print('Hi Debora!')
+>>> elif name == 'George':
+...    print('Hi George!')
 # Hi George!
 ```
 
 the `elif` and `else` parts are optional.
 
 ```python
-name = 'Antony'
+>>> name = 'Antony'
 
-if name == 'Debora':
-    print('Hi Debora!')
-elif name == 'George':
-    print('Hi George!')
-else:
-    print('Who are you?')
+>>> if name == 'Debora':
+...    print('Hi Debora!')
+>>> elif name == 'George':
+...    print('Hi George!')
+>>> else:
+...    print('Who are you?')
 # Who are you?
 ```
 
@@ -166,37 +166,36 @@ Many programming languages have a ternary operator, which define a conditional e
 Example:
 
 ```python
-age = 15
+>>> age = 15
 
-# this if statement:
-if age < 18:
-    print('kid')
-else:
-    print('adult')
+>>> # this if statement:
+>>> if age < 18:
+...    print('kid')
+>>> else:
+...    print('adult')
+# output: kid
 
-# is equivalent to this ternary operator:
-print('kid' if age < 18 else 'adult')
-
+>>> # is equivalent to this ternary operator:
+>>> print('kid' if age < 18 else 'adult')
 # output: kid
 ```
 
 Ternary operators can be chained:
 
 ```python
-age = 15
+>>> age = 15
 
-# this ternary operator:
-print('kid' if age < 13 else 'teenager' if age < 18 else 'adult')
+>>> # this ternary operator:
+>>> print('kid' if age < 13 else 'teenager' if age < 18 else 'adult')
 
-# is equivalent to this if statement:
-if age < 18:
-    if age < 13:
-        print('kid')
-    else:
-        print('teenager')
-else:
-    print('adult')
-
+>>> # is equivalent to this if statement:
+>>> if age < 18:
+...     if age < 13:
+...         print('kid')
+...     else:
+...         print('teenager')
+>>> else:
+...     print('adult')
 # output: teenager
 ```
 
@@ -205,10 +204,10 @@ else:
 The while statement is used for repeated execution as long as an expression is `True`:
 
 ```python
-spam = 0
-while spam < 5:
-    print('Hello, world.')
-    spam = spam + 1
+>>> spam = 0
+>>> while spam < 5:
+...     print('Hello, world.')
+...     spam = spam + 1
 # Hello, world.
 # Hello, world.
 # Hello, world.
@@ -221,11 +220,11 @@ while spam < 5:
 If the execution reaches a `break` statement, it immediately exits the `while` loop’s clause:
 
 ```python
-while True:
-    name = input('Please type your name: ')
-    if name == 'your name':
-        break
-print('Thank you!')
+>>> while True:
+...     name = input('Please type your name: ')
+...     if name == 'your name':
+...         break
+>>> print('Thank you!')
 # Please type your name: your name
 # Thank you!
 ```
@@ -235,15 +234,14 @@ print('Thank you!')
 When the program execution reaches a `continue` statement, the program execution immediately jumps back to the start of the loop.
 
 ```python
-while True:
-    name = input('Who are you? ')
-    if name != 'Joe':
-
-        continue
-    password = input('Password? (It is a fish.): ')
-    if password == 'swordfish':
-        break
-print('Access granted.')
+>>> while True:
+...     name = input('Who are you? ')
+...     if name != 'Joe':
+...         continue
+...     password = input('Password? (It is a fish.): ')
+...     if password == 'swordfish':
+...         break
+>>> print('Access granted.')
 # Who are you? Charles
 # Who are you? Debora
 # Who are you? Joe
@@ -256,9 +254,9 @@ print('Access granted.')
 The `for` loop iterates over a `list`, `tuple`, `dictionary`, `set` or `string`:
 
 ```python
-pets = ['Bella', 'Milo', 'Loki']
-for pet in pets:
-    print(pet)
+>>> pets = ['Bella', 'Milo', 'Loki']
+>>> for pet in pets:
+...     print(pet)
 # Bella
 # Milo
 # Loki
@@ -270,7 +268,7 @@ The `range()` function returns a sequence of numbers. It starts from 0, incremen
 
 ```python
 >>> for i in range(5):
->>>     print(f'Will stop at 5! or 4? ({i})')
+...     print(f'Will stop at 5! or 4? ({i})')
 # Will stop at 5! or 4? (0)
 # Will stop at 5! or 4? (1)
 # Will stop at 5! or 4? (2)
@@ -282,25 +280,25 @@ The `range()` function can also modify it's 3 defaults arguments. The first two 
 
 ```python
 >>> for i in range(start=0, stop=10, step=2):
->>>    print(i)
-0
-2
-4
-6
-8
+...    print(i)
+# 0
+# 2
+# 4
+# 6
+# 8
 ```
 
 You can even use a negative number for the step argument to make the for loop count down instead of up.
 
 ```python
 >>> for i in range(5, -1, -1):
->>>     print(i)
-5
-4
-3
-2
-1
-0
+...     print(i)
+# 5
+# 4
+# 3
+# 2
+# 1
+# 0
 ```
 
 ## For else statement
@@ -310,10 +308,10 @@ useful when a `break` condition can occur in the loop:
 
 ```python
 >>> for i in [1, 2, 3, 4, 5]:
->>>    if i == 3:
->>>        break
+...    if i == 3:
+...        break
 >>> else:
->>>    print("only executed when no item of the list is equal to 3")
+...    print("only executed when no item of the list is equal to 3")
 ```
 
 ## Ending a Program with sys.exit()
@@ -321,13 +319,13 @@ useful when a `break` condition can occur in the loop:
 `exit()` function allows exiting Python.
 
 ```python
-import sys
+>>> import sys
 
-while True:
-    feedback = input('Type exit to exit: ')
-    if feedback == 'exit':
-        sys.exit()
-    print(f'You typed {feedback}.')
+>>> while True:
+...     feedback = input('Type exit to exit: ')
+...     if feedback == 'exit':
+...         sys.exit()
+...     print(f'You typed {feedback}.')
 
 # Type exit to exit: open
 # Type exit to exit: close
