@@ -1,7 +1,7 @@
 import path from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import generateSitemap from 'vite-ssg-sitemap'
+// import generateSitemap from 'vite-ssg-sitemap'
 import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
@@ -119,9 +119,9 @@ export default defineConfig({
     script: 'async',
     formatting: 'minify',
     // format: 'cjs',
-    onFinished() {
-      generateSitemap()
-    },
+    // onFinished() {
+    //   generateSitemap()
+    // },
   },
 
   // https://github.com/vitest-dev/vitest
