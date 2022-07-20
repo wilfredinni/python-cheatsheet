@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const core = useCoreStore()
+
+const rootRepositoryRoutes = ['contributing', 'changelog']
 </script>
 
 <template>
@@ -41,10 +43,11 @@ const core = useCoreStore()
           <router-view v-else />
         </article>
 
+        {{ $route.name }}
         <the-footer
           v-if="$route.name !== 'index'"
           :repository="
-            $route.name !== 'contributing'
+            !rootRepositoryRoutes.includes($route.name as string)
               ? 'https://github.com/wilfredinni/python-cheatsheet/blob/master'
               : 'https://github.com/wilfredinni/python-cheatsheet/blob/master/src/pages'
           "
