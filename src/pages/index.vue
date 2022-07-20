@@ -2,8 +2,16 @@
 import { breakpointsTailwind } from '@vueuse/core'
 import ReferenceIcon from '~/components/icons/ReferenceIcon.vue'
 import PluginIcon from '~/components/icons/PluginIcon.vue'
+import ArrowIcon from '~/components/icons/ArrowIcon.vue'
+import GridIcon from '~/components/icons/GridIcon.vue'
 
 const links = [
+  {
+    path: '/contributing',
+    name: 'Contribute',
+    description: `Get to know how easy is to contribute to this project.`,
+    icon: PluginIcon,
+  },
   {
     path: '/blog',
     name: 'Blog',
@@ -11,10 +19,10 @@ const links = [
     icon: ReferenceIcon,
   },
   {
-    path: '/contributing',
-    name: 'Contribute',
-    description: `Get to know how easy is to contribute to this project.`,
-    icon: PluginIcon,
+    path: '/changelog',
+    name: 'Changelog',
+    description: `See what is new, what got fixed, and what is coming.`,
+    icon: GridIcon,
   },
 ]
 
@@ -53,6 +61,28 @@ const smAndLarger = breakpoints.greater('sm')
     <div
       className="not-prose mt-10 mb-12 grid grid-cols-1 gap-6 sm:grid-cols-2"
     >
+      <div
+        class="group relative rounded-xl border border-slate-200 dark:border-slate-800"
+      >
+        <div
+          class="absolute -inset-px rounded-xl border-2 border-transparent opacity-0 transition duration-300 [background:linear-gradient(var(--link-grid-hover-bg,theme(colors.sky.50)),var(--link-grid-hover-bg,theme(colors.sky.50)))_padding-box,linear-gradient(to_top,theme(colors.indigo.400),theme(colors.cyan.400),theme(colors.sky.500))_border-box] group-hover:opacity-100 dark:[--link-grid-hover-bg:theme(colors.slate.800)]"
+        />
+        <div class="relative overflow-hidden rounded-xl p-6">
+          <ArrowIcon class="h-8 w-8" />
+          <p class="mt-4 font-display text-base text-slate-900 dark:text-white">
+            <a
+              target="_blank"
+              href="https://github.com/wilfredinni/python-cheatsheet"
+            >
+              <span class="absolute -inset-px rounded-xl" />
+              View on GitHub
+            </a>
+          </p>
+          <p class="mt-1 text-sm text-slate-700 dark:text-slate-400">
+            Drop a star on GitHub if you find this project useful.
+          </p>
+        </div>
+      </div>
       <div
         v-for="link in links"
         :key="link.name"
