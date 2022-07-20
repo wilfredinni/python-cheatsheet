@@ -20,7 +20,7 @@ const core = useCoreStore()
         </article>
 
         <the-footer
-          :repository="'https://github.com/wilfredinni/python-cheatsheet/blob/master'"
+          :repository="'https://github.com/wilfredinni/python-cheatsheet/blob/master/docs'"
         />
       </div>
 

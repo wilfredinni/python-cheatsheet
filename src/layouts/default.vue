@@ -47,7 +47,7 @@ const rootRepositoryRoutes = ['contributing', 'changelog']
           v-if="$route.name !== 'index'"
           :repository="
             !rootRepositoryRoutes.includes($route.name as string)
-              ? 'https://github.com/wilfredinni/python-cheatsheet/blob/master'
+              ? 'https://github.com/wilfredinni/python-cheatsheet/blob/master/docs'
               : 'https://github.com/wilfredinni/python-cheatsheet/blob/master/src/pages'
           "
         />
