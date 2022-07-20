@@ -7,6 +7,10 @@ updated: July 19, 2022
 
 # Changelog
 
+## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next)
+
+- Built-in Functions
+
 ## 2022-07-19
 
 - Added this changelog file.
