@@ -16,6 +16,10 @@ export const useNavigationStore = defineStore('navigation', {
         path: '/cheatsheet/basics',
       },
       {
+        name: 'Built-in functions',
+        path: '/cheatsheet/built-in-functions',
+      },
+      {
         name: 'Control flow',
         path: '/cheatsheet/control-flow',
       },

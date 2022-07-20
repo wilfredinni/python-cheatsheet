@@ -1,0 +1,21 @@
+---
+title: Python min() built-in function - Python Cheatsheet
+description: Return the smallest item in an iterable or the smallest of two or more arguments.
+---
+
+# Python min() built-in function
+
+<base-disclaimer>
+  <base-disclaimer-title>
+    From the <a target="_blank" href="https://docs.python.org/3/library/functions.html#min">Python 3 documentation</a>
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+   Return the smallest item in an iterable or the smallest of two or more arguments.
+  </base-disclaimer-content>
+</base-disclaimer>
+
+## Examples
+
+<!-- remove this tag to start editing this page -->
+<empty-section />
+<!-- remove this tag to start editing this page -->

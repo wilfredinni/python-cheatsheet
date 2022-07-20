@@ -1,13 +1,13 @@
 ---
-title: Python ord() built-in function - Python Cheatsheet
+title: Python pow() built-in function - Python Cheatsheet
 description: Given a string representing one Unicode character, return an integer representing the Unicode code point of that character.
 ---
 
-# Python ord() built-in function
+# Python pow() built-in function
 
 <base-disclaimer>
   <base-disclaimer-title>
-    From the <a target="_blank" href="https://docs.python.org/3/library/functions.html#ord">Python 3 documentation</a>
+    From the <a target="_blank" href="https://docs.python.org/3/library/functions.html#pow">Python 3 documentation</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
    Given a string representing one Unicode character, return an integer representing the Unicode code point of that character.

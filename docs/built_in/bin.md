@@ -1,0 +1,21 @@
+---
+title: Python bin() built-in function - Python Cheatsheet
+description: Convert an integer number to a binary string prefixed with “0b”. The result is a valid Python expression. If x is not a Python int object, it has to define an __index__() method that returns an integer.
+---
+
+# Python bin() built-in function
+
+<base-disclaimer>
+  <base-disclaimer-title>
+    From the <a target="_blank" href="https://docs.python.org/3/library/functions.html#bin">Python 3 documentation</a>
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+    Convert an integer number to a binary string prefixed with “0b”. The result is a valid Python expression. If x is not a Python int object, it has to define an <code>__index__()</code> method that returns an integer.
+  </base-disclaimer-content>
+</base-disclaimer>
+
+## Examples
+
+<!-- remove this tag to start editing this page -->
+<empty-section />
+<!-- remove this tag to start editing this page -->

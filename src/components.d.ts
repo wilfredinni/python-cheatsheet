@@ -26,6 +26,7 @@ declare module '@vue/runtime-core' {
     Dialog: typeof import('@headlessui/vue')['Dialog']
     DialogPanel: typeof import('@headlessui/vue')['DialogPanel']
     DialogTitle: typeof import('@headlessui/vue')['DialogTitle']
+    EmptySection: typeof import('./components/EmptySection.vue')['default']
     GithubIcon: typeof import('./components/icons/GithubIcon.vue')['default']
     GridIcon: typeof import('./components/icons/GridIcon.vue')['default']
     LightBulbIcon: typeof import('./components/icons/LightBulbIcon.vue')['default']
