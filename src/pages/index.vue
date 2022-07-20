@@ -61,49 +61,21 @@ const smAndLarger = breakpoints.greater('sm')
     <div
       className="not-prose mt-10 mb-12 grid grid-cols-1 gap-6 sm:grid-cols-2"
     >
-      <div
-        class="group relative rounded-xl border border-slate-200 dark:border-slate-800"
-      >
-        <div
-          class="absolute -inset-px rounded-xl border-2 border-transparent opacity-0 transition duration-300 [background:linear-gradient(var(--link-grid-hover-bg,theme(colors.sky.50)),var(--link-grid-hover-bg,theme(colors.sky.50)))_padding-box,linear-gradient(to_top,theme(colors.indigo.400),theme(colors.cyan.400),theme(colors.sky.500))_border-box] group-hover:opacity-100 dark:[--link-grid-hover-bg:theme(colors.slate.800)]"
-        />
-        <div class="relative overflow-hidden rounded-xl p-6">
-          <ArrowIcon class="h-8 w-8" />
-          <p class="mt-4 font-display text-base text-slate-900 dark:text-white">
-            <a
-              target="_blank"
-              href="https://github.com/wilfredinni/python-cheatsheet"
-            >
-              <span class="absolute -inset-px rounded-xl" />
-              View on GitHub
-            </a>
-          </p>
-          <p class="mt-1 text-sm text-slate-700 dark:text-slate-400">
-            Drop a star on GitHub if you find this project useful.
-          </p>
-        </div>
-      </div>
-      <div
+      <base-link-card
+        title="View on GitHub"
+        description=" Drop a star on GitHub if you find this project useful."
+        path="https://github.com/wilfredinni/python-cheatsheet"
+        :icon="ArrowIcon"
+        :is-external="true"
+      />
+      <base-link-card
         v-for="link in links"
-        :key="link.name"
-        class="group relative rounded-xl border border-slate-200 dark:border-slate-800"
-      >
-        <div
-          class="absolute -inset-px rounded-xl border-2 border-transparent opacity-0 transition duration-300 [background:linear-gradient(var(--link-grid-hover-bg,theme(colors.sky.50)),var(--link-grid-hover-bg,theme(colors.sky.50)))_padding-box,linear-gradient(to_top,theme(colors.indigo.400),theme(colors.cyan.400),theme(colors.sky.500))_border-box] group-hover:opacity-100 dark:[--link-grid-hover-bg:theme(colors.slate.800)]"
-        />
-        <div class="relative overflow-hidden rounded-xl p-6">
-          <component :is="link.icon" class="h-8 w-8" />
-          <p class="mt-4 font-display text-base text-slate-900 dark:text-white">
-            <router-link :to="link.path">
-              <span class="absolute -inset-px rounded-xl" />
-              {{ link.name }}
-            </router-link>
-          </p>
-          <p class="mt-1 text-sm text-slate-700 dark:text-slate-400">
-            {{ link.description }}
-          </p>
-        </div>
-      </div>
+        :key="link.path"
+        :title="link.name"
+        :description="link.description"
+        :path="link.path"
+        :icon="link.icon"
+      />
     </div>
 
     <prose class="hidden sm:block">
@@ -122,9 +94,10 @@ const smAndLarger = breakpoints.greater('sm')
           slice a list
         </router-link>
         or do a
-        <router-link to="/cheatsheet/control-flow#for-loop"
-          >for loop</router-link
-        >. This Python cheatsheet tries to provide basic reference for beginner
+        <router-link to="/cheatsheet/control-flow#for-loop">
+          for loop
+        </router-link>
+        . This Python cheatsheet tries to provide basic reference for beginner
         and advanced developers, lower the entry barrier for newcomers and help
         veterans refresh the old tricks.
       </p>
