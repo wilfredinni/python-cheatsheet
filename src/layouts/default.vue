@@ -43,7 +43,6 @@ const rootRepositoryRoutes = ['contributing', 'changelog']
           <router-view v-else />
         </article>
 
-        {{ $route.name }}
         <the-footer
           v-if="$route.name !== 'index'"
           :repository="

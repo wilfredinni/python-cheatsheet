@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <a href="https://www.netlify.com" target="_blank">
     <img
