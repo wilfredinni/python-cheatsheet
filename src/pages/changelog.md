@@ -10,6 +10,8 @@ updated: July 19, 2022
 ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next)
 
 - Add Python **Built-in** Functions.
+- Add Python **standard library** section.
+- Unfinished sections `contribute` placeholder.
 
 ## 2022-07-19
 
