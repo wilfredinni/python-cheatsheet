@@ -9,7 +9,7 @@ The _itertools_ module is a collection of tools intended to be fast and use memo
 
 <base-disclaimer>
   <base-disclaimer-title>
-    From the Python official <a href="https://docs.python.org/3/library/itertools.html">Python 3 documentation</a>
+    From the <a href="https://docs.python.org/3/library/itertools.html">Python 3 documentation</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
     The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination.
