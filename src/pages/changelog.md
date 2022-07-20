@@ -9,7 +9,7 @@ updated: July 19, 2022
 
 ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next)
 
-- Built-in Functions
+- Add Python **Built-in** Functions.
 
 ## 2022-07-19
 
