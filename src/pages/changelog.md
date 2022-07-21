@@ -22,7 +22,7 @@ updated: July 19, 2022
 The release of the new **pythoncheatsheet.org** website:
 
 - Complete re-design with **Vue 3** and **Tailwind CSS**.
-- The site is **PWA** (Progressive web app) and can be installed in any platform that has a compatible web browser. It is also available offline.
+- The site is a **PWA** (Progressive web app), can be installed in any platform that has a compatible web browser.It is also available offline.
 - Added a **dark mode**.
 - Added a **reader mode**.
 - Added **Algolia search** (not available yet).
