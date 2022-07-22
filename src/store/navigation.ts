@@ -10,6 +10,16 @@ export const useNavigationStore = defineStore('navigation', {
         internal: false,
       },
     ],
+    mainNavigation: [
+      {
+        name: 'Getting started',
+        path: '/',
+      },
+      {
+        name: 'Contributing',
+        path: '/contributing',
+      },
+    ],
     cheatsheetNavigation: [
       {
         name: 'Basics',
@@ -105,14 +115,26 @@ export const useNavigationStore = defineStore('navigation', {
         path: '/cheatsheet/virtual-environments',
       },
     ],
-    mainNavigation: [
+    standardLibraryNavigation: [
       {
-        name: 'Getting started',
-        path: '/',
+        name: 'Datetime',
+        path: '/standard-library/datetime-module',
       },
       {
-        name: 'Contributing',
-        path: '/contributing',
+        name: 'Random',
+        path: '/standard-library/random-module',
+      },
+      {
+        name: 'Itertools',
+        path: '/standard-library/itertools-module',
+      },
+      {
+        name: 'Json',
+        path: '/standard-library/json-module',
+      },
+      {
+        name: 'Pathlib',
+        path: '/standard-library/pathlib-module',
       },
     ],
   }),
