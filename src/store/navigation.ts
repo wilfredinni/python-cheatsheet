@@ -51,10 +51,6 @@ export const useNavigationStore = defineStore('navigation', {
         path: '/cheatsheet/sets',
       },
       {
-        name: 'Itertools module',
-        path: '/cheatsheet/itertools',
-      },
-      {
         name: 'Comprehensions',
         path: '/cheatsheet/comprehensions',
       },
@@ -121,16 +117,16 @@ export const useNavigationStore = defineStore('navigation', {
         path: '/standard-library/datetime-module',
       },
       {
-        name: 'Random',
-        path: '/standard-library/random-module',
-      },
-      {
         name: 'Itertools',
         path: '/standard-library/itertools-module',
       },
       {
         name: 'Json',
         path: '/standard-library/json-module',
+      },
+      {
+        name: 'Random',
+        path: '/standard-library/random-module',
       },
       {
         name: 'Pathlib',
