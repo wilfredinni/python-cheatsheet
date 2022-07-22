@@ -30,7 +30,7 @@ specifiers:
   markdown-it-prism: ^2.2.4
   ohmyfetch: ^0.4.18
   pinia: ^2.0.16
-  pnpm: ^7.5.2
+  pnpm: ^7.6.0
   postcss: ^8.4.14
   prettier: ^2.7.1
   prettier-plugin-tailwindcss: ^0.1.12
@@ -38,7 +38,7 @@ specifiers:
   prismjs: ^1.28.0
   tailwindcss: ^3.1.6
   typescript: ^4.7.4
-  unplugin-auto-import: ^0.9.4
+  unplugin-auto-import: ^0.10.0
   unplugin-vue-components: ^0.21.1
   vite: ^3.0.2
   vite-plugin-pages: ^0.25.0
@@ -89,14 +89,14 @@ devDependencies:
   markdown-it-link-attributes: 4.0.0
   markdown-it-prism: 2.2.4
   ohmyfetch: 0.4.18
-  pnpm: 7.5.2
+  pnpm: 7.6.0
   postcss: 8.4.14
   prettier: 2.7.1
   prettier-plugin-tailwindcss: 0.1.12_prettier@2.7.1
   prismjs: 1.28.0
   tailwindcss: 3.1.6
   typescript: 4.7.4
-  unplugin-auto-import: 0.9.4_h424so5tb623alsee2e3aarhfi
+  unplugin-auto-import: 0.10.0_h424so5tb623alsee2e3aarhfi
   unplugin-vue-components: 0.21.1_vite@3.0.2+vue@3.2.37
   vite: 3.0.2
   vite-plugin-pages: 0.25.0_vite@3.0.2
@@ -2307,7 +2307,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001368
-      electron-to-chromium: 1.4.197
+      electron-to-chromium: 1.4.198
       node-releases: 2.0.6
       update-browserslist-db: 1.0.5_browserslist@4.21.2
     dev: true
@@ -2656,8 +2656,8 @@ packages:
       jake: 10.8.5
     dev: true
 
-  /electron-to-chromium/1.4.197:
-    resolution: {integrity: sha512-7EZCIDDraA2NUaHewLaAh6T63cZzgBmgDx/iiaeZ/pjSs36bOFEJ3hLIrn1TKCFhV0PEZZKu6qFPrxa/LGAzLg==}
+  /electron-to-chromium/1.4.198:
+    resolution: {integrity: sha512-jwqQPdKGeAslcq8L+1SZZgL6uDiIDmTe9Gq4brsdWAH27y7MJ2g9Ue6MyST3ogmSM49EAQP7bype1V5hsuNrmQ==}
     dev: true
 
   /emoji-regex/8.0.0:
@@ -4335,8 +4335,8 @@ packages:
       pathe: 0.3.2
     dev: true
 
-  /pnpm/7.5.2:
-    resolution: {integrity: sha512-tTLvMnu1zIAWrD87Q/Dgw0+d71Brhlm+aM62KkDr/EPNZyA7dBIsu7tS9pNfRSvwgVF7V1Dhc8jJLAsTNTXnDQ==}
+  /pnpm/7.6.0:
+    resolution: {integrity: sha512-pCFZ4OSM3M7JUHShnmk4Hlt9A8QDxLx+i+9kkK4g60YuYhhhD3oqBfWrHax0/XMDvr7GwK0fqFjA8iD8HlZ8Kw==}
     engines: {node: '>=14.6'}
     hasBin: true
     dev: true
@@ -5120,8 +5120,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /unimport/0.6.1_vite@3.0.2:
-    resolution: {integrity: sha512-xOM8KYoV7uJGNKpqRtdRRSeKDzH6XoJDdD0J7BVyRKw5NpH20i9J2Mw53Wxdze3VqjCOEfdUIZX+IIwhWfDVeA==}
+  /unimport/0.6.2_vite@3.0.2:
+    resolution: {integrity: sha512-dttI/EFWqIqc27Gdh6ptGZDBYPoPXVrj+cW1BVzccePSqSFONIL6yA1WmjG40yJlHX7HeFEZ7ZXF2/Yo+KoSHA==}
     dependencies:
       '@rollup/pluginutils': 4.2.1
       escape-string-regexp: 5.0.0
@@ -5157,8 +5157,8 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unplugin-auto-import/0.9.4_h424so5tb623alsee2e3aarhfi:
-    resolution: {integrity: sha512-xCFPdUeZmfBIkbkMYbBij4WREX85vJKpdBklFXuo/oq6XA8/4sMg4XbVxRcIvomA9x0SltCyieWUU6sJ/Ehf+g==}
+  /unplugin-auto-import/0.10.0_h424so5tb623alsee2e3aarhfi:
+    resolution: {integrity: sha512-XvGa/38TlHQnyNvKX+PgyM7og1DR+q3DPNp0RkifCQ2t8JCFUEixfRj9yDlfzNnLuEppFxqBZaUxNYjrstCUBA==}
     engines: {node: '>=14'}
     peerDependencies:
       '@vueuse/core': '*'
@@ -5171,7 +5171,7 @@ packages:
       '@vueuse/core': 8.9.4_vue@3.2.37
       local-pkg: 0.4.2
       magic-string: 0.26.2
-      unimport: 0.6.1_vite@3.0.2
+      unimport: 0.6.2_vite@3.0.2
       unplugin: 0.7.2_vite@3.0.2
     transitivePeerDependencies:
       - esbuild
