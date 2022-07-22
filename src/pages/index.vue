@@ -9,7 +9,7 @@ const links = [
   {
     path: '/contributing',
     name: 'Contribute',
-    description: `Get to know how easy is to contribute to this project.`,
+    description: `Get to know how easy is to contribute to the Python Cheatsheet.`,
     icon: PluginIcon,
   },
   {

@@ -11,7 +11,7 @@ updated: July 19, 2022
 
 - Add Python **Built-in** Functions.
 - Add Python **standard library** section.
-- Unfinished sections `contribute` placeholder.
+- Add a `contribute` placeholder for unfinished sections.
 
 ## 2022-07-19
 
