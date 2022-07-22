@@ -532,12 +532,6 @@ You can install this module by running `pip install send2trash` from a Terminal 
 # FILE INSIDE C:\delicious\walnut\waffles: butter.txt
 ```
 
-`pathlib` provides a lot more functionality than the ones listed above,
-like getting file name, getting file extension, reading/writing a file without
-manually opening it, etc. Refer to the
-[official documentation](https://docs.python.org/3/library/pathlib.html)
-if you want to know more!
-
 <base-disclaimer>
   <base-disclaimer-title>
     Pathlib vs Os Module
