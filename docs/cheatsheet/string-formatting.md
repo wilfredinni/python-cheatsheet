@@ -1,9 +1,9 @@
 ---
-title: String Formatting - Python Cheatsheet
+title: Python String Formatting - Python Cheatsheet
 description: If your are using Python 3.6+, string f-strings are the recommended way to format strings.
 ---
 
-# String Formatting
+# Python String Formatting
 
 <base-disclaimer>
   <base-disclaimer-title>

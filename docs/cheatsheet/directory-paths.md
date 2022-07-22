@@ -1,5 +1,5 @@
 ---
-title: Files and directory paths
+title: Python Files and directory paths
 ---
 
 # Handling File and Directory Paths

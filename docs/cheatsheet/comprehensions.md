@@ -1,9 +1,9 @@
 ---
-title: Comprehensions - Python Cheatsheet
+title: Python Comprehensions - Python Cheatsheet
 description: List comprehensions provide a concise way to create lists
 ---
 
-# Comprehensions
+# Python Comprehensions
 
 List Comprehensions are a special kind of syntax that let us create lists out of other lists, and are incredibly useful when dealing with numbers and with one or two levels of nested for loops.
 
