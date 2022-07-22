@@ -10,8 +10,14 @@ updated: July 19, 2022
 ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next)
 
 - Add Python **Built-in** Functions.
-- Add Python **standard library** section.
-- Unfinished sections `contribute` placeholder.
+- Add Python **standard library** modules:
+  - datetime
+  - itertools
+  - json
+  - os
+  - pathlib
+  - random
+- Add a `contribute` placeholder for unfinished sections.
 
 ## 2022-07-19
 
