@@ -187,9 +187,7 @@ from pathlib import Path
 # False
 ```
 
-## Finding file sizes and folder contents
-
-### Getting a file's size in bytes
+## Getting a file's size in bytes
 
 ```python
 >>> from pathlib import Path
@@ -204,7 +202,7 @@ from pathlib import Path
 # 10024
 ```
 
-### Listing directories
+## Listing directories
 
 ```python
 >>> from pathlib import Path
@@ -247,7 +245,7 @@ from pathlib import Path
 # 1903178911
 ```
 
-## Permanently deleting files and folders
+## Deleting files and folders
 
 - Calling `Path.unlink()` will delete the file at path.
 
