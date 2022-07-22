@@ -129,6 +129,10 @@ export const useNavigationStore = defineStore('navigation', {
         path: '/standard-library/random-module',
       },
       {
+        name: 'Os',
+        path: '/standard-library/os-module',
+      },
+      {
         name: 'Pathlib',
         path: '/standard-library/pathlib-module',
       },
