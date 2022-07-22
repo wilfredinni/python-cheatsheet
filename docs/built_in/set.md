@@ -16,6 +16,14 @@ description: Return a new set object, optionally with elements taken from iterab
 
 ## Examples
 
+```python
+>>> s = set()
+>>> s
+# set()
+>>> type(s)
+# <class 'set'>
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

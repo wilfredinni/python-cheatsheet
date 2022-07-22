@@ -16,6 +16,13 @@ description: Return a new frozenset object, optionally with elements taken from 
 
 ## Examples
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+```python
+>>> frozenset([1, 2, 3])
+# frozenset({1, 2, 3})
+
+>>> frozenset({1, 2, 3})
+# frozenset({1, 2, 3})
+
+>>> frozenset((1, 2, 3))
+# frozenset({1, 2, 3})
+```

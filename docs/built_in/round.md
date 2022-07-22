@@ -16,6 +16,17 @@ description: Return number rounded to ndigits precision after the decimal point.
 
 ## Examples
 
+```python
+>>> round(1.4)
+# 1
+>>> round(1.5)
+# 2
+>>> round(2.1)
+# 2
+>>> round(2.9)
+# 3
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

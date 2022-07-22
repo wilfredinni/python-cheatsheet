@@ -16,6 +16,20 @@ description: Return a new sorted list from the items in iterable.
 
 ## Examples
 
+```python
+>>> sorted([1, 2, 3, 7, 4])
+# [1, 2, 3, 4, 7]
+
+>>> sorted(['a', 'h', 'e'])
+# ['a', 'e', 'h']
+
+>>> sorted([1, 2, 3, 7, 4], reverse=True)
+# [7, 4, 3, 2, 1]
+
+>>> sorted(['a', 'h', 'e'], reverse=True)
+# ['h', 'e', 'a']
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

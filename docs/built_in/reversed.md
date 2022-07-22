@@ -16,6 +16,18 @@ description: Return a reverse iterator. seq must be an object which has a __reve
 
 ## Examples
 
+```python
+>>> i = reversed([1, 2, 3])
+>>> i.__next__()
+# 3
+>>> i.__next__()
+# 2
+>>> i.__next__()
+# 1
+>>> i
+# <list_reverseiterator object at 0x7f93159ded00>
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

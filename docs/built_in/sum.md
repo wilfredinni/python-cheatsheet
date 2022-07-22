@@ -16,6 +16,13 @@ description: Sums start and the items of an iterable from left to right and retu
 
 ## Examples
 
+```python
+>>> sum([2, 4, 6])
+# 12
+>>> sum([10, 10, 10])
+# 30
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

@@ -16,6 +16,10 @@ description: Open file and return a corresponding file object. If the file canno
 
 ## Examples
 
+```python
+f = open("some_file.txt", "r")
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

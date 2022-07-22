@@ -16,6 +16,15 @@ description: Take two (non-complex) numbers as arguments and return a pair of nu
 
 ## Examples
 
+```python
+>>> divmod(2, 2)
+# (1, 0)
+>>> divmod(10, 2)
+# (5, 0)
+>>> divmod(7, 2)
+# (3, 1)
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

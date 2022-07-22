@@ -16,6 +16,11 @@ description: Return a new array of bytes. The bytearray class is a mutable seque
 
 ## Examples
 
+```python
+>>> bytearray([1, 2, 3])
+# bytearray(b'\x01\x02\x03')
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

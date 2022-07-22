@@ -16,6 +16,38 @@ description: Return a slice object representing the set of indices specified by 
 
 ## Examples
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+```python
+>>> furniture = ['table', 'chair', 'rack', 'shelf']
+
+>>> furniture[0:4]
+# ['table', 'chair', 'rack', 'shelf']
+
+>>> furniture[1:3]
+# ['chair', 'rack']
+
+>>> furniture[0:-1]
+# ['table', 'chair', 'rack']
+
+>>> furniture[:2]
+# ['table', 'chair']
+
+>>> furniture[1:]
+# ['chair', 'rack', 'shelf']
+
+>>> furniture[:]
+# ['table', 'chair', 'rack', 'shelf']
+```
+
+Slicing the complete list will perform a copy:
+
+```python
+>>> spam2 = spam[:]
+# ['cat', 'bat', 'rat', 'elephant']
+
+>>> spam.append('dog')
+>>> spam
+# ['cat', 'bat', 'rat', 'elephant', 'dog']
+
+>>> spam2
+# ['cat', 'bat', 'rat', 'elephant']
+```

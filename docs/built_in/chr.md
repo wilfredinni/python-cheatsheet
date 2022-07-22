@@ -16,6 +16,17 @@ description: Return the string representing a character whose Unicode code point
 
 ## Examples
 
+```python
+>>> chr(1)
+# '\x01'
+>>> chr(10)
+# '\n'
+>>> chr(100)
+# 'd'
+>>> chr(1000)
+# 'Ϩ'
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

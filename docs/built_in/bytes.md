@@ -16,6 +16,16 @@ description: Return a new “bytes” object which is an immutable sequence of i
 
 ## Examples
 
+```python
+>>> bytes(1)
+# b'\x00'
+>>> bytes(10)
+# b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+>>> bytes(100)
+# b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+...
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

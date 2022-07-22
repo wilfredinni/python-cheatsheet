@@ -16,6 +16,12 @@ description: Create a new dictionary. The dict object is the dictionary class. S
 
 ## Examples
 
+```python
+>>> a = dict()
+>>> type(a)
+# <class 'dict'>
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

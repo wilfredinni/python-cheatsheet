@@ -16,6 +16,13 @@ description: Return the largest item in an iterable or the largest of two or mor
 
 ## Examples
 
+```python
+>>> max([1, 2, 10, 40, 5])
+# 40
+>>> max((1, 2, 10, 40, 5))
+# 40
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

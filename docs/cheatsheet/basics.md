@@ -229,7 +229,7 @@ This function takes the input from the user and converts it into a string:
 # Hi, Martha
 ```
 
-This function can also set a default message without using `print`:
+`input()` can also set a default message without using `print()`:
 
 ```python
 >>> my_name = input('What is your name? ')  # default message

@@ -16,6 +16,17 @@ description: Without arguments, return the list of names in the current local sc
 
 ## Examples
 
+```python
+>>> dir()
+# ['__annotations__', '__builtins__', '__doc__', ...]
+
+>>> dir(1)
+# ['__abs__', '__add__', '__and__', '__bool__', ...]
+
+>>> dir('a')
+# ['__add__', '__class__', '__contains__', ...]
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

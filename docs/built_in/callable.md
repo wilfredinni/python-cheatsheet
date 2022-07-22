@@ -16,6 +16,20 @@ description: Return True if the object argument appears callable, False if not. 
 
 ## Examples
 
+```python
+>>> def my_function():
+...     print('this is a test function')
+...
+>>> callable(my_function)
+# True
+>>> callable(True)
+# False
+>>> callable(1)
+# False
+>>> callable('a')
+# False
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

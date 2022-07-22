@@ -14,8 +14,34 @@ description: Print objects to the text stream file, separated by sep and followe
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
+The `print()` function writes the value of the argument(s) it is given. [...] it handles multiple arguments, floating point-quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely:
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+```python
+>>> print('Hello world!')
+# Hello world!
+
+>>> a = 1
+>>> print('Hello world!', a)
+# Hello world! 1
+```
+
+## The end keyword
+
+The keyword argument `end` can be used to avoid the newline after the output, or end the output with a different string:
+
+```python
+phrase = ['printed', 'with', 'a', 'dash', 'in', 'between']
+>>> for word in phrase:
+...     print(word, end='-')
+...
+# printed-with-a-dash-in-between-
+```
+
+## The sep keyword
+
+The keyword `sep` specify how to separate the objects, if there is more than one:
+
+```python
+print('cats', 'dogs', 'mice', sep=',')
+# cats,dogs,mice
+```

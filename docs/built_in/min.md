@@ -16,6 +16,13 @@ description: Return the smallest item in an iterable or the smallest of two or m
 
 ## Examples
 
+```python
+>>> min([1, 2, 10, 40, 5])
+# 1
+>>> min((1, 2, 10, 40, 5))
+# 1
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

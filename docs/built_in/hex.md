@@ -16,6 +16,13 @@ description: Convert an integer number to a lowercase hexadecimal string prefixe
 
 ## Examples
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+```python
+>>> hex(1)
+# '0x1'
+>>> hex(10)
+# '0xa'
+>>> hex(100)
+# '0x64'
+>>> hex(1000)
+# '0x3e8'
+```

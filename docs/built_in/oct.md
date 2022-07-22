@@ -16,6 +16,17 @@ description: Convert an integer number to an octal string prefixed with “0o”
 
 ## Examples
 
+```python
+>>> oct(1)
+# '0o1'
+>>> oct(10)
+# '0o12'
+>>> oct(100)
+# '0o144'
+>>> oct(1000)
+# '0o1750'
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

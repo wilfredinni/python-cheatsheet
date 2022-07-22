@@ -16,6 +16,20 @@ description: Convert an integer number to a binary string prefixed with “0b”
 
 ## Examples
 
+```python
+>>> bin(1)
+# '0b1'
+
+>>> bin(10)
+# '0b1010'
+
+>>> bin(100)
+# '0b1100100'
+
+>>> bin(1000)
+# '0b1111101000'
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

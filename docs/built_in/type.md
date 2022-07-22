@@ -16,6 +16,25 @@ description: With one argument, return the type of an object. The return value i
 
 ## Examples
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+```python
+>>> type('span')
+# <class 'str'>
+
+>>> type(99)
+# <class 'int'>
+
+>>> type(1.1)
+# <class 'float'>
+
+>>> type([1, 2])
+# <class 'list'>
+
+>>> type((1, 2))
+# <class 'tuple'>
+
+>>> type({1, 2})
+# <class 'set'>
+
+>>> type({'a': 1, 'b': 2})
+# <class 'dict'>
+```

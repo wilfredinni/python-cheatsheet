@@ -16,6 +16,22 @@ description: Return an integer object constructed from a number or string x, or 
 
 ## Examples
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+```python
+>>> # transform a string to an integer
+>>> from_integer = int('29')
+>>> from_integer
+# 29
+>>> type(from_integer)
+# <class 'int'>
+
+>>> # transform a float to integer
+>>> from_float = int(-3.14)
+>>> from_float
+# -3
+>>> type(from_float)
+# <class 'int'>
+
+>>> # return an empty string
+>>> int()
+# 0
+```

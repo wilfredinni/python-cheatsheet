@@ -16,6 +16,13 @@ description: Given a string representing one Unicode character, return an intege
 
 ## Examples
 
+```python
+>>> ord('1')
+# 49
+>>> ord('a')
+# 97
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

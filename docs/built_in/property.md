@@ -16,6 +16,13 @@ description: Return a property attribute.
 
 ## Examples
 
+```python
+>>> property(1)
+# <property object at 0x7f93158c8590>
+>>> property('1')
+# <property object at 0x7f93159fe2c0>
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

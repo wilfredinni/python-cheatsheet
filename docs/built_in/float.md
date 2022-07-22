@@ -16,6 +16,9 @@ description: Return a floating point number constructed from a number or string 
 
 ## Examples
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+```python
+>>> float('10')
+# 10.0
+>>> float(10)
+# 10.0
+```

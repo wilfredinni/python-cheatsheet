@@ -16,6 +16,12 @@ description: Rather than being a function, list is actually a mutable sequence t
 
 ## Examples
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+```python
+>>> l = list()
+>>> l
+# []
+>>> l.append(1)
+>>> l.append(2)
+>>> l
+# [1, 2]
+```

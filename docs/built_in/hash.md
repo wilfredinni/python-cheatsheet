@@ -16,6 +16,15 @@ description: Return the hash value of the object (if it has one). Hash values ar
 
 ## Examples
 
+```python
+>>> hash(1)
+# 1
+>>> hash('1')
+# -3658718886659147670
+>>> hash('10')
+# 5216539490891759533
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

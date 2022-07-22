@@ -16,6 +16,22 @@ description: Return a Boolean value, i.e. one of True or False. x is converted u
 
 ## Examples
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+```python
+>>> bool(0)
+# False
+
+>>> bool(1)
+# True
+
+>>> bool(2)
+# True
+
+>>> bool('3')
+# True
+
+>>> bool(False)
+# False
+
+>>> bool(True)
+# True
+```

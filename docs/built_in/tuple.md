@@ -16,6 +16,18 @@ description: Rather than being a function, tuple is actually an immutable sequen
 
 ## Examples
 
+```python
+>>> t = tuple()
+>>> type(t)
+# <class 'tuple'>
+>>> t
+# ()
+
+>>> l = [1, 2, 3]
+>>> tuple(l)
+# (1, 2, 3)
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

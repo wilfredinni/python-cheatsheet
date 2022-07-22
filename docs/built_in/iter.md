@@ -16,6 +16,18 @@ description: Return an iterator object. The first argument is interpreted very d
 
 ## Examples
 
+```python
+>>> i = iter([1, 2, 3])
+>>> i
+# <list_iterator object at 0x7f93158badc0>
+>>> i.__next__()
+# 1
+>>> i.__next__()
+# 2
+>>> i.__next__()
+# 3
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

@@ -16,6 +16,17 @@ description: Return a complex number with the value real + imag*1j or convert a 
 
 ## Examples
 
+```python
+>>> complex(1)
+# (1+0j)
+>>> complex('1')
+# (1+0j)
+>>> complex(100)
+# (100+0j)
+>>> complex('100')
+# (100+0j)
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

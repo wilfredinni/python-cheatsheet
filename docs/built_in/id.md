@@ -16,6 +16,15 @@ description: Return the “identity” of an object. This is an integer which is
 
 ## Examples
 
+```python
+>>> id(1)
+# 9788960
+>>> id('1')
+# 140269689726000
+>>> id([1, 2])
+# 140269672924928
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

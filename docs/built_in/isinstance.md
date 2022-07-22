@@ -16,6 +16,13 @@ description: Return True if the object argument is an instance of the classinfo 
 
 ## Examples
 
+```python
+>>> isinstance(1, int)
+# True
+>>> isinstance(1, str)
+# False
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->
