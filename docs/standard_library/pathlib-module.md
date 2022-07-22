@@ -223,7 +223,7 @@ from pathlib import Path
 # ...
 ```
 
-### Directory file sizes
+## Directory file sizes
 
 <base-warning>
   <base-warning-title>

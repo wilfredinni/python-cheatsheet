@@ -17,7 +17,7 @@ One is the `os.path` module and the other is the `pathlib` module.
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Backslash on Windows and forward slash on OS X and Linux
+## Linux and Windows Paths
 
 On Windows, paths are written using backslashes (`\`) as the separator between
 folder names. On Unix based operating system such as macOS, Linux, and BSDs,
@@ -161,7 +161,7 @@ There are two ways to specify a file path.
 
 There are also the dot (`.`) and dot-dot (`..`) folders. These are not real folders, but special names that can be used in a path. A single period (“dot”) for a folder name is shorthand for “this directory.” Two periods (“dot-dot”) means “the parent folder.”
 
-## Handling Absolute and Relative paths
+### Handling Absolute paths
 
 To see if a path is an absolute path:
 
@@ -211,6 +211,8 @@ print(Path('..').resolve())
 # /home
 ```
 
+### Handling Relative paths
+
 You can get a relative path from a starting path to another path.
 
 Using `os.path` on \*nix:
@@ -229,7 +231,7 @@ Using `pathlib` on \*nix:
 # etc/passwd
 ```
 
-## Checking path validity
+## Path and File validity
 
 ### Checking if a file/directory exists
 
@@ -333,9 +335,7 @@ Using `pathlib` on \*nix:
 # False
 ```
 
-## Finding file sizes and folder contents
-
-### Getting a file's size in bytes
+## Getting a file's size in bytes
 
 Using `os.path` on Windows:
 
@@ -361,7 +361,7 @@ Using `pathlib` on \*nix:
 # 10024
 ```
 
-### Listing directories
+## Listing directories
 
 Listing directory contents using `os.listdir` on Windows:
 
@@ -395,7 +395,7 @@ Listing directory contents using `pathlib` on \*nix:
 # ...
 ```
 
-### Directory file sizes
+## Directory file sizes
 
 <base-warning>
   <base-warning-title>
@@ -457,7 +457,7 @@ While `shutil.copy()` will copy a single file, `shutil.copytree()` will copy an 
 # 'C:\\bacon_backup'
 ```
 
-## Moving and renaming files and folders
+## Moving and Renaming
 
 ```python
 >>> import shutil
@@ -480,7 +480,7 @@ If there is no eggs folder, then `move()` will rename bacon.txt to a file named 
 # 'C:\\eggs'
 ```
 
-## Permanently deleting files and folders
+## Deleting files and folders
 
 - Calling `os.unlink(path)` or `Path.unlink()` will delete the file at path.
 
@@ -488,7 +488,7 @@ If there is no eggs folder, then `move()` will rename bacon.txt to a file named 
 
 - Calling `shutil.rmtree(path)` will remove the folder at path, and all files and folders it contains will also be deleted.
 
-## Safe Deletes with the send2trash Module
+## Safe Deletes with the send2trash
 
 You can install this module by running `pip install send2trash` from a Terminal window.
 

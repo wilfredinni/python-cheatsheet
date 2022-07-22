@@ -179,7 +179,7 @@ You can get a relative path from a starting path to another path.
 # 'xwtpdui.dll', 'xwtpw32.dll', 'zh-CN', 'zh-HK', 'zh-TW', 'zipfldr.dll']
 ```
 
-### Directory file sizes
+## Directory file sizes
 
 <base-warning>
   <base-warning-title>
