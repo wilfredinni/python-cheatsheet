@@ -15,7 +15,7 @@ import json
 
 ## JSON Data Types
 
-A JSON object is similar to a Python dictionary, with following the differences:
+A JSON object is similar to a Python dictionary, but has the following differences:
 
 - JSON Keys are always string.
 - Strings are always enclosed with double quotes.
