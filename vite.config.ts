@@ -45,13 +45,7 @@ export default defineConfig(({ mode }) => {
 
       // https://github.com/antfu/unplugin-auto-import
       AutoImport({
-        imports: [
-          'vue',
-          'vue-router',
-          'vue-i18n',
-          '@vueuse/head',
-          '@vueuse/core',
-        ],
+        imports: ['vue', 'vue-router', '@vueuse/head', '@vueuse/core'],
         dts: 'src/auto-imports.d.ts',
         dirs: ['src/composables', 'src/store'],
         vueTemplate: true,
@@ -135,7 +129,7 @@ export default defineConfig(({ mode }) => {
     test: {
       environment: 'jsdom',
       deps: {
-        inline: ['@vue', '@vueuse', 'vue-demi'],
+        inline: ['@vue', '@vueuse'],
       },
     },
 
