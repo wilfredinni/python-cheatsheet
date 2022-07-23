@@ -10,7 +10,7 @@ JSON stands for JavaScript Object Notation and is a lightweight format for stori
 Python has the built-in module `json`, which allow us to work with JSON data.
 
 ```python
->>> import json
+import json
 ```
 
 ## JSON Data Types
