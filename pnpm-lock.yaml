@@ -23,7 +23,6 @@ specifiers:
   esno: ^0.16.3
   fs-extra: ^10.1.0
   happy-dom: ^5.4.0
-  husky: ^8.0.1
   markdown-it: ^13.0.1
   markdown-it-anchor: ^8.6.4
   markdown-it-link-attributes: ^4.0.0
@@ -83,7 +82,6 @@ devDependencies:
   esno: 0.16.3
   fs-extra: 10.1.0
   happy-dom: 5.4.0
-  husky: 8.0.1
   markdown-it: 13.0.1
   markdown-it-anchor: 8.6.4_ea7kj7wzjkld5jo2noyjqxi764
   markdown-it-link-attributes: 4.0.0
@@ -3525,12 +3523,6 @@ packages:
       debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /husky/8.0.1:
-    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
-    engines: {node: '>=14'}
-    hasBin: true
     dev: true
 
   /iconv-lite/0.6.3:
