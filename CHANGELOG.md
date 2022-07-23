@@ -1,10 +1,3 @@
----
-title: 'Changelog - Python Cheatsheet'
-description: See what is new, what got fixed, and what is coming.
-date: July 19, 2022
-updated: July 19, 2022
----
-
 # Changelog
 
 ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next)
