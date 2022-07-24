@@ -13,5 +13,10 @@ const navigation = useNavigationStore()
       :navigation="navigation.cheatsheetNavigation"
       section-name="Cheatsheet"
     />
+
+    <the-sidebar-navigation
+      :navigation="navigation.standardLibraryNavigation"
+      section-name="Standard Library"
+    />
   </nav>
 </template>

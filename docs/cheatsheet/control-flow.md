@@ -1,9 +1,9 @@
 ---
-title: Control Flow - Python Cheatsheet
+title: Python Control Flow - Python Cheatsheet
 description: Control flow is the order in which individual statements, instructions or function calls are executed or evaluated. The control flow of a Python program is regulated by conditional statements, loops, and function calls.
 ---
 
-# Control Flow
+# Python Control Flow
 
 <base-disclaimer>
   <base-disclaimer-title>

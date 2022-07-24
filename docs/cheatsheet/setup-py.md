@@ -1,9 +1,9 @@
 ---
-title: Setup.py - Python Cheatsheet
+title: Python Setup.py - Python Cheatsheet
 description: The setup script is the centre of all activity in building, distributing, and installing modules using the Distutils. The main purpose of the setup script is to describe your module distribution to the Distutils, so that the various commands that operate on your modules do the right thing.
 ---
 
-# setup.py
+# Python setup.py
 
 <base-warning>
   <base-warning-title>

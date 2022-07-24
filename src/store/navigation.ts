@@ -10,10 +10,24 @@ export const useNavigationStore = defineStore('navigation', {
         internal: false,
       },
     ],
+    mainNavigation: [
+      {
+        name: 'Getting started',
+        path: '/',
+      },
+      {
+        name: 'Contributing',
+        path: '/contributing',
+      },
+    ],
     cheatsheetNavigation: [
       {
         name: 'Basics',
         path: '/cheatsheet/basics',
+      },
+      {
+        name: 'Built-in functions',
+        path: '/cheatsheet/built-in-functions',
       },
       {
         name: 'Control flow',
@@ -35,10 +49,6 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Sets',
         path: '/cheatsheet/sets',
-      },
-      {
-        name: 'Itertools module',
-        path: '/cheatsheet/itertools',
       },
       {
         name: 'Comprehensions',
@@ -101,14 +111,30 @@ export const useNavigationStore = defineStore('navigation', {
         path: '/cheatsheet/virtual-environments',
       },
     ],
-    mainNavigation: [
+    standardLibraryNavigation: [
       {
-        name: 'Getting started',
-        path: '/',
+        name: 'Datetime',
+        path: '/modules/datetime-module',
       },
       {
-        name: 'Contributing',
-        path: '/contributing',
+        name: 'Itertools',
+        path: '/modules/itertools-module',
+      },
+      {
+        name: 'Json',
+        path: '/modules/json-module',
+      },
+      {
+        name: 'Random',
+        path: '/modules/random-module',
+      },
+      {
+        name: 'Os',
+        path: '/modules/os-module',
+      },
+      {
+        name: 'Pathlib',
+        path: '/modules/pathlib-module',
       },
     ],
   }),

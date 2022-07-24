@@ -43,8 +43,9 @@ const rootRepositoryRoutes = ['contributing', 'changelog']
           <router-view v-else />
         </article>
 
+        <base-pagination v-if="!$route.path.startsWith('/builtin/')" />
+
         <the-footer
-          v-if="$route.name !== 'index'"
           :repository="
             !rootRepositoryRoutes.includes($route.name as string)
               ? 'https://github.com/wilfredinni/python-cheatsheet/blob/master/docs'

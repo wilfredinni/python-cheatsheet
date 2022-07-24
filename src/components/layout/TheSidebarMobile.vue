@@ -37,7 +37,6 @@ const navigation = useNavigationStore()
       <div class="flex items-center">
         <button type="button" @click="isOpen = false">
           <span class="sr-only">Close navigation</span>
-          <!-- <XIcon class="h-6 w-6 stroke-slate-400" aria-hidden="true" /> -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6 stroke-slate-400"
@@ -65,6 +64,11 @@ const navigation = useNavigationStore()
           <the-sidebar-navigation
             :navigation="navigation.cheatsheetNavigation"
             section-name="Cheatsheet"
+          />
+
+          <the-sidebar-navigation
+            :navigation="navigation.standardLibraryNavigation"
+            section-name="Standard Library"
           />
         </nav>
       </nav>

@@ -1,5 +1,5 @@
 ---
-title: Json and YAML - Python Cheatsheet
+title: Python Json and YAML - Python Cheatsheet
 description: JSON stands for JavaScript Object Notation and is a lightweight format for storing and transporting data. Json is often used when data is sent from a server to a web page.
 ---
 

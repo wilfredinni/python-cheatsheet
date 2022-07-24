@@ -1,15 +1,15 @@
 ---
-title: Itertools Module - Python Cheatsheet
+title: Python Itertools Module - Python Cheatsheet
 description: The itertools module is a collection of tools intended to be fast and use memory efficiently when handling iterators (like lists or dictionaries).
 ---
 
-# Itertools Module
+# Python Itertools Module
 
 The _itertools_ module is a collection of tools intended to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
 
 <base-disclaimer>
   <base-disclaimer-title>
-    From the Python official <a href="https://docs.python.org/3/library/itertools.html">Python 3 documentation</a>
+    From the <a href="https://docs.python.org/3/library/itertools.html">Python 3 documentation</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
     The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination.

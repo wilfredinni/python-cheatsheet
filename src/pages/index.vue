@@ -9,7 +9,7 @@ const links = [
   {
     path: '/contributing',
     name: 'Contribute',
-    description: `Get to know how easy is to contribute to this project.`,
+    description: `Get to know how easy is to contribute to the Python Cheatsheet.`,
     icon: PluginIcon,
   },
   {
@@ -105,13 +105,7 @@ const smAndLarger = breakpoints.greater('sm')
 
     <div class="mt-10">
       <prose><h2 class="text-center sm:text-start">Contributors</h2></prose>
-      <contributors class="py-10" />
+      <contributors class="pb-3 pt-10" />
     </div>
   </article>
-
-  <footer
-    class="flex items-center justify-end border-t pt-4 dark:border-t-slate-800"
-  >
-    <netlify-badge />
-  </footer>
 </template>
