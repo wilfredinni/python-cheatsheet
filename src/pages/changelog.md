@@ -20,7 +20,7 @@ updated: July 19, 2022
 ### Cheatsheet
 
 - Changed titles to be more descriptive.
-- Changed multiple TOC titles to be more concise and descriptive.
+- Changed TOC titles to be more concise and descriptive.
 - Added Python **Built-in** Functions.
 - Added Python **standard library** modules:
   - datetime
