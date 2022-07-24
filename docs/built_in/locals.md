@@ -14,8 +14,6 @@ description: Update and return a dictionary representing the current local symbo
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

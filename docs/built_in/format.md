@@ -14,8 +14,6 @@ description: Convert a value to a “formatted” representation, as controlled 
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

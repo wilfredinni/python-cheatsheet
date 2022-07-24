@@ -14,8 +14,6 @@ description: This function supports dynamic execution of Python code. object mus
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

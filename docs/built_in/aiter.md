@@ -14,8 +14,6 @@ description: Return an asynchronous iterator for an asynchronous iterable. Equiv
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

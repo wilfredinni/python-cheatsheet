@@ -14,8 +14,6 @@ description: Return a string containing a printable representation of an object.
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

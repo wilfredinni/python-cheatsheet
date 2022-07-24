@@ -14,8 +14,6 @@ description: Return True if all elements of the iterable are true (or if the ite
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

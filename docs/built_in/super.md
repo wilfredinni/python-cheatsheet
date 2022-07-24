@@ -14,8 +14,6 @@ description: Return a proxy object that delegates method calls to a parent or si
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

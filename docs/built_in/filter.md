@@ -14,8 +14,6 @@ description: Construct an iterator from those elements of iterable for which fun
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

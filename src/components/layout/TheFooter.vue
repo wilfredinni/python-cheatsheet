@@ -14,7 +14,7 @@ defineProps<{
       :href="`${repository}${$route.path}.md`"
       class="flex items-center space-x-1.5 text-sm text-slate-500 hover:text-sky-500"
     >
-      <span>Edit this page on github</span>
+      <span>Edit this page on GitHub</span>
     </a>
   </footer>
 </template>

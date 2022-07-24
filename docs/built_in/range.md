@@ -14,8 +14,6 @@ description: Rather than being a function, range is actually an immutable sequen
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

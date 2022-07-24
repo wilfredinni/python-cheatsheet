@@ -14,8 +14,6 @@ description: Return the value of the named attribute of object. name must be a s
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

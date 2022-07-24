@@ -14,8 +14,6 @@ description: Transform a method into a class method. A class method receives the
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

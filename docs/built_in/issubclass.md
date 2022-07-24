@@ -14,8 +14,6 @@ description: Return True if class is a subclass (direct, indirect, or virtual) o
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

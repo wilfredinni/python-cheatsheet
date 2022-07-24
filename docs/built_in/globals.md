@@ -14,8 +14,6 @@ description: Return the dictionary implementing the current module namespace. Fo
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

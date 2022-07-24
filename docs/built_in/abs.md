@@ -14,8 +14,6 @@ description: Return the absolute value of a number. The argument may be an integ
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

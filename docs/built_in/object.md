@@ -14,8 +14,6 @@ description: Return a new featureless object. object is a base for all classes. 
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

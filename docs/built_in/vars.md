@@ -14,8 +14,6 @@ description: Return the __dict__ attribute for a module, class, instance, or any
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

@@ -14,8 +14,6 @@ description: This is the counterpart of getattr(). The arguments are an object, 
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

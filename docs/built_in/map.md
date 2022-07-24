@@ -14,8 +14,6 @@ description: Return an iterator that applies function to every item of iterable,
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

@@ -14,8 +14,6 @@ description: This function is invoked by the import statement. It can be replace
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

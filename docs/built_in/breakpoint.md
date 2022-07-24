@@ -14,8 +14,6 @@ description: This function drops you into the debugger at the call site. Specifi
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->

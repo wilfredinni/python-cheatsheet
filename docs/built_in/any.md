@@ -14,8 +14,6 @@ description: Return True if any element of the iterable is true. If the iterable
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->
