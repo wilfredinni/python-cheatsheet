@@ -34,8 +34,8 @@ export default defineConfig(({ mode }) => {
         dirs: [
           { dir: 'src/pages', baseRoute: '' },
           { dir: 'docs/cheatsheet', baseRoute: 'cheatsheet' },
-          { dir: 'docs/built_in', baseRoute: 'builtin' },
-          { dir: 'docs/standard_library', baseRoute: 'standard-library' },
+          { dir: 'docs/builtin', baseRoute: 'builtin' },
+          { dir: 'docs/modules', baseRoute: 'modules' },
           { dir: 'docs/blog', baseRoute: 'blog' },
         ],
       }),

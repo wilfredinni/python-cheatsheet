@@ -3,7 +3,9 @@ const navigation = useNavigationStore()
 
 const route = useRoute()
 
+const changelogPath = [{ name: 'Changelog', path: '/changelog' }]
 const allRoutes = [
+  ...changelogPath,
   ...navigation.mainNavigation,
   ...navigation.cheatsheetNavigation,
   ...navigation.standardLibraryNavigation,

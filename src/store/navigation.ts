@@ -114,27 +114,27 @@ export const useNavigationStore = defineStore('navigation', {
     standardLibraryNavigation: [
       {
         name: 'Datetime',
-        path: '/standard-library/datetime-module',
+        path: '/modules/datetime-module',
       },
       {
         name: 'Itertools',
-        path: '/standard-library/itertools-module',
+        path: '/modules/itertools-module',
       },
       {
         name: 'Json',
-        path: '/standard-library/json-module',
+        path: '/modules/json-module',
       },
       {
         name: 'Random',
-        path: '/standard-library/random-module',
+        path: '/modules/random-module',
       },
       {
         name: 'Os',
-        path: '/standard-library/os-module',
+        path: '/modules/os-module',
       },
       {
         name: 'Pathlib',
-        path: '/standard-library/pathlib-module',
+        path: '/modules/pathlib-module',
       },
     ],
   }),
