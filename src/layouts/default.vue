@@ -43,6 +43,8 @@ const rootRepositoryRoutes = ['contributing', 'changelog']
           <router-view v-else />
         </article>
 
+        <base-pagination v-if="!$route.path.startsWith('/builtin/')" />
+
         <the-footer
           :repository="
             !rootRepositoryRoutes.includes($route.name as string)
