@@ -33,10 +33,7 @@ const footerLinks = [
 </script>
 
 <template>
-  <footer
-    class="border-t dark:border-t-slate-800"
-    :class="route.name !== 'index' ? 'mt-5' : 'mt-5'"
-  >
+  <footer class="mt-5 border-t dark:border-t-slate-800">
     <div class="justify-between pt-5 sm:flex">
       <div
         class="grid text-xs"
