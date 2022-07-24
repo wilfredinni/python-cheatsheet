@@ -63,7 +63,7 @@ const footerLinks = [
           {{ link.linkHeader }}
           <a
             target="_blank"
-            :href="`${repository}${$route.path}.md`"
+            :href="link.url"
             class="ml-1 flex text-sky-500 hover:text-sky-600 dark:text-sky-400 dark:hover:text-sky-500"
           >
             {{ link.linkText }}
