@@ -19,17 +19,7 @@ function initialize() {
   const options = Object.assign({}, userOptions, {
     navigator: {
       navigate({ itemUrl }: { itemUrl: string }) {
-        const { pathname: hitPathname } = new URL(
-          window.location.origin + itemUrl
-        )
-
-        // router doesn't handle same-page navigation so we use the native
-        // browser location API for anchor navigation
-        if (route.path === hitPathname) {
-          window.location.assign(window.location.origin + itemUrl)
-        } else {
-          router.push(itemUrl)
-        }
+        router.push(itemUrl)
       },
     },
 
