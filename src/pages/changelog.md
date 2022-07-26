@@ -7,7 +7,12 @@ updated: July 19, 2022
 
 # Changelog
 
-<!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
+## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next)
+
+- Enable **Algolia DocSearch** 🎉
+- Update all internal navigation to use `router-link`.
+- Fix anchor link navigation.
+- Fix broken links.
 
 ## 2022-07-24
 
