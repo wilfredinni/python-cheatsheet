@@ -1,17 +1,6 @@
 <script setup lang="ts">
-import docsearch from '@docsearch/js'
-
 const navigation = useNavigationStore()
 const route = useRoute()
-
-onMounted(() => {
-  docsearch({
-    container: import.meta.env.VITE_DOCSEARCH_CONTAINER,
-    appId: import.meta.env.VITE_DOCSEARCH_APP_ID,
-    indexName: import.meta.env.VITE_DOCSEARCH_INDEX_NAME,
-    apiKey: import.meta.env.VITE_DOCSEARCH_API_KEY,
-  })
-})
 </script>
 
 <template>
@@ -36,7 +25,7 @@ onMounted(() => {
             </router-link>
           </div>
 
-          <div id="docsearch" />
+          <algolia-doc-search />
         </div>
 
         <!-- actions -->
