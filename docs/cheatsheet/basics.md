@@ -16,7 +16,7 @@ We all need to start somewhere, so how about doing it here.
   </base-disclaimer-content>
 </base-disclaimer>
 
-For a more complete list of resources, check the article [Who to Follow, What to Read and Where to Ask](https://www.pythoncheatsheet.org/blog/python-follow-read-and-ask/).
+<!-- For a more complete list of resources, check the article [Who to Follow, What to Read and Where to Ask](https://www.pythoncheatsheet.org/blog/python-follow-read-and-ask/). -->
 
 ## Math Operators
 

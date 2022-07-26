@@ -16,9 +16,9 @@ description: The setup script is the centre of all activity in building, distrib
 
 If you want more information about Poetry you can read the following articles:
 
-- [Python projects with Poetry and VSCode. Part 1](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1/)
-- [Python projects with Poetry and VSCode. Part 2](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-2/)
-- [Python projects with Poetry and VSCode. Part 3](https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-3/)
+- <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">Python projects with Poetry and VSCode. Part 1</router-link>
+- <router-link to="/blog/python-projects-with-poetry-and-vscode-part-2">Python projects with Poetry and VSCode. Part 2</router-link>
+- <router-link to="/blog/python-projects-with-poetry-and-vscode-part-3">Python projects with Poetry and VSCode. Part 3</router-link>
 
 ## Introduction
 

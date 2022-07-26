@@ -12,7 +12,7 @@ This module provides a portable way of using operating system dependent function
     Pathlib vs Os Module
   </base-disclaimer-title>
   <base-disclaimer-content>
-    The <router-link to="/standard-library/pathlib-module">pathlib</router-link> module provides a lot more functionality than the ones listed here, like getting file name, getting file extension, reading/writing a file without manually opening it, etc. See the <a target="_blank" href="https://docs.python.org/3/library/pathlib.html">official documentation</a> if you intend to know more.
+    The <router-link to="/modules/pathlib-module">pathlib</router-link> module provides a lot more functionality than the ones listed here, like getting file name, getting file extension, reading/writing a file without manually opening it, etc. See the <a target="_blank" href="https://docs.python.org/3/library/pathlib.html">official documentation</a> if you intend to know more.
   </base-disclaimer-content>
 </base-disclaimer>
 
