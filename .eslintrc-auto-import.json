@@ -200,6 +200,7 @@
     "useScreenSafeArea": true,
     "useScriptTag": true,
     "useScroll": true,
+    "useScrollBehavior": true,
     "useScrollLock": true,
     "useSessionStorage": true,
     "useShare": true,
