@@ -7,7 +7,6 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    AlgoliaDocsearch: typeof import('./components/AlgoliaDocsearch.vue')['default']
     AlgoliaDocSearch: typeof import('./components/AlgoliaDocSearch.vue')['default']
     ArrowIcon: typeof import('./components/icons/ArrowIcon.vue')['default']
     BaseDisclaimer: typeof import('./components/ui/disclaimer/BaseDisclaimer.vue')['default']
