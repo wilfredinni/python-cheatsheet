@@ -17,10 +17,14 @@ const createToc = () => {
   toc.value = Array.from(h2).map((item) => item.innerText)
 }
 
-const insetH2Id = () => {
+const insertHeaderId = () => {
   document.querySelectorAll('article h2').forEach((header) => {
     const h2 = header as HTMLElement
     header.setAttribute('id', slugify(h2.innerText))
+  })
+  document.querySelectorAll('article h3').forEach((header) => {
+    const h3 = header as HTMLElement
+    header.setAttribute('id', slugify(h3.innerText))
   })
 }
 
@@ -45,14 +49,14 @@ const getObserver = () => {
 const route = useRoute()
 onMounted(() => {
   createToc()
-  insetH2Id()
+  insertHeaderId()
   getObserver()
 })
 
 watch(route, () => {
   nextTick(() => {
     createToc()
-    insetH2Id()
+    insertHeaderId()
     getObserver()
   })
 })
