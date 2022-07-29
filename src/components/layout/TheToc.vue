@@ -1,30 +1,18 @@
 <script setup lang="ts">
 import type { Ref } from 'vue'
 
-const toc: Ref<string[]> = ref([])
-const currentSection = ref('')
+interface Toc {
+  header: string
+  id: string
+}
 
-const slugify = (str: string) =>
-  str
-    .toLowerCase()
-    .trim()
-    .replace(/[^\w\s-]/g, '')
-    .replace(/[\s-]+/g, '-')
-    .replace(/^-+|-+$/g, '')
+const theToc: Ref<Toc[]> = ref([])
+const currentSection = ref('')
 
 const createToc = () => {
   const h2 = document.getElementsByTagName('h2')
-  toc.value = Array.from(h2).map((item) => item.innerText)
-}
-
-const insertHeaderId = () => {
-  document.querySelectorAll('article h2').forEach((header) => {
-    const h2 = header as HTMLElement
-    header.setAttribute('id', slugify(h2.innerText))
-  })
-  document.querySelectorAll('article h3').forEach((header) => {
-    const h3 = header as HTMLElement
-    header.setAttribute('id', slugify(h3.innerText))
+  theToc.value = Array.from(h2).map((item) => {
+    return { header: item.innerText, id: item.id }
   })
 }
 
@@ -49,14 +37,12 @@ const getObserver = () => {
 const route = useRoute()
 onMounted(() => {
   createToc()
-  insertHeaderId()
   getObserver()
 })
 
 watch(route, () => {
   nextTick(() => {
     createToc()
-    insertHeaderId()
     getObserver()
   })
 })
@@ -70,17 +56,17 @@ watch(route, () => {
     </h3>
 
     <ul class="mt-4 text-sm">
-      <li v-for="item in toc" :key="item">
+      <li v-for="item in theToc" :key="item.id">
         <a
-          :href="`#${slugify(item)}`"
+          :href="`#${item.id}`"
           class="block py-1 font-medium transition duration-200"
           :class="
-            currentSection === slugify(item)
+            currentSection === item.id
               ? 'text-sky-500 '
               : ' text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300'
           "
         >
-          {{ item }}
+          {{ item.header }}
         </a>
       </li>
     </ul>
