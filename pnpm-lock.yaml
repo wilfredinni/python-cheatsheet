@@ -57,7 +57,7 @@ specifiers:
 dependencies:
   '@docsearch/js': 3.1.1
   '@headlessui/vue': 1.6.7_vue@3.2.37
-  '@vueuse/core': 9.0.1_vue@3.2.37
+  '@vueuse/core': 9.0.2_vue@3.2.37
   '@vueuse/head': 0.7.8_vue@3.2.37
   pinia: 2.0.17_j6bzmzd4ujpabbp5objtwxyjp4
   prism-theme-vars: 0.2.4
@@ -98,7 +98,7 @@ devDependencies:
   string: 3.3.3
   tailwindcss: 3.1.7
   typescript: 4.7.4
-  unplugin-auto-import: 0.10.2_xx5gi7vzrbocjvfoahn5xm47xu
+  unplugin-auto-import: 0.10.2_tx7zv2ie4cs2dwhmfsvx6hgtim
   unplugin-vue-components: 0.21.2_vite@3.0.4+vue@3.2.37
   vite: 3.0.4
   vite-plugin-pages: 0.25.0_vite@3.0.4
@@ -1319,7 +1319,7 @@ packages:
       babel-plugin-polyfill-corejs2: 0.3.2_@babel+core@7.18.9
       babel-plugin-polyfill-corejs3: 0.5.3_@babel+core@7.18.9
       babel-plugin-polyfill-regenerator: 0.3.1_@babel+core@7.18.9
-      core-js-compat: 3.24.0
+      core-js-compat: 3.24.1
       semver: 6.3.0
     transitivePeerDependencies:
       - supports-color
@@ -2021,12 +2021,12 @@ packages:
       vue: 3.2.37
     dev: true
 
-  /@vueuse/core/9.0.1_vue@3.2.37:
-    resolution: {integrity: sha512-1ChG/wR5Rz8R0Rixu22+PGywqE2z0EE2HRDCin2btCOZGmULJZBbos/JZkLi7ehJ/IXhfwmPBrNVBuUH8jlQKg==}
+  /@vueuse/core/9.0.2_vue@3.2.37:
+    resolution: {integrity: sha512-kOIqaQPSs7OSByWg1ulEKRUJbsq3FmbJiUr0RhEKpt3O1Uhl4DrDj85DUbQBABVYgPvSaY6AE/fP3/FOcRIOoQ==}
     dependencies:
       '@types/web-bluetooth': 0.0.15
-      '@vueuse/metadata': 9.0.1
-      '@vueuse/shared': 9.0.1_vue@3.2.37
+      '@vueuse/metadata': 9.0.2
+      '@vueuse/shared': 9.0.2_vue@3.2.37
       vue-demi: 0.13.6_vue@3.2.37
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -2039,11 +2039,11 @@ packages:
     dependencies:
       vue: 3.2.37
 
-  /@vueuse/metadata/9.0.1:
-    resolution: {integrity: sha512-VJqMHDCvdAUYesxz5rjUAglbcrJzbKaENpM3WVtAljiM+FqUVB8PgsfrDaq6ZRQT5fBAcZhPoWNFSWxIPTfJww==}
+  /@vueuse/metadata/9.0.2:
+    resolution: {integrity: sha512-TRh+TNUYXiodatSAxd0xZc7sh4RfktVVgNFIN7TCQXKyancbCAcWfHvKfgdlX8LcqSBxKoHVa90n0XdUbboTkw==}
 
-  /@vueuse/shared/9.0.1_vue@3.2.37:
-    resolution: {integrity: sha512-Szk39QSk0/AAy8GH5J6A3MJ1MMUWCqiDl6l9cA0NahNTHZVW7YYxTPod797vhjYtEkDG7oa8HR7/xI9oPTSspg==}
+  /@vueuse/shared/9.0.2_vue@3.2.37:
+    resolution: {integrity: sha512-KwBDefK2ljLESpt0ffe2w8EGUCb3IaMfTzeytB/uHHjHOGOEIHLHHyn8W2C48uGQEvoe5iwaW4Bfp8cRUM6IFA==}
     dependencies:
       vue-demi: 0.13.6_vue@3.2.37
     transitivePeerDependencies:
@@ -2254,7 +2254,7 @@ packages:
     dependencies:
       '@babel/core': 7.18.9
       '@babel/helper-define-polyfill-provider': 0.3.2_@babel+core@7.18.9
-      core-js-compat: 3.24.0
+      core-js-compat: 3.24.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2480,8 +2480,8 @@ packages:
       safe-buffer: 5.1.2
     dev: true
 
-  /core-js-compat/3.24.0:
-    resolution: {integrity: sha512-F+2E63X3ff/nj8uIrf8Rf24UDGIz7p838+xjEp+Bx3y8OWXj+VTPPZNCtdqovPaS9o7Tka5mCH01Zn5vOd6UQg==}
+  /core-js-compat/3.24.1:
+    resolution: {integrity: sha512-XhdNAGeRnTpp8xbD+sR/HFDK9CbeeeqXT6TuofXh3urqEevzkWmLRgrVoykodsw8okqo2pu1BOmuCKrHx63zdw==}
     dependencies:
       browserslist: 4.21.3
       semver: 7.0.0
@@ -5161,7 +5161,7 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unplugin-auto-import/0.10.2_xx5gi7vzrbocjvfoahn5xm47xu:
+  /unplugin-auto-import/0.10.2_tx7zv2ie4cs2dwhmfsvx6hgtim:
     resolution: {integrity: sha512-TtGWSN1GjXlfEuB7ALmQfW8EYIG99fASsChkMBvTqyWgfBebN0/9njoMZJ73c234vqduHJGgtRyveYNSYt8X0g==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -5172,7 +5172,7 @@ packages:
     dependencies:
       '@antfu/utils': 0.5.2
       '@rollup/pluginutils': 4.2.1
-      '@vueuse/core': 9.0.1_vue@3.2.37
+      '@vueuse/core': 9.0.2_vue@3.2.37
       local-pkg: 0.4.2
       magic-string: 0.26.2
       unimport: 0.6.4_vite@3.0.4

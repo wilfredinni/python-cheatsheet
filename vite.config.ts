@@ -120,7 +120,7 @@ export default defineConfig(({ mode }) => {
     ssgOptions: {
       script: 'async',
       formatting: 'minify',
-      // format: 'cjs',
+      format: 'cjs',
       onFinished() {
         const hostname = `https://${process.env.VITE_BASE_URL}`
         generateSitemap({
