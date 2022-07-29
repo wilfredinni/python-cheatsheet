@@ -11,6 +11,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 import Markdown from 'vite-plugin-vue-markdown'
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
+import string from 'string'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -66,11 +67,14 @@ export default defineConfig(({ mode }) => {
         resolvers: [HeadlessUiResolver()],
       }),
 
-      // https://github.com/antfu/vite-plugin-md
+      // https://github.com/antfu/vite-plugin-vue-markdown
+      // https://prismjs.com/
       Markdown({
         headEnabled: true,
         markdownItSetup(md) {
-          // https://prismjs.com/
+          md.use(require('markdown-it-anchor'), {
+            slugify: (s: string) => string(s).slugify().toString(),
+          })
           md.use(Prism, {})
           md.use(LinkAttributes, {
             matcher: (link: string) => /^https?:\/\//.test(link),
