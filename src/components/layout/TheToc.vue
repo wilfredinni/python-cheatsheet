@@ -11,8 +11,6 @@ interface Toc {
 }
 
 const theToc: Ref<Toc[]> = ref([])
-const currentSection = ref('')
-
 const createToc = () => {
   const h2 = document.getElementsByTagName('h2')
   theToc.value = Array.from(h2).map((item) => {
@@ -20,6 +18,7 @@ const createToc = () => {
   })
 }
 
+const currentSection = ref('')
 const getObserver = () => {
   const observer = new IntersectionObserver(
     (entries) => {
