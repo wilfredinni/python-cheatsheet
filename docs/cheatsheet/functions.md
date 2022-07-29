@@ -40,7 +40,7 @@ To improve or code readability, we should be as explicit as possible. We can ach
 
 ```python
 >>> def say_hi(name, greeting):
-...    print(f"{name} {greeting}")
+...    print(f"{greeting} {name}")
 ...
 >>> # without keyword arguments
 >>> say_hi('John', 'Hello')
