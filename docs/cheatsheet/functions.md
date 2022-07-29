@@ -36,7 +36,7 @@ In the following example, the function **say_hello** receives the argument "name
 
 ## Keyword Arguments
 
-To improve or code readability, we should be as explicit as possible. We can achieve this in our functions by using `Keyword Arguments`:
+To improve code readability, we should be as explicit as possible. We can achieve this in our functions by using `Keyword Arguments`:
 
 ```python
 >>> def say_hi(name, greeting):
