@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import { breakpointsTailwind } from '@vueuse/core'
 import type { Ref } from 'vue'
+
+const breakpoints = useBreakpoints(breakpointsTailwind)
+const xlAndLarger = breakpoints.greater('xl')
 
 interface Toc {
   header: string
@@ -34,16 +38,21 @@ const getObserver = () => {
   })
 }
 
+const initToc = () => {
+  if (xlAndLarger.value) {
+    createToc()
+    getObserver()
+  }
+}
+
 const route = useRoute()
 onMounted(() => {
-  createToc()
-  getObserver()
+  initToc()
 })
 
 watch(route, () => {
   nextTick(() => {
-    createToc()
-    getObserver()
+    initToc()
   })
 })
 </script>
