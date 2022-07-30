@@ -68,9 +68,16 @@ Lists are are one of the 4 data types in Python used to store collections of dat
 # ['table', 'chair', 'rack', 'shelf']
 ```
 
-Slicing the complete list will perform a copy:
+## Copying a list
+
+### Shawllow copy
+
+* spam2 = spam.copy()
+* spam2 = spam(list_1)
+* Slicing the complete list: spam2 = spam\[:\]
 
 ```python
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> spam2 = spam[:]
 # ['cat', 'bat', 'rat', 'elephant']
 
@@ -80,6 +87,29 @@ Slicing the complete list will perform a copy:
 
 >>> spam2
 # ['cat', 'bat', 'rat', 'elephant']
+```
+
+### Deep copy
+
+However, a shawllow copy can sometimes cause problems. A safer approach is to apply a deep copy:
+
+```python
+list_1 = [['cat', 'bat', 'rat', 'elephant']]
+list_2 = list_1[:]
+
+list_2[0].append('dog')
+print(list_1)
+# [['cat', 'bat', 'rat', 'elephant','dog']]
+# 'dog' is supposed to be added to list_2 only, but due to the shawllow copy, it's applied to list_1 as well
+
+import copy
+list_1 = [['cat', 'bat', 'rat', 'elephant']]
+list_3 = copy.deepcopy(list_1)
+
+list_3[0].append('dog')
+print(list_1)
+# [['cat', 'bat', 'rat', 'elephant']]
+
 ```
 
 ## Getting a list length with len()
