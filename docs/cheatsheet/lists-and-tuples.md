@@ -296,18 +296,18 @@ The multiple assignment trick can also be used to swap the values in two variabl
 `pop` will return the removed element:
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
+>>> animals = ['cat', 'bat', 'rat', 'elephant']
 
->>> furniture.pop()
+>>> animals.pop()
 'elephant'
 
->>> furniture
+>>> animals
 ['cat', 'bat', 'rat']
 
->>> furniture.pop(0)
+>>> animals.pop(0)
 'cat'
 
->>> furniture
+>>> animals
 ['bat', 'rat']
 ```
 
