@@ -293,7 +293,7 @@ The multiple assignment trick can also be used to swap the values in two variabl
 
 ### pop()
 
-`pop` will return the removed element:
+By default, `pop` will remove and return the last item of the list. You can also pass the index of the element as an optional parameter:
 
 ```python
 >>> animals = ['cat', 'bat', 'rat', 'elephant']
