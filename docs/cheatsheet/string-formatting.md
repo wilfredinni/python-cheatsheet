@@ -104,7 +104,7 @@ Showing as Percentage
 
 ```python
 >>> a = 0.816562
->>> print("{0:.2%}".format(a))
+>>> "{0:.2%}".format(a)
 # '81.66%'
 ```
 
