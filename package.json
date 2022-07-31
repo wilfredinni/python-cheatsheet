@@ -47,7 +47,7 @@
     "markdown-it-link-attributes": "^4.0.0",
     "markdown-it-prism": "^2.2.4",
     "ohmyfetch": "^0.4.18",
-    "pnpm": "^7.7.1",
+    "pnpm": "^7.8.0",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
@@ -65,7 +65,7 @@
     "vite-ssg": "^0.20.2",
     "vite-ssg-sitemap": "^0.3.1",
     "vitest": "^0.19.1",
-    "vue-tsc": "^0.39.2"
+    "vue-tsc": "^0.39.4"
   },
   "pnpm": {
     "peerDependencyRules": {
