@@ -9,12 +9,27 @@ updated: July 19, 2022
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
+## 2022-07-31
+
+### Website
+
+- Optimized TOC by enabling `markdown-it-anchor` anchor links ([#87](https://github.com/wilfredinni/python-cheatsheet/pull/87))
+- Optimized Mobile PageSpeed score ([#88](https://github.com/wilfredinni/python-cheatsheet/pull/88/commits/80f86c88773b4694ebacc2c7ff75c8fe4f083778))
+- Fixed DocSearch results by enabling `renderJavaScript`.
+- Fixed DocSearch behavior.
+
+### Cheatsheet
+
+- Added `Formatting Digits` to `String formatting` ([#92](https://github.com/wilfredinni/python-cheatsheet/pull/92)) ([caac300](https://github.com/wilfredinni/python-cheatsheet/commit/caac300483cbd103e0f9666e647160b2e337d36e))
+- Fixed `function.md` example ([#89](https://github.com/wilfredinni/python-cheatsheet/pull/89))
+- Fixed `pop` method example ([#91](https://github.com/wilfredinni/python-cheatsheet/pull/91))
+
 ## 2022-07-28
 
 - Enable **Algolia DocSearch** 🎉
 - Update all internal navigation to use `router-link`.
-- Fix anchor link navigation.
-- Fix broken links.
+- Fixed anchor link navigation.
+- Fixed broken links.
 
 ## 2022-07-24
 
