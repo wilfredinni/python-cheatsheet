@@ -88,16 +88,16 @@ Adding thousands separator
 
 ```python
 >>> a = 10000000
->>> print({0:,}.format(a))
-# 10,000,000
+>>> "{0:,}".format(a)
+# '10,000,000'
 ```
 
 Rounding
 
 ```python
 >>> a = 3.1415926
->>> print("{0:.2f}".format(a))
-# 3.14
+>>> "{0:.2f}".format(a)
+# '3.14'
 ```
 
 Showing as Percentage
