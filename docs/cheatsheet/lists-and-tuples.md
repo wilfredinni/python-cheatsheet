@@ -296,7 +296,7 @@ The multiple assignment trick can also be used to swap the values in two variabl
 `pop` will return the removed element:
 
 ```python
->>> animals = ['elephant', 'cat', 'bat', 'rat']
+>>> animals = ['cat', 'bat', 'rat', 'elephant']
 
 >>> animals.pop()
 'elephant'
