@@ -42,7 +42,7 @@ Read the article <router-link to="/blog/python-easy-args-kwargs">Python \*args a
     Python conventions
   </base-warning-title>
   <base-warning-content>
-    The words <code>*args</code> and <code>**kwargs</code> are conventions. They are not imposed by the interpreter, buy considered good practice by the Python community.
+    The words <code>*args</code> and <code>**kwargs</code> are conventions. They are not imposed by the interpreter, but considered good practice by the Python community.
   </base-warning-content>
 </base-warning>
 
