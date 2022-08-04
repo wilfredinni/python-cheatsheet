@@ -104,7 +104,11 @@ const smAndLarger = breakpoints.greater('sm')
     </prose>
 
     <div class="mt-10">
-      <prose><h2 class="text-center sm:text-start">Contributors</h2></prose>
+      <prose>
+        <h2 id="contributors" class="text-center sm:text-start">
+          Contributors
+        </h2>
+      </prose>
       <contributors class="pb-3 pt-10" />
     </div>
   </article>
