@@ -362,13 +362,13 @@ You can use the built-in function `sorted` to return a new list:
 </base-disclaimer>
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
+>>> furniture = ('table', 'chair', 'rack', 'shelf')
 
 >>> furniture[0]
 # 'table'
 
 >>> furniture[1:3]
-# ['chair', 'rack']
+# ('chair', 'rack')
 
 >>> len(furniture)
 # 4
