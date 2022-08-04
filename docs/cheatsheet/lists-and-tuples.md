@@ -230,7 +230,7 @@ The multiple assignment trick can also be used to swap the values in two variabl
 # 1
 ```
 
-## Adding Values with append() and insert()
+## Adding Values
 
 ### append()
 
@@ -254,7 +254,7 @@ The multiple assignment trick can also be used to swap the values in two variabl
 # ['table', 'bed', 'chair', 'rack', 'shelf']
 ```
 
-## Removing values with del(), remove() and pop()
+## Removing Values
 
 ### del()
 
@@ -311,7 +311,7 @@ By default, `pop` will remove and return the last item of the list. You can also
 ['bat', 'rat']
 ```
 
-## Sorting values with sort
+## Sorting values with sort()
 
 ```python
 >>> numbers = [2, 5, 3.14, 1, -7]
@@ -362,13 +362,13 @@ You can use the built-in function `sorted` to return a new list:
 </base-disclaimer>
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
+>>> furniture = ('table', 'chair', 'rack', 'shelf')
 
 >>> furniture[0]
 # 'table'
 
 >>> furniture[1:3]
-# ['chair', 'rack']
+# ('chair', 'rack')
 
 >>> len(furniture)
 # 4
