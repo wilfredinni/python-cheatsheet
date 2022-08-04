@@ -92,6 +92,7 @@
         "pathobj",
         "pipenv",
         "Pipfile",
+        "popitem",
         "pprint",
         "prereleases",
         "prismjs",

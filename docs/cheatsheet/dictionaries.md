@@ -148,6 +148,54 @@ Using `setdefault` we could make the same code more short:
 # {'name': 'Rose', 'age': 33, 'has_hair': True}
 ```
 
+## Removing Items
+
+### pop()
+
+`pop()` removes an item based on a given key.
+
+```python
+>>> wife = {'name': 'Rose', 'age': 33, 'hair': 'brown'}
+>>> wife.pop('age')
+# 33
+>>> wife
+# {'name': 'Rose', 'hair': 'brown'}
+```
+
+### popitem()
+
+`popitem()` remove the last item in a dictionary and returns it.
+
+```python
+>>> wife = {'name': 'Rose', 'age': 33, 'hair': 'brown'}
+>>> wife.popitem()
+# ('hair', 'brown')
+>>> wife
+# {'name': 'Rose', 'age': 33}
+```
+
+### del()
+
+`del()` removes an item based on a given key.
+
+```python
+>>> wife = {'name': 'Rose', 'age': 33, 'hair': 'brown'}
+>>> del wife['age']
+>>> wife
+# {'name': 'Rose', 'hair': 'brown'}
+```
+
+### clear()
+
+`clear()` removes all the items in a dictionary.
+
+```python
+>>> wife = {'name': 'Rose', 'age': 33, 'hair': 'brown'}
+>>> wife.clear()
+>>> wife
+# {}
+```
+
 ## Pretty Printing
 
 ```python
