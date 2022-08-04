@@ -2,6 +2,18 @@
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
+## 2022-08-05
+
+### Website
+
+- Fixed a bug that prevented the toc to be updated when scrolling.
+
+### Cheatsheet
+
+- Added a `Removing Items` section to `Dictionaries`.
+- Fixed a `lists-and-tuples.md` example.
+- Changed several titles.
+
 ## 2022-07-31
 
 ### Website
