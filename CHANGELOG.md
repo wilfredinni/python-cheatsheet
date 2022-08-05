@@ -2,17 +2,17 @@
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
-## 2022-08-05
+## 2022-08-05 [#96](https://github.com/wilfredinni/python-cheatsheet/pull/96)
 
 ### Website
 
-- Fixed a bug that prevented the toc to be updated when scrolling.
+- Fixed a bug that prevented the toc to be updated when scrolling ([1e5eb39](https://github.com/wilfredinni/python-cheatsheet/commit/1e5eb3938cbe9241ac8eb25834784de3ee91af6e))
 
 ### Cheatsheet
 
-- Added a `Removing Items` section to `Dictionaries`.
-- Fixed a `lists-and-tuples.md` example.
-- Changed several titles.
+- Added a `Removing Items` section to `Dictionaries` ([971aef6](https://github.com/wilfredinni/python-cheatsheet/commit/971aef6e8afd503b6804951292137d94abaa841e))
+- Fixed a `lists-and-tuples.md` example ([41519b3](https://github.com/wilfredinni/python-cheatsheet/commit/41519b3727593997011b167ef00dcba5e245aaaa))
+- Changed several titles ([05603c0](https://github.com/wilfredinni/python-cheatsheet/commit/05603c07ed24c835fe08f1cd337fd1913dcc5c1e)) ([c595143](https://github.com/wilfredinni/python-cheatsheet/commit/c595143358c3ee474e1b10c5f64fa92d8eb72833))
 
 ## 2022-07-31
 
