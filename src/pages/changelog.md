@@ -9,7 +9,7 @@ updated: July 19, 2022
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
-## 2022-08-05 [#96](https://github.com/wilfredinni/python-cheatsheet/pull/96)
+## 2022-08-05
 
 ### Website
 
