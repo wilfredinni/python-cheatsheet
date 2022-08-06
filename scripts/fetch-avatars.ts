@@ -9,7 +9,6 @@ const dirAvatars = resolve(docsDir, 'public/user-avatars/')
 let contributors: string[] = []
 
 async function download(url: string, fileName: string) {
-  // eslint-disable-next-line no-console
   console.log('downloading', fileName)
   const image = await $fetch(url, { responseType: 'arrayBuffer' })
   await fs.writeFile(fileName, Buffer.from(image))

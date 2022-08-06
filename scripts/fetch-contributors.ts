@@ -34,5 +34,9 @@ async function generate() {
   )
 }
 
-generate()
-fetchAvatars()
+const init = async () => {
+  await generate()
+  await fetchAvatars()
+}
+
+init()
