@@ -10,11 +10,32 @@ for a regex, [slice a list](https://www.pythoncheatsheet.org/cheatsheet/lists-an
 
 ## Table of Content
 
-| Cheatsheet                                  | Modules | Built-in |
-| ------------------------------------------- | ------- | -------- |
-| [Python Basics](/docs/cheatsheet/basics.md) | []()    | []()     |
+| Cheatsheet                                                                 | Modules                                               |
+| -------------------------------------------------------------------------- | ----------------------------------------------------- |
+| [Python Basics](/docs/cheatsheet/basics.md)                                | [Datetime Module](/docs/modules/datetime-module.md)   |
+| [Built-in Functions](/docs/cheatsheet/built-in-functions.md)               | [Itertools Module](/docs/modules/itertools-module.md) |
+| [Control Flow](/docs/cheatsheet/control-flow.md)                           | [Json Module](/docs/modules/json-module.md)           |
+| [Functions](/docs/cheatsheet/functions.md)                                 | [Random Module](/docs/modules/random-module.md)       |
+| [Lists and Tuples](/docs/cheatsheet/lists-and-tuples.md)                   | [Os Module](/docs/modules/os-module.md)               |
+| [Dictionaries](/docs/cheatsheet/dictionaries.md)                           | [Pathlib Module](/docs/modules/pathlib-module.md)     |
+| [Sets](/docs/cheatsheet/sets.md)                                           |                                                       |
+| [Comprehensions](/docs/cheatsheet/comprehensions.md)                       |                                                       |
+| [Manipulating Strings](/docs/cheatsheet/manipulating-strings.md)           |                                                       |
+| [String Formatting](/docs/cheatsheet/string-formatting.md)                 |                                                       |
+| [Regular Expressions](/docs/cheatsheet/regular-expressions.md)             |                                                       |
+| [File and directory Paths](/docs/cheatsheet/file-directory-path.md)        |                                                       |
+| [Reading and Writing Files](/docs/cheatsheet/reading-and-writing-files.md) |                                                       |
+| [JSON and YAML](/docs/cheatsheet/json-yaml.md)                             |                                                       |
+| [Exception Handling](/docs/cheatsheet/exception-handling.md)               |                                                       |
+| [Debugging](/docs/cheatsheet/debugging.md)                                 |                                                       |
+| [Args and Kwargs](/docs/cheatsheet/args-and-kwargs.md)                     |                                                       |
+| [Context Manager](/docs/cheatsheet/context-manager.md)                     |                                                       |
+| [\_\_main\_\_](/docs/cheatsheet/main.md)                                   |                                                       |
+| [setup.py](/docs/cheatsheet/setup-py.md)                                   |                                                       |
+| [Dataclasses](/docs/cheatsheet/dataclasses.md)                             |                                                       |
+| [Virtual Environment](/docs/cheatsheet/virtual-environments.md)            |                                                       |
 
-## Contribute
+bute
 
 [All contributions are welcome!](/src/pages/contributing.md)
 
