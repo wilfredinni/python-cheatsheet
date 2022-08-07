@@ -125,7 +125,7 @@ Using the `setdefault` method we can make the same code more short:
 
 ### pop()
 
-The `pop()` method removes an item based on a given key.
+The `pop()` method removes and return an item based on a given key.
 
 ```python
 >>> wife = {'name': 'Rose', 'age': 33, 'hair': 'brown'}
