@@ -73,13 +73,13 @@ updated: July 19, 2022
 The release of the new **pythoncheatsheet.org** website:
 
 - Complete re-design with **Vue 3** and **Tailwind CSS**.
-- The site is now a **PWA** (Progressive web app) and can be installed in any platform that has a compatible web browser.It is also available offline.
+- The site is now a **PWA** (Progressive web app) and can be installed in any platform that has a compatible web browser. It is also available offline.
 - Added a **dark mode**.
 - Added a **reader mode**.
 - Added **Algolia search** (not available yet).
 - Added contributors to the index page 🥰
-- Added, fixed and removed code examples,
-- Added an **Edit this page on github** link on every page to make easier to contribute.
+- Added, fixed and removed code examples.
+- Added an **Edit this page on github** link to make easier to contribute.
 - Changed hosting to **Netlify** with an OSS plan 🎉
 - Removed and joined cheatsheet sections.
 - Fixed grammar and spelling mistakes.
