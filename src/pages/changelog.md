@@ -79,7 +79,7 @@ The release of the new **pythoncheatsheet.org** website:
 - Added **Algolia search** (not available yet).
 - Added contributors to the index page 🥰
 - Added, fixed and removed code examples.
-- Added an **Edit this page on github** link to make easier to contribute.
+- Added an **Edit this page on GitHub** link to make it easier to contribute.
 - Changed hosting to **Netlify** with an OSS plan 🎉
 - Removed and joined cheatsheet sections.
 - Fixed grammar and spelling mistakes.
