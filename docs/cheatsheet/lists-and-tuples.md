@@ -103,7 +103,7 @@ Slicing the complete list will perform a copy:
 >>> furniture
 # ['desk', 'chair', 'chair', 'shelf']
 
->>> furniture[-1] = bed
+>>> furniture[-1] = 'bed'
 >>> furniture
 # ['desk', 'chair', 'chair', 'bed']
 ```
