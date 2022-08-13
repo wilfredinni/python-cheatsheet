@@ -18,7 +18,7 @@ Python has many [built-in exceptions](https://docs.python.org/3/library/exceptio
 
 ## Basic exception handling
 
-You can't divide by zero, that is a mathematical true, and if you try to it in Python, the interpreter will raise the built-in exception [ZeroDivisionError](https://docs.python.org/3/library/exceptions.html#ZeroDivisionError):
+You can't divide by zero, that is a mathematical true, and if you try to do it in Python, the interpreter will raise the built-in exception [ZeroDivisionError](https://docs.python.org/3/library/exceptions.html#ZeroDivisionError):
 
 ```python
 >>> def divide(dividend , divisor):
@@ -73,7 +73,7 @@ The code inside the `finally` section is always executed, no matter if an except
 
 ## Custom Exceptions
 
-Custom exceptions initialize by creating a `class` that inherit from the base `Exception` class of Python, and are raised using the `raise` keyword:
+Custom exceptions initialize by creating a `class` that inherits from the base `Exception` class of Python, and are raised using the `raise` keyword:
 
 ```python
 >>> class MyCustomException(Exception):
