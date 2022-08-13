@@ -35,7 +35,7 @@ for a regex, [slice a list](https://www.pythoncheatsheet.org/cheatsheet/lists-an
 | [Dataclasses](/docs/cheatsheet/dataclasses.md)                             |                                                       |
 | [Virtual Environment](/docs/cheatsheet/virtual-environments.md)            |                                                       |
 
-bute
+## Contribute
 
 [All contributions are welcome!](/src/pages/contributing.md)
 
