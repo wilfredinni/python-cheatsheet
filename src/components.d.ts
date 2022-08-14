@@ -41,6 +41,7 @@ declare module '@vue/runtime-core' {
     ReferenceIcon: typeof import('./components/icons/ReferenceIcon.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Subscribe: typeof import('./components/Subscribe.vue')['default']
     Switch: typeof import('@headlessui/vue')['Switch']
     TheFooter: typeof import('./components/layout/TheFooter.vue')['default']
     TheNavbar: typeof import('./components/layout/TheNavbar.vue')['default']

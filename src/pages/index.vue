@@ -5,7 +5,14 @@ import PluginIcon from '~/components/icons/PluginIcon.vue'
 import ArrowIcon from '~/components/icons/ArrowIcon.vue'
 import GridIcon from '~/components/icons/GridIcon.vue'
 
-const links = [
+const cardLinks = [
+  {
+    path: 'https://github.com/wilfredinni/python-cheatsheet',
+    name: 'View on GitHub',
+    description: `Drop a star on GitHub if you find this project useful.`,
+    icon: ArrowIcon,
+    external: true,
+  },
   {
     path: '/contributing',
     name: 'Contribute',
@@ -23,6 +30,7 @@ const links = [
     name: 'Changelog',
     description: `See what is new, what got fixed, and what is coming.`,
     icon: GridIcon,
+    external: false,
   },
 ]
 
@@ -58,25 +66,19 @@ const smAndLarger = breakpoints.greater('sm')
       </p>
     </prose>
 
-    <div
-      className="not-prose mt-10 mb-12 grid grid-cols-1 gap-6 sm:grid-cols-2"
-    >
+    <div className="not-prose my-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
       <base-link-card
-        title="View on GitHub"
-        description=" Drop a star on GitHub if you find this project useful."
-        path="https://github.com/wilfredinni/python-cheatsheet"
-        :icon="ArrowIcon"
-        :is-external="true"
-      />
-      <base-link-card
-        v-for="link in links"
+        v-for="link in cardLinks"
         :key="link.path"
         :title="link.name"
         :description="link.description"
         :path="link.path"
         :icon="link.icon"
+        :is-external="link.external"
       />
     </div>
+
+    <subscribe class="mb-8" />
 
     <prose class="hidden sm:block">
       <h2 id="getting-started">Getting started</h2>

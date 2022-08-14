@@ -45,6 +45,8 @@ const rootRepositoryRoutes = ['contributing', 'changelog']
 
         <base-pagination v-if="!$route.path.startsWith('/builtin/')" />
 
+        <subscribe v-if="$route.name !== 'index'" class="mt-5" />
+
         <the-footer
           :repository="
             !rootRepositoryRoutes.includes($route.name as string)
