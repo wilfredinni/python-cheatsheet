@@ -14,6 +14,24 @@ description: Return the absolute value of a number. The argument may be an integ
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+
+```
+  
+>>> abs(-1)
+# 1
+>>> abs(0)
+# 0
+>>> abs(1)
+# 1
+>>> abs(3.14)
+# 3.14
+>>> abs(3 + 2j)
+# 3.6055512754639896
+>>> abs(0x10)
+# 16
+>>> abs(0b10)
+# 2
+>>> abs(0o20)
+# 16
+```
+
