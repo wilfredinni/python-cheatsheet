@@ -30,10 +30,12 @@ const articles = computed(() => {
   <prose>
     <h1>Blog</h1>
     <p class="lead">
-      These articles provide a deeper look to the the contents of the
+      These articles provide a more in-depth look at the contents of the
       <router-link to="/">Python Cheatsheet</router-link>.
     </p>
   </prose>
+
+  <subscribe class="my-8" />
 
   <div class="mt-5">
     <ul class="border-l border-l-slate-200 dark:border-l-slate-800">

@@ -5,7 +5,24 @@ import PluginIcon from '~/components/icons/PluginIcon.vue'
 import ArrowIcon from '~/components/icons/ArrowIcon.vue'
 import GridIcon from '~/components/icons/GridIcon.vue'
 
-const links = [
+const cardLinks = [
+  {
+    path: 'https://github.com/wilfredinni/python-cheatsheet',
+    name: 'View on GitHub',
+    description: `Drop a star on GitHub if you find this project useful.`,
+    icon: ArrowIcon,
+    external: true,
+  },
+  {
+    path: '/changelog',
+    name: 'Changelog',
+    description: `See what is new, what got fixed, and what is coming.`,
+    icon: GridIcon,
+    external: false,
+  },
+]
+
+const cardLinks2 = [
   {
     path: '/contributing',
     name: 'Contribute',
@@ -17,12 +34,6 @@ const links = [
     name: 'Blog',
     description: `Read detailed articles about Python and it's ecosystem.`,
     icon: ReferenceIcon,
-  },
-  {
-    path: '/changelog',
-    name: 'Changelog',
-    description: `See what is new, what got fixed, and what is coming.`,
-    icon: GridIcon,
   },
 ]
 
@@ -58,18 +69,23 @@ const smAndLarger = breakpoints.greater('sm')
       </p>
     </prose>
 
-    <div
-      className="not-prose mt-10 mb-12 grid grid-cols-1 gap-6 sm:grid-cols-2"
-    >
+    <div className="not-prose mt-10 mb-4 grid grid-cols-1 gap-6 sm:grid-cols-2">
       <base-link-card
-        title="View on GitHub"
-        description=" Drop a star on GitHub if you find this project useful."
-        path="https://github.com/wilfredinni/python-cheatsheet"
-        :icon="ArrowIcon"
-        :is-external="true"
+        v-for="link in cardLinks"
+        :key="link.path"
+        :title="link.name"
+        :description="link.description"
+        :path="link.path"
+        :icon="link.icon"
+        :is-external="link.external"
       />
+    </div>
+
+    <subscribe />
+
+    <div className="not-prose mt-4 mb-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
       <base-link-card
-        v-for="link in links"
+        v-for="link in cardLinks2"
         :key="link.path"
         :title="link.name"
         :description="link.description"

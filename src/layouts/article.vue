@@ -19,6 +19,8 @@ const core = useCoreStore()
           <prose><RouterView /></prose>
         </article>
 
+        <subscribe />
+
         <the-footer
           :repository="'https://github.com/wilfredinni/python-cheatsheet/blob/master/docs'"
         />
