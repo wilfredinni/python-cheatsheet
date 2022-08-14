@@ -39,7 +39,7 @@ export function useMeta() {
 
   const meta = {
     title: 'Python Cheatsheet - Python Cheatsheet',
-    description: description,
+    description,
     meta: [
       { name: 'theme-color', content: themeColor },
       { name: 'description', content: description },

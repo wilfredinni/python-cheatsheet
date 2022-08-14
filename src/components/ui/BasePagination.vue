@@ -1,7 +1,6 @@
 <script setup lang="ts">
-const navigation = useNavigationStore()
-
 const route = useRoute()
+const navigation = useNavigationStore()
 
 const changelogPath = [{ name: 'Changelog', path: '/changelog' }]
 const allRoutes = [

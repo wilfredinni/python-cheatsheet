@@ -4,10 +4,6 @@ import docsearch from '@docsearch/js'
 const router = useRouter()
 const route = useRoute()
 
-onMounted(() => {
-  initialize()
-})
-
 const userOptions = {
   container: import.meta.env.VITE_DOCSEARCH_CONTAINER,
   appId: import.meta.env.VITE_DOCSEARCH_APP_ID,
@@ -79,6 +75,10 @@ const getRelativePath = (absoluteUrl: string) => {
 
   return pathname + hash
 }
+
+onMounted(() => {
+  initialize()
+})
 </script>
 
 <template>
