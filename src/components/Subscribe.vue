@@ -1,7 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const showSubscription = import.meta.env.VITE_NEWSLETTER === 'true' || false
+</script>
 
 <template>
   <div
+    v-if="showSubscription"
     class="rounded-xl border border-slate-300/70 bg-slate-50 px-5 py-5 dark:border-transparent dark:bg-slate-800"
   >
     <p class="text-2xl font-semibold text-slate-800 dark:text-slate-300">

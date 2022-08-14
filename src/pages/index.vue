@@ -66,7 +66,7 @@ const smAndLarger = breakpoints.greater('sm')
       </p>
     </prose>
 
-    <div className="not-prose my-11 grid grid-cols-1 gap-6 sm:grid-cols-2">
+    <div className="not-prose my-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
       <base-link-card
         v-for="link in cardLinks"
         :key="link.path"
@@ -77,6 +77,8 @@ const smAndLarger = breakpoints.greater('sm')
         :is-external="link.external"
       />
     </div>
+
+    <subscribe class="mb-8" />
 
     <prose class="hidden sm:block">
       <h2 id="getting-started">Getting started</h2>
