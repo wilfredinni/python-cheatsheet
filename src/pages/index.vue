@@ -69,7 +69,7 @@ const smAndLarger = breakpoints.greater('sm')
       </p>
     </prose>
 
-    <div className="not-prose mt-10 mb-4 grid grid-cols-1 gap-6 sm:grid-cols-2">
+    <div className="not-prose mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
       <base-link-card
         v-for="link in cardLinks"
         :key="link.path"
@@ -81,9 +81,9 @@ const smAndLarger = breakpoints.greater('sm')
       />
     </div>
 
-    <subscribe />
+    <subscribe class="my-5" />
 
-    <div className="not-prose mt-4 mb-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
+    <div className="not-prose mb-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
       <base-link-card
         v-for="link in cardLinks2"
         :key="link.path"
