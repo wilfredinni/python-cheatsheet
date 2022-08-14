@@ -221,7 +221,7 @@ The `join()` method takes all the items in an iterable, like a <router-link to="
 
 ### split()
 
-The `split()` method splits a `string` into a `list`. By default, it will use spaces to separate the items, but you can also set another character of choice:
+The `split()` method splits a `string` into a `list`. By default, it will use whitespace to separate the items, but you can also set another character of choice:
 
 ```python
 >>> 'My name is Simon'.split()
@@ -232,6 +232,12 @@ The `split()` method splits a `string` into a `list`. By default, it will use sp
 
 >>> 'My name is Simon'.split('m')
 # ['My na', 'e is Si', 'on']
+
+>>> ' My  name is  Simon'.split()
+# ['My', 'name', 'is', 'Simon']
+
+>>> ' My  name is  Simon'.split(' ')
+# ['', 'My', '', 'name', 'is', '', 'Simon']
 ```
 
 ## Justifying text with rjust(), ljust() and center()
