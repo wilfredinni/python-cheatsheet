@@ -338,8 +338,8 @@ useful when a `break` condition can occur in the loop:
 >>> while True:
 ...     feedback = input('Type exit to exit: ')
 ...     if feedback == 'exit':
+...         print(f'You typed {feedback}.')
 ...         sys.exit()
-...     print(f'You typed {feedback}.')
 ...
 # Type exit to exit: open
 # Type exit to exit: close
