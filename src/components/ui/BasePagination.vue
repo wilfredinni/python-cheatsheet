@@ -35,7 +35,7 @@ const next = computed(() => {
     <router-link
       v-if="previous"
       :to="previous.path"
-      class="grid w-full rounded-lg border p-5 transition duration-300 hover:border-sky-500 hover:bg-sky-400/5 dark:border-slate-800 dark:hover:border-sky-400"
+      class="grid w-full rounded-lg border border-slate-300/70 p-5 transition duration-300 hover:border-sky-500 hover:bg-sky-400/5 dark:border-slate-800 dark:hover:border-sky-400"
     >
       <span class="text-sm text-slate-500 dark:text-slate-400">
         Previous page
@@ -48,7 +48,7 @@ const next = computed(() => {
     <router-link
       v-if="next"
       :to="next.path"
-      class="grid w-full rounded-lg border p-5 text-end transition duration-300 hover:border-sky-500 hover:bg-sky-400/5 dark:border-slate-800 dark:hover:border-sky-400"
+      class="grid w-full rounded-lg border border-slate-300/70 p-5 text-end transition duration-300 hover:border-sky-500 hover:bg-sky-400/5 dark:border-slate-800 dark:hover:border-sky-400"
     >
       <span class="text-sm text-slate-500 dark:text-slate-400">
         Next page
