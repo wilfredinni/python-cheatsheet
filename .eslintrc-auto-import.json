@@ -233,6 +233,7 @@
     "useTitle": true,
     "useToNumber": true,
     "useToString": true,
+    "useToc": true,
     "useToggle": true,
     "useTransition": true,
     "useUrlSearchParams": true,
