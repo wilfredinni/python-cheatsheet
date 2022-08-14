@@ -14,16 +14,6 @@ const cardLinks = [
     external: true,
   },
   {
-    path: '/changelog',
-    name: 'Changelog',
-    description: `See what is new, what got fixed, and what is coming.`,
-    icon: GridIcon,
-    external: false,
-  },
-]
-
-const cardLinks2 = [
-  {
     path: '/contributing',
     name: 'Contribute',
     description: `Get to know how easy is to contribute to the Python Cheatsheet.`,
@@ -34,6 +24,13 @@ const cardLinks2 = [
     name: 'Blog',
     description: `Read detailed articles about Python and it's ecosystem.`,
     icon: ReferenceIcon,
+  },
+  {
+    path: '/changelog',
+    name: 'Changelog',
+    description: `See what is new, what got fixed, and what is coming.`,
+    icon: GridIcon,
+    external: false,
   },
 ]
 
@@ -69,7 +66,7 @@ const smAndLarger = breakpoints.greater('sm')
       </p>
     </prose>
 
-    <div className="not-prose mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+    <div className="not-prose my-11 grid grid-cols-1 gap-6 sm:grid-cols-2">
       <base-link-card
         v-for="link in cardLinks"
         :key="link.path"
@@ -78,19 +75,6 @@ const smAndLarger = breakpoints.greater('sm')
         :path="link.path"
         :icon="link.icon"
         :is-external="link.external"
-      />
-    </div>
-
-    <subscribe class="my-5" />
-
-    <div className="not-prose mb-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
-      <base-link-card
-        v-for="link in cardLinks2"
-        :key="link.path"
-        :title="link.name"
-        :description="link.description"
-        :path="link.path"
-        :icon="link.icon"
       />
     </div>
 
