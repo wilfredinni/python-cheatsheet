@@ -17,6 +17,7 @@ const subscribe = async () => {
     }
   )
   console.log(response)
+  console.log(response.data)
 }
 </script>
 
