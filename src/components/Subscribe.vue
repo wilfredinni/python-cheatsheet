@@ -13,18 +13,20 @@ const subscribe = async () => {
       headers: {
         Accept: 'application/json',
         Authorization: 'Token token="3da1cb3e1a1c1a89d379920435a2456a"',
+        'Content-type': 'application/json',
       },
     }
   )
   console.log(response)
   console.log(response.data)
+  return response
 }
 </script>
 
 <template>
   <div
     v-if="showSubscription"
-    class="rounded-xl border border-slate-300/70 bg-slate-50 px-5 py-5 dark:border-transparent dark:bg-slate-800"
+    class="mb-10 rounded-xl border border-slate-300/70 bg-slate-50 px-5 py-5 dark:border-transparent dark:bg-slate-800"
   >
     <p class="text-2xl font-semibold text-slate-800 dark:text-slate-300">
       Subscribe to pythoncheatsheet.org
