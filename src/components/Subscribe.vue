@@ -1,25 +1,9 @@
 <script setup lang="ts">
-import { $fetch } from 'ohmyfetch'
-
 const showSubscription = import.meta.env.VITE_NEWSLETTER === 'true' || false
 
 const email = ref('')
 const subscribe = async () => {
-  const response = await $fetch(
-    'https://api.curated.co/api/v3/publications/pythoncheatsheet/email_subscribers',
-    {
-      method: 'POST',
-      body: { email: email.value },
-      headers: {
-        Accept: 'application/json',
-        Authorization: 'Token token="3da1cb3e1a1c1a89d379920435a2456a"',
-        'Content-type': 'application/json',
-      },
-    }
-  )
-  console.log(response)
-  console.log(response.data)
-  return response
+  console.log('subscribe')
 }
 </script>
 
