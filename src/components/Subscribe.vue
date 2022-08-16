@@ -1,29 +1,16 @@
 <script setup lang="ts">
-import { $fetch } from 'ohmyfetch'
-
 const showSubscription = import.meta.env.VITE_NEWSLETTER === 'true' || false
 
 const email = ref('')
 const subscribe = async () => {
-  const response = await $fetch(
-    'https://api.curated.co/api/v3/publications/pythoncheatsheet/email_subscribers',
-    {
-      method: 'POST',
-      body: { email: email.value },
-      headers: {
-        Accept: 'application/json',
-        Authorization: 'Token token="3da1cb3e1a1c1a89d379920435a2456a"',
-      },
-    }
-  )
-  console.log(response)
+  console.log('subscribe')
 }
 </script>
 
 <template>
   <div
     v-if="showSubscription"
-    class="rounded-xl border border-slate-300/70 bg-slate-50 px-5 py-5 dark:border-transparent dark:bg-slate-800"
+    class="mb-10 rounded-xl border border-slate-300/70 bg-slate-50 px-5 py-5 dark:border-transparent dark:bg-slate-800"
   >
     <p class="text-2xl font-semibold text-slate-800 dark:text-slate-300">
       Subscribe to pythoncheatsheet.org
