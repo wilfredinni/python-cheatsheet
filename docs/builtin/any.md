@@ -14,6 +14,15 @@ description: Return True if any element of the iterable is true. If the iterable
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+## Examples
+
+```python
+>>> any([False, False, False])
+# False
+
+>>> any((0, True, False))
+# True
+
+>>> any({0, 0, 0})
+# False
+```
