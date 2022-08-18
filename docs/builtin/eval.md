@@ -14,6 +14,16 @@ description: The arguments are a string and optional globals and locals. If prov
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+## Examples
+
+```python
+>>> eval('1 + 4')
+# 5
+
+>>> eval('print("Hello World!")')
+# Hello World!
+
+>>> x = 10
+>>> eval('x == 10')
+# True
+```
