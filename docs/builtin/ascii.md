@@ -14,6 +14,15 @@ description: As repr(), return a string containing a printable representation of
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+## Examples
+
+```python
+>>> ascii('A')
+# 'A'
+
+>>> ascii('ë')
+# '\xeb'
+
+>>> ascii(['A', 'ë'])
+# ['A', '\xeb']
+```
