@@ -14,7 +14,7 @@ description: Return the absolute value of a number. The argument may be an integ
   </base-disclaimer-content>
 </base-disclaimer>
 
-```
+```python
 >>> abs(-1)
 # 1
 >>> abs(0)
