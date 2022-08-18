@@ -291,7 +291,8 @@ The `range()` function returns a sequence of numbers. It starts from 0, incremen
 The `range()` function can also modify it's 3 defaults arguments. The first two will be the `start` and `stop` values, and the third will be the `step` argument. The step is the amount that the variable is increased by after each iteration.
 
 ```python
->>> for i in range(start=0, stop=10, step=2):
+# range(start, stop, step)
+>>> for i in range(0, 10, 2):
 ...    print(i)
 ...
 # 0
