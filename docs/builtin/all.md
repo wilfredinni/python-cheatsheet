@@ -14,6 +14,15 @@ description: Return True if all elements of the iterable are true (or if the ite
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+## Examples
+
+```python
+>>> all([True, True, True])
+# True
+
+>>> all((0, True, False))
+# False
+
+>>> all({1, 1, 1})
+# True
+```
