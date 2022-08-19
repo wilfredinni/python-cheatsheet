@@ -23,6 +23,17 @@ export default defineConfig(({ mode }) => {
       },
     },
 
+    server: {
+      proxy: {
+        '/api': {
+          target: process.env.VITE_CURATED_ENDPOINT,
+          changeOrigin: true,
+          secure: false,
+          rewrite: (path) => path.replace(/^\/api/, ''),
+        },
+      },
+    },
+
     plugins: [
       vue({
         include: [/\.vue$/, /\.md$/],

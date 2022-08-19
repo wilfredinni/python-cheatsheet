@@ -4,19 +4,18 @@ import { $fetch } from 'ohmyfetch'
 const showSubscription = import.meta.env.VITE_NEWSLETTER === 'true' || false
 
 const email = ref('')
+const curatedKey = import.meta.env.VITE_CURATED_KEY
+// const curatedEndpoint = import.meta.env.VITE_CURATED_ENDPOINT
 const subscribe = async () => {
-  const response = await $fetch(
-    'https://api.curated.co/api/v3/publications/16436/email_subscribers',
-    {
-      // method: 'POST',
-      // body: { email: email.value },
-      headers: {
-        Accept: 'application/json',
-        'Content-type': 'application/json',
-        Authorization: 'Token token="081f4384b9ef73565f9b3d79fba3dc31"',
-      },
-    }
-  )
+  const response = await $fetch(`/api/publications/16436/email_subscribers`, {
+    // method: 'POST',
+    // body: { email: email.value },
+    headers: {
+      Accept: 'application/json',
+      'Content-type': 'application/json',
+      Authorization: `Token token="${curatedKey}"`,
+    },
+  })
   console.log(response)
 }
 </script>
