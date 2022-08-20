@@ -1,5 +1,4 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
-
 import { $fetch } from 'ohmyfetch'
 
 interface newsletterResponse {
@@ -22,6 +21,7 @@ export const useNewsletterStore = defineStore('useNewsletterStore', {
   actions: {
     async subscribe(email: string) {
       const curatedKey = import.meta.env.VITE_CURATED_KEY || null
+
       const response = await $fetch(
         `/api/publications/16436/email_subscribers`,
         {
@@ -34,10 +34,12 @@ export const useNewsletterStore = defineStore('useNewsletterStore', {
           },
         }
       ).catch((error) => error.data)
+
       this.response = response
     },
   },
 })
 
-if (import.meta.hot)
+if (import.meta.hot) {
   import.meta.hot.accept(acceptHMRUpdate(useNewsletterStore, import.meta.hot))
+}
