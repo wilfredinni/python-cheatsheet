@@ -5,8 +5,8 @@ export const useNavigationStore = defineStore('navigation', {
     navbarNavigation: [
       { name: 'Blog', path: '/blog', internal: true },
       {
-        name: 'Timeless Python',
-        path: 'https://timelesspython.com/',
+        name: 'Newsletter',
+        path: 'https://news.pythoncheatsheet.org',
         internal: false,
       },
     ],

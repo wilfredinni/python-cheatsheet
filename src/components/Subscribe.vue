@@ -71,17 +71,14 @@ const response = computed(() => newsletter.getResponse)
     </template>
 
     <template v-else-if="response.email">
-      <p
-        class="text-center text-sm font-semibold text-sky-700 dark:text-slate-400"
-      >
+      <p class="text-center text-sm text-sky-700 dark:text-slate-300">
         Thank you for subscribing! Please check your email to confirm your
         subscription. Be sure to check your junk folder.
       </p>
     </template>
+
     <template v-else>
-      <p
-        class="text-center text-sm font-semibold text-sky-700 dark:text-slate-400"
-      >
+      <p class="text-center text-sm text-sky-700 dark:text-slate-300">
         You are already subscribed. Thanks!
       </p>
     </template>
