@@ -1,3 +1,7 @@
+<p align="center">
+<img height="70" src="public/android-chrome-192x192.png">
+</p>
+
 <h1 align="center">Python Cheatsheet</h1>
 
 <div align="center">
