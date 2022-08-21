@@ -27,14 +27,13 @@ This project and everyone who participates in it is governed by the [Contributor
 
         iwr https://get.pnpm.io/install.ps1 -useb | iex
 
-2.  Clone the project, change to the `next` branch and install the dependencies.
+2.  Clone the project, and install the dependencies.
 
         git clone https://github.com/wilfredinni/python-cheatsheet.git
         cd python-cheatsheet
-        git checkout next
         pnpm install
 
-3.  Create a new branch from `next`.
+3.  Create a new branch.
 
         git branch fix_bug
         git checkout fix_bug
