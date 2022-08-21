@@ -183,6 +183,7 @@
     "useNavigationStore": true,
     "useNavigatorLanguage": true,
     "useNetwork": true,
+    "useNewsletterStore": true,
     "useNow": true,
     "useObjectUrl": true,
     "useOffsetPagination": true,

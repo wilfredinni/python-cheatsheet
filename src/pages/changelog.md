@@ -9,6 +9,23 @@ updated: July 19, 2022
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
+## 2022-08-21
+
+### Website
+
+- Launched Python Cheatsheet [newsletter](https://news.pythoncheatsheet.org/) 🎉
+- Added a newsletter subscription form component.
+
+### Cheatsheet
+
+- Fixed many code examples, grammar and typo errors.
+- Added examples for:
+  - `split` method ([#107](https://github.com/wilfredinni/python-cheatsheet/pull/107))
+  - Built-in `all` ([#115](https://github.com/wilfredinni/python-cheatsheet/pull/115))
+  - Built-in `any` ([#115](https://github.com/wilfredinni/python-cheatsheet/pull/115))
+  - Built-in `ascii` ([#115](https://github.com/wilfredinni/python-cheatsheet/pull/115))
+  - Built-in `eval` ([#115](https://github.com/wilfredinni/python-cheatsheet/pull/115))
+
 ## 2022-08-05
 
 ### Website
