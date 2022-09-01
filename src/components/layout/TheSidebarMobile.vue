@@ -1,6 +1,9 @@
 <script setup lang="ts">
 const isOpen = ref(false)
 const navigation = useNavigationStore()
+
+// const route = useRoute()
+watch(useRoute(), () => (isOpen.value = false))
 </script>
 
 <template>
@@ -68,19 +71,16 @@ const navigation = useNavigationStore()
               <the-sidebar-navigation
                 :navigation="navigation.mainNavigation"
                 section-name="Introduction"
-                @on-click="isOpen = false"
               />
 
               <the-sidebar-navigation
                 :navigation="navigation.cheatsheetNavigation"
                 section-name="Cheatsheet"
-                @on-click="isOpen = false"
               />
 
               <the-sidebar-navigation
                 :navigation="navigation.standardLibraryNavigation"
                 section-name="Standard Library"
-                @on-click="isOpen = false"
               />
             </nav>
           </nav>
