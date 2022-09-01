@@ -50,6 +50,8 @@ declare module '@vue/runtime-core' {
     TheSidebarMobile: typeof import('./components/layout/TheSidebarMobile.vue')['default']
     TheSidebarNavigation: typeof import('./components/layout/TheSidebarNavigation.vue')['default']
     TheToc: typeof import('./components/layout/TheToc.vue')['default']
+    TransitionChild: typeof import('@headlessui/vue')['TransitionChild']
+    TransitionRoot: typeof import('@headlessui/vue')['TransitionRoot']
     WarningIcon: typeof import('./components/icons/WarningIcon.vue')['default']
   }
 }
