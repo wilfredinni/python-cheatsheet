@@ -4,8 +4,8 @@ specifiers:
   '@docsearch/js': ^3.2.1
   '@headlessui/vue': ^1.6.7
   '@tailwindcss/forms': ^0.5.2
-  '@tailwindcss/line-clamp': ^0.4.0
-  '@tailwindcss/typography': ^0.5.4
+  '@tailwindcss/line-clamp': ^0.4.1
+  '@tailwindcss/typography': ^0.5.6
   '@types/fs-extra': ^9.0.13
   '@types/markdown-it': ^12.2.3
   '@types/markdown-it-link-attributes': ^3.0.1
@@ -67,8 +67,8 @@ dependencies:
 
 devDependencies:
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.1.8
-  '@tailwindcss/line-clamp': 0.4.0_tailwindcss@3.1.8
-  '@tailwindcss/typography': 0.5.4_tailwindcss@3.1.8
+  '@tailwindcss/line-clamp': 0.4.1_tailwindcss@3.1.8
+  '@tailwindcss/typography': 0.5.6_tailwindcss@3.1.8
   '@types/fs-extra': 9.0.13
   '@types/markdown-it': 12.2.3
   '@types/markdown-it-link-attributes': 3.0.1
@@ -1664,22 +1664,23 @@ packages:
       tailwindcss: 3.1.8_postcss@8.4.16
     dev: true
 
-  /@tailwindcss/line-clamp/0.4.0_tailwindcss@3.1.8:
-    resolution: {integrity: sha512-HQZo6gfx1D0+DU3nWlNLD5iA6Ef4JAXh0LeD8lOGrJwEDBwwJNKQza6WoXhhY1uQrxOuU8ROxV7CqiQV4CoiLw==}
+  /@tailwindcss/line-clamp/0.4.1_tailwindcss@3.1.8:
+    resolution: {integrity: sha512-aeA3Dv4pjxIyIlsxZ9LX7KPI8U7T9oNpV1B2Xax7P57VuJH9Lh+p2H8Ad6+FXP+waR+Gu90Ga3rtkWHKcr3Y/A==}
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
       tailwindcss: 3.1.8_postcss@8.4.16
     dev: true
 
-  /@tailwindcss/typography/0.5.4_tailwindcss@3.1.8:
-    resolution: {integrity: sha512-QEdg40EmGvE7kKoDei8zr5sf4D1pIayHj4R31bH3lX8x2BtTiR+jNejYPOkhbmy3DXgkMF9jC8xqNiGFAuL9Sg==}
+  /@tailwindcss/typography/0.5.6_tailwindcss@3.1.8:
+    resolution: {integrity: sha512-d7gNgMl43SmUlC3H7UFWuDVtgU6Slr0h4k0idVfwZ/gFRpjTgFpkD3WIs8AhvwELmWvhI8GwklAeInrhXxFu7A==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
+      postcss-selector-parser: 6.0.10
       tailwindcss: 3.1.8_postcss@8.4.16
     dev: true
 
@@ -2346,9 +2347,9 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001387
-      electron-to-chromium: 1.4.239
+      electron-to-chromium: 1.4.240
       node-releases: 2.0.6
-      update-browserslist-db: 1.0.5_browserslist@4.21.3
+      update-browserslist-db: 1.0.6_browserslist@4.21.3
     dev: true
 
   /buffer-from/1.1.2:
@@ -2695,8 +2696,8 @@ packages:
       jake: 10.8.5
     dev: true
 
-  /electron-to-chromium/1.4.239:
-    resolution: {integrity: sha512-XbhfzxPIFzMjJm17T7yUGZEyYh5XuUjrA/FQ7JUy2bEd4qQ7MvFTaKpZ6zXZog1cfVttESo2Lx0ctnf7eQOaAQ==}
+  /electron-to-chromium/1.4.240:
+    resolution: {integrity: sha512-r20dUOtZ4vUPTqAajDGonIM1uas5tf85Up+wPdtNBNvBSqGCfkpvMVvQ1T8YJzPV9/Y9g3FbUDcXb94Rafycow==}
     dev: true
 
   /emoji-regex/8.0.0:
@@ -2713,8 +2714,8 @@ packages:
     engines: {node: '>=0.12'}
     dev: true
 
-  /es-abstract/1.20.1:
-    resolution: {integrity: sha512-WEm2oBhfoI2sImeM4OF2zE2V3BYdSF+KnSi9Sidz51fQHd7+JuF8Xgcj9/0o+OWeIeIS/MiuNnlruQrJf16GQA==}
+  /es-abstract/1.20.2:
+    resolution: {integrity: sha512-XxXQuVNrySBNlEkTYJoDNFe5+s2yIOpzq80sUHEdPdQr0S5nTLz4ZPPPswNIpKseDDUS5yghX1gfLIHQZ1iNuQ==}
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
@@ -3548,7 +3549,7 @@ packages:
     dependencies:
       call-bind: 1.0.2
       define-properties: 1.1.4
-      es-abstract: 1.20.1
+      es-abstract: 1.20.2
       functions-have-names: 1.2.3
     dev: true
 
@@ -3992,7 +3993,7 @@ packages:
     dependencies:
       available-typed-arrays: 1.0.5
       call-bind: 1.0.2
-      es-abstract: 1.20.1
+      es-abstract: 1.20.2
       for-each: 0.3.3
       has-tostringtag: 1.0.0
     dev: true
@@ -5075,7 +5076,7 @@ packages:
     dependencies:
       call-bind: 1.0.2
       define-properties: 1.1.4
-      es-abstract: 1.20.1
+      es-abstract: 1.20.2
       get-intrinsic: 1.1.2
       has-symbols: 1.0.3
       internal-slot: 1.0.3
@@ -5088,7 +5089,7 @@ packages:
     dependencies:
       call-bind: 1.0.2
       define-properties: 1.1.4
-      es-abstract: 1.20.1
+      es-abstract: 1.20.2
     dev: true
 
   /string.prototype.trimstart/1.0.5:
@@ -5096,7 +5097,7 @@ packages:
     dependencies:
       call-bind: 1.0.2
       define-properties: 1.1.4
-      es-abstract: 1.20.1
+      es-abstract: 1.20.2
     dev: true
 
   /string/3.3.3:
@@ -5548,8 +5549,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /update-browserslist-db/1.0.5_browserslist@4.21.3:
-    resolution: {integrity: sha512-dteFFpCyvuDdr9S/ff1ISkKt/9YZxKjI9WlRR99c180GaztJtRa/fn18FdxGVKVsnPY7/a/FDN68mcvUmP4U7Q==}
+  /update-browserslist-db/1.0.6_browserslist@4.21.3:
+    resolution: {integrity: sha512-We7BqM9XFlcW94Op93uW8+2LXvGezs7QA0WY+f1H7RR1q46B06W6hZF6LbmOlpCS1HU22q/6NOGTGW5sCm7NJQ==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
@@ -5921,7 +5922,7 @@ packages:
     dependencies:
       available-typed-arrays: 1.0.5
       call-bind: 1.0.2
-      es-abstract: 1.20.1
+      es-abstract: 1.20.2
       for-each: 0.3.3
       has-tostringtag: 1.0.0
       is-typed-array: 1.1.9

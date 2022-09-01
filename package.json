@@ -23,8 +23,8 @@
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.2",
-    "@tailwindcss/line-clamp": "^0.4.0",
-    "@tailwindcss/typography": "^0.5.4",
+    "@tailwindcss/line-clamp": "^0.4.1",
+    "@tailwindcss/typography": "^0.5.6",
     "@types/fs-extra": "^9.0.13",
     "@types/markdown-it": "^12.2.3",
     "@types/markdown-it-link-attributes": "^3.0.1",
