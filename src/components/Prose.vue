@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const core = useCoreStore()
+const reader = useReaderStore()
 </script>
 
 <template>
@@ -23,7 +23,7 @@ const core = useCoreStore()
       // code
       'prose-code:text-sky-500 prose-code:dark:text-sky-400',
       // reader
-      core.reader ? 'prose-xl' : '',
+      reader.isActive ? reader.fontSize : '',
     ]"
   >
     <slot />
