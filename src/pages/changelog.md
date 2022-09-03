@@ -9,6 +9,19 @@ updated: July 19, 2022
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
+## 2022-09-03
+
+### Website
+
+- Added font size controls for _Reader mode_ and updated navbar layout ([1978f69](https://github.com/wilfredinni/python-cheatsheet/commit/1978f693662d28cbe94a7c95377ce32e28d74ac4))
+- Added a Sponsor link to the navbar ([dd22f81](https://github.com/wilfredinni/python-cheatsheet/commit/dd22f81c509cfbcef4d5b4688fd4cfd9dfd5d1d7))
+- Added transitions for mobile navigation ([4cdfca4](https://github.com/wilfredinni/python-cheatsheet/commit/4cdfca4ba0f21e4cb1021b917e49660eccdefa7e))
+- Fixed an issue that prevented the sidebar to close on mobile navigation([48b58e0](https://github.com/wilfredinni/python-cheatsheet/commit/48b58e0beef8dfd15e5450087a125af4872422d0))
+
+### Cheatsheet
+
+- Simplify json load/dump usage ([#118](https://github.com/wilfredinni/python-cheatsheet/pull/118))
+
 ## 2022-08-21
 
 ### Website
@@ -21,10 +34,7 @@ updated: July 19, 2022
 - Fixed many code examples, grammar and typo errors.
 - Added examples for:
   - `split` method ([#107](https://github.com/wilfredinni/python-cheatsheet/pull/107))
-  - Built-in `all` ([#115](https://github.com/wilfredinni/python-cheatsheet/pull/115))
-  - Built-in `any` ([#115](https://github.com/wilfredinni/python-cheatsheet/pull/115))
-  - Built-in `ascii` ([#115](https://github.com/wilfredinni/python-cheatsheet/pull/115))
-  - Built-in `eval` ([#115](https://github.com/wilfredinni/python-cheatsheet/pull/115))
+  - Built-in `all` , `any`, `ascii` and `eval` ([#115](https://github.com/wilfredinni/python-cheatsheet/pull/115))
 
 ## 2022-08-05
 

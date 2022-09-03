@@ -61,6 +61,14 @@ const route = useRoute()
                 {{ item.name }}
               </a>
             </template>
+            <a
+              href="https://github.com/sponsors/wilfredinni"
+              target="_blank"
+              class="inline-flex items-center px-1 pt-1 text-sm font-medium text-slate-700 transition duration-300 hover:text-sky-500 dark:text-gray-200 dark:hover:text-sky-400"
+            >
+              Sponsor
+              <span class="ml-1 text-red-500 dark:text-sky-500"> ❤</span>
+            </a>
             <base-reader-mode />
           </div>
 

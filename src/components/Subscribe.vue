@@ -1,23 +1,25 @@
 <script setup lang="ts">
 const showSubscription = import.meta.env.VITE_NEWSLETTER === 'true' || false
 
-const core = useCoreStore()
+const reader = useReaderStore()
 const newsletter = useNewsletterStore()
-
 const email = ref('')
 const loading = ref(false)
+
 const subscribe = async () => {
   loading.value = true
   await newsletter.subscribe(email.value)
   loading.value = false
 }
+
 const response = computed(() => newsletter.getResponse)
+
 const showNewsletterForm = useLocalStorage('showNewsletterForm', true)
 </script>
 
 <template>
   <div
-    v-if="showSubscription && !core.reader && showNewsletterForm"
+    v-if="showSubscription && !reader.isActive && showNewsletterForm"
     class="mb-8 rounded-xl border border-slate-300/70 bg-slate-50 px-5 py-5 dark:border-transparent dark:bg-slate-800"
   >
     <div class="flex justify-end">
