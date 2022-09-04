@@ -35,7 +35,7 @@ const articles = computed(() => {
     </p>
   </prose>
 
-  <subscribe class="my-8" />
+  <subscription-form class="my-8" />
 
   <div class="mt-5">
     <ul class="border-l border-l-slate-200 dark:border-l-slate-800">
