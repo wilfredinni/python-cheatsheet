@@ -10,7 +10,7 @@ const props = defineProps<{
   title: string
 }>()
 
-const core = useCoreStore()
+const reader = useReaderStore()
 const tags = props.frontmatter.tags?.split(', ')
 </script>
 
@@ -30,10 +30,10 @@ const tags = props.frontmatter.tags?.split(', ')
         Updated on {{ frontmatter.updated }}
       </span>
     </div>
-    <h1 :class="tags && !core.reader ? 'mb-0' : ''">{{ title }}</h1>
+    <h1 :class="tags && !reader.isActive ? 'mb-0' : ''">{{ title }}</h1>
 
     <div
-      v-if="tags && !core.reader"
+      v-if="tags && !reader.isActive"
       class="mt-3 mb-10 flex flex-wrap gap-3 text-xs text-slate-50 dark:text-white"
     >
       <span

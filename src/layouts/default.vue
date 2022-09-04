@@ -5,7 +5,19 @@ const rootRepositoryRoutes = ['contributing', 'changelog']
 </script>
 
 <template>
-  <base-banner></base-banner>
+  <!-- <base-banner storage-key-name="issue-1-banner">
+    <template #shortMsg>First newsletter Issue is out!</template>
+    <template #message>
+      Big news! The first Issue of the Python Cheatsheet newsletter is out!
+    </template>
+    <template #action>
+      <a href="https://news.pythoncheatsheet.org/" class="font-bold underline">
+        Read Issue
+        <span aria-hidden="true"> &rarr;</span>
+      </a>
+    </template>
+  </base-banner> -->
+
   <div class="min-h-screen bg-white dark:bg-gray-900">
     <the-navbar v-show="!reader.isActive" />
     <the-navbar-reader v-show="reader.isActive" />
