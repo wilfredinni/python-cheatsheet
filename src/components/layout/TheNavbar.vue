@@ -62,7 +62,7 @@ const route = useRoute()
               </a>
             </template>
             <a
-              href="https://github.com/sponsors/wilfredinni"
+              href="https://smartlnks.com/QhT3f"
               target="_blank"
               class="inline-flex items-center px-1 pt-1 text-sm font-medium text-slate-700 transition duration-300 hover:text-sky-500 dark:text-gray-200 dark:hover:text-sky-400"
             >
