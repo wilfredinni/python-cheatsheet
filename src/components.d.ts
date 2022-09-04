@@ -9,6 +9,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AlgoliaDocSearch: typeof import('./components/AlgoliaDocSearch.vue')['default']
     ArrowIcon: typeof import('./components/icons/ArrowIcon.vue')['default']
+    BaseBanner: typeof import('./components/ui/BaseBanner.vue')['default']
     BaseDisclaimer: typeof import('./components/ui/disclaimer/BaseDisclaimer.vue')['default']
     BaseDisclaimerContent: typeof import('./components/ui/disclaimer/BaseDisclaimerContent.vue')['default']
     BaseDisclaimerTitle: typeof import('./components/ui/disclaimer/BaseDisclaimerTitle.vue')['default']
@@ -42,6 +43,7 @@ declare module '@vue/runtime-core' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Subscribe: typeof import('./components/Subscribe.vue')['default']
+    SubscriptionForm: typeof import('./components/SubscriptionForm.vue')['default']
     Switch: typeof import('@headlessui/vue')['Switch']
     TheFooter: typeof import('./components/layout/TheFooter.vue')['default']
     TheNavbar: typeof import('./components/layout/TheNavbar.vue')['default']

@@ -5,6 +5,7 @@ const rootRepositoryRoutes = ['contributing', 'changelog']
 </script>
 
 <template>
+  <base-banner></base-banner>
   <div class="min-h-screen bg-white dark:bg-gray-900">
     <the-navbar v-show="!reader.isActive" />
     <the-navbar-reader v-show="reader.isActive" />
@@ -45,7 +46,7 @@ const rootRepositoryRoutes = ['contributing', 'changelog']
 
         <base-pagination v-if="!$route.path.startsWith('/builtin/')" />
 
-        <subscribe v-if="$route.name !== 'index'" class="mt-5" />
+        <subscription-form v-if="$route.name !== 'index'" class="mt-5" />
 
         <the-footer
           :repository="
