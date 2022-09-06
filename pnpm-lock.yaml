@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@docsearch/js': ^3.2.1
-  '@headlessui/vue': ^1.6.7
+  '@headlessui/vue': ^1.7.0
   '@tailwindcss/forms': ^0.5.3
   '@tailwindcss/line-clamp': ^0.4.2
   '@tailwindcss/typography': ^0.5.7
@@ -29,7 +29,7 @@ specifiers:
   markdown-it-link-attributes: ^4.0.1
   markdown-it-prism: ^2.3.0
   ohmyfetch: ^0.4.18
-  pinia: ^2.0.21
+  pinia: ^2.0.22
   pnpm: ^7.11.0
   postcss: ^8.4.16
   prettier: ^2.7.1
@@ -43,7 +43,7 @@ specifiers:
   unplugin-vue-components: ^0.22.4
   vite: ^3.1.0
   vite-plugin-pages: ^0.25.0
-  vite-plugin-pwa: ^0.12.6
+  vite-plugin-pwa: ^0.12.7
   vite-plugin-vue-layouts: ^0.7.0
   vite-plugin-vue-markdown: ^0.20.1
   vite-ssg: ^0.20.2
@@ -56,10 +56,10 @@ specifiers:
 
 dependencies:
   '@docsearch/js': 3.2.1
-  '@headlessui/vue': 1.6.7_vue@3.2.38
+  '@headlessui/vue': 1.7.0_vue@3.2.38
   '@vueuse/core': 9.2.0_vue@3.2.38
   '@vueuse/head': 0.7.9_vue@3.2.38
-  pinia: 2.0.21_pj7ch6rmow6odq73xb5hfvge3q
+  pinia: 2.0.22_pj7ch6rmow6odq73xb5hfvge3q
   prism-theme-vars: 0.2.4
   vue: 3.2.38
   vue-gtag: 2.0.1_vue@3.2.38
@@ -102,7 +102,7 @@ devDependencies:
   unplugin-vue-components: 0.22.4_vite@3.1.0+vue@3.2.38
   vite: 3.1.0
   vite-plugin-pages: 0.25.0_vite@3.1.0
-  vite-plugin-pwa: 0.12.6_vite@3.1.0
+  vite-plugin-pwa: 0.12.7_vite@3.1.0
   vite-plugin-vue-layouts: 0.7.0_a2sahflhi63saacouskatgpqeq
   vite-plugin-vue-markdown: 0.20.1_vite@3.1.0
   vite-ssg: 0.20.2_x7fx7r6l3vy4grgaxjfxbt6rju
@@ -1470,8 +1470,8 @@ packages:
       - supports-color
     dev: true
 
-  /@headlessui/vue/1.6.7_vue@3.2.38:
-    resolution: {integrity: sha512-5sTCBpkUoFE7zhANn/6Z+pf3PUA7MD6BBaTsJcQybq9E4fnNiMM9agOJI9meXbtcawE6Dm8EeB5A8HAJEnZCbQ==}
+  /@headlessui/vue/1.7.0_vue@3.2.38:
+    resolution: {integrity: sha512-ClrXMThmo9lrFjHdzDQXsopjCgRA28v+u5s/J+gIAgvS5l3tTAI84GaVghFwxobijL9c6BsVgDQ7SrJ2dS1nLw==}
     engines: {node: '>=10'}
     peerDependencies:
       vue: ^3.2.0
@@ -4138,8 +4138,8 @@ packages:
     resolution: {integrity: sha512-DgRgNUSX9NIxxCxygX4Xeg9C7GX7OUx1wuQ8cXx9o9LE0e9wrH+OZ9fcnrlEedsC/rtqry3ZhUddC759XD/L0w==}
     dependencies:
       acorn: 8.8.0
-      pathe: 0.3.5
-      pkg-types: 0.3.4
+      pathe: 0.3.7
+      pkg-types: 0.3.5
       ufo: 0.8.5
     dev: true
 
@@ -4359,8 +4359,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /pathe/0.3.5:
-    resolution: {integrity: sha512-grU/QeYP0ChuE5kjU2/k8VtAeODzbernHlue0gTa27+ayGIu3wqYBIPGfP9r5xSqgCgDd4nWrjKXEfxMillByg==}
+  /pathe/0.3.7:
+    resolution: {integrity: sha512-yz7GK+kSsS27x727jtXpd5VT4dDfP/JDIQmaowfxyWCnFjOWtE1VIh7i6TzcSfzW0n4+bRQztj1VdKnITNq/MA==}
     dev: true
 
   /pathval/1.1.1:
@@ -4380,8 +4380,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /pinia/2.0.21_pj7ch6rmow6odq73xb5hfvge3q:
-    resolution: {integrity: sha512-6ol04PtL29O0Z6JHI47O3JUSoyOJ7Og0rstXrHVMZSP4zAldsQBXJCNF0i/H7m8vp/Hjd/CSmuPl7C5QAwpeWQ==}
+  /pinia/2.0.22_pj7ch6rmow6odq73xb5hfvge3q:
+    resolution: {integrity: sha512-u+b8/BC+tmvo3ACbYO2w5NfxHWFOjvvw9DQnyT0dW8aUMCPRQT5QnfZ5R5W2MzZBMTeZRMQI7V/QFbafmM9QHw==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
@@ -4398,12 +4398,12 @@ packages:
       vue-demi: 0.13.11_vue@3.2.38
     dev: false
 
-  /pkg-types/0.3.4:
-    resolution: {integrity: sha512-s214f/xkRpwlwVBToWq9Mu0XlU3HhZMYCnr2var8+jjbavBHh/VCh4pBLsJW29rJ//B1jb4HlpMIaNIMH+W2/w==}
+  /pkg-types/0.3.5:
+    resolution: {integrity: sha512-VkxCBFVgQhNHYk9subx+HOhZ4jzynH11ah63LZsprTKwPCWG9pfWBlkElWFbvkP9BVR0dP1jS9xPdhaHQNK74Q==}
     dependencies:
       jsonc-parser: 3.2.0
       mlly: 0.5.14
-      pathe: 0.3.5
+      pathe: 0.3.7
     dev: true
 
   /pnpm/7.11.0:
@@ -5223,7 +5223,7 @@ packages:
       local-pkg: 0.4.2
       magic-string: 0.26.3
       mlly: 0.5.14
-      pathe: 0.3.5
+      pathe: 0.3.7
       scule: 0.3.2
       strip-literal: 0.4.0
       unplugin: 0.9.5_vite@3.1.0
@@ -5387,8 +5387,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-pwa/0.12.6_vite@3.1.0:
-    resolution: {integrity: sha512-qRxx1zUlwKq2QD20nDZVL449wV+dflRVeDMLa2k4LZiHfWRfHWwmdhnDZOlMEgni0Zss1DkhyTmuzLYuO6aO3A==}
+  /vite-plugin-pwa/0.12.7_vite@3.1.0:
+    resolution: {integrity: sha512-salSwS1wWc1niNWfhX2W6gtfXmk+XESMz62w95EHLq6fSM2bDgDm1APmvq1nkDcxH6Onky7HxysCBKMzvOHXYg==}
     peerDependencies:
       vite: ^2.0.0 || ^3.0.0-0
     dependencies:
