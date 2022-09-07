@@ -9,6 +9,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AlgoliaDocSearch: typeof import('./components/AlgoliaDocSearch.vue')['default']
     ArrowIcon: typeof import('./components/icons/ArrowIcon.vue')['default']
+    BaseBadge: typeof import('./components/ui/BaseBadge.vue')['default']
     BaseBanner: typeof import('./components/ui/BaseBanner.vue')['default']
     BaseDisclaimer: typeof import('./components/ui/disclaimer/BaseDisclaimer.vue')['default']
     BaseDisclaimerContent: typeof import('./components/ui/disclaimer/BaseDisclaimerContent.vue')['default']
