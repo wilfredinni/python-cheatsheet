@@ -2,7 +2,6 @@
 const isOpen = ref(false)
 const navigation = useNavigationStore()
 
-// const route = useRoute()
 watch(useRoute(), () => (isOpen.value = false))
 </script>
 
