@@ -14,6 +14,20 @@ const showBanner = useLocalStorage(keyName.value, true)
 </script>
 
 <template>
+  <!--
+  <base-banner storage-key-name="issue-1-banner">
+    <template #shortMsg>First newsletter Issue is out!</template>
+    <template #message>
+      ✨ Big news! The first Issue of the Python Cheatsheet newsletter is out!
+    </template>
+    <template #action>
+      <a href="https://news.pythoncheatsheet.org/" class="font-bold underline">
+        Read Issue
+        <span aria-hidden="true"> &rarr;</span>
+      </a>
+    </template>
+  </base-banner>
+  -->
   <div v-if="!reader.isActive && showBanner" class="dark:bg-gray-900">
     <div class="relative bg-sky-400/10">
       <div class="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
