@@ -22,7 +22,7 @@ const reader = useReaderStore()
         <subscription-form class="my-8" />
 
         <the-footer
-          :repository="'https://github.com/wilfredinni/python-cheatsheet/blob/master/docs'"
+          repository="https://github.com/wilfredinni/python-cheatsheet/blob/master/docs"
         />
       </div>
 

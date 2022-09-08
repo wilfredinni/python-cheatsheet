@@ -4,7 +4,7 @@ import QuestionIcon from '~/components/icons/QuestionIcon.vue'
 import BugIcon from '~/components/icons/BugIcon.vue'
 
 const props = defineProps<{
-  repository: string
+  repository?: string
 }>()
 
 const route = useRoute()
@@ -30,6 +30,8 @@ const footerLinks = [
     icon: BugIcon,
   },
 ]
+
+const routesWithoutGithub = ['index', 'blog']
 </script>
 
 <template>
@@ -40,7 +42,7 @@ const footerLinks = [
         :class="route.name !== 'index' ? 'space-y-1.5' : ''"
       >
         <div
-          v-if="route.name !== 'index'"
+          v-if="!routesWithoutGithub.includes(route.name as string)"
           class="flex items-center text-slate-600 dark:text-slate-400"
         >
           <component :is="EditLink.icon" class="mr-2 h-4 w-4" />
