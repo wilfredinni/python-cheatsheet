@@ -13,7 +13,7 @@ const route = useRoute()
 
         <!-- menu -->
         <div class="ml-14 flex flex-1 items-center space-x-6 lg:ml-0">
-          <div class="flex flex-shrink-0 items-center">
+          <div class="mr-3 flex flex-shrink-0 items-center">
             <router-link to="/">
               <img
                 class="h-5 w-auto"
