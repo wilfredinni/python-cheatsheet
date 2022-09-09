@@ -5,18 +5,10 @@ interface Navigation {
   [key: string]: any
 }
 
-// const emit = defineEmits(['on-click'])
-
 defineProps<{
   sectionName: string
   navigation: Array<Navigation>
 }>()
-
-// const router = useRouter()
-// const navigate = (item: Navigation) => {
-//   router.push(item.path)
-//   emit('on-click')
-// }
 </script>
 
 <template>
