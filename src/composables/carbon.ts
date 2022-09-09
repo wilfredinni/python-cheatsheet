@@ -1,6 +1,6 @@
 export function useCarbon() {
   const reader = useReaderStore()
-
+  const reload = ref(false)
   watch(
     computed(() => reader.isActive),
     () => {
