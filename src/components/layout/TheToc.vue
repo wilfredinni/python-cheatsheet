@@ -2,7 +2,7 @@
 const { theToc, currentSection } = useToc()
 const { reloadOn, reload } = useCarbon()
 
-reloadOn(300000)
+reloadOn(600000)
 </script>
 
 <template>
