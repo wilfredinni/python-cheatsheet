@@ -116,6 +116,7 @@
     "useBroadcastChannel": true,
     "useBrowserLocation": true,
     "useCached": true,
+    "useCarbon": true,
     "useClipboard": true,
     "useCloned": true,
     "useColorMode": true,
