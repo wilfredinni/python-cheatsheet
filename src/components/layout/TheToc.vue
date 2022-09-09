@@ -1,13 +1,13 @@
 <script setup lang="ts">
 const { theToc, currentSection } = useToc()
-const { reloadOn, reload } = useCarbon()
+// const { reloadOn, reload } = useCarbon()
 
-reloadOn(600000)
+// reloadOn(600000)
 </script>
 
 <template>
   <nav aria-labelledby="on-this-page-title" class="w-56">
-    <carbon-ads v-if="!reload" class="mb-4" />
+    <carbon-ads class="mb-4" />
     <h3 class="font-display text-sm font-medium text-slate-900 dark:text-white">
       On this page
     </h3>
