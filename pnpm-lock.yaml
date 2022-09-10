@@ -16,7 +16,7 @@ specifiers:
   '@vitejs/plugin-vue': ^3.1.0
   '@vue/test-utils': ^2.0.2
   '@vueuse/core': ^9.2.0
-  '@vueuse/head': ^0.7.9
+  '@vueuse/head': ^0.7.10
   autoprefixer: ^10.4.8
   eslint: ^8.23.0
   eslint-config-prettier: ^8.5.0
@@ -58,7 +58,7 @@ dependencies:
   '@docsearch/js': 3.2.1
   '@headlessui/vue': 1.7.0_vue@3.2.39
   '@vueuse/core': 9.2.0_vue@3.2.39
-  '@vueuse/head': 0.7.9_vue@3.2.39
+  '@vueuse/head': 0.7.10_vue@3.2.39
   pinia: 2.0.22_arz4dztosvwy2ghjrlh2wdhejm
   prism-theme-vars: 0.2.4
   vue: 3.2.39
@@ -105,7 +105,7 @@ devDependencies:
   vite-plugin-pwa: 0.12.7_vite@3.1.0
   vite-plugin-vue-layouts: 0.7.0_xik7h4qq3w5aalpcbhbvf3kbuu
   vite-plugin-vue-markdown: 0.21.1_vite@3.1.0
-  vite-ssg: 0.20.2_55hpnryecrr7lo6ymegjxydo6u
+  vite-ssg: 0.20.2_z52wmo2grw7w4b644mhfebeo5m
   vite-ssg-sitemap: 0.3.2
   vitest: 0.21.1_happy-dom@5.4.0
   vue-tsc: 0.39.5_typescript@4.8.3
@@ -2071,10 +2071,10 @@ packages:
       - '@vue/composition-api'
       - vue
 
-  /@vueuse/head/0.7.9_vue@3.2.39:
-    resolution: {integrity: sha512-5wnRiH2XIUSLLXJDLDDTcpvAg5QXgTIVZl46AU7to/T91KHsdBLHSE4WhRO7kP0jbkAhlxnx64E29cQtwBrMjg==}
+  /@vueuse/head/0.7.10_vue@3.2.39:
+    resolution: {integrity: sha512-hkvxpl99xiziDV7qAMtuzTZt5oHn6sOpdUuSlT27KhB/jVSpPrrIUKD1L/0JhLw8gCQoHGxmWalc3P7AYuzkoA==}
     peerDependencies:
-      vue: '>=3'
+      vue: '>=2.7 || >=3'
     dependencies:
       vue: 3.2.39
 
@@ -2352,7 +2352,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001393
-      electron-to-chromium: 1.4.245
+      electron-to-chromium: 1.4.247
       node-releases: 2.0.6
       update-browserslist-db: 1.0.7_browserslist@4.21.3
     dev: true
@@ -2700,8 +2700,8 @@ packages:
       jake: 10.8.5
     dev: true
 
-  /electron-to-chromium/1.4.245:
-    resolution: {integrity: sha512-kUN8QXmqHAN8phxjF3QpHeX7CbXGXadSngx9r1O/S9jt+uC0O/vjPi/9+8/Mk3sKewLLMrjpBJZMfVpPCdkG3g==}
+  /electron-to-chromium/1.4.247:
+    resolution: {integrity: sha512-FLs6R4FQE+1JHM0hh3sfdxnYjKvJpHZyhQDjc2qFq/xFvmmRt/TATNToZhrcGUFzpF2XjeiuozrA8lI0PZmYYw==}
     dev: true
 
   /emoji-regex/8.0.0:
@@ -3032,7 +3032,7 @@ packages:
       nth-check: 2.1.1
       postcss-selector-parser: 6.0.10
       semver: 7.3.7
-      vue-eslint-parser: 9.0.3_eslint@8.23.0
+      vue-eslint-parser: 9.1.0_eslint@8.23.0
       xml-name-validator: 4.0.0
     transitivePeerDependencies:
       - supports-color
@@ -3210,8 +3210,8 @@ packages:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
     dev: true
 
-  /fast-glob/3.2.11:
-    resolution: {integrity: sha512-xrO3+1bxSo3ZVHAnqzyuewYT6aMFHRAd4Kcs92MAonjwQZLsK9d0SF1IyQ3k5PoirxTW0Oe/RqFgMQ6TcNE5Ew==}
+  /fast-glob/3.2.12:
+    resolution: {integrity: sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==}
     engines: {node: '>=8.6.0'}
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -3442,7 +3442,7 @@ packages:
     dependencies:
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.2.11
+      fast-glob: 3.2.12
       ignore: 5.2.0
       merge2: 1.4.1
       slash: 3.0.0
@@ -4988,7 +4988,7 @@ packages:
       detective: 5.2.1
       didyoumean: 1.2.2
       dlv: 1.1.3
-      fast-glob: 3.2.11
+      fast-glob: 3.2.12
       glob-parent: 6.0.2
       is-glob: 4.0.3
       lilconfig: 2.0.6
@@ -5226,7 +5226,7 @@ packages:
     dependencies:
       '@rollup/pluginutils': 4.2.1
       escape-string-regexp: 5.0.0
-      fast-glob: 3.2.11
+      fast-glob: 3.2.12
       local-pkg: 0.4.2
       magic-string: 0.26.3
       mlly: 0.5.14
@@ -5295,7 +5295,7 @@ packages:
       '@rollup/pluginutils': 4.2.1
       chokidar: 3.5.3
       debug: 4.3.4
-      fast-glob: 3.2.11
+      fast-glob: 3.2.12
       local-pkg: 0.4.2
       magic-string: 0.26.3
       minimatch: 5.1.0
@@ -5384,7 +5384,7 @@ packages:
       debug: 4.3.4
       deep-equal: 2.0.5
       extract-comments: 1.1.0
-      fast-glob: 3.2.11
+      fast-glob: 3.2.12
       json5: 2.2.1
       local-pkg: 0.4.2
       picocolors: 1.0.0
@@ -5400,7 +5400,7 @@ packages:
       vite: ^2.0.0 || ^3.0.0-0
     dependencies:
       debug: 4.3.4
-      fast-glob: 3.2.11
+      fast-glob: 3.2.12
       pretty-bytes: 6.0.0
       rollup: 2.79.0
       vite: 3.1.0
@@ -5420,7 +5420,7 @@ packages:
     dependencies:
       '@vue/compiler-sfc': 3.2.39
       debug: 4.3.4
-      fast-glob: 3.2.11
+      fast-glob: 3.2.12
       vite: 3.1.0
       vue: 3.2.39
       vue-router: 4.1.5_vue@3.2.39
@@ -5447,7 +5447,7 @@ packages:
     resolution: {integrity: sha512-udsHc11VYQLSy/Zy6efKHnU/ABozGUz84Z9GqmrD8MaB2HCezqFVFAJukwZaxBzcEjy1jFXfNCIcT8J6LefpWw==}
     dev: true
 
-  /vite-ssg/0.20.2_55hpnryecrr7lo6ymegjxydo6u:
+  /vite-ssg/0.20.2_z52wmo2grw7w4b644mhfebeo5m:
     resolution: {integrity: sha512-XtBgJEDrN9cL6pgzXvThrTS7Pm5zwZZnBt50EmL/O+QbdhD/ZjCbcp4GmIrWFBWjVBFcgfwgPccmWv3DAF6s/w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -5461,7 +5461,7 @@ packages:
       critters:
         optional: true
     dependencies:
-      '@vueuse/head': 0.7.9_vue@3.2.39
+      '@vueuse/head': 0.7.10_vue@3.2.39
       fs-extra: 10.1.0
       html-minifier: 4.0.0
       html5parser: 2.0.2
@@ -5564,8 +5564,8 @@ packages:
     dependencies:
       vue: 3.2.39
 
-  /vue-eslint-parser/9.0.3_eslint@8.23.0:
-    resolution: {integrity: sha512-yL+ZDb+9T0ELG4VIFo/2anAOz8SvBdlqEnQnvJ3M7Scq56DvtjY0VY88bByRZB0D4J0u8olBcfrXTVONXsh4og==}
+  /vue-eslint-parser/9.1.0_eslint@8.23.0:
+    resolution: {integrity: sha512-NGn/iQy8/Wb7RrRa4aRkokyCZfOUWk19OP5HP6JEozQFX5AoS/t+Z0ZN7FY4LlmWc4FNI922V7cvX28zctN8dQ==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'

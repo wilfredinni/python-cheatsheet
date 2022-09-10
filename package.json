@@ -14,7 +14,7 @@
     "@docsearch/js": "^3.2.1",
     "@headlessui/vue": "^1.7.0",
     "@vueuse/core": "^9.2.0",
-    "@vueuse/head": "^0.7.9",
+    "@vueuse/head": "^0.7.10",
     "pinia": "^2.0.22",
     "prism-theme-vars": "^0.2.4",
     "vue": "^3.2.39",
