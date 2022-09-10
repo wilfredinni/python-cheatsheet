@@ -20,17 +20,17 @@
 
 #carbonads > span {
   display: grid;
-  background-color: #f8fafc;
+  /* background-color: #f8fafc; */
   max-width: 150px;
   padding: 0.7em;
   box-sizing: border-box;
-  border: 1px solid #e2e8f0;
-  border-radius: 5px;
+  /* border: 1px solid #e2e8f0; */
+  /* border-radius: 5px; */
 }
 
 .dark #carbonads > span {
-  background-color: #1e293b;
-  border: 1px solid #334155;
+  /* background-color: #1e293b; */
+  /* border: 1px solid #334155; */
 }
 
 #carbonads .carbon-wrap {
