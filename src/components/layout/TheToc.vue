@@ -1,8 +1,6 @@
 <script setup lang="ts">
 const { theToc, currentSection } = useToc()
-const { reloadOn, reload } = useCarbon()
-
-reloadOn(180000)
+const { reload } = useCarbon()
 </script>
 
 <template>
