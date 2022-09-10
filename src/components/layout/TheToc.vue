@@ -5,11 +5,7 @@ const { reload } = useCarbon()
 
 <template>
   <nav aria-labelledby="on-this-page-title" class="w-56">
-    <div
-      class="h-[280px] w-[152px] rounded-md border border-slate-200 bg-slate-50 dark:border-slate-700 dark:bg-slate-800"
-    >
-      <carbon-ads v-if="!reload" />
-    </div>
+    <carbon-ads v-if="!reload" />
 
     <div class="mt-4">
       <h3
@@ -18,7 +14,7 @@ const { reload } = useCarbon()
         On this page
       </h3>
 
-      <ul class="mt-4 text-sm">
+      <ul class="mt-3 text-sm">
         <li v-for="item in theToc" :key="item.id">
           <a
             :href="`#${item.id}`"

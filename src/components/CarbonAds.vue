@@ -20,5 +20,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <div v-if="loadCarbon === 'true'" id="carbonads" ref="container" />
+  <div
+    v-if="loadCarbon === 'true'"
+    class="h-[280px] w-[152px] rounded-md border border-slate-200 bg-slate-50 dark:border-slate-700 dark:bg-slate-800"
+  >
+    <div id="carbonads" ref="container" />
+  </div>
 </template>
