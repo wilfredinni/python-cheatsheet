@@ -2254,7 +2254,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.3
-      caniuse-lite: 1.0.30001393
+      caniuse-lite: 1.0.30001394
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -2351,7 +2351,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001393
+      caniuse-lite: 1.0.30001394
       electron-to-chromium: 1.4.247
       node-releases: 2.0.6
       update-browserslist-db: 1.0.7_browserslist@4.21.3
@@ -2390,8 +2390,8 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /caniuse-lite/1.0.30001393:
-    resolution: {integrity: sha512-N/od11RX+Gsk+1qY/jbPa0R6zJupEa0lxeBG598EbrtblxVCTJsQwbRBm6+V+rxpc5lHKdsXb9RY83cZIPLseA==}
+  /caniuse-lite/1.0.30001394:
+    resolution: {integrity: sha512-TJ2GBCk9Oa6hw7Ta09E13PE0vHdwqL8mG9d1F2z42w87SpKykRksT4nt2IdGVI6n9TfeRHX60EM/WBxW/AdSfQ==}
     dev: true
 
   /caseless/0.12.0:
@@ -3958,8 +3958,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /kolorist/1.5.1:
-    resolution: {integrity: sha512-lxpCM3HTvquGxKGzHeknB/sUjuVoUElLlfYnXZT73K8geR9jQbroGlSCFBax9/0mpGoD3kzcMLnOlGQPJJNyqQ==}
+  /kolorist/1.6.0:
+    resolution: {integrity: sha512-dLkz37Ab97HWMx9KTes3Tbi3D1ln9fCAy2zr2YVExJasDRPGRaKcoE4fycWNtnCAJfjFqe0cnY+f8KT2JePEXQ==}
     dev: true
 
   /leven/3.1.0:
@@ -5466,7 +5466,7 @@ packages:
       html-minifier: 4.0.0
       html5parser: 2.0.2
       jsdom: 20.0.0
-      kolorist: 1.5.1
+      kolorist: 1.6.0
       p-queue: 6.6.2
       prettier: 2.7.1
       vite: 3.1.0
