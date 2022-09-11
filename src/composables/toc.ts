@@ -3,7 +3,7 @@ import { breakpointsTailwind } from '@vueuse/core'
 
 export function useToc() {
   const breakpoints = useBreakpoints(breakpointsTailwind)
-  const xlAndLarger = breakpoints.greater('xl')
+  const lgAndLarger = breakpoints.greater('lg')
 
   interface Toc {
     header: string
@@ -38,7 +38,7 @@ export function useToc() {
   }
 
   const initToc = () => {
-    if (xlAndLarger.value) {
+    if (lgAndLarger.value) {
       createToc()
       getObserver()
     }
