@@ -206,6 +206,137 @@ Ternary operators can be chained:
 # output: teen
 ```
 
+## Python Switch-Case Statements
+
+<base-disclaimer>
+  <base-disclaimer-title>
+    Switch-Case statements
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+  In computer programming languages, a switch statement is a type of selection control mechanism used to allow the value of a variable or expression to change the control flow of program execution via search and map.
+  </base-disclaimer-content>
+</base-disclaimer>
+
+The _Switch-Case statements_, or **Structural Pattern Matching**, was firstly introduced in 2020 via [PEP 622](https://peps.python.org/pep-0622/), and then officially released with **Python 3.10** in September 2022.
+
+<base-disclaimer>
+  <base-disclaimer-title>
+    Official Tutorial
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+  The <a href="https://peps.python.org/pep-0636/" target="_blank">PEP 636</a> provides an official tutorial for the Python Pattern matching or Switch-Case statements.
+  </base-disclaimer-content>
+</base-disclaimer>
+
+The [PEP 636](https://peps.python.org/pep-0636/) provides an official tutorial for the Pattern matching or Switch-Case statement.
+
+### Matching single values
+
+```python
+>>> response_code = 201
+>>> match response_code:
+...     case 200:
+...         print("OK")
+...     case 201:
+...         print("Created")
+...     case 300:
+...         print("Multiple Choices")
+...     case 307:
+...         print("Temporary Redirect")
+...     case 404:
+...         print("404 Not Found")
+...     case 500:
+...         print("Internal Server Error")
+...     case 502:
+...         print("502 Bad Gateway")
+...
+# Created
+```
+
+### Matching with the or Pattern
+
+In this example, the pipe character (`|` or `or`) allows python to return the same response for two or more cases.
+
+```python
+>>> response_code = 502
+>>> match response_code:
+...     case 200 | 201:
+...         print("OK")
+...     case 300 | 307:
+...         print("Redirect")
+...     case 400 | 401:
+...         print("Bad Request")
+...     case 500 | 502:
+...         print("Internal Server Error")
+...
+# Internal Server Error
+```
+
+### Matching by the length of an Iterable
+
+```python
+>>> today_responses = [200, 300, 404, 500]
+>>> match today_responses:
+...     case [a]:
+...             print(f"One response today: {a}")
+...     case [a, b]:
+...             print(f"Two responses today: {a} and {b}")
+...     case [a, b, *rest]:
+...             print(f"All responses: {a}, {b}, {rest}")
+...
+# All responses: 200, 300, [404, 500]
+```
+
+### Default value
+
+The underscore symbol (`_`) is used to define a default case:
+
+```python
+>>> response_code = 800
+>>> match response_code:
+...     case 200 | 201:
+...         print("OK")
+...     case 300 | 307:
+...         print("Redirect")
+...     case 400 | 401:
+...         print("Bad Request")
+...     case 500 | 502:
+...         print("Internal Server Error")
+...     case _:
+...         print("Invalid Code")
+...
+# Invalid Code
+```
+
+### Matching Builtin Classes
+
+```python
+>>> response_code = "300"
+>>> match response_code:
+...     case int():
+...             print('Code is a number')
+...     case str():
+...             print('Code is a string')
+...     case _:
+...             print('Code is neither a string nor a number')
+...
+# Code is a string
+```
+
+### Guarding Match-Case Statements
+
+```python
+>>> response_code = 300
+>>> match response_code:
+...     case int():
+...             if response_code > 99 and response_code < 500:
+...                 print('Code is a valid number')
+...     case _:
+...             print('Code is an invalid number')
+...
+# Code is a string
+```
+
 ## while Loop Statements
 
 The while statement is used for repeated execution as long as an expression is `True`:
