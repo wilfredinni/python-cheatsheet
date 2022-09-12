@@ -5,7 +5,7 @@ description: In python, Lists are are one of the 4 data types in Python used to 
 
 # Python Lists
 
-Lists are are one of the 4 data types in Python used to store collections of data.
+Lists are one of the 4 data types in Python used to store collections of data.
 
 ```python
 ['John', 'Peter', 'Debora', 'Charles']
