@@ -11,7 +11,7 @@ updated: July 19, 2022
 
 ## 2022-09-12
 
-- Added Python <router-link to='/cheatsheet/control-flow#python-switch-case-statements'>Match-Case Statement</router-link> or **Structural Pattern Matching** ([6397b0f](https://github.com/wilfredinni/python-cheatsheet/commit/6397b0f1f9f5295dd53168eb2587a492ac4d4dfa)).
+- Added Python <router-link to='/cheatsheet/control-flow#python-switch-case-statements'>Switch-Case Statement</router-link> or **Structural Pattern Matching** ([6397b0f](https://github.com/wilfredinni/python-cheatsheet/commit/6397b0f1f9f5295dd53168eb2587a492ac4d4dfa)).
 
 ## 2022-09-03
 
