@@ -126,7 +126,7 @@ The `else` statement executes only if the evaluation of the `if` and all the `el
 
 >>> if name == 'George':
 ...    print('Hi, George.')
->>> else:
+... else:
 ...    print('You are not George')
 ...
 # You are not George
@@ -139,7 +139,7 @@ Only after the `if` statement expression is `False`, the `elif` statement is eva
 
 >>> if name == 'Debora':
 ...    print('Hi Debora!')
->>> elif name == 'George':
+... elif name == 'George':
 ...    print('Hi George!')
 ...
 # Hi George!
@@ -152,9 +152,9 @@ the `elif` and `else` parts are optional.
 
 >>> if name == 'Debora':
 ...    print('Hi Debora!')
->>> elif name == 'George':
+... elif name == 'George':
 ...    print('Hi George!')
->>> else:
+... else:
 ...    print('Who are you?')
 ...
 # Who are you?
@@ -176,7 +176,7 @@ Example:
 >>> # this if statement:
 >>> if age < 18:
 ...    print('kid')
->>> else:
+... else:
 ...    print('adult')
 ...
 # output: kid
@@ -200,7 +200,7 @@ Ternary operators can be chained:
 ...         print('kid')
 ...     else:
 ...         print('teen')
->>> else:
+... else:
 ...     print('adult')
 ...
 # output: teen
@@ -456,7 +456,7 @@ useful when a `break` condition can occur in the loop:
 >>> for i in [1, 2, 3, 4, 5]:
 ...    if i == 3:
 ...        break
->>> else:
+... else:
 ...    print("only executed when no item is equal to 3")
 ```
 
