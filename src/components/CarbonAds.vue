@@ -33,14 +33,14 @@ onMounted(() => {
 <template>
   <div
     v-if="loadCarbon === 'true'"
-    class="relative h-[280px] w-[152px] rounded-md border border-slate-200 bg-slate-50 dark:border-slate-700 dark:bg-slate-800"
+    class="relative h-[255px] w-[152px] rounded-md border border-slate-200 bg-slate-50 dark:border-slate-700 dark:bg-slate-800"
   >
     <div id="carbonads" ref="container" />
 
     <Transition>
       <div
         v-show="placeholder"
-        class="absolute top-0 h-[278px] w-[150px] rounded-md bg-slate-50 dark:border-slate-700 dark:bg-slate-800"
+        class="absolute top-0 h-[252px] w-[150px] rounded-md bg-slate-50 dark:border-slate-700 dark:bg-slate-800"
       />
     </Transition>
   </div>

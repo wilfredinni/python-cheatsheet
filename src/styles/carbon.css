@@ -36,7 +36,7 @@
 #carbonads .carbon-wrap {
   display: grid;
   row-gap: 1em;
-  height: 250px;
+  height: 220px;
 }
 #carbonads .carbon-text {
   font-size: 1em;
