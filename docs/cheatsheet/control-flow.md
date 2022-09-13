@@ -206,7 +206,7 @@ Ternary operators can be chained:
 # output: teen
 ```
 
-## Python Switch-Case Statements
+## Switch-Case Statement
 
 <base-disclaimer>
   <base-disclaimer-title>
