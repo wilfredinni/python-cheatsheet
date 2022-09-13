@@ -357,7 +357,7 @@ You can use the built-in function `sorted` to return a new list:
     <a target="_blank" href="https://towardsdatascience.com/python-tuples-when-to-use-them-over-lists-75e443f9dcd7#:~:text=key%20takeaways%20are%3B-,The%20key%20difference%20between%20the%20tuples%20and%20lists%20is%20that,memory%20efficient%20than%20the%20lists.">Tuples vs Lists</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
-    The key difference between tuples and is that, while <code>tuples</code> are <i>immutable</i> objects, <code>lists</code> are <i>mutable</i>. This means that tuples cannot be changed while the lists can be modified. Tuples are more memory efficient than the lists.
+    The key difference between tuples and lists is that, while <code>tuples</code> are <i>immutable</i> objects, <code>lists</code> are <i>mutable</i>. This means that tuples cannot be changed while the lists can be modified. Tuples are more memory efficient than the lists.
   </base-disclaimer-content>
 </base-disclaimer>
 
