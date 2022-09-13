@@ -154,7 +154,7 @@ Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/)
 
 <base-disclaimer>
   <base-disclaimer-title>
-    <a target="k" href="https://pipenv.pypa.io/en/latest/">Anaconda</a> is another popular tool to manage python packages.
+    <a target="k" href="https://anaconda.com/">Anaconda</a> is another popular tool to manage python packages.
   </base-disclaimer-title>
   <base-disclaimer-content>
     Where packages, notebooks, projects and environments are shared. Your place for free public conda package hosting.
