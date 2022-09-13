@@ -280,7 +280,7 @@ An optional second argument to `rjust()` and `ljust()` will specify a fill chara
 # 'Hello World'
 
 >>> spam.lstrip()
-# 'Hello World '
+# 'Hello World     '
 
 >>> spam.rstrip()
 # '    Hello World'
