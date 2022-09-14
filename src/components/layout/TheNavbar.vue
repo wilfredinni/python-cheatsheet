@@ -27,15 +27,16 @@ const route = useRoute()
 
           <algolia-doc-search />
 
-          <base-badge
-            url="https://news.pythoncheatsheet.org/"
-            class="hidden lg:flex"
-          >
-            <span class="hidden xl:flex">
-              ✨ The first Issue of the Python Cheatsheet is out!
-            </span>
-            <span class="hidden lg:block xl:hidden"> ✨ Issue 1 is out! </span>
-          </base-badge>
+          <a href="https://news.pythoncheatsheet.org/">
+            <base-badge class="hidden lg:flex">
+              <span class="hidden xl:flex">
+                ✨ The first Issue of the Python Cheatsheet is out!
+              </span>
+              <span class="hidden lg:block xl:hidden">
+                ✨ Issue 1 is out!
+              </span>
+            </base-badge>
+          </a>
         </div>
 
         <!-- actions -->
