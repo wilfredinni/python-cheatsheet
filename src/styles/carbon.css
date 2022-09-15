@@ -10,6 +10,7 @@
     sans-serif;
   display: inline-block;
   font-size: 13px;
+  max-height: 200px;
 }
 
 #carbonads a,
@@ -20,17 +21,14 @@
 
 #carbonads > span {
   display: grid;
-  /* background-color: #f8fafc; */
-  max-width: 150px;
-  padding: 0.8em;
+  max-width: 200px;
+  padding: 1.5em;
   box-sizing: border-box;
-  /* border: 1px solid #e2e8f0; */
-  /* border-radius: 5px; */
 }
 
-.dark #carbonads > span {
-  /* background-color: #1e293b; */
-  /* border: 1px solid #334155; */
+#carbonads img {
+  margin: auto;
+  border-radius: 5%;
 }
 
 #carbonads .carbon-wrap {
@@ -40,7 +38,7 @@
 }
 #carbonads .carbon-text {
   font-size: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 5em;
 }
 
 .dark #carbonads .carbon-text {
