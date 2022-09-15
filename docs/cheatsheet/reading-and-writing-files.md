@@ -10,7 +10,9 @@ description: To read/write to a file in Python, you will want to use the with st
 To read/write to a file in Python, you will want to use the `with`
 statement, which will close the file for you after you are done, managing the available resources for you.
 
-## Opening and reading files with the open() function
+## Opening and reading files
+
+The `open` function opens a file and return a corresponding file object.
 
 ```python
 >>> with open('C:\\Users\\your_home_folder\\hi.txt') as hello_file:
@@ -66,7 +68,16 @@ You can also iterate through the file line by line:
 # Bacon is not a vegetable.
 ```
 
-## Saving variables with the shelve module
+## The shelve module
+
+<base-disclaimer>
+  <base-disclaimer-title>
+    From the <a target="_blank" href="https://docs.python.org/3/library/shelve.html">Python 3 documentation</a>
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+   A “shelf” is a persistent, dictionary-like object. The difference with “dbm” databases is that the values (not the keys!) in a shelf can be essentially arbitrary Python objects — anything that the pickle module can handle. This includes most class instances, recursive data types, and objects containing lots of shared sub-objects. The keys are ordinary strings.
+  </base-disclaimer-content>
+</base-disclaimer>
 
 To save variables:
 

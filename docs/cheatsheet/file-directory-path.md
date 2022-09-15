@@ -488,21 +488,6 @@ If there is no eggs folder, then `move()` will rename bacon.txt to a file named 
 
 - Calling `shutil.rmtree(path)` will remove the folder at path, and all files and folders it contains will also be deleted.
 
-## Safe Deletes with the send2trash
-
-You can install this module by running `pip install send2trash` from a Terminal window.
-
-```python
->>> import send2trash
-
->>> with open('bacon.txt', 'a') as bacon_file: # creates the file
-...     bacon_file.write('Bacon is not a vegetable.')
-...
-# 25
-
->>> send2trash.send2trash('bacon.txt')
-```
-
 ## Walking a Directory Tree
 
 ```python
