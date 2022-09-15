@@ -4,17 +4,18 @@ const { reload } = useCarbon()
 </script>
 
 <template>
-  <nav aria-labelledby="on-this-page-title" class="w-56">
-    <carbon-ads v-if="!reload" />
-
-    <div class="mt-4">
+  <nav
+    aria-labelledby="on-this-page-title"
+    class="flex h-full w-56 flex-col justify-between"
+  >
+    <div>
       <h3
         class="font-display text-sm font-medium text-slate-900 dark:text-white"
       >
         On this page
       </h3>
 
-      <ul class="mt-3 text-sm">
+      <ul class="mt-4 text-sm">
         <li v-for="item in theToc" :key="item.id">
           <a
             :href="`#${item.id}`"
@@ -30,5 +31,7 @@ const { reload } = useCarbon()
         </li>
       </ul>
     </div>
+
+    <carbon-ads v-if="!reload" class="mt-4" />
   </nav>
 </template>

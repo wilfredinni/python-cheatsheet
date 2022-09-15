@@ -35,7 +35,7 @@ const rootRepositoryRoutes = ['contributing', 'changelog']
 
       <!-- article -->
       <div
-        class="min-w-0 flex-auto px-4 py-12 lg:pr-0 lg:pl-8 xl:px-16"
+        class="min-w-0 flex-auto px-4 py-12 xl:px-16"
         :class="[reader.isActive ? 'max-w-2xl lg:max-w-4xl' : 'lg:max-w-none']"
       >
         <article>

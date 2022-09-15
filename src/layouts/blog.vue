@@ -22,9 +22,11 @@ const reader = useReaderStore()
 
       <div
         v-show="!reader.isActive"
-        class="hidden w-40 overflow-x-hidden xl:sticky xl:top-[3.6rem] xl:-mr-6 xl:block xl:h-[calc(100vh-3.6rem)] xl:flex-none xl:overflow-y-auto xl:py-10 xl:pr-6"
+        class="hidden w-56 overflow-x-hidden xl:sticky xl:top-[3.6rem] xl:-mr-6 xl:block xl:h-[calc(100vh-3.6rem)] xl:flex-none xl:overflow-y-auto xl:py-10 xl:pr-6"
       >
-        <carbon-ads />
+        <div class="flex h-full flex-col justify-end">
+          <carbon-ads />
+        </div>
       </div>
     </div>
   </div>
