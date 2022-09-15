@@ -38,7 +38,7 @@ A raw string entirely ignores all escape characters and prints any backslash tha
 
 Raw strings are mostly used for <router-link to="/cheatsheet/regular-expressions">regular expression</router-link> definition.
 
-## Multiline Strings with triple quotes
+## Multiline Strings
 
 ```python
 >>> print(
@@ -177,7 +177,7 @@ Returns `True` or `False` after evaluating if a string is in upper or lower case
 | isspace()   | returns `True` if the string consists only of spaces, tabs, and new-lines.                                                     |
 | istitle()   | returns `True` if the string consists only of words that begin with an uppercase letter followed by only lowercase characters. |
 
-## The startswith() and endswith() methods
+## startswith() and endswith()
 
 ```python
 >>> 'Hello world!'.startswith('Hello')
@@ -199,7 +199,7 @@ Returns `True` or `False` after evaluating if a string is in upper or lower case
 # True
 ```
 
-## The join() and split() string methods
+## join() and split()
 
 ### join()
 

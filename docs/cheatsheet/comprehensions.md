@@ -43,7 +43,7 @@ And this is how we do the same with a List Comprehension:
 # ['Charles', 'Susan', 'Patrick', 'George']
 ```
 
-## Comprehensions with conditionals
+## Adding conditionals
 
 If we want `new_list` to have only the names that start with C, with a for loop, we would do it like this:
 

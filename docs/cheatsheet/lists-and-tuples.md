@@ -11,7 +11,7 @@ Lists are one of the 4 data types in Python used to store collections of data.
 ['John', 'Peter', 'Debora', 'Charles']
 ```
 
-## Getting individual values with indexes
+## Getting values with indexes
 
 ```python
 >>> furniture = ['table', 'chair', 'rack', 'shelf']
@@ -149,7 +149,7 @@ Slicing the complete list will perform a copy:
 # index: 3 - item: shelf
 ```
 
-## Looping Through Multiple Lists with zip()
+## Loop in Multiple Lists with zip()
 
 ```python
 >>> furniture = ['table', 'chair', 'rack', 'shelf']
@@ -222,7 +222,9 @@ The multiple assignment trick can also be used to swap the values in two variabl
 # table
 ```
 
-## Finding a value with the index Method
+## The index Method
+
+The `index` method allows you to find the index of a value by passing its name:
 
 ```python
 >>> furniture = ['table', 'chair', 'rack', 'shelf']
@@ -376,7 +378,7 @@ You can use the built-in function `sorted` to return a new list:
 
 The main way that tuples are different from lists is that tuples, like strings, are immutable.
 
-## Converting types with list() and tuple()
+## Converting between list() and tuple()
 
 ```python
 >>> tuple(['cat', 'dog', 5])

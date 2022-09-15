@@ -81,7 +81,9 @@ The `not` Operator’s _Truth_ Table:
 | `not True`  | `False`      |
 | `not False` | `True`       |
 
-## Mixing Boolean and Comparison Operators
+## Mixing Operators
+
+You can mix boolean and comparison operators:
 
 ```python
 >>> (4 < 5) and (5 < 6)
@@ -94,7 +96,7 @@ False
 True
 ```
 
-You can also use multiple Boolean operators in an expression, along with the comparison operators:
+Also, you can mix use multiple Boolean operators in an expression, along with the comparison operators:
 
 ```python
 >>> 2 + 2 == 4 and not 2 + 2 == 5 and 2 * 2 == 2 + 2
