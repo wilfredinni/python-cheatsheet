@@ -334,7 +334,7 @@ The underscore symbol (`_`) is used to define a default case:
 ...     case _:
 ...             print('Code is an invalid number')
 ...
-# Code is a string
+# Code is a valid number
 ```
 
 ## while Loop Statements
