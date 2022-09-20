@@ -30,11 +30,9 @@ const route = useRoute()
           <a href="https://news.pythoncheatsheet.org/">
             <base-badge class="hidden lg:flex">
               <span class="hidden xl:flex">
-                ✨ The second Issue of the Python Cheatsheet is out!
+                ✨ Read the latest Python Cheatsheet Issue!
               </span>
-              <span class="hidden lg:block xl:hidden">
-                ✨ Issue 2 is out!
-              </span>
+              <span class="hidden lg:block xl:hidden"> ✨ Latest Issue </span>
             </base-badge>
           </a>
         </div>
