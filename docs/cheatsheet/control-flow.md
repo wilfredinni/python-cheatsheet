@@ -230,8 +230,6 @@ The _Switch-Case statements_, or **Structural Pattern Matching**, was firstly in
   </base-disclaimer-content>
 </base-disclaimer>
 
-The [PEP 636](https://peps.python.org/pep-0636/) provides an official tutorial for the Pattern matching or Switch-Case statement.
-
 ### Matching single values
 
 ```python
