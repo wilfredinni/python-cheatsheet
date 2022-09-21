@@ -193,7 +193,7 @@ The`clear()` method removes all the items in a dictionary.
 # True
 
 >>> 33 in person.values()
-# False
+# True
 ```
 
 ## Pretty Printing
