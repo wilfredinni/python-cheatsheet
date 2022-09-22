@@ -19,7 +19,7 @@ In Python, a dictionary is an _ordered_ (from Python > 3.7) collection of `key`:
 Example Dictionary:
 
 ```python
-myCat = {
+my_cat = {
     'size': 'fat',
     'color': 'gray',
     'disposition': 'loud'
