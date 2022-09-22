@@ -34,7 +34,7 @@
     "@typescript-eslint/parser": "^5.38.0",
     "@vitejs/plugin-vue": "^3.1.0",
     "@vue/test-utils": "^2.0.2",
-    "autoprefixer": "^10.4.11",
+    "autoprefixer": "^10.4.12",
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-vue": "^9.5.1",
@@ -62,7 +62,7 @@
     "vite-plugin-vue-layouts": "^0.7.0",
     "vite-plugin-vue-markdown": "^0.21.1",
     "vite-ssg": "^0.20.2",
-    "vite-ssg-sitemap": "^0.4.1",
+    "vite-ssg-sitemap": "^0.4.3",
     "vitest": "^0.23.4",
     "vue-tsc": "^0.39.5"
   },
