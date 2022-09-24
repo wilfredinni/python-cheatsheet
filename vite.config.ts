@@ -147,10 +147,5 @@ export default defineConfig(({ mode }) => {
         inline: ['@vue', '@vueuse'],
       },
     },
-
-    ssr: {
-      // TODO: workaround until they support native ESM
-      noExternal: ['workbox-window'],
-    },
   }
 })
