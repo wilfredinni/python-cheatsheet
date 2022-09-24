@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
-import { useDebounceFn } from '@vueuse/core'
-
 const container = ref()
 
 const placeholder = ref(false)
