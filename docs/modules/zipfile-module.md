@@ -1,6 +1,6 @@
 ---
 title: Python Zipfile Module - Python Cheatsheet
-description: The random module is a built-in module that allow us to generate random elements.
+description: This module provides tools to create, read, write, append, and list a ZIP file.
 ---
 
 # Python Zipfile Module
