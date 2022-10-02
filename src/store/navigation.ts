@@ -136,6 +136,10 @@ export const useNavigationStore = defineStore('navigation', {
         name: 'Pathlib',
         path: '/modules/pathlib-module',
       },
+      {
+        name: 'Zipfile',
+        path: '/modules/zipfile-module',
+      },
     ],
   }),
 })
