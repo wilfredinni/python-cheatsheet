@@ -31,8 +31,8 @@ for a regex, [slice a list](https://www.pythoncheatsheet.org/cheatsheet/lists-an
 | [Functions](/docs/cheatsheet/functions.md)                                 | [Random Module](/docs/modules/random-module.md)       |
 | [Lists and Tuples](/docs/cheatsheet/lists-and-tuples.md)                   | [Os Module](/docs/modules/os-module.md)               |
 | [Dictionaries](/docs/cheatsheet/dictionaries.md)                           | [Pathlib Module](/docs/modules/pathlib-module.md)     |
-| [Sets](/docs/cheatsheet/sets.md)                                           |                                                       |
-| [Comprehensions](/docs/cheatsheet/comprehensions.md)                       |                                                       |
+| [Sets](/docs/cheatsheet/sets.md)                                           | [Shelve Module](/docs/modules/shelve-module.md)       |
+| [Comprehensions](/docs/cheatsheet/comprehensions.md)                       | [Zipfile Module](/docs/modules/zipfile-module.md)     |
 | [Manipulating Strings](/docs/cheatsheet/manipulating-strings.md)           |                                                       |
 | [String Formatting](/docs/cheatsheet/string-formatting.md)                 |                                                       |
 | [Regular Expressions](/docs/cheatsheet/regular-expressions.md)             |                                                       |

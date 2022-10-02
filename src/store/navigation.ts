@@ -136,6 +136,14 @@ export const useNavigationStore = defineStore('navigation', {
         name: 'Pathlib',
         path: '/modules/pathlib-module',
       },
+      {
+        name: 'Shelve',
+        path: '/modules/shelve-module',
+      },
+      {
+        name: 'Zipfile',
+        path: '/modules/zipfile-module',
+      },
     ],
   }),
 })

@@ -9,9 +9,21 @@ updated: July 19, 2022
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
+## 2022-10-02
+
+### Website
+
+- Updated dependencies to the latest version
+- Removed some workarounds for workbox that were not needed anymore
+
+### Cheatsheet
+
+- Added Python <router-link to='/modules/zipfile-module'>Zipfile Module</router-link> ([e7538ee](https://github.com/wilfredinni/python-cheatsheet/commit/e7538ee7e8d7ab9b5888ad39560ad940a25dde6d)).
+- Added Python <router-link to='/modules/shelve-module'>Shelve Module</router-link> ([0afd2b3](https://github.com/wilfredinni/python-cheatsheet/commit/0afd2b3002764c13b7d016c1e39b6c124445340c)).
+
 ## 2022-09-12
 
-- Added Python <router-link to='/cheatsheet/control-flow#python-switch-case-statements'>Switch-Case Statement</router-link> or **Structural Pattern Matching** ([6397b0f](https://github.com/wilfredinni/python-cheatsheet/commit/6397b0f1f9f5295dd53168eb2587a492ac4d4dfa)).
+- Added Python <router-link to='/cheatsheet/control-flow#switch-case-statement'>Switch-Case Statement</router-link> or **Structural Pattern Matching** ([6397b0f](https://github.com/wilfredinni/python-cheatsheet/commit/6397b0f1f9f5295dd53168eb2587a492ac4d4dfa)).
 
 ## 2022-09-03
 
