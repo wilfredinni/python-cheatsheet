@@ -24,7 +24,7 @@ description: A “shelf” is a persistent, dictionary-like object. in a shelf c
 ...     shelf_file['wife'] = wife
 ```
 
-## Open and read variables:
+## Open and read variables
 
 ```python
 >>> with shelve.open('mydata') as shelf_file:
