@@ -7,7 +7,9 @@ updated: July 19, 2022
 
 # Changelog
 
-<!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
+## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next)
+
+- Fixed _Algolia docsearch_ weir behavior when clicking on a result.
 
 ## 2022-10-02
 
