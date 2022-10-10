@@ -1,3 +1,4 @@
+a
 <script setup lang="ts">
 import docsearch from '@docsearch/js'
 
@@ -15,7 +16,17 @@ function initialize() {
   const options = Object.assign({}, userOptions, {
     navigator: {
       navigate({ itemUrl }: { itemUrl: string }) {
-        router.push(itemUrl)
+        const { pathname: hitPathname } = new URL(
+          window.location.origin + itemUrl
+        )
+
+        // router doesn't handle same-page navigation so we use the native
+        // browser location API for anchor navigation
+        if (route.path === hitPathname) {
+          window.location.assign(window.location.origin + itemUrl)
+        } else {
+          router.push(itemUrl)
+        }
       },
     },
 
@@ -35,6 +46,7 @@ function initialize() {
 
         props: {
           href: hit.url,
+          children,
 
           onClick(event: MouseEvent) {
             if (isSpecialClick(event)) return
@@ -51,18 +63,26 @@ function initialize() {
             // behavior to leverage the Router loading feature.
             if (route.path !== hitPathname) event.preventDefault()
 
-            router.push(hit.url)
+            // router doesn't handle same-page navigation so we use the native
+            // browser location API for anchor navigation
+            if (route.path === hitPathname) {
+              window.location.assign(window.location.origin + hit.url)
+            } else {
+              router.push(hit.url)
+            }
           },
-
-          children,
         },
       }
     },
   })
 
+  // @ts-ignore: Unreachable code error
   docsearch(options)
 }
 
+/**
+ * Check if event is special click to avoid closing the DocSearch too soon.
+ */
 const isSpecialClick = (event: MouseEvent) =>
   event.button === 1 ||
   event.altKey ||
@@ -70,10 +90,14 @@ const isSpecialClick = (event: MouseEvent) =>
   event.metaKey ||
   event.shiftKey
 
+/**
+ * Gets the relative path from an absolute URL provided by the DocSearch instance.
+ */
 const getRelativePath = (absoluteUrl: string) => {
   const { pathname, hash } = new URL(absoluteUrl)
-
-  return pathname + hash
+  const url = window.location.origin
+  const relativeUrl = pathname.replace(url, '/') + hash
+  return relativeUrl.replace(/\/+$/, '')
 }
 
 onMounted(() => {
