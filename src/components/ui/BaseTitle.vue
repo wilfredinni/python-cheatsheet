@@ -18,7 +18,7 @@ function startShare() {
 <template>
   <div class="not-prose group grid w-full grid-cols-12">
     <div
-      class="doc-title col-span-11 text-[2.25em] text-3xl font-medium text-slate-900 dark:text-white"
+      class="doc-title col-span-11 text-[2.25em] font-medium text-slate-900 dark:text-white"
     >
       <slot />
     </div>
