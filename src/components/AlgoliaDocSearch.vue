@@ -1,3 +1,4 @@
+a
 <script setup lang="ts">
 import docsearch from '@docsearch/js'
 
@@ -15,7 +16,17 @@ function initialize() {
   const options = Object.assign({}, userOptions, {
     navigator: {
       navigate({ itemUrl }: { itemUrl: string }) {
-        router.push(itemUrl)
+        const { pathname: hitPathname } = new URL(
+          window.location.origin + itemUrl
+        )
+
+        // router doesn't handle same-page navigation so we use the native
+        // browser location API for anchor navigation
+        if (route.path === hitPathname) {
+          window.location.assign(window.location.origin + itemUrl)
+        } else {
+          router.push(itemUrl)
+        }
       },
     },
 
@@ -75,6 +86,15 @@ const getRelativePath = (absoluteUrl: string) => {
 
   return pathname + hash
 }
+// function getRelativePath(absoluteUrl: string) {
+//   const { pathname, hash } = new URL(absoluteUrl)
+//   return (
+//     pathname.replace(
+//       /\.html$/,
+//       site.value.cleanUrls === 'disabled' ? '.html' : ''
+//     ) + hash
+//   )
+// }
 
 onMounted(() => {
   initialize()
