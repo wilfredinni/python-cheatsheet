@@ -16,7 +16,7 @@ function startShare() {
 </script>
 
 <template>
-  <div class="not-prose group grid w-full grid-cols-12">
+  <div class="not-prose group grid w-full grid-cols-12 pb-3">
     <div
       class="doc-title col-span-11 text-[2.25em] font-medium text-slate-900 dark:text-white"
     >
@@ -54,5 +54,6 @@ function startShare() {
     BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', Segoe UI Symbol,
     'Noto Color Emoji';
+  line-height: 1.1111111;
 }
 </style>
