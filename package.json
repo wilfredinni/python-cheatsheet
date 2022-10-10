@@ -13,7 +13,7 @@
     "@docsearch/js": "^3.2.1",
     "@headlessui/vue": "^1.7.3",
     "@vueuse/core": "^9.3.0",
-    "@vueuse/head": "^0.7.13",
+    "@vueuse/head": "^0.9.8",
     "pinia": "^2.0.23",
     "prism-theme-vars": "^0.2.4",
     "vue": "^3.2.40",
@@ -57,13 +57,13 @@
     "unplugin-vue-components": "^0.22.8",
     "vite": "^3.1.7",
     "vite-plugin-pages": "^0.26.0",
-    "vite-plugin-pwa": "^0.12.8",
+    "vite-plugin-pwa": "^0.13.1",
     "vite-plugin-vue-layouts": "^0.7.0",
-    "vite-plugin-vue-markdown": "^0.21.1",
-    "vite-ssg": "^0.20.2",
+    "vite-plugin-vue-markdown": "^0.22.1",
+    "vite-ssg": "^0.21.1",
     "vite-ssg-sitemap": "^0.4.3",
     "vitest": "^0.23.4",
-    "vue-tsc": "^0.39.5"
+    "vue-tsc": "^1.0.3"
   },
   "pnpm": {
     "peerDependencyRules": {
