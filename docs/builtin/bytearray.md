@@ -3,7 +3,11 @@ title: Python bytearray() built-in function - Python Cheatsheet
 description: Return a new array of bytes. The bytearray class is a mutable sequence of integers in the range [...]. It has most of the usual methods of mutable sequences, described in Mutable Sequence Types, as well as most methods that the bytes type has [...]
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python bytearray() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

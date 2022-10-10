@@ -3,7 +3,11 @@ title: Python list() built-in function - Python Cheatsheet
 description: Rather than being a function, list is actually a mutable sequence type, as documented in Lists and Sequence Types — list, tuple, range.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python list() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

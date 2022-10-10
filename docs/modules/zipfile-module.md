@@ -3,7 +3,11 @@ title: Python Zipfile Module - Python Cheatsheet
 description: This module provides tools to create, read, write, append, and list a ZIP file.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python Zipfile Module
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

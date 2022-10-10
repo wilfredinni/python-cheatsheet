@@ -3,7 +3,11 @@ title: Python max() built-in function - Python Cheatsheet
 description: Return the largest item in an iterable or the largest of two or more arguments.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python max() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

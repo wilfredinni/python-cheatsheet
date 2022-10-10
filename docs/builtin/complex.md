@@ -3,7 +3,11 @@ title: Python complex() built-in function - Python Cheatsheet
 description: Return a complex number with the value real + imag*1j or convert a string or number to a complex number. [...] Each argument may be any numeric type (including complex). If imag is omitted, it defaults to zero and the constructor serves as a numeric conversion like int and float. If both arguments are omitted, returns 0j.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python complex() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

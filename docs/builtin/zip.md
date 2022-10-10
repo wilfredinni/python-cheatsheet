@@ -3,7 +3,11 @@ title: Python zip() built-in function - Python Cheatsheet
 description: Iterate over several iterables in parallel, producing tuples with an item from each one.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python zip() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

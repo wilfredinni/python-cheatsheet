@@ -3,7 +3,11 @@ title: Python min() built-in function - Python Cheatsheet
 description: Return the smallest item in an iterable or the smallest of two or more arguments.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python min() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

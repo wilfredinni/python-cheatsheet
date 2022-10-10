@@ -3,7 +3,11 @@ title: Python String Formatting - Python Cheatsheet
 description: If your are using Python 3.6+, string f-strings are the recommended way to format strings.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python String Formatting
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

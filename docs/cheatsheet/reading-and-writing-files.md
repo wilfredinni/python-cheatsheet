@@ -3,7 +3,11 @@ title: Reading and writing files - Python Cheatsheet
 description: To read/write to a file in Python, you will want to use the with statement, which will close the file for you after you are done, managing the available resources for you.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Reading and Writing Files
+
+</base-title>
 
 ## The file Reading/Writing process
 

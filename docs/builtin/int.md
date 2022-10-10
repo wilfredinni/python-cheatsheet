@@ -3,7 +3,11 @@ title: Python int() built-in function - Python Cheatsheet
 description: Return an integer object constructed from a number or string x, or return 0 if no arguments are given.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python int() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

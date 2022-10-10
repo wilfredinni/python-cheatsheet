@@ -5,7 +5,11 @@ date: July 19, 2022
 updated: July 19, 2022
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Changelog
+
+</base-title>
 
 ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next)
 

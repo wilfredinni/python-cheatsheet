@@ -3,7 +3,11 @@ title: Python chr() built-in function - Python Cheatsheet
 description: Return the string representing a character whose Unicode code point is the integer i. For example, chr(97) returns the string 'a', while chr(8364) returns the string '€'. This is the inverse of ord().
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python chr() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

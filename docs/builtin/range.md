@@ -3,7 +3,11 @@ title: Python range() built-in function - Python Cheatsheet
 description: Rather than being a function, range is actually an immutable sequence type, as documented in Ranges and Sequence Types — list, tuple, range.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python range() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

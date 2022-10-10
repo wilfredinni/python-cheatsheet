@@ -3,7 +3,11 @@ title: Python tuple() built-in function - Python Cheatsheet
 description: Rather than being a function, tuple is actually an immutable sequence type, as documented in Tuples and Sequence Types — list, tuple, range.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python tuple() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

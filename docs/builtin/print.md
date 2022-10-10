@@ -3,7 +3,11 @@ title: Python print() built-in function - Python Cheatsheet
 description: Print objects to the text stream file, separated by sep and followed by end. sep, end, file, and flush, if present, must be given as keyword arguments.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python print() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

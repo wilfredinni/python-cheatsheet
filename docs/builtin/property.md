@@ -3,7 +3,11 @@ title: Python property() built-in function - Python Cheatsheet
 description: Return a property attribute.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python property() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

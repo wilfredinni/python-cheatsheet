@@ -3,7 +3,11 @@ title: Python Lists and Tuples - Python Cheatsheet
 description: In python, Lists are are one of the 4 data types in Python used to store collections of data.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python Lists
+
+</base-title>
 
 Lists are one of the 4 data types in Python used to store collections of data.
 

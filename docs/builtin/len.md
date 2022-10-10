@@ -3,7 +3,11 @@ title: Python len() built-in function - Python Cheatsheet
 description: Return the length (the number of items) of an object. The argument may be a sequence (such as a string, bytes, tuple, list, or range) or a collection (such as a dictionary, set, or frozen set).
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python len() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

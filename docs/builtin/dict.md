@@ -3,7 +3,11 @@ title: Python dict() built-in function - Python Cheatsheet
 description: Create a new dictionary. The dict object is the dictionary class. See dict and Mapping Types — dict for documentation about this class.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python dict() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

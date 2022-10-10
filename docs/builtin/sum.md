@@ -3,7 +3,11 @@ title: Python sum() built-in function - Python Cheatsheet
 description: Sums start and the items of an iterable from left to right and returns the total. The iterable’s items are normally numbers, and the start value is not allowed to be a string.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python sum() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

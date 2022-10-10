@@ -3,7 +3,11 @@ title: Python Pathlib Module - Python Cheatsheet
 description: The pathlib module was added in Python 3.4, offering an object-oriented way to handle file system paths.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python Pathlib Module
+
+</base-title>
 
 The `pathlib` module was added in Python 3.4, offering an object-oriented way to handle file system paths.
 

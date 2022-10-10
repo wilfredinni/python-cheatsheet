@@ -3,7 +3,11 @@ title: Python sorted() built-in function - Python Cheatsheet
 description: Return a new sorted list from the items in iterable.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python sorted() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

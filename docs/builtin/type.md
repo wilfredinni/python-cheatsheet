@@ -3,7 +3,11 @@ title: Python type() built-in function - Python Cheatsheet
 description: With one argument, return the type of an object. The return value is a type object and generally the same object as returned by object.__class__.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python type() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

@@ -3,7 +3,11 @@ title: Python round() built-in function - Python Cheatsheet
 description: Return number rounded to ndigits precision after the decimal point. If ndigits is omitted or is None, it returns the nearest integer to its input.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python round() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

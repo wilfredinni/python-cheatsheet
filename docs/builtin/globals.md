@@ -3,7 +3,11 @@ title: Python globals() built-in function - Python Cheatsheet
 description: Return the dictionary implementing the current module namespace. For code within functions, this is set when the function is defined and remains the same regardless of where the function is called.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python globals() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

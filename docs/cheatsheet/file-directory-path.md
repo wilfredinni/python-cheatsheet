@@ -3,7 +3,11 @@ title: File and directory Paths - Python Cheatsheet
 description: There are two main modules in Python that deals with path manipulation. One is the os.path module and the other is the pathlib module.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Handling file and directory Paths
+
+</base-title>
 
 There are two main modules in Python that deals with path manipulation.
 One is the `os.path` module and the other is the `pathlib` module.

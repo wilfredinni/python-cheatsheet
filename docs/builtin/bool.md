@@ -3,7 +3,11 @@ title: Python bool() built-in function - Python Cheatsheet
 description: Return a Boolean value, i.e. one of True or False. x is converted using the standard truth testing procedure. If x is false or omitted, this returns False; otherwise, it returns True. The bool class is a subclass of int. It cannot be subclassed further. Its only instances are False and True.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python bool() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

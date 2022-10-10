@@ -3,7 +3,11 @@ title: Python super() built-in function - Python Cheatsheet
 description: Return a proxy object that delegates method calls to a parent or sibling class of type. This is useful for accessing inherited methods that have been overridden in a class.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python super() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

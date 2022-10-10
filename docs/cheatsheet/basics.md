@@ -3,7 +3,11 @@ title: Python Basics - Python Cheatsheet
 description: The basics of python. We all need to start somewhere, so how about doing it here.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python Basics
+
+</base-title>
 
 We all need to start somewhere, so how about doing it here.
 
