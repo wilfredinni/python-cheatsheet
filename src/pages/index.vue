@@ -55,7 +55,6 @@ const smAndLarger = breakpoints.greater('sm')
         id="python-cheatsheet"
         title="Python Cheatsheet"
         :description="description"
-        class="mb-5"
       >
         <h1>Python Cheatsheet</h1>
       </base-title>
