@@ -3,7 +3,11 @@ title: Python exec() built-in function - Python Cheatsheet
 description: This function supports dynamic execution of Python code. object must be either a string or a code object. If it is a string, the string is parsed as a suite of Python statements which is then executed (unless a syntax error occurs) [...].
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python exec() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

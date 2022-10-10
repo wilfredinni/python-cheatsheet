@@ -5,11 +5,16 @@ date: July 19, 2022
 updated: July 19, 2022
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Changelog
+
+</base-title>
 
 ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next)
 
 - Fixed _Algolia docsearch_ weir behavior when clicking on a result ([#133](https://github.com/wilfredinni/python-cheatsheet/pull/133))
+- Added a _share button_ to every `h1` tag that only shows on haver ([#134](https://github.com/wilfredinni/python-cheatsheet/pull/134))
 
 ## 2022-10-02
 

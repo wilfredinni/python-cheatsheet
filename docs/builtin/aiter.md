@@ -3,7 +3,11 @@ title: Python aiter() built-in function - Python Cheatsheet
 description: Return an asynchronous iterator for an asynchronous iterable. Equivalent to calling x.__aiter__().
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python aiter() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

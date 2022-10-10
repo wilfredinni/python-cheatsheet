@@ -3,7 +3,11 @@ title: Python divmod() built-in function - Python Cheatsheet
 description: Take two (non-complex) numbers as arguments and return a pair of numbers consisting of their quotient and remainder when using integer division. With mixed operand types, the rules for binary arithmetic operators apply.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python divmod() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

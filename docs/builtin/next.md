@@ -3,7 +3,11 @@ title: Python next() built-in function - Python Cheatsheet
 description: Retrieve the next item from the iterator by calling its __next__() method. If default is given, it is returned if the iterator is exhausted, otherwise StopIteration is raised.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python next() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

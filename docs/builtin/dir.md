@@ -3,7 +3,11 @@ title: Python dir() built-in function - Python Cheatsheet
 description: Without arguments, return the list of names in the current local scope. With an argument, attempt to return a list of valid attributes for that object.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python dir() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

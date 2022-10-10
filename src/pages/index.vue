@@ -34,6 +34,7 @@ const cardLinks = [
   },
 ]
 
+const { description } = useMeta()
 const breakpoints = useBreakpoints(breakpointsTailwind)
 const smAndLarger = breakpoints.greater('sm')
 </script>
@@ -49,7 +50,14 @@ const smAndLarger = breakpoints.greater('sm')
         />
       </div>
 
-      <h1 v-if="smAndLarger">Python Cheatsheet</h1>
+      <base-title
+        v-if="smAndLarger"
+        id="python-cheatsheet"
+        title="Python Cheatsheet"
+        :description="description"
+      >
+        <h1>Python Cheatsheet</h1>
+      </base-title>
       <h1
         v-else
         class="mb-2 bg-gradient-to-r from-indigo-400 to-green-400 bg-clip-text text-center font-display text-4xl font-medium tracking-tight text-transparent dark:from-sky-400 dark:via-teal-300 dark:to-orange-300"

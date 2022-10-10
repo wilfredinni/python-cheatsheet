@@ -3,7 +3,11 @@ title: Python object() built-in function - Python Cheatsheet
 description: Return a new featureless object. object is a base for all classes. It has methods that are common to all instances of Python classes. This function does not accept any arguments.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python object() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

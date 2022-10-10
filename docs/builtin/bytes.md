@@ -3,7 +3,11 @@ title: Python bytes() built-in function - Python Cheatsheet
 description: Return a new “bytes” object which is an immutable sequence of integers in the range [...]. bytes is an immutable version of bytearray – it has the same non-mutating methods and the same indexing and slicing behavior.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python bytes() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

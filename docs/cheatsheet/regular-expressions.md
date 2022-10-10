@@ -3,7 +3,11 @@ title: Python Regular Expressions - Python Cheatsheet
 description: A regular expression (shortened as regex) is a sequence of characters that specifies a search pattern in text and used by string-searching algorithms.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Regular Expressions
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

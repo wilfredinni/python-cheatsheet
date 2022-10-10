@@ -5,7 +5,11 @@ date: June 09, 2018
 updated: July 3, 2022
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Contributing
+
+</base-title>
 
 First off, thank you for taking the time to contribute!
 

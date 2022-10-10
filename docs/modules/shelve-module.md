@@ -3,7 +3,11 @@ title: Python Shelve Module - Python Cheatsheet
 description: A “shelf” is a persistent, dictionary-like object. in a shelf can be essentially arbitrary Python objects — anything that the pickle module can handle.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python Shelve Module
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

@@ -3,7 +3,11 @@ title: Python Json Module - Python Cheatsheet
 description: Python has the built-in module json, which allow us to work with JSON (JavaScript Object Notation) data.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python Json Module
+
+</base-title>
 
 JSON stands for JavaScript Object Notation and is a lightweight format for storing and transporting data. JSON is often used when data is sent from a server to a web page.
 

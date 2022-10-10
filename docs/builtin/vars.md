@@ -3,7 +3,11 @@ title: Python vars() built-in function - Python Cheatsheet
 description: Return the __dict__ attribute for a module, class, instance, or any other object with a __dict__ attribute.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python vars() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

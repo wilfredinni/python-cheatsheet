@@ -3,7 +3,11 @@ title: Python Dataclasses - Python Cheatsheet
 description: Dataclasses are python classes, but are suited for storing data objects. This module provides a decorator and functions for automatically adding generated special methods such as __init__() and __repr__() to user-defined classes.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python Dataclasses
+
+</base-title>
 
 `Dataclasses` are python classes, but are suited for storing data objects.
 This module provides a decorator and functions for automatically adding generated special methods such as `__init__()` and `__repr__()` to user-defined classes.

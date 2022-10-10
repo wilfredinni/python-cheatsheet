@@ -3,7 +3,11 @@ title: Python ord() built-in function - Python Cheatsheet
 description: Given a string representing one Unicode character, return an integer representing the Unicode code point of that character.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python ord() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

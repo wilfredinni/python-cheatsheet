@@ -3,7 +3,11 @@ title: Python Sets - Python Cheatsheet
 description: Python comes equipped with several built-in data types to help us organize our data. These structures include lists, dictionaries, tuples and sets.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python Sets
+
+</base-title>
 
 Python comes equipped with several built-in data types to help us organize our data. These structures include lists, dictionaries, tuples and **sets**.
 

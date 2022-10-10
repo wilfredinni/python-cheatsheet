@@ -3,7 +3,11 @@ title: Python float() built-in function - Python Cheatsheet
 description: Return a floating point number constructed from a number or string x.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python float() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

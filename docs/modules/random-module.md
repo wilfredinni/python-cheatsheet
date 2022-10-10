@@ -3,7 +3,11 @@ title: Python Random Module - Python Cheatsheet
 description: The random module is a built-in module that allow us to generate random elements.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python Random Module
+
+</base-title>
 
 The [random](https://docs.python.org/3/library/random.html) module is a built-in module that allow us to generate random elements.
 

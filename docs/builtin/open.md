@@ -3,7 +3,11 @@ title: Python open() built-in function - Python Cheatsheet
 description: Open file and return a corresponding file object. If the file cannot be opened, an OSError is raised. See Reading and Writing Files for more examples of how to use this function.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python open() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

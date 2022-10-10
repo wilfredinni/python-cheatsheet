@@ -3,7 +3,11 @@ title: Python any() built-in function - Python Cheatsheet
 description: Return True if any element of the iterable is true. If the iterable is empty, return False.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python any() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

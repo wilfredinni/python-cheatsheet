@@ -3,7 +3,11 @@ title: Python map() built-in function - Python Cheatsheet
 description: Return an iterator that applies function to every item of iterable, yielding the results. If additional iterable arguments are passed, function must take that many arguments and is applied to the items from all iterables in parallel. With multiple iterables, the iterator stops when the shortest iterable is exhausted. For cases where the function inputs are already arranged into argument tuples.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python map() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

@@ -3,7 +3,11 @@ title: Python all() built-in function - Python Cheatsheet
 description: Return True if all elements of the iterable are true (or if the iterable is empty).
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python all() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

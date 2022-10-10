@@ -3,7 +3,11 @@ title: Python Comprehensions - Python Cheatsheet
 description: List comprehensions provide a concise way to create lists
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python Comprehensions
+
+</base-title>
 
 List Comprehensions are a special kind of syntax that let us create lists out of other lists, and are incredibly useful when dealing with numbers and with one or two levels of nested for loops.
 

@@ -3,7 +3,11 @@ title: Python Datetime Module - Python Cheatsheet
 description: 'The Datetime module allows us to work with date and time by providing 3 additional data types: date, time and datetime.'
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python Datetime Module
+
+</base-title>
 
 The Datetime module allows us to work with date and time objects. It provides three additional data types: `date`, `time` and `datetime`.
 

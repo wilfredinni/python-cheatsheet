@@ -3,7 +3,11 @@ title: Python abs() built-in function - Python Cheatsheet
 description: Return the absolute value of a number. The argument may be an integer, a floating point number, or an object implementing __abs__(). If the argument is a complex number, its magnitude is returned.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python abs() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

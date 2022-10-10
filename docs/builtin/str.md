@@ -3,7 +3,11 @@ title: Python str() built-in function - Python Cheatsheet
 description: Return a string version of object. If object is not provided, returns the empty string. Otherwise, the behavior of str() depends on whether encoding or errors is given.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python str() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

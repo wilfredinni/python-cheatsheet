@@ -3,7 +3,11 @@ title: Python eval() built-in function - Python Cheatsheet
 description: The arguments are a string and optional globals and locals. If provided, globals must be a dictionary. If provided, locals can be any mapping object.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python eval() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

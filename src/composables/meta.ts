@@ -58,5 +58,5 @@ export function useMeta() {
     link: [{ rel: 'canonical', href: url }],
   }
 
-  return { meta }
+  return { meta, description }
 }

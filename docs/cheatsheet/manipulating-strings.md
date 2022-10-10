@@ -3,7 +3,11 @@ title: Manipulating strings - Python Cheatsheet
 description: An escape character is created by typing a backslash \ followed by the character you want to insert.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Manipulating Strings
+
+</base-title>
 
 ## Escape characters
 

@@ -3,7 +3,11 @@ title: Python id() built-in function - Python Cheatsheet
 description: Return the “identity” of an object. This is an integer which is guaranteed to be unique and constant for this object during its lifetime. Two objects with non-overlapping lifetimes may have the same id() value.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python id() built-in function
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>

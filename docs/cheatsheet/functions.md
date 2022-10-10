@@ -3,7 +3,11 @@ title: Python Functions - Python Cheatsheet
 description: In Python, A function is a block of organized code that is used to perform a single task.
 ---
 
+<base-title :title="frontmatter.title" :description="frontmatter.description">
+
 # Python Functions
+
+</base-title>
 
 <base-disclaimer>
   <base-disclaimer-title>
