@@ -27,10 +27,10 @@
     "@types/fs-extra": "^9.0.13",
     "@types/markdown-it": "^12.2.3",
     "@types/markdown-it-link-attributes": "^3.0.1",
-    "@types/node": "^18.8.3",
+    "@types/node": "^18.8.5",
     "@types/string": "0.0.31",
-    "@typescript-eslint/eslint-plugin": "^5.39.0",
-    "@typescript-eslint/parser": "^5.39.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
     "@vitejs/plugin-vue": "^3.1.2",
     "@vue/test-utils": "^2.1.0",
     "autoprefixer": "^10.4.12",
@@ -45,8 +45,8 @@
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-prism": "^2.3.0",
     "ohmyfetch": "^0.4.19",
-    "pnpm": "^7.13.3",
-    "postcss": "^8.4.17",
+    "pnpm": "^7.13.4",
+    "postcss": "^8.4.18",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "prismjs": "^1.29.0",
@@ -63,7 +63,7 @@
     "vite-ssg": "^0.21.1",
     "vite-ssg-sitemap": "^0.4.3",
     "vitest": "^0.23.4",
-    "vue-tsc": "^1.0.3"
+    "vue-tsc": "^1.0.6"
   },
   "pnpm": {
     "peerDependencyRules": {
