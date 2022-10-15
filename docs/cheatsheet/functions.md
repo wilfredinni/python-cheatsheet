@@ -90,7 +90,7 @@ global_variable = 'I am available everywhere'
 ...     local_variable = "only available within this function"
 ...     print(local_variable)
 ...
->>> # the following code will trow error because
+>>> # the following code will throw error because
 >>> # 'local_variable' only exists inside 'some_function'
 >>> print(local_variable)
 Traceback (most recent call last):
