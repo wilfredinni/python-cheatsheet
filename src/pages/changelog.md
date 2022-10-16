@@ -11,7 +11,9 @@ updated: July 19, 2022
 
 </base-title>
 
-## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next)
+<!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
+
+## 2022-10-16
 
 - Fixed _Algolia docsearch_ weir behavior when clicking on a result ([#133](https://github.com/wilfredinni/python-cheatsheet/pull/133))
 - Added a _share button_ to every `h1` tag that only shows on haver ([#134](https://github.com/wilfredinni/python-cheatsheet/pull/134))
