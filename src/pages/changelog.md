@@ -15,8 +15,9 @@ updated: July 19, 2022
 
 ## 2022-10-16
 
+- Fixed typo errors.
 - Fixed _Algolia docsearch_ weir behavior when clicking on a result ([#133](https://github.com/wilfredinni/python-cheatsheet/pull/133))
-- Added a _share button_ to every `h1` tag that only shows on haver ([#134](https://github.com/wilfredinni/python-cheatsheet/pull/134))
+- Added a _share button_ to every `h1` tag that only shows on hover ([#134](https://github.com/wilfredinni/python-cheatsheet/pull/134))
 
 ## 2022-10-02
 
