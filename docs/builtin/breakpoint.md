@@ -15,9 +15,26 @@ description: This function drops you into the debugger at the call site. Specifi
   </base-disclaimer-title>
   <base-disclaimer-content>
     This function drops you into the debugger at the call site [...].
+    <br/>
+    Python breakpoint() calls Python debugger at a given line 
   </base-disclaimer-content>
+  
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+```
+# Create a loop over 5 integers
+for i in range(5):
+    # Stream i to stdout
+    print(i)
+    # Create breakpoint at # 3
+    if i == 3:
+        breakpoint()
+#Output
+0
+1
+2
+3
+> c:\users\user\path\to\your\project\example.py(24)<module>()
+-> for i in range(5):
+(Pdb)
+```
