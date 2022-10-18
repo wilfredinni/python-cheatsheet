@@ -214,6 +214,7 @@
     "useSessionStorage": true,
     "useShare": true,
     "useSlots": true,
+    "useSorted": true,
     "useSpeechRecognition": true,
     "useSpeechSynthesis": true,
     "useStepper": true,
