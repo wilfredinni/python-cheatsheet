@@ -75,6 +75,7 @@
     "refThrottled": true,
     "refWithControl": true,
     "resolveComponent": true,
+    "resolveDirective": true,
     "resolveRef": true,
     "resolveUnref": true,
     "shallowReactive": true,
