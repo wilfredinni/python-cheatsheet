@@ -13,6 +13,11 @@ updated: July 19, 2022
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
+## 2022-10-31
+
+- Fixed formatting for `breakpoint` and `aiter` builtin functions ([#138](https://github.com/wilfredinni/python-cheatsheet/pull/138))
+- Fixed a nasty bug related to Carbon that could eventually lead to quite the performance issues ([#139](https://github.com/wilfredinni/python-cheatsheet/pull/139))
+
 ## 2022-10-16
 
 - Fixed typo errors.
