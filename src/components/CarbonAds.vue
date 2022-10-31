@@ -3,6 +3,11 @@ const container = ref()
 
 const placeholder = ref(false)
 const init = () => {
+  const carbonScript = document.getElementById('_carbonads_projs')
+  if (carbonScript) {
+    carbonScript.remove()
+  }
+
   placeholder.value = true
   const serve = import.meta.env.VITE_CARBON_SERVE
   const placement = import.meta.env.VITE_CARBON_PLACEMENT
