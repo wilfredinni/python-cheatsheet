@@ -35,11 +35,11 @@ description: If your are using Python 3.6+, string f-strings are the recommended
 # "Hello Pete"
 ```
 
-We can use the `%x` format specifier to convert an int value to a string:
+We can use the `%d` format specifier to convert an int value to a string:
 
 ```python
 >>> num = 5
->>> 'I have %x apples' % num
+>>> 'I have %d apples' % num
 # "I have 5 apples"
 ```
 
