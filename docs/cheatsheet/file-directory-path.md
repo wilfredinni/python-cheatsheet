@@ -9,7 +9,7 @@ description: There are two main modules in Python that deals with path manipulat
 
 </base-title>
 
-There are two main modules in Python that deals with path manipulation.
+There are two main modules in Python that deal with path manipulation.
 One is the `os.path` module and the other is the `pathlib` module.
 
 <base-disclaimer>
