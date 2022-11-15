@@ -13,7 +13,7 @@ updated: July 19, 2022
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
-## 2022-10-31
+## 2022-11-14
 
 - Added <router-link to='/cheatsheet/string-formatting#formatted-string-literals-or-f-strings'>f-Strings</router-link> debugging and formatting options.
 - Fixed several typos thanks to [@SalvoTr](https://github.com/SalvoTr), [@jkornijchuk](https://github.com/jkornijchuk) and [@Gaurav-jo1](https://github.com/Gaurav-jo1).
