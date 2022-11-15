@@ -15,6 +15,11 @@ updated: July 19, 2022
 
 ## 2022-10-31
 
+- Added <router-link to='/cheatsheet/string-formatting#formatted-string-literals-or-f-strings'>f-Strings</router-link> debugging and formatting options.
+- Fixed several typos thanks to [@SalvoTr](https://github.com/SalvoTr), [@jkornijchuk](https://github.com/jkornijchuk) and [@Gaurav-jo1](https://github.com/Gaurav-jo1).
+
+## 2022-10-31
+
 - Fixed formatting for `breakpoint` and `aiter` builtin functions ([#138](https://github.com/wilfredinni/python-cheatsheet/pull/138))
 - Fixed a nasty bug related to Carbon that could eventually lead to quite the performance issues ([#139](https://github.com/wilfredinni/python-cheatsheet/pull/139))
 

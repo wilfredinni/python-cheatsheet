@@ -58,9 +58,9 @@ Python 3 introduced a new way to do string formatting that was later back-ported
 # "Hello I'm John, my age is 20"
 ```
 
-## Formatted String Literals or f-strings
+## Formatted String Literals or f-Strings
 
-If your are using Python 3.6+, string `f-strings` are the recommended way to format strings.
+If your are using Python 3.6+, string `f-Strings` are the recommended way to format strings.
 
 <base-disclaimer>
   <base-disclaimer-title>
@@ -84,6 +84,42 @@ It is even possible to do inline arithmetic with it:
 >>> b = 10
 >>> f'Five plus ten is {a + b} and not {2 * (a + b)}.'
 # 'Five plus ten is 15 and not 30.'
+```
+
+### Multiline f-Strings
+
+```python
+>>> name = 'Robert'
+>>> messages = 12
+>>> (
+... f'Hi, {name}. '
+... f'You have {messages} unread messages'
+... )
+# 'Hi, Robert. You have 12 unread messages'
+```
+
+### The `=` specifier
+
+This will print the expression and its value:
+
+```python
+>>> from datetime import datetime
+>>> now = datetime.now().strftime("%b/%d/%Y - %H:%M:%S")
+>>> f'date and time: {now=}'
+# "date and time: now='Nov/14/2022 - 20:50:01'"
+```
+
+### Adding spaces or characters
+
+```python
+>>> f"{name.upper() = :-^20}"
+# 'name.upper() = -------ROBERT-------'
+>>>
+>>> f"{name.upper() = :^20}"
+# 'name.upper() =        ROBERT       '
+>>>
+>>> f"{name.upper() = :20}"
+# 'name.upper() = ROBERT              '
 ```
 
 ## Formatting Digits
