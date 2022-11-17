@@ -29,7 +29,7 @@ const showBanner = useLocalStorage(keyName.value, true)
   </base-banner>
   -->
   <div v-if="!reader.isActive && showBanner" class="dark:bg-gray-900">
-    <div class="relative bg-sky-400/10">
+    <div class="bg-sky-400/10">
       <div class="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
         <div class="pr-16 sm:px-16 sm:text-center">
           <p class="text-sm font-medium text-sky-600 dark:text-sky-400">
