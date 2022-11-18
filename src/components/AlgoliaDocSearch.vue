@@ -1,4 +1,3 @@
-a
 <script setup lang="ts">
 import docsearch from '@docsearch/js'
 
