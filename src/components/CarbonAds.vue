@@ -4,9 +4,7 @@ const container = ref()
 const placeholder = ref(false)
 const init = () => {
   const carbonScript = document.getElementById('_carbonads_projs')
-  if (carbonScript) {
-    carbonScript.remove()
-  }
+  if (carbonScript) carbonScript.remove()
 
   placeholder.value = true
   const serve = import.meta.env.VITE_CARBON_SERVE
@@ -26,9 +24,7 @@ const debouncedFn = useDebounceFn(() => {
 const loadCarbon = import.meta.env.VITE_LOAD_CARBON || false
 
 onMounted(() => {
-  if (loadCarbon === 'true') {
-    init()
-  }
+  if (loadCarbon === 'true') init()
 })
 </script>
 
