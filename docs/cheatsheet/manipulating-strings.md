@@ -131,19 +131,20 @@ Raw strings are mostly used for <router-link to="/cheatsheet/regular-expressions
 # False
 ```
 
-## upper() and lower() methods
+## upper(), lower() and title()
 
-Transforms a string to upper and lower case:
+Transforms a string to upper, lower and title case:
 
 ```python
 >>> greet = 'Hello world!'
->>> greet = greet.upper()
->>> greet
+>>> greet.upper()
 # 'HELLO WORLD!'
 
->>> greet = greet.lower()
->>> greet
+>>> greet.lower()
 # 'hello world!'
+
+>>> greet.title()
+# 'Hello World!'
 ```
 
 ## isupper() and islower() methods
