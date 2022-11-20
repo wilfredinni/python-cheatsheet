@@ -14,6 +14,7 @@ Changelog
 ## 2022-11-20
 
 - Added `Dictionary` clarification on `keys`. Thanks [Yaya9256](https://github.com/Yaya9256) ([#149](https://github.com/wilfredinni/python-cheatsheet/pull/149)).
+- Added `title` method on `Manipulating strings`. Thanks [elp3dr0](https://github.com/elp3dr0) ([2556a0c](https://github.com/wilfredinni/python-cheatsheet/commit/2556a0c849b03353dcaeb4e0a16d77dc6ef978b7)).
 - Updated the `changelog` TOC to show only the last 13 updates ([c0f45c3](https://github.com/wilfredinni/python-cheatsheet/commit/ff71cf367bb8ce65ed722094325bad2bc2d56eb9)).
 
 ## 2022-11-14
