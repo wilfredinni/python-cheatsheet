@@ -14,7 +14,6 @@ const pageToc = computed(() => {
       shorterToc.push(cutIndex)
       return shorterToc
     }
-
     return theToc.value
   }
   return theToc.value
@@ -50,6 +49,6 @@ const pageToc = computed(() => {
       </ul>
     </div>
 
-    <carbon-ads v-if="!reload" class="bottom-0" />
+    <carbon-ads v-if="!reload" />
   </nav>
 </template>
