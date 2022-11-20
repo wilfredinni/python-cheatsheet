@@ -6,17 +6,19 @@ updated: July 19, 2022
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Changelog
-
+Changelog
 </base-title>
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
+## 2022-11-20
+
+- Added `Dictionary` clarification on `keys`. Thanks [Yaya9256](https://github.com/Yaya9256) ([#149](https://github.com/wilfredinni/python-cheatsheet/pull/149)).
+
 ## 2022-11-14
 
 - Added <router-link to='/cheatsheet/string-formatting#formatted-string-literals-or-f-strings'>f-Strings</router-link> debugging and formatting options.
-- Fixed several typos thanks to [@SalvoTr](https://github.com/SalvoTr), [@jkornijchuk](https://github.com/jkornijchuk) and [@Gaurav-jo1](https://github.com/Gaurav-jo1).
+- Fixed several typos. Thanks [@SalvoTr](https://github.com/SalvoTr), [@jkornijchuk](https://github.com/jkornijchuk) and [@Gaurav-jo1](https://github.com/Gaurav-jo1).
 
 ## 2022-10-31
 
