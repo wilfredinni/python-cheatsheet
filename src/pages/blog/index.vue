@@ -50,6 +50,7 @@ const articles = computed(() => {
       <div class="flex max-w-3xl flex-col space-y-16">
         <article
           v-for="article in articles"
+          v-once
           :key="article.path"
           class="md:grid md:grid-cols-4 md:items-baseline"
         >

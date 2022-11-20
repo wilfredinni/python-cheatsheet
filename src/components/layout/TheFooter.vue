@@ -58,6 +58,7 @@ const routesWithoutGithub = ['index', 'blog']
 
         <div
           v-for="link in footerLinks"
+          v-once
           :key="link.url"
           class="flex items-center text-slate-600 dark:text-slate-400"
         >

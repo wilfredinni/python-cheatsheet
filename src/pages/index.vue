@@ -79,6 +79,7 @@ const smAndLarger = breakpoints.greater('sm')
     <div className="not-prose my-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
       <base-link-card
         v-for="link in cardLinks"
+        v-once
         :key="link.path"
         :title="link.name"
         :description="link.description"

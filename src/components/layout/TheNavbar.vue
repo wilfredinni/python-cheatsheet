@@ -44,8 +44,9 @@ const route = useRoute()
           <div
             class="hidden border-r border-slate-200 pr-6 dark:border-slate-800 sm:ml-6 sm:space-x-6 lg:flex"
           >
-            <template
+            <div
               v-for="item in navigation.navbarNavigation"
+              v-once
               :key="item.name"
             >
               <router-link
@@ -63,13 +64,14 @@ const route = useRoute()
 
               <a
                 v-else
+                v-once
                 :href="item.path"
                 target="_blank"
                 class="inline-flex items-center px-1 pt-1 text-sm font-medium text-slate-700 transition duration-300 hover:text-sky-500 dark:text-gray-200 dark:hover:text-sky-400"
               >
                 {{ item.name }}
               </a>
-            </template>
+            </div>
             <a
               href="https://smartlnks.com/QhT3f"
               target="_blank"

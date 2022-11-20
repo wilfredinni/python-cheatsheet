@@ -8,6 +8,7 @@ import { contributors } from '../../contributors/contributors'
   >
     <a
       v-for="{ name, avatar, repository } of contributors"
+      v-once
       :key="name"
       :href="repository"
       rel="noopener noreferrer"
