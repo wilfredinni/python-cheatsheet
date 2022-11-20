@@ -36,6 +36,7 @@ declare module '@vue/runtime-core' {
     EmptySection: typeof import('./components/EmptySection.vue')['default']
     GithubIcon: typeof import('./components/icons/GithubIcon.vue')['default']
     GridIcon: typeof import('./components/icons/GridIcon.vue')['default']
+    Kinsta: typeof import('./components/sponsors/kinsta.vue')['default']
     LightBulbIcon: typeof import('./components/icons/LightBulbIcon.vue')['default']
     NetlifyBadge: typeof import('./components/NetlifyBadge.vue')['default']
     PluginIcon: typeof import('./components/icons/PluginIcon.vue')['default']
