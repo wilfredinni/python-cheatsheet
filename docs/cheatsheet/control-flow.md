@@ -4,9 +4,7 @@ description: Control flow is the order in which individual statements, instructi
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python Control Flow
-
+Python Control Flow
 </base-title>
 
 <base-disclaimer>

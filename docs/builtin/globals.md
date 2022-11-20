@@ -4,9 +4,7 @@ description: Return the dictionary implementing the current module namespace. Fo
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python globals() built-in function
-
+Python globals() built-in function
 </base-title>
 
 <base-disclaimer>

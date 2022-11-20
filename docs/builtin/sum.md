@@ -4,9 +4,7 @@ description: Sums start and the items of an iterable from left to right and retu
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python sum() built-in function
-
+Python sum() built-in function
 </base-title>
 
 <base-disclaimer>

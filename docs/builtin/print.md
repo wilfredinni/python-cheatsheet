@@ -4,9 +4,7 @@ description: Print objects to the text stream file, separated by sep and followe
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python print() built-in function
-
+Python print() built-in function
 </base-title>
 
 <base-disclaimer>

@@ -4,9 +4,7 @@ description: This module provides tools to create, read, write, append, and list
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python Zipfile Module
-
+Python Zipfile Module
 </base-title>
 
 <base-disclaimer>

@@ -4,9 +4,7 @@ description: Open file and return a corresponding file object. If the file canno
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python open() built-in function
-
+Python open() built-in function
 </base-title>
 
 <base-disclaimer>

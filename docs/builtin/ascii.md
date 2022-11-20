@@ -4,9 +4,7 @@ description: As repr(), return a string containing a printable representation of
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python ascii() built-in function
-
+Python ascii() built-in function
 </base-title>
 
 <base-disclaimer>

@@ -4,9 +4,7 @@ description: Return a “memory view” object created from the given argument. 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python memoryview() built-in function
-
+Python memoryview() built-in function
 </base-title>
 
 <base-disclaimer>

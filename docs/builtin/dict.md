@@ -4,9 +4,7 @@ description: Create a new dictionary. The dict object is the dictionary class. S
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python dict() built-in function
-
+Python dict() built-in function
 </base-title>
 
 <base-disclaimer>

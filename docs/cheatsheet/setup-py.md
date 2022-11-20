@@ -4,9 +4,7 @@ description: The setup script is the centre of all activity in building, distrib
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python setup.py
-
+Python setup.py
 </base-title>
 
 <base-warning>

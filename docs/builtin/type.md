@@ -4,9 +4,7 @@ description: With one argument, return the type of an object. The return value i
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python type() built-in function
-
+Python type() built-in function
 </base-title>
 
 <base-disclaimer>

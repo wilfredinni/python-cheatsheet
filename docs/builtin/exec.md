@@ -4,9 +4,7 @@ description: This function supports dynamic execution of Python code. object mus
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python exec() built-in function
-
+Python exec() built-in function
 </base-title>
 
 <base-disclaimer>

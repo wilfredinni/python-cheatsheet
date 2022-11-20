@@ -4,9 +4,7 @@ description: The itertools module is a collection of tools intended to be fast a
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python Itertools Module
-
+Python Itertools Module
 </base-title>
 
 The _itertools_ module is a collection of tools intended to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).

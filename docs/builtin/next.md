@@ -4,9 +4,7 @@ description: Retrieve the next item from the iterator by calling its __next__() 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python next() built-in function
-
+Python next() built-in function
 </base-title>
 
 <base-disclaimer>

@@ -4,9 +4,7 @@ description: Return a proxy object that delegates method calls to a parent or si
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python super() built-in function
-
+Python super() built-in function
 </base-title>
 
 <base-disclaimer>

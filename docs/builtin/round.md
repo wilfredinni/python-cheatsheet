@@ -4,9 +4,7 @@ description: Return number rounded to ndigits precision after the decimal point.
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python round() built-in function
-
+Python round() built-in function
 </base-title>
 
 <base-disclaimer>

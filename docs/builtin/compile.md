@@ -4,9 +4,7 @@ description: Compile the source into a code or AST object. Code objects can be e
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python compile() built-in function
-
+Python compile() built-in function
 </base-title>
 
 <base-disclaimer>

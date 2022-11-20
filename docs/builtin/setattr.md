@@ -4,9 +4,7 @@ description: This is the counterpart of getattr(). The arguments are an object, 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python setattr() built-in function
-
+Python setattr() built-in function
 </base-title>
 
 <base-disclaimer>

@@ -4,9 +4,7 @@ description: This is a relative of setattr(). The arguments are an object and a 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python delattr() built-in function
-
+Python delattr() built-in function
 </base-title>
 
 <base-disclaimer>

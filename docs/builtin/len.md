@@ -4,9 +4,7 @@ description: Return the length (the number of items) of an object. The argument 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python len() built-in function
-
+Python len() built-in function
 </base-title>
 
 <base-disclaimer>

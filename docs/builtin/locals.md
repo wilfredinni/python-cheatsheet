@@ -4,9 +4,7 @@ description: Update and return a dictionary representing the current local symbo
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python locals() built-in function
-
+Python locals() built-in function
 </base-title>
 
 <base-disclaimer>

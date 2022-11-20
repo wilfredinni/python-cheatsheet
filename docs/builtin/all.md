@@ -4,9 +4,7 @@ description: Return True if all elements of the iterable are true (or if the ite
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python all() built-in function
-
+Python all() built-in function
 </base-title>
 
 <base-disclaimer>

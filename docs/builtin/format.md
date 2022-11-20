@@ -4,9 +4,7 @@ description: Convert a value to a “formatted” representation, as controlled 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python format() built-in function
-
+Python format() built-in function
 </base-title>
 
 <base-disclaimer>

@@ -4,9 +4,7 @@ description: is the name of the scope in which top-level code executes. A module
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Main top-level script environment
-
+Main top-level script environment
 </base-title>
 
 ## What is it

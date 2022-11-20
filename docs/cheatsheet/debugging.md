@@ -4,9 +4,7 @@ description: In computer programming and software development, debugging is the 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python Debugging
-
+Python Debugging
 </base-title>
 
 <base-disclaimer>

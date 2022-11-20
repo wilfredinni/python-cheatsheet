@@ -4,9 +4,7 @@ description: Rather than being a function, tuple is actually an immutable sequen
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python tuple() built-in function
-
+Python tuple() built-in function
 </base-title>
 
 <base-disclaimer>

@@ -4,9 +4,7 @@ description: Iterate over several iterables in parallel, producing tuples with a
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python zip() built-in function
-
+Python zip() built-in function
 </base-title>
 
 <base-disclaimer>

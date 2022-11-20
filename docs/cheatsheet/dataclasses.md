@@ -4,9 +4,7 @@ description: Dataclasses are python classes, but are suited for storing data obj
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python Dataclasses
-
+Python Dataclasses
 </base-title>
 
 `Dataclasses` are python classes, but are suited for storing data objects.

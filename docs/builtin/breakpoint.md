@@ -4,9 +4,7 @@ description: This function drops you into the debugger at the call site. Specifi
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python breakpoint() built-in function
-
+Python breakpoint() built-in function
 </base-title>
 
 <base-disclaimer>

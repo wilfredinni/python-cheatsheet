@@ -4,9 +4,7 @@ description: An escape character is created by typing a backslash \ followed by 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Manipulating Strings
-
+Manipulating Strings
 </base-title>
 
 ## Escape characters

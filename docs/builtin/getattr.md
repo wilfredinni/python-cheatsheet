@@ -4,9 +4,7 @@ description: Return the value of the named attribute of object. name must be a s
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python getattr() built-in function
-
+Python getattr() built-in function
 </base-title>
 
 <base-disclaimer>

@@ -4,9 +4,7 @@ description: Without arguments, return the list of names in the current local sc
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python dir() built-in function
-
+Python dir() built-in function
 </base-title>
 
 <base-disclaimer>

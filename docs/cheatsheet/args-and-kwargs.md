@@ -4,9 +4,7 @@ description: args and kwargs may seem scary, but the truth is that they are not 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python Args and Kwargs
-
+Python Args and Kwargs
 </base-title>
 
 <base-disclaimer>

@@ -4,9 +4,7 @@ description: A “shelf” is a persistent, dictionary-like object. in a shelf c
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python Shelve Module
-
+Python Shelve Module
 </base-title>
 
 <base-disclaimer>

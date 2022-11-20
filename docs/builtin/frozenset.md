@@ -4,9 +4,7 @@ description: Return a new frozenset object, optionally with elements taken from 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python frozenset() built-in function
-
+Python frozenset() built-in function
 </base-title>
 
 <base-disclaimer>

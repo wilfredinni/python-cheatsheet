@@ -4,9 +4,7 @@ description: Return a complex number with the value real + imag*1j or convert a 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python complex() built-in function
-
+Python complex() built-in function
 </base-title>
 
 <base-disclaimer>

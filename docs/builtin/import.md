@@ -4,9 +4,7 @@ description: This function is invoked by the import statement. It can be replace
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python `__import__`() built-in function
-
+Python `__import__` built-in function
 </base-title>
 
 <base-disclaimer>

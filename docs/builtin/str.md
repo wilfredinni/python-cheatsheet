@@ -4,9 +4,7 @@ description: Return a string version of object. If object is not provided, retur
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python str() built-in function
-
+Python str() built-in function
 </base-title>
 
 <base-disclaimer>

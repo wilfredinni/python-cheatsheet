@@ -4,9 +4,7 @@ description: Return an integer object constructed from a number or string x, or 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python int() built-in function
-
+Python int() built-in function
 </base-title>
 
 <base-disclaimer>

@@ -4,9 +4,7 @@ description: Return a floating point number constructed from a number or string 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python float() built-in function
-
+Python float() built-in function
 </base-title>
 
 <base-disclaimer>

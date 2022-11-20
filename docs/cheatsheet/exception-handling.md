@@ -4,9 +4,7 @@ description: In Python, exception handling is the process of responding to the o
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python Exception Handling
-
+Python Exception Handling
 </base-title>
 
 <base-disclaimer>

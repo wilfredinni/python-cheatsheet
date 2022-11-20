@@ -4,9 +4,7 @@ description: Transform a method into a class method. A class method receives the
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python classmethod() built-in function
-
+Python classmethod() built-in function
 </base-title>
 
 <base-disclaimer>

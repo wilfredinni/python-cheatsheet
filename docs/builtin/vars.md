@@ -4,9 +4,7 @@ description: Return the __dict__ attribute for a module, class, instance, or any
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python vars() built-in function
-
+Python vars() built-in function
 </base-title>
 
 <base-disclaimer>

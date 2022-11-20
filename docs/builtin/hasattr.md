@@ -4,9 +4,7 @@ description: The arguments are an object and a string. The result is True if the
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python hasattr() built-in function
-
+Python hasattr() built-in function
 </base-title>
 
 <base-disclaimer>

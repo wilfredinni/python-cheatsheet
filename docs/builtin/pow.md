@@ -4,9 +4,7 @@ description: Given a string representing one Unicode character, return an intege
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python pow() built-in function
-
+Python pow() built-in function
 </base-title>
 
 <base-disclaimer>

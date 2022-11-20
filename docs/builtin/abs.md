@@ -4,9 +4,7 @@ description: Return the absolute value of a number. The argument may be an integ
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python abs() built-in function
-
+Python abs() built-in function
 </base-title>
 
 <base-disclaimer>

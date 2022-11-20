@@ -4,9 +4,7 @@ description: If the prompt argument is present, it is written to standard output
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python input() built-in function
-
+Python input() built-in function
 </base-title>
 
 <base-disclaimer>

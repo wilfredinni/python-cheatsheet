@@ -4,9 +4,7 @@ description: Return the string representing a character whose Unicode code point
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python chr() built-in function
-
+Python chr() built-in function
 </base-title>
 
 <base-disclaimer>

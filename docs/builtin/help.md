@@ -4,9 +4,7 @@ description: Invoke the built-in help system. (This function is intended for int
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python help() built-in function
-
+Python help() built-in function
 </base-title>
 
 <base-disclaimer>

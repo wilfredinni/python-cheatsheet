@@ -4,9 +4,7 @@ description: Return a new sorted list from the items in iterable.
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python sorted() built-in function
-
+Python sorted() built-in function
 </base-title>
 
 <base-disclaimer>

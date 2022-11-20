@@ -4,9 +4,7 @@ description: Construct an iterator from those elements of iterable for which fun
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python filter() built-in function
-
+Python filter() built-in function
 </base-title>
 
 <base-disclaimer>

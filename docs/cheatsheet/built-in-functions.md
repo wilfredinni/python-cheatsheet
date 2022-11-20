@@ -4,9 +4,7 @@ description: The Python interpreter has a number of functions and types built in
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python Built-in Functions
-
+Python Built-in Functions
 </base-title>
 
 The Python interpreter has a number of functions and types built into it that are always available.

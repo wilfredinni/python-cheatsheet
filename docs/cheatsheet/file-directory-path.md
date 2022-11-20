@@ -4,9 +4,7 @@ description: There are two main modules in Python that deals with path manipulat
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Handling file and directory Paths
-
+Handling file and directory Paths
 </base-title>
 
 There are two main modules in Python that deal with path manipulation.

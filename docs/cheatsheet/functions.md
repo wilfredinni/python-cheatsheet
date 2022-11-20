@@ -4,9 +4,7 @@ description: In Python, A function is a block of organized code that is used to 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python Functions
-
+Python Functions
 </base-title>
 
 <base-disclaimer>

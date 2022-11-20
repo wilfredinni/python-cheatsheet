@@ -4,9 +4,7 @@ description: To read/write to a file in Python, you will want to use the with st
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Reading and Writing Files
-
+Reading and Writing Files
 </base-title>
 
 ## The file Reading/Writing process

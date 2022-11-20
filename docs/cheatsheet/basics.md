@@ -4,9 +4,7 @@ description: The basics of python. We all need to start somewhere, so how about 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python Basics
-
+Python Basics
 </base-title>
 
 We all need to start somewhere, so how about doing it here.

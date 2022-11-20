@@ -4,9 +4,7 @@ description: Return an iterator that applies function to every item of iterable,
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python map() built-in function
-
+Python map() built-in function
 </base-title>
 
 <base-disclaimer>

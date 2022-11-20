@@ -4,9 +4,7 @@ description: Return True if the object argument is an instance of the classinfo 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python isinstance() built-in function
-
+Python isinstance() built-in function
 </base-title>
 
 <base-disclaimer>

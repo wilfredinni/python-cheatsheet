@@ -4,9 +4,7 @@ description: Return a string containing a printable representation of an object.
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python repr() built-in function
-
+Python repr() built-in function
 </base-title>
 
 <base-disclaimer>

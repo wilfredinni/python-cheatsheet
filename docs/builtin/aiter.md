@@ -4,9 +4,7 @@ description: Return an asynchronous iterator for an asynchronous iterable. Equiv
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python aiter() built-in function
-
+Python aiter() built-in function
 </base-title>
 
 <base-disclaimer>

@@ -4,9 +4,7 @@ description: Return an enumerate object. iterable must be a sequence, an iterato
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python enumerate() built-in function
-
+Python enumerate() built-in function
 </base-title>
 
 <base-disclaimer>

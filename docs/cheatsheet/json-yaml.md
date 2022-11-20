@@ -4,9 +4,7 @@ description: JSON stands for JavaScript Object Notation and is a lightweight for
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# JSON and YAML
-
+JSON and YAML
 </base-title>
 
 ## JSON

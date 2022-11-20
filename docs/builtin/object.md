@@ -4,9 +4,7 @@ description: Return a new featureless object. object is a base for all classes. 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python object() built-in function
-
+Python object() built-in function
 </base-title>
 
 <base-disclaimer>

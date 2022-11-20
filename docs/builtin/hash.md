@@ -4,9 +4,7 @@ description: Return the hash value of the object (if it has one). Hash values ar
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python hash() built-in function
-
+Python hash() built-in function
 </base-title>
 
 <base-disclaimer>

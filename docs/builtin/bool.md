@@ -4,9 +4,7 @@ description: Return a Boolean value, i.e. one of True or False. x is converted u
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python bool() built-in function
-
+Python bool() built-in function
 </base-title>
 
 <base-disclaimer>

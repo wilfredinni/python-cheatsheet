@@ -4,9 +4,7 @@ description: Return a new “bytes” object which is an immutable sequence of i
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python bytes() built-in function
-
+Python bytes() built-in function
 </base-title>
 
 <base-disclaimer>

@@ -4,9 +4,7 @@ description: Convert an integer number to a lowercase hexadecimal string prefixe
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python hex() built-in function
-
+Python hex() built-in function
 </base-title>
 
 <base-disclaimer>

@@ -4,9 +4,7 @@ description: Return a new set object, optionally with elements taken from iterab
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python set() built-in function
-
+Python set() built-in function
 </base-title>
 
 <base-disclaimer>

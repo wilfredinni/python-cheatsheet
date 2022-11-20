@@ -4,9 +4,7 @@ description: Return a reverse iterator. seq must be an object which has a __reve
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python reversed() built-in function
-
+Python reversed() built-in function
 </base-title>
 
 <base-disclaimer>

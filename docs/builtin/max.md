@@ -4,9 +4,7 @@ description: Return the largest item in an iterable or the largest of two or mor
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python max() built-in function
-
+Python max() built-in function
 </base-title>
 
 <base-disclaimer>

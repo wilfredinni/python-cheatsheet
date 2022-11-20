@@ -4,9 +4,7 @@ description: Take two (non-complex) numbers as arguments and return a pair of nu
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python divmod() built-in function
-
+Python divmod() built-in function
 </base-title>
 
 <base-disclaimer>

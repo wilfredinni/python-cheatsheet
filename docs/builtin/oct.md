@@ -4,9 +4,7 @@ description: Convert an integer number to an octal string prefixed with “0o”
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python oct() built-in function
-
+Python oct() built-in function
 </base-title>
 
 <base-disclaimer>

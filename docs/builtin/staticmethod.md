@@ -4,9 +4,7 @@ description: Transform a method into a static method.
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python staticmethod() built-in function
-
+Python staticmethod() built-in function
 </base-title>
 
 <base-disclaimer>

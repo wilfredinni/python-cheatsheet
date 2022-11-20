@@ -4,9 +4,7 @@ description: Return a new array of bytes. The bytearray class is a mutable seque
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python bytearray() built-in function
-
+Python bytearray() built-in function
 </base-title>
 
 <base-disclaimer>

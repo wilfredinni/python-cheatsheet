@@ -4,9 +4,7 @@ description: Return an iterator object. The first argument is interpreted very d
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python iter() built-in function
-
+Python iter() built-in function
 </base-title>
 
 <base-disclaimer>

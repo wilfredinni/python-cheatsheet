@@ -4,9 +4,7 @@ description: Return a slice object representing the set of indices specified by 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python slice() built-in function
-
+Python slice() built-in function
 </base-title>
 
 <base-disclaimer>

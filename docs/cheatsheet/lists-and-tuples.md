@@ -4,9 +4,7 @@ description: In python, Lists are are one of the 4 data types in Python used to 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python Lists
-
+Python Lists
 </base-title>
 
 Lists are one of the 4 data types in Python used to store collections of data.

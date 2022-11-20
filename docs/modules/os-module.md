@@ -4,9 +4,7 @@ description: This module provides a portable way of using operating system depen
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python Os Module
-
+Python Os Module
 </base-title>
 
 This module provides a portable way of using operating system dependent functionality.

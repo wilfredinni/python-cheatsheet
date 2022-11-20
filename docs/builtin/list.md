@@ -4,9 +4,7 @@ description: Rather than being a function, list is actually a mutable sequence t
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python list() built-in function
-
+Python list() built-in function
 </base-title>
 
 <base-disclaimer>

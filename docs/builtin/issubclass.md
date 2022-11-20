@@ -4,9 +4,7 @@ description: Return True if class is a subclass (direct, indirect, or virtual) o
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python issubclass() built-in function
-
+Python issubclass() built-in function
 </base-title>
 
 <base-disclaimer>

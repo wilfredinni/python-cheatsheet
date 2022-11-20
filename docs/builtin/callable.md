@@ -4,9 +4,7 @@ description: Return True if the object argument appears callable, False if not. 
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python callable() built-in function
-
+Python callable() built-in function
 </base-title>
 
 <base-disclaimer>

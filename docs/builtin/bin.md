@@ -4,9 +4,7 @@ description: Convert an integer number to a binary string prefixed with “0b”
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python bin() built-in function
-
+Python bin() built-in function
 </base-title>
 
 <base-disclaimer>

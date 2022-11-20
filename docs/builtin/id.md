@@ -4,9 +4,7 @@ description: Return the “identity” of an object. This is an integer which is
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python id() built-in function
-
+Python id() built-in function
 </base-title>
 
 <base-disclaimer>

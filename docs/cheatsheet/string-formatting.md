@@ -4,9 +4,7 @@ description: If your are using Python 3.6+, string f-strings are the recommended
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python String Formatting
-
+Python String Formatting
 </base-title>
 
 <base-disclaimer>

@@ -4,9 +4,7 @@ description: The random module is a built-in module that allow us to generate ra
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-
-# Python Random Module
-
+Python Random Module
 </base-title>
 
 The [random](https://docs.python.org/3/library/random.html) module is a built-in module that allow us to generate random elements.
