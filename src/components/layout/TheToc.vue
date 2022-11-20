@@ -1,6 +1,24 @@
 <script setup lang="ts">
 const { theToc, currentSection } = useToc()
 const { reload } = useCarbon()
+
+const route = useRoute()
+
+const pageToc = computed(() => {
+  if (route.name === 'changelog') {
+    const cutIndex = { ...theToc?.value[13] }
+
+    if (cutIndex) {
+      const shorterToc = [...theToc.value].slice(0, 13)
+      cutIndex.header = 'More...'
+      shorterToc.push(cutIndex)
+      return shorterToc
+    }
+
+    return theToc.value
+  }
+  return theToc.value
+})
 </script>
 
 <template>
@@ -16,7 +34,7 @@ const { reload } = useCarbon()
       </h3>
 
       <ul class="mt-4 text-sm">
-        <li v-for="item in theToc" :key="item.id">
+        <li v-for="item in pageToc" :key="item.id">
           <a
             :href="`#${item.id}`"
             class="block py-1 font-medium transition duration-200"
@@ -32,6 +50,6 @@ const { reload } = useCarbon()
       </ul>
     </div>
 
-    <carbon-ads v-if="!reload" class="mt-4" />
+    <carbon-ads v-if="!reload" class="bottom-0" />
   </nav>
 </template>
