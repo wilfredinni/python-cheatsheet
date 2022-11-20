@@ -55,7 +55,9 @@ The `keys()` method gets the **keys** of the dictionary:
 # color
 # age
 ```
-there is no need to use **.keys()** since by default you will loop through keys:
+
+There is no need to use **.keys()** since by default you will loop through keys:
+
 ```python
 >>> pet = {'color': 'red', 'age': 42}
 >>> for key in pet:
@@ -64,7 +66,6 @@ there is no need to use **.keys()** since by default you will loop through keys:
 # color
 # age
 ```
-
 
 ## items()
 
