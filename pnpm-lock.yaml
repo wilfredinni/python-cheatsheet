@@ -20,7 +20,7 @@ specifiers:
   autoprefixer: ^10.4.13
   eslint: ^8.28.0
   eslint-config-prettier: ^8.5.0
-  eslint-plugin-vue: ^9.7.0
+  eslint-plugin-vue: ^9.8.0
   esno: ^0.16.3
   fs-extra: ^10.1.0
   happy-dom: ^5.4.0
@@ -29,10 +29,10 @@ specifiers:
   markdown-it-link-attributes: ^4.0.1
   markdown-it-prism: ^2.3.0
   ohmyfetch: ^0.4.21
-  pinia: ^2.0.25
+  pinia: ^2.0.26
   pnpm: ^7.17.0
   postcss: ^8.4.19
-  prettier: ^2.7.1
+  prettier: ^2.8.0
   prettier-plugin-tailwindcss: ^0.1.13
   prism-theme-vars: ^0.2.4
   prismjs: ^1.29.0
@@ -59,7 +59,7 @@ dependencies:
   '@headlessui/vue': 1.7.4_vue@3.2.45
   '@vueuse/core': 9.6.0_vue@3.2.45
   '@vueuse/head': 0.9.8_vue@3.2.45
-  pinia: 2.0.25_mgnvym7yiazkylwwogi5r767ue
+  pinia: 2.0.26_mgnvym7yiazkylwwogi5r767ue
   prism-theme-vars: 0.2.4
   vue: 3.2.45
   vue-gtag: 2.0.1_vue@3.2.45
@@ -81,7 +81,7 @@ devDependencies:
   autoprefixer: 10.4.13_postcss@8.4.19
   eslint: 8.28.0
   eslint-config-prettier: 8.5.0_eslint@8.28.0
-  eslint-plugin-vue: 9.7.0_eslint@8.28.0
+  eslint-plugin-vue: 9.8.0_eslint@8.28.0
   esno: 0.16.3
   fs-extra: 10.1.0
   happy-dom: 5.4.0
@@ -92,8 +92,8 @@ devDependencies:
   ohmyfetch: 0.4.21
   pnpm: 7.17.0
   postcss: 8.4.19
-  prettier: 2.7.1
-  prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
+  prettier: 2.8.0
+  prettier-plugin-tailwindcss: 0.1.13_prettier@2.8.0
   prismjs: 1.29.0
   string: 3.3.3
   tailwindcss: 3.2.4_postcss@8.4.19
@@ -1438,8 +1438,8 @@ packages:
       source-map-support: 0.5.21
     dev: true
 
-  /@esbuild-kit/esm-loader/2.5.0:
-    resolution: {integrity: sha512-ySs0qOsiwj+hsgZM9/MniGdvfa9/WzqfFuIia8/5gSUPeIQIX2/tG91QakxPFOR35VFiwTB7wCiHtiS6dc6SkA==}
+  /@esbuild-kit/esm-loader/2.5.1:
+    resolution: {integrity: sha512-UfG/KLaNGR48+C9e8cDrRowhN9u+d/aCKpnA3E3Zyevup76fIpKmzm8DWeNG40CbEN8ZN8HaEs+o63pRQrZ+Fw==}
     dependencies:
       '@esbuild-kit/core-utils': 3.0.0
       get-tsconfig: 4.2.0
@@ -3088,8 +3088,8 @@ packages:
       eslint: 8.28.0
     dev: true
 
-  /eslint-plugin-vue/9.7.0_eslint@8.28.0:
-    resolution: {integrity: sha512-DrOO3WZCZEwcLsnd3ohFwqCoipGRSTKTBTnLwdhqAbYZtzWl0o7D+D8ZhlmiZvABKTEl8AFsqH1GHGdybyoQmw==}
+  /eslint-plugin-vue/9.8.0_eslint@8.28.0:
+    resolution: {integrity: sha512-E/AXwcTzunyzM83C2QqDHxepMzvI2y6x+mmeYHbVDQlKFqmKYvRrhaVixEeeG27uI44p9oKDFiyCRw4XxgtfHA==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
@@ -4454,8 +4454,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /pinia/2.0.25_mgnvym7yiazkylwwogi5r767ue:
-    resolution: {integrity: sha512-3reAkjJ6bW2D5hZKRMS0c9rUbHVlsVyZd037xO0PJr2AuF/09RRSBnFLlJgmHF4Jx6dEoW/jZBOHTushY7IMlw==}
+  /pinia/2.0.26_mgnvym7yiazkylwwogi5r767ue:
+    resolution: {integrity: sha512-tSxZNUcMGxQOvKZRjPKXxd2+/2NZhRF/CoYVE/+K6uE/Z3v1Oi4fcQFpxu5nMB1dCchjXUZ+lz0tBxV5ntwmQQ==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
@@ -4577,17 +4577,17 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-tailwindcss/0.1.13_prettier@2.7.1:
+  /prettier-plugin-tailwindcss/0.1.13_prettier@2.8.0:
     resolution: {integrity: sha512-/EKQURUrxLu66CMUg4+1LwGdxnz8of7IDvrSLqEtDqhLH61SAlNNUSr90UTvZaemujgl3OH/VHg+fyGltrNixw==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
       prettier: '>=2.2.0'
     dependencies:
-      prettier: 2.7.1
+      prettier: 2.8.0
     dev: true
 
-  /prettier/2.7.1:
-    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+  /prettier/2.8.0:
+    resolution: {integrity: sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
@@ -4793,7 +4793,7 @@ packages:
       jest-worker: 26.6.2
       rollup: 2.79.1
       serialize-javascript: 4.0.0
-      terser: 5.15.1
+      terser: 5.16.0
     dev: true
 
   /rollup/2.79.1:
@@ -5105,8 +5105,8 @@ packages:
       unique-string: 2.0.0
     dev: true
 
-  /terser/5.15.1:
-    resolution: {integrity: sha512-K1faMUvpm/FBxjBXud0LWVAGxmvoPbZbfTCYbSgaaYQaIXI3/TdI7a7ZGA73Zrou6Q8Zmz3oeUTsp/dj+ag2Xw==}
+  /terser/5.16.0:
+    resolution: {integrity: sha512-KjTV81QKStSfwbNiwlBXfcgMcOloyuRdb62/iLFPGBcVNF4EXjhdYBhYHmbJpiBrVxZhDvltE11j+LBQUxEEJg==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -5213,7 +5213,7 @@ packages:
     dependencies:
       '@esbuild-kit/cjs-loader': 2.4.1
       '@esbuild-kit/core-utils': 3.0.0
-      '@esbuild-kit/esm-loader': 2.5.0
+      '@esbuild-kit/esm-loader': 2.5.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -5539,7 +5539,7 @@ packages:
       html5parser: 2.0.2
       jsdom: 20.0.3
       kolorist: 1.6.0
-      prettier: 2.7.1
+      prettier: 2.8.0
       vite: 3.2.4_@types+node@18.8.0
       vue: 3.2.45
       vue-router: 4.1.6_vue@3.2.45
