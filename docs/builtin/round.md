@@ -27,6 +27,8 @@ Python round() built-in function
 # 2
 >>> round(2.9)
 # 3
+>>> round(2/3, ndigits=3)
+# 0.667
 ```
 
 <!-- remove this tag to start editing this page -->
