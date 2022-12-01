@@ -48,7 +48,7 @@ And this is how we do the same with a List Comprehension:
 We can do the same with numbers:
 
 ```python
->>> n = [(a, b) for a in range (1, 3) for b in range(1, 3)]
+>>> n = [(a, b) for a in range(1, 3) for b in range(1, 3)]
 >>> n
 # [(1, 1), (1, 2), (2, 1), (2, 2)]
 ```
