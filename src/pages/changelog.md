@@ -11,10 +11,14 @@ Changelog
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
+## 2022-12-01
+
+- Added **List Comprehension** with `range` example. Thanks [@nugel](https://github.com/nugel) ([#152](https://github.com/wilfredinni/python-cheatsheet/pull/152))
+
 ## 2022-11-28
 
-- Added `round` method example. Thanks [thacer13](https://github.com/thacer13) ([#151](https://github.com/wilfredinni/python-cheatsheet/pull/151))
-- Fixed `List` vs `Tuple` broken link. Thanks [nugel](https://github.com/nugel) ([#150](https://github.com/wilfredinni/python-cheatsheet/pull/150))
+- Added `round` method example. Thanks [@thacer13](https://github.com/thacer13) ([#151](https://github.com/wilfredinni/python-cheatsheet/pull/151))
+- Fixed `List` vs `Tuple` broken link. Thanks [@nugel](https://github.com/nugel) ([#150](https://github.com/wilfredinni/python-cheatsheet/pull/150))
 
 ## 2022-11-20
 
