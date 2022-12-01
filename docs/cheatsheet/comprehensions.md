@@ -45,6 +45,14 @@ And this is how we do the same with a List Comprehension:
 # ['Charles', 'Susan', 'Patrick', 'George']
 ```
 
+We can do the same with numbers:
+
+```python
+>>> n = [(a, b) for a in range (1, 3) for b in range(1, 3)]
+>>> n
+# [(1, 1), (1, 2), (2, 1), (2, 2)]
+```
+
 ## Adding conditionals
 
 If we want `new_list` to have only the names that start with C, with a for loop, we would do it like this:
