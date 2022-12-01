@@ -63,7 +63,7 @@
     "vite-ssg": "^0.21.2",
     "vite-ssg-sitemap": "^0.4.3",
     "vitest": "^0.24.5",
-    "vue-tsc": "^1.0.9"
+    "vue-tsc": "^1.0.10"
   },
   "pnpm": {
     "peerDependencyRules": {
