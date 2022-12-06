@@ -73,7 +73,7 @@ const route = useRoute()
               </a>
             </div>
             <a
-              href="https://smartlnks.com/QhT3f"
+              href="https://ggt.ink/Q5HjIVK"
               target="_blank"
               class="inline-flex items-center px-1 pt-1 text-sm font-medium text-slate-700 transition duration-300 hover:text-sky-500 dark:text-gray-200 dark:hover:text-sky-400"
             >
