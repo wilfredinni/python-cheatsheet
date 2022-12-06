@@ -47,8 +47,8 @@ const showNewsletterForm = useLocalStorage('showNewsletterForm', true)
     <prose>
       <p class="text-center text-slate-700 dark:text-slate-400 sm:text-start">
         A two times a month and bullshit free
-        <a href="https://pythoncheatsheet.curated.co/">publication</a>, full of
-        interesting, relevant links.
+        <a href="	https://ggt.ink/PoVKNkO">publication</a>, full of interesting,
+        relevant links.
       </p>
     </prose>
 
