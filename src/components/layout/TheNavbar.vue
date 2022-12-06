@@ -27,7 +27,7 @@ const route = useRoute()
 
           <algolia-doc-search />
 
-          <a href="https://news.pythoncheatsheet.org/">
+          <a href="https://ggt.ink/PoVKNkO">
             <base-badge class="hidden lg:flex">
               <span class="hidden xl:flex">
                 ✨ Read the latest Python Cheatsheet Issue!
@@ -84,10 +84,7 @@ const route = useRoute()
           </div>
 
           <base-theme-toggle />
-          <a
-            target="_blank"
-            href="https://github.com/wilfredinni/python-cheatsheet/tree/master"
-          >
+          <a target="_blank" href="https://ggt.ink/vf7kKkS">
             <github-icon />
             <span class="sr-only">python cheatsheet repository</span>
           </a>

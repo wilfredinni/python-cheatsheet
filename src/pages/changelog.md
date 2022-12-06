@@ -75,7 +75,7 @@ Changelog
 
 ### Website
 
-- Launched Python Cheatsheet [newsletter](https://news.pythoncheatsheet.org/) 🎉
+- Launched Python Cheatsheet [newsletter](https://ggt.ink/PoVKNkO) 🎉
 - Added a newsletter subscription form component.
 
 ### Cheatsheet

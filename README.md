@@ -5,8 +5,8 @@
 <h1 align="center">Python Cheatsheet</h1>
 
 <div align="center">
-<a href="https://www.pythoncheatsheet.org/">pythoncheatsheet.org</a> |
-<a href="https://news.pythoncheatsheet.org/">Newsletter</a> |
+<a href="https://ggt.ink/ezMxYFe">pythoncheatsheet.org</a> |
+<a href="https://ggt.ink/PoVKNkO">Newsletter</a> |
 <a href="https://github.com/wilfredinni/python-cheatsheet/blob/next/src/pages/contributing.md">Contribute</a> |
 <a href="https://github.com/wilfredinni/python-cheatsheet/blob/next/src/pages/changelog.md">Changelog</a>
 </div>

@@ -43,10 +43,7 @@ const showBanner = useLocalStorage(keyName.value, true)
             </span>
             <span class="block sm:ml-2 sm:inline-block">
               <slot name="action">
-                <a
-                  href="https://news.pythoncheatsheet.org/"
-                  class="font-bold underline"
-                >
+                <a href="https://ggt.ink/PoVKNkO" class="font-bold underline">
                   Read Issue
                   <span aria-hidden="true"> &rarr;</span>
                 </a>

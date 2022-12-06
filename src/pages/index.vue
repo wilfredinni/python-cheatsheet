@@ -7,7 +7,7 @@ import GridIcon from '~/components/icons/GridIcon.vue'
 
 const cardLinks = [
   {
-    path: 'https://github.com/wilfredinni/python-cheatsheet',
+    path: 'https://ggt.ink/vf7kKkS',
     name: 'View on GitHub',
     description: `Drop a star on GitHub if you find this project useful.`,
     icon: ArrowIcon,
