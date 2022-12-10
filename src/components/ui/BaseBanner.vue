@@ -28,35 +28,27 @@ const showBanner = useLocalStorage(keyName.value, true)
     </template>
   </base-banner>
   -->
-  <div v-if="!reader.isActive && showBanner" class="dark:bg-gray-900">
-    <div class="bg-sky-400/10">
-      <div class="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
-        <div class="pr-16 sm:px-16 sm:text-center">
+  <div v-if="!reader.isActive && showBanner">
+    <div class="kinsta-background">
+      <div class="mx-auto max-w-7xl py-3 px-3 sm:px-6 md:px-0 lg:px-8">
+        <div class="sm:px-16 sm:text-center">
           <p class="text-sm font-medium text-sky-600 dark:text-sky-400">
-            <span class="md:hidden">
+            <span class="flex items-center text-white md:hidden">
               <slot name="shortMsg">We announced a new product!</slot>
             </span>
-            <span class="hidden md:inline">
+            <span class="md hidden items-center md:flex md:justify-between">
               <slot name="message">
                 Big news! We're excited to announce a brand new product.
-              </slot>
-            </span>
-            <span class="block sm:ml-2 sm:inline-block">
-              <slot name="action">
-                <a href="https://ggt.ink/PoVKNkO" class="font-bold underline">
-                  Read Issue
-                  <span aria-hidden="true"> &rarr;</span>
-                </a>
               </slot>
             </span>
           </p>
         </div>
         <div
-          class="absolute inset-y-0 right-0 flex items-start pt-1 pr-1 sm:pt-1.5 sm:pr-2"
+          class="absolute inset-y-0 right-0 items-start pt-1 pr-1 sm:pt-1.5 sm:pr-2"
         >
           <button
             type="button"
-            class="flex rounded-md p-2 text-sky-600 transition duration-300 focus:outline-none dark:text-sky-400 dark:hover:text-sky-500"
+            class="rounded-md p-2 text-white transition duration-300 focus:outline-none dark:hover:text-slate-300"
             @click="showBanner = false"
           >
             <span class="sr-only">Dismiss</span>
@@ -80,3 +72,9 @@ const showBanner = useLocalStorage(keyName.value, true)
     </div>
   </div>
 </template>
+
+<style scoped>
+.kinsta-background {
+  background-color: #5333ed;
+}
+</style>
