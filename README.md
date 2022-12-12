@@ -23,9 +23,11 @@ for a regex, [slice a list](https://www.pythoncheatsheet.org/cheatsheet/lists-an
 
 ## Sponsors
 
+<div>
 <a
-  class="mx-auto"
   href="https://kinsta.com/application-hosting/?utm_source=pythoncheatsheet&utm_medium=digital&utm_campaign=python-hosting&utm_content=banner"
   target="_blank">
 <img height="40" src="public/sponsors/kinsta/kinsta-logo-alpha-purple.png">
-</a>
+</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.buymeacoffee.com/pycheatsheet" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 190px !important;" ></a>
+</div>
