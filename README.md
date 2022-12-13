@@ -25,9 +25,9 @@ for a regex, [slice a list](https://www.pythoncheatsheet.org/cheatsheet/lists-an
 
 <div>
 <a
-  href="https://kinsta.com/application-hosting/?utm_source=pythoncheatsheet&utm_medium=digital&utm_campaign=python-hosting&utm_content=banner"
+  href="https://ggt.ink/PWTIPB9"
   target="_blank">
 <img height="40" src="public/sponsors/kinsta/kinsta-logo-alpha-purple.png">
 </a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.buymeacoffee.com/pycheatsheet" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 190px !important;" ></a>
+<a href="	https://ggt.ink/n8bQd7t" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 190px !important;" ></a>
 </div>
