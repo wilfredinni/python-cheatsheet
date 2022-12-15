@@ -9,7 +9,7 @@ const route = useRoute()
   >
     <kinsta-banner />
     <div class="mx-auto max-w-8xl px-2 sm:px-6 lg:px-12">
-      <div class="relative flex h-[3.7em] justify-between">
+      <div class="relative flex h-14 justify-between">
         <the-sidebar-mobile />
 
         <!-- menu -->
