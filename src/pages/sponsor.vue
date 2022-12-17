@@ -134,8 +134,6 @@ useHead({
             </div>
           </div>
 
-          <div data-netlify-recaptcha="true"></div>
-
           <div class="mt-3 flex justify-end">
             <button
               type="submit"
