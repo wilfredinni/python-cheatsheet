@@ -96,7 +96,7 @@ useHead({
                 id="name"
                 required
                 name="name"
-                type="name"
+                type="text"
                 class="w-full rounded border border-slate-300 px-3 py-1.5 text-sm placeholder:text-slate-500 focus:border-sky-400 focus:outline-none dark:border-slate-500 dark:bg-gray-900 dark:text-slate-300"
               />
             </div>
