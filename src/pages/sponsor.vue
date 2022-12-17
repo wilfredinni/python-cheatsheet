@@ -14,6 +14,21 @@ useHead({
 
 // const breakpoints = useBreakpoints(breakpointsTailwind)
 // const smAndLarger = breakpoints.greater('sm')
+
+const handleSubmit = (event) => {
+  event.preventDefault()
+
+  const myForm = event.target
+  const formData = new FormData(myForm)
+
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log('Form successfully submitted'))
+    .catch((error) => alert(error))
+}
 </script>
 
 <template>
@@ -87,9 +102,9 @@ useHead({
           name="contact"
           class="mt-5"
           method="POST"
-          action="/sponsor"
           data-netlify-recaptcha="true"
           data-netlify="true"
+          @submit.prevent="handleSubmit"
         >
           <input type="hidden" name="form-name" value="contact" />
           <div class="grid grid-cols-2 gap-4">
