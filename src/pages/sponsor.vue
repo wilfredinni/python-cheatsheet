@@ -91,6 +91,7 @@ useHead({
           data-netlify-recaptcha="true"
           data-netlify="true"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <div class="grid grid-cols-2 gap-4">
             <div class="flex flex-col md:col-span-1">
               <label
