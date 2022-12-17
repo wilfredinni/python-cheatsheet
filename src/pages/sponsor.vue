@@ -87,48 +87,43 @@ useHead({
           <div class="grid grid-cols-2 gap-4">
             <div class="flex flex-col md:col-span-1">
               <label
-                for="name"
                 class="mb-1 text-sm font-medium opacity-80 dark:text-slate-300"
               >
                 Name
+                <input
+                  required
+                  type="text"
+                  name="name"
+                  class="w-full rounded border border-slate-300 px-3 py-1.5 text-sm placeholder:text-slate-500 focus:border-sky-400 focus:outline-none dark:border-slate-500 dark:bg-gray-900 dark:text-slate-300"
+                />
               </label>
-              <input
-                id="name"
-                required
-                name="name"
-                type="text"
-                class="w-full rounded border border-slate-300 px-3 py-1.5 text-sm placeholder:text-slate-500 focus:border-sky-400 focus:outline-none dark:border-slate-500 dark:bg-gray-900 dark:text-slate-300"
-              />
             </div>
             <div class="flex flex-col md:col-span-1">
               <label
-                for="email"
                 class="mb-1 text-sm font-medium opacity-80 dark:text-slate-300"
               >
                 Email
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  class="w-full rounded border border-slate-300 px-3 py-1.5 text-sm placeholder:text-slate-500 focus:border-sky-400 focus:outline-none dark:border-slate-500 dark:bg-gray-900 dark:text-slate-300"
+                />
               </label>
-              <input
-                id="email"
-                required
-                name="email"
-                type="email"
-                class="w-full rounded border border-slate-300 px-3 py-1.5 text-sm placeholder:text-slate-500 focus:border-sky-400 focus:outline-none dark:border-slate-500 dark:bg-gray-900 dark:text-slate-300"
-              />
             </div>
 
             <div class="col-span-2 mt-1 flex flex-col" data-v-ee6a3ebf="">
               <label
-                for="message"
                 class="mb-1 text-sm font-medium opacity-80 dark:text-slate-300"
               >
                 Message
+
+                <textarea
+                  required
+                  name="message"
+                  class="h-60 rounded border border-slate-300 p-2 outline-none focus:border-sky-400 dark:border-slate-500 dark:bg-gray-900 dark:text-slate-300"
+                />
               </label>
-              <textarea
-                id="message"
-                required
-                name="message"
-                class="h-60 rounded border border-slate-300 p-2 outline-none focus:border-sky-400 dark:border-slate-500 dark:bg-gray-900 dark:text-slate-300"
-              />
             </div>
           </div>
 
