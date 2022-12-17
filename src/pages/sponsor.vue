@@ -117,11 +117,10 @@ useHead({
                 class="mb-1 text-sm font-medium opacity-80 dark:text-slate-300"
               >
                 Message
-
                 <textarea
                   required
                   name="message"
-                  class="h-60 rounded border border-slate-300 p-2 outline-none focus:border-sky-400 dark:border-slate-500 dark:bg-gray-900 dark:text-slate-300"
+                  class="h-60 w-full rounded border border-slate-300 p-2 outline-none focus:border-sky-400 dark:border-slate-500 dark:bg-gray-900 dark:text-slate-300"
                 />
               </label>
             </div>
