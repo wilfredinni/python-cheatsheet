@@ -8,7 +8,7 @@
     >
       <img
         :src="`/sponsors/practity/practity.webp`"
-        alt="kinsta"
+        alt="practity"
         class="mx-auto mb-3 w-full"
         width="100"
         height="50"
