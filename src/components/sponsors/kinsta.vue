@@ -1,7 +1,10 @@
 <template>
-  <a href="https://ggt.ink/PWTIPB9" class="rounded-md border">
+  <a
+    href="https://ggt.ink/PWTIPB9"
+    class="rounded-md border dark:border-slate-700"
+  >
     <div
-      class="relative w-[200px] justify-center rounded-md bg-white p-2 opacity-80 transition duration-300 hover:opacity-100 dark:border-slate-700 dark:bg-slate-800"
+      class="relative w-[200px] justify-center rounded-md bg-white p-2 opacity-80 transition duration-300 hover:opacity-100 dark:bg-slate-800"
     >
       <img
         :src="`/sponsors/kinsta/${

@@ -1,7 +1,10 @@
 <template>
-  <a href="https://ggt.ink/f5017OU" class="rounded-md border">
+  <a
+    href="https://ggt.ink/f5017OU"
+    class="rounded-md border dark:border-slate-700"
+  >
     <div
-      class="relative w-[200px] justify-center rounded-md bg-white py-[1.5px] opacity-80 transition duration-300 hover:opacity-100 dark:border-slate-700"
+      class="relative w-[200px] justify-center rounded-md bg-white py-[1.5px] opacity-80 transition duration-300 hover:opacity-100"
     >
       <img
         :src="`/sponsors/practity/practity.webp`"
