@@ -83,7 +83,7 @@ useHead({
           </p>
         </prose>
 
-        <form name="contact" class="mt-5" netlify>
+        <form name="contact" class="mt-5" method="POST" netlify>
           <div class="grid grid-cols-2 gap-4">
             <div class="flex flex-col md:col-span-1">
               <label
