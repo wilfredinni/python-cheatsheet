@@ -83,7 +83,14 @@ useHead({
           </p>
         </prose>
 
-        <form name="contact" class="mt-5" method="POST" netlify>
+        <form
+          name="contact"
+          class="mt-5"
+          method="POST"
+          action="/sponsor"
+          data-netlify-recaptcha="true"
+          data-netlify="true"
+        >
           <div class="grid grid-cols-2 gap-4">
             <div class="flex flex-col md:col-span-1">
               <label
@@ -125,6 +132,8 @@ useHead({
               </label>
             </div>
           </div>
+
+          <div data-netlify-recaptcha="true"></div>
 
           <div class="mt-3 flex justify-end">
             <button
