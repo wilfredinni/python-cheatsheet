@@ -1,8 +1,8 @@
 <template>
-  <div
-    class="relative w-[200px] justify-center rounded-md border bg-slate-100/70 p-2 dark:border-slate-700 dark:bg-slate-800"
-  >
-    <a href="https://ggt.ink/PWTIPB9">
+  <a href="https://ggt.ink/PWTIPB9" class="rounded-md border">
+    <div
+      class="relative w-[200px] justify-center rounded-md bg-white p-2 opacity-80 transition duration-300 hover:opacity-100 dark:border-slate-700 dark:bg-slate-800"
+    >
       <img
         :src="`/sponsors/kinsta/${
           isDark
@@ -14,6 +14,6 @@
         width="100"
         height="50"
       />
-    </a>
-  </div>
+    </div>
+  </a>
 </template>
