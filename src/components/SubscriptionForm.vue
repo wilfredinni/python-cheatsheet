@@ -46,7 +46,7 @@ const showNewsletterForm = useLocalStorage('showNewsletterForm', true)
     </p>
     <prose>
       <p class="text-center text-slate-700 dark:text-slate-400 sm:text-start">
-        A two times a month and bullshit free
+        A weekly and bullshit free
         <a href="	https://ggt.ink/PoVKNkO">publication</a>, full of interesting,
         relevant links.
       </p>
