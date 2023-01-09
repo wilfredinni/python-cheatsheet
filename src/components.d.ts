@@ -62,6 +62,7 @@ declare module '@vue/runtime-core' {
     TheToc: typeof import('./components/layout/TheToc.vue')['default']
     TransitionChild: typeof import('@headlessui/vue')['TransitionChild']
     TransitionRoot: typeof import('@headlessui/vue')['TransitionRoot']
+    VpsServer: typeof import('./components/sponsors/VpsServer.vue')['default']
     WarningIcon: typeof import('./components/icons/WarningIcon.vue')['default']
   }
 }

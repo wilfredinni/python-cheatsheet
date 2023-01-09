@@ -109,6 +109,7 @@
     "useArrayMap": true,
     "useArrayReduce": true,
     "useArraySome": true,
+    "useArrayUnique": true,
     "useAsyncQueue": true,
     "useAsyncState": true,
     "useAttrs": true,

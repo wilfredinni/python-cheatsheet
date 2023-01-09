@@ -30,7 +30,7 @@ onMounted(() => {
 
 <template>
   <div class="mt-4 space-y-1.5">
-    <!-- <kinsta /> -->
+    <!-- <vps-server /> -->
     <div
       v-if="loadCarbon === 'true'"
       class="relative flex h-[270px] w-[200px] justify-center rounded-md bg-slate-100/70 dark:border-slate-700 dark:bg-slate-800"
