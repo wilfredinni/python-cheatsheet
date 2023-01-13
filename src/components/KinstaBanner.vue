@@ -3,7 +3,7 @@
 <template>
   <base-banner storage-key-name="kinsta-banner">
     <template #shortMsg>
-      <a class="mx-auto" href="https://ggt.ink/PWTIPB9">
+      <a class="mx-auto" href="https://ggt.ink/PWTIPB9" rel="noreferrer">
         <img
           src="/sponsors/kinsta/SVG/kinsta-mobile.png"
           loading="lazy"
@@ -13,7 +13,7 @@
     </template>
     <template #message>
       <!-- logo -->
-      <a class="mx-auto" href="https://ggt.ink/PWTIPB9">
+      <a class="mx-auto" href="https://ggt.ink/PWTIPB9" rel="noreferrer">
         <img
           class="hidden lg:flex"
           src="/sponsors/kinsta/SVG/PythonCheatSheet_banner_kinsta_logo.svg"
@@ -23,7 +23,7 @@
       </a>
 
       <!-- md: msg with link -->
-      <a class="mx-auto" href="https://ggt.ink/PWTIPB9">
+      <a class="mx-auto" href="https://ggt.ink/PWTIPB9" rel="noreferrer">
         <img
           class="mx-auto hidden lg:block"
           src="/sponsors/kinsta/SVG/PythonCheatSheet_banner_Text.svg"
@@ -41,7 +41,7 @@
       />
 
       <!-- banner action -->
-      <a href="https://ggt.ink/PWTIPB9">
+      <a href="https://ggt.ink/PWTIPB9" rel="noreferrer">
         <img
           class="hidden lg:flex"
           src="/sponsors/kinsta/SVG/PythonCheatSheet_banner_button-main.svg"

@@ -1,6 +1,7 @@
 <template>
   <a
     href="https://ggt.ink/PWTIPB9"
+    rel="noreferrer"
     class="rounded-md border dark:border-slate-700"
   >
     <div

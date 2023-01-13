@@ -1,5 +1,5 @@
 <template>
-  <a href="https://ggt.ink/N4iMtI8" target="_blank">
+  <a href="https://ggt.ink/N4iMtI8" rel="noreferrer" target="_blank">
     <img
       src="/netlify.svg"
       loading="lazy"
