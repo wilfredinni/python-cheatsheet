@@ -13,7 +13,8 @@ Changelog
 
 ## 2023-01-16
 
-- Added `bytearray` built-in function details and examples.
+- Added `bytearray` built-in details and examples.
+- Added `bytes` built-in details and examples.
 
 ## 2023-01-12
 
