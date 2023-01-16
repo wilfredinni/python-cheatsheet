@@ -13,6 +13,7 @@ Changelog
 
 ## 2023-01-16
 
+- Added a <new-badge /> badge to highlight new or updated content.
 - Added `bytearray` built-in details and examples.
 - Added `bytes` built-in details and examples.
 - Added `callable` built-in details and examples.
