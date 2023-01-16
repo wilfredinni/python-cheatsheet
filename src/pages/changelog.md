@@ -11,7 +11,7 @@ Changelog
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
-## 2022-11-28
+## 2023-01-12
 
 - Fixed a type on `setup.py` . Thanks [@qkniep](https://github.com/qkniep) ([#154](https://github.com/wilfredinni/python-cheatsheet/pull/154))
 
