@@ -16,6 +16,7 @@ Changelog
 - Added `bytearray` built-in details and examples.
 - Added `bytes` built-in details and examples.
 - Added `callable` built-in details and examples.
+- Added `chr` built-in details and examples.
 
 ## 2023-01-12
 
