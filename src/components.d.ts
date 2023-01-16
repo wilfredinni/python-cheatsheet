@@ -43,6 +43,7 @@ declare module '@vue/runtime-core' {
     KinstaBanner: typeof import('./components/KinstaBanner.vue')['default']
     LightBulbIcon: typeof import('./components/icons/LightBulbIcon.vue')['default']
     NetlifyBadge: typeof import('./components/NetlifyBadge.vue')['default']
+    NewBadge: typeof import('./components/ui/newBadge.vue')['default']
     Parctity: typeof import('./components/sponsors/parctity.vue')['default']
     PluginIcon: typeof import('./components/icons/PluginIcon.vue')['default']
     Practity: typeof import('./components/sponsors/practity.vue')['default']

@@ -2,6 +2,7 @@
 interface Navigation {
   name: string
   path: string
+  updated: boolean
   [key: string]: any
 }
 
@@ -29,6 +30,7 @@ defineProps<{
         "
       >
         {{ item.name }}
+        <new-badge v-if="item.updated" class="ml-1" />
       </router-link>
     </li>
   </ul>
