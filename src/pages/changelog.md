@@ -11,6 +11,10 @@ Changelog
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
+## 2022-11-28
+
+- Fixed a type on `setup.py` . Thanks [@qkniep](https://github.com/qkniep) ([#154](https://github.com/wilfredinni/python-cheatsheet/pull/154))
+
 ## 2022-12-01
 
 - Added **List Comprehension** with `range` example. Thanks [@nugel](https://github.com/nugel) ([#152](https://github.com/wilfredinni/python-cheatsheet/pull/152))
