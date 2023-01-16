@@ -16,22 +16,37 @@ Python callable() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
+## Introduction
+
+In Python, the `callable()` function is a built-in function that can be used to determine if an object is callable, meaning it can be invoked as a function.
+
+It returns `True` if the object passed to it is callable and `False` otherwise. For example, a function, a method, a class, a lambda function, and a generator are all callable objects in Python.
+
+Here is an example of how you can use the `callable()` function:
 
 ```python
 >>> def my_function():
-...     print('this is a test function')
+...     pass
 ...
->>> callable(my_function)
+>>> class MyClass:
+...     def __call__(self):
+...         pass
+...
+>>> x = 5
+>>> y = my_function
+>>> z = MyClass()
+>>> a = lambda: None
+>>>
+>>> print(callable(x))
+# False
+>>> print(callable(y))
 # True
->>> callable(True)
-# False
->>> callable(1)
-# False
->>> callable('a')
-# False
+>>> print(callable(z))
+# True
+>>> print(callable(a))
+# True
 ```
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+In the above example, `my_function` is a function and it is callable, `MyClass` is a class and it is callable as well because it has a `__call__` method, `z` is an instance of the class `MyClass` and it is also callable because it has a `__call__` method and `a` is a lambda function which is callable.
+
+The `callable()` function can be useful in situations where you need to determine if an object can be invoked as a function, such as when you are working with callbacks or other types of function pointers.
