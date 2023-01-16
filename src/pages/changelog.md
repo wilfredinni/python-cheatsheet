@@ -11,9 +11,13 @@ Changelog
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
+## 2023-01-16
+
+- Added `bytearray` built-in function details and examples.
+
 ## 2023-01-12
 
-- Fixed a type on `setup.py` . Thanks [@qkniep](https://github.com/qkniep) ([#154](https://github.com/wilfredinni/python-cheatsheet/pull/154))
+- Fixed a typo on `setup.py` . Thanks [@qkniep](https://github.com/qkniep) ([#154](https://github.com/wilfredinni/python-cheatsheet/pull/154))
 
 ## 2022-12-01
 
