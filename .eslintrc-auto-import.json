@@ -198,6 +198,7 @@
     "useParallax": true,
     "usePermission": true,
     "usePointer": true,
+    "usePointerLock": true,
     "usePointerSwipe": true,
     "usePreferredColorScheme": true,
     "usePreferredContrast": true,
