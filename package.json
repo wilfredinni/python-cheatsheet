@@ -12,7 +12,7 @@
   "dependencies": {
     "@docsearch/js": "^3.3.2",
     "@headlessui/vue": "^1.7.7",
-    "@vueuse/core": "^9.10.0",
+    "@vueuse/core": "^9.11.1",
     "@vueuse/head": "^0.9.8",
     "pinia": "^2.0.29",
     "prism-theme-vars": "^0.2.4",
@@ -45,7 +45,7 @@
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-prism": "^2.3.0",
     "ohmyfetch": "^0.4.21",
-    "pnpm": "^7.25.0",
+    "pnpm": "^7.25.1",
     "postcss": "^8.4.21",
     "prettier": "^2.8.3",
     "prettier-plugin-tailwindcss": "^0.1.13",
