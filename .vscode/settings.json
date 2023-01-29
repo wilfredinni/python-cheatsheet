@@ -153,6 +153,7 @@
         "timedelta",
         "timeit",
         "udiskie",
+        "Traceback",
         "unhashable",
         "useb",
         "vendorizing",
