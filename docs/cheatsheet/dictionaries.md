@@ -30,6 +30,38 @@ my_cat = {
 }
 ```
 
+## Set key, value using subscript operator `[]`
+```python
+>>> my_cat = {
+...  'size': 'fat',
+...  'color': 'gray',
+...  'disposition': 'loud',
+... }
+>>> my_cat['age_years'] = 2
+>>> print(my_cat)
+...
+# {'size': 'fat', 'color': 'gray', 'disposition': 'loud', 'age_years': 2}
+```
+
+## Get value using subscript operator `[]`
+
+In case the key is not present in dictionary <a target="_blank" href="https://docs.python.org/3/library/exceptions.html#KeyError">`KeyError`</a> is raised.
+
+```python
+>>> my_cat = {
+...  'size': 'fat',
+...  'color': 'gray',
+...  'disposition': 'loud',
+... }
+>>> print(my_cat['size'])
+...
+# fat
+>>> print(my_cat['eye_color'])
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# KeyError: 'eye_color'
+```
+
 ## values()
 
 The `values()` method gets the **values** of the dictionary:

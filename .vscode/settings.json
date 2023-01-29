@@ -132,6 +132,7 @@
         "takewhile",
         "timedelta",
         "timeit",
+        "Traceback",
         "unhashable",
         "useb",
         "vendorizing",
