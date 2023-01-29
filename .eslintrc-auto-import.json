@@ -205,6 +205,7 @@
     "usePreferredDark": true,
     "usePreferredLanguages": true,
     "usePreferredReducedMotion": true,
+    "usePrevious": true,
     "useRafFn": true,
     "useReaderStore": true,
     "useRefHistory": true,
