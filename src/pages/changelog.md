@@ -11,6 +11,10 @@ Changelog
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
+## 2023-01-12
+
+- Fixed some mistakes in Dictionaries . Thanks [@Acumane](https://github.com/Acumane) ([#155](https://github.com/wilfredinni/python-cheatsheet/pull/155))
+
 ## 2023-01-16
 
 - Added a <new-badge /> badge to highlight new or updated content.
