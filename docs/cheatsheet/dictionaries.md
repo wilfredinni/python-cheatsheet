@@ -1,6 +1,6 @@
 ---
 title: Python Dictionaries - Python Cheatsheet
-description: In Python, a dictionary is an ordered (from Python > 3.7) collection of key, value pairs.
+description: In Python, a dictionary is an insertion-ordered (from Python > 3.7) collection of key, value pairs.
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
