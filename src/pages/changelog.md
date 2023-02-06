@@ -11,7 +11,7 @@ Changelog
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
-## 2023-01-12
+## 2023-01-30
 
 - Fixed some mistakes in Dictionaries. Thanks [@Acumane](https://github.com/Acumane) ([#155](https://github.com/wilfredinni/python-cheatsheet/pull/155))
 - Added `map` built-in details and examples. Thanks [@noraa-july-stoke](https://github.com/noraa-july-stoke) ([#156](https://github.com/wilfredinni/python-cheatsheet/pull/156))
