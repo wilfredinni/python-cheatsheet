@@ -13,8 +13,8 @@ Changelog
 
 ## 2023-02-05
 
-- Make it clear that the python dictionary is ordered by insertion of key value pairs. Thanks [@wn9237](https://github.com/wn9237) ([#156](https://github.com/wilfredinni/python-cheatsheet/pull/159))
-- Added Dictionary subscription. Thanks [@kakasahebKK](https://github.com/kakasahebKK) ([#155](https://github.com/wilfredinni/python-cheatsheet/pull/158))
+- Make it clear that the python dictionary is ordered by insertion of key value pairs. Thanks [@wn9237](https://github.com/wn9237) ([#159](https://github.com/wilfredinni/python-cheatsheet/pull/159))
+- Added Dictionary subscription. Thanks [@kakasahebKK](https://github.com/kakasahebKK) ([#158](https://github.com/wilfredinni/python-cheatsheet/pull/158))
 
 ## 2023-01-30
 
