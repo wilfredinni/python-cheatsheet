@@ -2,7 +2,7 @@
 title: 'Changelog - Python Cheatsheet'
 description: See what is new, what got fixed, and what is coming.
 date: July 19, 2022
-updated: July 19, 2022
+updated: February 11, 2023
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
@@ -10,6 +10,10 @@ Changelog
 </base-title>
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
+
+## 2023-02-11
+
+- Added a filter method example for the built-in functions section. [@firdousmurtaza1](https://github.com/firdousmurtaza1) ([#161](https://github.com/wilfredinni/python-cheatsheet/pull/161))
 
 ## 2023-02-05
 
