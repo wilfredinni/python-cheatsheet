@@ -21,6 +21,7 @@ Python filter() built-in function
 The `filter` method in Python is a built-in function that allows you to `filter` a sequence (e.g., a list, a tuple, etc.) by applying a certain condition to each element in the sequence. The filter method returns a new sequence containing only the elements that meet the specified condition.
 
 Here is a simple example of using the filter method to filter a list of numbers and keep only the even numbers:
+
 ## Example
 
 ```python
@@ -32,4 +33,5 @@ Here is a simple example of using the filter method to filter a list of numbers 
 >>> print(even_numbers)
 >>> [2, 4, 6]
 ```
+
 In this example, the `is_even` function is defined to determine whether a number is even or not. The filter method takes `two arguments`: the `first argument` is the function to apply to each element of the list, and the `second argument` is the list to be filtered. The filter method returns an iterable, which is then converted to a list and stored in the even_numbers variable. The final output is the list of even numbers from the original list.
