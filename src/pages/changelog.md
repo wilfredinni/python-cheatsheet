@@ -11,9 +11,13 @@ Changelog
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
+## 2023-02-21
+
+- Fixed a typo in Virtualenvs. Thanks [@shirinapr](https://github.com/shirinapr) ([#163](https://github.com/wilfredinni/python-cheatsheet/pull/163))
+
 ## 2023-02-11
 
-- Added a filter method example for the built-in functions section. [@firdousmurtaza1](https://github.com/firdousmurtaza1) ([#161](https://github.com/wilfredinni/python-cheatsheet/pull/161))
+- Added a filter method example for the built-in functions section. Thanks [@firdousmurtaza1](https://github.com/firdousmurtaza1) ([#161](https://github.com/wilfredinni/python-cheatsheet/pull/161))
 
 ## 2023-02-05
 
