@@ -29,7 +29,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Built-in functions',
         path: '/cheatsheet/built-in-functions',
-        updated: true,
+        updated: false,
       },
       {
         name: 'Control flow',
@@ -50,7 +50,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Dictionaries',
         path: '/cheatsheet/dictionaries',
-        updated: true,
+        updated: false,
       },
       {
         name: 'Sets',
@@ -130,7 +130,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Virtual environments',
         path: '/cheatsheet/virtual-environments',
-        updated: false,
+        updated: true,
       },
     ],
     standardLibraryNavigation: [
