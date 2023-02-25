@@ -60,7 +60,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Comprehensions',
         path: '/cheatsheet/comprehensions',
-        updated: false,
+        updated: true,
       },
       {
         name: 'Manipulating strings',
