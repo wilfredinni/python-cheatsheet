@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@docsearch/js": "^3.3.3",
-    "@headlessui/vue": "^1.7.10",
+    "@headlessui/vue": "^1.7.11",
     "@vueuse/core": "^9.13.0",
     "@vueuse/head": "^0.9.8",
     "pinia": "^2.0.32",
@@ -64,7 +64,7 @@
     "vite-ssg": "^0.21.2",
     "vite-ssg-sitemap": "^0.4.3",
     "vitest": "^0.24.5",
-    "vue-tsc": "^1.1.7"
+    "vue-tsc": "^1.2.0"
   },
   "pnpm": {
     "peerDependencyRules": {
