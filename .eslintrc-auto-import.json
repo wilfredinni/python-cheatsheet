@@ -105,6 +105,7 @@
     "useArrayFilter": true,
     "useArrayFind": true,
     "useArrayFindIndex": true,
+    "useArrayFindLast": true,
     "useArrayJoin": true,
     "useArrayMap": true,
     "useArrayReduce": true,
