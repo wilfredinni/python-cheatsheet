@@ -77,6 +77,15 @@ In a List Comprehension, we add the `if` statement at the end:
 # ['Charles', 'Carol']
 ```
 
+To use an `if-else` statement in a List Comprehension:
+
+```python
+>>> nums = [1, 2, 3, 4, 5, 6]
+>>> new_list = [num*2 if num % 2 == 0 else num for num in nums]
+>>> print(new_list)
+# [1, 4, 3, 8, 5, 12]
+```
+
 <base-disclaimer>
   <base-disclaimer-title>
     Set and Dict comprehensions
