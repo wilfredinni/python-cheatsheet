@@ -141,6 +141,7 @@
         "setattr",
         "setdefault",
         "setstate",
+        "shirinapr",
         "shutil",
         "sitebuiltins",
         "starmap",

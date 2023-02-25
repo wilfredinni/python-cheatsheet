@@ -2,7 +2,7 @@
 title: 'Changelog - Python Cheatsheet'
 description: See what is new, what got fixed, and what is coming.
 date: July 19, 2022
-updated: February 11, 2023
+updated: February 25, 2023
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
@@ -10,6 +10,10 @@ Changelog
 </base-title>
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
+
+## 2023-02-25
+
+- Added the if-else statement for List Comprehension. Thanks [@QuarkZ26](https://github.com/QuarkZ26) ([#164](https://github.com/wilfredinni/python-cheatsheet/pull/164))
 
 ## 2023-02-21
 
