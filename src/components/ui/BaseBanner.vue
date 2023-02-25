@@ -18,16 +18,18 @@ const showBanner = useLocalStorage(keyName.value, true)
     <div class="kinsta-background">
       <div class="mx-auto max-w-7xl py-3 px-3 sm:px-6 md:px-0 lg:px-8">
         <div class="sm:px-16 sm:text-center">
-          <p class="text-sm font-medium text-sky-600 dark:text-sky-400">
-            <span class="flex items-center text-white md:hidden">
+          <div class="text-sm font-medium text-sky-600 dark:text-sky-400">
+            <div class="flex items-center text-white md:hidden">
               <slot name="shortMsg">We announced a new product!</slot>
-            </span>
-            <span class="md hidden items-center md:flex md:justify-between">
+            </div>
+            <div
+              class="md hidden items-center md:flex md:justify-between xl:px-20"
+            >
               <slot name="message">
                 Big news! We're excited to announce a brand new product.
               </slot>
-            </span>
-          </p>
+            </div>
+          </div>
         </div>
         <div
           class="absolute inset-y-0 right-0 items-start pt-1 pr-1 sm:pt-1.5 sm:pr-2"
@@ -61,6 +63,6 @@ const showBanner = useLocalStorage(keyName.value, true)
 
 <style scoped>
 .kinsta-background {
-  background-color: #5333ed;
+  background-color: #0e0a1b;
 }
 </style>

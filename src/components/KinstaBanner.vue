@@ -2,18 +2,22 @@
 
 <template>
   <base-banner storage-key-name="kinsta-banner">
+    <!-- mobile banner -->
     <template #shortMsg>
       <a class="mx-auto" href="https://ggt.ink/PWTIPB9" rel="noreferrer">
         <img
           src="/sponsors/kinsta/SVG/kinsta-mobile.png"
           loading="lazy"
           alt="Deploys by Kinsta"
+          height="5"
         />
       </a>
     </template>
+
+    <!-- sm and up banner -->
     <template #message>
       <!-- logo -->
-      <a class="mx-auto" href="https://ggt.ink/PWTIPB9" rel="noreferrer">
+      <a href="https://ggt.ink/PWTIPB9" rel="noreferrer">
         <img
           class="hidden lg:flex"
           src="/sponsors/kinsta/SVG/PythonCheatSheet_banner_kinsta_logo.svg"
@@ -22,23 +26,15 @@
         />
       </a>
 
-      <!-- md: msg with link -->
-      <a class="mx-auto" href="https://ggt.ink/PWTIPB9" rel="noreferrer">
+      <!-- md banner -->
+      <a href="https://ggt.ink/PWTIPB9" rel="noreferrer">
         <img
-          class="mx-auto hidden lg:block"
+          class="hidden md:block"
           src="/sponsors/kinsta/SVG/PythonCheatSheet_banner_Text.svg"
           loading="lazy"
           alt="Deploys by Kinsta"
         />
       </a>
-
-      <!-- lg: msg without link -->
-      <img
-        class="mx-auto hidden md:block lg:hidden"
-        src="/sponsors/kinsta/SVG/PythonCheatSheet_banner_Text.svg"
-        loading="lazy"
-        alt="Deploys by Kinsta"
-      />
 
       <!-- banner action -->
       <a href="https://ggt.ink/PWTIPB9" rel="noreferrer">
@@ -52,4 +48,3 @@
     </template>
   </base-banner>
 </template>
->
