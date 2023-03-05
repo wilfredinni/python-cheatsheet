@@ -46,3 +46,23 @@ It is also possible to write a context manager using generator syntax thanks to 
 # Right in the middle with cm = 3
 # Exit
 ```
+
+
+## Class based context manager
+
+You can define class based context manager. The key methods are `__enter__` and `__exit__`
+```python
+class ContextManager:
+    def __enter__(self, *args, **kwargs):
+        print("--enter--")
+
+    def __exit__(self, *args):
+        print("--exit--")
+
+
+with ContextManager():
+    print("test")
+#--enter--
+#test
+#--exit--
+```
