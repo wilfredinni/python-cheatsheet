@@ -60,7 +60,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Comprehensions',
         path: '/cheatsheet/comprehensions',
-        updated: true,
+        updated: false,
       },
       {
         name: 'Manipulating strings',
@@ -110,7 +110,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Context manager',
         path: '/cheatsheet/context-manager',
-        updated: false,
+        updated: true,
       },
       {
         name: 'Main: top level script',
@@ -130,7 +130,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Virtual environments',
         path: '/cheatsheet/virtual-environments',
-        updated: true,
+        updated: false,
       },
     ],
     standardLibraryNavigation: [
