@@ -22,5 +22,14 @@ export function useCarbon() {
     }
   )
 
-  return { reload }
+  function reloadOn(time: number) {
+    setInterval(function () {
+      if (!reader.isActive) {
+        reload.value = true
+        nextTick(() => (reload.value = false))
+      }
+    }, time)
+  }
+
+  return { reload, reloadOn }
 }
