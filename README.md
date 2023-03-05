@@ -29,5 +29,4 @@ for a regex, [slice a list](https://www.pythoncheatsheet.org/cheatsheet/lists-an
   target="_blank">
 <img height="40" src="public/sponsors/kinsta/kinsta-logo-alpha-purple.png">
 </a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://ggt.ink/n8bQd7t" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 190px !important;"></a>
 </div>
