@@ -11,6 +11,10 @@ Changelog
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
+## 2023-03-05
+
+- Added class-based context manager. Thanks [@asenov](https://github.com/asenov) ([#166](https://github.com/wilfredinni/python-cheatsheet/pull/166))
+
 ## 2023-02-25
 
 - Added the if-else statement for List Comprehension. Thanks [@QuarkZ26](https://github.com/QuarkZ26) ([#164](https://github.com/wilfredinni/python-cheatsheet/pull/164))
