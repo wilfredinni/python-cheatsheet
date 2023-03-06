@@ -3,7 +3,7 @@ const { theToc, currentSection } = useToc()
 const { reload, reloadOn } = useCarbon()
 
 const route = useRoute()
-reloadOn(300000)
+reloadOn(600000)
 
 const pageToc = computed(() => {
   if (route.name === 'changelog') {
