@@ -1,24 +1,24 @@
 <script setup lang="ts">
-const { theToc, currentSection } = useToc()
-const { reload, reloadOn } = useCarbon()
+const { theToc, currentSection } = useToc();
+const { reload, reloadOn } = useCarbon();
 
-const route = useRoute()
-reloadOn(600000)
+const route = useRoute();
+reloadOn(900000);
 
 const pageToc = computed(() => {
-  if (route.name === 'changelog') {
-    const cutIndex = { ...theToc?.value[13] }
+  if (route.name === "changelog") {
+    const cutIndex = { ...theToc?.value[13] };
 
     if (cutIndex) {
-      const shorterToc = [...theToc.value].slice(0, 13)
-      cutIndex.header = 'More...'
-      shorterToc.push(cutIndex)
-      return shorterToc
+      const shorterToc = [...theToc.value].slice(0, 13);
+      cutIndex.header = "More...";
+      shorterToc.push(cutIndex);
+      return shorterToc;
     }
-    return theToc.value
+    return theToc.value;
   }
-  return theToc.value
-})
+  return theToc.value;
+});
 </script>
 
 <template>
