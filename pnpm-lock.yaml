@@ -6,7 +6,7 @@ specifiers:
   '@tailwindcss/forms': ^0.5.3
   '@tailwindcss/line-clamp': ^0.4.2
   '@tailwindcss/typography': ^0.5.9
-  '@types/fs-extra': ^9.0.13
+  '@types/fs-extra': ^11.0.0
   '@types/markdown-it': ^12.2.3
   '@types/markdown-it-link-attributes': ^3.0.1
   '@types/node': 18.15.0
@@ -23,7 +23,7 @@ specifiers:
   eslint-config-prettier: ^8.7.0
   eslint-plugin-vue: ^9.9.0
   esno: ^0.16.3
-  fs-extra: ^10.1.0
+  fs-extra: ^11.0.0
   happy-dom: ^5.4.0
   markdown-it: ^13.0.1
   markdown-it-anchor: ^8.6.7
@@ -70,7 +70,7 @@ devDependencies:
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.7
   '@tailwindcss/line-clamp': 0.4.2_tailwindcss@3.2.7
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.7
-  '@types/fs-extra': 9.0.13
+  '@types/fs-extra': 11.0.1
   '@types/markdown-it': 12.2.3
   '@types/markdown-it-link-attributes': 3.0.1
   '@types/node': 18.15.0
@@ -85,7 +85,7 @@ devDependencies:
   eslint-config-prettier: 8.7.0_eslint@8.36.0
   eslint-plugin-vue: 9.9.0_eslint@8.36.0
   esno: 0.16.3
-  fs-extra: 10.1.0
+  fs-extra: 11.1.0
   happy-dom: 5.4.0
   markdown-it: 13.0.1
   markdown-it-anchor: 8.6.7_ea7kj7wzjkld5jo2noyjqxi764
@@ -1996,14 +1996,21 @@ packages:
       '@types/node': 18.15.0
     dev: true
 
-  /@types/fs-extra/9.0.13:
-    resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
+  /@types/fs-extra/11.0.1:
+    resolution: {integrity: sha512-MxObHvNl4A69ofaTRU8DFqvgzzv8s9yRtaPPm5gud9HDNvpB3GPQFvNuTWAI59B9huVGV5jXYJwbCsmBsOGYWA==}
     dependencies:
+      '@types/jsonfile': 6.1.1
       '@types/node': 18.15.0
     dev: true
 
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
+    dev: true
+
+  /@types/jsonfile/6.1.1:
+    resolution: {integrity: sha512-GSgiRCVeapDN+3pqA35IkQwasaCh/0YFH5dEF6S88iDvEn901DjOeH3/QPY+XYP1DFzDZPvIvfeEgk+7br5png==}
+    dependencies:
+      '@types/node': 18.15.0
     dev: true
 
   /@types/linkify-it/3.0.2:
@@ -3756,6 +3763,15 @@ packages:
   /fs-extra/10.1.0:
     resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
     engines: {node: '>=12'}
+    dependencies:
+      graceful-fs: 4.2.10
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: true
+
+  /fs-extra/11.1.0:
+    resolution: {integrity: sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==}
+    engines: {node: '>=14.14'}
     dependencies:
       graceful-fs: 4.2.10
       jsonfile: 6.1.0
