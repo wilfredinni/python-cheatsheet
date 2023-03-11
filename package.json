@@ -54,7 +54,7 @@
     "string": "^3.3.3",
     "tailwindcss": "^3.2.7",
     "typescript": "^4.9.5",
-    "unplugin-auto-import": "^0.12.2",
+    "unplugin-auto-import": "^0.15.0",
     "unplugin-vue-components": "^0.22.12",
     "vite": "^3.2.5",
     "vite-plugin-pages": "^0.28.0",
