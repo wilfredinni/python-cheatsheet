@@ -47,7 +47,7 @@ specifiers:
   vite-plugin-pwa: ^0.14.4
   vite-plugin-vue-layouts: ^0.8.0
   vite-plugin-vue-markdown: ^0.22.4
-  vite-ssg: ^0.21.2
+  vite-ssg: ^0.22.0
   vite-ssg-sitemap: ^0.4.3
   vitest: ^0.29.2
   vue: ^3.2.47
@@ -107,7 +107,7 @@ devDependencies:
   vite-plugin-pwa: 0.14.4_vite@3.2.5
   vite-plugin-vue-layouts: 0.8.0_rip2p6kwwd7m5kuchehllw2hzm
   vite-plugin-vue-markdown: 0.22.4_vite@3.2.5
-  vite-ssg: 0.21.2_xey77v7t7l6qucofqg7kgd3n4i
+  vite-ssg: 0.22.1_xey77v7t7l6qucofqg7kgd3n4i
   vite-ssg-sitemap: 0.4.3
   vitest: 0.29.2_happy-dom@5.4.0
   vue-tsc: 1.2.0_typescript@4.9.5
@@ -2198,6 +2198,26 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
+  /@unhead/dom/1.1.22:
+    resolution: {integrity: sha512-teutFdu4Frn1iRwacqvDz1Cxbygu6kgeI4N8T3Tu1YTMFIOnmqEklJdQGsY6ozR6MrcCV7CP6p89J5yJdPpnig==}
+    dependencies:
+      '@unhead/schema': 1.1.22
+      '@unhead/shared': 1.1.22
+    dev: true
+
+  /@unhead/schema/1.1.22:
+    resolution: {integrity: sha512-587TasZqBD3BTzXRxE0p8DNyzcZ8Dc+6ssAzsER5fZTcymZwskgIQ9sYNkCUy4GpjnA1wCSRmKKpblLErBuWdg==}
+    dependencies:
+      hookable: 5.5.1
+      zhead: 2.0.4
+    dev: true
+
+  /@unhead/shared/1.1.22:
+    resolution: {integrity: sha512-fTbyltjNUzT8+Sq7lE2F9B/8AoPUdsKqnC+qZgdKnmKWy4QWT9TtfWUPT58wt4NhFMRhZjV5iKBW2m3AHZ8aIg==}
+    dependencies:
+      '@unhead/schema': 1.1.22
+    dev: true
+
   /@vitejs/plugin-vue/3.2.0_vite@3.2.5+vue@3.2.47:
     resolution: {integrity: sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -3762,6 +3782,15 @@ packages:
       universalify: 2.0.0
     dev: true
 
+  /fs-extra/11.1.0:
+    resolution: {integrity: sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==}
+    engines: {node: '>=14.14'}
+    dependencies:
+      graceful-fs: 4.2.10
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: true
+
   /fs-extra/9.1.0:
     resolution: {integrity: sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==}
     engines: {node: '>=10'}
@@ -3997,6 +4026,10 @@ packages:
   /he/1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
+    dev: true
+
+  /hookable/5.5.1:
+    resolution: {integrity: sha512-ac50aYjbtRMMZEtTG0qnVaBDA+1lqL9fHzDnxMQlVuO6LZWcBB7NXjIu9H9iImClewNdrit4RiEzi9QpRTgKrg==}
     dev: true
 
   /html-encoding-sniffer/3.0.0:
@@ -6160,14 +6193,14 @@ packages:
     resolution: {integrity: sha512-9ZIRBRCgM1Q4RtXXEBHIu8gotbx9LCnHZOZXtdSzR0DnjN9H5IYGY3yGoxI6VX8dScXiluxOODFlNlr7ydyI9A==}
     dev: true
 
-  /vite-ssg/0.21.2_xey77v7t7l6qucofqg7kgd3n4i:
-    resolution: {integrity: sha512-srcxakrqBaubPr6KuhMmkmrdm1Ye1zIClWOpV3TSk4viyy0QymZWwfPAPXjCwjzmPDY/QVHTffuMTNjoM4xkbA==}
+  /vite-ssg/0.22.1_xey77v7t7l6qucofqg7kgd3n4i:
+    resolution: {integrity: sha512-aiFbedElOR/amu0VPfWNj2oR7V9zX6oS4jzWEkOe5fJuZIV2+FnUyiupoyoo3lv3njgS2GENNpmxijN6tpJsTA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
-      '@vueuse/head': ^0.5.0 || ^0.6.0 || ^0.7.0 || ^0.8.0 || ^0.9.0
+      '@vueuse/head': ^1.0.0
       critters: ^0.0.16
-      vite: ^2.0.0 || ^3.0.0-0
+      vite: ^2.0.0 || ^3.0.0 || ^4.0.0
       vue: ^3.2.10
       vue-router: ^4.0.1
     peerDependenciesMeta:
@@ -6176,8 +6209,9 @@ packages:
       vue-router:
         optional: true
     dependencies:
+      '@unhead/dom': 1.1.22
       '@vueuse/head': 0.9.8_vue@3.2.47
-      fs-extra: 10.1.0
+      fs-extra: 11.1.0
       html-minifier: 4.0.0
       html5parser: 2.0.2
       jsdom: 20.0.3
@@ -6715,4 +6749,8 @@ packages:
   /yocto-queue/1.0.0:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
+    dev: true
+
+  /zhead/2.0.4:
+    resolution: {integrity: sha512-V4R94t3ifk9AURym6OskbKcnowzgp5Z88tkoL/NF67vyryNxC62u6mx5F1Ux4oh4+YN7FFmKYEyWy6m5kfPH6g==}
     dev: true
