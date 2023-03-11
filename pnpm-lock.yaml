@@ -41,7 +41,7 @@ specifiers:
   tailwindcss: ^3.2.7
   typescript: ^4.9.5
   unplugin-auto-import: ^0.15.0
-  unplugin-vue-components: ^0.22.12
+  unplugin-vue-components: ^0.24.0
   vite: ^3.2.5
   vite-plugin-pages: ^0.28.0
   vite-plugin-pwa: ^0.14.4
@@ -101,7 +101,7 @@ devDependencies:
   tailwindcss: 3.2.7_postcss@8.4.21
   typescript: 4.9.5
   unplugin-auto-import: 0.15.1_@vueuse+core@9.13.0
-  unplugin-vue-components: 0.22.12_vue@3.2.47
+  unplugin-vue-components: 0.24.1_vue@3.2.47
   vite: 3.2.5_@types+node@18.15.0
   vite-plugin-pages: 0.28.0_vite@3.2.5
   vite-plugin-pwa: 0.14.4_vite@3.2.5
@@ -5985,14 +5985,17 @@ packages:
       - rollup
     dev: true
 
-  /unplugin-vue-components/0.22.12_vue@3.2.47:
-    resolution: {integrity: sha512-FxyzsuBvMCYPIk+8cgscGBQ345tvwVu+qY5IhE++eorkyvA4Z1TiD/HCiim+Kbqozl10i4K+z+NCa2WO2jexRA==}
+  /unplugin-vue-components/0.24.1_vue@3.2.47:
+    resolution: {integrity: sha512-T3A8HkZoIE1Cja95xNqolwza0yD5IVlgZZ1PVAGvVCx8xthmjsv38xWRCtHtwl+rvZyL9uif42SRkDGw9aCfMA==}
     engines: {node: '>=14'}
     peerDependencies:
       '@babel/parser': ^7.15.8
+      '@nuxt/kit': ^3.2.2
       vue: 2 || 3
     peerDependenciesMeta:
       '@babel/parser':
+        optional: true
+      '@nuxt/kit':
         optional: true
     dependencies:
       '@antfu/utils': 0.7.2
@@ -6001,8 +6004,8 @@ packages:
       debug: 4.3.4
       fast-glob: 3.2.12
       local-pkg: 0.4.3
-      magic-string: 0.27.0
-      minimatch: 5.1.6
+      magic-string: 0.30.0
+      minimatch: 7.4.2
       resolve: 1.22.1
       unplugin: 1.3.0
       vue: 3.2.47
