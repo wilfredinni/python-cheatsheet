@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { theToc, currentSection } = useToc();
+const { reload } = useCarbon();
 
 const route = useRoute();
 
@@ -48,6 +49,6 @@ const pageToc = computed(() => {
       </ul>
     </div>
 
-    <carbon-ads />
+    <carbon-ads v-if="!reload" />
   </nav>
 </template>
