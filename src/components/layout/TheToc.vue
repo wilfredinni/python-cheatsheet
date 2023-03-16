@@ -1,9 +1,7 @@
 <script setup lang="ts">
 const { theToc, currentSection } = useToc();
-const { reload, reloadOn } = useCarbon();
 
 const route = useRoute();
-reloadOn(900000);
 
 const pageToc = computed(() => {
   if (route.name === "changelog") {
@@ -50,6 +48,6 @@ const pageToc = computed(() => {
       </ul>
     </div>
 
-    <carbon-ads v-if="!reload" />
+    <carbon-ads />
   </nav>
 </template>
