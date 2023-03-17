@@ -22,7 +22,7 @@ We all need to start somewhere, so how about doing it here.
 
 ## Math Operators
 
-From **highest** to **howest** precedence:
+From **highest** to **lowest** precedence:
 
 | Operators | Operation         | Example         |
 | --------- | ----------------- | --------------- |
