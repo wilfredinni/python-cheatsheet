@@ -11,6 +11,10 @@ Changelog
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
+## 2023-03-16
+
+- Added **open** built-in example. Thanks [@BenIsenstein](https://github.com/BenIsenstein) ([#187](https://github.com/wilfredinni/python-cheatsheet/pull/187))
+
 ## 2023-03-05
 
 - Added class-based context manager. Thanks [@asenov](https://github.com/asenov) ([#166](https://github.com/wilfredinni/python-cheatsheet/pull/166))

@@ -110,7 +110,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Context manager',
         path: '/cheatsheet/context-manager',
-        updated: true,
+        updated: false,
       },
       {
         name: 'Main: top level script',
