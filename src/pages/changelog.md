@@ -11,6 +11,11 @@ Changelog
 
 <!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
 
+## 2023-03-18
+
+- Fixed broken links, capitalization and punctuation consistency. Thanks [@Acumane](https://github.com/Acumane) ([#189](https://github.com/wilfredinni/python-cheatsheet/pull/189))
+- Fixed `fetch-contributors` scripts crashing on **Renovate** pull requests.
+
 ## 2023-03-16
 
 - Added **open** built-in example. Thanks [@BenIsenstein](https://github.com/BenIsenstein) ([#187](https://github.com/wilfredinni/python-cheatsheet/pull/187))

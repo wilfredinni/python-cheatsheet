@@ -74,6 +74,7 @@
         "isabs",
         "isalpha",
         "isdecimal",
+        "Isenstein",
         "isfile",
         "isinstance",
         "islice",
