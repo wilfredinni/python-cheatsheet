@@ -5,7 +5,7 @@ const router = useRouter()
 const route = useRoute()
 
 const userOptions = {
-  container: import.meta.env.VITE_DOCSEARCH_CONTAINER,
+  container: '#docsearch',
   appId: import.meta.env.VITE_DOCSEARCH_APP_ID,
   indexName: import.meta.env.VITE_DOCSEARCH_INDEX_NAME,
   apiKey: import.meta.env.VITE_DOCSEARCH_API_KEY,
