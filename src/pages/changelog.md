@@ -14,7 +14,9 @@ Changelog
 ## 2023-03-18
 
 - Fixed broken links, capitalization and punctuation consistency. Thanks [@Acumane](https://github.com/Acumane) ([#189](https://github.com/wilfredinni/python-cheatsheet/pull/189))
-- Fixed `fetch-contributors` script crashing on **Renovate** pull requests.
+- Fixed `fetch-contributors` script crashing on **Renovate** pull requests
+- Fixed `docsearch` not working on development
+- Mayor dependencies upgrades
 
 ## 2023-03-16
 
@@ -48,11 +50,11 @@ Changelog
 
 ## 2023-01-16
 
-- Added a <new-badge /> badge to highlight new or updated content.
-- Added `bytearray` built-in details and examples.
-- Added `bytes` built-in details and examples.
-- Added `callable` built-in details and examples.
-- Added `chr` built-in details and examples.
+- Added a <new-badge /> badge to highlight new or updated content
+- Added `bytearray` built-in details and examples
+- Added `bytes` built-in details and examples
+- Added `callable` built-in details and examples
+- Added `chr` built-in details and examples
 
 ## 2023-01-12
 
