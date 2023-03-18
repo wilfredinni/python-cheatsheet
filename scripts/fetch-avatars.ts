@@ -9,9 +9,13 @@ const dirAvatars = resolve(docsDir, 'public/user-avatars/')
 let contributors: string[] = []
 
 async function download(url: string, fileName: string) {
-  console.log('downloading', fileName)
-  const image = await $fetch(url, { responseType: 'arrayBuffer' })
-  await fs.writeFile(fileName, Buffer.from(image))
+  try {
+    console.log('downloading', fileName)
+    const image = await $fetch(url, { responseType: 'arrayBuffer' })
+    await fs.writeFile(fileName, Buffer.from(image))
+  } catch (e) {
+    console.log('error downloading', fileName)
+  }
 }
 
 export async function fetchAvatars() {

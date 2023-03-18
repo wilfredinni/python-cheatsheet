@@ -19,9 +19,13 @@ async function fetchContributors(page = 1) {
       }
     )) || []
   collaborators.push(...data.map((i) => i.login))
+  const index = collaborators.indexOf('renovate[bot]')
+  if (index > -1) collaborators.splice(index, 1)
 
-  if (data.length === 100)
+  if (data.length === 100) {
     collaborators.push(...(await fetchContributors(page + 1)))
+  }
+
   return collaborators
 }
 
