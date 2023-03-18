@@ -16,7 +16,7 @@ Python Functions
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Function arguments
+## Function Arguments
 
 A function can take `arguments` and `return values`:
 

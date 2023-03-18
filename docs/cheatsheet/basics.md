@@ -22,7 +22,7 @@ We all need to start somewhere, so how about doing it here.
 
 ## Math Operators
 
-From **Highest** to **Lowest** precedence:
+From **highest** to **lowest** precedence:
 
 | Operators | Operation         | Example         |
 | --------- | ----------------- | --------------- |
@@ -102,7 +102,7 @@ String concatenation:
 # 'AliceBob'
 ```
 
-String Replication:
+String replication:
 
 ```python
 >>> 'Alice' * 5

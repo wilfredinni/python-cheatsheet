@@ -7,8 +7,8 @@
 <div align="center">
 <a href="https://ggt.ink/ezMxYFe">pythoncheatsheet.org</a> |
 <a href="https://ggt.ink/PoVKNkO">Newsletter</a> |
-<a href="https://github.com/wilfredinni/python-cheatsheet/blob/next/src/pages/contributing.md">Contribute</a> |
-<a href="https://github.com/wilfredinni/python-cheatsheet/blob/next/src/pages/changelog.md">Changelog</a>
+<a href="https://github.com/wilfredinni/python-cheatsheet/blob/master/src/pages/contributing.md">Contribute</a> |
+<a href="https://github.com/wilfredinni/python-cheatsheet/blob/master/src/pages/changelog.md">Changelog</a>
 </div>
 <br>
 <p align='center'>
