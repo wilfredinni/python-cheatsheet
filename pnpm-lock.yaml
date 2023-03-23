@@ -1,5 +1,6 @@
 lockfileVersion: 5.4
 
+
 specifiers:
   '@docsearch/js': ^3.3.3
   '@headlessui/vue': ^1.7.12
