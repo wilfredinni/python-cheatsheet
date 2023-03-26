@@ -4,8 +4,17 @@ description: Object-Oriented Programming (OOP) is a programming paradigm that re
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-OOP Basics In python
+Object Oriented Programming (OOP) Basics
 </base-title>
+
+<base-disclaimer>
+  <base-disclaimer-title>
+    <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">Object-Oriented Programming</a>
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+    Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data and code. The data is in the form of fields (often known as attributes or properties), and the code is in the form of procedures (often known as methods).
+  </base-disclaimer-content>
+</base-disclaimer>
 
 ## Encapsulation
 
