@@ -1,10 +1,12 @@
-<script setup></script>
-
 <template>
   <base-banner storage-key-name="kinsta-banner">
     <!-- mobile banner -->
     <template #shortMsg>
-      <a class="mx-auto" href="https://ggt.ink/PWTIPB9" rel="noreferrer">
+      <a
+        class="mx-auto px-2 py-1"
+        href="https://ggt.ink/PWTIPB9"
+        rel="noreferrer"
+      >
         <img
           src="/sponsors/kinsta/SVG/kinsta-mobile.png"
           loading="lazy"
