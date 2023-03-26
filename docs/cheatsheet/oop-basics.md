@@ -1,22 +1,15 @@
 ---
 title: OOP Basics In python - Python Cheatsheet
-
-description: Object-Oriented Programming (OOP) is a programming paradigm that revolves around the concept of objects, which are instances of classes. OOP principles are fundamental concepts that guide the design and development of software in an object-oriented way. In Python, OOP is supported by the use of classes and objects. Here are some of the basic OOP principles in Python:
+description: Object-Oriented Programming (OOP) is a programming paradigm that revolves around the concept of objects, which are instances of classes. OOP principles are fundamental concepts that guide the design and development of software in an object-oriented way. In Python, OOP is supported by the use of classes and objects. Here are some of the basic OOP principles in Python.
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
 OOP Basics In python
 </base-title>
 
+## Encapsulation
 
-
-## Basics
-
-
-
-### 1. Encapsulation:
 Encapsulation is the process of hiding the implementation details of an object from the outside world. This is achieved by making use of access modifiers such as public, private, and protected. In Python, there are no explicit access modifiers, but you can achieve encapsulation by using underscore prefixes to denote private or protected attributes.
-
 
 ```python
 class MyClass:
@@ -29,11 +22,9 @@ print(obj._protected_var)   # output: 10
 print(obj.__private_var)    # AttributeError: 'MyClass' object has no attribute '__private_var'
 ```
 
+## Inheritance
 
-
-### 2. Inheritance:
 Inheritance is the process of creating a new class by extending an existing class. The new class inherits all the properties and methods of the base class and can also add its own properties and methods.
-
 
 ``` python
 class Animal:
@@ -57,11 +48,9 @@ dog.speak()   # output: Woof!
 cat.speak()   # output: Meow!
 ```
 
+## Polymorphism
 
-
-### 3. Polymorphism:
 Polymorphism is the ability of objects to take on different forms. In Python, this is achieved by using method overriding or method overloading.
-
 
 ```python
 class Shape:
@@ -88,12 +77,9 @@ for shape in shapes:
     print(shape.area())
 ```
 
+## Abstraction
 
-
-### 4. Abstraction:
 Abstraction is the process of reducing complexity by hiding unnecessary details. In Python, abstraction can be achieved by using abstract classes or interfaces.
-
-
 
 ```python
 from abc import ABC, abstractmethod
@@ -122,7 +108,6 @@ shapes = [Rectangle(4, 5), Circle(7)]
 for shape in shapes:
     print(shape.area())
 ```
-
 
 These are some of the basic OOP principles in Python. This page is currently in progress and more
 detailed examples and explanations will be coming soon.

@@ -9,7 +9,9 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
-<!-- ## [Unreleased](https://github.com/wilfredinni/python-cheatsheet/tree/next) -->
+## 2023-03-26
+
+- Added <router-link to='/cheatsheet/oop-basics'>OOP Basics</router-link>. Thanks [@noraa-july-stoke](https://github.com/noraa-july-stoke) ([#194](https://github.com/wilfredinni/python-cheatsheet/pull/194))
 
 ## 2023-03-18
 
@@ -46,7 +48,7 @@ Changelog
 ## 2023-01-30
 
 - Fixed some mistakes in Dictionaries. Thanks [@Acumane](https://github.com/Acumane) ([#155](https://github.com/wilfredinni/python-cheatsheet/pull/155))
-- Added `map` built-in details and examples. Thanks [@noraa-july-stoke](https://github.com/noraa-july-stoke) ([#156](https://github.com/wilfredinni/python-cheatsheet/pull/156))
+- Added `map` built-in details and examples. Thanks [@@noraa-july-stoke](https://github.com/noraa-july-stoke) ([#156](https://github.com/wilfredinni/python-cheatsheet/pull/156))
 
 ## 2023-01-16
 
