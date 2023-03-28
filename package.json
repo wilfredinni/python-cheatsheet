@@ -46,7 +46,7 @@
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-prism": "^2.3.0",
     "ohmyfetch": "^0.4.21",
-    "pnpm": "^7.30.5",
+    "pnpm": "^8.0.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.7",
     "prettier-plugin-tailwindcss": "^0.2.5",
