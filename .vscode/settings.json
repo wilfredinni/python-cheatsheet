@@ -176,24 +176,7 @@
         "zophie"
     ],
     "workbench.colorCustomizations": {
-        "activityBar.activeBorder": "#945bc4",
-        "activityBar.activeBackground": "#2f344a",
-        "activityBar.background": "#2f344a",
-        "activityBar.foreground": "#e7e7e7",
-        "activityBar.inactiveForeground": "#e7e7e799",
-        "activityBarBadge.background": "#885760",
-        "activityBarBadge.foreground": "#e7e7e7",
-        "commandCenter.border": "#e7e7e799",
-        "sash.hoverBorder": "#2f344a",
-        "statusBar.background": "#1b1e2b",
-        "statusBar.foreground": "#e7e7e7",
-        "statusBarItem.hoverBackground": "#2f344a",
-        "statusBarItem.remoteBackground": "#1b1e2b",
-        "statusBarItem.remoteForeground": "#e7e7e7",
-        "titleBar.activeBackground": "#1b1e2b",
-        "titleBar.activeForeground": "#e7e7e7",
-        "titleBar.inactiveBackground": "#1b1e2b99",
-        "titleBar.inactiveForeground": "#e7e7e799"
+        "activityBar.activeBorder": "#945bc4"
     },
     "peacock.remoteColor": "1b1e2b",
     "cSpell.language": "en",
