@@ -18,8 +18,6 @@ We all need to start somewhere, so how about doing it here.
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- For a more complete list of resources, check the article [Who to Follow, What to Read and Where to Ask](https://www.pythoncheatsheet.org/blog/python-follow-read-and-ask/). -->
-
 ## Math Operators
 
 From **highest** to **lowest** precedence:
@@ -240,7 +238,7 @@ This function takes the input from the user and converts it into a string:
 # Hi, Martha
 ```
 
-It is also possible to use formstted strings to avoid using .format:
+It is also possible to use formatted strings to avoid using .format:
 
 ```python
 >>> my_name = input('What is your name? ')  # default message

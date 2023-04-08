@@ -9,6 +9,11 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2023-04-08
+
+- Added `input` example with `f-strings`. Thanks [@darkpixlz](https://github.com/darkpixlz) ([#204](https://github.com/wilfredinni/python-cheatsheet/pull/204))
+
+
 ## 2023-03-26
 
 - Added <router-link to='/cheatsheet/oop-basics'>OOP Basics</router-link>. Thanks [@noraa-july-stoke](https://github.com/noraa-july-stoke) ([#194](https://github.com/wilfredinni/python-cheatsheet/pull/194))

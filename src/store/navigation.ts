@@ -24,7 +24,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Basics',
         path: '/cheatsheet/basics',
-        updated: false,
+        updated: true,
       },
       {
         name: 'Built-in functions',

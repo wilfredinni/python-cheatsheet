@@ -35,6 +35,7 @@
         "contextlib",
         "contextmanager",
         "copytree",
+        "darkpixlz",
         "dataclass",
         "Dbfilename",
         "delattr",
