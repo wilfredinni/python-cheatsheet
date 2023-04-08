@@ -240,6 +240,16 @@ This function takes the input from the user and converts it into a string:
 # Hi, Martha
 ```
 
+It is also possible to use formstted strings to avoid using .format:
+
+```python
+>>> my_name = input('What is your name? ')  # default message
+>>> print(f'Hi, {my_name}')
+# What is your name? Martha
+# Hi, Martha
+```
+
+
 ## The len() Function
 
 Evaluates to the integer value of the number of characters in a string, list, dictionary, etc.:
