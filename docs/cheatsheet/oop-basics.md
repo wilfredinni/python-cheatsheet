@@ -1,5 +1,5 @@
  ---
-title: OOP Basics In python - Python Cheatsheet
+title: Python OOP Basics - Python Cheatsheet
 
 description: Object-Oriented Programming (OOP) is a programming paradigm that revolves around the concept of objects, which are instances of classes. OOP principles are fundamental concepts that guide the design and development of software in an object-oriented way. In Python, OOP is supported by the use of classes and objects. Here are some of the basic OOP principles in Python:
 ---
@@ -8,13 +8,17 @@ description: Object-Oriented Programming (OOP) is a programming paradigm that re
 OOP Basics In python
 </base-title>
 
+<base-disclaimer>
+  <base-disclaimer-title>
+    <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">Object-Oriented Programming</a>
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+    Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data and code. The data is in the form of fields (often known as attributes or properties), and the code is in the form of procedures (often known as methods).
+  </base-disclaimer-content>
+</base-disclaimer>
 
+## Encapsulation
 
-## Basics
-
-
-
-### 1. Encapsulation:
 Encapsulation is one of the fundamental concepts of object-oriented programming, which helps to protect the data and methods of an object from unauthorized access and modification. It is a way to achieve data abstraction, which means that the implementation details of an object are hidden from the outside world, and only the essential information is exposed.
 
 In Python, encapsulation can be achieved by using access modifiers. Access modifiers are keywords that define the accessibility of attributes and methods in a class. The three access modifiers available in Python are public, private, and protected. However, Python does not have an explicit way of defining access modifiers like some other programming languages such as Java and C++. Instead, it uses a convention of using underscore prefixes to indicate the access level.
@@ -24,7 +28,6 @@ In the given code example, the class MyClass has two attributes, _protected_var 
 When we create an object of the MyClass class, we can access the _protected_var attribute using the object name with a single underscore prefix. However, we cannot access the __private_var attribute using the object name, as it is hidden from the outside world. If we try to access the __private_var attribute, we will get an AttributeError as shown in the code.
 
 In summary, encapsulation is an important concept in object-oriented programming that helps to protect the implementation details of an object. In Python, we can achieve encapsulation by using access modifiers and using underscore prefixes to indicate the access level.
-
 
 ```python
 # Define a class named MyClass
@@ -56,9 +59,7 @@ print(obj.__private_var)    # AttributeError: 'MyClass' object has no attribute 
 
 ```
 
-
-
-### 2. Inheritance:
+## Inheritance
 
 Inheritance promotes code reuse and allows you to create a hierarchy of classes that share common attributes and methods. It helps in creating clean and organized code by keeping related functionality in one place and promoting the concept of modularity. The base class from which a new class is derived is also known as a parent class, and the new class is known as the child class or subclass.
 
@@ -67,7 +68,6 @@ In the code, we define a class named Animal which has a constructor method that 
 We then define two subclasses named Dog and Cat which inherit from the Animal class. These subclasses override the speak method of the Animal class.
 
 We create a Dog object with a name attribute "Rover" and a Cat object with a name attribute "Whiskers". We call the speak method of the Dog object using dog.speak(), and it prints "Woof!" because the speak method of the Dog class overrides the speak method of the Animal class. Similarly, we call the speak method of the Cat object using cat.speak(), and it prints "Meow!" because the speak method of the Cat class overrides the speak method of the Animal class.
-
 
 ``` python
 # Define a class named Animal
@@ -114,9 +114,8 @@ cat.speak()   # output: Meow!
 
 ```
 
+## Polymorphism
 
-
-### 3. Polymorphism:
 Polymorphism is an important concept in object-oriented programming that allows you to write code that can work with objects of different classes in a uniform way. In Python, polymorphism is achieved by using method overriding or method overloading.
 
 Method overriding is when a subclass provides its own implementation of a method that is already defined in its parent class. This allows the subclass to modify the behavior of the method without changing its name or signature.
@@ -124,7 +123,6 @@ Method overriding is when a subclass provides its own implementation of a method
 Method overloading is when multiple methods have the same name but different parameters. Python does not support method overloading directly, but it can be achieved using default arguments or variable-length arguments.
 
 Polymorphism makes it easier to write flexible and reusable code. It allows you to write code that can work with different objects without needing to know their specific types.
-
 
 ```python
 #The Shape class is defined with an abstract area method, which is intended to be overridden by subclasses.
@@ -165,9 +163,7 @@ for shape in shapes:
 
 ```
 
-
-
-### 4. Abstraction:
+## Abstraction
 Abstraction is an important concept in object-oriented programming (OOP) because it allows you to focus on the essential features of an object or system while ignoring the details that aren't relevant to the current context. By reducing complexity and hiding unnecessary details, abstraction can make code more modular, easier to read, and easier to maintain.
 
 In Python, abstraction can be achieved by using abstract classes or interfaces. An abstract class is a class that cannot be instantiated directly, but is meant to be subclassed by other classes. It often includes abstract methods that have no implementation, but provide a template for how the subclass should be implemented. This allows the programmer to define a common interface for a group of related classes, while still allowing each class to have its own specific behavior.
@@ -177,7 +173,6 @@ An interface, on the other hand, is a collection of method signatures that a cla
 Python does not have built-in support for abstract classes or interfaces, but they can be implemented using the abc (abstract base class) module. This module provides the ABC class and the abstractmethod decorator, which can be used to define abstract classes and methods.
 
 Overall, abstraction is a powerful tool for managing complexity and improving code quality in object-oriented programming, and Python provides a range of options for achieving abstraction in your code.
-
 
 ```python
 # Import the abc module to define abstract classes and methods
@@ -216,7 +211,6 @@ for shape in shapes:
     print(shape.area())
 
 ```
-
 
 These are some of the basic OOP principles in Python. This page is currently in progress and more
 detailed examples and explanations will be coming soon.

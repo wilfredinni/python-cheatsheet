@@ -12,6 +12,7 @@ Changelog
 ## 2023-04-08
 
 - Added `input` example with `f-strings`. Thanks [@darkpixlz](https://github.com/darkpixlz) ([#204](https://github.com/wilfredinni/python-cheatsheet/pull/204))
+- Added more `OOP` details. Thanks [@noraa-july-stoke](https://github.com/noraa-july-stoke) ([#201](https://github.com/wilfredinni/python-cheatsheet/pull/201))
 
 
 ## 2023-03-26
