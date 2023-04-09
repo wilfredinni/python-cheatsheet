@@ -61,7 +61,7 @@
     "vite-plugin-vue-markdown": "^0.22.4",
     "vite-ssg": "^0.22.1",
     "vite-ssg-sitemap": "^0.4.3",
-    "vitest": "^0.29.8",
+    "vitest": "^0.30.0",
     "vue-tsc": "^1.2.0"
   },
   "pnpm": {
