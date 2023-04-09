@@ -64,8 +64,8 @@ useHead({
       Reach an ever-growing number of Python developers.
       <prose class="prose-sm">
         <ul>
-          <li>3400+ Subscribers</li>
-          <li>80/100 weekly subscribers</li>
+          <li>4060+ Subscribers</li>
+          <li>80/125 weekly subscribers</li>
         </ul>
       </prose>
     </base-customizable-link-card>
