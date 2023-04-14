@@ -12,7 +12,7 @@
   "dependencies": {
     "@docsearch/js": "^3.3.3",
     "@headlessui/vue": "^1.7.12",
-    "@vueuse/core": "^9.13.0",
+    "@vueuse/core": "^10.0.0",
     "@vueuse/head": "^1.1.23",
     "pinia": "^2.0.34",
     "prism-theme-vars": "^0.2.4",
