@@ -114,7 +114,7 @@ To use an `if-else` statement in a List Comprehension:
 A List comprehension can be generated from a dictionary:
 
 ```python
->>> c = {'name': 'Pooka', 'first_name': 'Oooka'}
->>> ["{}:{}".format(k.upper(), v.upper()) for k, v in c.items()]
-['NAME:POOKA', 'FIRST_NAME:OOOKA']
+>>> c = {'name': 'Pooka', 'age': 5}
+>>> ["{}:{}".format(k.upper(), v) for k, v in c.items()]
+['NAME:Pooka', 'AGE:5']
 ```
