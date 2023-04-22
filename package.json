@@ -14,6 +14,7 @@
     "@headlessui/vue": "^1.7.13",
     "@vueuse/core": "^10.1.0",
     "@vueuse/head": "^1.1.26",
+    "critters": "^0.0.16",
     "pinia": "^2.0.35",
     "prism-theme-vars": "^0.2.4",
     "vue": "^3.2.47",
