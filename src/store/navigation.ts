@@ -24,7 +24,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Basics',
         path: '/cheatsheet/basics',
-        updated: true,
+        updated: false,
       },
       {
         name: 'Built-in functions',
@@ -115,7 +115,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'OOP',
         path: '/cheatsheet/oop-basics',
-        updated: true,
+        updated: false,
       },
       {
         name: 'Dataclasses',
