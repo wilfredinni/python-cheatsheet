@@ -1,6 +1,6 @@
 <template>
   <a
-    href="https://ggt.ink/PWTIPB9"
+    href="https://kinsta.com/application-hosting/?utm_source=pythoncheatsheet&utm_medium=digital&utm_campaign=python-hosting&utm_content=banner"
     rel="noreferrer"
     class="rounded-md border dark:border-slate-700"
   >

@@ -6,7 +6,7 @@ export const useNavigationStore = defineStore('navigation', {
       { name: 'Blog', path: '/blog', internal: true },
       {
         name: 'Newsletter',
-        path: 'https://ggt.ink/PoVKNkO',
+        path: 'https://news.pythoncheatsheet.org/',
         internal: false,
       },
     ],

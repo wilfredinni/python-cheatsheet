@@ -132,7 +132,7 @@ Changelog
 
 ### Website
 
-- Launched Python Cheatsheet [newsletter](https://ggt.ink/PoVKNkO) 🎉
+- Launched Python Cheatsheet [newsletter](https://news.pythoncheatsheet.org/) 🎉
 - Added a newsletter subscription form component.
 
 ### Cheatsheet

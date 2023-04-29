@@ -1,6 +1,6 @@
 <template>
   <a
-    href="https://ggt.ink/f5017OU"
+    href="https://practity.com/"
     rel="noreferrer"
     class="rounded-md border dark:border-slate-700"
   >
