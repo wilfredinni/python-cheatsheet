@@ -10,10 +10,8 @@
   <a href="https://github.com/wilfredinni/python-cheatsheet/blob/master/src/pages/contributing.md">Contribute</a> |
   <a href="https://github.com/wilfredinni/python-cheatsheet/blob/master/src/pages/changelog.md">Changelog</a>
 </div>
-<br>
-<!-- <img height="340" src="public/screenshots/frame_dark.png">
-<img height="340" src="public/screenshots/frame_light.png"> -->
-<img src="public/screenshots/frame_light.png">
+<img src="public/screenshots/light.png">
+<img src="public/screenshots/dark.png">
 <p align='center'>
 This <a href="https://www.pythoncheatsheet.org/">Python Cheatsheet</a> is based on the book <a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a> and many other sources.
 </p>
