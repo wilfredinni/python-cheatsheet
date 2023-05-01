@@ -1,0 +1,16 @@
+<svg
+  class="h-7 w-auto"
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.com/svgjs"
+  width="100%"
+  height="100%"
+  viewBox="5 5 90 90"
+>
+  <g fill="#b4d241">
+    <path
+      d="M61.25 50v33.75h-5.625V27.5h22.5v-4.406h10.969l-1.656-1.641 1.688-1.641h-11V5h-33.75v78.75H38.75v-45H5v22.5h22.5V95h45V72.5H95V50H61.25zm9.083-40h3.833v3.833h-3.833V10zM63.5 10h3.833v3.833H63.5V10zM12.708 47.875H8.875v-3.834h3.833v3.834zm6.583 0h-3.833v-3.834h3.833v3.834zm65.167 11h-3.833v-3.834h3.833v3.834zm6.583 0h-3.833v-3.834h3.833v3.834z"
+    ></path>
+  </g>
+</svg>
