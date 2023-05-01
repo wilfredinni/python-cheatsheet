@@ -5,10 +5,10 @@
 <h1 align="center">Python Cheatsheet</h1>
 
 <div align="center">
-<a href="https://ggt.ink/ezMxYFe">pythoncheatsheet.org</a> |
-<a href="https://ggt.ink/PoVKNkO">Newsletter</a> |
-<a href="https://github.com/wilfredinni/python-cheatsheet/blob/master/src/pages/contributing.md">Contribute</a> |
-<a href="https://github.com/wilfredinni/python-cheatsheet/blob/master/src/pages/changelog.md">Changelog</a>
+  <a href="https://ggt.ink/ezMxYFe">pythoncheatsheet.org</a> |
+  <a href="https://ggt.ink/PoVKNkO">Newsletter</a> |
+  <a href="https://github.com/wilfredinni/python-cheatsheet/blob/master/src/pages/contributing.md">Contribute</a> |
+  <a href="https://github.com/wilfredinni/python-cheatsheet/blob/master/src/pages/changelog.md">Changelog</a>
 </div>
 <br>
 <p align='center'>
@@ -23,10 +23,17 @@ for a regex, [slice a list](https://www.pythoncheatsheet.org/cheatsheet/lists-an
 
 ## Sponsors
 
+Many thanks to our current and previous sponsors for supporting this project!
+
 <div>
 <a
   href="https://ggt.ink/PWTIPB9"
   target="_blank">
-<img height="40" src="public/sponsors/kinsta/kinsta-logo-alpha-purple.png">
+<img height="35" src="public/sponsors/kinsta/kinsta-logo-alpha-purple.png">
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a
+  href="https://ggt.ink/PWTIPB9"
+  target="_blank">
+<img height="35" src="public/sponsors/practity/practity.webp">
 </a>&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
