@@ -198,4 +198,6 @@
     },
     "peacock.remoteColor": "1b1e2b",
     "cSpell.language": "en",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 17,
 }

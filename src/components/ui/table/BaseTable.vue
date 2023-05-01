@@ -10,7 +10,7 @@ defineProps({
 <template>
   <div class="px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col">
-      <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div
           class="scrollbar:!w-1.5 scrollbar:!h-1.5 scrollbar:bg-transparent scrollbar-track:!bg-slate-100 scrollbar-thumb:!rounded scrollbar-thumb:!bg-slate-300 scrollbar-track:!rounded dark:scrollbar-track:!bg-slate-500/[0.16] dark:scrollbar-thumb:!bg-slate-500/50 supports-scrollbars:pr-2 max-h-96 overflow-hidden lg:max-h-96 lg:overflow-auto"
         >

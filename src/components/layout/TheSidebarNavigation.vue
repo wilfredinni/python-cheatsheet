@@ -2,7 +2,7 @@
 interface Navigation {
   name: string
   path: string
-  updated: boolean
+  updated?: boolean
   [key: string]: any
 }
 
@@ -17,7 +17,7 @@ defineProps<{
     {{ sectionName }}
   </h3>
   <ul
-    class="mt-2 mb-6 space-y-2 border-l-2 border-slate-100 text-base dark:border-slate-800 lg:mt-4 lg:space-y-1.5 lg:border-slate-200 lg:text-sm"
+    class="mb-6 mt-2 space-y-2 border-l-2 border-slate-100 text-base dark:border-slate-800 lg:mt-4 lg:space-y-1.5 lg:border-slate-200 lg:text-sm"
   >
     <li v-for="item in navigation" :key="item.name" class="relative">
       <router-link

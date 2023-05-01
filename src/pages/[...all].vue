@@ -12,7 +12,7 @@ useHead({
 </script>
 
 <template>
-  <div class="flex min-h-full flex-col bg-gray-900 pt-16 pb-12">
+  <div class="flex min-h-full flex-col bg-gray-900 pb-12 pt-16">
     <main
       class="mx-auto flex w-full max-w-7xl flex-grow flex-col justify-center px-4 sm:px-6 lg:px-8"
     >

@@ -34,12 +34,12 @@ const tags = props.frontmatter.tags?.split(', ')
 
     <div
       v-if="tags && !reader.isActive"
-      class="mt-3 mb-10 flex flex-wrap gap-3 text-xs text-slate-50 dark:text-white"
+      class="mb-10 mt-3 flex flex-wrap gap-3 text-xs text-slate-50 dark:text-white"
     >
       <span
         v-for="tag in tags"
         :key="tag"
-        class="rounded bg-sky-500 py-1 px-1.5 dark:bg-sky-600"
+        class="rounded bg-sky-500 px-1.5 py-1 dark:bg-sky-600"
       >
         #{{ tag }}
       </span>

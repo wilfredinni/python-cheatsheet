@@ -14,9 +14,9 @@ import { contributors } from '../../contributors/contributors'
       rel="noopener noreferrer"
       :aria-label="`${name} on GitHub`"
     >
+      <!-- loading="lazy" -->
       <img
         class="h-12 w-12 rounded-full"
-        loading="lazy"
         :src="avatar"
         width="50"
         height="50"

@@ -59,11 +59,11 @@ const articles = computed(() => {
               class="text-base font-semibold tracking-tight text-slate-800 dark:text-slate-100"
             >
               <div
-                class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-slate-100/60 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-slate-800/60 sm:-inset-x-6 sm:rounded-2xl"
+                class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-slate-100/60 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-slate-800/60 sm:-inset-x-6 sm:rounded-2xl"
               />
               <router-link :to="article.path">
                 <span
-                  class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"
+                  class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"
                 />
                 <span class="relative z-10">
                   {{ article.children[0]?.meta?.title }}
@@ -110,7 +110,7 @@ const articles = computed(() => {
             </div>
           </div>
           <time
-            class="relative z-10 order-first mt-1 mb-3 hidden items-center text-sm text-slate-400 dark:text-slate-500 md:block"
+            class="relative z-10 order-first mb-3 mt-1 hidden items-center text-sm text-slate-400 dark:text-slate-500 md:block"
             datetime="2022-09-05"
           >
             {{ article.children[0]?.meta?.date }}

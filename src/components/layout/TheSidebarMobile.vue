@@ -42,7 +42,7 @@ watch(useRoute(), () => (isOpen.value = false))
         leave-to="-translate-x-full"
       >
         <DialogPanel
-          class="min-h-full w-full max-w-xs bg-white px-4 pt-5 pb-12 dark:bg-slate-900 sm:px-6"
+          class="min-h-full w-full max-w-xs bg-white px-4 pb-12 pt-5 dark:bg-slate-900 sm:px-6"
         >
           <DialogTitle class="sr-only">Navigation</DialogTitle>
           <div class="flex items-center">
