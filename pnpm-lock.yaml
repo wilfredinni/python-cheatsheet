@@ -142,8 +142,8 @@ devDependencies:
     specifier: ^0.8.0
     version: 0.8.0(vite@4.3.4)(vue-router@4.1.6)(vue@3.2.47)
   vite-plugin-vue-markdown:
-    specifier: ^0.22.6
-    version: 0.22.6(rollup@2.79.1)(vite@4.3.4)
+    specifier: ^0.23.0
+    version: 0.23.0(rollup@2.79.1)(vite@4.3.4)
   vite-ssg:
     specifier: ^0.22.2
     version: 0.22.2(@vueuse/head@1.1.26)(vite@4.3.4)(vue-router@4.1.6)(vue@3.2.47)
@@ -5884,8 +5884,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-vue-markdown@0.22.6(rollup@2.79.1)(vite@4.3.4):
-    resolution: {integrity: sha512-BB0/yYoRO+4hceFZRgU/iAOpgklFvo/eHLapOkavIoDkP0jeoQubOMTEF8K4FuYRX9jaN5WcP2TrfhUgc7RuUg==}
+  /vite-plugin-vue-markdown@0.23.0(rollup@2.79.1)(vite@4.3.4):
+    resolution: {integrity: sha512-/XG8pH0xiPeuU9+IfnWTRM57ETga3ZfxB7/tHEXy7HuCUTwCGTtbnvHMJEa6njJus8n3d8oyZHtzo8wh+bVV2g==}
     peerDependencies:
       vite: ^2.0.0 || ^3.0.0-0 || ^4.0.0
     dependencies:
