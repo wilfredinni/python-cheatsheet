@@ -61,8 +61,8 @@ devDependencies:
     specifier: ^4.2.1
     version: 4.2.1(vite@4.3.4)(vue@3.2.47)
   '@vue/compiler-dom':
-    specifier: ^3.2.47
-    version: 3.2.47
+    specifier: ^3.3.0-beta
+    version: 3.3.0-beta.3
   '@vue/test-utils':
     specifier: ^2.3.2
     version: 2.3.2(vue@3.2.47)
