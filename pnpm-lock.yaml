@@ -61,8 +61,8 @@ devDependencies:
     specifier: ^4.2.1
     version: 4.2.1(vite@4.3.5)(vue@3.2.47)
   '@vue/compiler-dom':
-    specifier: 3.3.0-beta.4
-    version: 3.3.0-beta.4
+    specifier: 3.3.0-beta.5
+    version: 3.3.0-beta.5
   '@vue/test-utils':
     specifier: ^2.3.2
     version: 2.3.2(vue@3.2.47)
@@ -2316,10 +2316,10 @@ packages:
     dependencies:
       '@volar/language-core': 1.4.1
       '@volar/source-map': 1.4.1
-      '@vue/compiler-dom': 3.3.0-beta.4
+      '@vue/compiler-dom': 3.3.0-beta.5
       '@vue/compiler-sfc': 3.3.0-beta.4
       '@vue/reactivity': 3.3.0-beta.4
-      '@vue/shared': 3.3.0-beta.4
+      '@vue/shared': 3.3.0-beta.5
       minimatch: 9.0.0
       muggle-string: 0.2.2
       vue-template-compiler: 2.7.14
@@ -2352,6 +2352,15 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
+  /@vue/compiler-core@3.3.0-beta.5:
+    resolution: {integrity: sha512-rwKXIMPDKBzKypcZ7Zc+i4e7ItnhlMEu9QZveek2yLxzMG0QimvZnVKB7eD21cQ9MCwEYW4bb8zjisPMJNNaqQ==}
+    dependencies:
+      '@babel/parser': 7.21.8
+      '@vue/shared': 3.3.0-beta.5
+      estree-walker: 2.0.2
+      source-map-js: 1.0.2
+    dev: true
+
   /@vue/compiler-dom@3.2.47:
     resolution: {integrity: sha512-dBBnEHEPoftUiS03a4ggEig74J2YBZ2UIeyfpcRM2tavgMWo4bsEfgCGsu+uJIL/vax9S+JztH8NmQerUo7shQ==}
     dependencies:
@@ -2363,6 +2372,13 @@ packages:
     dependencies:
       '@vue/compiler-core': 3.3.0-beta.4
       '@vue/shared': 3.3.0-beta.4
+    dev: true
+
+  /@vue/compiler-dom@3.3.0-beta.5:
+    resolution: {integrity: sha512-OsYuAzl8zHRym5TfDhCLrcTSBt71BFJXnTC9uWO+SfgqadadWZxv1piPebjtwJcODkks5OAGfdhxzKdNzzddXw==}
+    dependencies:
+      '@vue/compiler-core': 3.3.0-beta.5
+      '@vue/shared': 3.3.0-beta.5
     dev: true
 
   /@vue/compiler-sfc@3.2.47:
@@ -2467,6 +2483,10 @@ packages:
 
   /@vue/shared@3.3.0-beta.4:
     resolution: {integrity: sha512-yRrdT1FUWhuLNgj3UUasmToYZ0zR0SOdmVyLa0FHIzbnn00LOiK4lZoPRELMRMnyPy6wwwWHRNmItUeWc2ZGPQ==}
+    dev: true
+
+  /@vue/shared@3.3.0-beta.5:
+    resolution: {integrity: sha512-ImwhHfOzuQrfA05Kx4s7J9g7QJt0sZqSlPvPdd6xj5tTEnPNNJYZOHaIP973mtuEuv4Zfh9v+CLiER6E6gtSqg==}
     dev: true
 
   /@vue/test-utils@2.3.2(vue@3.2.47):
