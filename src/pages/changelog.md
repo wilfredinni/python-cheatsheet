@@ -9,6 +9,11 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2023-06-11
+
+- Fixed a typo in Sets. Thanks [@alvyynm](https://github.com/alvyynm) ([#252](https://github.com/wilfredinni/python-cheatsheet/pull/252))
+- Upgraded dependencies to the latest version.
+
 ## 2023-04-08
 
 - Added `input` example with `f-strings`. Thanks [@darkpixlz](https://github.com/darkpixlz) ([#204](https://github.com/wilfredinni/python-cheatsheet/pull/204))

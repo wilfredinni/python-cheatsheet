@@ -55,7 +55,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Sets',
         path: '/cheatsheet/sets',
-        updated: false,
+        updated: true,
       },
       {
         name: 'Comprehensions',
