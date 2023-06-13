@@ -26,7 +26,7 @@
     "@types/fs-extra": "^11.0.1",
     "@types/markdown-it": "^12.2.3",
     "@types/markdown-it-link-attributes": "^3.0.1",
-    "@types/node": "18.16.17",
+    "@types/node": "18.16.18",
     "@types/string": "0.0.31",
     "@typescript-eslint/eslint-plugin": "^5.59.9",
     "@typescript-eslint/parser": "^5.59.9",
