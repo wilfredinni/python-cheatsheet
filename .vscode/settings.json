@@ -3,11 +3,8 @@
         "locales"
     ],
     "editor.formatOnSave": true,
-    "eslint.alwaysShowStatus": true,
-    "eslint.packageManager": "pnpm",
-    "volar.autoCompleteRefs": true,
     "typescript.validate.enable": true,
-    "prettier.prettierPath": "./node_modules/prettier",
+    // "prettier.prettierPath": "./node_modules/prettier",
     "editor.tabSize": 2,
     "cSpell.words": [
         "aaclient",

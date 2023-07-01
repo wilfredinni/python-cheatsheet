@@ -44,9 +44,10 @@ const showNewsletterForm = useLocalStorage('showNewsletterForm', true)
     >
       Subscribe to pythoncheatsheet.org
     </p>
+
     <prose>
       <p class="text-center text-slate-700 dark:text-slate-400 sm:text-start">
-        A weekly and bullshit free
+        A bullshit free
         <a href="https://news.pythoncheatsheet.org/" rel="noreferrer"
           >publication</a
         >, full of interesting, relevant links.
