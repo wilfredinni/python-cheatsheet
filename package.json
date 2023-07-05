@@ -46,7 +46,7 @@
     "markdown-it-prism": "^2.3.0",
     "ohmyfetch": "^0.4.21",
     "postcss": "^8.4.24",
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "prismjs": "^1.29.0",
     "string": "^3.3.3",
