@@ -16,6 +16,15 @@ Python pow() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Example
+
+```python
+>>> result = pow(2, 3)
+>>> print(result)
+# 8
+```
+
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->
