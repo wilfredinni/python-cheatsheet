@@ -16,6 +16,15 @@ Python issubclass() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+## Examples
+
+```python
+class First:
+    pass
+
+class Second(First):
+    pass
+
+print(issubclass(Second, First))  # True
+print(issubclass(First, Second)) # False
+```
