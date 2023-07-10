@@ -16,6 +16,17 @@ Python locals() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+
+## Example
+
+```python
+def my_function():
+    name = "Jim"
+    age = 35
+    print(locals())
+
+my_function() # {'name': 'Jim', 'age': 35}
+```
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->
