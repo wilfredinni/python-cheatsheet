@@ -11,6 +11,11 @@ Changelog
 
 ## 2023-06-11
 
+- Added examples for built-in `format`, `issubclass`, `locals`, `pow`, `range`, `vars`. Thanks [@vaibhavb02](https://github.com/vaibhavb02)
+- Upgraded dependencies to the latest version.
+
+## 2023-06-11
+
 - Fixed a typo in Sets. Thanks [@alvyynm](https://github.com/alvyynm) ([#252](https://github.com/wilfredinni/python-cheatsheet/pull/252))
 - Upgraded dependencies to the latest version.
 
