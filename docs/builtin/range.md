@@ -16,6 +16,18 @@ Python range() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Examples
+
+```python
+>>> for i in range(5):
+...     print(i)
+# 0
+# 1
+# 2
+# 3
+# 4
+```
+
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->
