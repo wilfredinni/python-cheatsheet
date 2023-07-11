@@ -16,6 +16,14 @@ Python format() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+## Examples
+
+```python
+name = 'Micheal'
+company = 'Dunder Mifflin'
+
+print("My name is {0} and I work for {1}.".format(name, company))
+
+# Formatting string (faster and easier)
+print(f"My name is {name} and I work for {company}.")
+```
