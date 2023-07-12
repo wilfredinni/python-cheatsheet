@@ -37,7 +37,7 @@
     "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-vue": "^9.15.1",
-    "esno": "^0.16.3",
+    "esno": "^0.17.0",
     "fs-extra": "^11.1.1",
     "happy-dom": "^10.1.1",
     "markdown-it": "^13.0.1",
