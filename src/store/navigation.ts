@@ -58,11 +58,6 @@ export const useNavigationStore = defineStore('navigation', {
         updated: true,
       },
       {
-        name: 'Copy',
-        path: '/cheatsheet/copy',
-        updated: true,
-      },
-      {
         name: 'Comprehensions',
         path: '/cheatsheet/comprehensions',
         updated: false,
