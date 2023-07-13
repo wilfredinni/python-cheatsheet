@@ -9,7 +9,7 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
-## 2023-06-11
+## 2023-07-12
 
 - Added examples for built-in `format`, `issubclass`, `locals`, `pow`, `range`, `vars`. Thanks [@vaibhavb02](https://github.com/vaibhavb02)
 - Upgraded dependencies to the latest version.
