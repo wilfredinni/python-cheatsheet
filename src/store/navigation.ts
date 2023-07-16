@@ -140,6 +140,11 @@ export const useNavigationStore = defineStore('navigation', {
     ],
     standardLibraryNavigation: [
       {
+        name: 'Copy',
+        path: '/modules/copy-module',
+        updated: true,
+      },
+      {
         name: 'Datetime',
         path: '/modules/datetime-module',
       },

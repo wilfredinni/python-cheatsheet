@@ -36,6 +36,7 @@
         "darkpixlz",
         "dataclass",
         "Dbfilename",
+        "deepcopy",
         "delattr",
         "Distutils",
         "divmod",
