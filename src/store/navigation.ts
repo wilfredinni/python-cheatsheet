@@ -19,6 +19,11 @@ export const useNavigationStore = defineStore('navigation', {
         name: 'Contributing',
         path: '/contributing',
       },
+      {
+        name: 'Changelog',
+        path: '/changelog',
+        updated: true,
+      },
     ],
     cheatsheetNavigation: [
       {
