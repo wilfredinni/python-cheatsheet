@@ -9,6 +9,10 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2023-07-15
+
+- Added `copy` module to modules section. Thanks [@MozarM](https://github.com/MozarM)
+
 ## 2023-07-12
 
 - Added examples for built-in `format`, `issubclass`, `locals`, `pow`, `range`, `vars`. Thanks [@vaibhavb02](https://github.com/vaibhavb02)

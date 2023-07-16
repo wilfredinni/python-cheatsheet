@@ -98,6 +98,7 @@
         "memoryview",
         "mkdir",
         "mkvirtualenv",
+        "Mozar",
         "mydata",
         "mypy",
         "namelist",
