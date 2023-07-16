@@ -157,16 +157,16 @@ export const useNavigationStore = defineStore('navigation', {
         path: '/modules/json-module',
       },
       {
-        name: 'Random',
-        path: '/modules/random-module',
-      },
-      {
         name: 'Os',
         path: '/modules/os-module',
       },
       {
         name: 'Pathlib',
         path: '/modules/pathlib-module',
+      },
+      {
+        name: 'Random',
+        path: '/modules/random-module',
       },
       {
         name: 'Shelve',
