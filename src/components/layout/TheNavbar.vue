@@ -28,14 +28,14 @@ const route = useRoute()
 
           <algolia-doc-search />
 
-          <a href="https://news.pythoncheatsheet.org/" rel="noreferrer">
+          <router-link to="/modules/copy-module" rel="noreferrer">
             <base-badge class="hidden lg:flex">
               <span class="hidden xl:flex">
-                ✨ Read the latest Python Cheatsheet Issue!
+                ✨ Recently added the Python Copy Module
               </span>
               <span class="hidden lg:block xl:hidden"> ✨ Latest Issue </span>
             </base-badge>
-          </a>
+          </router-link>
         </div>
 
         <!-- actions -->
