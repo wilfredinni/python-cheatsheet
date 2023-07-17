@@ -201,4 +201,8 @@
     "cSpell.language": "en",
     "editor.fontLigatures": true,
     "editor.fontSize": 17,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
