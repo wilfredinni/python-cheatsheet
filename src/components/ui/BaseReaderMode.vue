@@ -4,6 +4,6 @@ const reader = useReaderStore()
 
 <template>
   <button @click="reader.toggle()">
-    <base-badge> Enter reader mode </base-badge>
+    <base-badge-secondary class=""> Enter reader mode </base-badge-secondary>
   </button>
 </template>
