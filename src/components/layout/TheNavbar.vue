@@ -31,7 +31,9 @@ const route = useRoute()
           <router-link to="/modules/copy-module" rel="noreferrer">
             <base-badge class="hidden lg:flex">
               <span class="hidden xl:flex">
-                ✨ Recently added the Python Copy Module
+                ✨ Recently added
+                <span class="mx-1.5">·</span>
+                Copy Module
               </span>
               <span class="hidden lg:block xl:hidden"> ✨ Latest Issue </span>
             </base-badge>
