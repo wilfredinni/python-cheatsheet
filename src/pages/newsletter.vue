@@ -129,7 +129,9 @@ const response = computed(() => newsletter.getResponse)
         </template>
 
         <template v-else-if="response?.success == false">
-          <p class="mt-2 text-sm font-medium text-sky-700 dark:text-sky-500">
+          <p
+            class="mt-2 mx-2 text-sm font-medium text-sky-700 dark:text-sky-500"
+          >
             You are already subscribed. Thanks!
           </p>
         </template>
