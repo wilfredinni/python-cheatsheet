@@ -10,6 +10,7 @@ declare module 'vue' {
     AlgoliaDocSearch: typeof import('./components/AlgoliaDocSearch.vue')['default']
     ArrowIcon: typeof import('./components/icons/ArrowIcon.vue')['default']
     BaseBadge: typeof import('./components/ui/BaseBadge.vue')['default']
+    BaseBadgeNotice: typeof import('./components/ui/BaseBadgeNotice.vue')['default']
     BaseBadgeSecondary: typeof import('./components/ui/BaseBadgeSecondary.vue')['default']
     BaseBanner: typeof import('./components/ui/BaseBanner.vue')['default']
     BaseCustomizableLinkCard: typeof import('./components/ui/BaseCustomizableLinkCard.vue')['default']

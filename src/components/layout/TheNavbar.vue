@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const navigation = useNavigationStore()
 const route = useRoute()
+
+const timeAgo = useTimeAgo(new Date(2023, 6, 15))
 </script>
 
 <template>
@@ -28,15 +30,24 @@ const route = useRoute()
 
           <algolia-doc-search />
 
-          <router-link to="/modules/copy-module" rel="noreferrer">
-            <base-badge class="hidden lg:flex">
-              <span class="hidden xl:flex">
+          <router-link
+            to="/modules/copy-module"
+            rel="noreferrer"
+            class="hidden xl:flex"
+          >
+            <base-badge-notice class="text-xs">
+              <!-- <template #title>2023-07-15</template> -->
+              <template #title>
+                <span class="capitalize">
+                  {{ timeAgo }}
+                </span>
+              </template>
+              <template #message>
                 ✨ Recently added
                 <span class="mx-1.5">·</span>
                 Copy Module
-              </span>
-              <span class="hidden lg:block xl:hidden"> ✨ Latest Issue </span>
-            </base-badge>
+              </template>
+            </base-badge-notice>
           </router-link>
         </div>
 
