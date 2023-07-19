@@ -1,3 +1,17 @@
+<script setup lang="ts">
+const newsletter = useNewsletterStore()
+const email = ref('')
+const loading = ref(false)
+
+const subscribe = async () => {
+  loading.value = true
+  await newsletter.subscribe(email.value)
+  loading.value = false
+}
+
+const response = computed(() => newsletter.getResponse)
+</script>
+
 <template>
   <div class="relative isolate sm:pt-14">
     <svg
@@ -60,10 +74,14 @@
           Keep up to date with Python!
         </h1>
         <p class="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-400">
-          Python Cheatsheet newsletter is a weekly and bullshit free
-          publication, full of interesting, relevant links
+          Join
+          <span class="text-sky-600 dark:text-sky-500"
+            >7.000+ Python developers</span
+          >
+          in a weekly and bullshit free publication, full of interesting,
+          relevant links.
         </p>
-        <div class="relative mt-6">
+        <form class="relative mt-6" @submit.prevent="subscribe">
           <input
             type="email"
             placeholder="Email address"
@@ -87,7 +105,23 @@
               </svg>
             </button>
           </div>
-        </div>
+        </form>
+        <template v-if="response?.email">
+          <p
+            class="mx-3 mt-3 text-center text-sm font-medium text-sky-700 dark:text-sky-400"
+          >
+            Thank you for subscribing! Please check your email to confirm your
+            subscription. Be sure to check your junk folder.
+          </p>
+        </template>
+
+        <template v-else-if="response?.success == false">
+          <p
+            class="mt-2 text-center text-sm font-medium text-sky-700 dark:text-sky-400"
+          >
+            You are already subscribed. Thanks!
+          </p>
+        </template>
         <div class="mt-10 flex items-center gap-x-6">
           <router-link
             to="/sponsor"
