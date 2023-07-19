@@ -95,20 +95,43 @@ const response = computed(() => newsletter.getResponse)
               aria-label="Submit"
               class="flex aspect-square h-full items-center justify-center rounded-xl bg-sky-600 dark:bg-sky-700 text-white transition hover:bg-sky-500 dark:hover:bg-sky-600"
             >
-              <svg viewBox="0 0 16 6" aria-hidden="true" class="w-4">
+              <span v-if="!loading">
+                <svg viewBox="0 0 16 6" aria-hidden="true" class="w-4">
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 3 10 .5v2H0v1h10v2L16 3Z"
+                  ></path>
+                </svg>
+              </span>
+              <svg
+                v-else
+                class="mx-auto h-4 w-4 animate-spin"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  class="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="4"
+                />
                 <path
+                  class="opacity-75"
                   fill="currentColor"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M16 3 10 .5v2H0v1h10v2L16 3Z"
-                ></path>
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                />
               </svg>
             </button>
           </div>
         </form>
         <template v-if="response?.email">
           <p
-            class="mx-3 mt-3 text-center text-sm font-medium text-sky-700 dark:text-sky-400"
+            class="mt-2 mx-2 text-sm font-medium text-sky-700 dark:text-sky-500"
           >
             Thank you for subscribing! Please check your email to confirm your
             subscription. Be sure to check your junk folder.
@@ -116,9 +139,7 @@ const response = computed(() => newsletter.getResponse)
         </template>
 
         <template v-else-if="response?.success == false">
-          <p
-            class="mt-2 text-center text-sm font-medium text-sky-700 dark:text-sky-400"
-          >
+          <p class="mt-2 text-sm font-medium text-sky-700 dark:text-sky-500">
             You are already subscribed. Thanks!
           </p>
         </template>
