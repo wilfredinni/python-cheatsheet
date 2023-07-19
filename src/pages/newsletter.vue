@@ -1,4 +1,15 @@
 <script setup lang="ts">
+useHead({
+  title: 'Newsletter - Python Cheatsheet',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Python Cheatsheet weekly and bullshit free publication, full of interesting, relevant links',
+    },
+  ],
+})
+
 const newsletter = useNewsletterStore()
 const email = ref('')
 const loading = ref(false)
