@@ -51,7 +51,7 @@ const response = computed(() => newsletter.getResponse)
       class="mx-auto max-w-8xl px-6 py-16 sm:py-32 lg:flex lg:items-center lg:gap-x-10"
     >
       <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-        <base-badge-notice>
+        <base-badge-notice size="sm">
           <template #title>Notice</template>
           <template #message>
             <span class="line-clamp-1"> Newsletter Temporary on hold </span>

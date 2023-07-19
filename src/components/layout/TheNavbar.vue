@@ -35,7 +35,7 @@ const timeAgo = useTimeAgo(new Date(2023, 6, 15))
             rel="noreferrer"
             class="hidden xl:flex"
           >
-            <base-badge-notice class="text-xs">
+            <base-badge-notice size="xs">
               <!-- <template #title>2023-07-15</template> -->
               <template #title>
                 <span class="capitalize">
@@ -44,7 +44,7 @@ const timeAgo = useTimeAgo(new Date(2023, 6, 15))
               </template>
               <template #message>
                 ✨ Recently added
-                <span class="mx-1.5">·</span>
+                <span class="mx-1">·</span>
                 Copy Module
               </template>
             </base-badge-notice>
