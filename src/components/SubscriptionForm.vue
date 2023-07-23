@@ -101,7 +101,7 @@ const showNewsletterForm = useLocalStorage('showNewsletterForm', true)
       </p>
     </template>
 
-    <template v-else-if="response?.success == false">
+    <template v-else-if="response?.errors">
       <p class="mt-2 text-sm font-medium text-sky-700 dark:text-sky-400">
         You are already subscribed. Thanks!
       </p>

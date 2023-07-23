@@ -23,16 +23,16 @@ export default defineConfig(({ mode }) => {
       },
     },
 
-    server: {
-      proxy: {
-        '/api': {
-          target: process.env.VITE_CURATED_ENDPOINT,
-          changeOrigin: true,
-          secure: false,
-          rewrite: (path) => path.replace(/^\/api/, ''),
-        },
-      },
-    },
+    // server: {
+    //   proxy: {
+    //     '/newsletter': {
+    //       target: process.env.VITE_CURATED_ENDPOINT,
+    //       changeOrigin: true,
+    //       secure: false,
+    //       rewrite: (path) => path.replace(/^\/newsletter/, ''),
+    //     },
+    //   },
+    // },
 
     plugins: [
       vue({
