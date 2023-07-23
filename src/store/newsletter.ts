@@ -31,7 +31,7 @@ export const useNewsletterStore = defineStore('useNewsletterStore', {
         headers: {
           Accept: 'application/json',
           'Content-type': 'application/json',
-          Authorization: `Token token="${grudgetToken}"`,
+          Authorization: `token ${grudgetToken}`,
         },
       }).catch((error) => error.data)
 
