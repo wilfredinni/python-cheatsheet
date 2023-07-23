@@ -83,6 +83,7 @@ const response = computed(() => newsletter.getResponse)
         </p>
         <form class="relative mt-6" @submit.prevent="subscribe">
           <input
+            v-model="email"
             type="email"
             placeholder="Email address"
             autocomplete="email"
