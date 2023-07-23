@@ -140,7 +140,7 @@ const response = computed(() => newsletter.getResponse)
           </p>
         </template>
 
-        <template v-else-if="response?.success == false">
+        <template v-else-if="response?.errors">
           <p
             class="mt-2 mx-2 text-sm font-medium text-sky-700 dark:text-sky-500"
           >
