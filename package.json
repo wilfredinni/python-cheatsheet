@@ -35,7 +35,7 @@
     "@vue/test-utils": "^2.4.1",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.45.0",
-    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-vue": "^9.15.1",
     "esno": "^0.17.0",
     "fs-extra": "^11.1.1",
