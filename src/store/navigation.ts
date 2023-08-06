@@ -30,7 +30,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Built-in functions',
         path: '/cheatsheet/built-in-functions',
-        updated: true,
+        updated: false,
       },
       {
         name: 'Control flow',
@@ -143,7 +143,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Copy',
         path: '/modules/copy-module',
-        updated: true,
+        updated: false,
       },
       {
         name: 'Datetime',

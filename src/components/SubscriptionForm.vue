@@ -48,8 +48,7 @@ const showNewsletterForm = useLocalStorage('showNewsletterForm', true)
     <prose>
       <p class="text-center text-slate-700 dark:text-slate-400 sm:text-start">
         A bullshit free
-        <a href="https://news.pythoncheatsheet.org/" rel="noreferrer"
-          >publication</a
+        <router-link to="/newsletter" rel="noreferrer">publication</router-link
         >, full of interesting, relevant links.
       </p>
     </prose>
