@@ -9,6 +9,10 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2023-08-06
+
+- Added `exec` built in function.
+
 ## 2023-07-15
 
 - Added `copy` module to modules section. Thanks [@MozarM](https://github.com/MozarM)
