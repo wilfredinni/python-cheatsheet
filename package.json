@@ -47,7 +47,7 @@
     "ohmyfetch": "^0.4.21",
     "postcss": "^8.4.27",
     "prettier": "^3.0.1",
-    "prettier-plugin-tailwindcss": "^0.4.1",
+    "prettier-plugin-tailwindcss": "^0.5.0",
     "prismjs": "^1.29.0",
     "string": "^3.3.3",
     "tailwindcss": "^3.3.3",
