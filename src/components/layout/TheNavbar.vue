@@ -2,7 +2,7 @@
 const navigation = useNavigationStore()
 const route = useRoute()
 
-const timeAgo = useTimeAgo(new Date(2023, 7, 6, 16, 50))
+const timeAgo = useTimeAgo(new Date(2023, 7, 26, 12, 0))
 </script>
 
 <template>
@@ -31,7 +31,7 @@ const timeAgo = useTimeAgo(new Date(2023, 7, 6, 16, 50))
           <algolia-doc-search />
 
           <router-link
-            to="/builtin/exec"
+            to="/builtin/dir"
             rel="noreferrer"
             class="hidden xl:flex"
           >
@@ -44,7 +44,7 @@ const timeAgo = useTimeAgo(new Date(2023, 7, 6, 16, 50))
               <template #message>
                 ✨ Recently added
                 <span class="mx-1">·</span>
-                exec built-in function
+                dir() built-in function
               </template>
             </base-badge-notice>
           </router-link>
