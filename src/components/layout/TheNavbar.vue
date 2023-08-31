@@ -9,7 +9,7 @@ const timeAgo = useTimeAgo(new Date(2023, 7, 26, 12, 0))
   <nav
     class="sticky top-0 z-40 w-full flex-none border-b border-slate-900/10 bg-white/90 backdrop-blur dark:border-slate-50/[0.06] dark:bg-transparent lg:z-50"
   >
-    <!-- <kinsta-banner /> -->
+    <kinsta-banner />
     <div class="mx-auto max-w-8xl px-2 sm:px-6 lg:px-12">
       <div class="relative flex h-14 justify-between">
         <the-sidebar-mobile />
