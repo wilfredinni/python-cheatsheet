@@ -39,7 +39,7 @@
     "eslint-plugin-vue": "^9.17.0",
     "esno": "^0.17.0",
     "fs-extra": "^11.1.1",
-    "happy-dom": "^10.11.2",
+    "happy-dom": "^11.0.0",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.7",
     "markdown-it-link-attributes": "^4.0.1",
