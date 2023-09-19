@@ -83,6 +83,35 @@ Examples:
 # ['item', 'item', 'item']
 ```
 
+## Walrus Operator
+
+The Walrus Operator allows assignment of variables within an expression while returning the value of the variable
+
+Example:
+
+```
+>>> print(myvar:="Hello World!")
+# 'Hello world!'
+
+>>> myvar="Yes"
+>>> print(myvar)
+# 'Yes'
+
+>>> print(myvar:="Hello")
+# 'Hello'
+```
+
+The _Walrus Operator_, or **Assignment Expression Operator** was firstly introduced in 2018 via [PEP 572](https://peps.python.org/pep-0572/), and then officially released with **Python 3.8** in October 2019.
+
+<base-disclaimer>
+  <base-disclaimer-title>
+    Syntax Semantics & Examples
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+  The <a href="https://peps.python.org/pep-0572/" target="_blank">PEP 572</a> provides the syntax, semantics and examples for the Walrus Operator.
+  </base-disclaimer-content>
+</base-disclaimer>
+
 ## Data Types
 
 | Data Type              | Examples                                  |
