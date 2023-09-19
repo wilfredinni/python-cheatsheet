@@ -89,15 +89,15 @@ The Walrus Operator allows assignment of variables within an expression while re
 
 Example:
 
-```
->>> print(myvar:="Hello World!")
+```python
+>>> print(my_var:="Hello World!")
 # 'Hello world!'
 
->>> myvar="Yes"
->>> print(myvar)
+>>> my_var="Yes"
+>>> print(my_var)
 # 'Yes'
 
->>> print(myvar:="Hello")
+>>> print(my_var:="Hello")
 # 'Hello'
 ```
 
