@@ -2,7 +2,7 @@
 const navigation = useNavigationStore()
 const route = useRoute()
 
-const timeAgo = useTimeAgo(new Date(2023, 7, 26, 12, 0))
+const timeAgo = useTimeAgo(new Date(2023, 8, 19, 20, 0))
 </script>
 
 <template>
@@ -31,7 +31,7 @@ const timeAgo = useTimeAgo(new Date(2023, 7, 26, 12, 0))
           <algolia-doc-search />
 
           <router-link
-            to="/builtin/dir"
+            to="/cheatsheet/basics#walrus-operator"
             rel="noreferrer"
             class="hidden xl:flex"
           >
@@ -44,7 +44,7 @@ const timeAgo = useTimeAgo(new Date(2023, 7, 26, 12, 0))
               <template #message>
                 ✨ Recently added
                 <span class="mx-1">·</span>
-                dir() built-in function
+                Walrus Operator
               </template>
             </base-badge-notice>
           </router-link>
