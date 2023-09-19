@@ -9,6 +9,10 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2023-09-19
+
+- Added `walrus` Operator. Thanks [@omii2k01](https://github.com/omii2k01)
+
 ## 2023-08-26
 
 - Added `dir` built in function.
