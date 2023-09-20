@@ -292,3 +292,23 @@ An optional second argument to `rjust()` and `ljust()` will specify a fill chara
 >>> spam.strip('ampS')
 # 'BaconSpamEggs'
 ```
+
+## The Count Method
+
+Counts the number of occurences of a given character or substring in the string it is applied to. Can be optionally provided start and end index.
+
+```python
+>>> sentence = 'one sheep two sheep three sheep four'
+>>> sentence.count('sheep')
+# 3
+
+>>> sentence.count('e')
+# 9
+
+>>> sentence.count('e', 6)
+# 8
+# returns count of e after 'one sh' i.e 6 chars since beginning of string
+
+>>> sentence.count('e', 7)
+# 7
+```
