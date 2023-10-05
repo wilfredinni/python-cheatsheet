@@ -16,7 +16,7 @@ const cardLinks = [
   {
     path: '/contributing',
     name: 'Contribute',
-    description: `Get to know how easy is to contribute to the Python Cheatsheet.`,
+    description: `Get to know how easy it is to contribute to the Python Cheatsheet.`,
     icon: PluginIcon,
   },
   {
