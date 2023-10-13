@@ -429,7 +429,7 @@ The `range()` function returns a sequence of numbers. It starts from 0, incremen
 # Will stop at 5! or 4? (4)
 ```
 
-The `range()` function can also modify it's 3 defaults arguments. The first two will be the `start` and `stop` values, and the third will be the `step` argument. The step is the amount that the variable is increased by after each iteration.
+The `range()` function can also modify its 3 defaults arguments. The first two will be the `start` and `stop` values, and the third will be the `step` argument. The step is the amount that the variable is increased by after each iteration.
 
 ```python
 # range(start, stop, step)
