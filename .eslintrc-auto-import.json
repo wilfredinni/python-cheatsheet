@@ -294,6 +294,11 @@
     "watchWithFilter": true,
     "whenever": true,
     "toValue": true,
-    "WritableComputedRef": true
+    "WritableComputedRef": true,
+    "ExtractDefaultPropTypes": true,
+    "ExtractPropTypes": true,
+    "ExtractPublicPropTypes": true,
+    "injectLocal": true,
+    "provideLocal": true
   }
 }
