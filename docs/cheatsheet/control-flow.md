@@ -57,6 +57,7 @@ False
 ## Boolean Operators
 
 There are three Boolean operators: `and`, `or`, and `not`.
+In the order of precedence, highest to lowest they are `not`, `and` and `or`.
 
 The `and` Operator’s _Truth_ Table:
 
@@ -103,6 +104,13 @@ Also, you can mix use multiple Boolean operators in an expression, along with th
 ```python
 >>> 2 + 2 == 4 and not 2 + 2 == 5 and 2 * 2 == 2 + 2
 True
+>>> # In the statement below 3 < 4 and 5 > 5 gets executed first evaluating to False
+>>> # Then 5 > 4 returns True so the results after True or False is True
+>>> 5 > 4 or 3 < 4 and 5 > 5
+True
+>>> # Now the statement within parentheses gets executed first so True and False returns False.
+>>> (5 > 4 or 3 < 4) and 5 > 5
+False
 ```
 
 ## if Statements
