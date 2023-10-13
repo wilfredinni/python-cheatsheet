@@ -14,6 +14,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Contributing',
         path: '/contributing',
+        updated: true,
       },
       {
         name: 'Changelog',
@@ -25,7 +26,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Basics',
         path: '/cheatsheet/basics',
-        updated: true,
+        updated: false,
       },
       {
         name: 'Built-in functions',
@@ -35,7 +36,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Control flow',
         path: '/cheatsheet/control-flow',
-        updated: false,
+        updated: true,
       },
       {
         name: 'Functions',
@@ -66,7 +67,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Manipulating strings',
         path: '/cheatsheet/manipulating-strings',
-        updated: false,
+        updated: true,
       },
       {
         name: 'String formatting',
@@ -96,7 +97,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Exception handling',
         path: '/cheatsheet/exception-handling',
-        updated: false,
+        updated: true,
       },
       {
         name: 'Debugging',

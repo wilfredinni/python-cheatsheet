@@ -9,6 +9,15 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2023-10-13
+
+- Added examples for Boolean Operators. Thanks [@omii2k01](https://github.com/omii2k01)
+- Added `count` string method. Thanks [@omii2k01](https://github.com/omii2k01)
+- Added multiple exceptions handling. Thanks [@LairdStreak](https://github.com/LairdStreak)
+- Fixed grammatical error for the contributing page description. [@AdamRosas27](https://github.com/AdamRosas27)
+- Fixed typo in control flow page. [@supersandra](https://github.com/supersandra)
+- Updated dependencies to the latest versions.
+
 ## 2023-09-19
 
 - Added `walrus` Operator. Thanks [@omii2k01](https://github.com/omii2k01)
