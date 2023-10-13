@@ -51,7 +51,27 @@ Let's say we don't want our program to stop its execution or show the user an ou
 # You can not divide by 0
 ```
 
-## Final code in exception handling
+## Handling Multiple exceptions using one exception block
+
+You can also handle multiple exceptions in one line like the following without the need to create multiple exception blocks.
+
+```python
+>>> def divide(dividend , divisor):
+...     try:
+...         var = 'str' + 1
+...         print(dividend / divisor)
+...     except (ZeroDivisionError, TypeError) as error:
+...         print(error)
+...
+>>> divide(dividend=10, divisor=5)
+# 5
+
+>>> divide(dividend=10, divisor=0)
+# `division by zero` Error message
+# `can only concatenate str (not "int") to str` Error message
+```
+
+## Finally code in exception handling
 
 The code inside the `finally` section is always executed, no matter if an exception has been raised or not:
 
