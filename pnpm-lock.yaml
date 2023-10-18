@@ -53,8 +53,8 @@ devDependencies:
     specifier: 18.18.6
     version: 18.18.6
   '@types/string':
-    specifier: 0.0.32
-    version: 0.0.32
+    specifier: 0.0.33
+    version: 0.0.33
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.7.5
     version: 6.7.5(@typescript-eslint/parser@6.7.5)(eslint@8.51.0)(typescript@5.2.2)
@@ -2073,8 +2073,8 @@ packages:
     resolution: {integrity: sha512-OxepLK9EuNEIPxWNME+C6WwbRAOOI2o2BaQEGzz5Lu2e4Z5eDnEo+/aVEDMIXywoJitJ7xWd641wrGLZdtwRyw==}
     dev: true
 
-  /@types/string@0.0.32:
-    resolution: {integrity: sha512-WV5shMhQ8/OeJXWTeZzn5q0Tssztot/7Y1uLgDrlHNwIaIpWA2/XBTtlcHpMNRD2MU/BBE3OOtsce21LH99Sag==}
+  /@types/string@0.0.33:
+    resolution: {integrity: sha512-PSIKHlHqSumBHMiK76pAPegfzfgA3jOIdF/u/uOpFd5EyZXHDCCPk8+/yj5QHvfemvZG0Uy/QAaPPa4FomfRxg==}
     dev: true
 
   /@types/trusted-types@2.0.4:
