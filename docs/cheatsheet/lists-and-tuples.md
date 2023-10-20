@@ -392,3 +392,33 @@ The main way that tuples are different from lists is that tuples, like strings, 
 >>> list('hello')
 # ['h', 'e', 'l', 'l', 'o']
 ```
+
+## Python List Comprehension
+
+List comprehensions are a way of making lists or sub lists from an existing list or iterable collection.
+It will also allow you to filter an existing list into a sub list that you can use for your purposes.
+
+```python
+>>> furniture = ('table', 'chair', 'rack', 'shelf')
+
+>>> furniture
+# ['table', 'chair', 'rack', 'shelf']
+
+# Lets create a new list from furniture using list comprehension
+>>> furn_list = [furniture_item for furniture_item in furniture]
+
+>>> furn_list
+# ['table', 'chair', 'rack', 'shelf']
+
+# Lets create a list from furniture where the item contains the letter `a`
+>>> furn_list = [furn_item for furn_item in furniture if "a" in furn_item]
+
+>>> furn_list
+# ['table', 'chair', 'rack']
+
+# The iterable can be any iterable object, like a list, tuple, set etc.
+>>> numbers_list = [x for x in range(10)]
+
+>>> numbers_list
+# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
