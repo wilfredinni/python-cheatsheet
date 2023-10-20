@@ -65,8 +65,8 @@ devDependencies:
     specifier: ^4.4.0
     version: 4.4.0(vite@4.4.11)(vue@3.3.4)
   '@vue/compiler-dom':
-    specifier: 3.3.4
-    version: 3.3.4
+    specifier: 3.3.6
+    version: 3.3.6
   '@vue/test-utils':
     specifier: ^2.4.1
     version: 2.4.1(vue@3.3.4)
@@ -2332,11 +2332,27 @@ packages:
       estree-walker: 2.0.2
       source-map-js: 1.0.2
 
+  /@vue/compiler-core@3.3.6:
+    resolution: {integrity: sha512-2JNjemwaNwf+MkkatATVZi7oAH1Hx0B04DdPH3ZoZ8vKC1xZVP7nl4HIsk8XYd3r+/52sqqoz9TWzYc3yE9dqA==}
+    dependencies:
+      '@babel/parser': 7.23.0
+      '@vue/shared': 3.3.6
+      estree-walker: 2.0.2
+      source-map-js: 1.0.2
+    dev: true
+
   /@vue/compiler-dom@3.3.4:
     resolution: {integrity: sha512-wyM+OjOVpuUukIq6p5+nwHYtj9cFroz9cwkfmP9O1nzH68BenTTv0u7/ndggT8cIQlnBeOo6sUT/gvHcIkLA5w==}
     dependencies:
       '@vue/compiler-core': 3.3.4
       '@vue/shared': 3.3.4
+
+  /@vue/compiler-dom@3.3.6:
+    resolution: {integrity: sha512-1MxXcJYMHiTPexjLAJUkNs/Tw2eDf2tY3a0rL+LfuWyiKN2s6jvSwywH3PWD8bKICjfebX3GWx2Os8jkRDq3Ng==}
+    dependencies:
+      '@vue/compiler-core': 3.3.6
+      '@vue/shared': 3.3.6
+    dev: true
 
   /@vue/compiler-sfc@3.3.4:
     resolution: {integrity: sha512-6y/d8uw+5TkCuzBkgLS0v3lSM3hJDntFEiUORM11pQ/hKvkhSKZrXW6i69UyXlJQisJxuUEJKAWEqWbWsLeNKQ==}
@@ -2371,7 +2387,7 @@ packages:
     dependencies:
       '@volar/language-core': 1.10.4
       '@volar/source-map': 1.10.4
-      '@vue/compiler-dom': 3.3.4
+      '@vue/compiler-dom': 3.3.6
       '@vue/reactivity': 3.3.4
       '@vue/shared': 3.3.4
       minimatch: 9.0.3
@@ -2418,6 +2434,10 @@ packages:
 
   /@vue/shared@3.3.4:
     resolution: {integrity: sha512-7OjdcV8vQ74eiz1TZLzZP4JwqM5fA94K6yntPS5Z25r9HDuGNzaGdgvwKYq6S+MxwF0TFRwe50fIR/MYnakdkQ==}
+
+  /@vue/shared@3.3.6:
+    resolution: {integrity: sha512-Xno5pEqg8SVhomD0kTSmfh30ZEmV/+jZtyh39q6QflrjdJCXah5lrnOLi9KB6a5k5aAHXMXjoMnxlzUkCNfWLQ==}
+    dev: true
 
   /@vue/test-utils@2.4.1(vue@3.3.4):
     resolution: {integrity: sha512-VO8nragneNzUZUah6kOjiFmD/gwRjUauG9DROh6oaOeFwX1cZRUNHhdeogE8635cISigXFTtGLUQWx5KCb0xeg==}
