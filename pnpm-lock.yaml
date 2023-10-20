@@ -152,8 +152,8 @@ devDependencies:
     specifier: ^0.23.3
     version: 0.23.3(vite@4.4.11)(vue-router@4.2.5)(vue@3.3.4)
   vite-ssg-sitemap:
-    specifier: ^0.5.1
-    version: 0.5.1
+    specifier: ^0.6.0
+    version: 0.6.0
   vitest:
     specifier: ^0.34.6
     version: 0.34.6(happy-dom@12.9.1)
@@ -5828,8 +5828,8 @@ packages:
       - rollup
     dev: true
 
-  /vite-ssg-sitemap@0.5.1:
-    resolution: {integrity: sha512-X3ZImSVpFMypBTIhaTqEOdKj7tO9n7Puzd8vsxuQluFUyu6x/e2Dzv8qk5qZsC34ZR6iHt0wa2sPhDu1OjdOsA==}
+  /vite-ssg-sitemap@0.6.0:
+    resolution: {integrity: sha512-y8S9ERjJknigAFDWO3Hb7qG/M8URABfkC/tk8NSKrUapKDCVMmcVTeves3T0rj0zoLQbmQ2qUukXBhZdkLzU/w==}
     dev: true
 
   /vite-ssg@0.23.3(vite@4.4.11)(vue-router@4.2.5)(vue@3.3.4):
