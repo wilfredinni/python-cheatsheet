@@ -312,3 +312,21 @@ Counts the number of occurences of a given character or substring in the string 
 >>> sentence.count('e', 7)
 # 7
 ```
+
+## Replace Method
+
+Replaces all occurences of a given substring with another substring. Can be optionally provided a third argument to limit the number of replacements. Returns a new string.
+
+```python
+>>> text = "Hello, world!"
+>>> text.replace("world", "planet")
+# 'Hello, planet!'
+
+>>> fruits = "apple, banana, cherry, apple"
+>>> fruits.replace("apple", "orange", 1)
+# 'orange, banana, cherry, apple'
+
+>>> sentence = "I like apples, Apples are my favorite fruit"
+>>> sentence.replace("apples", "oranges")
+# 'I like oranges, Apples are my favorite fruit'
+```
