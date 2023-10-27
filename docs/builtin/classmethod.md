@@ -16,6 +16,27 @@ Python classmethod() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+## Examples
+
+```python
+class Counter:
+    def __init__(self):
+        self.count = 0
+
+    def increment(self):
+        self.count += 1
+        return self.count
+
+    @classmethod  # passes the class as the first argument to the method instead of passing the instance
+    def get_new_instance(cls):
+        return cls()
+
+if __name__ == "__main__":
+    counter = Counter()
+    print(counter.increment())
+    # 1
+    
+    counter = counter.get_new_instance()
+    print(counter.increment())
+    # 1
+```
