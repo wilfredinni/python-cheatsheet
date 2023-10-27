@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@docsearch/js':
     specifier: ^3.5.2
@@ -46,8 +50,8 @@ devDependencies:
     specifier: ^3.0.3
     version: 3.0.3
   '@types/node':
-    specifier: 18.18.6
-    version: 18.18.6
+    specifier: 18.18.7
+    version: 18.18.7
   '@types/string':
     specifier: 0.0.33
     version: 0.0.33
@@ -131,7 +135,7 @@ devDependencies:
     version: 0.25.2(rollup@2.79.1)(vue@3.3.7)
   vite:
     specifier: ^4.5.0
-    version: 4.5.0(@types/node@18.18.6)
+    version: 4.5.0(@types/node@18.18.7)
   vite-plugin-pages:
     specifier: ^0.31.0
     version: 0.31.0(vite@4.5.0)
@@ -2017,7 +2021,7 @@ packages:
     resolution: {integrity: sha512-sF59BlXtUdzEAL1u0MSvuzWd7PdZvZEtnaVkzX5mjpdWTJ8brG0jUqve3jPCzSzvAKKMHTG8F8o/WMQLtleZdQ==}
     dependencies:
       '@types/jsonfile': 6.1.3
-      '@types/node': 18.18.6
+      '@types/node': 18.18.7
     dev: true
 
   /@types/json-schema@7.0.14:
@@ -2027,7 +2031,7 @@ packages:
   /@types/jsonfile@6.1.3:
     resolution: {integrity: sha512-/yqTk2SZ1wIezK0hiRZD7RuSf4B3whFxFamB1kGStv+8zlWScTMcHanzfc0XKWs5vA1TkHeckBlOyM8jxU8nHA==}
     dependencies:
-      '@types/node': 18.18.6
+      '@types/node': 18.18.7
     dev: true
 
   /@types/linkify-it@3.0.4:
@@ -2055,14 +2059,16 @@ packages:
     resolution: {integrity: sha512-AuHIyzR5Hea7ij0P9q7vx7xu4z0C28ucwjAZC0ja7JhINyCnOw8/DnvAPQQ9TfOlCtZAmCERKQX9+o1mgQhuOQ==}
     dev: true
 
-  /@types/node@18.18.6:
-    resolution: {integrity: sha512-wf3Vz+jCmOQ2HV1YUJuCWdL64adYxumkrxtc+H1VUQlnQI04+5HtH+qZCOE21lBE7gIrt+CwX2Wv8Acrw5Ak6w==}
+  /@types/node@18.18.7:
+    resolution: {integrity: sha512-bw+lEsxis6eqJYW8Ql6+yTqkE6RuFtsQPSe5JxXbqYRFQEER5aJA9a5UH9igqDWm3X4iLHIKOHlnAXLM4mi7uQ==}
+    dependencies:
+      undici-types: 5.26.5
     dev: true
 
   /@types/resolve@1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 18.18.6
+      '@types/node': 18.18.7
     dev: true
 
   /@types/semver@7.5.4:
@@ -2264,7 +2270,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       vue: 3.3.7(typescript@5.2.2)
     dev: true
 
@@ -4074,7 +4080,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 18.18.6
+      '@types/node': 18.18.7
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -5574,6 +5580,10 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: true
 
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    dev: true
+
   /undici@5.27.0:
     resolution: {integrity: sha512-l3ydWhlhOJzMVOYkymLykcRRXqbUaQriERtR70B9LzNkZ4bX52Fc8wbTDneMiwo8T+AemZXvXaTx+9o5ROxrXg==}
     engines: {node: '>=14.0'}
@@ -5747,7 +5757,7 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /vite-node@0.34.6(@types/node@18.18.6):
+  /vite-node@0.34.6(@types/node@18.18.7):
     resolution: {integrity: sha512-nlBMJ9x6n7/Amaz6F3zJ97EBwR2FkzhBRxF5e+jE6LA3yi6Wtc2lyTij1OnDMIr34v5g/tVQtsVAzhT0jc5ygA==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -5757,7 +5767,7 @@ packages:
       mlly: 1.4.2
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -5786,7 +5796,7 @@ packages:
       json5: 2.2.3
       local-pkg: 0.4.3
       picocolors: 1.0.0
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       yaml: 2.3.3
     transitivePeerDependencies:
       - supports-color
@@ -5803,7 +5813,7 @@ packages:
       debug: 4.3.4
       fast-glob: 3.3.1
       pretty-bytes: 6.1.1
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       workbox-build: 7.0.0
       workbox-window: 7.0.0
     transitivePeerDependencies:
@@ -5820,7 +5830,7 @@ packages:
       '@vue/compiler-sfc': 3.3.7
       debug: 4.3.4
       fast-glob: 3.3.1
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       vue: 3.3.7(typescript@5.2.2)
       vue-router: 4.2.5(vue@3.3.7)
     transitivePeerDependencies:
@@ -5840,7 +5850,7 @@ packages:
       '@rollup/pluginutils': 5.0.5(rollup@2.79.1)
       '@types/markdown-it': 13.0.5
       markdown-it: 13.0.2
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -5872,7 +5882,7 @@ packages:
       jsdom: 22.1.0
       kolorist: 1.8.0
       prettier: 3.0.3
-      vite: 4.5.0(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
       vue: 3.3.7(typescript@5.2.2)
       vue-router: 4.2.5(vue@3.3.7)
       yargs: 17.7.2
@@ -5883,7 +5893,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /vite@4.5.0(@types/node@18.18.6):
+  /vite@4.5.0(@types/node@18.18.7):
     resolution: {integrity: sha512-ulr8rNLA6rkyFAlVWw2q5YJ91v098AFQ2R0PRFwPzREXOUJQPtFUG0t+/ZikhaOCDqFoDhN6/v8Sq0o4araFAw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -5911,7 +5921,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.18.6
+      '@types/node': 18.18.7
       esbuild: 0.18.20
       postcss: 8.4.31
       rollup: 3.29.4
@@ -5952,7 +5962,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.9
       '@types/chai-subset': 1.3.4
-      '@types/node': 18.18.6
+      '@types/node': 18.18.7
       '@vitest/expect': 0.34.6
       '@vitest/runner': 0.34.6
       '@vitest/snapshot': 0.34.6
@@ -5972,8 +5982,8 @@ packages:
       strip-literal: 1.3.0
       tinybench: 2.5.1
       tinypool: 0.7.0
-      vite: 4.5.0(@types/node@18.18.6)
-      vite-node: 0.34.6(@types/node@18.18.6)
+      vite: 4.5.0(@types/node@18.18.7)
+      vite-node: 0.34.6(@types/node@18.18.7)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
@@ -6400,7 +6410,3 @@ packages:
 
   /zhead@2.2.4:
     resolution: {integrity: sha512-8F0OI5dpWIA5IGG5NHUg9staDwz/ZPxZtvGVf01j7vHqSyZ0raHY+78atOVxRqb73AotX22uV1pXt3gYSstGag==}
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
