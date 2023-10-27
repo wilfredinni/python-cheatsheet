@@ -7,11 +7,11 @@ description: A Python Decorator is a syntax that provide a concise and reusable 
 Python Decorators
 </base-title>
 
-A Python Decorator is a syntax that provides a concise and reusable way for extending a function or a class.
+A Python Decorator provides a concise and reusable way for extending a function or a class.
 
 ## Bare bone decorator
 
-A decorator in its simplest form is a function that takes another function as an argument and returns a wrapper function. The following example shows the creation of a decorator and its usage.
+A decorator in its simplest form is a function that takes another function as an argument and returns a wrapper. The following example shows the creation of a decorator and its usage.
 
 ```python
 def your_decorator(func):
@@ -28,7 +28,6 @@ def foo():
   print("Hello World!")
 
 foo()
-
 # Before func!
 # Hello World!
 # After func!
@@ -110,23 +109,22 @@ class CountCallNumber:
 
   def __init__(self, func):
     self.func = func
-    self.call_number = 0  
-    
+    self.call_number = 0
+
   def __call__(self, *args, **kwargs):
     self.call_number += 1
     print("This is execution number " + str(self.call_number))
     return self.func(*args, **kwargs)
-  
+
 @CountCallNumber
 def say_hi(name):
   print("Hi! My name is " + name)
 
 say_hi("Jack")
-
-say_hi("James")
-
 # This is execution number 1
 # Hi! My name is Jack
+
+say_hi("James")
 # This is execution number 2
 # Hi! My name is James
 ```

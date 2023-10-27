@@ -9,6 +9,12 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2023-10-27
+
+- Added `classmethod` built in decorator. Thanks [@classic-arnold](https://github.com/classic-arnold)
+- Added `staticmethod` built in decorator. Thanks [@LairdStreak](https://github.com/LairdStreak)
+- Added string `replace` method to string manipulation. Thanks [@madeelchaudhary](https://github.com/madeelchaudhary)
+
 ## 2023-10-13
 
 - Added examples for Boolean Operators. Thanks [@omii2k01](https://github.com/omii2k01)

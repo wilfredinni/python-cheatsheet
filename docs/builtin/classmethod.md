@@ -35,7 +35,7 @@ if __name__ == "__main__":
     counter = Counter()
     print(counter.increment())
     # 1
-    
+
     counter = counter.get_new_instance()
     print(counter.increment())
     # 1
