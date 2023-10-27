@@ -108,6 +108,11 @@ export const useNavigationStore = defineStore('navigation', {
         updated: false,
       },
       {
+        name: 'Decorators',
+        path: '/cheatsheet/decorators',
+        updated: false,
+      },
+      {
         name: 'Context manager',
         path: '/cheatsheet/context-manager',
         updated: false,
