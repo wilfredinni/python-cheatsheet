@@ -1,5 +1,5 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
-import { $fetch } from 'ohmyfetch'
+import { ofetch } from 'ofetch'
 
 interface newsletterResponse {
   id?: number
@@ -25,7 +25,7 @@ export const useNewsletterStore = defineStore('useNewsletterStore', {
       const baseUrl = import.meta.env.VITE_GRUDGET_ENDPOINT || null
       const newsletter = import.meta.env.VITE_GRUDGET_NEWSLETTER || null
 
-      const response = await $fetch(`${baseUrl}/newsletter/subscribers/`, {
+      const response = await ofetch(`${baseUrl}/newsletter/subscribers/`, {
         method: 'POST',
         body: { email: email, newsletter: newsletter },
         headers: {
