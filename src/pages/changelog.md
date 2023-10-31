@@ -9,6 +9,10 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2023-10-30
+
+- Fix `f-string` format in `os.walk` example. Thanks [@LairdStreak](https://github.com/LairdStreak)
+
 ## 2023-10-27
 
 - Added `classmethod` built in decorator. Thanks [@classic-arnold](https://github.com/classic-arnold)

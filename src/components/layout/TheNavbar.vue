@@ -2,7 +2,7 @@
 const navigation = useNavigationStore()
 const route = useRoute()
 
-const timeAgo = useTimeAgo(new Date(2023, 9, 27, 14, 0))
+const timeAgo = useTimeAgo(new Date(2023, 9, 30, 21, 0))
 </script>
 
 <template>
