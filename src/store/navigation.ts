@@ -164,6 +164,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Os',
         path: '/modules/os-module',
+        updated: true,
       },
       {
         name: 'Pathlib',
