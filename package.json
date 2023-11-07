@@ -27,7 +27,7 @@
     "@types/markdown-it": "^13.0.5",
     "@types/markdown-it-link-attributes": "^3.0.3",
     "@types/node": "^20.8.9",
-    "@types/string": "0.0.33",
+    "@types/string": "0.0.34",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.9.1",
     "@vitejs/plugin-vue": "^4.4.0",
