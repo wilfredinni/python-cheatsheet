@@ -51,10 +51,10 @@ const response = computed(() => newsletter.getResponse)
         <span class="text-sky-400 font-semibold">
           8700+ Python developers
         </span>
-        in a bullshit free
+        in a two times a month and bullshit free
         <router-link to="/newsletter" rel="noreferrer">
           publication </router-link
-        >, full of interesting, relevant links. Delivered two times a month.
+        >, full of interesting, relevant links.
       </p>
     </prose>
 
