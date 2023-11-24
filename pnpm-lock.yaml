@@ -128,8 +128,8 @@ devDependencies:
     specifier: ^5.2.2
     version: 5.2.2
   unplugin-auto-import:
-    specifier: ^0.16.7
-    version: 0.16.7(@vueuse/core@10.6.1)(rollup@2.79.1)
+    specifier: ^0.17.0
+    version: 0.17.1(@vueuse/core@10.6.1)(rollup@2.79.1)
   unplugin-vue-components:
     specifier: ^0.25.2
     version: 0.25.2(rollup@2.79.1)(vue@3.3.8)
@@ -6063,8 +6063,8 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unplugin-auto-import@0.16.7(@vueuse/core@10.6.1)(rollup@2.79.1):
-    resolution: {integrity: sha512-w7XmnRlchq6YUFJVFGSvG1T/6j8GrdYN6Em9Wf0Ye+HXgD/22kont+WnuCAA0UaUoxtuvRR1u/mXKy63g/hfqQ==}
+  /unplugin-auto-import@0.17.1(@vueuse/core@10.6.1)(rollup@2.79.1):
+    resolution: {integrity: sha512-QvdJKtFK0COSuRXzVnwjG3ir870zVhdMg6O8GKG3UO/O5W4fmJm5h71QvzI7Gp8Sx0qfCvC3f+2v0Vm489fnqQ==}
     engines: {node: '>=14'}
     peerDependencies:
       '@nuxt/kit': ^3.2.2
