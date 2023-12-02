@@ -9,6 +9,10 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2023-12-02
+
+- Updated dependencies to the latest versions.
+
 ## 2023-10-30
 
 - Fix `f-string` format in `os.walk` example. Thanks [@LairdStreak](https://github.com/LairdStreak)

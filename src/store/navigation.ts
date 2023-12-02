@@ -29,7 +29,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Built-in functions',
         path: '/cheatsheet/built-in-functions',
-        updated: true,
+        updated: false,
       },
       {
         name: 'Control flow',
@@ -65,7 +65,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Manipulating strings',
         path: '/cheatsheet/manipulating-strings',
-        updated: true,
+        updated: false,
       },
       {
         name: 'String formatting',
@@ -110,7 +110,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Decorators',
         path: '/cheatsheet/decorators',
-        updated: true,
+        updated: false,
       },
       {
         name: 'Context manager',
@@ -164,7 +164,7 @@ export const useNavigationStore = defineStore('navigation', {
       {
         name: 'Os',
         path: '/modules/os-module',
-        updated: true,
+        updated: false,
       },
       {
         name: 'Pathlib',
