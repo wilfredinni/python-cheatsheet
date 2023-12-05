@@ -146,8 +146,8 @@ devDependencies:
     specifier: ^0.17.2
     version: 0.17.2(vite@5.0.4)(workbox-build@7.0.0)(workbox-window@7.0.0)
   vite-plugin-vue-layouts:
-    specifier: ^0.8.0
-    version: 0.8.0(vite@5.0.4)(vue-router@4.2.5)(vue@3.3.9)
+    specifier: ^0.9.0
+    version: 0.9.0(vite@5.0.4)(vue-router@4.2.5)(vue@3.3.9)
   vite-ssg:
     specifier: ^0.23.5
     version: 0.23.5(vite@5.0.4)(vue-router@4.2.5)(vue@3.3.9)
@@ -6316,14 +6316,13 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-vue-layouts@0.8.0(vite@5.0.4)(vue-router@4.2.5)(vue@3.3.9):
-    resolution: {integrity: sha512-UZW2nSV2LraTSe7gsAL46hfdi7a0X1RvkGGoJVtA2O8beu7anzpXFwQLou8+kHy31CzVycT4gIPySBsHhtBN5g==}
+  /vite-plugin-vue-layouts@0.9.0(vite@5.0.4)(vue-router@4.2.5)(vue@3.3.9):
+    resolution: {integrity: sha512-Fh0jEh64uE314UHeVDFxYtTtTFWLtI5P44gOholaJ4HvRU0QWIngnRx7NwUCR6XzsPbNBUaHl2ePpAjD2TQ6ig==}
     peerDependencies:
-      vite: ^2.5.0 || ^3.0.0-0 || ^4.0.0
-      vue: ^2.6.12 || ^3.2.4
-      vue-router: ^3.5.1 || ^4.0.11
+      vite: ^4.0.0 || ^5.0.0
+      vue: ^3.2.4
+      vue-router: ^4.0.11
     dependencies:
-      '@vue/compiler-sfc': 3.3.9
       debug: 4.3.4
       fast-glob: 3.3.2
       vite: 5.0.4(@types/node@20.10.2)
