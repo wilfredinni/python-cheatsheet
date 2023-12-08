@@ -40,7 +40,7 @@
     "esno": "^4.0.0",
     "fs-extra": "^11.2.0",
     "happy-dom": "^12.10.3",
-    "markdown-it": "^13.0.2",
+    "markdown-it": "^14.0.0",
     "markdown-it-anchor": "^8.6.7",
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-prism": "^2.3.0",
