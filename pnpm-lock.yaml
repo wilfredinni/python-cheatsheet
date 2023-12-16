@@ -131,8 +131,8 @@ devDependencies:
     specifier: ^0.17.1
     version: 0.17.1(@vueuse/core@10.6.1)(rollup@2.79.1)
   unplugin-vue-components:
-    specifier: ^0.25.2
-    version: 0.25.2(rollup@2.79.1)(vue@3.3.9)
+    specifier: ^0.26.0
+    version: 0.26.0(rollup@2.79.1)(vue@3.3.9)
   unplugin-vue-markdown:
     specifier: ^0.25.2
     version: 0.25.2(rollup@2.79.1)(vite@5.0.4)
@@ -6197,8 +6197,8 @@ packages:
       - rollup
     dev: true
 
-  /unplugin-vue-components@0.25.2(rollup@2.79.1)(vue@3.3.9):
-    resolution: {integrity: sha512-OVmLFqILH6w+eM8fyt/d/eoJT9A6WO51NZLf1vC5c1FZ4rmq2bbGxTy8WP2Jm7xwFdukaIdv819+UI7RClPyCA==}
+  /unplugin-vue-components@0.26.0(rollup@2.79.1)(vue@3.3.9):
+    resolution: {integrity: sha512-s7IdPDlnOvPamjunVxw8kNgKNK8A5KM1YpK5j/p97jEKTjlPNrA0nZBiSfAKKlK1gWZuyWXlKL5dk3EDw874LQ==}
     engines: {node: '>=14'}
     peerDependencies:
       '@babel/parser': ^7.15.8
