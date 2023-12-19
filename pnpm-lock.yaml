@@ -65,8 +65,8 @@ devDependencies:
     specifier: ^4.5.2
     version: 4.5.2(vite@5.0.10)(vue@3.3.12)
   '@vue/compiler-dom':
-    specifier: 3.3.12
-    version: 3.3.12
+    specifier: 3.3.13
+    version: 3.3.13
   '@vue/test-utils':
     specifier: ^2.4.3
     version: 2.4.3(vue@3.3.12)
@@ -2650,11 +2650,27 @@ packages:
       estree-walker: 2.0.2
       source-map-js: 1.0.2
 
+  /@vue/compiler-core@3.3.13:
+    resolution: {integrity: sha512-bwi9HShGu7uaZLOErZgsH2+ojsEdsjerbf2cMXPwmvcgZfVPZ2BVZzCVnwZBxTAYd6Mzbmf6izcUNDkWnBBQ6A==}
+    dependencies:
+      '@babel/parser': 7.23.6
+      '@vue/shared': 3.3.13
+      estree-walker: 2.0.2
+      source-map-js: 1.0.2
+    dev: true
+
   /@vue/compiler-dom@3.3.12:
     resolution: {integrity: sha512-RdJU9oEYaoPKUdGXCy0l+i4clesdDeLmbvRlszoc9iagsnBnMmQtYfCPVQ5BHB6o7K4SCucDdJM2Dh3oXB0D6g==}
     dependencies:
       '@vue/compiler-core': 3.3.12
       '@vue/shared': 3.3.12
+
+  /@vue/compiler-dom@3.3.13:
+    resolution: {integrity: sha512-EYRDpbLadGtNL0Gph+HoKiYqXLqZ0xSSpR5Dvnu/Ep7ggaCbjRDIus1MMxTS2Qm0koXED4xSlvTZaTnI8cYAsw==}
+    dependencies:
+      '@vue/compiler-core': 3.3.13
+      '@vue/shared': 3.3.13
+    dev: true
 
   /@vue/compiler-sfc@3.3.12:
     resolution: {integrity: sha512-yy5b9e7b79dsGbMmglCe/YnhCQgBkHO7Uf6JfjWPSf2/5XH+MKn18LhzhHyxbHdJgnA4lZCqtXzLaJz8Pd8lMw==}
@@ -2689,7 +2705,7 @@ packages:
     dependencies:
       '@volar/language-core': 1.11.1
       '@volar/source-map': 1.11.1
-      '@vue/compiler-dom': 3.3.12
+      '@vue/compiler-dom': 3.3.13
       '@vue/shared': 3.3.12
       computeds: 0.0.1
       minimatch: 9.0.3
@@ -2737,6 +2753,10 @@ packages:
 
   /@vue/shared@3.3.12:
     resolution: {integrity: sha512-6p0Yin0pclvnER7BLNOQuod9Z+cxSYh8pSh7CzHnWNjAIP6zrTlCdHRvSCb1aYEx6i3Q3kvfuWU7nG16CgG1ag==}
+
+  /@vue/shared@3.3.13:
+    resolution: {integrity: sha512-/zYUwiHD8j7gKx2argXEMCUXVST6q/21DFU0sTfNX0URJroCe3b1UF6vLJ3lQDfLNIiiRl2ONp7Nh5UVWS6QnA==}
+    dev: true
 
   /@vue/test-utils@2.4.3(vue@3.3.12):
     resolution: {integrity: sha512-F4K7mF+ad++VlTrxMJVRnenKSJmO6fkQt2wpRDiKDesQMkfpniGWsqEi/JevxGBo2qEkwwjvTUAoiGJLNx++CA==}
