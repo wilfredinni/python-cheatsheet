@@ -29,7 +29,7 @@ my_person = Person("Dwight", 35)
 my_vars = vars(my_person)
 
 print(my_vars)
-# {'name': 'Alice', 'age': 30}
+# {'name': 'Dwight', 'age': 35}
 ```
 <!-- remove this tag to start editing this page -->
 <empty-section />
