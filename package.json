@@ -30,7 +30,7 @@
     "@types/string": "0.0.34",
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.15.0",
-    "@vitejs/plugin-vue": "^4.5.2",
+    "@vitejs/plugin-vue": "^5.0.0",
     "@vue/compiler-dom": "3.3.13",
     "@vue/test-utils": "^2.4.3",
     "autoprefixer": "^10.4.16",
