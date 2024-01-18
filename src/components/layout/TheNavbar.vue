@@ -2,7 +2,7 @@
 const navigation = useNavigationStore()
 const route = useRoute()
 
-const timeAgo = useTimeAgo(new Date(2023, 11, 2, 12, 0))
+const timeAgo = useTimeAgo(new Date(2023, 12, 18, 11, 0))
 </script>
 
 <template>
@@ -42,9 +42,10 @@ const timeAgo = useTimeAgo(new Date(2023, 11, 2, 12, 0))
                 </span>
               </template>
               <template #message>
-                ✨ Recently added
+                ✨ Last Update
                 <span class="mx-1">·</span>
-                Website dependencies
+                Compile build-in function
+                <!-- ✨ Compile build-in function -->
               </template>
             </base-badge-notice>
           </router-link>

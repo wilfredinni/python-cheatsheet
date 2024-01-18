@@ -11,6 +11,7 @@ Changelog
 
 ## 2024-01-18
 
+- Added compile built-in function.
 - Added Augmented Assignment Operators. Thanks [@richjohnsonxyz](https://github.com/richjohnsonxyz)
 - Updated dependencies to the latest versions.
 

@@ -16,6 +16,28 @@ Python compile() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+## Introduction
+
+The `compile()` function in Python is a built-in function that is used to convert a string or an Abstract Syntax Tree (AST) object into a code object. This code object can then be executed by functions like `exec()` or `eval()`.
+
+## Example
+
+Here's a basic example of how it works:
+
+```python
+code_string = """
+def hello_world():
+    print('Hello, world!')
+"""
+
+# Compile the string into a code object
+code_object = compile(code_string, '<string>', 'exec')
+
+# Execute the code object
+exec(code_object)
+
+# Call the function defined in the code object
+hello_world()
+```
+
+In this example, a string containing Python code is compiled into a code object using `compile()`, and then executed with `exec()`. The function `hello_world()` defined in the string is then available to be called.
