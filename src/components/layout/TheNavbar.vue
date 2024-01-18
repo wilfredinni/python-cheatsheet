@@ -45,7 +45,6 @@ const timeAgo = useTimeAgo(new Date(2023, 12, 18, 11, 0))
                 ✨ Last Update
                 <span class="mx-1">·</span>
                 Compile build-in function
-                <!-- ✨ Compile build-in function -->
               </template>
             </base-badge-notice>
           </router-link>
