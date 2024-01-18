@@ -9,6 +9,11 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2024-01-18
+
+- Added Augmented Assignment Operators. Thanks [@richjohnsonxyz](https://github.com/richjohnsonxyz)
+- Updated dependencies to the latest versions.
+
 ## 2023-12-02
 
 - Updated dependencies to the latest versions.
