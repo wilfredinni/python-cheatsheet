@@ -31,7 +31,7 @@ const timeAgo = useTimeAgo(new Date(2023, 12, 18, 11, 0))
           <algolia-doc-search />
 
           <router-link
-            to="/changelog#2023-12-02"
+            to="/builtin/compile"
             rel="noreferrer"
             class="hidden xl:flex"
           >
