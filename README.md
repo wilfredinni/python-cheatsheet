@@ -22,6 +22,14 @@ Anyone can forget how to
 [make character classes](https://www.pythoncheatsheet.org/cheatsheet/regular-expressions#making-your-own-character-classes)
 for a regex, [slice a list](https://www.pythoncheatsheet.org/cheatsheet/lists-and-tuples#getting-sublists-with-slices) or do a [for loop](https://www.pythoncheatsheet.org/cheatsheet/control-flow#for-loop). This Python cheatsheet tries to provide basic reference for beginner and advanced developers, lower the entry barrier for newcomers and help veterans refresh the old tricks.
 
+## Contributors
+
+<a href="https://github.com/wilfredinni/python-cheatsheet/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=wilfredinni/python-cheatsheet" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
+
 ## Sponsors
 
 Many thanks to our current and previous sponsors for supporting this project!
