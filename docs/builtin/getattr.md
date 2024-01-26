@@ -16,6 +16,36 @@ Python getattr() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+## Syntax
+
+```python
+getattr(object, name)
+```
+or
+```python
+getattr(object, name, default)
+```
+-`object`: The object whose attribute you want to access.
+
+-`name`: The name of the attribute you want to retrieve.
+
+-`default`: (Optional) The value to be returned if the attribute is not found. If not provided, `None` is returned.
+
+## Example
+
+```python
+class Example:
+    attribute = "Hello, World!"
+
+# Creating an instance of the class
+obj = Example()
+
+# Using getattr to access the attribute
+value = getattr(obj, 'attribute', 'Nothing found')
+
+print(value)  # Output: Hello, World!
+
+# If the 'attribute' does not exist then 'Nothing found' will be printed.
+```
+
+
