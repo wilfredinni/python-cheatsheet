@@ -2,7 +2,7 @@
 const navigation = useNavigationStore()
 const route = useRoute()
 
-const timeAgo = useTimeAgo(new Date(2023, 12, 18, 11, 0))
+const timeAgo = useTimeAgo(new Date(2023, 12, 29, 15, 15))
 </script>
 
 <template>
@@ -31,7 +31,7 @@ const timeAgo = useTimeAgo(new Date(2023, 12, 18, 11, 0))
           <algolia-doc-search />
 
           <router-link
-            to="/builtin/compile"
+            to="/builtin/getattr"
             rel="noreferrer"
             class="hidden xl:flex"
           >
@@ -42,9 +42,9 @@ const timeAgo = useTimeAgo(new Date(2023, 12, 18, 11, 0))
                 </span>
               </template>
               <template #message>
-                ✨ Last Update
+                ✨ Latest Update
                 <span class="mx-1">·</span>
-                Compile build-in function
+                getattr build-in function
               </template>
             </base-badge-notice>
           </router-link>

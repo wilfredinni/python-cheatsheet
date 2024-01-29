@@ -9,6 +9,10 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2024-01-29
+
+- Added `getattr` built-in. Thanks [@HasnatHridoy](https://github.com/HasnatHridoy)
+
 ## 2024-01-18
 
 - Added compile built-in function.
