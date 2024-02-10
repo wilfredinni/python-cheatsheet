@@ -57,7 +57,7 @@
     "unplugin-vue-markdown": "^0.25.2",
     "vite": "^5.0.12",
     "vite-plugin-pages": "^0.32.0",
-    "vite-plugin-pwa": "^0.17.5",
+    "vite-plugin-pwa": "^0.18.0",
     "vite-plugin-vue-layouts": "^0.11.0",
     "vite-ssg": "^0.23.6",
     "vite-ssg-sitemap": "^0.6.1",
