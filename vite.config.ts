@@ -37,7 +37,7 @@ export default defineConfig(({ mode }) => {
     plugins: [
       vue({
         include: [/\.vue$/, /\.md$/],
-        reactivityTransform: true,
+        // reactivityTransform: true,
       }),
 
       // https://github.com/hannoeru/vite-plugin-pages
