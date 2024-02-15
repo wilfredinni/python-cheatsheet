@@ -49,7 +49,7 @@ const response = computed(() => newsletter.getResponse)
       <p class="text-center text-slate-700 dark:text-slate-400 sm:text-start">
         Join
         <span class="text-sky-400 font-semibold">
-          10.100+ Python developers
+          10.700+ Python developers
         </span>
         in a two times a month and bullshit free
         <router-link to="/newsletter" rel="noreferrer">
