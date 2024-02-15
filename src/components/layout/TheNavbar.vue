@@ -2,7 +2,7 @@
 const navigation = useNavigationStore()
 const route = useRoute()
 
-const timeAgo = useTimeAgo(new Date(2023, 12, 29, 15, 15))
+// const timeAgo = useTimeAgo(new Date(2023, 12, 29, 15, 15))
 </script>
 
 <template>
@@ -30,24 +30,25 @@ const timeAgo = useTimeAgo(new Date(2023, 12, 29, 15, 15))
 
           <algolia-doc-search />
 
-          <router-link
-            to="/builtin/getattr"
-            rel="noreferrer"
+          <a
+            href="https://www.javascriptcheatsheet.org/"
             class="hidden xl:flex"
           >
             <base-badge-notice size="xs">
               <template #title>
-                <span class="capitalize">
-                  {{ timeAgo }}
-                </span>
+                <span class="capitalize"> new website </span>
               </template>
               <template #message>
-                ✨ Latest Update
+                ✨ javascriptcheatsheet.org
                 <span class="mx-1">·</span>
-                getattr build-in function
+                <img
+                  src="https://www.javascriptcheatsheet.org/icons/javascript_logo.png"
+                  alt="javascript cheatsheet"
+                  class="h-4 w-4 rounded"
+                />
               </template>
             </base-badge-notice>
-          </router-link>
+          </a>
         </div>
 
         <!-- actions -->
