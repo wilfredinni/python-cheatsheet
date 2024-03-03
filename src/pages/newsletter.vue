@@ -76,7 +76,7 @@ const response = computed(() => newsletter.getResponse)
         <p class="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-400">
           Join
           <span class="text-sky-600 dark:text-sky-500"
-            >10.700+ Python developers</span
+            >10.900+ Python developers</span
           >
           in a weekly and bullshit free publication, full of interesting,
           relevant links.
