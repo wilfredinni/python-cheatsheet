@@ -295,7 +295,7 @@ An optional second argument to `rjust()` and `ljust()` will specify a fill chara
 
 ## The Count Method
 
-Counts the number of occurences of a given character or substring in the string it is applied to. Can be optionally provided start and end index.
+Counts the number of occurrences of a given character or substring in the string it is applied to. Can be optionally provided start and end index.
 
 ```python
 >>> sentence = 'one sheep two sheep three sheep four'
