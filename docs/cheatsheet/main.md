@@ -37,4 +37,4 @@ For example, we are developing a script designed to be used as a module, we shou
 1. Every Python module has it’s `__name__` defined and if this is `__main__`, it implies that the module is run standalone by the user, and we can do corresponding appropriate actions.
 2. If you import this script as a module in another script, the **name** is set to the name of the script/module.
 3. Python files can act as either reusable modules, or as standalone programs.
-4. if `__name__ == “main”:` is used to execute some code only if the file run directly, and is not being imported.
+4. `if __name__ == "__main__":` is used to execute some code only if the file is run directly, and is not being imported.
