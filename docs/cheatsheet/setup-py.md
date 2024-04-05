@@ -51,4 +51,4 @@ setup(
 )
 ```
 
-Find more information visit the [official documentation](http://docs.python.org/install/index.html).
+Find more information visit the [official documentation](http://docs.python.org/3.11/install/index.html).
