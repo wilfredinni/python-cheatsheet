@@ -62,7 +62,7 @@ And as an unordered data type, they can't be indexed.
 # TypeError: 'set' object does not support indexing
 ```
 
-## set add() and update()
+## set add and update
 
 Using the `add()` method we can add a single element to the set.
 
@@ -82,7 +82,7 @@ And with `update()`, multiple ones:
 # {1, 2, 3, 4, 5, 6}
 ```
 
-## set remove() and discard()
+## set remove and discard
 
 Both methods will remove an element from the set, but `remove()` will raise a `key error` if the value doesn't exist.
 
@@ -108,7 +108,7 @@ Both methods will remove an element from the set, but `remove()` will raise a `k
 >>> s.discard(3)
 ```
 
-## set union()
+## set union
 
 `union()` or `|` will create a new set with all the elements from the sets provided.
 
@@ -119,7 +119,7 @@ Both methods will remove an element from the set, but `remove()` will raise a `k
 # {1, 2, 3, 4, 5}
 ```
 
-## set intersection()
+## set intersection
 
 `intersection()` or `&` will return a set with only the elements that are common to all of them.
 
@@ -131,7 +131,7 @@ Both methods will remove an element from the set, but `remove()` will raise a `k
 # {3}
 ```
 
-## set difference()
+## set difference
 
 `difference()` or `-` will return only the elements that are unique to the first set (invoked set).
 
@@ -146,7 +146,7 @@ Both methods will remove an element from the set, but `remove()` will raise a `k
 # {4}
 ```
 
-## set symmetric_difference()
+## set symmetric_difference
 
 `symmetric_difference()` or `^` will return all the elements that are not common between them.
 
