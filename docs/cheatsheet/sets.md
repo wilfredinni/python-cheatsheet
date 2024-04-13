@@ -119,9 +119,9 @@ Both methods will remove an element from the set, but `remove()` will raise a `k
 # {1, 2, 3, 4, 5}
 ```
 
-## set intersection
+## set intersection()
 
-`intersection` or `&` will return a set with only the elements that are common to all of them.
+`intersection()` or `&` will return a set with only the elements that are common to all of them.
 
 ```python
 >>> s1 = {1, 2, 3}
@@ -131,9 +131,9 @@ Both methods will remove an element from the set, but `remove()` will raise a `k
 # {3}
 ```
 
-## set difference
+## set difference()
 
-`difference` or `-` will return only the elements that are unique to the first set (invoked set).
+`difference()` or `-` will return only the elements that are unique to the first set (invoked set).
 
 ```python
 >>> s1 = {1, 2, 3}
@@ -146,9 +146,9 @@ Both methods will remove an element from the set, but `remove()` will raise a `k
 # {4}
 ```
 
-## set symetric_difference
+## set symmetric_difference()
 
-`symetric_difference` or `^` will return all the elements that are not common between them.
+`symmetric_difference()` or `^` will return all the elements that are not common between them.
 
 ```python
 >>> s1 = {1, 2, 3}
