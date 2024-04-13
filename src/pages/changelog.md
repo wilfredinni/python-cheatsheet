@@ -9,6 +9,12 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2024-04-14
+
+- Fixed broken link in setup.py. Thanks [@damiankrolik](https://github.com/damiankrolik)
+- Fixed a typo in main section. Thanks [@pranayat](https://github.com/pranayat)
+- Fixed typo and titles in sets section. Thanks [@decodingchris](https://github.com/decodingchris)
+
 ## 2024-01-29
 
 - Added `getattr` built-in. Thanks [@HasnatHridoy](https://github.com/HasnatHridoy)
