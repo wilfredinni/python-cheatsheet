@@ -152,8 +152,8 @@ devDependencies:
     specifier: ^0.23.7
     version: 0.23.7(vite@5.3.1)(vue-router@4.3.3)(vue@3.4.29)
   vite-ssg-sitemap:
-    specifier: ^0.6.1
-    version: 0.6.1
+    specifier: ^0.7.0
+    version: 0.7.1
   vitest:
     specifier: ^1.6.0
     version: 1.6.0(@types/node@20.14.2)(happy-dom@14.12.0)
@@ -6300,8 +6300,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-ssg-sitemap@0.6.1:
-    resolution: {integrity: sha512-SMVDf17kwexkN/oSSDYo4rOGvRwmWQeiFQ16Ilvxx9hfm9ojWEVQ1BBZG90cI/XhDiJJTCBtLvB4YpoHz91Glg==}
+  /vite-ssg-sitemap@0.7.1:
+    resolution: {integrity: sha512-5yzGZi9NRREbhObUBCHkzAtth3vaWs7JxQFXugTUjD11IREYN9jATrdp7rGqFcDXVZoZuTAyfT57OYNskEvWFQ==}
     dev: true
 
   /vite-ssg@0.23.7(vite@5.3.1)(vue-router@4.3.3)(vue@3.4.29):

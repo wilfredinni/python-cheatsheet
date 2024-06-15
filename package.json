@@ -60,7 +60,7 @@
     "vite-plugin-pwa": "^0.19.8",
     "vite-plugin-vue-layouts": "^0.11.0",
     "vite-ssg": "^0.23.7",
-    "vite-ssg-sitemap": "^0.6.1",
+    "vite-ssg-sitemap": "^0.7.0",
     "vitest": "^1.6.0",
     "vue-tsc": "^2.0.21"
   },
