@@ -16,8 +16,6 @@ Python delattr() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
-
 ```python
 class Person:
     def __init__(self, name, age):
