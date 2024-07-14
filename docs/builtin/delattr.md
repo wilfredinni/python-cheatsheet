@@ -16,6 +16,31 @@ Python delattr() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Examples
+
+```python
+# Example 1
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+person = Person("John", 30)
+delattr(person, 'age')
+print(person.__dict__)  # Output: {'name': 'John'}
+
+# Example 2
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+
+car = Car("Toyota", "Corolla")
+try:
+    delattr(car, 'year')
+except AttributeError as e:
+    print(f"Error: {e}")  # Output: Error: 'Car' object has no attribute 'year'
+```
 <!-- remove this tag to start editing this page -->
 <empty-section />
 <!-- remove this tag to start editing this page -->
