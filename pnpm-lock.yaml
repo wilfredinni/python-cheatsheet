@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@docsearch/js':
     specifier: ^3.6.1
@@ -148,8 +152,8 @@ devDependencies:
     specifier: ^0.23.8
     version: 0.23.8(vite@5.3.5)(vue-router@4.4.2)(vue@3.4.35)
   vite-ssg-sitemap:
-    specifier: ^0.6.1
-    version: 0.6.1
+    specifier: ^0.8.0
+    version: 0.8.1
   vitest:
     specifier: ^1.6.0
     version: 1.6.0(@types/node@20.14.14)(happy-dom@14.12.3)
@@ -6355,8 +6359,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-ssg-sitemap@0.6.1:
-    resolution: {integrity: sha512-SMVDf17kwexkN/oSSDYo4rOGvRwmWQeiFQ16Ilvxx9hfm9ojWEVQ1BBZG90cI/XhDiJJTCBtLvB4YpoHz91Glg==}
+  /vite-ssg-sitemap@0.8.1:
+    resolution: {integrity: sha512-4IjhsnsC+Kcc/3Z4zOie9KIU633oH0lODZHNIjz3vJvw8aZ2SUor2tvcK16VWpMkkmQkU1iAIY04WWm3DzjM1w==}
     dev: true
 
   /vite-ssg@0.23.8(vite@5.3.5)(vue-router@4.4.2)(vue@3.4.35):
@@ -6910,7 +6914,3 @@ packages:
 
   /zhead@2.2.4:
     resolution: {integrity: sha512-8F0OI5dpWIA5IGG5NHUg9staDwz/ZPxZtvGVf01j7vHqSyZ0raHY+78atOVxRqb73AotX22uV1pXt3gYSstGag==}
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
