@@ -9,6 +9,12 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2024-08-03
+
+- Added 2 examples of using delatrr() function. Thanks [@lukaszwojcik89](https://github.com/lukaszwojcik89)
+- Updated dependencies to the latest versions.
+- Updated contributors list.
+
 ## 2024-04-14
 
 - Fixed broken link in setup.py. Thanks [@damiankrolik](https://github.com/damiankrolik)
