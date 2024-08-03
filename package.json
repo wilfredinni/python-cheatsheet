@@ -34,7 +34,7 @@
     "@vue/compiler-dom": "3.4.35",
     "@vue/test-utils": "^2.4.6",
     "autoprefixer": "^10.4.20",
-    "eslint": "^8.57.0",
+    "eslint": "^9.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-vue": "^9.27.0",
     "esno": "^4.7.0",
