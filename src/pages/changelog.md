@@ -9,6 +9,11 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2024-08-11
+
+- Added Examples and description for range() function. Thanks [@johntheholman](https://github.com/johntheholman)
+- Updated dependencies to the latest versions.
+
 ## 2024-08-03
 
 - Added 2 examples of using delatrr() function. Thanks [@lukaszwojcik89](https://github.com/lukaszwojcik89)
