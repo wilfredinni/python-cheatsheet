@@ -108,11 +108,11 @@ Two examples where the `stop` parameter is set to 0
 ```python
 >>> for i in range(0):
 ...     print(i)
-# 
+#
 ```
 
 ```python
 >>> for i in range(1,0):
 ...     print(i)
-# 
+#
 ```
