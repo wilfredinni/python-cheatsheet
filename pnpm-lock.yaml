@@ -133,7 +133,7 @@ devDependencies:
     specifier: ^0.26.2
     version: 0.26.2(rollup@2.79.1)(vite@5.4.0)
   vite:
-    specifier: ^5.4.0
+    specifier: ^5.3.5
     version: 5.4.0(@types/node@20.14.15)
   vite-plugin-pages:
     specifier: ^0.32.3
