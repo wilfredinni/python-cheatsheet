@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@docsearch/js':
     specifier: ^3.6.1
@@ -131,7 +135,7 @@ devDependencies:
     version: 0.18.2(@vueuse/core@10.11.1)(rollup@2.79.1)
   unplugin-vue-components:
     specifier: ^0.27.3
-    version: 0.27.3(rollup@2.79.1)(vue@3.4.37)
+    version: 0.27.4(rollup@2.79.1)(vue@3.4.37)
   unplugin-vue-markdown:
     specifier: ^0.26.2
     version: 0.26.2(rollup@2.79.1)(vite@5.4.0)
@@ -6345,8 +6349,8 @@ packages:
       - rollup
     dev: true
 
-  /unplugin-vue-components@0.27.3(rollup@2.79.1)(vue@3.4.37):
-    resolution: {integrity: sha512-5wg7lbdg5ZcrAQNzyYK+6gcg/DG8K6rO+f5YeuvqGHs/PhpapBvpA4O/0ex/pFthE5WgRk43iWuRZEMLVsdz4Q==}
+  /unplugin-vue-components@0.27.4(rollup@2.79.1)(vue@3.4.37):
+    resolution: {integrity: sha512-1XVl5iXG7P1UrOMnaj2ogYa5YTq8aoh5jwDPQhemwO/OrXW+lPQKDXd1hMz15qxQPxgb/XXlbgo3HQ2rLEbmXQ==}
     engines: {node: '>=14'}
     peerDependencies:
       '@babel/parser': ^7.15.8
@@ -7086,7 +7090,3 @@ packages:
 
   /zhead@2.2.4:
     resolution: {integrity: sha512-8F0OI5dpWIA5IGG5NHUg9staDwz/ZPxZtvGVf01j7vHqSyZ0raHY+78atOVxRqb73AotX22uV1pXt3gYSstGag==}
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
