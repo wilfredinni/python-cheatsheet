@@ -1,9 +1,13 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@docsearch/js':
     specifier: ^3.6.1
-    version: 3.6.1(search-insights@2.16.2)
+    version: 3.6.1(search-insights@2.16.3)
   '@headlessui/vue':
     specifier: ^1.7.22
     version: 1.7.22(vue@3.4.37)
@@ -18,7 +22,7 @@ dependencies:
     version: 0.23.0
   pinia:
     specifier: ^2.2.1
-    version: 2.2.1(typescript@5.5.4)(vue@3.4.37)
+    version: 2.2.2(typescript@5.5.4)(vue@3.4.37)
   prism-theme-vars:
     specifier: ^0.2.5
     version: 0.2.5
@@ -162,10 +166,10 @@ devDependencies:
 
 packages:
 
-  /@algolia/autocomplete-core@1.9.3(algoliasearch@4.24.0)(search-insights@2.16.2):
+  /@algolia/autocomplete-core@1.9.3(algoliasearch@4.24.0)(search-insights@2.16.3):
     resolution: {integrity: sha512-009HdfugtGCdC4JdXUbVJClA0q0zh24yyePn+KUGk3rP7j8FEe/m5Yo/z65gn6nP/cM39PxpzqKrL7A6fP6PPw==}
     dependencies:
-      '@algolia/autocomplete-plugin-algolia-insights': 1.9.3(algoliasearch@4.24.0)(search-insights@2.16.2)
+      '@algolia/autocomplete-plugin-algolia-insights': 1.9.3(algoliasearch@4.24.0)(search-insights@2.16.3)
       '@algolia/autocomplete-shared': 1.9.3(algoliasearch@4.24.0)
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -173,13 +177,13 @@ packages:
       - search-insights
     dev: false
 
-  /@algolia/autocomplete-plugin-algolia-insights@1.9.3(algoliasearch@4.24.0)(search-insights@2.16.2):
+  /@algolia/autocomplete-plugin-algolia-insights@1.9.3(algoliasearch@4.24.0)(search-insights@2.16.3):
     resolution: {integrity: sha512-a/yTUkcO/Vyy+JffmAnTWbr4/90cLzw+CC3bRbhnULr/EM0fGNvM13oQQ14f2moLMcVDyAx/leczLlAOovhSZg==}
     peerDependencies:
       search-insights: '>= 1 < 3'
     dependencies:
       '@algolia/autocomplete-shared': 1.9.3(algoliasearch@4.24.0)
-      search-insights: 2.16.2
+      search-insights: 2.16.3
     transitivePeerDependencies:
       - '@algolia/client-search'
       - algoliasearch
@@ -1572,10 +1576,10 @@ packages:
     resolution: {integrity: sha512-VtVb5DS+0hRIprU2CO6ZQjK2Zg4QU5HrDM1+ix6rT0umsYvFvatMAnf97NHZlVWDaaLlx7GRfR/7FikANiM2Fg==}
     dev: false
 
-  /@docsearch/js@3.6.1(search-insights@2.16.2):
+  /@docsearch/js@3.6.1(search-insights@2.16.3):
     resolution: {integrity: sha512-erI3RRZurDr1xES5hvYJ3Imp7jtrXj6f1xYIzDzxiS7nNBufYWPbJwrmMqWC5g9y165PmxEmN9pklGCdLi0Iqg==}
     dependencies:
-      '@docsearch/react': 3.6.1(search-insights@2.16.2)
+      '@docsearch/react': 3.6.1(search-insights@2.16.3)
       preact: 10.23.1
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -1585,7 +1589,7 @@ packages:
       - search-insights
     dev: false
 
-  /@docsearch/react@3.6.1(search-insights@2.16.2):
+  /@docsearch/react@3.6.1(search-insights@2.16.3):
     resolution: {integrity: sha512-qXZkEPvybVhSXj0K7U3bXc233tk5e8PfhoZ6MhPOiik/qUQxYC+Dn9DnoS7CxHQQhHfCvTiN0eY9M12oRghEXw==}
     peerDependencies:
       '@types/react': '>= 16.8.0 < 19.0.0'
@@ -1602,11 +1606,11 @@ packages:
       search-insights:
         optional: true
     dependencies:
-      '@algolia/autocomplete-core': 1.9.3(algoliasearch@4.24.0)(search-insights@2.16.2)
+      '@algolia/autocomplete-core': 1.9.3(algoliasearch@4.24.0)(search-insights@2.16.3)
       '@algolia/autocomplete-preset-algolia': 1.9.3(algoliasearch@4.24.0)
       '@docsearch/css': 3.6.1
       algoliasearch: 4.24.0
-      search-insights: 2.16.2
+      search-insights: 2.16.3
     transitivePeerDependencies:
       - '@algolia/client-search'
     dev: false
@@ -2245,7 +2249,7 @@ packages:
       rollup: 2.79.1
       serialize-javascript: 6.0.2
       smob: 1.5.0
-      terser: 5.31.5
+      terser: 5.31.6
     dev: true
 
   /@rollup/pluginutils@3.1.0(rollup@2.79.1):
@@ -5272,8 +5276,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /pinia@2.2.1(typescript@5.5.4)(vue@3.4.37):
-    resolution: {integrity: sha512-ltEU3xwiz5ojVMizdP93AHi84Rtfz0+yKd8ud75hr9LVyWX2alxp7vLbY1kFm7MXFmHHr/9B08Xf8Jj6IHTEiQ==}
+  /pinia@2.2.2(typescript@5.5.4)(vue@3.4.37):
+    resolution: {integrity: sha512-ja2XqFWZC36mupU4z1ZzxeTApV7DOw44cV4dhQ9sGwun+N89v/XP7+j7q6TanS1u1tdbK4r+1BUx7heMaIdagA==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
@@ -5718,8 +5722,8 @@ packages:
     resolution: {integrity: sha512-6FtHJEvt+pVMIB9IBY+IcCJ6Z5f1iQnytgyfKMhDKgmzYG+TeH/wx1y3l27rshSbLiSanrR9ffZDrEsmjlQF2g==}
     dev: true
 
-  /search-insights@2.16.2:
-    resolution: {integrity: sha512-+KrS5rnYlyWgzoCNJGsNPw7Vv+47Y7Ze7KZ+/9Xls+5BUugEbU2yv1n9JsQOqv+MLKYfg3bxI5K6tYJxXZY8FA==}
+  /search-insights@2.16.3:
+    resolution: {integrity: sha512-hSHy/s4Zk2xibhj9XTCACB+1PqS+CaJxepGNBhKc/OsHRpqvHAUAm5+uZ6kJJbGXn0pb3XqekHjg6JAqPExzqg==}
     dev: false
 
   /section-matter@1.0.0:
@@ -6050,6 +6054,17 @@ packages:
 
   /terser@5.31.5:
     resolution: {integrity: sha512-YPmas0L0rE1UyLL/llTWA0SiDOqIcAQYLeUj7cJYzXHlRTAnMSg9pPe4VJ5PlKvTrPQsdVFuiRiwyeNlYgwh2Q==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      '@jridgewell/source-map': 0.3.6
+      acorn: 8.12.1
+      commander: 2.20.3
+      source-map-support: 0.5.21
+    dev: true
+
+  /terser@5.31.6:
+    resolution: {integrity: sha512-PQ4DAriWzKj+qgehQ7LK5bQqCFNMmlhjR2PFFLuqGCpuCAauxemVBWwWOxo3UIwWQx8+Pr61Df++r76wDmkQBg==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -7086,7 +7101,3 @@ packages:
 
   /zhead@2.2.4:
     resolution: {integrity: sha512-8F0OI5dpWIA5IGG5NHUg9staDwz/ZPxZtvGVf01j7vHqSyZ0raHY+78atOVxRqb73AotX22uV1pXt3gYSstGag==}
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
