@@ -327,8 +327,9 @@ Example:
 This function is very much like slices. This allows you to cut out a piece of an iterable.
 
 ```python
-itertools.islice(iterable, start, stop[, step])
+itertools.islice(iterable, start, stop, step])
 ```
+<!-- Removed the extra rectangular bracket (typo correction) -->
 
 Example:
 
