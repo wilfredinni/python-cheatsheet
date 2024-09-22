@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@docsearch/js':
     specifier: ^3.6.1
@@ -8,8 +12,8 @@ dependencies:
     specifier: ^1.7.23
     version: 1.7.23(vue@3.5.8)
   '@vueuse/core':
-    specifier: ^10.11.1
-    version: 10.11.1(vue@3.5.8)
+    specifier: ^11.0.0
+    version: 11.1.0(vue@3.5.8)
   '@vueuse/head':
     specifier: ^2.0.0
     version: 2.0.0(vue@3.5.8)
@@ -128,7 +132,7 @@ devDependencies:
     version: 5.6.2
   unplugin-auto-import:
     specifier: ^0.18.3
-    version: 0.18.3(@vueuse/core@10.11.1)(rollup@2.79.1)
+    version: 0.18.3(@vueuse/core@11.1.0)(rollup@2.79.1)
   unplugin-vue-components:
     specifier: ^0.27.4
     version: 0.27.4(rollup@2.79.1)(vue@3.5.8)
@@ -2897,12 +2901,12 @@ packages:
       vue-component-type-helpers: 2.1.6
     dev: true
 
-  /@vueuse/core@10.11.1(vue@3.5.8):
-    resolution: {integrity: sha512-guoy26JQktXPcz+0n3GukWIy/JDNKti9v6VEMu6kV2sYBsWuGiTU8OWdg+ADfUbHg3/3DlqySDe7JmdHrktiww==}
+  /@vueuse/core@11.1.0(vue@3.5.8):
+    resolution: {integrity: sha512-P6dk79QYA6sKQnghrUz/1tHi0n9mrb/iO1WTMk/ElLmTyNqgDeSZ3wcDf6fRBGzRJbeG1dxzEOvLENMjr+E3fg==}
     dependencies:
       '@types/web-bluetooth': 0.0.20
-      '@vueuse/metadata': 10.11.1
-      '@vueuse/shared': 10.11.1(vue@3.5.8)
+      '@vueuse/metadata': 11.1.0
+      '@vueuse/shared': 11.1.0(vue@3.5.8)
       vue-demi: 0.14.10(vue@3.5.8)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -2920,11 +2924,11 @@ packages:
       vue: 3.5.8(typescript@5.6.2)
     dev: false
 
-  /@vueuse/metadata@10.11.1:
-    resolution: {integrity: sha512-IGa5FXd003Ug1qAZmyE8wF3sJ81xGLSqTqtQ6jaVfkeZ4i5kS2mwQF61yhVqojRnenVew5PldLyRgvdl4YYuSw==}
+  /@vueuse/metadata@11.1.0:
+    resolution: {integrity: sha512-l9Q502TBTaPYGanl1G+hPgd3QX5s4CGnpXriVBR5fEZ/goI6fvDaVmIl3Td8oKFurOxTmbXvBPSsgrd6eu6HYg==}
 
-  /@vueuse/shared@10.11.1(vue@3.5.8):
-    resolution: {integrity: sha512-LHpC8711VFZlDaYUXEBbFBCQ7GS3dVU9mjOhhMhXP6txTV4EhYQg/KGnQuvt/sPAtoUKq7VVUnL6mVtFoL42sA==}
+  /@vueuse/shared@11.1.0(vue@3.5.8):
+    resolution: {integrity: sha512-YUtIpY122q7osj+zsNMFAfMTubGz0sn5QzE5gPzAIiCmtt2ha3uQUY1+JPyL4gRCTsLPX82Y9brNbo/aqlA91w==}
     dependencies:
       vue-demi: 0.14.10(vue@3.5.8)
     transitivePeerDependencies:
@@ -6320,7 +6324,7 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unplugin-auto-import@0.18.3(@vueuse/core@10.11.1)(rollup@2.79.1):
+  /unplugin-auto-import@0.18.3(@vueuse/core@11.1.0)(rollup@2.79.1):
     resolution: {integrity: sha512-q3FUtGQjYA2e+kb1WumyiQMjHM27MrTQ05QfVwtLRVhyYe+KF6TblBYaEX9L6Z0EibsqaXAiW+RFfkcQpfaXzg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -6334,7 +6338,7 @@ packages:
     dependencies:
       '@antfu/utils': 0.7.10
       '@rollup/pluginutils': 5.1.0(rollup@2.79.1)
-      '@vueuse/core': 10.11.1(vue@3.5.8)
+      '@vueuse/core': 11.1.0(vue@3.5.8)
       fast-glob: 3.3.2
       local-pkg: 0.5.0
       magic-string: 0.30.11
@@ -7087,7 +7091,3 @@ packages:
 
   /zhead@2.2.4:
     resolution: {integrity: sha512-8F0OI5dpWIA5IGG5NHUg9staDwz/ZPxZtvGVf01j7vHqSyZ0raHY+78atOVxRqb73AotX22uV1pXt3gYSstGag==}
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
