@@ -9,6 +9,10 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2024-09-22
+
+- Updated dependencies to the latest versions.
+
 ## 2024-08-11
 
 - Added Examples and description for range() function. Thanks [@johntheholman](https://github.com/johntheholman)
@@ -89,7 +93,6 @@ Changelog
 
 - Added `input` example with `f-strings`. Thanks [@darkpixlz](https://github.com/darkpixlz) ([#204](https://github.com/wilfredinni/python-cheatsheet/pull/204))
 - Added more `OOP` details. Thanks [@noraa-july-stoke](https://github.com/noraa-july-stoke) ([#201](https://github.com/wilfredinni/python-cheatsheet/pull/201))
-
 
 ## 2023-03-26
 
