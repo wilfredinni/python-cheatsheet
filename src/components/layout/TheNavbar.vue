@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const navigation = useNavigationStore()
 const route = useRoute()
+const isDark = useDark()
 
 // const timeAgo = useTimeAgo(new Date(2023, 12, 29, 15, 15))
 </script>
@@ -18,8 +19,12 @@ const route = useRoute()
           <div class="mr-3 flex flex-shrink-0 items-center">
             <router-link to="/">
               <img
-                class="h-5 w-auto"
-                src="https://raw.githubusercontent.com/wilfredinni/merken/master/static/merken/img/snake.svg"
+                class="h-7 w-auto"
+                :src="
+                  isDark
+                    ? 'https://raw.githubusercontent.com/wilfredinni/python-cheatsheet/refs/heads/master/public/logo.svg'
+                    : 'https://raw.githubusercontent.com/wilfredinni/python-cheatsheet/refs/heads/master/public/logo-light.svg'
+                "
                 alt="python-cheatsheet"
                 height="10"
                 width="10"

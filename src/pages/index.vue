@@ -34,6 +34,7 @@ const cardLinks = [
   },
 ]
 
+const isDark = useDark()
 const { description } = useMeta()
 const breakpoints = useBreakpoints(breakpointsTailwind)
 const smAndLarger = breakpoints.greater('sm')
@@ -45,7 +46,11 @@ const smAndLarger = breakpoints.greater('sm')
       <div class="flex justify-center sm:hidden">
         <img
           class="h-20 w-auto"
-          src="https://raw.githubusercontent.com/wilfredinni/merken/master/static/merken/img/snake.svg"
+          :src="
+            isDark
+              ? 'https://raw.githubusercontent.com/wilfredinni/python-cheatsheet/refs/heads/master/public/logo.svg'
+              : 'https://raw.githubusercontent.com/wilfredinni/python-cheatsheet/refs/heads/master/public/logo-light.svg'
+          "
           alt="python-cheatsheet"
         />
       </div>

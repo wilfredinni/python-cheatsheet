@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const isDark = useDark()
 useHead({
   title: '404 Not Found',
   meta: [
@@ -21,7 +22,11 @@ useHead({
           <span class="sr-only">Python Cheatsheet</span>
           <img
             class="h-12 w-auto"
-            src="https://raw.githubusercontent.com/wilfredinni/merken/master/static/merken/img/snake.svg"
+            :src="
+              isDark
+                ? 'https://raw.githubusercontent.com/wilfredinni/python-cheatsheet/refs/heads/master/public/logo.svg'
+                : 'https://raw.githubusercontent.com/wilfredinni/python-cheatsheet/refs/heads/master/public/logo-light.svg'
+            "
             alt="python-cheatsheet"
           />
         </router-link>
