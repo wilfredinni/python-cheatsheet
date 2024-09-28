@@ -9,6 +9,10 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2024-09-28
+
+- New logo image added to the website
+
 ## 2024-09-22
 
 - Updated dependencies to the latest versions.
