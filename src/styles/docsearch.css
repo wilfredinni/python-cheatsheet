@@ -53,6 +53,10 @@
   overflow: hidden !important;
 }
 
+.DocSearch-VisuallyHiddenForAccessibility{
+  visibility: hidden;
+}
+
 .DocSearch-Container {
   position: fixed;
   z-index: 200;
