@@ -9,6 +9,10 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2024-09-29
+
+- Fixed missing DocSearch style. Thanks [@xcsnowcity](https://github.com/xcsnowcity)
+
 ## 2024-09-28
 
 - New logo image added to the website
