@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@docsearch/js':
     specifier: ^3.6.2
@@ -83,7 +87,7 @@ devDependencies:
     version: 9.28.0(eslint@8.57.1)
   esno:
     specifier: ^4.7.0
-    version: 4.7.0
+    version: 4.8.0
   fs-extra:
     specifier: ^11.2.0
     version: 11.2.0
@@ -3858,8 +3862,8 @@ packages:
       - supports-color
     dev: true
 
-  /esno@4.7.0:
-    resolution: {integrity: sha512-81owrjxIxOwqcABt20U09Wn8lpBo9K6ttqbGvQcB3VYNLJyaV1fvKkDtpZd3Rj5BX3WXiGiJCjUevKQGNICzJg==}
+  /esno@4.8.0:
+    resolution: {integrity: sha512-acMtooReAQGzLU0zcuEDHa8S62meh5aIyi8jboYxyvAePdmuWx2Mpwmt0xjwO0bs9/SXf+dvXJ0QJoDWw814Iw==}
     hasBin: true
     dependencies:
       tsx: 4.19.1
@@ -7070,7 +7074,3 @@ packages:
 
   /zhead@2.2.4:
     resolution: {integrity: sha512-8F0OI5dpWIA5IGG5NHUg9staDwz/ZPxZtvGVf01j7vHqSyZ0raHY+78atOVxRqb73AotX22uV1pXt3gYSstGag==}
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
