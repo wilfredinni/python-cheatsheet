@@ -25,7 +25,7 @@ export const useNewsletterStore = defineStore('useNewsletterStore', {
       const baseUrl = import.meta.env.VITE_GRUDGET_ENDPOINT || null
       const newsletter = import.meta.env.VITE_GRUDGET_NEWSLETTER || null
 
-      const response = await ofetch(`${baseUrl}/newsletter/subscribers/`, {
+      const response = await ofetch(`${baseUrl}/subscriber/`, {
         method: 'POST',
         body: { email: email, newsletter: newsletter },
         headers: {
