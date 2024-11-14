@@ -22,11 +22,11 @@ Python next() built-in function
 >>> i = iter([1, 2, 3])
 >>> i
 # <list_iterator object at 0x7f93158badc0>
->>> i.__next__()
+>>> next(i)
 # 1
->>> i.__next__()
+>>> next(i)
 # 2
->>> i.__next__()
+>>> next(i)
 # 3
 ```
 
