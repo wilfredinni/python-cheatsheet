@@ -17,7 +17,7 @@
     "esbuild": "0.23.1",
     "pinia": "^2.2.6",
     "prism-theme-vars": "^0.2.5",
-    "vue": "^3.5.12",
+    "vue": "^3.5.13",
     "vue-gtag": "^2.0.1",
     "vue-router": "^4.4.5"
   },
