@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@docsearch/js':
     specifier: ^3.8.0
@@ -88,8 +92,8 @@ devDependencies:
     specifier: ^11.2.0
     version: 11.2.0
   happy-dom:
-    specifier: ^14.12.3
-    version: 14.12.3
+    specifier: ^15.0.0
+    version: 15.11.6
   markdown-it:
     specifier: ^14.1.0
     version: 14.1.0
@@ -155,7 +159,7 @@ devDependencies:
     version: 0.6.1
   vitest:
     specifier: ^1.6.0
-    version: 1.6.0(@types/node@20.17.6)(happy-dom@14.12.3)
+    version: 1.6.0(@types/node@20.17.6)(happy-dom@15.11.6)
   vue-tsc:
     specifier: ^2.1.10
     version: 2.1.10(typescript@5.6.3)
@@ -4086,9 +4090,9 @@ packages:
       strip-bom-string: 1.0.0
     dev: true
 
-  /happy-dom@14.12.3:
-    resolution: {integrity: sha512-vsYlEs3E9gLwA1Hp+w3qzu+RUDFf4VTT8cyKqVICoZ2k7WM++Qyd2LwzyTi5bqMJFiIC/vNpTDYuxdreENRK/g==}
-    engines: {node: '>=16.0.0'}
+  /happy-dom@15.11.6:
+    resolution: {integrity: sha512-elX7iUTu+5+3b2+NGQc0L3eWyq9jKhuJJ4GpOMxxT/c2pg9O3L5H3ty2VECX0XXZgRmmRqXyOK8brA2hDI6LsQ==}
+    engines: {node: '>=18.0.0'}
     dependencies:
       entities: 4.5.0
       webidl-conversions: 7.0.0
@@ -6399,7 +6403,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest@1.6.0(@types/node@20.17.6)(happy-dom@14.12.3):
+  /vitest@1.6.0(@types/node@20.17.6)(happy-dom@15.11.6):
     resolution: {integrity: sha512-H5r/dN06swuFnzNFhq/dnz37bPXnq8xB2xB5JOVk8K09rUtoeNN+LHWkoQ0A/i3hvbUKKcCei9KpbxqHMLhLLA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -6434,7 +6438,7 @@ packages:
       chai: 4.5.0
       debug: 4.3.7
       execa: 8.0.1
-      happy-dom: 14.12.3
+      happy-dom: 15.11.6
       local-pkg: 0.5.0
       magic-string: 0.30.12
       pathe: 1.1.2
@@ -6876,7 +6880,3 @@ packages:
 
   /zhead@2.2.4:
     resolution: {integrity: sha512-8F0OI5dpWIA5IGG5NHUg9staDwz/ZPxZtvGVf01j7vHqSyZ0raHY+78atOVxRqb73AotX22uV1pXt3gYSstGag==}
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
