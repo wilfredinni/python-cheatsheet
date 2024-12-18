@@ -44,7 +44,7 @@ There are two ways to create sets: using curly braces `{}` and the built-in func
 
 ## Unordered collections of unique elements
 
-A set automatically remove all the duplicate values.
+A set automatically removes all the duplicate values.
 
 ```python
 >>> s = {1, 2, 3, 2, 3, 4}
