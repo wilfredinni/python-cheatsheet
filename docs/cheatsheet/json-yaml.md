@@ -31,7 +31,7 @@ Write a JSON file with:
 
 Compared to JSON, YAML allows a much better human maintainability and gives ability to add comments. It is a convenient choice for configuration files where a human will have to edit.
 
-There are two main libraries allowing to access to YAML files:
+There are two main libraries allowing access to YAML files:
 
 - [PyYaml](https://pypi.python.org/pypi/PyYAML)
 - [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
