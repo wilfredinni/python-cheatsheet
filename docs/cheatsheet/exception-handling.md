@@ -16,7 +16,7 @@ Python Exception Handling
   </base-disclaimer-content>
 </base-disclaimer>
 
-Python has many [built-in exceptions](https://docs.python.org/3/library/exceptions.html) that are raised when a program encounters an error, and most external libraries, like the popular [Requests](https://requests.readthedocs.io/en/latest), include his own [custom exceptions](https://requests.readthedocs.io/en/latest/user/quickstart/#errors-and-exceptions) that we will need to deal to.
+Python has many [built-in exceptions](https://docs.python.org/3/library/exceptions.html) that are raised when a program encounters an error, and most external libraries, like the popular [Requests](https://requests.readthedocs.io/en/latest), include their own [custom exceptions](https://requests.readthedocs.io/en/latest/user/quickstart/#errors-and-exceptions) that we will need to deal with.
 
 ## Basic exception handling
 
