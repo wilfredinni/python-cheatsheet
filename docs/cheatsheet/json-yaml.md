@@ -38,8 +38,8 @@ There are two main libraries allowing to access to YAML files:
 
 Install them using `pip install` in your virtual environment.
 
-The first one is easier to use but the second one, Ruamel, implements much better the YAML
-specification, and allow for example to modify a YAML content without altering comments.
+The first one is easier to use, but the second one, Ruamel, implements the YAML
+specification much better, and allows, for example, to modify a YAML content without altering comments.
 
 Open a YAML file with:
 
