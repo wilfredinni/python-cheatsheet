@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@docsearch/js':
     specifier: ^3.8.2
@@ -130,8 +134,8 @@ devDependencies:
     specifier: ^0.18.6
     version: 0.18.6(@vueuse/core@10.11.1)(rollup@2.79.2)
   unplugin-vue-components:
-    specifier: ^0.27.5
-    version: 0.27.5(rollup@2.79.2)(vue@3.5.13)
+    specifier: ^0.28.0
+    version: 0.28.0(rollup@2.79.2)(vue@3.5.13)
   unplugin-vue-markdown:
     specifier: ^0.26.3
     version: 0.26.3(rollup@2.79.2)(vite@5.4.11)
@@ -6267,8 +6271,8 @@ packages:
       - rollup
     dev: true
 
-  /unplugin-vue-components@0.27.5(rollup@2.79.2)(vue@3.5.13):
-    resolution: {integrity: sha512-m9j4goBeNwXyNN8oZHHxvIIYiG8FQ9UfmKWeNllpDvhU7btKNNELGPt+o3mckQKuPwrE7e0PvCsx+IWuDSD9Vg==}
+  /unplugin-vue-components@0.28.0(rollup@2.79.2)(vue@3.5.13):
+    resolution: {integrity: sha512-jiTGtJ3JsRFBjgvyilfrX7yUoGKScFgbdNw+6p6kEXU+Spf/rhxzgvdfuMcvhCcLmflB/dY3pGQshYBVGOUx7Q==}
     engines: {node: '>=14'}
     peerDependencies:
       '@babel/parser': ^7.15.8
@@ -6289,7 +6293,7 @@ packages:
       magic-string: 0.30.17
       minimatch: 9.0.5
       mlly: 1.7.3
-      unplugin: 1.16.0
+      unplugin: 2.1.0
       vue: 3.5.13(typescript@5.7.2)
     transitivePeerDependencies:
       - rollup
@@ -6316,6 +6320,14 @@ packages:
   /unplugin@1.16.0:
     resolution: {integrity: sha512-5liCNPuJW8dqh3+DM6uNM2EI3MLLpCKp/KY+9pB5M2S2SR2qvvDHhKgBOaTWEbZTAws3CXfB0rKTIolWKL05VQ==}
     engines: {node: '>=14.0.0'}
+    dependencies:
+      acorn: 8.14.0
+      webpack-virtual-modules: 0.6.2
+    dev: true
+
+  /unplugin@2.1.0:
+    resolution: {integrity: sha512-us4j03/499KhbGP8BU7Hrzrgseo+KdfJYWcbcajCOqsAyb8Gk0Yn2kiUIcZISYCb1JFaZfIuG3b42HmguVOKCQ==}
+    engines: {node: '>=18.12.0'}
     dependencies:
       acorn: 8.14.0
       webpack-virtual-modules: 0.6.2
@@ -7032,7 +7044,3 @@ packages:
 
   /zhead@2.2.4:
     resolution: {integrity: sha512-8F0OI5dpWIA5IGG5NHUg9staDwz/ZPxZtvGVf01j7vHqSyZ0raHY+78atOVxRqb73AotX22uV1pXt3gYSstGag==}
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
