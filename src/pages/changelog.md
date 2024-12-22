@@ -9,6 +9,12 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2024-12-22
+
+- Fixed several typos. Thanks [@skyunna](https://github.com/skyunna)
+- Fixed `next` and `iter` built-in functions. [@tomfun](https://github.com/tomfun)
+- Updated dependencies to the latest versions.
+
 ## 2024-09-29
 
 - Fixed missing DocSearch style. Thanks [@xcsnowcity](https://github.com/xcsnowcity)
