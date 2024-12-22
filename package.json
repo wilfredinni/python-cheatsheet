@@ -74,5 +74,11 @@
         "@types/react"
       ]
     }
+  },
+  "settings": {
+    "npm.packageManager": "npm"
+  },
+  "engines": {
+    "node": ">=18.12.0"
   }
 }
