@@ -102,6 +102,39 @@ def foo(bar):
 
 ## Class based decorators
 
+To decorate a class methos, you must define the decorator within the class. When only the implicit argument `self` is passed to the method, without any other additional arguments, you must make a separate decorator for only those methods without any additional arguments. An example of this is when you want to catch and print exceptions in a certain way.
+
+```python
+class DecorateMyMethod:
+
+  def decorator_for_class_method(method):
+    def wrapper_for_class_method(self, *args, **kwargs)
+      try:
+        return method(self, *args, **kwargs)
+      except Exception as e:
+        print("\nWARNING: Please make note of the following:\n")
+        print(e)
+    return wrapper_for_class_method
+
+  def __init__(self,succeed:bool):
+    self.succeed = succeed
+
+  @wrapper_for_class_method
+  def class_action(self):
+    if self.succeed:
+      print("You succeeded by choice.")
+    else:
+      raise Exception("Epic fail of your own creation.")
+
+test_succeed = DecorateMyMethods(True)
+test_succeed.class_action()
+# You succeeded by choice.
+
+test_fail = DecorateMyMethod(False)
+test_fail.class_action()
+# Exception: Epic fail of your own creation.
+```
+
 A decorator can also be defined as a class instead of a method. This is useful for maintaining and updating a state, such as in the following example, where we count the number of calls made to a method:
 
 ```python
