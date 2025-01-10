@@ -107,10 +107,10 @@ To decorate a class methos, you must define the decorator within the class. When
 ```python
 class DecorateMyMethod:
 
-  def decorator_for_class_method(method):
-    def wrapper_for_class_method(self, *args, **kwargs)
+  def decorator_for_class_method_with_no_args(method):
+    def wrapper_for_class_method(self)
       try:
-        return method(self, *args, **kwargs)
+        return method(self)
       except Exception as e:
         print("\nWARNING: Please make note of the following:\n")
         print(e)
@@ -119,7 +119,7 @@ class DecorateMyMethod:
   def __init__(self,succeed:bool):
     self.succeed = succeed
 
-  @wrapper_for_class_method
+  @decorator_for_class_method_with_no_args
   def class_action(self):
     if self.succeed:
       print("You succeeded by choice.")
