@@ -25,9 +25,9 @@ Python breakpoint() built-in function
 >>> for i in range(5):
 ...     # Stream i to stdout
 ...     print(i)
-...    # Create breakpoint at # 3
-...    if i == 3:
-...        breakpoint()
+...     # Create breakpoint at # 3
+...     if i == 3:
+...         breakpoint()
 ...
 # 0
 # 1
