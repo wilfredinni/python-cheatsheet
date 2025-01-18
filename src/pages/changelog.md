@@ -9,6 +9,13 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2024-01-18
+
+- Fixed indentation in example. Thanks [@msohaib9](https://github.com/msohaib9)
+- Added example of decorator used within a class for its own method. Thanks [@fPkX6F1nGTX](https://github.com/fPkX6F1nGTX)
+- Fixed Netlify build crashing because of older node version (pinned to v20)
+- Updated dependencies to the latest versions.
+
 ## 2024-12-22
 
 - Fixed several typos. Thanks [@skyunna](https://github.com/skyunna)
