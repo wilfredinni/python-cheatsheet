@@ -7,11 +7,14 @@ description: A Python Decorator is a syntax that provide a concise and reusable 
 Python Decorators
 </base-title>
 
-A Python Decorator provides a concise and reusable way for extending a function or a class.
+A Python Decorator provides a concise and reusable way for extending
+a function or a class.
 
 ## Bare bone decorator
 
-A decorator in its simplest form is a function that takes another function as an argument and returns a wrapper. The following example shows the creation of a decorator and its usage.
+A decorator in its simplest form is a function that takes another
+function as an argument and returns a wrapper. The following example
+shows the creation of a decorator and its usage.
 
 ```python
 def your_decorator(func):
@@ -58,7 +61,8 @@ foo("Jack")
 
 ## Template for a basic decorator
 
-This template is useful for most decorator use-cases. It is valid for functions with or without parameters, and with or without a return value.
+This template is useful for most decorator use-cases. It is valid for functions
+with or without parameters, and with or without a return value.
 
 ```python
 import functools
@@ -102,7 +106,46 @@ def foo(bar):
 
 ## Class based decorators
 
-A decorator can also be defined as a class instead of a method. This is useful for maintaining and updating a state, such as in the following example, where we count the number of calls made to a method:
+To decorate a class methos, you must define the decorator within the class. When
+only the implicit argument `self` is passed to the method, without any other
+additional arguments, you must make a separate decorator for only those methods
+without any additional arguments. An example of this is when you want to catch
+and print exceptions in a certain way.
+
+```python
+class DecorateMyMethod:
+
+  def decorator_for_class_method_with_no_args(method):
+    def wrapper_for_class_method(self)
+      try:
+        return method(self)
+      except Exception as e:
+        print("\nWARNING: Please make note of the following:\n")
+        print(e)
+    return wrapper_for_class_method
+
+  def __init__(self,succeed:bool):
+    self.succeed = succeed
+
+  @decorator_for_class_method_with_no_args
+  def class_action(self):
+    if self.succeed:
+      print("You succeeded by choice.")
+    else:
+      raise Exception("Epic fail of your own creation.")
+
+test_succeed = DecorateMyMethods(True)
+test_succeed.class_action()
+# You succeeded by choice.
+
+test_fail = DecorateMyMethod(False)
+test_fail.class_action()
+# Exception: Epic fail of your own creation.
+```
+
+A decorator can also be defined as a class instead of a method. This is useful
+for maintaining and updating a state, such as in the following example, where we
+count the number of calls made to a method:
 
 ```python
 class CountCallNumber:
