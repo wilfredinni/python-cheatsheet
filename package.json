@@ -22,12 +22,12 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.9",
-    "@tailwindcss/typography": "^0.5.15",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/fs-extra": "^11.0.4",
     "@types/markdown-it": "^14.1.2",
     "@types/markdown-it-link-attributes": "^3.0.5",
-    "@types/node": "^20.17.10",
+    "@types/node": "^20.17.14",
     "@types/string": "0.0.34",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
@@ -39,20 +39,20 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-vue": "^9.32.0",
     "esno": "^4.8.0",
-    "fs-extra": "^11.2.0",
+    "fs-extra": "^11.3.0",
     "happy-dom": "^14.12.3",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-prism": "^2.3.0",
     "ofetch": "^1.4.1",
-    "postcss": "^8.4.49",
+    "postcss": "^8.5.1",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.5.14",
     "prismjs": "^1.29.0",
     "string": "^3.3.3",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.2",
+    "typescript": "^5.7.3",
     "unplugin-auto-import": "^0.18.6",
     "unplugin-vue-components": "^0.27.5",
     "unplugin-vue-markdown": "^0.26.3",
@@ -63,7 +63,7 @@
     "vite-ssg": "^0.23.8",
     "vite-ssg-sitemap": "^0.6.1",
     "vitest": "^1.6.0",
-    "vue-tsc": "^2.1.10"
+    "vue-tsc": "^2.2.0"
   },
   "pnpm": {
     "peerDependencyRules": {
