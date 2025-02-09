@@ -27,7 +27,7 @@ You can't divide by zero, that is a mathematical true, and if you try to do it i
 ...     print(dividend / divisor)
 ...
 >>> divide(dividend=10, divisor=5)
-# 5
+# 2
 
 >>> divide(dividend=10, divisor=0)
 # Traceback (most recent call last):
@@ -45,7 +45,7 @@ Let's say we don't want our program to stop its execution or show the user an ou
 ...         print('You can not divide by 0')
 ...
 >>> divide(dividend=10, divisor=5)
-# 5
+# 2
 
 >>> divide(dividend=10, divisor=0)
 # You can not divide by 0
@@ -58,17 +58,22 @@ You can also handle multiple exceptions in one line like the following without t
 ```python
 >>> def divide(dividend , divisor):
 ...     try:
-...         var = 'str' + 1
-...         print(dividend / divisor)
+...         if (dividend == 10):
+...           var = 'str' + 1
+...         else:
+...           print(dividend / divisor)
 ...     except (ZeroDivisionError, TypeError) as error:
 ...         print(error)
 ...
+
+>>> divide(dividend=20, divisor=5)
+# 4
+
 >>> divide(dividend=10, divisor=5)
-# 5
+# `can only concatenate str (not "int") to str` Error message
 
 >>> divide(dividend=10, divisor=0)
 # `division by zero` Error message
-# `can only concatenate str (not "int") to str` Error message
 ```
 
 ## Finally code in exception handling
