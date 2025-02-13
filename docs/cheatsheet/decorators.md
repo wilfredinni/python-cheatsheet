@@ -106,11 +106,11 @@ def foo(bar):
 
 ## Class based decorators
 
-To decorate a class methos, you must define the decorator within the class. When
-only the implicit argument `self` is passed to the method, without any other
+To decorate a class method, you must define the decorator within the class. When
+only the implicit argument `self` is passed to the method, without any explicit
 additional arguments, you must make a separate decorator for only those methods
-without any additional arguments. An example of this is when you want to catch
-and print exceptions in a certain way.
+without any additional arguments. An example of this, shown below, is when you
+want to catch and print exceptions in a certain way.
 
 ```python
 class DecorateMyMethod:
