@@ -16,7 +16,7 @@ Python Args and Kwargs
   </base-disclaimer-content>
 </base-disclaimer>
 
-Read the article <router-link to="/blog/python-easy-args-kwargs">Python \*args and \*\*kwargs Made Easy</router-link> for a more in deep introduction.
+Read the article <router-link to="/blog/python-easy-args-kwargs">Python \*args and \*\*kwargs Made Easy</router-link> for a more in depth introduction.
 
 ## Args and Kwargs
 

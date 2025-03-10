@@ -64,7 +64,7 @@ It is easy to add default values to the fields of your data class.
 
 ## Type hints
 
-It is mandatory to define the data type in dataclass. However, If you would rather not specify the datatype then, use `typing.Any`.
+It is mandatory to define the data type in dataclass. However, if you would rather not specify the datatype, then use `typing.Any`.
 
 ```python
 >>> from dataclasses import dataclass
