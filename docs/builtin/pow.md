@@ -13,11 +13,11 @@ Python pow() built-in function
   </base-disclaimer-title>
   <base-disclaimer-content>
    The pow() function returns the power of a number.
-    It takes two or three arguments:
-    pow(base, exp): Returns base raised to the power of exp (base ** exp).
-    pow(base, exp, mod): Returns (base ** exp) % mod (for modular arithmetic).
-    If the optional mod argument is present, the result is computed more 
-    efficiently than base ** exp % mod.
+   It takes two or three arguments:
+   pow(base, exp): Returns base raised to the power of exp (base ** exp).
+   pow(base, exp, mod): Returns (base ** exp) % mod (for modular arithmetic).
+   If the optional mod argument is present, the result is computed more 
+   efficiently than base ** exp % mod.
   </base-disclaimer-content>
 </base-disclaimer>
 
