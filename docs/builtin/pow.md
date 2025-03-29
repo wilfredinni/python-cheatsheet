@@ -12,16 +12,27 @@ Python pow() built-in function
     From the <a target="_blank" href="https://docs.python.org/3/library/functions.html#pow">Python 3 documentation</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
-   Given a string representing one Unicode character, return an integer representing the Unicode code point of that character.
+   The pow() function returns the power of a number. It takes two or three arguments:
+    pow(base, exp): Returns base raised to the power of exp (i.e., base ** exp).
+    pow(base, exp, mod): Returns (base ** exp) % mod (useful for modular arithmetic).
+    If the optional mod argument is present, the result is computed more efficiently than base ** exp % mod.
   </base-disclaimer-content>
 </base-disclaimer>
 
 ## Example
 
 ```python
->>> result = pow(2, 3)
->>> print(result)
+# Basic exponentiation
+>>> pow(2, 3)
 # 8
+
+# Using three arguments (modular exponentiation)
+>>> pow(2, 3, 5)
+# 3  (since 2^3 = 8, and 8 % 5 = 3)
+
+# Works with negative exponents (returns float)
+>>> pow(2, -3)
+# 0.125  (since 2^(-3) = 1/8)
 ```
 
 
