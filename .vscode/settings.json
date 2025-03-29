@@ -68,6 +68,7 @@
         "getsize",
         "getstate",
         "groupby",
+        "gspagare",
         "gtag",
         "hasattr",
         "hashable",

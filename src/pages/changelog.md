@@ -9,6 +9,12 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2025-03-29
+
+- Fixed pow example. Thanks [@gspagare](https://github.com/gspagare)
+- Fixed typo on decorators. Thanks [@fPkX6F1nGTX](https://github.com/fPkX6F1nGTX)
+- Updated dependencies to the latest versions.
+
 ## 2025-01-18
 
 - Fixed indentation in example. Thanks [@msohaib9](https://github.com/msohaib9)
