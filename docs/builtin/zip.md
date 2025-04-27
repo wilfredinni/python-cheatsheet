@@ -32,7 +32,7 @@ Python zip() built-in function
 
 ## Other Usecases
 
-The zip function in Python is used to combine two or more iterables (like lists or tuples) into a single iterable of tuples.
+The zip function in Python combines multiple iterables into a single iterable of tuples.
 
 ```python
 # Combining three lists
@@ -62,7 +62,7 @@ The zip function in Python is used to combine two or more iterables (like lists 
 
 ### Zipping with Different Lengths
 
-When the iterables have different lengths, zip stops creating tuples when the shortest iterable is exhausted.
+zip stops creating tuples when the shortest iterable is exhausted.
 
 ```python
 >>> numbers = [1, 2, 3]
