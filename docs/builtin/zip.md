@@ -30,6 +30,72 @@ Python zip() built-in function
 # The shelf costs $40
 ```
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+## Other Usecases
+
+The zip function in Python is used to combine two or more iterables (like lists or tuples) into a single iterable of tuples.
+
+```python
+# Combining three lists
+>>> list1 = [1, 2, 3]
+>>> list2 = ['a', 'b', 'c']
+>>> list3 = [True, False, True]
+
+>>> zipped = zip(list1, list2, list3)
+>>> print(list(zipped))
+# Output: [(1, 'a', True), (2, 'b', False), (3, 'c', True)]
+```
+
+### Unzipping
+
+```python
+
+# Unzipping a zipped object
+>>> zipped = [(1, 'a'), (2, 'b'), (3, 'c')]
+>>> list1, list2 = zip(*zipped)
+>>> print(list1)
+# Output: (1, 2, 3)
+>>> print(list2)
+# Output: ('a', 'b', 'c')
+```
+
+## More Examples
+
+### Zipping with Different Lengths
+
+When the iterables have different lengths, zip stops creating tuples when the shortest iterable is exhausted.
+
+```python
+>>> numbers = [1, 2, 3]
+>>> letters = ['a', 'b']
+>>>
+>>> for num, letter in zip(numbers, letters):
+...     print(f'{num} -> {letter}')
+# 1 -> a
+# 2 -> b
+```
+
+### Using zip with Dictionaries
+
+You can use zip to combine keys and values from two lists into a dictionary.
+
+```python
+>>> keys = ['name', 'age', 'city']
+>>> values = ['Alice', 25, 'New York']
+>>>
+>>> my_dict = dict(zip(keys, values))
+>>> print(my_dict)
+# {'name': 'Alice', 'age': 25, 'city': 'New York'}
+```
+
+### Using zip with List Comprehensions
+
+You can use zip in list comprehensions for more concise code.
+
+```python
+>>> list1 = [1, 2, 3]
+>>> list2 = [4, 5, 6]
+>>>
+>>> summed = [x + y for x, y in zip(list1, list2)]
+>>> print(summed)
+# [5, 7, 9]
+```
