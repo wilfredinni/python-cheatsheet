@@ -41,7 +41,7 @@ The Python interpreter has a number of functions and types built into it that ar
 | <router-link to='/builtin/frozenset'>frozenset()</router-link>       | Return a new frozenset object.                                            |
 | <router-link to='/builtin/getattr'>getattr()</router-link>           | Return the value of the named attribute of object.                        |
 | <router-link to='/builtin/globals'>globals()</router-link>           | Return the dictionary implementing the current module namespace.          |
-| <router-link to='/builtin/hasattr'>hasattr()</router-link>           | True if the string is the name of one of the object’s attributes.         |
+| <router-link to='/builtin/hasattr'>hasattr()</router-link>           | Return True if the object has the named attribute.                        |
 | <router-link to='/builtin/hash'>hash()</router-link>                 | Return the hash value of the object.                                      |
 | <router-link to='/builtin/help'>help()</router-link>                 | Invoke the built-in help system.                                          |
 | <router-link to='/builtin/hex'>hex()</router-link>                   | Convert an integer number to a lowercase hexadecimal string.              |
