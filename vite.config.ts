@@ -21,6 +21,7 @@ export default defineConfig(({ mode }) => {
     resolve: {
       alias: {
         '~/': `${path.resolve(__dirname, 'src')}/`,
+        'vue-gtag': 'vue-gtag/dist/vue-gtag.esm-browser.js', // force ESM build for vue-gtag
       },
     },
 
@@ -132,7 +133,7 @@ export default defineConfig(({ mode }) => {
     ssgOptions: {
       script: 'async',
       formatting: 'minify',
-      format: 'cjs',
+      format: 'esm', // changed from 'cjs' to 'esm' to fix ESM/CJS compatibility
       onFinished() {
         const hostname = `https://${process.env.VITE_BASE_URL}`
         generateSitemap({
