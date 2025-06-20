@@ -43,7 +43,7 @@ const isDark = useDark()
                 to="/blog/python-uv-package-manager"
                 class="hover:text-sky-500"
               >
-                UV: The Lightning-Fast Python Package Manager
+                UV: Lightning-Fast Package Manager
               </router-link>
             </template>
           </base-badge-notice>
