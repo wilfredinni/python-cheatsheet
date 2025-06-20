@@ -27,8 +27,7 @@ const sizes: Sizes = {
         class="h-4 w-px bg-gray-900/10 dark:bg-gray-100/10"
         aria-hidden="true"
       />
-      <p href="#" class="flex items-center gap-x-1 font-semibold">
-        <span class="absolute inset-0" aria-hidden="true" />
+      <p class="flex items-center gap-x-1 font-semibold">
         <slot name="message"> My message </slot>
       </p>
     </div>

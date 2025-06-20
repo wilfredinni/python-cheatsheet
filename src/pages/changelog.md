@@ -9,6 +9,11 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2025-06-20
+
+- Update dependencies to the latest versions.
+- Added new blog post [UV: The Lightning-Fast Python Package Manager](https://pythoncheatsheet.org/blog/python-uv-package-manager/)
+
 ## 2025-03-29
 
 - Fixed pow example. Thanks [@gspagare](https://github.com/gspagare)
