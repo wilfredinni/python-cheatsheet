@@ -34,25 +34,19 @@ const isDark = useDark()
 
           <algolia-doc-search />
 
-          <a
-            href="https://www.javascriptcheatsheet.org/"
-            class="hidden xl:flex"
-          >
-            <base-badge-notice size="xs">
-              <template #title>
-                <span class="capitalize"> new website </span>
-              </template>
-              <template #message>
-                ✨ javascriptcheatsheet.org
-                <span class="mx-1">·</span>
-                <img
-                  src="https://www.javascriptcheatsheet.org/icons/javascript_logo.png"
-                  alt="javascript cheatsheet"
-                  class="h-4 w-4 rounded"
-                />
-              </template>
-            </base-badge-notice>
-          </a>
+          <base-badge-notice size="xs">
+            <template #title>
+              <span class="capitalize"> ✨ Blog </span>
+            </template>
+            <template #message>
+              <router-link
+                to="/blog/python-uv-package-manager"
+                class="hover:text-sky-500"
+              >
+                UV: The Lightning-Fast Python Package Manager
+              </router-link>
+            </template>
+          </base-badge-notice>
         </div>
 
         <!-- actions -->
