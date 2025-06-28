@@ -40,7 +40,7 @@ A raw string entirely ignores all escape characters and prints any backslash tha
 
 Raw strings are mostly used for <router-link to="/cheatsheet/regular-expressions">regular expression</router-link> definition.
 
-## Multiline Strings
+## Multiline strings
 
 ```python
 >>> print(
@@ -61,6 +61,18 @@ Raw strings are mostly used for <router-link to="/cheatsheet/regular-expressions
 # Sincerely,
 # Bob
 ```
+
+## String literal concatenation
+
+```python
+>>> print("[A-Za-z_]"       # letter or underscore
+...       "[A-Za-z0-9_]*"   # letter, digit or underscore
+... )
+
+# [A-Za-z_][A-Za-z0-9_]*
+```
+
+Does not work with variables or expressions.
 
 ## Indexing and Slicing strings
 
