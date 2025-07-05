@@ -19,13 +19,13 @@ const EditLink = {
 const footerLinks = [
   {
     linkHeader: 'Do you have a question?',
-    linkText: 'ask the community',
+    linkText: 'Ask the community.',
     url: 'https://github.com/wilfredinni/python-cheatsheet/discussions',
     icon: QuestionIcon,
   },
   {
     linkHeader: 'Do you see a bug?',
-    linkText: 'open an issue on GitHub',
+    linkText: 'Open an issue on GitHub.',
     url: 'https://github.com/wilfredinni/python-cheatsheet/issues',
     icon: BugIcon,
   },
