@@ -24,74 +24,60 @@ const articles = computed(() => {
     )
   })
 })
+
+const latestArticle = computed(() => articles.value[0])
+const otherArticles = computed(() => articles.value.slice(1))
 </script>
 
 <template>
-  <div>
-    <h1
-      class="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl"
+  <div v-if="latestArticle" class="mb-12">
+    <router-link
+      :to="latestArticle.path"
+      class="group block overflow-hidden rounded-lg border border-slate-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800"
     >
-      Blog
-    </h1>
-    <p class="mt-6 text-base text-slate-600 dark:text-slate-400">
-      These articles provide a more in-depth look at the contents of the
-      <router-link
-        class="-underline-offset-4 font-medium text-sky-600 underline"
-        to="/"
-        >Python Cheatsheet</router-link
-      >.
-    </p>
-  </div>
-
-  <div class="sm:mt-13 mt-20">
-    <div
-      class="md:border-l md:border-slate-100 md:pl-6 md:dark:border-slate-700/40"
-    >
-      <div class="flex max-w-3xl flex-col space-y-16">
-        <article
-          v-for="article in articles"
-          v-once
-          :key="article.path"
-          class="md:grid md:grid-cols-4 md:items-baseline"
-        >
-          <div class="group relative flex flex-col items-start md:col-span-3">
-            <h2
-              class="text-base font-semibold tracking-tight text-slate-800 dark:text-slate-100"
+      <div class="md:flex">
+        <div class="md:w-1/2">
+          <img
+            v-if="latestArticle.children[0]?.meta?.socialImage"
+            :src="latestArticle.children[0]?.meta?.socialImage"
+            alt=""
+            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div
+            v-else
+            class="flex h-full w-full items-center justify-center bg-slate-100 dark:bg-slate-700"
+          >
+            <svg
+              class="h-12 w-12 text-slate-400"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <div
-                class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-slate-100/60 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-slate-800/60 sm:-inset-x-6 sm:rounded-2xl"
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l-1.586-1.586a2 2 0 00-2.828 0L6 18"
               />
-              <router-link :to="article.path">
-                <span
-                  class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"
-                />
-                <span class="relative z-10">
-                  {{ article.children[0]?.meta?.title }}
-                </span>
-              </router-link>
-            </h2>
-            <time
-              class="relative z-10 order-first mb-3 flex items-center pl-3.5 text-sm text-slate-400 dark:text-slate-500 md:hidden"
-              datetime="2022-09-05"
-            >
-              <span
-                class="absolute inset-y-0 left-0 flex items-center"
-                aria-hidden="true"
-              >
-                <span
-                  class="h-4 w-0.5 rounded-full bg-slate-200 dark:bg-slate-500"
-                />
-              </span>
-              September 5, 2022
+            </svg>
+          </div>
+        </div>
+        <div class="p-6 md:w-1/2">
+          <h2
+            class="text-2xl font-semibold text-slate-800 dark:text-slate-100"
+          >
+            {{ latestArticle.children[0]?.meta?.title }}
+          </h2>
+          <p class="mt-2 text-slate-600 dark:text-slate-400">
+            {{ latestArticle.children[0]?.meta?.description }}
+          </p>
+          <div class="mt-4 flex items-center justify-between">
+            <time class="text-sm text-slate-500 dark:text-slate-400">
+              {{ latestArticle.children[0]?.meta?.date }}
             </time>
-            <p
-              class="relative z-10 mt-2 text-sm text-slate-600 dark:text-slate-400"
-            >
-              {{ article.children[0]?.meta?.description }}
-            </p>
             <div
-              aria-hidden="true"
-              class="relative z-10 mt-4 flex items-center text-sm font-medium text-sky-500"
+              class="flex items-center text-sm font-medium text-sky-500"
             >
               Read article
               <svg
@@ -109,18 +95,79 @@ const articles = computed(() => {
               </svg>
             </div>
           </div>
-          <time
-            class="relative z-10 order-first mb-3 mt-1 hidden items-center text-sm text-slate-400 dark:text-slate-500 md:block"
-            datetime="2022-09-05"
+        </div>
+      </div>
+    </router-link>
+  </div>
+
+  <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    <router-link
+      v-for="article in otherArticles"
+      :key="article.path"
+      :to="article.path"
+      class="group block overflow-hidden rounded-lg border border-slate-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800"
+    >
+      <div class="relative overflow-hidden">
+        <img
+          v-if="article.children[0]?.meta?.socialImage"
+          :src="article.children[0]?.meta?.socialImage"
+          alt=""
+          class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+        <div
+          v-else
+          class="flex h-48 w-full items-center justify-center bg-slate-100 dark:bg-slate-700"
+        >
+          <svg
+            class="h-12 w-12 text-slate-400"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l-1.586-1.586a2 2 0 00-2.828 0L6 18"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="p-6">
+        <h2
+          class="text-xl font-semibold text-slate-800 dark:text-slate-100"
+        >
+          {{ article.children[0]?.meta?.title }}
+        </h2>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
+          {{ article.children[0]?.meta?.description }}
+        </p>
+        <div class="mt-4 flex items-center justify-between">
+          <time class="text-xs text-slate-500 dark:text-slate-400">
             {{ article.children[0]?.meta?.date }}
           </time>
-        </article>
+          <div
+            class="flex items-center text-sm font-medium text-sky-500"
+          >
+            Read article
+            <svg
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+              class="ml-1 h-4 w-4 stroke-current"
+            >
+              <path
+                d="M6.75 5.75 9.25 8l-2.5 2.25"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <subscription-form class="mt-12" />
-    <the-footer />
+    </router-link>
   </div>
 </template>
 

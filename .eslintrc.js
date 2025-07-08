@@ -1,4 +1,5 @@
 module.exports = {
+  ignorePatterns: ['dist'],
   env: {
     node: true,
   },
