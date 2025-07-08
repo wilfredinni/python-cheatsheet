@@ -40,10 +40,10 @@ const isDark = useDark()
             </template>
             <template #message>
               <router-link
-                to="/blog/python-uv-package-manager"
+                to="/blog/python-3-14-breaking-free-from-gil"
                 class="hover:text-sky-500"
               >
-                UV: Lightning-Fast Package Manager
+                Python 3.14: Breaking free from GIL
               </router-link>
             </template>
           </base-badge-notice>

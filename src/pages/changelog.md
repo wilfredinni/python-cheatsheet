@@ -9,6 +9,13 @@ updated: February 25, 2023
 Changelog
 </base-title>
 
+## 2025-07-08
+
+- Added new blog post <router-link to="/blog/python-3-14-breaking-free-from-gil">Breaking Free: Python 3.14 Shatters the GIL Ceiling</router-link>
+- Updated <router-link to="/blog/python-uv-package-manager">UV: The Lightning-Fast Python Package Manager</router-link> with internal links to the cheatsheet.
+- Updated the contributors list and avatars.
+- Updated dependencies to the latest versions.
+
 ## 2025-06-20
 
 - Update dependencies to the latest versions.

@@ -17,7 +17,7 @@
     "esbuild": "0.23.1",
     "pinia": "^2.3.1",
     "prism-theme-vars": "^0.2.5",
-    "vue": "^3.5.16",
+    "vue": "^3.5.17",
     "vue-gtag-next": "^1.14.0",
     "vue-router": "^4.5.1"
   },
@@ -27,7 +27,7 @@
     "@types/fs-extra": "^11.0.4",
     "@types/markdown-it": "^14.1.2",
     "@types/markdown-it-link-attributes": "^3.0.5",
-    "@types/node": "^20.19.1",
+    "@types/node": "^20.19.5",
     "@types/string": "0.0.34",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
@@ -47,7 +47,7 @@
     "markdown-it-prism": "^2.3.1",
     "ofetch": "^1.4.1",
     "postcss": "^8.5.6",
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.5.14",
     "prismjs": "^1.30.0",
     "string": "^3.3.3",
@@ -63,7 +63,7 @@
     "vite-ssg": "^0.23.8",
     "vite-ssg-sitemap": "^0.6.1",
     "vitest": "^1.6.1",
-    "vue-tsc": "^2.2.10"
+    "vue-tsc": "^2.2.12"
   },
   "pnpm": {
     "peerDependencyRules": {
