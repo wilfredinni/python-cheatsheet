@@ -64,9 +64,7 @@ const otherArticles = computed(() => articles.value.slice(1))
           </div>
         </div>
         <div class="p-6 md:w-1/2">
-          <h2
-            class="text-2xl font-semibold text-slate-800 dark:text-slate-100"
-          >
+          <h2 class="text-2xl font-semibold text-slate-800 dark:text-slate-100">
             {{ latestArticle.children[0]?.meta?.title }}
           </h2>
           <p class="mt-2 text-slate-600 dark:text-slate-400">
@@ -76,9 +74,7 @@ const otherArticles = computed(() => articles.value.slice(1))
             <time class="text-sm text-slate-500 dark:text-slate-400">
               {{ latestArticle.children[0]?.meta?.date }}
             </time>
-            <div
-              class="flex items-center text-sm font-medium text-sky-500"
-            >
+            <div class="flex items-center text-sm font-medium text-sky-500">
               Read article
               <svg
                 viewBox="0 0 16 16"
@@ -135,9 +131,7 @@ const otherArticles = computed(() => articles.value.slice(1))
         </div>
       </div>
       <div class="p-6">
-        <h2
-          class="text-xl font-semibold text-slate-800 dark:text-slate-100"
-        >
+        <h2 class="text-xl font-semibold text-slate-800 dark:text-slate-100">
           {{ article.children[0]?.meta?.title }}
         </h2>
         <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
@@ -147,9 +141,7 @@ const otherArticles = computed(() => articles.value.slice(1))
           <time class="text-xs text-slate-500 dark:text-slate-400">
             {{ article.children[0]?.meta?.date }}
           </time>
-          <div
-            class="flex items-center text-sm font-medium text-sky-500"
-          >
+          <div class="flex items-center text-sm font-medium text-sky-500">
             Read article
             <svg
               viewBox="0 0 16 16"
