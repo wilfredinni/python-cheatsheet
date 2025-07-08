@@ -42,7 +42,7 @@ const getTags = (article) => {
       class="group block overflow-hidden rounded-lg border border-slate-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800"
     >
       <div class="md:flex">
-        <div class="md:w-1/2">
+        <div class="relative md:w-1/2">
           <img
             v-if="latestArticle.children[0]?.meta?.socialImage"
             :src="latestArticle.children[0]?.meta?.socialImage"
@@ -68,6 +68,19 @@ const getTags = (article) => {
               />
             </svg>
           </div>
+          <div
+            class="absolute top-0 left-0 w-full bg-gradient-to-b from-black/70 to-transparent p-4"
+          >
+            <div class="flex flex-wrap gap-2">
+              <span
+                v-for="tag in getTags(latestArticle).slice(0, 2)"
+                :key="tag"
+                class="rounded-full bg-sky-500/80 px-2.5 py-0.5 text-xs text-white"
+              >
+                #{{ tag }}
+              </span>
+            </div>
+          </div>
         </div>
         <div class="flex flex-col p-6 md:w-1/2">
           <div class="flex-1">
@@ -80,38 +93,25 @@ const getTags = (article) => {
               {{ latestArticle.children[0]?.meta?.description }}
             </p>
           </div>
-          <div class="mt-4">
-            <div class="mb-4 flex flex-wrap gap-2">
-              <span
-                v-for="tag in getTags(latestArticle)"
-                :key="tag"
-                class="rounded-full bg-sky-100 px-2.5 py-0.5 text-xs font-medium text-sky-800 dark:bg-sky-900 dark:text-sky-200"
+          <div class="mt-4 flex items-center justify-between">
+            <time class="text-sm text-slate-500 dark:text-slate-400">
+              {{ latestArticle.children[0]?.meta?.date }}
+            </time>
+            <div class="flex items-center text-sm font-medium text-sky-500">
+              Read article
+              <svg
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+                class="ml-1 h-4 w-4 stroke-current"
               >
-                {{ tag }}
-              </span>
-            </div>
-            <div class="flex items-center justify-between">
-              <time class="text-sm text-slate-500 dark:text-slate-400">
-                {{ latestArticle.children[0]?.meta?.date }}
-              </time>
-              <div
-                class="flex items-center text-sm font-medium text-sky-500"
-              >
-                Read article
-                <svg
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  aria-hidden="true"
-                  class="ml-1 h-4 w-4 stroke-current"
-                >
-                  <path
-                    d="M6.75 5.75 9.25 8l-2.5 2.25"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M6.75 5.75 9.25 8l-2.5 2.25"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </div>
           </div>
         </div>
@@ -152,50 +152,48 @@ const getTags = (article) => {
             />
           </svg>
         </div>
+        <div
+          class="absolute top-0 left-0 w-full bg-gradient-to-b from-black/70 to-transparent p-4"
+        >
+          <div class="flex flex-wrap gap-2">
+            <span
+              v-for="tag in getTags(article).slice(0, 2)"
+              :key="tag"
+              class="rounded-full bg-sky-500/80 px-2.5 py-0.5 text-xs text-white"
+            >
+              #{{ tag }}
+            </span>
+          </div>
+        </div>
       </div>
       <div class="flex flex-1 flex-col p-6">
         <div class="flex-1">
-          <h2
-            class="text-xl font-semibold text-slate-800 dark:text-slate-100"
-          >
+          <h2 class="text-xl font-semibold text-slate-800 dark:text-slate-100">
             {{ article.children[0]?.meta?.title }}
           </h2>
           <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
             {{ article.children[0]?.meta?.description }}
           </p>
         </div>
-        <div class="mt-4">
-          <div class="mb-4 flex flex-wrap gap-2">
-            <span
-              v-for="tag in getTags(article)"
-              :key="tag"
-              class="rounded-full bg-sky-100 px-2.5 py-0.5 text-xs font-medium text-sky-800 dark:bg-sky-900 dark:text-sky-200"
+        <div class="mt-4 flex items-center justify-between">
+          <time class="text-xs text-slate-500 dark:text-slate-400">
+            {{ article.children[0]?.meta?.date }}
+          </time>
+          <div class="flex items-center text-sm font-medium text-sky-500">
+            Read article
+            <svg
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+              class="ml-1 h-4 w-4 stroke-current"
             >
-              {{ tag }}
-            </span>
-          </div>
-          <div class="flex items-center justify-between">
-            <time class="text-xs text-slate-500 dark:text-slate-400">
-              {{ article.children[0]?.meta?.date }}
-            </time>
-            <div
-              class="flex items-center text-sm font-medium text-sky-500"
-            >
-              Read article
-              <svg
-                viewBox="0 0 16 16"
-                fill="none"
-                aria-hidden="true"
-                class="ml-1 h-4 w-4 stroke-current"
-              >
-                <path
-                  d="M6.75 5.75 9.25 8l-2.5 2.25"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
+              <path
+                d="M6.75 5.75 9.25 8l-2.5 2.25"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
         </div>
       </div>
