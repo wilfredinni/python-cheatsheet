@@ -68,22 +68,14 @@ const getTags = (article) => {
               />
             </svg>
           </div>
-          <div
-            class="absolute top-0 left-0 w-full bg-gradient-to-b from-black/70 to-transparent p-4"
-          >
-            <div class="flex flex-wrap gap-2">
-              <span
-                v-for="tag in getTags(latestArticle).slice(0, 2)"
-                :key="tag"
-                class="rounded-full bg-sky-500/80 px-2.5 py-0.5 text-xs text-white"
-              >
-                #{{ tag }}
-              </span>
-            </div>
-          </div>
         </div>
         <div class="flex flex-col p-6 md:w-1/2">
           <div class="flex-1">
+            <div class="mb-2 flex flex-wrap gap-2">
+              <Tag v-for="tag in getTags(latestArticle).slice(0, 2)" :key="tag">
+                {{ tag }}
+              </Tag>
+            </div>
             <h2
               class="text-2xl font-semibold text-slate-800 dark:text-slate-100"
             >
@@ -152,22 +144,14 @@ const getTags = (article) => {
             />
           </svg>
         </div>
-        <div
-          class="absolute top-0 left-0 w-full bg-gradient-to-b from-black/70 to-transparent p-4"
-        >
-          <div class="flex flex-wrap gap-2">
-            <span
-              v-for="tag in getTags(article).slice(0, 2)"
-              :key="tag"
-              class="rounded-full bg-sky-500/80 px-2.5 py-0.5 text-xs text-white"
-            >
-              #{{ tag }}
-            </span>
-          </div>
-        </div>
       </div>
       <div class="flex flex-1 flex-col p-6">
         <div class="flex-1">
+          <div class="mb-2 flex flex-wrap gap-2">
+            <Tag v-for="tag in getTags(article).slice(0, 2)" :key="tag">
+              {{ tag }}
+            </Tag>
+          </div>
           <h2 class="text-xl font-semibold text-slate-800 dark:text-slate-100">
             {{ article.children[0]?.meta?.title }}
           </h2>

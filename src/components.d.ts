@@ -53,6 +53,7 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     SubscriptionForm: typeof import('./components/SubscriptionForm.vue')['default']
     Switch: typeof import('@headlessui/vue')['Switch']
+    Tag: typeof import('./components/ui/Tag.vue')['default']
     TheFooter: typeof import('./components/layout/TheFooter.vue')['default']
     TheNavbar: typeof import('./components/layout/TheNavbar.vue')['default']
     TheNavbarReader: typeof import('./components/layout/TheNavbarReader.vue')['default']
