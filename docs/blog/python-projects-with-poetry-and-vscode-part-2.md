@@ -13,6 +13,7 @@ meta:
     description: In this second part, we'll add our virtual Environment to VSCode, update our dependencies and integrate Flake8, Black and Pytest with the editor.
     date: April 23, 2019
     updated: July 3, 2022
+    tags: python, intermediate, vscode, packaging
 </route>
 
 <blog-title-header :frontmatter="frontmatter" title="Python projects with Poetry and VSCode Part 2" />
@@ -156,7 +157,7 @@ Three things happened:
 
 - A new button appeared at the status bar: **Run Tests**. This is the same as typing _pytest_ in the terminal. Press it and select **Run All Unit Tests**. When finished, it will inform you the number of tests that passed and the tests that not:
 
-  ![test status bar](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/test-statusbar.png)
+  ![test status bar](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img.png)
 
 - A new icon at the left bar. If you click on it, a panel displaying all the test will appear. Here, you can run each one individually:
 

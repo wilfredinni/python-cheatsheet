@@ -15,6 +15,7 @@ meta:
     date: July 8, 2025
     updated: July 8, 2025
     socialImage: /blog/python-gil.png
+    tags: python, intermediate, beta
 </route>
 
 <blog-title-header :frontmatter="frontmatter" title="Breaking Free: Python 3.14 Shatters the GIL Ceiling" />

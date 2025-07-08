@@ -13,6 +13,7 @@ meta:
     description: In this short article, we are going to make some for loops and rewrite them, step by step, into comprehensions.
     date: March 22, 2019
     updated: July 3, 2022
+    tags: python, basics
 </route>
 
 <blog-title-header :frontmatter="frontmatter" title="Python Comprehensions: A step by step Introduction" />

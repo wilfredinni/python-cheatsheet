@@ -15,6 +15,7 @@ meta:
     date: Jun 08, 2025
     updated: Jun 08, 2025
     socialImage: /blog/python-uv-package-manager.png
+    tags: python, intermediate, packaging
 </route>
 
 <blog-title-header :frontmatter="frontmatter" title="UV: The Lightning-Fast Python Package Manager" />
