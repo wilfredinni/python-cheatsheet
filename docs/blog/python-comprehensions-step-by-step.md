@@ -4,6 +4,7 @@ description: In this short article, we are going to make some for loops and rewr
 date: March 22, 2019
 updated: July 3, 2022
 tags: python, basics
+socialImage: /blog/python-comprehensions.png
 ---
 
 <route lang="yaml">
@@ -14,9 +15,12 @@ meta:
     date: March 22, 2019
     updated: July 3, 2022
     tags: python, basics
+    socialImage: /blog/python-comprehensions.png
 </route>
 
 <blog-title-header :frontmatter="frontmatter" title="Python Comprehensions: A step by step Introduction" />
+
+<img :src="frontmatter.socialImage" alt="Python 3.14 GIL" class="w-full rounded-lg my-4" />
 
 _List Comprehensions_ are a special kind of syntax that let us create lists out of other lists ([Wikipedia](https://en.wikipedia.org/wiki/List_comprehension), [The Python Tutorial](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)). They are incredibly useful when dealing with numbers and with one or two levels of nested _for loops_, but beyond that, they can become a little too hard to read.
 
