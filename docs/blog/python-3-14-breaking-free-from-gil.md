@@ -20,8 +20,6 @@ meta:
 
 <blog-title-header :frontmatter="frontmatter" title="Breaking Free: Python 3.14 Shatters the GIL Ceiling" />
 
-<img :src="frontmatter.socialImage" alt="Python 3.14 GIL" class="w-full rounded-lg my-4" />
-
 Python 3.14 is shaping up to be an exciting release that brings significant improvements to the language while maintaining Python's signature simplicity. **The official release is scheduled for October 7, 2025**, but you can already try out the beta versions that are currently available. Let me walk you through what makes Python 3.14 special and why it matters for both new and experienced Python developers.
 
 ## The Big Changes: What's New in Python 3.14

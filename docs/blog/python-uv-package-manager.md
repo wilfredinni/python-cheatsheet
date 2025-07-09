@@ -20,8 +20,6 @@ meta:
 
 <blog-title-header :frontmatter="frontmatter" title="UV: The Lightning-Fast Python Package Manager" />
 
-<img :src="frontmatter.socialImage" alt="UV Package Manager" class="w-full rounded-lg my-4" />
-
 In the Python ecosystem, package management has long been a pain point for developers. Traditional tools like <router-link to="/cheatsheet/virtual-environments">pip</router-link>, <router-link to="/cheatsheet/virtual-environments#virtualenv">virtualenv</router-link>, and pip-tools get the job done, but often with frustrating performance limitations and workflow complexities. Enter UV (pronounced "you-vee"), a revolutionary Python package manager written in Rust that's transforming how developers manage their Python environments and dependencies.
 
 ## What is UV?

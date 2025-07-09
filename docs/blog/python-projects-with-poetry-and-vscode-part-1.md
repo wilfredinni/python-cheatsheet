@@ -4,6 +4,7 @@ description: We'll use Poetry to start a simple project, manage dependencies and
 date: April 12, 2019
 updated: July 3, 2022
 tags: python, intermediate, vscode, packaging
+socialImage: /blog/poetry-1.png
 ---
 
 <route lang="yaml">
@@ -14,6 +15,7 @@ meta:
     date: April 12, 2019
     updated: July 3, 2022
     tags: python, intermediate, vscode, packaging
+    socialImage: /blog/poetry-1.png
 </route>
 
 <blog-title-header :frontmatter="frontmatter" title="Python projects with Poetry and VSCode Part 1" />

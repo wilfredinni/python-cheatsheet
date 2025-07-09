@@ -3,6 +3,7 @@ interface Frontmatter {
   date: string
   updated: string
   tags: string
+  socialImage?: string
 }
 
 const props = defineProps<{
@@ -44,5 +45,12 @@ const tags = props.frontmatter.tags?.split(', ')
         #{{ tag }}
       </span>
     </div>
+
+    <img
+      v-if="frontmatter.socialImage"
+      :src="frontmatter.socialImage"
+      :alt="`Image for ${title}`"
+      class="w-full rounded-lg my-4"
+    />
   </div>
 </template>
