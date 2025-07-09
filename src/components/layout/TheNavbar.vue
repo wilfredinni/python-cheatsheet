@@ -34,7 +34,7 @@ const isDark = useDark()
 
           <algolia-doc-search />
 
-          <base-badge-notice size="xs">
+          <base-badge-notice size="xs" class="hidden xl:block">
             <template #title>
               <span class="capitalize"> ✨ Blog </span>
             </template>
