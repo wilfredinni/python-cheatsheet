@@ -127,7 +127,7 @@ The _Walrus Operator_, or **Assignment Expression Operator** was firstly introdu
 String concatenation:
 
 ```python
->>> 'Alice' 'Bob'
+>>> 'Alice' + 'Bob'
 # 'AliceBob'
 ```
 
