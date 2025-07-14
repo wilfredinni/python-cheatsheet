@@ -4,7 +4,7 @@ description: A Deep Dive Into Python’s Most Exciting Update Since 3.10
 date: July 8, 2025
 updated: July 8, 2025
 tags: python, intermediate, beta
-socialImage: /blog/python-gil.png
+socialImage: /blog/python-gil.jpg
 ---
 
 <route lang="yaml">
@@ -14,7 +14,7 @@ meta:
     description: A Deep Dive Into Python’s Most Exciting Update Since 3.10
     date: July 8, 2025
     updated: July 8, 2025
-    socialImage: /blog/python-gil.png
+    socialImage: /blog/python-gil.jpg
     tags: python, intermediate, beta
 </route>
 

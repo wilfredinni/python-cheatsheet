@@ -4,6 +4,7 @@ description: When writing code, you can do it in more than a single way. Some ar
 date: July 27, 2018
 updated: July 3, 2022
 tags: python, basics
+socialImage: /blog/sets.jpg
 ---
 
 <route lang="yaml">
@@ -14,6 +15,7 @@ meta:
     date: July 27, 2018
     updated: July 3, 2022
     tags: python, basics
+    socialImage: /blog/sets.jpg
 </route>
 
 <blog-title-header :frontmatter="frontmatter" title="Python Sets: What, Why and How" />

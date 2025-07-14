@@ -4,7 +4,7 @@ description: Finally, in this third part, we'll write a sample library, build ou
 date: May 21, 2019
 updated: July 3, 2022
 tags: python, intermediate, vscode, packaging
-socialImage: /blog/poetry-3.png
+socialImage: /blog/poetry-3.jpg
 ---
 
 <route lang="yaml">
@@ -15,7 +15,7 @@ meta:
     date: May 21, 2019
     updated: July 3, 2022
     tags: python, intermediate, vscode, packaging
-    socialImage: /blog/poetry-3.png
+    socialImage: /blog/poetry-3.jpg
 </route>
 
 <blog-title-header :frontmatter="frontmatter" title="Python projects with Poetry and VSCode Part 3" />

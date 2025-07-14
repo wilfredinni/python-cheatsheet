@@ -4,7 +4,7 @@ description: UV is a Python package manager written in Rust that transforms how 
 date: Jun 08, 2025
 updated: Jun 08, 2025
 tags: python, intermediate, packaging
-socialImage: /blog/python-uv-package-manager.png
+socialImage: /blog/python-uv-package-manager.jpg
 ---
 
 <route lang="yaml">
@@ -14,7 +14,7 @@ meta:
     description: UV is a Python package manager written in Rust that transforms how developers manage their Python environments and dependencies.
     date: Jun 08, 2025
     updated: Jun 08, 2025
-    socialImage: /blog/python-uv-package-manager.png
+    socialImage: /blog/python-uv-package-manager.jpg
     tags: python, intermediate, packaging
 </route>
 

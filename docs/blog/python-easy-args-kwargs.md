@@ -4,6 +4,7 @@ description: args and kwargs may seem scary, but the truth is that they are not 
 date: March 08, 2019
 updated: July 1, 2022
 tags: python, intermediate
+socialImage: /blog/kwargs.jpg
 ---
 
 <route lang="yaml">
@@ -14,6 +15,7 @@ meta:
     date: March 08, 2019
     updated: July 14, 2022
     tags: python, intermediate
+    socialImage: /blog/kwargs.jpg
 </route>
 
 <blog-title-header :frontmatter="frontmatter" title="Python *args and **kwargs Made Easy" />

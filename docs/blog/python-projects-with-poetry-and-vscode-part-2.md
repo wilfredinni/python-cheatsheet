@@ -4,7 +4,7 @@ description: In this second part, we'll add our virtual Environment to VSCode, u
 date: April 23, 2019
 updated: July 3, 2022
 tags: python, intermediate, vscode, packaging
-socialImage: /blog/poetry-2.png
+socialImage: /blog/poetry-2.jpg
 ---
 
 <route lang="yaml">
@@ -15,7 +15,7 @@ meta:
     date: April 23, 2019
     updated: July 3, 2022
     tags: python, intermediate, vscode, packaging
-    socialImage: /blog/poetry-2.png
+    socialImage: /blog/poetry-2.jpg
 </route>
 
 <blog-title-header :frontmatter="frontmatter" title="Python projects with Poetry and VSCode Part 2" />
