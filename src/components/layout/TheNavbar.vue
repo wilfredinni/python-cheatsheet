@@ -40,10 +40,10 @@ const isDark = useDark()
             </template>
             <template #message>
               <router-link
-                to="/blog/python-3-14-breaking-free-from-gil"
+                to="/blog/python-data-types"
                 class="hover:text-sky-500"
               >
-                Python 3.14: Breaking free from GIL
+                Python Data Types for beginners
               </router-link>
             </template>
           </base-badge-notice>

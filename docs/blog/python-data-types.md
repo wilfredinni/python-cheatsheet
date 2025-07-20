@@ -20,7 +20,7 @@ meta:
 
 <blog-title-header :frontmatter="frontmatter" title="Python data types: A visual guide for beginners" />
 
-Python comes with nine core data types that cover almost everything you'll need. Choosing the right one makes your code clearer, faster, and safer. This guide shows how each type works, when to use it, and what to watch out for.
+Python comes with nine core data types that cover almost everything you'll need. Choosing the right one makes your code clearer, faster, and safer. This guide shows how each type works, when to use it, and what to watch out for. For a quick overview, also check our <router-link to="/cheatsheet/basics#data-types">basics guide</router-link>.
 
 Diagram of Python built-in data type categories and mutability.
 
@@ -45,11 +45,11 @@ pi = 3.14159
 z = 2 + 3j  # j represents the imaginary unit in Python
 ```
 
-| Type      | Typical literal        | Key traits                                                                                                    | When to use                                     | Handy methods/ops                       |
-| :-------- | :--------------------- | :------------------------------------------------------------------------------------------------------------ | :---------------------------------------------- | :-------------------------------------- |
-| `int`     | `42`, `0xFF`           | Whole numbers that can be as large as your memory allows; supports binary `0b`, octal `0o`, hex `0x` literals | Counting, indexing, storing whole quantities    | `bit_length()`, `to_bytes()`            |
-| `float`   | `3.14`, `1.2e3`        | Numbers with decimal points; may have small rounding errors in calculations                                   | Measurements, averages, scientific calculations | `.is_integer()`, `.hex()`, math module  |
-| `complex` | `2+3j`, `complex(a,b)` | Numbers with real and imaginary parts (used in advanced math); `.real`, `.imag`, `.conjugate()`               | Advanced math, engineering, signal processing   | All arithmetic, `abs()` gives magnitude |
+| Type                                                       | Typical literal        | Key traits                                                                                                    | When to use                                     | Handy methods/ops                       |
+| :--------------------------------------------------------- | :--------------------- | :------------------------------------------------------------------------------------------------------------ | :---------------------------------------------- | :-------------------------------------- |
+| <router-link to='/builtin/int'>`int`</router-link>         | `42`, `0xFF`           | Whole numbers that can be as large as your memory allows; supports binary `0b`, octal `0o`, hex `0x` literals | Counting, indexing, storing whole quantities    | `bit_length()`, `to_bytes()`            |
+| <router-link to='/builtin/float'>`float`</router-link>     | `3.14`, `1.2e3`        | Numbers with decimal points; may have small rounding errors in calculations                                   | Measurements, averages, scientific calculations | `.is_integer()`, `.hex()`, math module  |
+| <router-link to='/builtin/complex'>`complex`</router-link> | `2+3j`, `complex(a,b)` | Numbers with real and imaginary parts (used in advanced math); `.real`, `.imag`, `.conjugate()`               | Advanced math, engineering, signal processing   | All arithmetic, `abs()` gives magnitude |
 
 ### More examples
 
@@ -72,7 +72,7 @@ magnitude = abs(z)    # 3.605...
 
 ## 2. Strings – `str`
 
-Strings hold text and are one of the most important types you'll use.
+Strings hold text and are one of the most important types you'll use. For more detailed string operations, see our <router-link to="/cheatsheet/manipulating-strings">manipulating strings guide</router-link>.
 
 ### Basic examples
 
@@ -119,7 +119,7 @@ formatted = f"I am {age} years old"  # "I am 25 years old"
 
 ## 3. Booleans – `bool`
 
-Booleans represent True or False values - essential for making decisions in your code.
+Booleans represent True or False values - essential for making decisions in your code. Learn more about the <router-link to="/builtin/bool">bool() function</router-link>.
 
 ### Basic examples
 
@@ -205,7 +205,7 @@ if value == None:
 
 ## 5. Lists – `list`
 
-Lists store multiple items in order and let you change them after creation.
+Lists store multiple items in order and let you change them after creation. For comprehensive list operations, see our <router-link to="/cheatsheet/lists-and-tuples">lists and tuples guide</router-link>.
 
 ### Basic examples
 
@@ -262,7 +262,7 @@ for item in todo_items:
 
 ## 6. Dictionaries – `dict`
 
-Dictionaries store data as key-value pairs, like a real dictionary where you look up words (keys) to find definitions (values).
+Dictionaries store data as key-value pairs, like a real dictionary where you look up words (keys) to find definitions (values). For comprehensive dictionary operations, see our <router-link to="/cheatsheet/dictionaries">dictionaries guide</router-link>.
 
 ### Basic examples
 
@@ -327,7 +327,7 @@ for char in text:
 
 ## 7. Tuples – `tuple`
 
-Tuples are like lists but can't be changed after creation. Think of them as "locked" lists.
+Tuples are like lists but can't be changed after creation. Think of them as "locked" lists. Learn more about tuples in our <router-link to="/cheatsheet/lists-and-tuples">lists and tuples guide</router-link>.
 
 ### Basic examples
 
@@ -388,7 +388,7 @@ locations = {
 
 ## 8. Sets – `set`
 
-Sets store unique items with no duplicates and no particular order. Great for membership testing and removing duplicates.
+Sets store unique items with no duplicates and no particular order. Great for membership testing and removing duplicates. For comprehensive set operations, see our <router-link to="/cheatsheet/sets">sets guide</router-link>.
 
 ### Basic examples
 
@@ -450,29 +450,29 @@ unique_items = list(set(items))  # ['apple', 'banana', 'orange']
 
 ## Picking the right type – real-world tips
 
-| Scenario                             | Best type       | Rationale                           |
-| :----------------------------------- | :-------------- | :---------------------------------- |
-| Storing user's age                   | `int`           | Whole numbers, no decimals needed   |
-| Product price                        | `float`         | Needs decimal places                |
-| User login status                    | `bool`          | Simple true/false value             |
-| User's middle name (might not exist) | `str` or `None` | Could be absent                     |
-| Shopping cart items                  | `list`          | Ordered, can add/remove items       |
-| User profile data                    | `dict`          | Key-value pairs (name, email, etc.) |
-| GPS coordinates                      | `tuple`         | Fixed pair that won't change        |
-| Unique product categories            | `set`           | No duplicates, fast lookup          |
+| Scenario                             | Best type                                                    | Rationale                           |
+| :----------------------------------- | :----------------------------------------------------------- | :---------------------------------- |
+| Storing user's age                   | <router-link to='/builtin/int'>`int`</router-link>           | Whole numbers, no decimals needed   |
+| Product price                        | <router-link to='/builtin/float'>`float`</router-link>       | Needs decimal places                |
+| User login status                    | <router-link to='/builtin/bool'>`bool`</router-link>         | Simple true/false value             |
+| User's middle name (might not exist) | <router-link to='/builtin/str'>`str`</router-link> or `None` | Could be absent                     |
+| Shopping cart items                  | <router-link to='/builtin/list'>`list`</router-link>         | Ordered, can add/remove items       |
+| User profile data                    | <router-link to='/builtin/dict'>`dict`</router-link>         | Key-value pairs (name, email, etc.) |
+| GPS coordinates                      | <router-link to='/builtin/tuple'>`tuple`</router-link>       | Fixed pair that won't change        |
+| Unique product categories            | <router-link to='/builtin/set'>`set`</router-link>           | No duplicates, fast lookup          |
 
 ## Cheat-sheet for mutability & hashability
 
-| Type                           | Mutable? | Hashable? | Can be dict key? |
-| :----------------------------- | :------- | :-------- | :--------------- |
-| `int`, `float`, `complex`      | No       | Yes       | ✔               |
-| `str`                          | No       | Yes       | ✔               |
-| `bool`                         | No       | Yes       | ✔               |
-| `None`                         | No       | Yes       | ✔               |
-| `tuple` (with immutable items) | No       | Yes       | ✔               |
-| `list`                         | Yes      | No        | ✘                |
-| `dict`                         | Yes      | No        | ✘                |
-| `set`                          | Yes      | No        | ✘                |
+| Type                                                                                                                                                                   | Mutable? | Hashable? | Can be dict key? |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :-------- | :--------------- |
+| <router-link to='/builtin/int'>`int`</router-link>, <router-link to='/builtin/float'>`float`</router-link>, <router-link to='/builtin/complex'>`complex`</router-link> | No       | Yes       | ✔               |
+| <router-link to='/builtin/str'>`str`</router-link>                                                                                                                     | No       | Yes       | ✔               |
+| <router-link to='/builtin/bool'>`bool`</router-link>                                                                                                                   | No       | Yes       | ✔               |
+| `None`                                                                                                                                                                 | No       | Yes       | ✔               |
+| <router-link to='/builtin/tuple'>`tuple`</router-link> (with immutable items)                                                                                          | No       | Yes       | ✔               |
+| <router-link to='/builtin/list'>`list`</router-link>                                                                                                                   | Yes      | No        | ✘                |
+| <router-link to='/builtin/dict'>`dict`</router-link>                                                                                                                   | Yes      | No        | ✘                |
+| <router-link to='/builtin/set'>`set`</router-link>                                                                                                                     | Yes      | No        | ✘                |
 
 ## Key takeaways for beginners
 
