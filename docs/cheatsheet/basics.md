@@ -116,11 +116,51 @@ The _Walrus Operator_, or **Assignment Expression Operator** was firstly introdu
 
 ## Data Types
 
-| Data Type              | Examples                                  |
-| ---------------------- | ----------------------------------------- |
-| Integers               | `-2, -1, 0, 1, 2, 3, 4, 5`                |
-| Floating-point numbers | `-1.25, -1.0, --0.5, 0.0, 0.5, 1.0, 1.25` |
-| Strings                | `'a', 'aa', 'aaa', 'Hello!', '11 cats'`   |
+Python has nine core built-in data types that cover almost everything you'll need:
+
+| Data Type                                                  | Examples                                 | Description                           |
+| ---------------------------------------------------------- | ---------------------------------------- | ------------------------------------- |
+| **Numbers**                                                |                                          |                                       |
+| <router-link to='/builtin/int'>`int`</router-link>         | `-2, -1, 0, 1, 2, 3, 4, 5`               | Whole numbers (integers)              |
+| <router-link to='/builtin/float'>`float`</router-link>     | `-1.25, -1.0, -0.5, 0.0, 0.5, 1.0, 1.25` | Numbers with decimal points           |
+| <router-link to='/builtin/complex'>`complex`</router-link> | `2+3j, complex(1, 4)`                    | Numbers with real and imaginary parts |
+| **Text**                                                   |                                          |                                       |
+| <router-link to='/builtin/str'>`str`</router-link>         | `'a', 'Hello!', "Python"`                | Text and characters                   |
+| **Boolean**                                                |                                          |                                       |
+| <router-link to='/builtin/bool'>`bool`</router-link>       | `True, False`                            | True or False values                  |
+| **None**                                                   |                                          |                                       |
+| `NoneType`                                                 | `None`                                   | Represents "no value" or "nothing"    |
+| **Collections**                                            |                                          |                                       |
+| <router-link to='/builtin/list'>`list`</router-link>       | `[1, 2, 3], ['a', 'b', 'c']`             | Ordered, changeable collections       |
+| <router-link to='/builtin/dict'>`dict`</router-link>       | `{'name': 'Alice', 'age': 30}`           | Key-value pairs                       |
+| <router-link to='/builtin/tuple'>`tuple`</router-link>     | `(1, 2, 3), ('a', 'b')`                  | Ordered, unchangeable collections     |
+| <router-link to='/builtin/set'>`set`</router-link>         | `{1, 2, 3}, {'a', 'b', 'c'}`             | Unordered collections of unique items |
+
+### Quick Examples
+
+```python
+# Numbers
+age = 25                    # int
+price = 19.99              # float
+coordinate = 2 + 3j        # complex
+
+# Text
+name = "Alice"             # str
+
+# Boolean
+is_student = True          # bool
+
+# None
+result = None              # NoneType
+
+# Collections
+scores = [85, 92, 78]      # list
+person = {'name': 'Bob', 'age': 30}  # dict
+coordinates = (10, 20)     # tuple
+unique_ids = {1, 2, 3}     # set
+```
+
+For a comprehensive guide with visual examples and detailed explanations of when to use each type, see: <router-link to="/blog/python-data-types">Python Data Types: A Visual Guide for Beginners</router-link>.
 
 ## Concatenation and Replication
 
@@ -277,7 +317,6 @@ It is also possible to use formatted strings to avoid using .format:
 # What is your name? Martha
 # Hi, Martha
 ```
-
 
 ## The len() Function
 
