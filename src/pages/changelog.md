@@ -2,12 +2,20 @@
 title: 'Changelog - Python Cheatsheet'
 description: See what is new, what got fixed, and what is coming.
 date: July 19, 2022
-updated: February 25, 2023
+updated: July 20, 2025
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
 Changelog
 </base-title>
+
+## 2025-07-20
+
+- Added new blog post <router-link to="/blog/python-data-types">Python Data Types Explained - A Visual Guide for Beginners</router-link>
+- Enhanced <router-link to="/cheatsheet/basics#data-types">Data Types section</router-link> in the basics cheatsheet with comprehensive coverage of all 9 Python built-in data types including examples and descriptions
+- Added UV package manager section to <router-link to="/cheatsheet/virtual-environments#uv">Virtual Environments cheatsheet</router-link> with installation and usage examples
+- Updated <router-link to="/cheatsheet/setup-py">Setup.py cheatsheet</router-link> to mention UV as a modern alternative to traditional packaging tools
+- Added cross-references and internal links between cheatsheet pages and blog posts for better navigation
 
 ## 2025-07-08
 
