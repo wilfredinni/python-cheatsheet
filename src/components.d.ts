@@ -28,6 +28,7 @@ declare module 'vue' {
     BaseWarning: typeof import('./components/ui/warning/BaseWarning.vue')['default']
     BaseWarningContent: typeof import('./components/ui/warning/BaseWarningContent.vue')['default']
     BaseWarningTitle: typeof import('./components/ui/warning/BaseWarningTitle.vue')['default']
+    BlogPagination: typeof import('./components/blog/BlogPagination.vue')['default']
     BlogTitleHeader: typeof import('./components/BlogTitleHeader.vue')['default']
     BugIcon: typeof import('./components/icons/BugIcon.vue')['default']
     CarbonAds: typeof import('./components/CarbonAds.vue')['default']

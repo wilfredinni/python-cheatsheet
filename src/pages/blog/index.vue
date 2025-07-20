@@ -1,4 +1,7 @@
 <script setup>
+import { watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+
 useHead({
   title: 'Blog - Python Cheatsheet',
   meta: [
@@ -11,6 +14,16 @@ useHead({
 })
 
 const router = useRouter()
+const route = useRoute()
+const currentPage = ref(parseInt(route.query.page) || 1)
+const postsPerPage = 7
+
+watch(
+  () => route.query.page,
+  (newPage) => {
+    currentPage.value = parseInt(newPage) || 1
+  },
+)
 
 const articles = computed(() => {
   const routes = router.options.routes
@@ -25,27 +38,62 @@ const articles = computed(() => {
   })
 })
 
-const latestArticle = computed(() => articles.value[0])
-const otherArticles = computed(() => articles.value.slice(1))
+const totalPages = computed(() => {
+  return Math.ceil(articles.value.length / postsPerPage)
+})
+
+const postsToShow = computed(() => {
+  const start = (currentPage.value - 1) * postsPerPage
+  const end = start + postsPerPage
+  return articles.value.slice(start, end)
+})
+
+const featuredArticle = computed(() => {
+  return currentPage.value === 1 ? postsToShow.value[0] : null
+})
+
+const gridArticles = computed(() => {
+  if (currentPage.value === 1) {
+    return postsToShow.value.slice(1)
+  }
+  return postsToShow.value
+})
 
 const getTags = (article) => {
   const tags = article.children[0]?.meta?.tags
   if (!tags) return []
   return tags.split(',').map((tag) => tag.trim())
 }
+
+function updatePage(newPage) {
+  currentPage.value = newPage
+  router.push({ query: { page: newPage } })
+}
+
+function nextPage() {
+  if (currentPage.value < totalPages.value) {
+    updatePage(currentPage.value + 1)
+  }
+}
+
+function prevPage() {
+  if (currentPage.value > 1) {
+    updatePage(currentPage.value - 1)
+  }
+}
 </script>
 
 <template>
-  <div v-if="latestArticle" class="mb-12">
+  <div v-if="featuredArticle" class="mb-12">
     <router-link
-      :to="latestArticle.path"
+      :to="featuredArticle.path"
       class="group block overflow-hidden rounded-lg border border-slate-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800"
     >
       <div class="md:flex">
         <div class="relative md:w-1/2">
           <img
-            v-if="latestArticle.children[0]?.meta?.socialImage"
-            :src="latestArticle.children[0]?.meta?.socialImage"
+            v-if="featuredArticle.children[0]?.meta?.socialImage"
+            :src="featuredArticle.children[0]?.meta?.socialImage"
             alt=""
             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
@@ -72,22 +120,25 @@ const getTags = (article) => {
         <div class="flex flex-col p-6 md:w-1/2">
           <div class="flex-1">
             <div class="mb-2 flex flex-wrap gap-2">
-              <Tag v-for="tag in getTags(latestArticle).slice(0, 2)" :key="tag">
+              <Tag
+                v-for="tag in getTags(featuredArticle).slice(0, 2)"
+                :key="tag"
+              >
                 {{ tag }}
               </Tag>
             </div>
             <h2
               class="text-2xl font-semibold text-slate-800 dark:text-slate-100"
             >
-              {{ latestArticle.children[0]?.meta?.title }}
+              {{ featuredArticle.children[0]?.meta?.title }}
             </h2>
             <p class="mt-2 text-slate-600 dark:text-slate-400">
-              {{ latestArticle.children[0]?.meta?.description }}
+              {{ featuredArticle.children[0]?.meta?.description }}
             </p>
           </div>
           <div class="mt-4 flex items-center justify-between">
             <time class="text-sm text-slate-500 dark:text-slate-400">
-              {{ latestArticle.children[0]?.meta?.date }}
+              {{ featuredArticle.children[0]?.meta?.date }}
             </time>
             <div class="flex items-center text-sm font-medium text-sky-500">
               Read article
@@ -113,7 +164,7 @@ const getTags = (article) => {
 
   <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
     <router-link
-      v-for="article in otherArticles"
+      v-for="article in gridArticles"
       :key="article.path"
       :to="article.path"
       class="group flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800"
@@ -183,6 +234,13 @@ const getTags = (article) => {
       </div>
     </router-link>
   </div>
+
+  <BlogPagination
+    :current-page="currentPage"
+    :total-pages="totalPages"
+    @prev-page="prevPage"
+    @next-page="nextPage"
+  />
 </template>
 
 <route lang="yaml">
