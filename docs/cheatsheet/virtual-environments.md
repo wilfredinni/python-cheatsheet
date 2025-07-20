@@ -178,3 +178,44 @@ Usage:
 3.  Exit the Virtual Environment
 
         conda deactivate
+
+## UV
+
+<base-disclaimer>
+  <base-disclaimer-title>
+    From <a target="_blank" href="https://docs.astral.sh/uv/">UV Documentation</a>
+  </base-disclaimer-title>
+  <base-disclaimer-content>
+    UV is an extremely fast Python package installer and resolver, designed as a drop-in replacement for pip and pip-tools workflows. UV is 10-100x faster than pip and provides unified package management, virtual environment creation, and Python version management.
+  </base-disclaimer-content>
+</base-disclaimer>
+
+1.  Install UV
+
+        # Using curl (Linux/macOS)
+        curl -LsSf https://astral.sh/uv/install.sh | sh
+
+        # Using pip or pipx
+        pip install uv
+
+2.  Create a new project with virtual environment
+
+        uv init my-project
+        cd my-project
+
+3.  Add dependencies
+
+        uv add requests
+
+4.  Run commands in project environment
+
+        uv run python script.py
+
+5.  Activate the virtual environment manually (optional)
+
+        source .venv/bin/activate  # Linux/macOS
+        .venv\Scripts\activate     # Windows
+
+UV automatically manages virtual environments, Python versions, and dependencies with exceptional speed and convenience.
+
+For comprehensive information about UV's features and performance benefits, read our detailed guide: <router-link to="/blog/python-uv-package-manager">UV: The Lightning-Fast Python Package Manager</router-link>.

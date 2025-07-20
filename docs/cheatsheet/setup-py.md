@@ -12,7 +12,7 @@ Python setup.py
     A 'controversial' opinion
   </base-warning-title>
   <base-warning-content>
-    Using `setup.py` to pack and distribute your python packages can be quite challenging every so often. Tools like <a target="_blank" href="https://python-poetry.org/">Poetry</a> make not only the packaging a <b>lot easier</b>, but also help you to manage your dependencies in a very convenient way.
+    Using `setup.py` to pack and distribute your python packages can be quite challenging every so often. Modern tools like <a target="_blank" href="https://python-poetry.org/">Poetry</a> and <a target="_blank" href="https://docs.astral.sh/uv/">UV</a> make not only the packaging a <b>lot easier</b>, but also help you to manage your dependencies in a very convenient way. UV is particularly notable for being 10-100x faster than traditional tools.
   </base-warning-content>
 </base-warning>
 
@@ -21,6 +21,8 @@ If you want more information about Poetry you can read the following articles:
 - <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">Python projects with Poetry and VSCode. Part 1</router-link>
 - <router-link to="/blog/python-projects-with-poetry-and-vscode-part-2">Python projects with Poetry and VSCode. Part 2</router-link>
 - <router-link to="/blog/python-projects-with-poetry-and-vscode-part-3">Python projects with Poetry and VSCode. Part 3</router-link>
+
+For a comprehensive guide to UV, the lightning-fast Python package manager, read: <router-link to="/blog/python-uv-package-manager">UV: The Lightning-Fast Python Package Manager</router-link>.
 
 ## Introduction
 
