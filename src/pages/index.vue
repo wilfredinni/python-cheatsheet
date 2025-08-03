@@ -25,7 +25,7 @@ const latestPosts = computed(() => {
         new Date(dateA as string).getTime()
       )
     })
-    .slice(0, 3) // Get only the latest 3 posts
+    .slice(0, 3)
 })
 </script>
 
@@ -33,7 +33,7 @@ const latestPosts = computed(() => {
   <!-- Hero Section -->
   <section class="relative">
     <div class="relative px-4 pb-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-4xl text-center">
+      <div class="mx-auto max-w-4xl w-full">
         <!-- Logo for mobile -->
         <div class="flex justify-center sm:hidden mb-8">
           <img
@@ -48,16 +48,14 @@ const latestPosts = computed(() => {
         </div>
 
         <!-- Title and description -->
-        <div class="prose prose-lg mx-auto">
+        <div class="prose prose-xl mx-auto w-full">
           <base-title
             v-if="smAndLarger"
             id="python-cheatsheet"
             title="Python Cheatsheet"
             :description="description"
           >
-            <h1
-              class="text-5xl font-bold bg-gradient-to-r from-indigo-600 via-sky-600 to-teal-600 bg-clip-text text-transparent dark:from-sky-400 dark:via-teal-300 dark:to-orange-300"
-            >
+            <h1 class="text-5xl font-bold bg-gradient-to-r">
               Python Cheatsheet
             </h1>
           </base-title>
@@ -69,7 +67,7 @@ const latestPosts = computed(() => {
           </h1>
 
           <p
-            class="lead text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto"
+            class="lead text-xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto"
           >
             Your comprehensive Python reference guide. Based on the book
             <a
@@ -86,7 +84,7 @@ const latestPosts = computed(() => {
         <!-- Subscription Form and Carbon Ads -->
         <div class="mt-12 max-w-4xl mx-auto">
           <div
-            class="flex flex-col lg:flex-row items-stretch justify-center gap-8"
+            class="flex flex-col lg:flex-row items-stretch justify-start gap-8"
           >
             <!-- Subscription Form -->
             <div class="flex-1 max-w-2xl flex">

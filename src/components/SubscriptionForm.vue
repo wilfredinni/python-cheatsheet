@@ -23,7 +23,7 @@ const response = computed(() => newsletter.getResponse)
     class="rounded-lg border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-800"
   >
     <div class="space-y-4">
-      <div class="text-center">
+      <div>
         <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
           Join the Community
         </h3>
@@ -50,7 +50,7 @@ const response = computed(() => newsletter.getResponse)
           class="w-full rounded-lg bg-sky-600 px-4 py-3 text-sm font-medium text-white transition hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 disabled:opacity-50 dark:bg-sky-500 dark:hover:bg-sky-600 dark:focus:ring-offset-slate-800"
         >
           <span v-if="!loading">Subscribe to Newsletter</span>
-          <span v-else class="flex items-center justify-center">
+          <span v-else class="flex items-center">
             <svg
               class="mr-2 h-4 w-4 animate-spin"
               fill="none"
@@ -75,7 +75,7 @@ const response = computed(() => newsletter.getResponse)
         </button>
       </form>
 
-      <p class="text-xs text-center text-slate-500 dark:text-slate-400">
+      <p class="text-xs text-slate-500 dark:text-slate-400">
         Two times a month. No spam.
         <router-link
           to="/newsletter"
@@ -90,7 +90,7 @@ const response = computed(() => newsletter.getResponse)
         v-if="response?.email"
         class="rounded-md bg-green-50 p-3 dark:bg-green-900/20"
       >
-        <p class="text-xs text-green-700 dark:text-green-300 text-center">
+        <p class="text-xs text-green-700 dark:text-green-300">
           ✅ Thanks! Check your email to confirm.
         </p>
       </div>
@@ -99,7 +99,7 @@ const response = computed(() => newsletter.getResponse)
         v-else-if="response?.errors"
         class="rounded-md bg-blue-50 p-3 dark:bg-blue-900/20"
       >
-        <p class="text-xs text-blue-700 dark:text-blue-300 text-center">
+        <p class="text-xs text-blue-700 dark:text-blue-300">
           You're already subscribed!
         </p>
       </div>
