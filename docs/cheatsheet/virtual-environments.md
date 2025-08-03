@@ -218,4 +218,11 @@ Usage:
 
 UV automatically manages virtual environments, Python versions, and dependencies with exceptional speed and convenience.
 
-For comprehensive information about UV's features and performance benefits, read our detailed guide: <router-link to="/blog/python-uv-package-manager">UV: The Lightning-Fast Python Package Manager</router-link>.
+## Relevant links
+
+- <router-link to="/cheatsheet/setup-py">setup.py</router-link>
+- <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">Python projects with Poetry and VSCode. Part 1</router-link>
+- <router-link to="/blog/python-projects-with-poetry-and-vscode-part-2">Python projects with Poetry and VSCode. Part 2</router-link>
+- <router-link to="/blog/python-projects-with-poetry-and-vscode-part-3">Python projects with Poetry and VSCode. Part 3</router-link>
+- <router-link to="/blog/python-uv-package-manager">UV: The Lightning-Fast Python Package Manager</router-link>
+- <router-link to="/builtin/import">import()</router-link>

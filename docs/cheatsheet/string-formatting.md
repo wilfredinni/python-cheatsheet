@@ -175,3 +175,13 @@ A simpler and less powerful mechanism, but it is recommended when handling strin
 >>> t.substitute(name=name)
 # 'Hey Elizabeth!'
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/manipulating-strings">Manipulating Strings</router-link>
+- <router-link to="/blog/python-data-types">Python Data Types Blog Post</router-link>
+- <router-link to="/builtin/format">format()</router-link>
+- <router-link to="/builtin/print">print()</router-link>
+- <router-link to="/builtin/str">str()</router-link>
+- <router-link to="/builtin/repr">repr()</router-link>
+- <router-link to="/builtin/ascii">ascii()</router-link>

@@ -174,3 +174,12 @@ Like regular nested functions, lambdas also work as lexical closures:
 >>> plus_5(4)
 # 9
 ```
+
+## Relevant links
+
+- <router-link to="/blog/python-easy-args-kwargs">*args and **kwargs explained</router-link>
+- <router-link to="/cheatsheet/args-and-kwargs">Args and Kwargs</router-link>
+- <router-link to="/cheatsheet/decorators">Decorators</router-link>
+- <router-link to="/cheatsheet/control-flow">Control Flow</router-link>
+- <router-link to="/cheatsheet/basics">Basics</router-link>
+- <router-link to="/builtin">Built-in Functions</router-link>

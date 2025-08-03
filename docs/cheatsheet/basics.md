@@ -377,3 +377,14 @@ Or from a `string` to an `integer` or `float`:
 >>> float('3.14')
 # 3.14
 ```
+
+## Relevant Links
+
+- <router-link to="/blog/python-data-types">Python Data Types: A Visual Guide for Beginners</router-link>
+- <router-link to="/blog/python-comprehensions-step-by-step">Python Comprehensions Step-by-Step</router-link>
+- <router-link to="/cheatsheet/control-flow">Control Flow</router-link>
+- <router-link to="/cheatsheet/functions">Functions</router-link>
+- <router-link to="/cheatsheet/lists-and-tuples">Lists and Tuples</router-link>
+- <router-link to="/cheatsheet/dictionaries">Dictionaries</router-link>
+- <router-link to="/cheatsheet/sets">Sets</router-link>
+- <router-link to="/cheatsheet/string-formatting">String Formatting</router-link>

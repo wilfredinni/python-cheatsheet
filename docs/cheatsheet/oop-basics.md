@@ -1,4 +1,4 @@
- ---
+---
 title: Python OOP Basics - Python Cheatsheet
 
 description: Object-Oriented Programming (OOP) is a programming paradigm that revolves around the concept of objects, which are instances of classes. OOP principles are fundamental concepts that guide the design and development of software in an object-oriented way. In Python, OOP is supported by the use of classes and objects. Here are some of the basic OOP principles in Python
@@ -214,3 +214,17 @@ for shape in shapes:
 
 These are some of the basic OOP principles in Python. This page is currently in progress and more
 detailed examples and explanations will be coming soon.
+
+## Relevant links
+
+- <router-link to="/cheatsheet/functions">Functions</router-link>
+- <router-link to="/cheatsheet/decorators">Decorators</router-link>
+- <router-link to="/cheatsheet/exception-handling">Exception Handling</router-link>
+- <router-link to="/cheatsheet/dataclasses">Dataclasses</router-link>
+- <router-link to="/builtin/object">object()</router-link>
+- <router-link to="/builtin/classmethod">classmethod()</router-link>
+- <router-link to="/builtin/staticmethod">staticmethod()</router-link>
+- <router-link to="/builtin/property">property()</router-link>
+- <router-link to="/builtin/isinstance">isinstance()</router-link>
+- <router-link to="/builtin/issubclass">issubclass()</router-link>
+- <router-link to="/builtin/super">super()</router-link>

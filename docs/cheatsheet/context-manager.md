@@ -66,3 +66,11 @@ with ContextManager():
 #test
 #--exit--
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/reading-and-writing-files">Reading and Writing Files</router-link>
+- <router-link to="/cheatsheet/exception-handling">Exception Handling</router-link>
+- <router-link to="/cheatsheet/decorators">Decorators</router-link>
+- <router-link to="/blog/python-pathlib-essentials">10 Essential File System Operations Every Developer Should Know</router-link>
+- <router-link to="/builtin/open">open()</router-link>

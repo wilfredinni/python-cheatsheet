@@ -134,3 +134,10 @@ Handling a custom exception is the same as any other:
 ...
 # My custom exception was raised
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/control-flow">Control Flow</router-link>
+- <router-link to="/builtin/breakpoint">breakpoint()</router-link>
+- <router-link to="/builtin/isinstance">isinstance()</router-link>
+- <router-link to="/builtin/issubclass">issubclass()</router-link>

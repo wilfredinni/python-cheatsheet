@@ -488,3 +488,13 @@ useful when a `break` condition can occur in the loop:
 # Type exit to exit: exit
 # You typed exit
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/basics">Basics</router-link>
+- <router-link to="/cheatsheet/functions">Functions</router-link>
+- <router-link to="/cheatsheet/exception-handling">Exception Handling</router-link>
+- <router-link to="/cheatsheet/lists-and-tuples">Lists and Tuples</router-link>
+- <router-link to="/cheatsheet/sets">Sets</router-link>
+- <router-link to="/cheatsheet/dictionaries">Dictionaries</router-link>
+- <router-link to="/cheatsheet/comprehensions">Comprehensions</router-link>

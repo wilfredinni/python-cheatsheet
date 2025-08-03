@@ -71,3 +71,12 @@ Keywords are accessed through the `kwargs` variable:
 >>> some_function(key1='arg1', key2='arg2')
 # keywords: {'key1': 'arg1', 'key2': 'arg2'} as <class 'dict'>
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/functions">Functions</router-link>
+- <router-link to="/cheatsheet/lists-and-tuples">Lists and Tuples</router-link>
+- <router-link to="/cheatsheet/dictionaries">Python Dictionaries</router-link>
+- <router-link to="/blog/python-easy-args-kwargs">Python *args and **kwargs Made Easy</router-link>
+- <router-link to="/builtin/tuple">tuple()</router-link>
+- <router-link to="/builtin/dict">dict()</router-link>

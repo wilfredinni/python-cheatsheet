@@ -267,3 +267,15 @@ For Python 3.5+:
 >>> dict_c
 # {'a': 1, 'b': 3, 'c': 4}
 ```
+
+## Relevant links
+
+- <router-link to="/blog/python-data-types">Python Data Types Blog Post</router-link>
+- <router-link to="/blog/python-easy-args-kwargs">Python *args and **kwargs Made Easy</router-link>
+- <router-link to="/cheatsheet/comprehensions">Comprehensions</router-link>
+- <router-link to="/cheatsheet/args-and-kwargs">Args and Kwargs</router-link>
+- <router-link to="/blog/python-comprehensions-step-by-step">Python Comprehensions Step-by-Step</router-link>
+- <router-link to="/builtin/dict">dict()</router-link>
+- <router-link to="/builtin/len">len()</router-link>
+- <router-link to="/builtin/iter">iter()</router-link>
+- <router-link to="/builtin/zip">zip()</router-link>

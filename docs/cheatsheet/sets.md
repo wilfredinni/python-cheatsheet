@@ -156,3 +156,10 @@ Both methods will remove an element from the set, but `remove()` will raise a `k
 >>> s1.symmetric_difference(s2)  # or 's1 ^ s2'
 # {1, 4}
 ```
+
+## Relevant links
+
+- <router-link to="/blog/python-data-types">Python Data Types Blog Post</router-link>
+- <router-link to="/blog/python-sets-what-why-how">Python Sets: What, Why and How</router-link>
+- <router-link to="/cheatsheet/dictionaries">Python Dictionaries</router-link>
+- <router-link to="/cheatsheet/lists-and-tuples">Python Lists and Tuples</router-link>

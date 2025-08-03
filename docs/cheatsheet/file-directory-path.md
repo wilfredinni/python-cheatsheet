@@ -342,3 +342,9 @@ The `Path` object has an `rglob()` method for recursively iterating over files a
 # C:\\delicious\\walnut\\waffles
 # C:\\delicious\\walnut\\waffles\\butter.txt
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/reading-and-writing-files">Reading and Writing Files</router-link>
+- <router-link to="/blog/python-pathlib-essentials">10 Essential File System Operations Every Developer Should Know</router-link>
+- <router-link to="/builtin/open">open()</router-link>

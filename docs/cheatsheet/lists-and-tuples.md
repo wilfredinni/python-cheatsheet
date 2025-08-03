@@ -392,3 +392,13 @@ The main way that tuples are different from lists is that tuples, like strings, 
 >>> list('hello')
 # ['h', 'e', 'l', 'l', 'o']
 ```
+
+## Relevant links
+
+- <router-link to="/blog/python-data-types">Python Data Types: A Visual Guide for Beginners</router-link>
+- <router-link to="/blog/python-comprehensions-step-by-step">Python Comprehensions Step-by-Step</router-link>
+- <router-link to="/cheatsheet/comprehensions">Python Comprehensions</router-link>
+- <router-link to="/modules/itertools-module">The itertools Module</router-link>
+- <router-link to="/builtin/list">list()</router-link>
+- <router-link to="/builtin/tuple">tuple()</router-link>
+- <router-link to="/builtin/len">len()</router-link>

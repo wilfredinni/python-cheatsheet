@@ -195,3 +195,8 @@ Instead of displaying the log messages to the screen, you can write them to a te
 >>> import logging
 >>> logging.basicConfig(filename='myProgramLog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/exception-handling">Exception Handling</router-link>
+- <router-link to="/builtin/breakpoint">breakpoint()</router-link>

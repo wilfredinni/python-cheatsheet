@@ -75,3 +75,12 @@ It is mandatory to define the data type in dataclass. However, If you would rath
 ...    name: Any
 ...    value: Any = 42
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/oop-basics">OOP Basics</router-link>
+- <router-link to="/cheatsheet/decorators">Decorators</router-link>
+- <router-link to="/blog/python-data-types">Python Data Types Blog Post</router-link>
+- <router-link to="/builtin/object">object()</router-link>
+- <router-link to="/builtin/repr">repr()</router-link>
+- <router-link to="/builtin/type">type()</router-link>

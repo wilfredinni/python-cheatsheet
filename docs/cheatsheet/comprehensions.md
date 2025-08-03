@@ -118,3 +118,12 @@ A List comprehension can be generated from a dictionary:
 >>> ["{}:{}".format(k.upper(), v) for k, v in c.items()]
 ['NAME:Pooka', 'AGE:5']
 ```
+
+## Relevant links
+
+- <router-link to="/blog/python-comprehensions-step-by-step">Python Comprehensions: A step by step Introduction</router-link>
+- <router-link to="/cheatsheet/lists-and-tuples">Python Lists and Tuples</router-link>
+- <router-link to="/cheatsheet/sets">Python Sets</router-link>
+- <router-link to="/cheatsheet/dictionaries">Python Dictionaries</router-link>
+- <router-link to="/blog/python-sets-what-why-how">Python Sets: What, Why and How</router-link>
+- <router-link to="/blog/python-data-types">Python Data Types Blog Post</router-link>

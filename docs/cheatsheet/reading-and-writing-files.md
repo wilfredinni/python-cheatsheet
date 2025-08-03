@@ -71,3 +71,11 @@ You can also iterate through the file line by line:
 # Hello world!
 # Bacon is not a vegetable.
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/file-directory-path">File and directory Paths</router-link>
+- <router-link to="/cheatsheet/json-yaml">Json and Yaml</router-link>
+- <router-link to="/blog/python-pathlib-essentials">10 Essential File System Operations Every Developer Should Know</router-link>
+- <router-link to="/builtin/open">open()</router-link>
+- <router-link to="/builtin/print">print()</router-link>

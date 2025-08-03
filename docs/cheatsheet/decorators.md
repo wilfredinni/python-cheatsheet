@@ -180,6 +180,16 @@ say_hi("James")
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Relevant links
+
+- <router-link to="/cheatsheet/functions">Functions</router-link>
+- <router-link to="/cheatsheet/args-and-kwargs">Args and Kwargs</router-link>
+- <router-link to="/blog/python-easy-args-kwargs">Python *args and **kwargs Made Easy</router-link>
+- <router-link to="/builtin/classmethod">classmethod()</router-link>
+- <router-link to="/builtin/staticmethod">staticmethod()</router-link>
+- <router-link to="/builtin/property">property()</router-link>
+- <router-link to="/builtin/callable">callable()</router-link>
+
 
 
 

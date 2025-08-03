@@ -391,3 +391,10 @@ phone_regex = re.compile(r'''(
     (\s*(ext|x|ext.)\s*\d{2,5})?  # extension
     )''', re.VERBOSE)
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/manipulating-strings">Manipulating Strings</router-link>
+- <router-link to="/cheatsheet/string-formatting">String Formatting</router-link>
+- <router-link to="/blog/python-data-types">Python Data Types Blog Post</router-link>
+- <router-link to="/builtin/compile">compile()</router-link>

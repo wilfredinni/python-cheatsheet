@@ -330,3 +330,13 @@ Replaces all occurences of a given substring with another substring. Can be opti
 >>> sentence.replace("apples", "oranges")
 # 'I like oranges, Apples are my favorite fruit'
 ```
+
+## Relevant links
+
+- <router-link to="/builtin/format">format()</router-link>
+- <router-link to="/builtin/len">len()</router-link>
+- <router-link to="/builtin/str">str()</router-link>
+- <router-link to="/builtin/repr">repr()</router-link>
+- <router-link to="/builtin/input">input()</router-link>
+- <router-link to="/cheatsheet/string-formatting">String Formatting</router-link>
+- <router-link to="/cheatsheet/regular-expressions">Regular Expressions</router-link>

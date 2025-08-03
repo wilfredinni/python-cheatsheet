@@ -38,3 +38,10 @@ For example, we are developing a script designed to be used as a module, we shou
 2. If you import this script as a module in another script, the **name** is set to the name of the script/module.
 3. Python files can act as either reusable modules, or as standalone programs.
 4. `if __name__ == "__main__":` is used to execute some code only if the file is run directly, and is not being imported.
+
+## Relevant links
+
+- <router-link to="/cheatsheet/functions">Functions</router-link>
+- <router-link to="/cheatsheet/setup-py">setup.py</router-link>
+- <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">Python projects with Poetry and VSCode. Part 1</router-link>
+- <router-link to="/builtin/import">import()</router-link>
