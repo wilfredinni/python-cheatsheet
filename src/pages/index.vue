@@ -509,89 +509,81 @@ const latestPosts = computed(() => {
         v-if="latestPosts.length > 0"
         class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
       >
-        <article
-          v-for="(post, index) in latestPosts"
+        <router-link
+          v-for="post in latestPosts"
           :key="post.path"
-          class="group relative overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 transition-all duration-300 hover:shadow-xl hover:ring-sky-300 hover:-translate-y-1 dark:bg-gray-800 dark:ring-gray-700 dark:hover:ring-sky-600"
+          :to="post.path"
+          class="group flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800"
         >
-          <!-- Gradient overlay for different posts -->
-          <div
-            class="absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100"
-            :class="{
-              'bg-gradient-to-br from-sky-50/80 to-transparent dark:from-sky-900/20':
-                index === 0,
-              'bg-gradient-to-br from-green-50/80 to-transparent dark:from-green-900/20':
-                index === 1,
-              'bg-gradient-to-br from-purple-50/80 to-transparent dark:from-purple-900/20':
-                index === 2,
-            }"
-          />
-
-          <router-link :to="post.path" class="relative block p-8">
-            <!-- Category badge -->
-            <div class="mb-4">
-              <span
-                class="inline-flex items-center rounded-full px-3 py-1 text-xs font-medium ring-1 ring-inset"
-                :class="{
-                  'bg-sky-50 text-sky-700 ring-sky-600/20 dark:bg-sky-400/10 dark:text-sky-400 dark:ring-sky-400/30':
-                    index === 0,
-                  'bg-green-50 text-green-700 ring-green-600/20 dark:bg-green-400/10 dark:text-green-400 dark:ring-green-400/30':
-                    index === 1,
-                  'bg-purple-50 text-purple-700 ring-purple-600/20 dark:bg-purple-400/10 dark:text-purple-400 dark:ring-purple-400/30':
-                    index === 2,
-                }"
+          <div class="relative overflow-hidden">
+            <img
+              v-if="post.children?.[0]?.meta?.socialImage"
+              :src="String(post.children[0]?.meta?.socialImage || '')"
+              alt=""
+              class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              v-else
+              class="flex h-48 w-full items-center justify-center bg-slate-100 dark:bg-slate-700"
+            >
+              <svg
+                class="h-12 w-12 text-slate-400"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l-1.586-1.586a2 2 0 00-2.828 0L6 18"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <div class="flex-1">
+              <h2
+                class="text-xl font-semibold text-slate-800 dark:text-slate-100"
               >
                 {{
-                  index === 0 ? 'Latest' : index === 1 ? 'Popular' : 'Featured'
+                  (post.children?.[0]?.meta?.title as string)?.replace(
+                    ' - Python Cheatsheet',
+                    '',
+                  ) || 'Untitled Post'
                 }}
-              </span>
+              </h2>
+              <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
+                {{
+                  post.children?.[0]?.meta?.description ||
+                  'Explore this comprehensive Python guide with practical examples and best practices.'
+                }}
+              </p>
             </div>
-
-            <!-- Title -->
-            <h3
-              class="text-xl font-semibold text-gray-900 dark:text-white mb-3 line-clamp-2 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors"
-            >
-              {{
-                (post.children?.[0]?.meta?.title as string)?.replace(
-                  ' - Python Cheatsheet',
-                  '',
-                ) || 'Untitled Post'
-              }}
-            </h3>
-
-            <!-- Description excerpt (if available) -->
-            <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
-              {{
-                post.children?.[0]?.meta?.description ||
-                'Explore this comprehensive Python guide with practical examples and best practices.'
-              }}
-            </p>
-
-            <!-- Meta info -->
-            <div class="flex items-center justify-between">
-              <time class="text-sm text-gray-500 dark:text-gray-400">
+            <div class="mt-4 flex items-center justify-between">
+              <time class="text-xs text-slate-500 dark:text-slate-400">
                 {{ post.children?.[0]?.meta?.date || 'Unknown date' }}
               </time>
-
-              <div class="flex items-center text-sky-600 dark:text-sky-400">
-                <span class="text-sm font-medium mr-1">Read more</span>
+              <div class="flex items-center text-sm font-medium text-sky-500">
+                Read article
                 <svg
-                  class="h-4 w-4 transition-transform group-hover:translate-x-1"
+                  viewBox="0 0 16 16"
                   fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  aria-hidden="true"
+                  class="ml-1 h-4 w-4 stroke-current"
                 >
                   <path
+                    d="M6.75 5.75 9.25 8l-2.5 2.25"
+                    stroke-width="1.5"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5l7 7-7 7"
                   />
                 </svg>
               </div>
             </div>
-          </router-link>
-        </article>
+          </div>
+        </router-link>
       </div>
 
       <!-- Empty state -->
