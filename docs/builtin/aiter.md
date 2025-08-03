@@ -30,6 +30,6 @@ The `aiter()` function in Python is a built-in function that returns an asynchro
 ...    return iter(results)
 ```
 
-## See Also
+## Relevant links
 
 - <router-link :to="'/builtin/iter'">iter()</router-link>

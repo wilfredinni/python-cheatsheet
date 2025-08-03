@@ -83,8 +83,12 @@ The `help()` function in Python is a built-in utility that provides access to Py
 # :
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/dir">dir()</router-link>
-- <router-link to="/builtin/globals">globals()</router-link>
-- <router-link to="/builtin/locals">locals()</router-link>
+- <router-link :to="'/builtin/dir'">dir()</router-link>
+- <router-link :to="'/builtin/globals'">globals()</router-link>
+- <router-link :to="'/builtin/locals'">locals()</router-link>
+- <router-link :to="'/builtin/type'">type()</router-link>
+- <router-link :to="'/builtin/vars'">vars()</router-link>
+- <router-link :to="'/cheatsheet/debugging'">Debugging</router-link>
+- <router-link :to="'/cheatsheet/oop-basics'">OOP Basics</router-link>

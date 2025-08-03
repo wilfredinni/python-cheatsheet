@@ -117,8 +117,15 @@ Two examples where the `stop` parameter is set to 0
 #
 ```
 
-## See also
+## Relevant links
 
+- <router-link to="/cheatsheet/control-flow">Cheatsheet: Control Flow (for loops)</router-link>
+- <router-link to="/cheatsheet/lists-and-tuples">Cheatsheet: Lists and Tuples</router-link>
+- <router-link to="/modules/itertools-module">Module: itertools</router-link>
+- <router-link to="/builtin/len">len()</router-link>
+- <router-link to="/builtin/reversed">reversed()</router-link>
+- <router-link to="/builtin/enumerate">enumerate()</router-link>
+- <router-link to="/builtin/zip">zip()</router-link>
 - <router-link to="/builtin/list">list()</router-link>
 - <router-link to="/builtin/tuple">tuple()</router-link>
 - <router-link to="/builtin/int">int()</router-link>

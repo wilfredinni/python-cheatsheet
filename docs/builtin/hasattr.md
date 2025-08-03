@@ -34,6 +34,10 @@ print(hasattr(p, 'age'))   # Output: True
 print(hasattr(p, 'email')) # Output: False
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/getattr">`getattr()`</router-link>
+- <router-link :to="'/builtin/getattr'">`getattr()`</router-link>
+- <router-link :to="'/builtin/setattr'">`setattr()`</router-link>
+- <router-link :to="'/builtin/delattr'">`delattr()`</router-link>
+- <router-link :to="'/cheatsheet/oop-basics'">OOP Basics</router-link>
+- <router-link :to="'/builtin/dir'">`dir()`</router-link>

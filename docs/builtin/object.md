@@ -35,6 +35,13 @@ print(type(o))  # Output: <class 'object'>
 # o.name = "test" # This would raise an AttributeError
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/cheatsheet/classes">Classes</router-link>
+- <router-link to="/cheatsheet/oop-basics">Cheatsheet: OOP Basics</router-link>
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/builtin/isinstance">isinstance()</router-link>
+- <router-link to="/builtin/issubclass">issubclass()</router-link>
+- <router-link to="/builtin/dir">dir()</router-link>
+- <router-link to="/builtin/hasattr">hasattr()</router-link>
+- <router-link to="/builtin/getattr">getattr()</router-link>
+- <router-link to="/builtin/delattr">delattr()</router-link>

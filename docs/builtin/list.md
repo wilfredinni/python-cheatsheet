@@ -32,10 +32,13 @@ In Python, `list` is not a function but a built-in mutable sequence type. This m
 # [1, 2]
 ```
 
-## See also
+## Relevant links
 
+- <router-link to="/cheatsheet/lists-and-tuples">Cheatsheet: Lists and Tuples</router-link>
+- <router-link to="/cheatsheet/comprehensions">Cheatsheet: Comprehensions</router-link>
+- <router-link to="/blog/python-comprehensions-step-by-step">Blog: Python Comprehensions Step-by-Step</router-link>
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
 - <router-link to="/builtin/tuple">tuple()</router-link>
 - <router-link to="/builtin/set">set()</router-link>
 - <router-link to="/builtin/dict">dict()</router-link>
 - <router-link to="/builtin/len">len()</router-link>
-- <router-link to="/cheatsheet/basics/#list-comprehensions">List Comprehensions</router-link>

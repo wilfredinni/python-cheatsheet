@@ -33,8 +33,11 @@ The `hex()` function in Python is a built-in function that converts an integer i
 # '0x3e8'
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/bin">bin()</router-link>
-- <router-link to="/builtin/int">int()</router-link>
-- <router-link to="/builtin/oct">oct()</router-link>
+- <router-link :to="'/builtin/bin'">bin()</router-link>
+- <router-link :to="'/builtin/int'">int()</router-link>
+- <router-link :to="'/builtin/oct'">oct()</router-link>
+- <router-link :to="'/cheatsheet/string-formatting'">String Formatting</router-link>
+- <router-link :to="'/blog/python-data-types'">Python Data Types</router-link>
+- <router-link :to="'/builtin/format'">format()</router-link>

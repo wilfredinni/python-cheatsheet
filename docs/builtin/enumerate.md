@@ -55,8 +55,11 @@ The `enumerate()` function in Python is a built-in function that adds a counter 
 # Index: 4, Item: 5
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/cheatsheet/loops">Loops</router-link>
-- <router-link to="/builtin/iter">iter()</router-link>
-- <router-link to="/builtin/next">next()</router-link>
+- <router-link :to="'/cheatsheet/control-flow'">Control Flow</router-link>
+- <router-link :to="'/builtin/iter'">iter()</router-link>
+- <router-link :to="'/builtin/next'">next()</router-link>
+- <router-link :to="'/cheatsheet/lists-and-tuples'">Lists and Tuples</router-link>
+- <router-link :to="'/builtin/zip'">zip()</router-link>
+- <router-link :to="'/builtin/range'">range()</router-link>

@@ -47,6 +47,10 @@ print(isinstance("hello", (int, str, list))) # Output: True
 # False
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/issubclass">`issubclass()`</router-link>
+- <router-link :to="'/builtin/issubclass'">`issubclass()`</router-link>
+- <router-link :to="'/builtin/type'">`type()`</router-link>
+- <router-link :to="'/cheatsheet/oop-basics'">OOP Basics</router-link>
+- <router-link :to="'/blog/python-data-types'">Python Data Types</router-link>
+- <router-link :to="'/builtin/callable'">`callable()`</router-link>

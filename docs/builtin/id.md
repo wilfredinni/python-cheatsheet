@@ -35,6 +35,10 @@ print(id('1'))
 print(id([1, 2]))
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/hash">hash()</router-link>
+- <router-link :to="'/builtin/hash'">hash()</router-link>
+- <router-link :to="'/builtin/object'">object()</router-link>
+- <router-link :to="'/cheatsheet/oop-basics'">OOP Basics</router-link>
+- <router-link :to="'/blog/python-data-types'">Python Data Types</router-link>
+- <router-link :to="'/builtin/type'">type()</router-link>

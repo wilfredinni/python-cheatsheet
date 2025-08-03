@@ -33,6 +33,10 @@ The `frozenset()` function in Python is a built-in function that creates an immu
 # frozenset({1, 2, 3})
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/set">`set()`</router-link>
+- <router-link :to="'/builtin/set'">`set()`</router-link>
+- <router-link :to="'/cheatsheet/sets'">Sets</router-link>
+- <router-link :to="'/blog/python-sets-what-why-how'">Python Sets: What, Why, and How</router-link>
+- <router-link :to="'/builtin/tuple'">`tuple()`</router-link>
+- <router-link :to="'/builtin/hash'">`hash()`</router-link>

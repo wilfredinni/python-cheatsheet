@@ -42,8 +42,11 @@ setattr(p, 'name', 'Jane')
 print(p.name) # Output: Jane
 ```
 
-## See also
+## Relevant links
 
+- <router-link to="/cheatsheet/oop-basics">Cheatsheet: OOP Basics</router-link>
+- <router-link to="/builtin/object">object()</router-link>
+- <router-link to="/builtin/dir">dir()</router-link>
 - <router-link to="/builtin/getattr">getattr()</router-link>
 - <router-link to="/builtin/hasattr">hasattr()</router-link>
 - <router-link to="/builtin/delattr">delattr()</router-link>

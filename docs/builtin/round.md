@@ -37,7 +37,11 @@ print(round(2.5)) # Output: 2
 print(round(3.5)) # Output: 4
 ```
 
-## See also
+## Relevant links
 
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/cheatsheet/string-formatting">Cheatsheet: String Formatting</router-link>
+- <router-link to="/builtin/format">format()</router-link>
+- <router-link to="/builtin/abs">abs()</router-link>
 - <router-link to="/builtin/float">float()</router-link>
 - <router-link to="/builtin/int">int()</router-link>

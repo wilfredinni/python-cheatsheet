@@ -40,6 +40,11 @@ The `open()` function in Python is used to open a file and returns a file object
 # My second line
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/cheatsheet/file-directory-path">Reading and Writing Files</router-link>
+- <router-link to="/cheatsheet/reading-and-writing-files">Cheatsheet: Reading and Writing Files</router-link>
+- <router-link to="/cheatsheet/file-directory-path">Cheatsheet: File & Directory Path</router-link>
+- <router-link to="/cheatsheet/context-manager">Cheatsheet: Context Managers (with statement)</router-link>
+- <router-link to="/blog/python-pathlib-essentials">Blog: Pathlib Essentials</router-link>
+- <router-link to="/modules/os-module">Module: os</router-link>
+- <router-link to="/modules/pathlib-module">Module: pathlib</router-link>

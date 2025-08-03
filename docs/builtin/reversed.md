@@ -47,17 +47,20 @@ Here is another example demonstrating the iterator behavior:
 
 ```python
 >>> i = reversed([1, 2, 3])
->>> i.__next__()
+>>> next(i)
 # 3
->>> i.__next__()
+>>> next(i)
 # 2
->>> i.__next__()
+>>> next(i)
 # 1
->>> i
-# <list_reverseiterator object at ...>
 ```
 
-## See also
+## Relevant links
 
+- <router-link to="/cheatsheet/control-flow">Cheatsheet: Control Flow (for loops)</router-link>
+- <router-link to="/cheatsheet/lists-and-tuples">Cheatsheet: Lists and Tuples</router-link>
+- <router-link to="/builtin/sorted">sorted()</router-link>
+- <router-link to="/builtin/len">len()</router-link>
+- <router-link to="/builtin/next">next()</router-link>
 - <router-link to="/builtin/list">list()</router-link>
 - <router-link to="/builtin/iter">iter()</router-link>

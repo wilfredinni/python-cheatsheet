@@ -52,7 +52,7 @@ exec(code_obj)
 
 In this example, a string containing Python code is compiled into a code object using `compile()`, and then executed with `exec()`. The function `hello_world()` defined in the string is then available to be called.
 
-## See also
+## Relevant links
 
 - <router-link to="/builtin/exec">exec()</router-link>
 - <router-link to="/builtin/eval">eval()</router-link>

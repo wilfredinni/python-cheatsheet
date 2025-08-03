@@ -41,7 +41,8 @@ view[0] = 72 # ASCII for 'H'
 print(data)    # Output: bytearray(b'Hello world')
 ```
 
-## See also
+## Relevant links
 
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
 - <router-link to="/builtin/bytes">bytes()</router-link>
 - <router-link to="/builtin/bytearray">bytearray()</router-link>

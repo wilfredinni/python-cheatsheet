@@ -82,10 +82,13 @@ Will output the following: [1,1,1]
 
 Notice how the length of the resultant list is equal to list1's length?
 
-## See also
+## Relevant links
 
+- <router-link to="/cheatsheet/functions">Cheatsheet: Functions (including Lambdas)</router-link>
+- <router-link to="/cheatsheet/comprehensions">Cheatsheet: Comprehensions</router-link>
+- <router-link to="/blog/python-comprehensions-step-by-step">Blog: Python Comprehensions Step-by-Step</router-link>
+- <router-link to="/modules/itertools-module">Module: itertools</router-link>
 - <router-link to="/builtin/filter">filter()</router-link>
 - <router-link to="/builtin/zip">zip()</router-link>
-- <router-link to="/cheatsheet/basics/#lambda-functions">Lambda Functions</router-link>
-- <router-link to="/cheatsheet/basics/#list-comprehensions">List Comprehensions</router-link>
+- <router-link to="/builtin/iter">iter()</router-link>
 

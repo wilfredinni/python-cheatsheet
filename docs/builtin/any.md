@@ -33,6 +33,9 @@ The `any()` function in Python is a built-in function that checks if at least on
 # False
 ```
 
-## See Also
+## Relevant links
 
 - <router-link :to="'/builtin/all'">all()</router-link>
+- <router-link :to="'/cheatsheet/control-flow'">Control Flow</router-link>
+- <router-link :to="'/cheatsheet/comprehensions'">Comprehensions</router-link>
+- <router-link :to="'/blog/python-data-types'">Python Data Types</router-link>

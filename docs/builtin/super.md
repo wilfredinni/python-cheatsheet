@@ -40,8 +40,14 @@ c.greet()
 # Hello from Child
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/cheatsheet/oop-basics/">OOP Basics</router-link>
-- <router-link to="/builtin/classmethod/">classmethod()</router-link>
-- <router-link to="/builtin/staticmethod/">staticmethod()</router-link>
+- <router-link to="/cheatsheet/oop-basics">Cheatsheet: OOP Basics</router-link>
+- <router-link to="/cheatsheet/decorators">Cheatsheet: Decorators</router-link>
+- <router-link to="/cheatsheet/functions">Cheatsheet: Functions</router-link>
+- <router-link to="/builtin/object">object()</router-link>
+- <router-link to="/builtin/isinstance">isinstance()</router-link>
+- <router-link to="/builtin/issubclass">issubclass()</router-link>
+- <router-link to="/builtin/classmethod">classmethod()</router-link>
+- <router-link to="/builtin/staticmethod">staticmethod()</router-link>
+- <router-link to="/builtin/property">property()</router-link>

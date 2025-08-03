@@ -52,8 +52,6 @@ More examples:
 
 ```python
 >>> i = iter([1, 2, 3])
->>> i
-# <list_iterator object at ...>
 >>> next(i)
 # 1
 >>> next(i)
@@ -62,6 +60,11 @@ More examples:
 # 3
 ```
 
-## See also
+## Relevant links
 
+- <router-link to="/cheatsheet/control-flow">Cheatsheet: Control Flow (for loops)</router-link>
+- <router-link to="/modules/itertools-module">Module: itertools</router-link>
 - <router-link to="/builtin/iter">iter()</router-link>
+- <router-link to="/builtin/map">map()</router-link>
+- <router-link to="/builtin/filter">filter()</router-link>
+- <router-link to="/builtin/zip">zip()</router-link>

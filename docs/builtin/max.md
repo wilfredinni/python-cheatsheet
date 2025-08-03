@@ -41,15 +41,9 @@ print(max(letters)) # Output: 'z'
 print(max(10, 20, 5)) # Output: 20
 ```
 
+## Relevant links
 
-
-```python
->>> max([1, 2, 10, 40, 5])
-# 40
->>> max((1, 2, 10, 40, 5))
-# 40
-```
-
-## See also
-
+- <router-link to="/cheatsheet/lists-and-tuples">Cheatsheet: Lists and Tuples</router-link>
 - <router-link to="/builtin/min">min()</router-link>
+- <router-link to="/builtin/sorted">sorted()</router-link>
+- <router-link to="/builtin/sum">sum()</router-link>

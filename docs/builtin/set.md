@@ -37,9 +37,13 @@ my_set = set(my_list)
 print(my_set)  # Output: {1, 2, 3}
 ```
 
-## See also
+## Relevant links
 
+- <router-link to="/cheatsheet/sets">Cheatsheet: Sets</router-link>
+- <router-link to="/cheatsheet/comprehensions">Cheatsheet: Comprehensions</router-link>
+- <router-link to="/blog/python-sets-what-why-how">Blog: Python Sets - What, Why, How</router-link>
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/builtin/len">len()</router-link>
 - <router-link to="/builtin/frozenset">frozenset()</router-link>
 - <router-link to="/builtin/list">list()</router-link>
 - <router-link to="/builtin/tuple">tuple()</router-link>
-- <router-link to="/cheatsheet/sets">Sets Cheatsheet</router-link>

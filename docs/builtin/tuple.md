@@ -39,25 +39,17 @@ my_tuple = tuple(my_list)
 print(my_tuple)  # Output: (1, 2, 3)
 ```
 
+## Relevant links
 
-
-```python
->>> t = tuple()
->>> type(t)
-# <class 'tuple'>
->>> t
-# ()
-
->>> l = [1, 2, 3]
->>> tuple(l)
-# (1, 2, 3)
-```
-
-## See also
-
-- <router-link to="/cheatsheet/lists-and-tuples/">Lists and Tuples</router-link>
-- <router-link to="/builtin/list/">list()</router-link>
-- <router-link to="/builtin/str/">str()</router-link>
-- <router-link to="/builtin/dict/">dict()</router-link>
-- <router-link to="/builtin/set/">set()</router-link>
-- <router-link to="/blog/python-data-types/">Python Data Types</router-link>
+- <router-link to="/cheatsheet/lists-and-tuples">Cheatsheet: Lists and Tuples</router-link>
+- <router-link to="/cheatsheet/args-and-kwargs">Cheatsheet: *args and **kwargs</router-link>
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/blog/python-easy-args-kwargs">Blog: *args and **kwargs Explained</router-link>
+- <router-link to="/builtin/len">len()</router-link>
+- <router-link to="/builtin/sorted">sorted()</router-link>
+- <router-link to="/builtin/reversed">reversed()</router-link>
+- <router-link to="/builtin/enumerate">enumerate()</router-link>
+- <router-link to="/builtin/zip">zip()</router-link>
+- <router-link to="/builtin/list">list()</router-link>
+- <router-link to="/builtin/set">set()</router-link>
+- <router-link to="/builtin/dict">dict()</router-link>

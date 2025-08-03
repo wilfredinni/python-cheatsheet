@@ -33,8 +33,11 @@ print(oct(1))    # Output: 0o1
 print(oct(1000)) # Output: 0o1750
 ```
 
-## See also
+## Relevant links
 
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/cheatsheet/string-formatting">Cheatsheet: String Formatting</router-link>
 - <router-link to="/builtin/bin">bin()</router-link>
 - <router-link to="/builtin/hex">hex()</router-link>
 - <router-link to="/builtin/int">int()</router-link>
+- <router-link to="/builtin/format">format()</router-link>

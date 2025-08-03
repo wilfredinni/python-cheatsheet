@@ -33,6 +33,9 @@ The `all()` function in Python is a built-in function that checks if all element
 # True
 ```
 
-## See Also
+## Relevant links
 
 - <router-link :to="'/builtin/any'">any()</router-link>
+- <router-link :to="'/cheatsheet/control-flow'">Control Flow</router-link>
+- <router-link :to="'/cheatsheet/comprehensions'">Comprehensions</router-link>
+- <router-link :to="'/blog/python-data-types'">Python Data Types</router-link>

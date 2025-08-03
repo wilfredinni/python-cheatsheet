@@ -29,23 +29,20 @@ The `pow()` function is used for exponentiation. It can take two or three argume
 ### Examples
 
 ```python
-# Two arguments
-print(pow(3, 2))  # Output: 9
+# Using two arguments (base ** exp)
+print(pow(2, 3))    # Output: 8
+print(pow(3, 2))    # Output: 9
+print(pow(2, -3))   # Output: 0.125 (equivalent to 1 / (2**3))
 
-# Three arguments
+# Using three arguments ((base ** exp) % mod)
 print(pow(3, 2, 4)) # Output: 1 (since 3**2 is 9, and 9 % 4 is 1)
-
-# Basic exponentiation
-print(pow(2, 3)) # 8
-
-# Using three arguments (modular exponentiation)
-print(pow(2, 3, 5)) # 3  (since 2^3 = 8, and 8 % 5 = 3)
-
-# Works with negative exponents (returns float)
-print(pow(2, -3)) # 0.125  (since 2^(-3) = 1/8)
+print(pow(2, 3, 5)) # Output: 3 (since 2**3 is 8, and 8 % 5 is 3)
 ```
 
-## See also
+## Relevant links
 
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/builtin/divmod">divmod()</router-link>
+- <router-link to="/builtin/abs">abs()</router-link>
 - <router-link to="/builtin/int">int()</router-link>
 - <router-link to="/builtin/float">float()</router-link>

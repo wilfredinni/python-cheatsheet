@@ -18,45 +18,36 @@ Python staticmethod() built-in function
 
 ## Introduction
 
-The @staticmethod is a function decorator that will transform a class method into a static method that functions in a similar behavior to a C++ or other oop language static methods.
+The `@staticmethod` decorator transforms a method so that it belongs to a class but does not receive the class or instance as the first argument. This is useful for creating utility functions that have a logical connection to a class but do not depend on class or instance state.
 
-You can turn a class method into a static method by applying the <code>@staticmethod</code> decorator to a function in a class. For example:
+A static method can be called either on the class itself or on an instance.
 
-```python
->>> class C:
->>>    @staticmethod
->>>    def function(): ....
-```
+### Example
 
-Static methods can be called on the class itself like
+Here is how you define and call a static method:
 
 ```python
->>> class Class:
->>>    @staticmethod
->>>    def function():
->>>        print("X")
->>>
->>> Class.function()
->>> # X
+class MathHelper:
+    @staticmethod
+    def add(x, y):
+        return x + y
+
+# Call on the class
+result1 = MathHelper.add(5, 3)
+print(result1)  # Output: 8
+
+# Call on an instance
+helper = MathHelper()
+result2 = helper.add(10, 20)
+print(result2) # Output: 30
 ```
 
-Or on an instance of the class like
+A static method does not have access to the class (`cls`) or the instance (`self`). It's essentially a regular function namespaced within the class.
 
-```python
->>> class Class:
->>>    @staticmethod
->>>    def function():
->>>        print("X")
->>>
->>> new_class = Class()
->>> new_class.function()
->>> # X
-```
+## Relevant links
 
-The `@staticmethod` is in the form of a decorator the basics being it is a function that will return another function. This will be documented at a later time.
-
-## See also
-
-- <router-link to="/cheatsheet/oop-basics/">OOP Basics</router-link>
-- <router-link to="/cheatsheet/decorators/">Decorators</router-link>
-- <router-link to="/builtin/classmethod/">classmethod()</router-link>
+- <router-link to="/cheatsheet/oop-basics">Cheatsheet: OOP Basics</router-link>
+- <router-link to="/cheatsheet/decorators">Cheatsheet: Decorators</router-link>
+- <router-link to="/cheatsheet/functions">Cheatsheet: Functions</router-link>
+- <router-link to="/builtin/classmethod">classmethod()</router-link>
+- <router-link to="/builtin/property">property()</router-link>

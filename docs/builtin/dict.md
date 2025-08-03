@@ -53,6 +53,11 @@ Creating an empty dictionary:
 # <class 'dict'>
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/iter">`iter()`</router-link>
+- <router-link :to="'/builtin/iter'">`iter()`</router-link>
+- <router-link :to="'/cheatsheet/dictionaries'">Dictionaries</router-link>
+- <router-link :to="'/blog/python-data-types'">Python Data Types</router-link>
+- <router-link :to="'/builtin/len'">`len()`</router-link>
+- <router-link :to="'/builtin/list'">`list()`</router-link>
+- <router-link :to="'/builtin/tuple'">`tuple()`</router-link>

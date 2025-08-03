@@ -42,10 +42,13 @@ The `int()` function in Python is a built-in function that allows you to convert
 # 0
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/float">float()</router-link>
-- <router-link to="/builtin/str">str()</router-link>
-- <router-link to="/builtin/hex">hex()</router-link>
-- <router-link to="/builtin/oct">oct()</router-link>
-- <router-link to="/builtin/bin">bin()</router-link>
+- <router-link :to="'/builtin/float'">float()</router-link>
+- <router-link :to="'/builtin/str'">str()</router-link>
+- <router-link :to="'/builtin/hex'">hex()</router-link>
+- <router-link :to="'/builtin/oct'">oct()</router-link>
+- <router-link :to="'/builtin/bin'">bin()</router-link>
+- <router-link :to="'/blog/python-data-types'">Python Data Types</router-link>
+- <router-link :to="'/builtin/bool'">bool()</router-link>
+- <router-link :to="'/builtin/complex'">complex()</router-link>

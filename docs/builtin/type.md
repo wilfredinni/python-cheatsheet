@@ -45,7 +45,7 @@ The `type()` function in Python is a built-in function that returns the type of 
 # <class 'dict'>
 ```
 
-## See also
+## Relevant links
 
 - <router-link to="/blog/python-data-types/">Python Data Types</router-link>
 - <router-link to="/builtin/isinstance/">isinstance()</router-link>

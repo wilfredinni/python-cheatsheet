@@ -46,7 +46,12 @@ p = Person("John")
 print(repr(p))  # Output: "Person(name='John')"
 ```
 
-## See also
+## Relevant links
 
+- <router-link to="/cheatsheet/oop-basics">Cheatsheet: OOP Basics</router-link>
+- <router-link to="/cheatsheet/debugging">Cheatsheet: Debugging</router-link>
+- <router-link to="/cheatsheet/string-formatting">Cheatsheet: String Formatting</router-link>
 - <router-link to="/builtin/str">str()</router-link>
+- <router-link to="/builtin/ascii">ascii()</router-link>
 - <router-link to="/builtin/eval">eval()</router-link>
+- <router-link to="/builtin/format">format()</router-link>

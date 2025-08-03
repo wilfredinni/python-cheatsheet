@@ -36,7 +36,10 @@ The `eval()` function in Python is a built-in function that parses a string as a
 
 The `eval()` function can also be used with the <router-link to="/builtin/print">print()</router-link> function to display output to the console.
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/compile">`compile()`</router-link>
-- <router-link to="/builtin/exec">`exec()`</router-link>
+- <router-link :to="'/builtin/compile'">`compile()`</router-link>
+- <router-link :to="'/builtin/exec'">`exec()`</router-link>
+- <router-link :to="'/builtin/globals'">`globals()`</router-link>
+- <router-link :to="'/builtin/locals'">`locals()`</router-link>
+- <router-link :to="'/cheatsheet/debugging'">Debugging</router-link>

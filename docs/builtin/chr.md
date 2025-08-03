@@ -44,6 +44,9 @@ print(ord('x'))
 
 The `chr()` function can be useful when working with text and character data, particularly when working with Unicode characters. For example, you can use it to convert an integer representing a Unicode code point to the corresponding character, or to generate a string of characters from a range of integers.
 
-## See Also
+## Relevant links
 
 - <router-link :to="'/builtin/ord'">ord()</router-link>
+- <router-link :to="'/builtin/ascii'">ascii()</router-link>
+- <router-link :to="'/cheatsheet/manipulating-strings'">Manipulating Strings</router-link>
+- <router-link :to="'/blog/python-data-types'">Python Data Types</router-link>

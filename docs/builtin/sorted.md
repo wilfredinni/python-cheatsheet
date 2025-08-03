@@ -40,28 +40,20 @@ sorted_words = sorted(words)
 print(sorted_words)  # Output: ['apple', 'banana', 'cherry']
 ```
 
-
+**Sorting in reverse order:**
 
 ```python
->>> sorted([1, 2, 3, 7, 4])
-# [1, 2, 3, 4, 7]
-
->>> sorted(['a', 'h', 'e'])
-# ['a', 'e', 'h']
-
->>> sorted([1, 2, 3, 7, 4], reverse=True)
-# [7, 4, 3, 2, 1]
-
->>> sorted(['a', 'h', 'e'], reverse=True)
-# ['h', 'e', 'a']
+numbers = [3, 1, 4, 1, 5, 9, 2, 6]
+sorted_numbers_desc = sorted(numbers, reverse=True)
+print(sorted_numbers_desc) # Output: [9, 6, 5, 4, 3, 2, 1, 1]
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/cheatsheet/lists-and-tuples/">Lists and Tuples</router-link>
-- <router-link to="/builtin/slice/">slice()</router-link>
-- <router-link to="/builtin/sum/">sum()</router-link>
-- <router-link to="/builtin/zip/">zip()</router-link>
-- <router-link to="/builtin/map/">map()</router-link>
-- <router-link to="/builtin/filter/">filter()</router-link>
-- <router-link to="/builtin/enumerate/">enumerate()</router-link>
+- <router-link to="/cheatsheet/lists-and-tuples">Cheatsheet: Lists and Tuples</router-link>
+- <router-link to="/cheatsheet/dictionaries">Cheatsheet: Dictionaries</router-link>
+- <router-link to="/cheatsheet/functions">Cheatsheet: Functions (for key argument)</router-link>
+- <router-link to="/builtin/list">list()</router-link>
+- <router-link to="/builtin/reversed">reversed()</router-link>
+- <router-link to="/builtin/min">min()</router-link>
+- <router-link to="/builtin/max">max()</router-link>

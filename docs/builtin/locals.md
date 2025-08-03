@@ -34,6 +34,10 @@ my_function("hello", "world")
 # {'arg1': 'hello', 'arg2': 'world', 'local_var': 'I am local'}
 ```
 
-## See also
+## Relevant links
 
+- <router-link to="/cheatsheet/debugging">Cheatsheet: Debugging</router-link>
+- <router-link to="/cheatsheet/functions">Cheatsheet: Functions</router-link>
+- <router-link to="/cheatsheet/dictionaries">Cheatsheet: Dictionaries</router-link>
 - <router-link to="/builtin/globals">globals()</router-link>
+- <router-link to="/builtin/dir">dir()</router-link>

@@ -42,6 +42,8 @@ The `breakpoint()` function in Python, introduced in Python 3.7, provides an eas
 # (Pdb)
 ```
 
-## See Also
+## Relevant links
 
-- <router-link :to="'/modules/pdb'">pdb module</router-link>
+- <router-link :to="'/cheatsheet/debugging'">Debugging</router-link>
+- <router-link :to="'/builtin/print'">print()</router-link>
+- <router-link :to="'/cheatsheet/control-flow'">Control Flow</router-link>

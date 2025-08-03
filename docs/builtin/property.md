@@ -66,8 +66,11 @@ print(p.name)
 # John
 ```
 
-## See also
+## Relevant links
 
+- <router-link to="/cheatsheet/oop-basics">Cheatsheet: OOP Basics</router-link>
+- <router-link to="/cheatsheet/decorators">Cheatsheet: Decorators</router-link>
+- <router-link to="/cheatsheet/dataclasses">Cheatsheet: Dataclasses</router-link>
 - <router-link to="/builtin/getattr">getattr()</router-link>
 - <router-link to="/builtin/setattr">setattr()</router-link>
 - <router-link to="/builtin/delattr">delattr()</router-link>

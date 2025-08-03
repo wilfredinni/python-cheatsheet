@@ -47,8 +47,12 @@ def my_function():
 my_function() # Output: {'x': 10}
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/cheatsheet/basics/">Basics</router-link>
-- <router-link to="/builtin/globals/">globals()</router-link>
-- <router-link to="/builtin/locals/">locals()</router-link>
+- <router-link to="/cheatsheet/oop-basics">Cheatsheet: OOP Basics</router-link>
+- <router-link to="/cheatsheet/debugging">Cheatsheet: Debugging</router-link>
+- <router-link to="/cheatsheet/dictionaries">Cheatsheet: Dictionaries</router-link>
+- <router-link to="/builtin/dir">dir()</router-link>
+- <router-link to="/builtin/object">object()</router-link>
+- <router-link to="/builtin/globals">globals()</router-link>
+- <router-link to="/builtin/locals">locals()</router-link>

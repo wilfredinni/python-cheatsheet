@@ -42,6 +42,10 @@ The `bool()` function in Python is a built-in function that converts a value to 
 # True
 ```
 
-## See Also
+## Relevant links
 
 - <router-link :to="'/builtin/int'">int()</router-link>
+- <router-link :to="'/builtin/all'">all()</router-link>
+- <router-link :to="'/builtin/any'">any()</router-link>
+- <router-link :to="'/cheatsheet/control-flow'">Control Flow</router-link>
+- <router-link :to="'/blog/python-data-types'">Python Data Types</router-link>

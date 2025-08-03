@@ -104,7 +104,7 @@ You can use zip in list comprehensions for more concise code.
 # [5, 7, 9]
 ```
 
-## See also
+## Relevant links
 
 - <router-link to="/cheatsheet/lists-and-tuples/">Lists and Tuples</router-link>
 - <router-link to="/cheatsheet/comprehensions/">Comprehensions</router-link>

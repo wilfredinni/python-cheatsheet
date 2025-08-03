@@ -105,7 +105,11 @@ user_input = input("Enter code to execute: ")
 exec(user_input)  # Caution: This can be a security risk if not properly sanitized.
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/compile">`compile()`</router-link>
-- <router-link to="/builtin/eval">`eval()`</router-link>
+- <router-link :to="'/builtin/compile'">`compile()`</router-link>
+- <router-link :to="'/builtin/eval'">`eval()`</router-link>
+- <router-link :to="'/builtin/globals'">`globals()`</router-link>
+- <router-link :to="'/builtin/locals'">`locals()`</router-link>
+- <router-link :to="'/cheatsheet/exception-handling'">Exception Handling</router-link>
+- <router-link :to="'/cheatsheet/debugging'">Debugging</router-link>

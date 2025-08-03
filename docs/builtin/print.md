@@ -50,7 +50,12 @@ print('cats', 'dogs', 'mice', sep=',')
 # cats,dogs,mice
 ```
 
-## See also
+## Relevant links
 
+- <router-link to="/cheatsheet/string-formatting">Cheatsheet: String Formatting</router-link>
+- <router-link to="/cheatsheet/manipulating-strings">Cheatsheet: Manipulating Strings</router-link>
+- <router-link to="/builtin/format">format()</router-link>
+- <router-link to="/builtin/input">input()</router-link>
+- <router-link to="/builtin/open">open()</router-link>
 - <router-link to="/builtin/str">str()</router-link>
 - <router-link to="/builtin/repr">repr()</router-link>

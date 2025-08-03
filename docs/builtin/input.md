@@ -42,6 +42,11 @@ This function takes the input from the user and converts it into a string:
 # Hi, Martha
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/print">print()</router-link>
+- <router-link :to="'/builtin/print'">print()</router-link>
+- <router-link :to="'/builtin/str'">str()</router-link>
+- <router-link :to="'/builtin/int'">int()</router-link>
+- <router-link :to="'/builtin/float'">float()</router-link>
+- <router-link :to="'/cheatsheet/string-formatting'">String Formatting</router-link>
+- <router-link :to="'/cheatsheet/manipulating-strings'">Manipulating Strings</router-link>

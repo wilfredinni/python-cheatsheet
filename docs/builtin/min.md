@@ -41,6 +41,9 @@ print(min(letters)) # Output: 'a'
 print(min(10, 20, 5)) # Output: 5
 ```
 
-## See also
+## Relevant links
 
+- <router-link to="/cheatsheet/lists-and-tuples">Cheatsheet: Lists and Tuples</router-link>
 - <router-link to="/builtin/max">max()</router-link>
+- <router-link to="/builtin/sorted">sorted()</router-link>
+- <router-link to="/builtin/sum">sum()</router-link>

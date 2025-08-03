@@ -58,8 +58,12 @@ Return the the number of items of an object:
 # the list is not empty!
 ```
 
-## See also
+## Relevant links
 
+- <router-link to="/cheatsheet/lists-and-tuples">Cheatsheet: Lists and Tuples</router-link>
+- <router-link to="/cheatsheet/dictionaries">Cheatsheet: Dictionaries</router-link>
+- <router-link to="/cheatsheet/sets">Cheatsheet: Sets</router-link>
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
 - <router-link to="/builtin/list">list()</router-link>
 - <router-link to="/builtin/tuple">tuple()</router-link>
 - <router-link to="/builtin/dict">dict()</router-link>

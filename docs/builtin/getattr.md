@@ -52,9 +52,12 @@ print(value)  # Output: Hello, World!
 # If the 'attribute' does not exist then 'Nothing found' will be printed.
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/hasattr">`hasattr()`</router-link>
-- <router-link to="/builtin/delattr">`delattr()`</router-link>
+- <router-link :to="'/builtin/hasattr'">`hasattr()`</router-link>
+- <router-link :to="'/builtin/delattr'">`delattr()`</router-link>
+- <router-link :to="'/builtin/setattr'">`setattr()`</router-link>
+- <router-link :to="'/cheatsheet/oop-basics'">OOP Basics</router-link>
+- <router-link :to="'/builtin/dir'">`dir()`</router-link>
 
 

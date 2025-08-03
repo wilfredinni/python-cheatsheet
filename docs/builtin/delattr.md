@@ -57,7 +57,9 @@ except AttributeError as e:
     print(f"Error: {e}")
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/setattr">`setattr()`</router-link>
-- <router-link to="/builtin/getattr">`getattr()`</router-link>
+- <router-link :to="'/builtin/setattr'">`setattr()`</router-link>
+- <router-link :to="'/builtin/getattr'">`getattr()`</router-link>
+- <router-link :to="'/builtin/hasattr'">`hasattr()`</router-link>
+- <router-link :to="'/cheatsheet/oop-basics'">OOP Basics</router-link>

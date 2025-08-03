@@ -34,7 +34,9 @@ print("My name is {0} and I work for {1}.".format(name, company))
 print(f"My name is {name} and I work for {company}.")
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/str/">str()</router-link>
-- <router-link to="/cheatsheet/strings/">Strings Cheatsheet</router-link>
+- <router-link :to="'/builtin/str/'">str()</router-link>
+- <router-link :to="'/cheatsheet/string-formatting'">String Formatting</router-link>
+- <router-link :to="'/cheatsheet/manipulating-strings'">Manipulating Strings</router-link>
+- <router-link :to="'/builtin/print'">print()</router-link>

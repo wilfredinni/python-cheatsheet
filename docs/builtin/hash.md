@@ -43,7 +43,11 @@ except TypeError as e:
 # Output: unhashable type: 'list'
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/cheatsheet/dictionaries">Dictionaries</router-link>
-- <router-link to="/builtin/id">id()</router-link>
+- <router-link :to="'/cheatsheet/dictionaries'">Dictionaries</router-link>
+- <router-link :to="'/builtin/id'">id()</router-link>
+- <router-link :to="'/cheatsheet/sets'">Sets</router-link>
+- <router-link :to="'/blog/python-sets-what-why-how'">Python Sets: What, Why, and How</router-link>
+- <router-link :to="'/builtin/frozenset'">frozenset()</router-link>
+- <router-link :to="'/builtin/object'">object()</router-link>

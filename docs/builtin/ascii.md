@@ -33,7 +33,10 @@ The `ascii()` function in Python is a built-in function that returns a string co
 # ['A', '\xeb']
 ```
 
-## See Also
+## Relevant links
 
 - <router-link :to="'/builtin/repr'">repr()</router-link>
 - <router-link :to="'/builtin/str'">str()</router-link>
+- <router-link :to="'/builtin/chr'">chr()</router-link>
+- <router-link :to="'/builtin/ord'">ord()</router-link>
+- <router-link :to="'/cheatsheet/manipulating-strings'">Manipulating Strings</router-link>

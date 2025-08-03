@@ -51,6 +51,10 @@ In the above example, `my_function` is a function and it is callable, `MyClass` 
 
 The `callable()` function can be useful in situations where you need to determine if an object can be invoked as a function, such as when you are working with callbacks or other types of function pointers.
 
-## See Also
+## Relevant links
 
 - <router-link :to="'/builtin/hasattr'">hasattr()</router-link>
+- <router-link :to="'/cheatsheet/functions'">Functions</router-link>
+- <router-link :to="'/cheatsheet/oop-basics'">OOP Basics</router-link>
+- <router-link :to="'/builtin/getattr'">getattr()</router-link>
+- <router-link :to="'/builtin/isinstance'">isinstance()</router-link>

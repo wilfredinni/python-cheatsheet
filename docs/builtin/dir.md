@@ -72,7 +72,11 @@ print([name for name in dir(math) if not name.startswith("__")])
 # Output: ['acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', ... ]
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/globals">`globals()`</router-link>
-- <router-link to="/builtin/locals">`locals()`</router-link>
+- <router-link :to="'/builtin/globals'">`globals()`</router-link>
+- <router-link :to="'/builtin/locals'">`locals()`</router-link>
+- <router-link :to="'/builtin/hasattr'">`hasattr()`</router-link>
+- <router-link :to="'/builtin/getattr'">`getattr()`</router-link>
+- <router-link :to="'/cheatsheet/debugging'">Debugging</router-link>
+- <router-link :to="'/cheatsheet/oop-basics'">OOP Basics</router-link>

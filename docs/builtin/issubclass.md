@@ -33,6 +33,9 @@ print(issubclass(Second, First))  # True
 print(issubclass(First, Second)) # False
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/isinstance">`isinstance()`</router-link>
+- <router-link :to="'/builtin/isinstance'">`isinstance()`</router-link>
+- <router-link :to="'/builtin/type'">`type()`</router-link>
+- <router-link :to="'/cheatsheet/oop-basics'">OOP Basics</router-link>
+- <router-link :to="'/builtin/object'">`object()`</router-link>

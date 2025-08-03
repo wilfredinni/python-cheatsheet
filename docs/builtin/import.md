@@ -41,6 +41,10 @@ math_module = importlib.import_module('math')
 print(math_module.sqrt(4)) # Output: 2.0
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/modules/importlib">importlib module</router-link>
+- <router-link :to="'/modules/importlib'">importlib module</router-link>
+- <router-link :to="'/cheatsheet/setup-py'">setup.py</router-link>
+- <router-link :to="'/blog/python-projects-with-poetry-and-vscode-part-1'">Python Projects with Poetry and VS Code (Part 1)</router-link>
+- <router-link :to="'/builtin/globals'">globals()</router-link>
+- <router-link :to="'/builtin/locals'">locals()</router-link>

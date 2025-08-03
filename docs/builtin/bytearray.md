@@ -40,7 +40,9 @@ Another way is to use the bytes() function and then convert it to a bytearray ob
 # bytearray(b'Hello, World!')
 ```
 
-## See Also
+## Relevant links
 
 - <router-link :to="'/builtin/bytes'">bytes()</router-link>
 - <router-link :to="'/builtin/memoryview'">memoryview()</router-link>
+- <router-link :to="'/cheatsheet/reading-and-writing-files'">Reading and Writing Files</router-link>
+- <router-link :to="'/blog/python-data-types'">Python Data Types</router-link>

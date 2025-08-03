@@ -37,7 +37,9 @@ print(data)
 # b'Hello, World!'
 ```
 
-## See Also
+## Relevant links
 
 - <router-link :to="'/builtin/bytearray'">bytearray()</router-link>
 - <router-link :to="'/builtin/memoryview'">memoryview()</router-link>
+- <router-link :to="'/cheatsheet/reading-and-writing-files'">Reading and Writing Files</router-link>
+- <router-link :to="'/blog/python-data-types'">Python Data Types</router-link>

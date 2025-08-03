@@ -42,14 +42,18 @@ The `str()` function in Python is a built-in function that returns a string vers
 # ''
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/cheatsheet/manipulating-strings/">Manipulating Strings</router-link>
-- <router-link to="/cheatsheet/string-formatting/">String Formatting</router-link>
-- <router-link to="/builtin/int/">int()</router-link>
-- <router-link to="/builtin/float/">float()</router-link>
-- <router-link to="/builtin/list/">list()</router-link>
-- <router-link to="/builtin/tuple/">tuple()</router-link>
-- <router-link to="/builtin/dict/">dict()</router-link>
-- <router-link to="/builtin/set/">set()</router-link>
-- <router-link to="/blog/python-data-types/">Python Data Types</router-link>
+- <router-link to="/cheatsheet/manipulating-strings">Cheatsheet: Manipulating Strings</router-link>
+- <router-link to="/cheatsheet/string-formatting">Cheatsheet: String Formatting</router-link>
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/builtin/repr">repr()</router-link>
+- <router-link to="/builtin/ascii">ascii()</router-link>
+- <router-link to="/builtin/bytes">bytes()</router-link>
+- <router-link to="/builtin/format">format()</router-link>
+- <router-link to="/builtin/int">int()</router-link>
+- <router-link to="/builtin/float">float()</router-link>
+- <router-link to="/builtin/list">list()</router-link>
+- <router-link to="/builtin/tuple">tuple()</router-link>
+- <router-link to="/builtin/dict">dict()</router-link>
+- <router-link to="/builtin/set">set()</router-link>

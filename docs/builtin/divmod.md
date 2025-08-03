@@ -32,7 +32,10 @@ print(divmod(10, 2))  # Output: (5, 0)
 print(divmod(7, 2))   # Output: (3, 1)
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/cheatsheet/numbers">Numbers</router-link>
-- <router-link to="/cheatsheet/operators">Operators</router-link>
+- <router-link :to="'/cheatsheet/lists-and-tuples'">Lists and Tuples</router-link>
+- <router-link :to="'/blog/python-data-types'">Python Data Types</router-link>
+- <router-link :to="'/builtin/int'">`int()`</router-link>
+- <router-link :to="'/builtin/float'">`float()`</router-link>
+- <router-link :to="'/builtin/tuple'">`tuple()`</router-link>

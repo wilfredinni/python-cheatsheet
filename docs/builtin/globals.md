@@ -50,6 +50,10 @@ create_global()
 print(new_global)  # Output: This was created dynamically
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/locals">`locals()`</router-link>
+- <router-link :to="'/builtin/locals'">`locals()`</router-link>
+- <router-link :to="'/builtin/dir'">`dir()`</router-link>
+- <router-link :to="'/builtin/exec'">`exec()`</router-link>
+- <router-link :to="'/builtin/eval'">`eval()`</router-link>
+- <router-link :to="'/cheatsheet/functions'">Functions</router-link>

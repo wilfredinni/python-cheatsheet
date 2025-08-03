@@ -47,6 +47,9 @@ if __name__ == "__main__":
     # 1
 ```
 
-## See also
+## Relevant links
 
 - <router-link to="/builtin/staticmethod">staticmethod()</router-link>
+- <router-link :to="'/cheatsheet/oop-basics'">OOP Basics</router-link>
+- <router-link :to="'/cheatsheet/decorators'">Decorators</router-link>
+- <router-link :to="'/cheatsheet/functions'">Functions</router-link>

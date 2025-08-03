@@ -49,6 +49,12 @@ print(next(my_iter))  # Output: 3
 # 3
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/next">`next()`</router-link>
+- <router-link :to="'/builtin/next'">`next()`</router-link>
+- <router-link :to="'/cheatsheet/control-flow'">Control Flow</router-link>
+- <router-link :to="'/cheatsheet/lists-and-tuples'">Lists and Tuples</router-link>
+- <router-link :to="'/builtin/enumerate'">`enumerate()`</router-link>
+- <router-link :to="'/builtin/zip'">`zip()`</router-link>
+- <router-link :to="'/builtin/map'">`map()`</router-link>
+- <router-link :to="'/builtin/filter'">`filter()`</router-link>

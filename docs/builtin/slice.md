@@ -59,13 +59,17 @@ Slicing the complete list will perform a copy:
 # ['cat', 'bat', 'rat', 'elephant']
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/cheatsheet/lists-and-tuples/">Lists and Tuples</router-link>
-- <router-link to="/cheatsheet/comprehensions/">Comprehensions</router-link>
-- <router-link to="/builtin/sorted/">sorted()</router-link>
-- <router-link to="/builtin/sum/">sum()</router-link>
-- <router-link to="/builtin/zip/">zip()</router-link>
-- <router-link to="/builtin/map/">map()</router-link>
-- <router-link to="/builtin/filter/">filter()</router-link>
-- <router-link to="/builtin/enumerate/">enumerate()</router-link>
+- <router-link to="/cheatsheet/lists-and-tuples">Cheatsheet: Lists and Tuples</router-link>
+- <router-link to="/cheatsheet/manipulating-strings">Cheatsheet: Manipulating Strings</router-link>
+- <router-link to="/cheatsheet/comprehensions">Cheatsheet: Comprehensions</router-link>
+- <router-link to="/modules/itertools-module">Module: itertools (islice)</router-link>
+- <router-link to="/builtin/range">range()</router-link>
+- <router-link to="/builtin/len">len()</router-link>
+- <router-link to="/builtin/reversed">reversed()</router-link>
+- <router-link to="/builtin/sorted">sorted()</router-link>
+- <router-link to="/builtin/enumerate">enumerate()</router-link>
+- <router-link to="/builtin/zip">zip()</router-link>
+- <router-link to="/builtin/map">map()</router-link>
+- <router-link to="/builtin/filter">filter()</router-link>

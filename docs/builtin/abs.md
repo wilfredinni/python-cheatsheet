@@ -39,7 +39,7 @@ The `abs()` function in Python is a built-in function that returns the absolute 
 # 16
 ```
 
-## See Also
+## Relevant links
 
 - <router-link :to="'/builtin/float'">float()</router-link>
 - <router-link :to="'/builtin/int'">`int()`</router-link>

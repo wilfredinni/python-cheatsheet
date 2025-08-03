@@ -31,8 +31,11 @@ The <router-link to="/builtin/float">float()</router-link> function returns a fl
 # 10.0
 ```
 
-## See also
+## Relevant links
 
-- <router-link to="/builtin/int/">int()</router-link>
-- <router-link to="/builtin/complex/">complex()</router-link>
-- <router-link to="/blog/python-data-types/">Python Data Types</router-link>
+- <router-link :to="'/builtin/int/'">int()</router-link>
+- <router-link :to="'/builtin/complex/'">complex()</router-link>
+- <router-link :to="'/blog/python-data-types/'">Python Data Types</router-link>
+- <router-link :to="'/builtin/str'">str()</router-link>
+- <router-link :to="'/builtin/round'">round()</router-link>
+- <router-link :to="'/cheatsheet/string-formatting'">String Formatting</router-link>
