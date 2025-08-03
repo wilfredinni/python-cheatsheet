@@ -52,3 +52,7 @@ Creating an empty dictionary:
 >>> type(a)
 # <class 'dict'>
 ```
+
+## See also
+
+- <router-link to="/builtin/iter">`iter()`</router-link>

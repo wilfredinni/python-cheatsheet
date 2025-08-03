@@ -22,7 +22,6 @@ The `compile()` function in Python is a built-in function that is used to conver
 
 ## Example
 
-```python
 Here's a basic example of how it works:
 
 ```python
@@ -52,3 +51,8 @@ exec(code_obj)
 ```
 
 In this example, a string containing Python code is compiled into a code object using `compile()`, and then executed with `exec()`. The function `hello_world()` defined in the string is then available to be called.
+
+## See also
+
+- <router-link to="/builtin/exec">exec()</router-link>
+- <router-link to="/builtin/eval">eval()</router-link>

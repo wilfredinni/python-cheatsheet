@@ -71,3 +71,8 @@ import math
 print([name for name in dir(math) if not name.startswith("__")])
 # Output: ['acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', ... ]
 ```
+
+## See also
+
+- <router-link to="/builtin/globals">`globals()`</router-link>
+- <router-link to="/builtin/locals">`locals()`</router-link>

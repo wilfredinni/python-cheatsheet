@@ -30,3 +30,9 @@ The <router-link to="/builtin/float">float()</router-link> function returns a fl
 >>> float(10)
 # 10.0
 ```
+
+## See also
+
+- <router-link to="/builtin/int/">int()</router-link>
+- <router-link to="/builtin/complex/">complex()</router-link>
+- <router-link to="/blog/python-data-types/">Python Data Types</router-link>

@@ -33,3 +33,8 @@ print("My name is {0} and I work for {1}.".format(name, company))
 # Formatting string (faster and easier)
 print(f"My name is {name} and I work for {company}.")
 ```
+
+## See also
+
+- <router-link to="/builtin/str/">str()</router-link>
+- <router-link to="/cheatsheet/strings/">Strings Cheatsheet</router-link>

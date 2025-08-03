@@ -46,3 +46,9 @@ The `filter()` function constructs an iterator from those elements of the iterab
 ```
 
 In this example, the `is_even` function is defined to determine whether a number is even or not. The filter method takes `two arguments`: the `first argument` is the function to apply to each element of the list, and the `second argument` is the list to be filtered. The filter method returns an <router-link to="/builtin/iter">iterator</router-link>, which is then converted to a list and stored in the even_numbers variable. The final output is the list of even numbers from the original list.
+
+## See also
+
+- <router-link to="/builtin/map">map()</router-link>: Apply a function to every item of an iterable and return an iterator of the results.
+- <router-link to="/builtin/iter">iter()</router-link>: Return an iterator object.
+- <router-link to="/blog/python-comprehensions-step-by-step">List Comprehensions</router-link>: A concise way to create lists, often used as an alternative to `filter()`.

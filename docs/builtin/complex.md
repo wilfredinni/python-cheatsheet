@@ -32,3 +32,8 @@ print(complex(5))     # Output: (5+0j)
 # Create a complex number from a string
 print(complex("2+3j")) # Output: (2+3j)
 ```
+
+## See also
+
+- <router-link to="/builtin/int">`int()`</router-link>
+- <router-link to="/builtin/float">`float()`</router-link>

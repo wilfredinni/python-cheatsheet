@@ -104,3 +104,8 @@ exec(code)
 user_input = input("Enter code to execute: ")
 exec(user_input)  # Caution: This can be a security risk if not properly sanitized.
 ```
+
+## See also
+
+- <router-link to="/builtin/compile">`compile()`</router-link>
+- <router-link to="/builtin/eval">`eval()`</router-link>

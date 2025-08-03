@@ -56,3 +56,8 @@ try:
 except AttributeError as e:
     print(f"Error: {e}")
 ```
+
+## See also
+
+- <router-link to="/builtin/setattr">`setattr()`</router-link>
+- <router-link to="/builtin/getattr">`getattr()`</router-link>
