@@ -12,8 +12,8 @@ const reader = useReaderStore()
     >
       <!-- article -->
       <div
-        class="min-w-0 flex-auto px-4 py-12 xl:pr-16"
-        :class="[reader.isActive ? 'max-w-2xl lg:max-w-4xl' : 'lg:max-w-4xl']"
+        class="min-w-0 flex-auto px-4 py-12 xl:px-16"
+        :class="[reader.isActive ? 'max-w-4xl lg:max-w-6xl' : 'lg:max-w-6xl']"
       >
         <article>
           <prose><RouterView /></prose>
@@ -29,7 +29,7 @@ const reader = useReaderStore()
       <!-- table of content -->
       <div
         v-show="!reader.isActive"
-        class="hidden w-64 overflow-x-hidden xl:sticky xl:top-[4.3rem] xl:-mr-6 xl:block xl:h-[calc(100vh-3.6rem)] xl:flex-none xl:overflow-y-auto xl:py-10 xl:pr-6"
+        class="hidden w-72 overflow-x-hidden xl:sticky xl:top-[4.3rem] xl:-mr-6 xl:block xl:h-[calc(100vh-3.6rem)] xl:flex-none xl:overflow-y-auto xl:py-10 xl:pr-6"
       >
         <the-toc />
       </div>
