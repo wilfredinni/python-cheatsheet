@@ -2,68 +2,177 @@
 title: 'Contributing - Python Cheatsheet'
 description: The following is a set of guidelines for contributing to the Python cheatsheet. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document.
 date: June 09, 2018
-updated: July 3, 2022
+updated: August 03, 2025
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
 Contributing
 </base-title>
 
-First off, thank you for taking the time to contribute!
+First off, thank you for considering contributing to the Python Cheatsheet! It's people like you that make this project a great resource for the Python community.
 
-The following is a set of guidelines for contributing to the Python cheatsheet. These are mostly guidelines, not rules. Use your best judgment, and please don't hesitate to propose changes to [this document](https://github.com/wilfredinni/python-cheatsheet/blob/master/src/pages/contributing.md).
+Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue, assessing changes, and helping you finalize your pull requests.
+
+The following is a set of guidelines for contributing. These are mostly guidelines, not rules. Use your best judgment, and please don't hesitate to propose changes to [this document](https://github.com/wilfredinni/python-cheatsheet/blob/master/src/pages/contributing.md).
 
 ## Code of Conduct
 
 This project and everyone who participates in it is governed by the [Contributor Covenant Code of Conduct](https://github.com/wilfredinni/python-cheatsheet/blob/master/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to services@github.com.
 
-## Running the project locally
+## How Can I Contribute?
 
-1.  Install the [pnpm](https://pnpm.io/installation) package manager
+There are many ways to contribute, from writing code and documentation to submitting bug reports and feature requests.
+
+-   **Reporting Bugs:** If you find a bug, please open an [Issue](https://github.com/wilfredinni/python-cheatsheet/issues) and provide as much information as possible.
+-   **Suggesting Enhancements:** Have an idea for a new feature or an improvement to an existing one? Open an [Issue](https://github.com/wilfredinni/python-cheatsheet/issues) to discuss it.
+-   **Writing Content:** You can add new cheatsheet pages, blog posts, or improve existing content.
+-   **Pull Requests:** If you're ready to contribute code or content, we welcome your [Pull Requests](https://github.com/wilfredinni/python-cheatsheet/pulls).
+
+## Getting Started: Setting Up the Project Locally
+
+Ready to start contributing? Here’s how to set up the project on your local machine.
+
+1.  **Fork the Repository**
+
+    Start by [forking the repository](https://github.com/wilfredinni/python-cheatsheet/fork) to your own GitHub account.
+
+2.  **Clone Your Fork**
+
+    Clone your forked repository to your local machine:
+
+    ```bash
+    git clone https://github.com/YOUR_USERNAME/python-cheatsheet.git
+    cd python-cheatsheet
+    ```
+
+3.  **Install pnpm**
+
+    This project uses [pnpm](https://pnpm.io/installation) as its package manager. If you don't have it, install it:
 
     On Linux/macOS:
-
-        curl -fsSL https://get.pnpm.io/install.sh | sh -
+    ```bash
+    curl -fsSL https://get.pnpm.io/install.sh | sh -
+    ```
 
     On Windows (PowerShell):
+    ```bash
+    iwr https://get.pnpm.io/install.ps1 -useb | iex
+    ```
 
-        iwr https://get.pnpm.io/install.ps1 -useb | iex
+4.  **Install Dependencies**
 
-2.  Clone the project, and install the dependencies:
+    Install the project dependencies using pnpm:
 
-        git clone https://github.com/wilfredinni/python-cheatsheet.git
-        cd python-cheatsheet
-        pnpm install
+    ```bash
+    pnpm install
+    ```
 
-3.  Create a new branch:
+5.  **Create a New Branch**
 
-        git branch fix_bug
-        git checkout fix_bug
+    Create a descriptive branch for your changes:
 
-4.  Change/upgrade/add the changes you want
-5.  Update the `README` if needed
-6.  `Add`, `commit` and `push` your changes to GitHub:
+    ```bash
+    git checkout -b your-branch-name
+    ```
+    For example: `git checkout -b feat/add-asyncio-cheatsheet` or `git checkout -b fix/typo-in-basics`.
 
-        git add .
-        git commit -m 'succinct explanation of what changed'
-        git push origin fix_bug
+6.  **Run the Development Server**
 
-7.  Open a [pull request](https://github.com/wilfredinni/python-cheatsheet/pulls)
+    Start the local development server to see your changes live:
 
-## You can:
+    ```bash
+    pnpm dev
+    ```
+    The site will be available at `http://localhost:3333`.
 
-- Submit changes to the cheatsheet
-- Improve existing topics and examples
-- Add new topics or resources
-- Ask for new topics by creating an [Issue](https://github.com/wilfredinni/python-cheatsheet/issues)
-- Read the issues, fork the project and do a [Pull Request](https://github.com/wilfredinni/python-cheatsheet/pulls)
-- Report any kind of error or typo by creating an [Issue](https://github.com/wilfredinni/python-cheatsheet/issues) or fix it with a [Pull Request](https://github.com/wilfredinni/python-cheatsheet/pulls)
+## Making and Submitting Changes
 
-## What you need to know
+### Content Contribution Guide
 
-If you don't know where to start:
+#### Adding a New Cheatsheet Page
 
-- [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-- [Mastering Issues](https://guides.github.com/features/issues/)
-- [Forking Projects](https://guides.github.com/activities/forking/)
-- And read the rest of the [GitHub Guides](https://guides.github.com/)
+1.  Create a new Markdown file in `docs/cheatsheet/`.
+2.  Add the following frontmatter and structure:
+
+    ```markdown
+    ---
+    title: Topic Name - Python Cheatsheet
+    description: Brief description of the topic
+    ---
+
+    <base-title :title="frontmatter.title" :description="frontmatter.description">
+    Topic Name
+    </base-title>
+
+    ## Section 1
+
+    Your content here...
+    ```
+
+3.  Add the new page to the navigation in `src/store/navigation.ts`.
+
+#### Adding a New Blog Post
+
+1.  Create a new Markdown file in `docs/blog/`.
+2.  Use this template for your blog post:
+
+    ```markdown
+    ---
+    title: Post Title - Python Cheatsheet
+    description: Post description
+    date: MMM DD, YYYY
+    updated: MMM DD, YYYY
+    tags: python, topic, level
+    socialImage: /blog/image.jpg
+    ---
+
+    <route lang="yaml">
+    meta:
+        layout: article
+        # You must duplicate the frontmatter here for SSG
+        title: Post Title - Python Cheatsheet
+        description: Post description
+        date: MMM DD, YYYY
+        updated: MMM DD, YYYY
+        tags: [python, topic, level]
+        socialImage: /blog/image.jpg
+    </route>
+
+    <blog-title-header :frontmatter="frontmatter" title="Display Title" />
+
+    Your blog content here...
+    ```
+
+### Running Linters and Type Checking
+
+Before submitting your changes, make sure your code adheres to the project's style and passes all checks:
+
+```bash
+pnpm lint
+pnpm typecheck
+```
+
+### Submitting Your Changes
+
+1.  **Commit Your Changes**
+
+    Add and commit your changes with a clear and descriptive message:
+
+    ```bash
+    git add .
+    git commit -m "feat: Add cheatsheet for XYZ"
+    ```
+
+2.  **Push to Your Fork**
+
+    Push your branch to your fork on GitHub:
+
+    ```bash
+    git push origin your-branch-name
+    ```
+
+3.  **Open a Pull Request**
+
+    Go to the original repository and open a [new pull request](https://github.com/wilfredinni/python-cheatsheet/pulls). Provide a clear title and description of your changes.
+
+Thank you for your contribution!
