@@ -256,3 +256,10 @@ from pathlib import Path
 - Calling `Path.unlink()` will delete the file at path.
 
 - Calling `Path.rmdir()` will delete the folder at path. This folder must be empty of any files or folders.
+
+## Relevant links
+
+- <router-link to="/cheatsheet/reading-and-writing-files">Cheatsheet: Reading and Writing Files</router-link>
+- <router-link to="/modules/os-module">Module: os</router-link>
+- <router-link to="/builtin/open">open()</router-link>
+- <router-link to="/builtin/str">str()</router-link>

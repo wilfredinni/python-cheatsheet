@@ -249,3 +249,11 @@ And can subtract `days`, `seconds` and `microseconds` to a datetime object:
 >>> now - timedelta(days=10, seconds=15)
 # datetime.datetime(2022, 7, 13, 21, 59, 41, 100883)
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/string-formatting">Cheatsheet: String Formatting</router-link>
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/builtin/str">str()</router-link>
+- <router-link to="/builtin/format">format()</router-link>
+- <router-link to="/builtin/print">print()</router-link>

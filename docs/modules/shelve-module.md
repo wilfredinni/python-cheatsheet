@@ -47,3 +47,11 @@ Just like dictionaries, `shelf` values have `keys()` and `values()` methods that
 # ['wife']
 # [['Pretty', 'Lovely', 'Nice']]
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/reading-and-writing-files">Cheatsheet: Reading and Writing Files</router-link>
+- <router-link to="/cheatsheet/dictionaries">Cheatsheet: Dictionaries</router-link>
+- <router-link to="/cheatsheet/context-manager">Cheatsheet: Context Managers</router-link>
+- <router-link to="/builtin/open">open()</router-link>
+- <router-link to="/builtin/dict">dict()</router-link>

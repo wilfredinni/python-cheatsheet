@@ -62,3 +62,14 @@ copy.deepcopy(x[, memo])
 >>> b
 #[[1], [2], [3]]
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/oop-basics">Cheatsheet: OOP Basics</router-link>
+- <router-link to="/cheatsheet/lists-and-tuples">Cheatsheet: Lists and Tuples</router-link>
+- <router-link to="/cheatsheet/dictionaries">Cheatsheet: Dictionaries</router-link>
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/builtin/object">object()</router-link>
+- <router-link to="/builtin/list">list()</router-link>
+- <router-link to="/builtin/dict">dict()</router-link>
+- <router-link to="/builtin/slice">slice()</router-link>

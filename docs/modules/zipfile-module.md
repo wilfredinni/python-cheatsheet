@@ -19,6 +19,8 @@ Python Zipfile Module
 ## Reading ZIP files
 
 ```python
+>>> import zipfile
+>>>
 >>> with zipfile.ZipFile('example.zip') as example_zip:
 ...     print(example_zip.namelist())
 ...     spam_info = example_zip.getinfo('spam.txt')
@@ -82,7 +84,7 @@ This code will create a new ZIP file named new.zip that has the compressed conte
 >>> import datetime
 >>> import zipfile
 >>>
->>> with zipfile.ZipFile(archive_name) as zf:
+>>> with zipfile.ZipFile('example.zip') as zf:
 ...    for info in zf.infolist():
 ...        system = 'Windows' if info.create_system == 0 else 'Unix'
 ...        modified = datetime.datetime(*info.date_time)
@@ -102,3 +104,13 @@ This code will create a new ZIP file named new.zip that has the compressed conte
 # Compressed  : 65 bytes
 # Uncompressed: 76 bytes
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/reading-and-writing-files">Cheatsheet: Reading and Writing Files</router-link>
+- <router-link to="/cheatsheet/file-directory-path">Cheatsheet: File & Directory Path</router-link>
+- <router-link to="/cheatsheet/context-manager">Cheatsheet: Context Managers</router-link>
+- <router-link to="/modules/os-module">Module: os</router-link>
+- <router-link to="/modules/pathlib-module">Module: pathlib</router-link>
+- <router-link to="/builtin/open">open()</router-link>
+- <router-link to="/builtin/bytes">bytes()</router-link>

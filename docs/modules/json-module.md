@@ -107,3 +107,13 @@ The other way around. The `dumps()` method transforms a Python object to a JSON 
 >>> with open("filename.json", "w") as f:
 ...     f.write(json.dumps(person))
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/json-yaml">Cheatsheet: JSON and YAML</router-link>
+- <router-link to="/cheatsheet/dictionaries">Cheatsheet: Dictionaries</router-link>
+- <router-link to="/cheatsheet/reading-and-writing-files">Cheatsheet: Reading and Writing Files</router-link>
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/builtin/dict">dict()</router-link>
+- <router-link to="/builtin/str">str()</router-link>
+- <router-link to="/builtin/open">open()</router-link>

@@ -1,5 +1,5 @@
 ---
-title: Python Pathlib Module - Python Cheatsheet
+title: Python Os Module - Python Cheatsheet
 description: This module provides a portable way of using operating system dependent functionality.
 ---
 
@@ -239,3 +239,12 @@ You can get a relative path from a starting path to another path.
 # The current folder is C:\delicious\walnut\waffles
 # FILE INSIDE C:\delicious\walnut\waffles: butter.txt
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/file-directory-path">Cheatsheet: File & Directory Path</router-link>
+- <router-link to="/cheatsheet/reading-and-writing-files">Cheatsheet: Reading and Writing Files</router-link>
+- <router-link to="/blog/python-pathlib-essentials">Blog: Pathlib Essentials</router-link>
+- <router-link to="/modules/pathlib-module">Module: pathlib</router-link>
+- <router-link to="/builtin/open">open()</router-link>
+- <router-link to="/builtin/str">str()</router-link>

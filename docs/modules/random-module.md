@@ -164,3 +164,12 @@ the `uniform` method is similar to `randint`, but return a floating point number
 >>> random.uniform(1, 5)
 # 3.0337059529999273
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/lists-and-tuples">Cheatsheet: Lists and Tuples</router-link>
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/builtin/list">list()</router-link>
+- <router-link to="/builtin/set">set()</router-link>
+- <router-link to="/builtin/int">int()</router-link>
+- <router-link to="/builtin/float">float()</router-link>

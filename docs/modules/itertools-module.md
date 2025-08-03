@@ -7,7 +7,7 @@ description: The itertools module is a collection of tools intended to be fast a
 Python Itertools Module
 </base-title>
 
-The _itertools_ module is a collection of tools intended to be fast and use memory efficiently when handling iterators (like [lists](#lists) or [dictionaries](#dictionaries-and-structuring-data)).
+The _itertools_ module is a collection of tools intended to be fast and use memory efficiently when handling iterators (like <router-link to="/cheatsheet/lists-and-tuples">lists</router-link> or <router-link to="/cheatsheet/dictionaries">dictionaries</router-link>).
 
 <base-disclaimer>
   <base-disclaimer-title>
@@ -19,9 +19,7 @@ The _itertools_ module is a collection of tools intended to be fast and use memo
   </base-disclaimer-content>
 </base-disclaimer>
 
-The _itertools_ module comes in the standard library and must be imported.
-
-The [operator](https://docs.python.org/3/library/operator.html) module will also be used. This module is not necessary when using itertools, but needed for some of the examples below.
+The _itertools_ module comes in the standard library and must be imported. Some examples also use the `operator` module.
 
 ```python
 import itertools
@@ -511,3 +509,18 @@ Example:
 # (None, 9)
 # (None, 10)
 ```
+
+## Relevant links
+
+- <router-link to="/cheatsheet/control-flow">Cheatsheet: Control Flow (for loops)</router-link>
+- <router-link to="/cheatsheet/lists-and-tuples">Cheatsheet: Lists and Tuples</router-link>
+- <router-link to="/cheatsheet/comprehensions">Cheatsheet: Comprehensions</router-link>
+- <router-link to="/cheatsheet/functions">Cheatsheet: Functions (Generators)</router-link>
+- <router-link to="/blog/python-comprehensions-step-by-step">Blog: Python Comprehensions Step-by-Step</router-link>
+- <router-link to="/builtin/iter">iter()</router-link>
+- <router-link to="/builtin/next">next()</router-link>
+- <router-link to="/builtin/map">map()</router-link>
+- <router-link to="/builtin/filter">filter()</router-link>
+- <router-link to="/builtin/zip">zip()</router-link>
+- <router-link to="/builtin/enumerate">enumerate()</router-link>
+- <router-link to="/builtin/range">range()</router-link>
