@@ -40,10 +40,10 @@ const isDark = useDark()
             </template>
             <template #message>
               <router-link
-                to="/blog/python-data-types"
+                to="/blog/python-pathlib-essentials"
                 class="hover:text-sky-500"
               >
-                Python Data Types for beginners
+                Essential Path Operations
               </router-link>
             </template>
           </base-badge-notice>

@@ -90,7 +90,7 @@ function prevPage() {
       class="group block overflow-hidden rounded-lg border border-slate-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800"
     >
       <div class="md:flex">
-        <div class="relative md:w-1/2">
+        <div class="relative overflow-hidden md:w-1/2">
           <img
             v-if="featuredArticle.children[0]?.meta?.socialImage"
             :src="featuredArticle.children[0]?.meta?.socialImage"

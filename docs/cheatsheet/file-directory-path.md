@@ -7,6 +7,8 @@ description: There are two main modules in Python that deals with path manipulat
 Handling file and directory Paths
 </base-title>
 
+For a deep dive into practical file system operations, check out our blog post: <router-link to="/blog/python-pathlib-essentials">10 Essential File System Operations Every Developer Should Know</router-link>.
+
 There are two main modules in Python that deal with path manipulation.
 One is the <router-link to="/modules/os-module">os.path</router-link> module and the other is the <router-link to="/modules/pathlib-module">pathlib</router-link> module.
 

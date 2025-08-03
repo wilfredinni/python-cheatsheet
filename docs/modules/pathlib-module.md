@@ -7,6 +7,8 @@ description: The pathlib module was added in Python 3.4, offering an object-orie
 Python Pathlib Module
 </base-title>
 
+For a deep dive into practical file system operations, check out our blog post: <router-link to="/blog/python-pathlib-essentials">10 Essential File System Operations Every Developer Should Know</router-link>.
+
 The `pathlib` module was added in Python 3.4, offering an object-oriented way to handle file system paths.
 
 <base-disclaimer>
