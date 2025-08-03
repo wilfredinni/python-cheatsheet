@@ -34,3 +34,7 @@ print(id(1))
 print(id('1'))
 print(id([1, 2]))
 ```
+
+## See also
+
+- <router-link to="/builtin/hash">hash()</router-link>

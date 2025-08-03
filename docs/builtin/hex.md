@@ -28,3 +28,9 @@ Python hex() built-in function
 >>> hex(1000)
 # '0x3e8'
 ```
+
+## See also
+
+- <router-link to="/builtin/bin">bin()</router-link>
+- <router-link to="/builtin/int">int()</router-link>
+- <router-link to="/builtin/oct">oct()</router-link>

@@ -12,15 +12,24 @@ Python filter() built-in function
     From the <a target="_blank" href="https://docs.python.org/3/library/functions.html#filter">Python 3 documentation</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
-   Construct an iterator from those elements of iterable for which function returns true. iterable may be either a sequence, a container which supports iteration, or an iterator. If function is None, the identity function is assumed, that is, all elements of iterable that are false are removed.
+   Construct an <router-link to="/builtin/iter">iterator</router-link> from those elements of iterable for which function returns true. iterable may be either a sequence, a container which supports iteration, or an <router-link to="/builtin/iter">iterator</router-link>. If function is None, the identity function is assumed, that is, all elements of iterable that are false are removed.
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Introduction
+The `filter()` function in Python is a built-in function that allows you to process an iterable and extract those items that satisfy a certain condition. It returns an <router-link to="/builtin/iter">iterator</router-link> with the elements that meet the criteria.
 
-The `filter` method in Python is a built-in function that allows you to `filter` a sequence (e.g., a list, a tuple, etc.) by applying a certain condition to each element in the sequence. The filter method returns a new sequence containing only the elements that meet the specified condition.
+## Syntax
 
-Here is a simple example of using the filter method to filter a list of numbers and keep only the even numbers:
+```python
+filter(function, iterable)
+```
+
+- **function**: The function to execute for each item in the iterable. It should return `True` or `False` for each item.
+- **iterable**: The iterable to filter, such as a list, tuple, or string.
+
+## Description
+
+The `filter()` function constructs an iterator from those elements of the iterable for which the function returns `True`. If the function is `None`, it removes all elements of the iterable that are false.
 
 ## Example
 
@@ -34,4 +43,4 @@ Here is a simple example of using the filter method to filter a list of numbers 
 >>> [2, 4, 6]
 ```
 
-In this example, the `is_even` function is defined to determine whether a number is even or not. The filter method takes `two arguments`: the `first argument` is the function to apply to each element of the list, and the `second argument` is the list to be filtered. The filter method returns an iterable, which is then converted to a list and stored in the even_numbers variable. The final output is the list of even numbers from the original list.
+In this example, the `is_even` function is defined to determine whether a number is even or not. The filter method takes `two arguments`: the `first argument` is the function to apply to each element of the list, and the `second argument` is the list to be filtered. The filter method returns an <router-link to="/builtin/iter">iterator</router-link>, which is then converted to a list and stored in the even_numbers variable. The final output is the list of even numbers from the original list.

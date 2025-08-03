@@ -34,6 +34,8 @@ exec(code_to_execute)
 # Output: Hello, exec()!
 ```
 
+The <router-link to="/cheatsheet/python-builtin-functions/exec">exec()</router-link> function can also be used with the <router-link to="/cheatsheet/python-builtin-functions/print">print()</router-link> function to display output to the console.
+
 ## Executing Multiple Statements
 ```python
 code = """
@@ -47,6 +49,8 @@ exec(code)
 #         3
 #         4
 ```
+
+In this example, the <router-link to="/cheatsheet/python-builtin-functions/exec">exec()</router-link> function is used to execute a for loop that iterates over a <router-link to="/cheatsheet/python-builtin-functions/range">range</router-link> of numbers and <router-link to="/cheatsheet/python-builtin-functions/print">prints</router-link> each number to the console.
 
 ## Modifying Variables
 ```python
@@ -78,6 +82,8 @@ create_dynamic_function("add_numbers", ["a", "b", "c"])
 result = add_numbers(2, 3, 5)
 print(result)  # Output: 10
 ```
+
+In this example, the <router-link to="/cheatsheet/python-builtin-functions/exec">exec()</router-link> function is used to create a dynamic function that takes a list of arguments and returns their <router-link to="/cheatsheet/python-builtin-functions/sum">sum</router-link>.
 
 ## Error Handling
 ```python

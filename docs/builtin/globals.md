@@ -47,3 +47,7 @@ def create_global():
 create_global()
 print(new_global)  # Output: This was created dynamically
 ```
+
+## See also
+
+- <router-link to="/builtin/locals">`locals()`</router-link>

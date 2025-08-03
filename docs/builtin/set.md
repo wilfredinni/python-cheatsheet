@@ -12,7 +12,7 @@ Python set() built-in function
     From the <a target="_blank" href="https://docs.python.org/3/library/functions.html#set">Python 3 documentation</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
-   Return a new set object, optionally with elements taken from iterable. set is a built-in class. See set and Set Types — set, frozenset for documentation about this class.
+   Return a new set object, optionally with elements taken from iterable. set is a built-in class. See <router-link to="/cheatsheet/sets">set</router-link> and Set Types — set, frozenset for documentation about this class.
   </base-disclaimer-content>
 </base-disclaimer>
 
@@ -35,7 +35,7 @@ my_set = set(my_list)
 print(my_set)  # Output: {1, 2, 3}
 ```
 
-
+Here is the original example demonstrating the iterator behavior:
 
 ```python
 >>> s = set()
@@ -44,3 +44,10 @@ print(my_set)  # Output: {1, 2, 3}
 >>> type(s)
 # <class 'set'>
 ```
+
+## See also
+
+- <router-link to="/builtin/frozenset">frozenset()</router-link>
+- <router-link to="/builtin/list">list()</router-link>
+- <router-link to="/builtin/tuple">tuple()</router-link>
+- <router-link to="/cheatsheet/sets">Sets Cheatsheet</router-link>

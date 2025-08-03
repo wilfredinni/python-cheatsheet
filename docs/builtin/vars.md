@@ -44,3 +44,9 @@ def my_function():
 
 my_function() # Output: {'x': 10}
 ```
+
+## See also
+
+- <router-link to="/cheatsheet/basics/">Basics</router-link>
+- <router-link to="/builtin/globals/">globals()</router-link>
+- <router-link to="/builtin/locals/">locals()</router-link>

@@ -37,6 +37,7 @@ print(data)
 # b'Hello, World!'
 ```
 
-You can also use slicing and indexing to access individual bytes, and use built-in methods such as `count()` and `find()` to search for specific bytes within the object.
+## See Also
 
-The `bytes` type is useful when you need to work with binary data that should not be modified, such as the contents of a file. Since it is immutable, it can be used in situations where the data needs to be protected from accidental modification.
+- <router-link :to="'/builtin/bytearray'">bytearray()</router-link>
+- <router-link :to="'/builtin/memoryview'">memoryview()</router-link>

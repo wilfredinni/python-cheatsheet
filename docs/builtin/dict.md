@@ -9,34 +9,35 @@ Python dict() built-in function
 
 <base-disclaimer>
   <base-disclaimer-title>
-    From the <a target="_blank" href="https://docs.python.org/3/library/functions.html#dict">Python 3 documentation</a>
+    From the <a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#dict">Python 3 documentation</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
-   Create a new dictionary. The dict object is the dictionary class. See dict and Mapping Types — dict for documentation about this class.
+    Create a new dictionary. The `dict` object is the dictionary class.
   </base-disclaimer-content>
 </base-disclaimer>
 
-The `dict()` constructor creates a new dictionary. A dictionary is a collection of key-value pairs.
+The `dict()` constructor in Python is a versatile way to create dictionaries.
 
-You can create an empty dictionary, or create a dictionary from keyword arguments or from an iterable of key-value pairs.
+You can create an empty dictionary, or create a dictionary from keyword arguments or from an <router-link to="/builtin/iter">iterable</router-link> of key-value pairs.
 
-### Examples
+## Examples
 
-**Create an empty dictionary:**
+**Creating an empty dictionary:**
 
 ```python
 my_dict = dict()
 print(my_dict)  # Output: {}
 ```
 
-**Create a dictionary with keyword arguments:**
+**Creating a dictionary with keyword arguments:**
 
 ```python
+# Using keyword arguments
 my_dict = dict(name="John", age=30)
 print(my_dict)  # Output: {'name': 'John', 'age': 30}
 ```
 
-**Create a dictionary from a list of tuples:**
+**Creating a dictionary from an iterable:**
 
 ```python
 my_list = [('name', 'Jane'), ('age', 25)]

@@ -38,3 +38,7 @@ import importlib
 math_module = importlib.import_module('math')
 print(math_module.sqrt(4)) # Output: 2.0
 ```
+
+## See also
+
+- <router-link to="/modules/importlib">importlib module</router-link>

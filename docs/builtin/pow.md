@@ -43,3 +43,8 @@ print(pow(2, 3, 5)) # 3  (since 2^3 = 8, and 8 % 5 = 3)
 # Works with negative exponents (returns float)
 print(pow(2, -3)) # 0.125  (since 2^(-3) = 1/8)
 ```
+
+## See also
+
+- <router-link to="/builtin/int">int()</router-link>
+- <router-link to="/builtin/float">float()</router-link>

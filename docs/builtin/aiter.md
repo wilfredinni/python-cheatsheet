@@ -25,3 +25,7 @@ Python aiter() built-in function
 ...        results.append(x)
 ...    return iter(results)
 ```
+
+## See Also
+
+- <router-link :to="'/builtin/iter'">iter()</router-link>

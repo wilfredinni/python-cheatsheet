@@ -40,3 +40,16 @@ Python type() built-in function
 >>> type({'a': 1, 'b': 2})
 # <class 'dict'>
 ```
+
+## See also
+
+- <router-link to="/blog/python-data-types/">Python Data Types</router-link>
+- <router-link to="/builtin/isinstance/">isinstance()</router-link>
+- <router-link to="/builtin/issubclass/">issubclass()</router-link>
+- <router-link to="/builtin/str/">str()</router-link>
+- <router-link to="/builtin/int/">int()</router-link>
+- <router-link to="/builtin/float/">float()</router-link>
+- <router-link to="/builtin/list/">list()</router-link>
+- <router-link to="/builtin/tuple/">tuple()</router-link>
+- <router-link to="/builtin/dict/">dict()</router-link>
+- <router-link to="/builtin/set/">set()</router-link>

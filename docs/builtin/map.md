@@ -12,13 +12,13 @@ Python map() built-in function
     From the <a target="_blank" href="https://docs.python.org/3/library/functions.html#map">Python 3 documentation</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
-   Return an iterator that applies function to every item of iterable, yielding the results. If additional iterable arguments are passed, function must take that many arguments and is applied to the items from all iterables in parallel. With multiple iterables, the iterator stops when the shortest iterable is exhausted. For cases where the function inputs are already arranged into argument tuples.
+   Return an iterator that applies function to every item of iterable, yielding the results. If additional iterable arguments are passed, function must take that many arguments and is applied to the items from all iterables in parallel. With multiple iterables, the iterator stops when the shortest iterable is exhausted. For cases where the function inputs are already arranged into argument <router-link to="/builtin/tuple">tuples</router-link>.
   </base-disclaimer-content>
 </base-disclaimer>
 
 # Basics
 
-The map function, _map(function, iterable)_ takes in one or more iterables, a 'callback function' (often a lambda), and returns a "Map Object". The map object contains the result of the map function applying the callback to each element in the iterable arguments. Map iterates over the provided iterable objects simultaneously. As in, at every step, "i" in the map function, the element at index "i" of each iterable will be available to the map function at that time. You will often want to cast the resultant map object to a list, tuple, or another form of object that is more convenient to work with once you are finished mapping.
+The map function, _map(function, iterable)_ takes in one or more iterables, a 'callback function' (often a lambda), and returns a "Map Object". The map object contains the result of the map function applying the callback to each element in the iterable arguments. Map iterates over the provided iterable objects simultaneously. As in, at every step, "i" in the map function, the element at index "i" of each iterable will be available to the map function at that time. You will often want to cast the resultant map object to a <router-link to="/builtin/list">list</router-link>, <router-link to="/builtin/tuple">tuple</router-link>, or another form of object that is more convenient to work with once you are finished mapping.
 
 ***An important note: As of the release of Python 3, if the iterables supplied to map are of different lengths, The map will stop and return when it has hit the number of steps corresponding to the length of the shortest iterable.
 
@@ -26,7 +26,7 @@ The map function, _map(function, iterable)_ takes in one or more iterables, a 'c
 
 Function: takes the item (or items) at the index corresponding to the current step of the Map and gives the return result as an item to store in the Map Object. The type of element stored to the map object will be identical to the type returned from the function.
 
-Iterable(s): `tuple`, `list`, `range`, `dictionary`, `set`, `string`.
+Iterable(s): `<router-link to="/builtin/tuple">tuple</router-link>`, `<router-link to="/builtin/list">list</router-link>`, `<router-link to="/builtin/range">range</router-link>`, `<router-link to="/builtin/dict">dictionary</router-link>`, `<router-link to="/builtin/set">set</router-link>`, `<router-link to="/builtin/str">string</router-link>`.
 
 ## A very simple example:
 
@@ -81,4 +81,11 @@ print(result)
 Will output the following: [1,1,1]
 
 Notice how the length of the resultant list is equal to list1's length?
+
+## See also
+
+- <router-link to="/builtin/filter">filter()</router-link>
+- <router-link to="/builtin/zip">zip()</router-link>
+- <router-link to="/cheatsheet/basics/#lambda-functions">Lambda Functions</router-link>
+- <router-link to="/cheatsheet/basics/#list-comprehensions">List Comprehensions</router-link>
 

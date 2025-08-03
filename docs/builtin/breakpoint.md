@@ -37,3 +37,7 @@ Python breakpoint() built-in function
 # -> for i in range(5):
 # (Pdb)
 ```
+
+## See Also
+
+- <router-link :to="'/modules/pdb'">pdb module</router-link>

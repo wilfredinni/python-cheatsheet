@@ -48,4 +48,9 @@ print(value)  # Output: Hello, World!
 # If the 'attribute' does not exist then 'Nothing found' will be printed.
 ```
 
+## See also
+
+- <router-link to="/builtin/hasattr">`hasattr()`</router-link>
+- <router-link to="/builtin/delattr">`delattr()`</router-link>
+
 

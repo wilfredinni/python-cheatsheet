@@ -47,3 +47,8 @@ The keyword `sep` specify how to separate the objects, if there is more than one
 print('cats', 'dogs', 'mice', sep=',')
 # cats,dogs,mice
 ```
+
+## See also
+
+- <router-link to="/builtin/str">str()</router-link>
+- <router-link to="/builtin/repr">repr()</router-link>

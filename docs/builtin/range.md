@@ -18,13 +18,13 @@ Python range() built-in function
 
 # Basics
 
-The `range` type is commonly used in `for` loops to loop a specific number of times. `range` takes in three parameters, `start`, `stop` and `step`. Each parameter must be intergers (either built-in int or any object that implements the __index__() special method).
+The `range` type is commonly used in `for` loops to loop a specific number of times. `range` takes in three parameters, `start`, `stop` and `step`. Each parameter must be integers (either built-in <router-link to="/builtin/int">int</router-link> or any object that implements the __index__() special method).
 
 If there is only one parameter, it represents the `stop` parameter. If the `step` parameter is omitted at all, it will default to `1`. If the `start` parameter is omitted, it will default to `0`.
 
 Ranges do support negative indices, but these are interpreted as indexing from the end of the sequence determined by the positive indices.
 
-***The advantage of the range type over a regular list or tuple is that a range object will always take the same (small) amount of memory, no matter the size of the range it represents
+***The advantage of the range type over a regular <router-link to="/builtin/list">list</router-link> or <router-link to="/builtin/tuple">tuple</router-link> is that a range object will always take the same (small) amount of memory, no matter the size of the range it represents
 
 ## Input Parameters:
 
@@ -116,3 +116,9 @@ Two examples where the `stop` parameter is set to 0
 ...     print(i)
 #
 ```
+
+## See also
+
+- <router-link to="/builtin/list">list()</router-link>
+- <router-link to="/builtin/tuple">tuple()</router-link>
+- <router-link to="/builtin/int">int()</router-link>

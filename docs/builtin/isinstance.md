@@ -44,3 +44,7 @@ print(isinstance("hello", (int, str, list))) # Output: True
 >>> isinstance(1, str)
 # False
 ```
+
+## See also
+
+- <router-link to="/builtin/issubclass">`issubclass()`</router-link>

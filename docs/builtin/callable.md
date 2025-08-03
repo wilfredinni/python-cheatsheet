@@ -50,3 +50,7 @@ Here is an example of how you can use the `callable()` function:
 In the above example, `my_function` is a function and it is callable, `MyClass` is a class and it is callable as well because it has a `__call__` method, `z` is an instance of the class `MyClass` and it is also callable because it has a `__call__` method and `a` is a lambda function which is callable.
 
 The `callable()` function can be useful in situations where you need to determine if an object can be invoked as a function, such as when you are working with callbacks or other types of function pointers.
+
+## See Also
+
+- <router-link :to="'/builtin/hasattr'">hasattr()</router-link>

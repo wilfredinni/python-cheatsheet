@@ -50,3 +50,12 @@ print(my_tuple)  # Output: (1, 2, 3)
 >>> tuple(l)
 # (1, 2, 3)
 ```
+
+## See also
+
+- <router-link to="/cheatsheet/lists-and-tuples/">Lists and Tuples</router-link>
+- <router-link to="/builtin/list/">list()</router-link>
+- <router-link to="/builtin/str/">str()</router-link>
+- <router-link to="/builtin/dict/">dict()</router-link>
+- <router-link to="/builtin/set/">set()</router-link>
+- <router-link to="/blog/python-data-types/">Python Data Types</router-link>

@@ -16,6 +16,8 @@ Python format() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+The <router-link to="/cheatsheet/python-builtin-functions/format">format()</router-link> function formats a specified value into a specified format.
+
 ## Examples
 
 ```python

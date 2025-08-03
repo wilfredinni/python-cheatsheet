@@ -59,3 +59,7 @@ Here is the original example:
 >>> next(i)
 # 3
 ```
+
+## See also
+
+- <router-link to="/builtin/iter">iter()</router-link>

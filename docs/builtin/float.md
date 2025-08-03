@@ -16,6 +16,8 @@ Python float() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+The <router-link to="/cheatsheet/python-builtin-functions/float">float()</router-link> function returns a floating point number from a number or a string.
+
 ## Examples
 
 ```python

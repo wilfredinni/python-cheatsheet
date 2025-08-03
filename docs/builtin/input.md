@@ -37,3 +37,7 @@ This function takes the input from the user and converts it into a string:
 # What is your name? Martha
 # Hi, Martha
 ```
+
+## See also
+
+- <router-link to="/builtin/print">print()</router-link>

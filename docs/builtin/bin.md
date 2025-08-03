@@ -33,3 +33,9 @@ print(bin(10))   # Output: 0b1010
 print(bin(100))  # Output: 0b1100100
 print(bin(1000)) # Output: 0b1111101000
 ```
+
+## See Also
+
+- <router-link :to="'/builtin/int'">int()</router-link>
+- <router-link :to="'/builtin/hex'">hex()</router-link>
+- <router-link :to="'/builtin/oct'">oct()</router-link>

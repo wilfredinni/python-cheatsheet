@@ -7,7 +7,7 @@ description: Without arguments, return the list of names in the current local sc
 Python dir() built-in function
 </base-title>
 
-The `dir()` function in Python is a powerful built-in function that returns a list of names in the current namespace or the attributes of a given object. It's commonly used to introspect and explore objects, modules, and classes, helping you discover the available methods, attributes, and names that you can work with.
+The <router-link to="/cheatsheet/python-builtin-functions/dir">dir()</router-link> function in Python is a powerful built-in function that returns a list of names in the current namespace or the attributes of a given object. It's commonly used to introspect and explore objects, modules, and classes, helping you discover the available methods, attributes, and names that you can work with.
 
 <base-disclaimer>
   <base-disclaimer-title>

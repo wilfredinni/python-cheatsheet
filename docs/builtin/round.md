@@ -49,3 +49,8 @@ Here is the original example:
 >>> round(2/3, ndigits=3)
 # 0.667
 ```
+
+## See also
+
+- <router-link to="/builtin/float">float()</router-link>
+- <router-link to="/builtin/int">int()</router-link>

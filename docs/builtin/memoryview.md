@@ -16,7 +16,7 @@ Python memoryview() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-The `memoryview()` function creates a memory view object from a given argument. A memory view allows you to access the memory of another object, like a `bytes` or `bytearray` object, without making a copy. This is highly efficient for large data, as it avoids memory duplication.
+The `memoryview()` function creates a memory view object from a given argument. A memory view allows you to access the memory of another object, like a `<router-link to="/builtin/bytes">bytes</router-link>` or `<router-link to="/builtin/bytearray">bytearray</router-link>` object, without making a copy. This is highly efficient for large data, as it avoids memory duplication.
 
 ### Examples
 
@@ -38,3 +38,8 @@ print(view[6:11].tobytes()) # Output: b'world'
 view[0] = 72 # ASCII for 'H'
 print(data)    # Output: bytearray(b'Hello world')
 ```
+
+## See also
+
+- <router-link to="/builtin/bytes">bytes()</router-link>
+- <router-link to="/builtin/bytearray">bytearray()</router-link>

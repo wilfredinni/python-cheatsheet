@@ -99,3 +99,15 @@ You can use zip in list comprehensions for more concise code.
 >>> print(summed)
 # [5, 7, 9]
 ```
+
+## See also
+
+- <router-link to="/cheatsheet/lists-and-tuples/">Lists and Tuples</router-link>
+- <router-link to="/cheatsheet/comprehensions/">Comprehensions</router-link>
+- <router-link to="/builtin/slice/">slice()</router-link>
+- <router-link to="/builtin/sorted/">sorted()</router-link>
+- <router-link to="/builtin/sum/">sum()</router-link>
+- <router-link to="/builtin/map/">map()</router-link>
+- <router-link to="/builtin/filter/">filter()</router-link>
+- <router-link to="/builtin/enumerate/">enumerate()</router-link>
+- <router-link to="/modules/itertools-module/">Itertools Module</router-link>

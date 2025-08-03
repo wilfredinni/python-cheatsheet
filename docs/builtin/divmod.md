@@ -31,3 +31,8 @@ print(divmod(2, 2))   # Output: (1, 0)
 print(divmod(10, 2))  # Output: (5, 0)
 print(divmod(7, 2))   # Output: (3, 1)
 ```
+
+## See also
+
+- <router-link to="/cheatsheet/numbers">Numbers</router-link>
+- <router-link to="/cheatsheet/operators">Operators</router-link>

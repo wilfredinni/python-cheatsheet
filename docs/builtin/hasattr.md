@@ -12,7 +12,7 @@ Python hasattr() built-in function
     From the <a target="_blank" href="https://docs.python.org/3/library/functions.html#hasattr">Python 3 documentation</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
-   The arguments are an object and a string. The result is True if the string is the name of one of the object’s attributes, False if not. (This is implemented by calling getattr(object, name) and seeing whether it raises an AttributeError or not.)
+   The arguments are an object and a string. The result is True if the string is the name of one of the object’s attributes, False if not. (This is implemented by calling <router-link to="/builtin/getattr">getattr(object, name)</router-link> and seeing whether it raises an AttributeError or not.)
   </base-disclaimer-content>
 </base-disclaimer>
 
@@ -31,3 +31,7 @@ print(hasattr(p, 'name'))  # Output: True
 print(hasattr(p, 'age'))   # Output: True
 print(hasattr(p, 'email')) # Output: False
 ```
+
+## See also
+
+- <router-link to="/builtin/getattr">`getattr()`</router-link>

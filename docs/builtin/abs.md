@@ -34,3 +34,9 @@ Python abs() built-in function
 >>> abs(0o20)
 # 16
 ```
+
+## See Also
+
+- <router-link :to="'/builtin/float'">float()</router-link>
+- <router-link :to="'/builtin/int'">`int()`</router-link>
+- <router-link :to="'/builtin/complex'">complex()</router-link>

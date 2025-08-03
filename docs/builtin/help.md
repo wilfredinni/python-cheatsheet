@@ -77,4 +77,9 @@ Python help() built-in function
 #  |      Call self as a function.
 #  |
 # :
-```
+
+## See also
+
+- <router-link to="/builtin/dir">dir()</router-link>
+- <router-link to="/builtin/globals">globals()</router-link>
+- <router-link to="/builtin/locals">locals()</router-link>

@@ -40,3 +40,8 @@ except TypeError as e:
     print(e)
 # Output: unhashable type: 'list'
 ```
+
+## See also
+
+- <router-link to="/cheatsheet/dictionaries">Dictionaries</router-link>
+- <router-link to="/builtin/id">id()</router-link>

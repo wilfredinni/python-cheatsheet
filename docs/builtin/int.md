@@ -37,3 +37,11 @@ Python int() built-in function
 >>> int()
 # 0
 ```
+
+## See also
+
+- <router-link to="/builtin/float">float()</router-link>
+- <router-link to="/builtin/str">str()</router-link>
+- <router-link to="/builtin/hex">hex()</router-link>
+- <router-link to="/builtin/oct">oct()</router-link>
+- <router-link to="/builtin/bin">bin()</router-link>

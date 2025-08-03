@@ -50,4 +50,10 @@ Or on an instance of the class like
 >>> # X
 ```
 
-The <code>@staticmethod</code> is in the form of a decorator the basics being it is a function that will return another function. This will be documented at a later time.
+The `@staticmethod` is in the form of a decorator the basics being it is a function that will return another function. This will be documented at a later time.
+
+## See also
+
+- <router-link to="/cheatsheet/oop-basics/">OOP Basics</router-link>
+- <router-link to="/cheatsheet/decorators/">Decorators</router-link>
+- <router-link to="/builtin/classmethod/">classmethod()</router-link>

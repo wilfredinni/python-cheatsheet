@@ -42,3 +42,15 @@ print(sum(numbers, 10))  # Output: 16 (10 + 1 + 2 + 3)
 >>> sum([10, 10, 10])
 # 30
 ```
+
+## See also
+
+- <router-link to="/cheatsheet/lists-and-tuples/">Lists and Tuples</router-link>
+- <router-link to="/builtin/slice/">slice()</router-link>
+- <router-link to="/builtin/sorted/">sorted()</router-link>
+- <router-link to="/builtin/zip/">zip()</router-link>
+- <router-link to="/builtin/map/">map()</router-link>
+- <router-link to="/builtin/filter/">filter()</router-link>
+- <router-link to="/builtin/enumerate/">enumerate()</router-link>
+- <router-link to="/builtin/min/">min()</router-link>
+- <router-link to="/builtin/max/">max()</router-link>

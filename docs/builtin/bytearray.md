@@ -40,4 +40,7 @@ Another way is to use the bytes() function and then convert it to a bytearray ob
 # bytearray(b'Hello, World!')
 ```
 
-Bytearray objects are useful in situations where you need to manipulate binary data or when you want to efficiently modify large amounts of data.
+## See Also
+
+- <router-link :to="'/builtin/bytes'">bytes()</router-link>
+- <router-link :to="'/builtin/memoryview'">memoryview()</router-link>

@@ -32,3 +32,7 @@ print(type(o))  # Output: <class 'object'>
 # It has no attributes you can set
 # o.name = "test" # This would raise an AttributeError
 ```
+
+## See also
+
+- <router-link to="/cheatsheet/classes">Classes</router-link>

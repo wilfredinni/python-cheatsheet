@@ -16,7 +16,7 @@ Python ord() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-The `ord()` function is the inverse of `chr()`. It takes a single character string and returns its Unicode code point, which is an integer.
+The `ord()` function is the inverse of <router-link to="/builtin/chr">chr()</router-link>. It takes a single character string and returns its Unicode code point, which is an integer.
 
 ### Examples
 
@@ -29,3 +29,7 @@ print(ord('€'))  # Output: 8364
 print(ord('1'))  # Output: 49
 print(ord('a'))  # Output: 97
 ```
+
+## See also
+
+- <router-link to="/builtin/chr">chr()</router-link>

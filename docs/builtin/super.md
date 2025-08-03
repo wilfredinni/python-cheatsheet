@@ -37,3 +37,9 @@ c.greet()
 # Hello from Parent
 # Hello from Child
 ```
+
+## See also
+
+- <router-link to="/cheatsheet/oop-basics/">OOP Basics</router-link>
+- <router-link to="/builtin/classmethod/">classmethod()</router-link>
+- <router-link to="/builtin/staticmethod/">staticmethod()</router-link>

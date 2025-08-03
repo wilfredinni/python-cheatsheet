@@ -28,3 +28,8 @@ Python ascii() built-in function
 >>> ascii(['A', 'ë'])
 # ['A', '\xeb']
 ```
+
+## See Also
+
+- <router-link :to="'/builtin/repr'">repr()</router-link>
+- <router-link :to="'/builtin/str'">str()</router-link>

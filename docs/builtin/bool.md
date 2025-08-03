@@ -37,3 +37,7 @@ Python bool() built-in function
 >>> bool(True)
 # True
 ```
+
+## See Also
+
+- <router-link :to="'/builtin/int'">int()</router-link>

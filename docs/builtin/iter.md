@@ -46,3 +46,7 @@ print(next(my_iter))  # Output: 3
 >>> i.__next__()
 # 3
 ```
+
+## See also
+
+- <router-link to="/builtin/next">`next()`</router-link>

@@ -28,3 +28,7 @@ class Second(First):
 print(issubclass(Second, First))  # True
 print(issubclass(First, Second)) # False
 ```
+
+## See also
+
+- <router-link to="/builtin/isinstance">`isinstance()`</router-link>

@@ -12,7 +12,7 @@ Python setattr() built-in function
     From the <a target="_blank" href="https://docs.python.org/3/library/functions.html#setattr">Python 3 documentation</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
-   This is the counterpart of getattr(). The arguments are an object, a string, and an arbitrary value. The string may name an existing attribute or a new attribute. The function assigns the value to the attribute, provided the object allows it. For example, setattr(x, 'foobar', 123) is equivalent to x.foobar = 123.
+   This is the counterpart of <router-link to="/builtin/getattr">getattr()</router-link>. The arguments are an object, a string, and an arbitrary value. The string may name an existing attribute or a new attribute. The function assigns the value to the attribute, provided the object allows it. For example, setattr(x, 'foobar', 123) is equivalent to x.foobar = 123.
   </base-disclaimer-content>
 </base-disclaimer>
 
@@ -39,3 +39,9 @@ print(p.age)  # Output: 30
 setattr(p, 'name', 'Jane')
 print(p.name) # Output: Jane
 ```
+
+## See also
+
+- <router-link to="/builtin/getattr">getattr()</router-link>
+- <router-link to="/builtin/hasattr">hasattr()</router-link>
+- <router-link to="/builtin/delattr">delattr()</router-link>

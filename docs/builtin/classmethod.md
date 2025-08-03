@@ -16,6 +16,10 @@ Python classmethod() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+A `classmethod` is a method that is bound to the class and not the instance of the class. It takes the class itself as its first argument, conventionally named `cls`. This is in contrast to a regular instance method, which takes the instance as its first argument (`self`).
+
+They are often used for factory methods that create instances of the class in a specific way.
+
 ## Examples
 
 ```python
@@ -40,3 +44,7 @@ if __name__ == "__main__":
     print(counter.increment())
     # 1
 ```
+
+## See also
+
+- <router-link to="/builtin/staticmethod">staticmethod()</router-link>

@@ -28,3 +28,7 @@ Python any() built-in function
 >>> any({0, 0, 0})
 # False
 ```
+
+## See Also
+
+- <router-link :to="'/builtin/all'">all()</router-link>

@@ -35,3 +35,7 @@ Python open() built-in function
 #
 # My second line
 ```
+
+## See also
+
+- <router-link to="/cheatsheet/file-directory-path">Reading and Writing Files</router-link>

@@ -28,3 +28,7 @@ Python all() built-in function
 >>> all({1, 1, 1})
 # True
 ```
+
+## See Also
+
+- <router-link :to="'/builtin/any'">any()</router-link>

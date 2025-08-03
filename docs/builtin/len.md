@@ -12,7 +12,7 @@ Python len() built-in function
     From the <a target="_blank" href="https://docs.python.org/3/library/functions.html#len">Python 3 documentation</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
-   Return the length (the number of items) of an object. The argument may be a sequence (such as a string, bytes, tuple, list, or range) or a collection (such as a dictionary, set, or frozen set).
+   Return the length (the number of items) of an object. The argument may be a sequence (such as a string, bytes, <router-link to="/builtin/tuple">tuple</router-link>, <router-link to="/builtin/list">list</router-link>, or <router-link to="/builtin/range">range</router-link>) or a collection (such as a <router-link to="/builtin/dict">dictionary</router-link>, <router-link to="/builtin/set">set</router-link>, or <router-link to="/builtin/frozenset">frozen set</router-link>).
   </base-disclaimer-content>
 </base-disclaimer>
 
@@ -53,3 +53,10 @@ Return the the number of items of an object:
 ...
 # the list is not empty!
 ```
+
+## See also
+
+- <router-link to="/builtin/list">list()</router-link>
+- <router-link to="/builtin/tuple">tuple()</router-link>
+- <router-link to="/builtin/dict">dict()</router-link>
+- <router-link to="/builtin/set">set()</router-link>

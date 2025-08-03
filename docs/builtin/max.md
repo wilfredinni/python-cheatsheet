@@ -18,7 +18,7 @@ Python max() built-in function
 
 The `max()` function can be used in two ways:
 
-1.  With an iterable (like a list or tuple), it returns the largest item.
+1.  With an iterable (like a <router-link to="/builtin/list">list</router-link> or <router-link to="/builtin/tuple">tuple</router-link>), it returns the largest item.
 2.  With two or more arguments, it returns the largest of them.
 
 ### Examples
@@ -47,3 +47,7 @@ print(max(10, 20, 5)) # Output: 20
 >>> max((1, 2, 10, 40, 5))
 # 40
 ```
+
+## See also
+
+- <router-link to="/builtin/min">min()</router-link>

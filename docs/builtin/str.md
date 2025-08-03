@@ -37,3 +37,15 @@ Python str() built-in function
 >>> str()
 # ''
 ```
+
+## See also
+
+- <router-link to="/cheatsheet/manipulating-strings/">Manipulating Strings</router-link>
+- <router-link to="/cheatsheet/string-formatting/">String Formatting</router-link>
+- <router-link to="/builtin/int/">int()</router-link>
+- <router-link to="/builtin/float/">float()</router-link>
+- <router-link to="/builtin/list/">list()</tool-code>
+- <router-link to="/builtin/tuple/">tuple()</router-link>
+- <router-link to="/builtin/dict/">dict()</router-link>
+- <router-link to="/builtin/set/">set()</router-link>
+- <router-link to="/blog/python-data-types/">Python Data Types</router-link>

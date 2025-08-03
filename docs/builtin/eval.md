@@ -29,3 +29,5 @@ Python eval() built-in function
 >>> eval('x == 10')
 # True
 ```
+
+The `eval()` function can also be used with the <router-link to="/cheatsheet/python-builtin-functions/print">print()</router-link> function to display output to the console.

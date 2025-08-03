@@ -63,3 +63,9 @@ print(p.name)
 # Getting name
 # John
 ```
+
+## See also
+
+- <router-link to="/builtin/getattr">getattr()</router-link>
+- <router-link to="/builtin/setattr">setattr()</router-link>
+- <router-link to="/builtin/delattr">delattr()</router-link>

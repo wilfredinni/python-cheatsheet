@@ -53,3 +53,13 @@ print(sorted_words)  # Output: ['apple', 'banana', 'cherry']
 >>> sorted(['a', 'h', 'e'], reverse=True)
 # ['h', 'e', 'a']
 ```
+
+## See also
+
+- <router-link to="/cheatsheet/lists-and-tuples/">Lists and Tuples</router-link>
+- <router-link to="/builtin/slice/">slice()</router-link>
+- <router-link to="/builtin/sum/">sum()</router-link>
+- <router-link to="/builtin/zip/">zip()</router-link>
+- <router-link to="/builtin/map/">map()</router-link>
+- <router-link to="/builtin/filter/">filter()</router-link>
+- <router-link to="/builtin/enumerate/">enumerate()</router-link>
