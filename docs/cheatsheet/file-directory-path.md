@@ -8,14 +8,14 @@ Handling file and directory Paths
 </base-title>
 
 There are two main modules in Python that deal with path manipulation.
-One is the `os.path` module and the other is the `pathlib` module.
+One is the <router-link to="/modules/os-module">os.path</router-link> module and the other is the <router-link to="/modules/pathlib-module">pathlib</router-link> module.
 
 <base-disclaimer>
   <base-disclaimer-title>
-    os.path VS pathlib
+    Pathlib vs Os Module
   </base-disclaimer-title>
   <base-disclaimer-content>
-    The `pathlib` module was added in Python 3.4, offering an object-oriented way to handle file system paths.
+    <code>pathlib</code> provides a lot more functionality than the ones listed above, like getting file name, getting file extension, reading/writing a file without manually opening it, etc. See the <a target="_blank" href="https://docs.python.org/3/library/pathlib.html">official documentation</a> if you intend to know more.
   </base-disclaimer-content>
 </base-disclaimer>
 
@@ -26,19 +26,9 @@ folder names. On Unix based operating system such as macOS, Linux, and BSDs,
 the forward slash (`/`) is used as the path separator. Joining paths can be
 a headache if your code needs to work on different platforms.
 
-Fortunately, Python provides easy ways to handle this. We will showcase
-how to deal with both, `os.path.join` and `pathlib.Path.joinpath`
+Fortunately, Python's `pathlib` module provides an easy way to handle this.
 
-Using `os.path.join` on Windows:
-
-```python
->>> import os
-
->>> os.path.join('usr', 'bin', 'spam')
-# 'usr\\bin\\spam'
-```
-
-And using `pathlib` on \*nix:
+Using `pathlib` on \*nix:
 
 ```python
 >>> from pathlib import Path
@@ -57,24 +47,11 @@ And using `pathlib` on \*nix:
 ```
 
 Notice the path separator is different between Windows and Unix based operating
-system, that's why you want to use one of the above methods instead of
+system, that's why you want to use `pathlib` instead of
 adding strings together to join paths together.
 
 Joining paths is helpful if you need to create different file paths under
 the same directory.
-
-Using `os.path.join` on Windows:
-
-```python
->>> my_files = ['accounts.txt', 'details.csv', 'invite.docx']
-
->>> for filename in my_files:
-...     print(os.path.join('C:\\Users\\asweigart', filename))
-...
-# C:\Users\asweigart\accounts.txt
-# C:\Users\asweigart\details.csv
-# C:\Users\asweigart\invite.docx
-```
 
 Using `pathlib` on \*nix:
 
@@ -91,41 +68,16 @@ Using `pathlib` on \*nix:
 
 ## The current working directory
 
-Using `os` on Windows:
-
-```python
->>> import os
-
->>> os.getcwd()
-# 'C:\\Python34'
->>> os.chdir('C:\\Windows\\System32')
-
->>> os.getcwd()
-# 'C:\\Windows\\System32'
-```
-
-Using `pathlib` on \*nix:
+You can get the current working directory using `pathlib`:
 
 ```python
 >>> from pathlib import Path
->>> from os import chdir
 
 >>> print(Path.cwd())
 # /home/asweigart
-
->>> chdir('/usr/lib/python3.6')
->>> print(Path.cwd())
-# /usr/lib/python3.6
 ```
 
 ## Creating new folders
-
-Using `os` on Windows:
-
-```python
->>> import os
->>> os.makedirs('C:\\delicious\\walnut\\waffles')
-```
 
 Using `pathlib` on \*nix:
 
@@ -165,20 +117,7 @@ There are also the dot (`.`) and dot-dot (`..`) folders. These are not real fold
 
 ### Handling Absolute paths
 
-To see if a path is an absolute path:
-
-Using `os.path` on \*nix:
-
-```python
->>> import os
->>> os.path.isabs('/')
-# True
-
->>> os.path.isabs('..')
-# False
-```
-
-Using `pathlib` on \*nix:
+To see if a path is an absolute path using `pathlib`:
 
 ```python
 >>> from pathlib import Path
@@ -189,20 +128,7 @@ Using `pathlib` on \*nix:
 # False
 ```
 
-You can extract an absolute path with both `os.path` and `pathlib`
-
-Using `os.path` on \*nix:
-
-```python
->>> import os
->>> os.getcwd()
-'/home/asweigart'
-
->>> os.path.abspath('..')
-'/home'
-```
-
-Using `pathlib` on \*nix:
+You can extract an absolute path with `pathlib`:
 
 ```python
 from pathlib import Path
@@ -215,17 +141,7 @@ print(Path('..').resolve())
 
 ### Handling Relative paths
 
-You can get a relative path from a starting path to another path.
-
-Using `os.path` on \*nix:
-
-```python
->>> import os
->>> os.path.relpath('/etc/passwd', '/')
-# 'etc/passwd'
-```
-
-Using `pathlib` on \*nix:
+You can get a relative path from a starting path to another path using `pathlib`:
 
 ```python
 >>> from pathlib import Path
@@ -236,24 +152,6 @@ Using `pathlib` on \*nix:
 ## Path and File validity
 
 ### Checking if a file/directory exists
-
-Using `os.path` on \*nix:
-
-```python
->>> import os
-
->>> os.path.exists('.')
-# True
-
->>> os.path.exists('setup.py')
-# True
-
->>> os.path.exists('/etc')
-# True
-
->>> os.path.exists('nonexistentfile')
-# False
-```
 
 Using `pathlib` on \*nix:
 
@@ -275,21 +173,6 @@ from pathlib import Path
 
 ### Checking if a path is a file
 
-Using `os.path` on \*nix:
-
-```python
->>> import os
-
->>> os.path.isfile('setup.py')
-# True
-
->>> os.path.isfile('/home')
-# False
-
->>> os.path.isfile('nonexistentfile')
-# False
-```
-
 Using `pathlib` on \*nix:
 
 ```python
@@ -306,21 +189,6 @@ Using `pathlib` on \*nix:
 ```
 
 ### Checking if a path is a directory
-
-Using `os.path` on \*nix:
-
-```python
->>> import os
-
->>> os.path.isdir('/')
-# True
-
->>> os.path.isdir('setup.py')
-# False
-
->>> os.path.isdir('/spam')
-# False
-```
 
 Using `pathlib` on \*nix:
 
@@ -339,15 +207,6 @@ Using `pathlib` on \*nix:
 
 ## Getting a file's size in bytes
 
-Using `os.path` on Windows:
-
-```python
->>> import os
-
->>> os.path.getsize('C:\\Windows\\System32\\calc.exe')
-# 776192
-```
-
 Using `pathlib` on \*nix:
 
 ```python
@@ -364,17 +223,6 @@ Using `pathlib` on \*nix:
 ```
 
 ## Listing directories
-
-Listing directory contents using `os.listdir` on Windows:
-
-```python
->>> import os
-
->>> os.listdir('C:\\Windows\\System32')
-# ['0409', '12520437.cpx', '12520850.cpx', '5U877.ax', 'aaclient.dll',
-# --snip--
-# 'xwtpdui.dll', 'xwtpw32.dll', 'zh-CN', 'zh-HK', 'zh-TW', 'zipfldr.dll']
-```
 
 Listing directory contents using `pathlib` on \*nix:
 
@@ -408,19 +256,6 @@ Listing directory contents using `pathlib` on \*nix:
   </base-warning-content>
 </base-warning>
 
-Using `os.path.getsize()` and `os.listdir()` together on Windows:
-
-```python
->>> import os
->>> total_size = 0
-
->>> for filename in os.listdir('C:\\Windows\\System32'):
-...     total_size = total_size + os.path.getsize(os.path.join('C:\\Windows\\System32', filename))
-...
->>> print(total_size)
-# 1117846456
-```
-
 Using `pathlib` on \*nix:
 
 ```python
@@ -439,22 +274,20 @@ Using `pathlib` on \*nix:
 The `shutil` module provides functions for copying files, as well as entire folders.
 
 ```python
->>> import shutil, os
+>>> import shutil
 
->>> os.chdir('C:\\')
 >>> shutil.copy('C:\\spam.txt', 'C:\\delicious')
 # C:\\delicious\\spam.txt'
 
->>> shutil.copy('eggs.txt', 'C:\\delicious\\eggs2.txt')
+>>> shutil.copy('C:\\eggs.txt', 'C:\\delicious\\eggs2.txt')
 # 'C:\\delicious\\eggs2.txt'
 ```
 
 While `shutil.copy()` will copy a single file, `shutil.copytree()` will copy an entire folder and every folder and file contained in it:
 
 ```python
->>> import shutil, os
+>>> import shutil
 
->>> os.chdir('C:\\')
 >>> shutil.copytree('C:\\bacon', 'C:\\bacon_backup')
 # 'C:\\bacon_backup'
 ```
@@ -484,60 +317,26 @@ If there is no eggs folder, then `move()` will rename bacon.txt to a file named 
 
 ## Deleting files and folders
 
-- Calling `os.unlink(path)` or `Path.unlink()` will delete the file at path.
-
-- Calling `os.rmdir(path)` or `Path.rmdir()` will delete the folder at path. This folder must be empty of any files or folders.
-
+- Calling `Path.unlink()` will delete the file at path.
+- Calling `Path.rmdir()` will delete the folder at path. This folder must be empty of any files or folders.
 - Calling `shutil.rmtree(path)` will remove the folder at path, and all files and folders it contains will also be deleted.
 
 ## Walking a Directory Tree
 
+The `Path` object has an `rglob()` method for recursively iterating over files and directories.
+
 ```python
->>> import os
+>>> from pathlib import Path
 >>>
->>> for folder_name, subfolders, filenames in os.walk('C:\\delicious'):
-...     print(f'The current folder is {folder_name}')
-...     for subfolder in subfolders:
-...         print(f'SUBFOLDER OF {folder_name}: {subfolder}')
-...     for filename in filenames:
-...         print(f'FILE INSIDE {folder_name}: {filename}')
-...     print('')
+>>> p = Path('C:\\delicious')
+>>> for i in p.rglob('*'):
+...     print(i)
 ...
-# The current folder is C:\delicious
-# SUBFOLDER OF C:\delicious: cats
-# SUBFOLDER OF C:\delicious: walnut
-# FILE INSIDE C:\delicious: spam.txt
-
-# The current folder is C:\delicious\cats
-# FILE INSIDE C:\delicious\cats: catnames.txt
-# FILE INSIDE C:\delicious\cats: zophie.jpg
-
-# The current folder is C:\delicious\walnut
-# SUBFOLDER OF C:\delicious\walnut: waffles
-
-# The current folder is C:\delicious\walnut\waffles
-# FILE INSIDE C:\delicious\walnut\waffles: butter.txt
+# C:\\delicious\\cats
+# C:\\delicious\\walnut
+# C:\\delicious\\spam.txt
+# C:\\delicious\\cats\\catnames.txt
+# C:\\delicious\\cats\\zophie.jpg
+# C:\\delicious\\walnut\\waffles
+# C:\\delicious\\walnut\\waffles\\butter.txt
 ```
-
-<base-disclaimer>
-  <base-disclaimer-title>
-    Pathlib vs Os Module
-  </base-disclaimer-title>
-  <base-disclaimer-content>
-    `pathlib` provides a lot more functionality than the ones listed above, like getting file name, getting file extension, reading/writing a file without manually opening it, etc. See the <a target="_blank" href="https://docs.python.org/3/library/pathlib.html">official documentation</a> if you intend to know more.
-  </base-disclaimer-content>
-</base-disclaimer>
-
-<see-also>
-  <see-also-title>
-    See also
-  </see-also-title>
-  <see-also-content>
-    <ul>
-      <li><router-link to="/modules/os-module">Python Os Module</router-link></li>
-      <li><router-link to="/modules/pathlib-module">Python Pathlib Module</router-link></li>
-      <li><router-link to="/builtin/open">Python open() built-in function</router-link></li>
-      <li><router-link to="/cheatsheet/reading-and-writing-files">Reading and writing files</router-link></li>
-    </ul>
-  </see-also-content>
-</see-also>
