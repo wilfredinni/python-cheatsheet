@@ -48,7 +48,7 @@ The `str()` function in Python is a built-in function that returns a string vers
 - <router-link to="/cheatsheet/string-formatting/">String Formatting</router-link>
 - <router-link to="/builtin/int/">int()</router-link>
 - <router-link to="/builtin/float/">float()</router-link>
-- <router-link to="/builtin/list/">list()</tool-code>
+- <router-link to="/builtin/list/">list()</router-link>
 - <router-link to="/builtin/tuple/">tuple()</router-link>
 - <router-link to="/builtin/dict/">dict()</router-link>
 - <router-link to="/builtin/set/">set()</router-link>
