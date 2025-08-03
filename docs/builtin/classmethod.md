@@ -22,34 +22,39 @@ A `classmethod` is a method that is bound to the class and not the instance of t
 
 They are often used for factory methods that create instances of the class in a specific way.
 
-## Examples
+## Example
+
+Here's a common use case: creating a factory method that can instantiate the class from a different data format, like a dictionary.
 
 ```python
-class Counter:
-    def __init__(self):
-        self.count = 0
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-    def increment(self):
-        self.count += 1
-        return self.count
+    @classmethod
+    def from_dict(cls, data):
+        # This is a factory method that creates a Person instance from a dictionary
+        return cls(data['name'], data['age'])
 
-    @classmethod  # passes the class as the first argument to the method instead of passing the instance
-    def get_new_instance(cls):
-        return cls()
+    def display(self):
+        print(f"Name: {self.name}, Age: {self.age}")
 
-if __name__ == "__main__":
-    counter = Counter()
-    print(counter.increment())
-    # 1
+# Data for a new person
+person_data = {'name': 'John', 'age': 30}
 
-    counter = counter.get_new_instance()
-    print(counter.increment())
-    # 1
+# Create a Person instance using the class method
+p = Person.from_dict(person_data)
+
+p.display()
+# Output: Name: John, Age: 30
 ```
 
 ## Relevant links
 
+- <router-link to="/cheatsheet/oop-basics">Cheatsheet: OOP Basics</router-link>
+- <router-link to="/cheatsheet/decorators">Cheatsheet: Decorators</router-link>
+- <router-link to="/cheatsheet/functions">Cheatsheet: Functions</router-link>
 - <router-link to="/builtin/staticmethod">staticmethod()</router-link>
-- <router-link :to="'/cheatsheet/oop-basics'">OOP Basics</router-link>
-- <router-link :to="'/cheatsheet/decorators'">Decorators</router-link>
-- <router-link :to="'/cheatsheet/functions'">Functions</router-link>
+- <router-link to="/builtin/property">property()</router-link>
+- <router-link to="/builtin/object">object()</router-link>

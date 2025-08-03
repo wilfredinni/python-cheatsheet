@@ -24,26 +24,34 @@ The `breakpoint()` function in Python, introduced in Python 3.7, provides an eas
 
 ## Example
 
+Here's how you can use `breakpoint()` to pause execution and inspect variables:
+
 ```python
->>> # Create a loop over 5 integers
->>> for i in range(5):
-...     # Stream i to stdout
-...     print(i)
-...     # Create breakpoint at # 3
-...     if i == 3:
-...         breakpoint()
-...
-# 0
-# 1
-# 2
-# 3
-# > c:\users\user\path\to\your\project\example.py(24)<module>()
-# -> for i in range(5):
-# (Pdb)
+def calculate_sum(a, b):
+    result = a + b
+    # We want to inspect the 'result' before returning
+    breakpoint()
+    return result
+
+# When you run this, the debugger will start right after 'result' is calculated
+# You can then type 'result' in the (Pdb) prompt to see its value
+# To continue execution, type 'c' or 'continue'
+final_sum = calculate_sum(10, 20)
+print(final_sum)
+
+# (Pdb) result
+# 30
+# (Pdb) c
+# 30
 ```
 
 ## Relevant links
 
-- <router-link :to="'/cheatsheet/debugging'">Debugging</router-link>
-- <router-link :to="'/builtin/print'">print()</router-link>
-- <router-link :to="'/cheatsheet/control-flow'">Control Flow</router-link>
+- <router-link to="/cheatsheet/debugging">Cheatsheet: Debugging</router-link>
+- <router-link to="/cheatsheet/control-flow">Cheatsheet: Control Flow</router-link>
+- <router-link to="/builtin/print">print()</router-link>
+- <router-link to="/builtin/input">input()</router-link>
+- <router-link to="/builtin/eval">eval()</router-link>
+- <router-link to="/builtin/exec">exec()</router-link>
+- <router-link to="/builtin/globals">globals()</router-link>
+- <router-link to="/builtin/locals">locals()</router-link>

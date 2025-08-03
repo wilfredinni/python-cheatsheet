@@ -35,7 +35,8 @@ print(complex("2+3j")) # Output: (2+3j)
 
 ## Relevant links
 
-- <router-link :to="'/builtin/int'">`int()`</router-link>
-- <router-link :to="'/builtin/float'">`float()`</router-link>
-- <router-link :to="'/blog/python-data-types'">Python Data Types</router-link>
-- <router-link :to="'/builtin/abs'">`abs()`</router-link>
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/builtin/int">int()</router-link>
+- <router-link to="/builtin/float">float()</router-link>
+- <router-link to="/builtin/abs">abs()</router-link>
+- <router-link to="/builtin/pow">pow()</router-link>

@@ -28,31 +28,26 @@ Here's a basic example of how it works:
 code_string = """
 def hello_world():
     print('Hello, world!')
+
+hello_world()
 """
 
 # Compile the string into a code object
+# The mode 'exec' is used for a sequence of statements.
+# The mode 'eval' is for a single expression.
+# The mode 'single' is for a single interactive statement.
 code_object = compile(code_string, '<string>', 'exec')
 
 # Execute the code object
 exec(code_object)
 
-# Call the function defined in the code object
-hello_world()
+# Output:
+# Hello, world!
 ```
-
-Another example, this time compiling a single expression:
-
-```python
-# Compile a simple expression
-code_obj = compile('hello_world()', '<string>', 'exec')
-
-# Execute the code object
-exec(code_obj)
-```
-
-In this example, a string containing Python code is compiled into a code object using `compile()`, and then executed with `exec()`. The function `hello_world()` defined in the string is then available to be called.
 
 ## Relevant links
 
+- <router-link to="/cheatsheet/debugging">Cheatsheet: Debugging</router-link>
 - <router-link to="/builtin/exec">exec()</router-link>
 - <router-link to="/builtin/eval">eval()</router-link>
+- <router-link to="/builtin/breakpoint">breakpoint()</router-link>

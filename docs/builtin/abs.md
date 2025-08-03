@@ -20,27 +20,37 @@ Python abs() built-in function
 
 The `abs()` function in Python is a built-in function that returns the absolute value of a number. It can handle integers, floating-point numbers, and even complex numbers (returning their magnitude). This function is useful when you need to ensure a value is positive, regardless of its original sign.
 
+### Examples
+
 ```python
+# For integers
 >>> abs(-1)
 # 1
 >>> abs(0)
 # 0
->>> abs(1)
-# 1
->>> abs(3.14)
+
+# For floats
+>>> abs(-3.14)
 # 3.14
->>> abs(3 + 2j)
-# 3.6055512754639896
->>> abs(0x10)
+
+# For complex numbers (returns magnitude)
+>>> abs(3 + 4j)
+# 5.0
+
+# For other number systems
+>>> abs(0x10) # Hexadecimal
 # 16
->>> abs(0b10)
+>>> abs(0b10) # Binary
 # 2
->>> abs(0o20)
+>>> abs(0o20) # Octal
 # 16
 ```
 
 ## Relevant links
 
-- <router-link :to="'/builtin/float'">float()</router-link>
-- <router-link :to="'/builtin/int'">`int()`</router-link>
-- <router-link :to="'/builtin/complex'">complex()</router-link>
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/builtin/pow">pow()</router-link>
+- <router-link to="/builtin/round">round()</router-link>
+- <router-link to="/builtin/int">int()</router-link>
+- <router-link to="/builtin/float">float()</router-link>
+- <router-link to="/builtin/complex">complex()</router-link>

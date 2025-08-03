@@ -23,19 +23,31 @@ The `all()` function in Python is a built-in function that checks if all element
 ## Examples
 
 ```python
->>> all([True, True, True])
+# All values are truthy
+>>> all([1, 2, 3])
 # True
 
->>> all((0, True, False))
+# Contains a falsy value (0)
+>>> all([1, 0, 3])
 # False
 
->>> all({1, 1, 1})
+# Contains a falsy value (empty string)
+>>> all(['a', '', 'c'])
+# False
+
+# An empty iterable is considered True
+>>> all([])
 # True
 ```
 
 ## Relevant links
 
-- <router-link :to="'/builtin/any'">any()</router-link>
-- <router-link :to="'/cheatsheet/control-flow'">Control Flow</router-link>
-- <router-link :to="'/cheatsheet/comprehensions'">Comprehensions</router-link>
-- <router-link :to="'/blog/python-data-types'">Python Data Types</router-link>
+- <router-link to="/cheatsheet/control-flow">Cheatsheet: Control Flow</router-link>
+- <router-link to="/cheatsheet/comprehensions">Cheatsheet: Comprehensions</router-link>
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/builtin/any">any()</router-link>
+- <router-link to="/builtin/bool">bool()</router-link>
+- <router-link to="/builtin/list">list()</router-link>
+- <router-link to="/builtin/tuple">tuple()</router-link>
+- <router-link to="/builtin/set">set()</router-link>
+- <router-link to="/builtin/dict">dict()</router-link>

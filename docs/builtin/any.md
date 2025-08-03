@@ -23,19 +23,27 @@ The `any()` function in Python is a built-in function that checks if at least on
 ## Examples
 
 ```python
->>> any([False, False, False])
+# All values are falsy
+>>> any([0, '', False])
 # False
 
->>> any((0, True, False))
+# Contains one truthy value (2)
+>>> any([0, 2, False])
 # True
 
->>> any({0, 0, 0})
+# An empty iterable is considered False
+>>> any([])
 # False
 ```
 
 ## Relevant links
 
-- <router-link :to="'/builtin/all'">all()</router-link>
-- <router-link :to="'/cheatsheet/control-flow'">Control Flow</router-link>
-- <router-link :to="'/cheatsheet/comprehensions'">Comprehensions</router-link>
-- <router-link :to="'/blog/python-data-types'">Python Data Types</router-link>
+- <router-link to="/cheatsheet/control-flow">Cheatsheet: Control Flow</router-link>
+- <router-link to="/cheatsheet/comprehensions">Cheatsheet: Comprehensions</router-link>
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/builtin/all">all()</router-link>
+- <router-link to="/builtin/bool">bool()</router-link>
+- <router-link to="/builtin/list">list()</router-link>
+- <router-link to="/builtin/tuple">tuple()</router-link>
+- <router-link to="/builtin/set">set()</router-link>
+- <router-link to="/builtin/dict">dict()</router-link>

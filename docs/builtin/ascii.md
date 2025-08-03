@@ -23,20 +23,29 @@ The `ascii()` function in Python is a built-in function that returns a string co
 ## Examples
 
 ```python
+# For an ASCII character, it's the same as repr()
 >>> ascii('A')
-# 'A'
+# "'A'"
 
+# For a non-ASCII character, it gets escaped
 >>> ascii('ë')
-# '\xeb'
+# "'\\xeb'"
 
+# For comparison, repr() would not escape it
+>>> repr('ë')
+# "'ë'"
+
+# It works on iterables too
 >>> ascii(['A', 'ë'])
-# ['A', '\xeb']
+# "['A', '\\xeb']"
 ```
 
 ## Relevant links
 
-- <router-link :to="'/builtin/repr'">repr()</router-link>
-- <router-link :to="'/builtin/str'">str()</router-link>
-- <router-link :to="'/builtin/chr'">chr()</router-link>
-- <router-link :to="'/builtin/ord'">ord()</router-link>
-- <router-link :to="'/cheatsheet/manipulating-strings'">Manipulating Strings</router-link>
+- <router-link to="/cheatsheet/manipulating-strings">Cheatsheet: Manipulating Strings</router-link>
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/builtin/repr">repr()</router-link>
+- <router-link to="/builtin/str">str()</router-link>
+- <router-link to="/builtin/bytes">bytes()</router-link>
+- <router-link to="/builtin/chr">chr()</router-link>
+- <router-link to="/builtin/ord">ord()</router-link>

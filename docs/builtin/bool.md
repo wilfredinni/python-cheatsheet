@@ -22,30 +22,55 @@ The `bool()` function in Python is a built-in function that converts a value to 
 
 ## Examples
 
+### Falsy Values
+These values are considered `False`:
+
 ```python
->>> bool(0)
-# False
-
->>> bool(1)
-# True
-
->>> bool(2)
-# True
-
->>> bool('3')
-# True
-
 >>> bool(False)
 # False
+>>> bool(None)
+# False
+>>> bool(0)
+# False
+>>> bool(0.0)
+# False
+>>> bool('')      # empty string
+# False
+>>> bool([])      # empty list
+# False
+>>> bool({})      # empty dict
+# False
+>>> bool(set())   # empty set
+# False
+```
 
+### Truthy Values
+Most other values are considered `True`:
+
+```python
 >>> bool(True)
+# True
+>>> bool(1)
+# True
+>>> bool(-1)
+# True
+>>> bool('hello')
+# True
+>>> bool([1, 2])
+# True
+>>> bool({'a': 1})
 # True
 ```
 
 ## Relevant links
 
-- <router-link :to="'/builtin/int'">int()</router-link>
-- <router-link :to="'/builtin/all'">all()</router-link>
-- <router-link :to="'/builtin/any'">any()</router-link>
-- <router-link :to="'/cheatsheet/control-flow'">Control Flow</router-link>
-- <router-link :to="'/blog/python-data-types'">Python Data Types</router-link>
+- <router-link to="/cheatsheet/control-flow">Cheatsheet: Control Flow</router-link>
+- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+- <router-link to="/builtin/all">all()</router-link>
+- <router-link to="/builtin/any">any()</router-link>
+- <router-link to="/builtin/int">int()</router-link>
+- <router-link to="/builtin/list">list()</router-link>
+- <router-link to="/builtin/tuple">tuple()</router-link>
+- <router-link to="/builtin/set">set()</router-link>
+- <router-link to="/builtin/dict">dict()</router-link>
+- <router-link to="/builtin/str">str()</router-link>
