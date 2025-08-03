@@ -38,6 +38,7 @@ declare module 'vue' {
     DialogTitle: typeof import('@headlessui/vue')['DialogTitle']
     EditIcon: typeof import('./components/icons/EditIcon.vue')['default']
     EmptySection: typeof import('./components/EmptySection.vue')['default']
+    EnhancedContributors: typeof import('./components/EnhancedContributors.vue')['default']
     GithubIcon: typeof import('./components/icons/GithubIcon.vue')['default']
     GridIcon: typeof import('./components/icons/GridIcon.vue')['default']
     Kinsta: typeof import('./components/sponsors/kinsta.vue')['default']
