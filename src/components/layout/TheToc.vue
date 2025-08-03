@@ -23,7 +23,7 @@ const pageToc = computed(() => {
 <template>
   <nav
     aria-labelledby="on-this-page-title"
-    class="flex h-full w-56 flex-col justify-between"
+    class="flex h-full w-72 flex-col justify-between"
   >
     <div>
       <h3
