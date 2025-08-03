@@ -2,12 +2,17 @@
 title: 'Changelog - Python Cheatsheet'
 description: See what is new, what got fixed, and what is coming.
 date: July 19, 2022
-updated: July 20, 2025
+updated: August 2, 2025
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
 Changelog
 </base-title>
+
+## 2025-08-02
+
+- Improved navigation by adding cross-references to the <router-link to="/cheatsheet/file-directory-path">File and Directory Paths</router-link> guide from related pages like the <router-link to="/modules/os-module">os module</router-link>, <router-link to="/modules/pathlib-module">pathlib module</router-link>, and <router-link to="/cheatsheet/reading-and-writing-files">reading and writing files</router-link> cheatsheet.
+- Refactored the <router-link to="/cheatsheet/file-directory-path">File and Directory Paths</router-link> cheatsheet to focus on the `pathlib` module, with links to the `os` module page for older methods.
 
 ## 2025-07-20
 
