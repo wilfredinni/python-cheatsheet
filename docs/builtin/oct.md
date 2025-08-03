@@ -29,8 +29,6 @@ Here are a few examples of how to use `oct()`:
 print(oct(8))    # Output: 0o10
 print(oct(10))   # Output: 0o12
 print(oct(100))  # Output: 0o144
-
-# The original examples
 print(oct(1))    # Output: 0o1
 print(oct(1000)) # Output: 0o1750
 ```

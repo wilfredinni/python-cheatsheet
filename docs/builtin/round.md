@@ -37,21 +37,6 @@ print(round(2.5)) # Output: 2
 print(round(3.5)) # Output: 4
 ```
 
-Here is the original example:
-
-```python
->>> round(1.4)
-# 1
->>> round(1.5)
-# 2
->>> round(2.1)
-# 2
->>> round(2.9)
-# 3
->>> round(2/3, ndigits=3)
-# 0.667
-```
-
 ## See also
 
 - <router-link to="/builtin/float">float()</router-link>

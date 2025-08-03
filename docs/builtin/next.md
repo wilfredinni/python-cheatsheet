@@ -48,7 +48,7 @@ print(next(my_iter, "default")) # Output: 1
 print(next(my_iter, "default")) # Output: default
 ```
 
-Here is the original example:
+More examples:
 
 ```python
 >>> i = iter([1, 2, 3])

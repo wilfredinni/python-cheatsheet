@@ -34,17 +34,6 @@ my_function("hello", "world")
 # {'arg1': 'hello', 'arg2': 'world', 'local_var': 'I am local'}
 ```
 
-Here is the original example:
-
-```python
-def my_function():
-    name = "Jim"
-    age = 35
-    print(locals())
-
-my_function() # {'name': 'Jim', 'age': 35}
-```
-
 ## See also
 
 - <router-link to="/builtin/globals">globals()</router-link>

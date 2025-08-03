@@ -37,16 +37,6 @@ my_set = set(my_list)
 print(my_set)  # Output: {1, 2, 3}
 ```
 
-Here is the original example demonstrating the iterator behavior:
-
-```python
->>> s = set()
->>> s
-# set()
->>> type(s)
-# <class 'set'>
-```
-
 ## See also
 
 - <router-link to="/builtin/frozenset">frozenset()</router-link>

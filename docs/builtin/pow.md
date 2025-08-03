@@ -35,7 +35,6 @@ print(pow(3, 2))  # Output: 9
 # Three arguments
 print(pow(3, 2, 4)) # Output: 1 (since 3**2 is 9, and 9 % 4 is 1)
 
-# Original examples
 # Basic exponentiation
 print(pow(2, 3)) # 8
 

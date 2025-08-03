@@ -28,8 +28,6 @@ Here are a few examples of how to use `bin()`:
 # Convert integers to binary
 print(bin(2))    # Output: 0b10
 print(bin(7))    # Output: 0b111
-
-# The original examples
 print(bin(1))    # Output: 0b1
 print(bin(10))   # Output: 0b1010
 print(bin(100))  # Output: 0b1100100

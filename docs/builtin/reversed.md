@@ -43,7 +43,7 @@ for char in reversed("hello"):
 # h
 ```
 
-Here is the original example demonstrating the iterator behavior:
+Here is another example demonstrating the iterator behavior:
 
 ```python
 >>> i = reversed([1, 2, 3])

@@ -41,15 +41,6 @@ print(min(letters)) # Output: 'a'
 print(min(10, 20, 5)) # Output: 5
 ```
 
-Here is the original example:
-
-```python
->>> min([1, 2, 10, 40, 5])
-# 1
->>> min((1, 2, 10, 40, 5))
-# 1
-```
-
 ## See also
 
 - <router-link to="/builtin/max">max()</router-link>
