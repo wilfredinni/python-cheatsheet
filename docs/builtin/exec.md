@@ -7,8 +7,6 @@ description: This function supports dynamic execution of Python code. object mus
 Python exec() built-in function
 </base-title>
 
-The `exec()` function in Python is a built-in function that allows you to dynamically execute Python code stored in a string. This can be very powerful for scenarios where you want to execute code provided by users, generate and run code at runtime, or even build mini interpreters or scripting environments within your application. However, it should be used with caution as it can potentially introduce security risks if not handled properly.
-
 <base-disclaimer>
   <base-disclaimer-title>
     From the <a target="_blank" href="https://docs.python.org/3/library/functions.html#exec">Python 3 documentation</a>
@@ -17,6 +15,10 @@ The `exec()` function in Python is a built-in function that allows you to dynami
    This function supports dynamic execution of Python code. object must be either a string or a code object. If it is a string, the string is parsed as a suite of Python statements which is then executed (unless a syntax error occurs) [...].
   </base-disclaimer-content>
 </base-disclaimer>
+
+## Introduction
+
+The `exec()` function in Python is a built-in function that allows you to dynamically execute Python code stored in a string. This can be very powerful for scenarios where you want to execute code provided by users, generate and run code at runtime, or even build mini interpreters or scripting environments within your application. However, it should be used with caution as it can potentially introduce security risks if not handled properly.
 
 ## Syntax
 ```python
@@ -34,7 +36,7 @@ exec(code_to_execute)
 # Output: Hello, exec()!
 ```
 
-The <router-link to="/cheatsheet/python-builtin-functions/exec">exec()</router-link> function can also be used with the <router-link to="/cheatsheet/python-builtin-functions/print">print()</router-link> function to display output to the console.
+The `exec()` function can also be used with the <router-link to="/builtin/print">print()</router-link> function to display output to the console.
 
 ## Executing Multiple Statements
 ```python
@@ -50,7 +52,7 @@ exec(code)
 #         4
 ```
 
-In this example, the <router-link to="/cheatsheet/python-builtin-functions/exec">exec()</router-link> function is used to execute a for loop that iterates over a <router-link to="/cheatsheet/python-builtin-functions/range">range</router-link> of numbers and <router-link to="/cheatsheet/python-builtin-functions/print">prints</router-link> each number to the console.
+In this example, the `exec()` function is used to execute a for loop that iterates over a <router-link to="/builtin/range">range</router-link> of numbers and <router-link to="/builtin/print">prints</router-link> each number to the console.
 
 ## Modifying Variables
 ```python
@@ -83,7 +85,7 @@ result = add_numbers(2, 3, 5)
 print(result)  # Output: 10
 ```
 
-In this example, the <router-link to="/cheatsheet/python-builtin-functions/exec">exec()</router-link> function is used to create a dynamic function that takes a list of arguments and returns their <router-link to="/cheatsheet/python-builtin-functions/sum">sum</router-link>.
+In this example, the `exec()` function is used to create a dynamic function that takes a list of arguments and returns their <router-link to="/builtin/sum">sum</router-link>.
 
 ## Error Handling
 ```python

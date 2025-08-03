@@ -16,6 +16,8 @@ Python divmod() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `divmod()` function takes two numbers as arguments and returns a tuple containing the quotient and the remainder of their integer division. It's a convenient way to get both results in a single call.
 
 ### Examples

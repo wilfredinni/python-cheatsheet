@@ -16,6 +16,10 @@ Python str() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `str()` function in Python is a built-in function that returns a string version of an object. If no object is provided, it returns an empty string. It's a versatile function for converting other data types to strings.
+
 ## Examples
 
 ```python

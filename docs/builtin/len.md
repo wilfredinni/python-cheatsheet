@@ -16,6 +16,10 @@ Python len() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `len()` function in Python is a built-in function that returns the number of items (length) in an object. The object can be a sequence (like a string, list, tuple) or a collection (like a dictionary or set).
+
 ## Example
 
 Return the the number of items of an object:

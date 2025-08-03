@@ -16,6 +16,10 @@ Python any() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `any()` function in Python is a built-in function that checks if at least one element in an iterable is `True`. It returns `True` if any element evaluates to true, and `False` if the iterable is empty or all elements are false. This is useful for quickly determining if a condition is met by any item in a collection.
+
 ## Examples
 
 ```python

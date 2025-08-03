@@ -16,6 +16,8 @@ Python globals() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `globals()` function in Python returns a dictionary representing the current global symbol table. This includes all global variables, functions, and other objects in the current scope.
 
 It can be useful for inspecting the global namespace or for dynamically accessing global variables by their string names.

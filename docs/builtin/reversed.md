@@ -16,6 +16,8 @@ Python reversed() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `reversed()` function returns a reverse iterator. This means it can be used to loop over a sequence (like a <router-link to="/builtin/list">list</router-link>, <router-link to="/builtin/tuple">tuple</router-link>, or <router-link to="/builtin/str">string</router-link>) in reverse order. It doesn't modify the original sequence but instead provides a new iterator that yields items from end to start.
 
 ### Examples

@@ -16,6 +16,10 @@ Python all() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `all()` function in Python is a built-in function that checks if all elements in an iterable are `True`. It returns `True` if every element evaluates to true, or if the iterable is empty. This is useful for validating conditions across a collection of items, such as checking if all numbers in a list are positive or if all required fields in a form are filled.
+
 ## Examples
 
 ```python

@@ -16,6 +16,10 @@ Python open() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `open()` function in Python is used to open a file and returns a file object. It's the standard way to interact with files on your system. You can specify the mode for opening the file, such as read, write, or append.
+
 ## Examples
 
 ```python

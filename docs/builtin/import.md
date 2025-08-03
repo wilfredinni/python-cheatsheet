@@ -16,6 +16,8 @@ Python `__import__` built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `__import__()` function is the underlying function that is called by the `import` statement. While it's possible to use it directly, it's generally discouraged. For dynamically importing modules, the `importlib.import_module()` function is the recommended approach.
 
 ### Example

@@ -16,6 +16,10 @@ Python type() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `type()` function in Python is a built-in function that returns the type of an object. It's a fundamental tool for understanding the data types you are working with in Python.
+
 ## Examples
 
 ```python

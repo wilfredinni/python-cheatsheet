@@ -18,6 +18,10 @@ Python breakpoint() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `breakpoint()` function in Python, introduced in Python 3.7, provides an easy way to enter the Python debugger (`pdb`) at a specific point in your code. It's a convenient alternative to manually importing `pdb` and calling `pdb.set_trace()`. This function simplifies the debugging process, allowing you to inspect variables and step through your code interactively.
+
 ## Example
 
 ```python

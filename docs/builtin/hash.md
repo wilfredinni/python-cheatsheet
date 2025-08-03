@@ -16,6 +16,8 @@ Python hash() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `hash()` function returns an integer representing the hash value of an object. This is primarily used by dictionaries to quickly look up keys.
 
 Only "hashable" objects can be passed to `hash()`. An object is hashable if it has a hash value that never changes during its lifetime. All of Python's built-in immutable types (like strings, numbers, and tuples) are hashable, while mutable containers (like lists and dictionaries) are not.

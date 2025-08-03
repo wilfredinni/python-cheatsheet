@@ -19,6 +19,8 @@ Python pow() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `pow()` function is used for exponentiation. It can take two or three arguments.
 
 *   `pow(base, exp)`: This is equivalent to `base ** exp`.

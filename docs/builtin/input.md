@@ -16,6 +16,10 @@ Python input() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `input()` function in Python is a built-in function that allows a program to read a line of text from the user's keyboard. It is an essential tool for creating interactive applications, as it pauses the program's execution and waits for the user to provide input. The function can also display a prompt to guide the user on what to enter.
+
 ## Examples
 
 This function takes the input from the user and converts it into a string:

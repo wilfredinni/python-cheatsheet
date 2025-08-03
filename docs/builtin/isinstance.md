@@ -16,6 +16,8 @@ Python isinstance() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `isinstance()` function checks if an object is an instance of a particular class or a subclass of it. It returns `True` if the object is of the specified type, and `False` otherwise.
 
 You can also check against a tuple of types.

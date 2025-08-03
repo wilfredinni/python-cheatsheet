@@ -16,6 +16,10 @@ Python zip() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `zip()` function in Python is a built-in function that takes two or more iterables (like lists, tuples, or strings) and aggregates them into a single iterator of tuples. Each tuple contains elements from all the input iterables at the same position.
+
 ## Examples
 
 ```python

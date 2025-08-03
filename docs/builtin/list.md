@@ -16,6 +16,10 @@ Python list() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+In Python, `list` is not a function but a built-in mutable sequence type. This means it's a data structure that can hold an ordered collection of items, and you can change its contents. You can create a list using square brackets `[]` or the `list()` constructor.
+
 ## Examples
 
 ```python

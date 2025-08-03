@@ -15,6 +15,9 @@ Python staticmethod() built-in function
     Transform a method into a static method.
   </base-disclaimer-content>
 </base-disclaimer>
+
+## Introduction
+
 The @staticmethod is a function decorator that will transform a class method into a static method that functions in a similar behavior to a C++ or other oop language static methods.
 
 You can turn a class method into a static method by applying the <code>@staticmethod</code> decorator to a function in a class. For example:

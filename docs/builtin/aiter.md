@@ -16,6 +16,10 @@ Python aiter() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `aiter()` function in Python is a built-in function that returns an asynchronous iterator for an asynchronous iterable. This is the asynchronous equivalent of the `iter()` function and is essential when working with asynchronous loops (`async for`). It allows you to iterate over objects that produce values asynchronously.
+
 ## Example
 
 ```python

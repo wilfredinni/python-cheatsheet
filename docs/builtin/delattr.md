@@ -16,6 +16,8 @@ Python delattr() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `delattr()` function in Python is used to delete an attribute from an object. It's the counterpart to `setattr()` and <router-link to="/builtin/getattr">`getattr()`</router-link>.
 
 ## Syntax

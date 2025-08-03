@@ -16,6 +16,10 @@ Python abs() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `abs()` function in Python is a built-in function that returns the absolute value of a number. It can handle integers, floating-point numbers, and even complex numbers (returning their magnitude). This function is useful when you need to ensure a value is positive, regardless of its original sign.
+
 ```python
 >>> abs(-1)
 # 1

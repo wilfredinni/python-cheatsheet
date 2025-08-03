@@ -16,6 +16,8 @@ Python tuple() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 While `tuple` is technically a type, it can be used like a function to create tuples. Tuples are immutable sequences, meaning they cannot be changed after they are created.
 
 The `tuple()` constructor can be used to create an empty tuple or to convert an iterable (like a list) into a tuple.

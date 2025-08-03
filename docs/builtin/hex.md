@@ -16,6 +16,10 @@ Python hex() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `hex()` function in Python is a built-in function that converts an integer into its corresponding hexadecimal representation. The resulting string is prefixed with "0x" to indicate that it is a hexadecimal value. This function is useful when you need to work with hexadecimal numbers, which are common in low-level programming, such as when dealing with memory addresses or color codes.
+
 ## Examples
 
 ```python

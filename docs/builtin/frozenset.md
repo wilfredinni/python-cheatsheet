@@ -16,6 +16,10 @@ Python frozenset() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `frozenset()` function in Python is a built-in function that creates an immutable, hashable set from an iterable. Unlike a regular `set`, a `frozenset` cannot be modified after its creation, which means you cannot add or remove elements. This immutability makes it suitable for use as a dictionary key or as an element in another set.
+
 ## Examples
 
 ```python

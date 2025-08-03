@@ -16,7 +16,11 @@ Python format() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-The <router-link to="/cheatsheet/python-builtin-functions/format">format()</router-link> function formats a specified value into a specified format.
+## Introduction
+
+The `format()` function in Python is a versatile built-in function that allows you to create formatted strings. It provides a way to embed values into a string, control their alignment, and specify their presentation, such as the number of decimal places or the padding.
+
+The <router-link to="/builtin/format">format()</router-link> function formats a specified value into a specified format.
 
 ## Examples
 

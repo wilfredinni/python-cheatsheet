@@ -16,7 +16,7 @@ Python range() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-# Basics
+## Introduction
 
 The `range` type is commonly used in `for` loops to loop a specific number of times. `range` takes in three parameters, `start`, `stop` and `step`. Each parameter must be integers (either built-in <router-link to="/builtin/int">int</router-link> or any object that implements the __index__() special method).
 

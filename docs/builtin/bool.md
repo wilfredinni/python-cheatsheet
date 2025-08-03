@@ -16,6 +16,10 @@ Python bool() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `bool()` function in Python is a built-in function that converts a value to a Boolean (`True` or `False`). It follows the standard truth testing procedure, where values like `0`, `None`, and empty collections are considered `False`, while most other values are `True`. This is fundamental for controlling the flow of your program with conditional statements.
+
 ## Examples
 
 ```python

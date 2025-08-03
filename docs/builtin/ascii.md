@@ -16,6 +16,10 @@ Python ascii() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `ascii()` function in Python is a built-in function that returns a string containing a printable representation of an object, similar to `repr()`. However, `ascii()` escapes any non-ASCII characters with `\x`, `\u`, or `\U` escape sequences. This is useful for ensuring that a string is safe to be used in an ASCII-only environment.
+
 ## Examples
 
 ```python

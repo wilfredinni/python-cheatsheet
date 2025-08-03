@@ -16,6 +16,8 @@ Python super() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `super()` function is used to call a method from a parent class. This is particularly useful in inheritance when you want to extend the functionality of a parent's method without completely overriding it.
 
 ### Example

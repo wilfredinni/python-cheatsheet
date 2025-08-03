@@ -16,6 +16,10 @@ Python issubclass() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `issubclass()` function in Python is a built-in function that checks if a given class is a subclass of another class or a tuple of classes. It returns `True` if the first argument is a subclass of the second argument, and `False` otherwise. This function is useful for object-oriented programming, as it allows you to verify class relationships and implement polymorphic behavior based on inheritance.
+
 ## Examples
 
 ```python

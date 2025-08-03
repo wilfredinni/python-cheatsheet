@@ -16,7 +16,7 @@ Python map() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-# Basics
+## Introduction
 
 The map function, _map(function, iterable)_ takes in one or more iterables, a 'callback function' (often a lambda), and returns a "Map Object". The map object contains the result of the map function applying the callback to each element in the iterable arguments. Map iterates over the provided iterable objects simultaneously. As in, at every step, "i" in the map function, the element at index "i" of each iterable will be available to the map function at that time. You will often want to cast the resultant map object to a <router-link to="/builtin/list">list</router-link>, <router-link to="/builtin/tuple">tuple</router-link>, or another form of object that is more convenient to work with once you are finished mapping.
 

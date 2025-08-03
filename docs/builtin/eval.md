@@ -16,6 +16,10 @@ Python eval() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `eval()` function in Python is a built-in function that parses a string as a Python expression and evaluates it. It can be used to execute arbitrary Python code from a string, which can be both powerful and risky. It's often used in situations where you need to evaluate dynamically generated expressions, but it should be used with caution due to potential security vulnerabilities.
+
 ## Examples
 
 ```python
@@ -30,4 +34,4 @@ Python eval() built-in function
 # True
 ```
 
-The `eval()` function can also be used with the <router-link to="/cheatsheet/python-builtin-functions/print">print()</router-link> function to display output to the console.
+The `eval()` function can also be used with the <router-link to="/builtin/print">print()</router-link> function to display output to the console.

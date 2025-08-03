@@ -16,6 +16,8 @@ Python sorted() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `sorted()` function returns a new sorted list from the items in an iterable. It does not modify the original iterable.
 
 You can also use the `reverse` parameter to sort in descending order.

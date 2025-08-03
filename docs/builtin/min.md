@@ -16,6 +16,8 @@ Python min() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `min()` function is the counterpart to <router-link to="/builtin/max">max()</router-link>. It can be used in two ways:
 
 1.  With an iterable (like a <router-link to="/builtin/list">list</router-link> or <router-link to="/builtin/tuple">tuple</router-link>), it returns the smallest item.

@@ -45,7 +45,7 @@ my_dict = dict(my_list)
 print(my_dict)  # Output: {'name': 'Jane', 'age': 25}
 ```
 
-
+Creating an empty dictionary:
 
 ```python
 >>> a = dict()

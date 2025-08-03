@@ -16,6 +16,8 @@ Python filter() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `filter()` function in Python is a built-in function that allows you to process an iterable and extract those items that satisfy a certain condition. It returns an <router-link to="/builtin/iter">iterator</router-link> with the elements that meet the criteria.
 
 ## Syntax

@@ -16,6 +16,8 @@ Python set() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `set()` constructor creates a new set. A set is an unordered collection of unique elements. You can create an empty set, or create a set from an iterable.
 
 ### Examples

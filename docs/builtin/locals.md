@@ -16,6 +16,8 @@ Python locals() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `locals()` function returns a dictionary representing the current local symbol table. This includes all local variables, arguments, and other objects in the current scope.
 
 It's a useful tool for inspecting the local namespace.

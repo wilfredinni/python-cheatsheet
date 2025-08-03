@@ -16,6 +16,8 @@ Python max() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `max()` function can be used in two ways:
 
 1.  With an iterable (like a <router-link to="/builtin/list">list</router-link> or <router-link to="/builtin/tuple">tuple</router-link>), it returns the largest item.

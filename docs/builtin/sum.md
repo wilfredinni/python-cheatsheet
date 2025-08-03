@@ -16,6 +16,8 @@ Python sum() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `sum()` function calculates the sum of all items in an iterable (like a list or tuple). You can also provide an optional `start` value, which is added to the total.
 
 ### Examples

@@ -16,6 +16,10 @@ Python enumerate() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `enumerate()` function in Python is a built-in function that adds a counter to an iterable. It returns an enumerate object, which yields pairs containing a count (from a starting index, which defaults to 0) and the corresponding value from the iterable. This is particularly useful when you need both the index and the item while looping over a sequence.
+
 ## Examples
 
 ```python

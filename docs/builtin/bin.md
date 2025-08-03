@@ -16,6 +16,8 @@ Python bin() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `bin()` function converts an integer into its binary representation. The resulting string is prefixed with "0b" to indicate that it's a binary number.
 
 ### Examples

@@ -16,6 +16,8 @@ Python print() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `print()` function writes the value of the argument(s) it is given. [...] it handles multiple arguments, floating point-quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely:
 
 ```python

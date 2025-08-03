@@ -16,6 +16,10 @@ Python help() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `help()` function in Python is a built-in utility that provides access to Python's extensive help system. It is particularly useful for interactive exploration and learning, as it allows you to get documentation for modules, functions, classes, and keywords directly in the Python interpreter. When called without an argument, it starts an interactive help session; otherwise, it prints help for the given object.
+
 ## Examples
 
 ```python

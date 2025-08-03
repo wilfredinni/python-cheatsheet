@@ -16,6 +16,8 @@ Python next() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `next()` function retrieves the next item from an iterator. If the iterator is exhausted, it raises a `StopIteration` exception.
 
 You can also provide a default value to be returned if the iterator is exhausted, which prevents the `StopIteration` exception.

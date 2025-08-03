@@ -16,7 +16,9 @@ Python property() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-The `property()` function is used to create property attributes. A property attribute is a special kind of attribute that has getter, setter, and deleter methods. This allows you to add logic to getting, setting, or deleting an attribute's value.
+## Introduction
+
+The `property()` function is used to create property attributes. A property attribute is a special kind of attribute that has getter, setter, and delete methods. This allows you to add logic to getting, setting, or deleting an attribute's value.
 
 It's more common to use the `@property` decorator, which is a more convenient way to use `property()`.
 

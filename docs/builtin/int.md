@@ -16,6 +16,10 @@ Python int() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `int()` function in Python is a built-in function that allows you to convert a value into an integer. It can take a string or a number as an argument and will return the integer equivalent. This is particularly useful when you need to perform mathematical operations that require whole numbers or when you need to ensure that a value is of the integer type.
+
 ## Examples
 
 ```python

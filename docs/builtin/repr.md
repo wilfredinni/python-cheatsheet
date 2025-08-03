@@ -16,6 +16,8 @@ Python repr() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `repr()` function returns a string containing a printable representation of an object. The goal of `repr()` is to be unambiguous. For many types, `repr()` returns a string that can be executed by <router-link to="/builtin/eval">eval()</router-link> to create an identical object.
 
 This is different from <router-link to="/builtin/str">str()</router-link>, which is intended to be human-readable.

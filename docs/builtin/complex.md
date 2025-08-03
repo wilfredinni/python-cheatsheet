@@ -16,6 +16,8 @@ Python complex() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
 The `complex()` function creates a complex number. It can take a real and an imaginary part as arguments. If only one argument is provided, it's considered the real part, and the imaginary part is zero.
 
 ## Examples
@@ -29,17 +31,4 @@ print(complex(5))     # Output: (5+0j)
 
 # Create a complex number from a string
 print(complex("2+3j")) # Output: (2+3j)
-```
-
-Here is the original example:
-
-```python
->>> complex(1)
-# (1+0j)
->>> complex('1')
-# (1+0j)
->>> complex(100)
-# (100+0j)
->>> complex('100')
-# (100+0j)
 ```

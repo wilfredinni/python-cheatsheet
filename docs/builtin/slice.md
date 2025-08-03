@@ -16,6 +16,10 @@ Python slice() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+## Introduction
+
+The `slice()` function in Python returns a slice object that can be used to slice sequences like lists, tuples, or strings. A slice object represents a set of indices specified by `start`, `stop`, and `step`.
+
 ## Examples
 
 ```python
