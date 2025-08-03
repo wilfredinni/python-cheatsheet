@@ -16,6 +16,26 @@ Python setattr() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+The `setattr()` function is a built-in Python function that allows you to set the value of an attribute of an object. It takes three arguments: the object, the name of the attribute (as a string), and the value you want to assign to that attribute.
+
+This is particularly useful when the attribute name is determined dynamically at runtime. Instead of using dot notation (`object.attribute = value`), which requires you to know the attribute name beforehand, `setattr()` lets you use a variable.
+
+### Examples
+
+Here's how you can use `setattr()` to add or modify attributes:
+
+```python
+class Person:
+    name = "John"
+
+p = Person()
+
+# Set the 'age' attribute to 30
+setattr(p, 'age', 30)
+
+print(p.age)  # Output: 30
+
+# Change the 'name' attribute
+setattr(p, 'name', 'Jane')
+print(p.name) # Output: Jane
+```

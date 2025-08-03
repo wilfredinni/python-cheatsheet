@@ -16,8 +16,23 @@ Python locals() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+The `locals()` function returns a dictionary representing the current local symbol table. This includes all local variables, arguments, and other objects in the current scope.
 
-## Example
+It's a useful tool for inspecting the local namespace.
+
+### Example
+
+```python
+def my_function(arg1, arg2):
+    local_var = "I am local"
+    print(locals())
+
+my_function("hello", "world")
+# Output will be something like:
+# {'arg1': 'hello', 'arg2': 'world', 'local_var': 'I am local'}
+```
+
+Here is the original example:
 
 ```python
 def my_function():
@@ -27,6 +42,3 @@ def my_function():
 
 my_function() # {'name': 'Jim', 'age': 35}
 ```
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->

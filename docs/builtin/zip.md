@@ -30,7 +30,7 @@ Python zip() built-in function
 # The shelf costs $40
 ```
 
-## Other Usecases
+## Other Use Cases
 
 The zip function in Python merges multiple iterables into tuples.
 

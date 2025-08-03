@@ -16,7 +16,25 @@ Python sum() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
+The `sum()` function calculates the sum of all items in an iterable (like a list or tuple). You can also provide an optional `start` value, which is added to the total.
+
+### Examples
+
+**Summing a list of numbers:**
+
+```python
+numbers = [1, 2, 3, 4, 5]
+print(sum(numbers))  # Output: 15
+```
+
+**Summing with a starting value:**
+
+```python
+numbers = [1, 2, 3]
+print(sum(numbers, 10))  # Output: 16 (10 + 1 + 2 + 3)
+```
+
+
 
 ```python
 >>> sum([2, 4, 6])
@@ -24,7 +42,3 @@ Python sum() built-in function
 >>> sum([10, 10, 10])
 # 30
 ```
-
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->

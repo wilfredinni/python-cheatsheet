@@ -16,29 +16,37 @@ Python delattr() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
+The `delattr()` function is used to delete an attribute from an object. It takes two arguments: the object and the name of the attribute to delete (as a string). It's the counterpart to `setattr()`.
+
+### Examples
+
+**Deleting an attribute from an object:**
+
 ```python
 class Person:
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
->>> person = Person("John", 30)
->>> delattr(person, 'age')
->>> person.__dict__
-# {'name': 'John'}
+person = Person("John", 30)
+print(person.__dict__)  # Output: {'name': 'John', 'age': 30}
 
+delattr(person, 'age')
+print(person.__dict__)  # Output: {'name': 'John'}
+```
+
+**Trying to delete a non-existent attribute:**
+
+```python
 class Car:
     def __init__(self, make, model):
         self.make = make
         self.model = model
 
->>> car = Car("Toyota", "Corolla")
->>> try:
-...     delattr(car, 'year')
-... except AttributeError as e:
-...     print(f"Error: {e}")
+car = Car("Toyota", "Corolla")
+try:
+    delattr(car, 'year')
+except AttributeError as e:
+    print(f"Error: {e}")
 # Error: 'Car' object has no attribute 'year'
 ```
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->

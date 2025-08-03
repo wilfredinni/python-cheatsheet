@@ -16,6 +16,30 @@ Python repr() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+The `repr()` function returns a string containing a printable representation of an object. The goal of `repr()` is to be unambiguous. For many types, `repr()` returns a string that can be executed by `eval()` to create an identical object.
+
+This is different from `str()`, which is intended to be human-readable.
+
+### Example
+
+```python
+import datetime
+
+# For a string, repr() adds quotes
+print(repr("hello"))  # Output: "'hello'"
+
+# For a datetime object, it's unambiguous
+now = datetime.datetime.now()
+print(repr(now))  # Output: e.g., 'datetime.datetime(2023, 10, 27, 10, 0, 0, 123456)'
+
+# You can define __repr__ for your own classes
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def __repr__(self):
+        return f"Person(name='{self.name}')"
+
+p = Person("John")
+print(repr(p))  # Output: "Person(name='John')"
+```

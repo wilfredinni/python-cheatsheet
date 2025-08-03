@@ -16,6 +16,18 @@ Python hasattr() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+The `hasattr()` function checks if an object has a given attribute. It takes the object and the attribute name (as a string) as arguments and returns `True` if the attribute exists, and `False` otherwise.
+
+### Example
+
+```python
+class Person:
+    name = "John"
+    age = 30
+
+p = Person()
+
+print(hasattr(p, 'name'))  # Output: True
+print(hasattr(p, 'age'))   # Output: True
+print(hasattr(p, 'email')) # Output: False
+```

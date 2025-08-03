@@ -16,15 +16,16 @@ Python ord() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
+The `ord()` function is the inverse of `chr()`. It takes a single character string and returns its Unicode code point, which is an integer.
+
+### Examples
 
 ```python
->>> ord('1')
-# 49
->>> ord('a')
-# 97
-```
+# Get the Unicode code point of a character
+print(ord('A'))  # Output: 65
+print(ord('€'))  # Output: 8364
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+# Original examples
+print(ord('1'))  # Output: 49
+print(ord('a'))  # Output: 97
+```

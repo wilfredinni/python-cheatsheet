@@ -16,6 +16,25 @@ Python `__import__` built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+The `__import__()` function is the underlying function that is called by the `import` statement. While it's possible to use it directly, it's generally discouraged. For dynamically importing modules, the `importlib.import_module()` function is the recommended approach.
+
+### Example
+
+Here's how you could use `__import__()` to dynamically import the `math` module:
+
+```python
+# Dynamically import the 'math' module
+math_module = __import__('math')
+
+# Now you can use it like a regular import
+print(math_module.sqrt(4))  # Output: 2.0
+```
+
+However, the recommended way using `importlib` is:
+
+```python
+import importlib
+
+math_module = importlib.import_module('math')
+print(math_module.sqrt(4)) # Output: 2.0
+```

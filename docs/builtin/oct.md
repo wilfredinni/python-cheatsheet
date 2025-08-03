@@ -16,19 +16,19 @@ Python oct() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
+The `oct()` function converts an integer into its octal representation. The resulting string is prefixed with "0o" to indicate that it's an octal number.
+
+### Examples
+
+Here are a few examples of how to use `oct()`:
 
 ```python
->>> oct(1)
-# '0o1'
->>> oct(10)
-# '0o12'
->>> oct(100)
-# '0o144'
->>> oct(1000)
-# '0o1750'
-```
+# Convert integers to octal
+print(oct(8))    # Output: 0o10
+print(oct(10))   # Output: 0o12
+print(oct(100))  # Output: 0o144
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+# The original examples
+print(oct(1))    # Output: 0o1
+print(oct(1000)) # Output: 0o1750
+```

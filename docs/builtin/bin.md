@@ -16,22 +16,20 @@ Python bin() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
+The `bin()` function converts an integer into its binary representation. The resulting string is prefixed with "0b" to indicate that it's a binary number.
+
+### Examples
+
+Here are a few examples of how to use `bin()`:
 
 ```python
->>> bin(1)
-# '0b1'
+# Convert integers to binary
+print(bin(2))    # Output: 0b10
+print(bin(7))    # Output: 0b111
 
->>> bin(10)
-# '0b1010'
-
->>> bin(100)
-# '0b1100100'
-
->>> bin(1000)
-# '0b1111101000'
+# The original examples
+print(bin(1))    # Output: 0b1
+print(bin(10))   # Output: 0b1010
+print(bin(100))  # Output: 0b1100100
+print(bin(1000)) # Output: 0b1111101000
 ```
-
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->

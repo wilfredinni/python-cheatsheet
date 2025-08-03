@@ -16,17 +16,21 @@ Python id() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
+The `id()` function returns a unique integer that identifies an object in memory. This ID is guaranteed to be unique for the lifetime of the object. It's essentially the memory address of the object.
+
+### Examples
 
 ```python
->>> id(1)
-# 9788960
->>> id('1')
-# 140269689726000
->>> id([1, 2])
-# 140269672924928
-```
+x = 10
+y = 10
+z = 20
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+print(id(x))  # Output might be something like 4331368528
+print(id(y))  # Output will be the same as id(x) because Python caches small integers
+print(id(z))  # Output will be different
+
+# Original examples
+print(id(1))
+print(id('1'))
+print(id([1, 2]))
+```

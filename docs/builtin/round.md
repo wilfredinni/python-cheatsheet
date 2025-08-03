@@ -16,7 +16,26 @@ Python round() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
+The `round()` function rounds a number to a specified number of decimal places. If the number of decimal places is not specified, it rounds to the nearest integer.
+
+Note that `round()` uses "round half to even" for numbers ending in .5, which means it will round to the nearest even integer.
+
+### Examples
+
+```python
+# Round to the nearest integer
+print(round(3.14))   # Output: 3
+print(round(3.8))    # Output: 4
+
+# Round to a specified number of decimal places
+print(round(3.14159, 2)) # Output: 3.14
+
+# "Round half to even"
+print(round(2.5)) # Output: 2
+print(round(3.5)) # Output: 4
+```
+
+Here is the original example:
 
 ```python
 >>> round(1.4)
@@ -30,7 +49,3 @@ Python round() built-in function
 >>> round(2/3, ndigits=3)
 # 0.667
 ```
-
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->

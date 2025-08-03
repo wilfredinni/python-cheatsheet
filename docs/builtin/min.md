@@ -16,7 +16,30 @@ Python min() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
+The `min()` function is the counterpart to `max()`. It can be used in two ways:
+
+1.  With an iterable (like a list or tuple), it returns the smallest item.
+2.  With two or more arguments, it returns the smallest of them.
+
+### Examples
+
+**Finding the min in an iterable:**
+
+```python
+numbers = [10, 2, 1, 40, 5]
+print(min(numbers))  # Output: 1
+
+letters = ('z', 'b', 'a')
+print(min(letters)) # Output: 'a'
+```
+
+**Finding the min of several arguments:**
+
+```python
+print(min(10, 20, 5)) # Output: 5
+```
+
+Here is the original example:
 
 ```python
 >>> min([1, 2, 10, 40, 5])
@@ -24,7 +47,3 @@ Python min() built-in function
 >>> min((1, 2, 10, 40, 5))
 # 1
 ```
-
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->

@@ -16,15 +16,50 @@ Python property() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
+The `property()` function is used to create property attributes. A property attribute is a special kind of attribute that has getter, setter, and deleter methods. This allows you to add logic to getting, setting, or deleting an attribute's value.
+
+It's more common to use the `@property` decorator, which is a more convenient way to use `property()`.
+
+### Example
+
+Here's an example of using `property()` to create a read-only attribute:
 
 ```python
->>> property(1)
-# <property object at 0x7f93158c8590>
->>> property('1')
-# <property object at 0x7f93159fe2c0>
+class Person:
+    def __init__(self, name):
+        self._name = name
+
+    def get_name(self):
+        print("Getting name")
+        return self._name
+
+    # Create a property
+    name = property(get_name)
+
+p = Person("John")
+print(p.name)  # This calls get_name()
+# Output:
+# Getting name
+# John
+
+# p.name = "Jane" # This would raise an AttributeError because there is no setter
 ```
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+And here is the more common way to do it with the `@property` decorator:
+
+```python
+class Person:
+    def __init__(self, name):
+        self._name = name
+
+    @property
+    def name(self):
+        print("Getting name")
+        return self._name
+
+p = Person("John")
+print(p.name)
+# Output:
+# Getting name
+# John
+```

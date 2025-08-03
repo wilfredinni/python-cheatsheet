@@ -16,17 +16,18 @@ Python divmod() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
+The `divmod()` function takes two numbers as arguments and returns a tuple containing the quotient and the remainder of their integer division. It's a convenient way to get both results in a single call.
+
+### Examples
 
 ```python
->>> divmod(2, 2)
-# (1, 0)
->>> divmod(10, 2)
-# (5, 0)
->>> divmod(7, 2)
-# (3, 1)
-```
+# Get quotient and remainder
+quotient, remainder = divmod(10, 3)
+print(quotient)   # Output: 3
+print(remainder)  # Output: 1
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+# Original examples
+print(divmod(2, 2))   # Output: (1, 0)
+print(divmod(10, 2))  # Output: (5, 0)
+print(divmod(7, 2))   # Output: (3, 1)
+```

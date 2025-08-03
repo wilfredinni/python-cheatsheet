@@ -16,6 +16,19 @@ Python object() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+The `object()` function returns a new, empty, featureless object. This object is the base for all classes in Python. It doesn't have any special attributes or methods.
+
+While you can create `object` instances, it's not something you'll do often in day-to-day programming. It's more of a fundamental building block of Python's object model.
+
+### Example
+
+```python
+# Create a new object
+o = object()
+
+# See its type
+print(type(o))  # Output: <class 'object'>
+
+# It has no attributes you can set
+# o.name = "test" # This would raise an AttributeError
+```

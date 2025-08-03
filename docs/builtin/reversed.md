@@ -16,7 +16,32 @@ Python reversed() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
+The `reversed()` function returns a reverse iterator. This means it can be used to loop over a sequence (like a list, tuple, or string) in reverse order. It doesn't modify the original sequence but instead provides a new iterator that yields items from end to start.
+
+### Examples
+
+To get a reversed list, you can convert the iterator to a list:
+
+```python
+my_list = [1, 2, 3, 4, 5]
+reversed_list = list(reversed(my_list))
+print(reversed_list)  # Output: [5, 4, 3, 2, 1]
+```
+
+You can also iterate over it directly in a `for` loop:
+
+```python
+for char in reversed("hello"):
+    print(char)
+# Output:
+# o
+# l
+# l
+# e
+# h
+```
+
+Here is the original example demonstrating the iterator behavior:
 
 ```python
 >>> i = reversed([1, 2, 3])
@@ -27,9 +52,5 @@ Python reversed() built-in function
 >>> i.__next__()
 # 1
 >>> i
-# <list_reverseiterator object at 0x7f93159ded00>
+# <list_reverseiterator object at ...>
 ```
-
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->

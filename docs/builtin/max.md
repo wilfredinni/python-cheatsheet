@@ -16,7 +16,30 @@ Python max() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
+The `max()` function can be used in two ways:
+
+1.  With an iterable (like a list or tuple), it returns the largest item.
+2.  With two or more arguments, it returns the largest of them.
+
+### Examples
+
+**Finding the max in an iterable:**
+
+```python
+numbers = [1, 2, 10, 40, 5]
+print(max(numbers))  # Output: 40
+
+letters = ('a', 'b', 'z')
+print(max(letters)) # Output: 'z'
+```
+
+**Finding the max of several arguments:**
+
+```python
+print(max(10, 20, 5)) # Output: 20
+```
+
+
 
 ```python
 >>> max([1, 2, 10, 40, 5])
@@ -24,7 +47,3 @@ Python max() built-in function
 >>> max((1, 2, 10, 40, 5))
 # 40
 ```
-
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->

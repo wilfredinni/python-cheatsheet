@@ -16,6 +16,34 @@ Python globals() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+The `globals()` function in Python returns a dictionary representing the current global symbol table. This includes all global variables, functions, and other objects in the current scope.
+
+It can be useful for inspecting the global namespace or for dynamically accessing global variables by their string names.
+
+### Examples
+
+```python
+# Define a global variable
+global_var = "I am global"
+
+def my_function():
+    # Access global variables using globals()
+    global_dict = globals()
+    print(global_dict["global_var"])  # Output: I am global
+
+    # Modify a global variable
+    global_dict["global_var"] = "Modified global"
+
+my_function()
+print(global_var)  # Output: Modified global
+```
+
+You can also use `globals()` to create new global variables from within a function:
+
+```python
+def create_global():
+    globals()["new_global"] = "This was created dynamically"
+
+create_global()
+print(new_global)  # Output: This was created dynamically
+```

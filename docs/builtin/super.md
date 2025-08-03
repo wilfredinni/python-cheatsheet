@@ -16,6 +16,24 @@ Python super() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+The `super()` function is used to call a method from a parent class. This is particularly useful in inheritance when you want to extend the functionality of a parent's method without completely overriding it.
+
+### Example
+
+```python
+class Parent:
+    def greet(self):
+        print("Hello from Parent")
+
+class Child(Parent):
+    def greet(self):
+        # Call the parent's greet method
+        super().greet()
+        print("Hello from Child")
+
+c = Child()
+c.greet()
+# Output:
+# Hello from Parent
+# Hello from Child
+```

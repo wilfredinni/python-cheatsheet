@@ -16,7 +16,24 @@ Python iter() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
+The `iter()` function returns an iterator object. An iterator is an object that can be iterated (looped) upon. It's what powers `for` loops in Python.
+
+You can use `iter()` to get an iterator from any iterable object, like a list, tuple, or string.
+
+### Examples
+
+**Getting an iterator from a list:**
+
+```python
+my_list = [1, 2, 3]
+my_iter = iter(my_list)
+
+print(next(my_iter))  # Output: 1
+print(next(my_iter))  # Output: 2
+print(next(my_iter))  # Output: 3
+```
+
+
 
 ```python
 >>> i = iter([1, 2, 3])
@@ -29,7 +46,3 @@ Python iter() built-in function
 >>> i.__next__()
 # 3
 ```
-
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->

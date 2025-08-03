@@ -16,21 +16,31 @@ Python vars() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
+The `vars()` function returns the `__dict__` attribute of an object. This dictionary contains the object's writable attributes. It's a convenient way to see all the attributes of an object at once.
+
+If called with no argument, `vars()` acts like `locals()`, returning a dictionary of the local symbol table.
+
+### Examples
+
+**Getting the attributes of an object:**
 
 ```python
-
 class Person:
     def __init__(self, name, age):
         self.name = name
         self.age = age
+
 my_person = Person("Dwight", 35)
-
-my_vars = vars(my_person)
-
-print(my_vars)
-# {'name': 'Dwight', 'age': 35}
+print(vars(my_person))
+# Output: {'name': 'Dwight', 'age': 35}
 ```
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
+
+**Using `vars()` with no arguments:**
+
+```python
+def my_function():
+    x = 10
+    print(vars())
+
+my_function() # Output: {'x': 10}
+```

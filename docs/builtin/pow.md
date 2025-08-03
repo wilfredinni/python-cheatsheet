@@ -19,23 +19,27 @@ Python pow() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Example
+The `pow()` function is used for exponentiation. It can take two or three arguments.
+
+*   `pow(base, exp)`: This is equivalent to `base ** exp`.
+*   `pow(base, exp, mod)`: This is equivalent to `(base ** exp) % mod`, but is more efficient. This is useful for modular arithmetic.
+
+### Examples
 
 ```python
+# Two arguments
+print(pow(3, 2))  # Output: 9
+
+# Three arguments
+print(pow(3, 2, 4)) # Output: 1 (since 3**2 is 9, and 9 % 4 is 1)
+
+# Original examples
 # Basic exponentiation
->>> pow(2, 3)
-# 8
+print(pow(2, 3)) # 8
 
 # Using three arguments (modular exponentiation)
->>> pow(2, 3, 5)
-# 3  (since 2^3 = 8, and 8 % 5 = 3)
+print(pow(2, 3, 5)) # 3  (since 2^3 = 8, and 8 % 5 = 3)
 
 # Works with negative exponents (returns float)
->>> pow(2, -3)
-# 0.125  (since 2^(-3) = 1/8)
+print(pow(2, -3)) # 0.125  (since 2^(-3) = 1/8)
 ```
-
-
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->

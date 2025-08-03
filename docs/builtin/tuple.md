@@ -16,7 +16,28 @@ Python tuple() built-in function
   </base-disclaimer-content>
 </base-disclaimer>
 
-## Examples
+While `tuple` is technically a type, it can be used like a function to create tuples. Tuples are immutable sequences, meaning they cannot be changed after they are created.
+
+The `tuple()` constructor can be used to create an empty tuple or to convert an iterable (like a list) into a tuple.
+
+### Examples
+
+**Create an empty tuple:**
+
+```python
+empty_tuple = tuple()
+print(empty_tuple)  # Output: ()
+```
+
+**Create a tuple from a list:**
+
+```python
+my_list = [1, 2, 3]
+my_tuple = tuple(my_list)
+print(my_tuple)  # Output: (1, 2, 3)
+```
+
+
 
 ```python
 >>> t = tuple()
@@ -29,7 +50,3 @@ Python tuple() built-in function
 >>> tuple(l)
 # (1, 2, 3)
 ```
-
-<!-- remove this tag to start editing this page -->
-<empty-section />
-<!-- remove this tag to start editing this page -->
