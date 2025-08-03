@@ -23,9 +23,9 @@ const pageToc = computed(() => {
 <template>
   <nav
     aria-labelledby="on-this-page-title"
-    class="flex h-full w-72 flex-col justify-between"
+    class="flex h-full w-64 flex-col justify-between"
   >
-    <div>
+    <div class="pr-2">
       <h3
         class="font-display text-sm font-medium text-slate-900 dark:text-white"
       >
