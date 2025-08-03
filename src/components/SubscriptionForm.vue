@@ -20,95 +20,89 @@ const response = computed(() => newsletter.getResponse)
 <template>
   <div
     v-if="showNewsletterForm && showSubscription && !reader.isActive"
-    class="mb-8 rounded-xl border border-slate-300/70 bg-slate-50 px-5 py-6 dark:border-transparent dark:bg-slate-800"
+    class="rounded-lg border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-800"
   >
-    <div v-if="false" class="flex justify-end">
-      <button @click="showNewsletterForm = false">
-        <span class="sr-only">close</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4 w-4 text-slate-700 hover:text-slate-500 dark:text-slate-400 dark:hover:text-slate-500"
-          viewBox="0 0 20 20"
-          fill="currentColor"
+    <div class="space-y-4">
+      <div class="text-center">
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+          Join the Community
+        </h3>
+        <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">
+          <span class="font-medium text-sky-600 dark:text-sky-400"
+            >17,202+</span
+          >
+          Python developers getting updates
+        </p>
+      </div>
+
+      <form class="space-y-3" @submit.prevent="subscribe">
+        <input
+          v-model="email"
+          type="email"
+          placeholder="Enter your email"
+          autocomplete="email"
+          required
+          class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm placeholder:text-slate-500 transition focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 dark:border-slate-600 dark:bg-slate-700 dark:text-white dark:placeholder:text-slate-400"
+        />
+        <button
+          type="submit"
+          :disabled="loading"
+          class="w-full rounded-lg bg-sky-600 px-4 py-3 text-sm font-medium text-white transition hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 disabled:opacity-50 dark:bg-sky-500 dark:hover:bg-sky-600 dark:focus:ring-offset-slate-800"
         >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          />
-        </svg>
-      </button>
-    </div>
-    <p
-      class="mb-1 text-center text-xl font-semibold text-slate-800 dark:text-slate-300 sm:text-start"
-    >
-      Subscribe to pythoncheatsheet.org
-    </p>
+          <span v-if="!loading">Subscribe to Newsletter</span>
+          <span v-else class="flex items-center justify-center">
+            <svg
+              class="mr-2 h-4 w-4 animate-spin"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+              />
+              <path
+                class="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              />
+            </svg>
+            Subscribing...
+          </span>
+        </button>
+      </form>
 
-    <prose>
-      <p class="text-center text-slate-700 dark:text-slate-400 sm:text-start">
-        Join
-        <span class="text-sky-400 font-semibold">
-          16,702+ Python developers
-        </span>
-        in a two times a month and bullshit free
-        <router-link to="/newsletter" rel="noreferrer">
-          publication </router-link
-        >, full of interesting, relevant links.
+      <p class="text-xs text-center text-slate-500 dark:text-slate-400">
+        Two times a month. No spam.
+        <router-link
+          to="/newsletter"
+          class="text-sky-600 hover:text-sky-700 dark:text-sky-400 underline"
+        >
+          Learn more
+        </router-link>
       </p>
-    </prose>
 
-    <form
-      class="mt-3 grid gap-y-3 sm:flex sm:space-x-3"
-      @submit.prevent="subscribe"
-    >
-      <input
-        v-model="email"
-        required
-        name="email"
-        type="email"
-        class="w-full rounded border border-slate-300 px-3 py-2.5 text-sm placeholder:text-slate-500 focus:outline-none dark:border-slate-800 dark:bg-slate-700 dark:text-slate-300 dark:placeholder:text-slate-400 dark:focus:border-slate-800"
-        placeholder="Your email address"
-      />
-      <button
-        class="w-full rounded bg-sky-700 px-4 py-2.5 font-medium tracking-wide text-white hover:bg-sky-600 sm:w-52 sm:text-xs"
+      <!-- Success/Error Messages -->
+      <div
+        v-if="response?.email"
+        class="rounded-md bg-green-50 p-3 dark:bg-green-900/20"
       >
-        <span v-if="!loading">SUBSCRIBE</span>
-        <svg
-          v-else
-          class="mx-auto h-4 w-4 animate-spin"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-        >
-          <circle
-            class="opacity-25"
-            cx="12"
-            cy="12"
-            r="10"
-            stroke="currentColor"
-            stroke-width="4"
-          />
-          <path
-            class="opacity-75"
-            fill="currentColor"
-            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-          />
-        </svg>
-      </button>
-    </form>
+        <p class="text-xs text-green-700 dark:text-green-300 text-center">
+          ✅ Thanks! Check your email to confirm.
+        </p>
+      </div>
 
-    <template v-if="response?.email">
-      <p class="mx-3 mt-2 text-sm font-medium text-sky-700 dark:text-sky-400">
-        Thank you for subscribing! Please check your email to confirm your
-        subscription. Be sure to check your junk folder.
-      </p>
-    </template>
-
-    <template v-else-if="response?.errors">
-      <p class="mt-2 text-sm font-medium text-sky-700 dark:text-sky-400">
-        You are already subscribed. Thanks!
-      </p>
-    </template>
+      <div
+        v-else-if="response?.errors"
+        class="rounded-md bg-blue-50 p-3 dark:bg-blue-900/20"
+      >
+        <p class="text-xs text-blue-700 dark:text-blue-300 text-center">
+          You're already subscribed!
+        </p>
+      </div>
+    </div>
   </div>
 </template>
