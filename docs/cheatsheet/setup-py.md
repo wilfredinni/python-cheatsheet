@@ -28,6 +28,8 @@ For a comprehensive guide to UV, the lightning-fast Python package manager, read
 
 The setup script is the center of all activity in building, distributing, and installing modules using the Distutils. The main purpose of the setup script is to describe your module distribution to the Distutils, so that the various commands that operate on your modules do the right thing.
 
+For a comprehensive guide on handling file and directory paths, which is essential for managing project structures, see the <router-link to="/cheatsheet/file-directory-path">File and directory Paths</router-link> page.
+
 The `setup.py` file is at the heart of a Python project. It describes all the metadata about your project. There are quite a few fields you can add to a project to give it a rich set of metadata describing the project. However, there are only three required fields: name, version, and packages. The name field must be unique if you wish to publish your package on the Python Package Index (PyPI). The version field keeps track of different releases of the project. The package's field describes where you’ve put the Python source code within your project.
 
 This allows you to easily install Python packages. Often it's enough to write:

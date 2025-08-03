@@ -527,3 +527,17 @@ If there is no eggs folder, then `move()` will rename bacon.txt to a file named 
     `pathlib` provides a lot more functionality than the ones listed above, like getting file name, getting file extension, reading/writing a file without manually opening it, etc. See the <a target="_blank" href="https://docs.python.org/3/library/pathlib.html">official documentation</a> if you intend to know more.
   </base-disclaimer-content>
 </base-disclaimer>
+
+<see-also>
+  <see-also-title>
+    See also
+  </see-also-title>
+  <see-also-content>
+    <ul>
+      <li><router-link to="/modules/os-module">Python Os Module</router-link></li>
+      <li><router-link to="/modules/pathlib-module">Python Pathlib Module</router-link></li>
+      <li><router-link to="/builtin/open">Python open() built-in function</router-link></li>
+      <li><router-link to="/cheatsheet/reading-and-writing-files">Reading and writing files</router-link></li>
+    </ul>
+  </see-also-content>
+</see-also>

@@ -92,6 +92,8 @@ how-long
     └── test_how_long.py
 ```
 
+For a comprehensive guide on handling file and directory paths, which is essential for managing project structures, see the <router-link to="/cheatsheet/file-directory-path">File and directory Paths</router-link> page.
+
 > Note: To be able to publish your project, you need an available name. Use the [PyPI](https://pypi.org/) search for this.
 
 ### The pyproject.toml file

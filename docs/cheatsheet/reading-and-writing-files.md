@@ -7,6 +7,8 @@ description: To read/write to a file in Python, you will want to use the with st
 Reading and Writing Files
 </base-title>
 
+For a more in-depth look at file and directory path manipulation, see the <router-link to="/cheatsheet/file-directory-path">File and directory Paths</router-link> page.
+
 ## The file Reading/Writing process
 
 To read/write to a file in Python, you will want to use the `with`

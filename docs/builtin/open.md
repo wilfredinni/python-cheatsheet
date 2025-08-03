@@ -12,7 +12,7 @@ Python open() built-in function
     From the <a target="_blank" href="https://docs.python.org/3/library/functions.html#open">Python 3 documentation</a>
   </base-disclaimer-title>
   <base-disclaimer-content>
-   Open file and return a corresponding file object. If the file cannot be opened, an OSError is raised. See Reading and Writing Files for more examples of how to use this function.
+   Open file and return a corresponding file object. If the file cannot be opened, an OSError is raised. See <router-link to="/cheatsheet/file-directory-path">Reading and Writing Files</router-link> for more examples of how to use this function.
   </base-disclaimer-content>
 </base-disclaimer>
 
