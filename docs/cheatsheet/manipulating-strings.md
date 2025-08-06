@@ -62,6 +62,18 @@ Raw strings are mostly used for <router-link to="/cheatsheet/regular-expressions
 # Bob
 ```
 
+## String literal concatenation
+
+```python
+>>> print("[A-Za-z_]"       # letter or underscore
+...       "[A-Za-z0-9_]*"   # letter, digit or underscore
+... )
+
+# [A-Za-z_][A-Za-z0-9_]*
+```
+
+Does not work with variables or expressions.
+
 ## Indexing and Slicing strings
 
     H   e   l   l   o       w   o   r   l   d    !
