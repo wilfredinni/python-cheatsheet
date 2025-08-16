@@ -40,10 +40,10 @@ const isDark = useDark()
             </template>
             <template #message>
               <router-link
-                to="/blog/python-pathlib-essentials"
+                to="/blog/python-decorators-for-beginners"
                 class="hover:text-sky-500"
               >
-                Essential Path Operations
+                Python Decorators Patterns
               </router-link>
             </template>
           </base-badge-notice>

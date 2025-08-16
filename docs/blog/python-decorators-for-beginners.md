@@ -3,7 +3,7 @@ title: 'Python Decorators - Simple Patterns to Level Up Your Code - Python Cheat
 description: Decorators are one of Python's most elegant features, allowing you to modify the behavior of functions or methods in a clean and readable way.
 date: Aug 16, 2025
 updated: Aug 16, 2025
-tags: python, intermediate, beta
+tags: python, intermediate, decorators
 socialImage: /blog/python-decorators.jpg
 ---
 
@@ -192,7 +192,6 @@ def retry(max_attempts=3):
                     if attempt == max_attempts - 1:
                         print("All attempts failed!")
                         raise
-            return None
         return wrapper
     return decorator
 
@@ -213,31 +212,47 @@ Sometimes you need to be gentle with APIs or databases:
 
 ```python
 import time
+import functools
 
 def rate_limit(seconds):
+    """
+    A decorator to limit how frequently a function can be called.
+    """
     def decorator(func):
-        last_called = [^0]  # Use list to store mutable value
+        # Use a list to store a mutable float value for the last call time.
+        # This allows the inner wrapper function to modify it.
+        last_called_at = [0.0]
 
         @functools.wraps(func)
         def wrapper(*args, **kwargs):
-            elapsed = time.time() - last_called
-            if elapsed < seconds:
-                time.sleep(seconds - elapsed)
+            # Calculate time elapsed since the last call
+            elapsed = time.time() - last_called_at[0]
+            wait_time = seconds - elapsed
 
-            last_called = time.time()
+            # If not enough time has passed, sleep for the remainder
+            if wait_time > 0:
+                time.sleep(wait_time)
+
+            # Update the last call time and execute the function
+            last_called_at[0] = time.time()
             return func(*args, **kwargs)
 
         return wrapper
     return decorator
 
-@rate_limit(1)  # At most once per second
+@rate_limit(1)  # Allow at most one call per second
 def call_api():
     print(f"API called at {time.time():.2f}")
 
-# These will be spaced out by 1 second each
+# These calls will be spaced out by approximately 1 second each
 call_api()
 call_api()
 call_api()
+
+# Expected Output:
+# API called at 1723823038.50
+# API called at 1723823039.50
+# API called at 1723823040.50
 ```
 
 
