@@ -20,7 +20,7 @@ meta:
 
 <blog-title-header :frontmatter="frontmatter" title="Python Decorators: Simple Patterns to Level Up Your Code" />
 
-You know that feeling when you see `@something` above a function and wonder what black magic is happening? I've been there too. Decorators might look intimidating, but they're actually one of Python's most elegant features once you understand the basics.
+You know that feeling when you see `@something` above a function and wonder what black magic is happening? I've been there too. Decorators might look intimidating, but they're actually one of Python's most elegant features once you understand the basics — see <router-link to="/cheatsheet/decorators">Decorators (cheatsheet)</router-link> for a compact reference.
 
 Think of decorators as gift wrapping for your functions. The function inside stays the same, but the decorator adds a nice bow on top – extra functionality without changing the original code.
 
@@ -74,13 +74,15 @@ def slow_function():
 result = slow_function()
 # slow_function took 1.0041 seconds
 print(result)  # Done!
+
+See the <router-link to="/cheatsheet/decorators">Decorators (cheatsheet)</router-link> for additional decorator templates and common patterns.
 ```
 
-Notice how we use `*args` and `**kwargs`? This makes our decorator work with any function, regardless of how many arguments it takes.
+Notice how we use `*args` and `**kwargs` (see <router-link to="/cheatsheet/args-and-kwargs">Args & kwargs</router-link>)? This makes our decorator work with any function, regardless of how many arguments it takes.
 
 ## Debug Your Code: Logger Decorator
 
-When you're trying to figure out what's going wrong, this decorator is incredibly handy:
+When you're trying to figure out what's going wrong, this decorator is incredibly handy — also check the <router-link to="/cheatsheet/debugging">Debugging (cheatsheet)</router-link> for complementary tips and techniques:
 
 ```python
 def debug(func):
@@ -90,7 +92,7 @@ def debug(func):
         kwargs_str = ', '.join(f"{k}={v!r}" for k, v in kwargs.items())
         all_args = ', '.join(filter(None, [args_str, kwargs_str]))
         print(f"Calling {func.__name__}({all_args})")
-        
+
         result = func(*args, **kwargs)
         print(f"{func.__name__} returned {result!r}")
         return result
@@ -116,10 +118,10 @@ def requires_auth(func):
     def wrapper(*args, **kwargs):
         # In a real app, you'd check actual authentication
         user_logged_in = True  # This would come from your auth system
-        
+
         if not user_logged_in:
             return "Access denied! Please log in."
-        
+
         return func(*args, **kwargs)
     return wrapper
 
@@ -139,18 +141,18 @@ If you have a function that does expensive calculations with the same inputs, ca
 ```python
 def cache(func):
     cached_results = {}
-    
+
     @functools.wraps(func)
     def wrapper(*args):
         if args in cached_results:
             print(f"Cache hit for {func.__name__}{args}")
             return cached_results[args]
-        
+
         print(f"Computing {func.__name__}{args}")
         result = func(*args)
         cached_results[args] = result
         return result
-    
+
     return wrapper
 
 @cache
@@ -215,16 +217,16 @@ import time
 def rate_limit(seconds):
     def decorator(func):
         last_called = [^0]  # Use list to store mutable value
-        
+
         @functools.wraps(func)
         def wrapper(*args, **kwargs):
             elapsed = time.time() - last_called
             if elapsed < seconds:
                 time.sleep(seconds - elapsed)
-            
+
             last_called = time.time()
             return func(*args, **kwargs)
-        
+
         return wrapper
     return decorator
 
@@ -253,7 +255,7 @@ def validate_types(**expected_types):
             sig = inspect.signature(func)
             bound_args = sig.bind(*args, **kwargs)
             bound_args.apply_defaults()
-            
+
             for param_name, expected_type in expected_types.items():
                 if param_name in bound_args.arguments:
                     value = bound_args.arguments[param_name]
@@ -262,7 +264,7 @@ def validate_types(**expected_types):
                             f"{param_name} must be {expected_type.__name__}, "
                             f"got {type(value).__name__}"
                         )
-            
+
             return func(*args, **kwargs)
         return wrapper
     return decorator
@@ -297,7 +299,7 @@ except TypeError as e:
 
 ## Tips for Using Decorators
 
-**Always use `@functools.wraps`** – This preserves the original function's name and documentation, making debugging easier.
+**Always use `@functools.wraps`** – This preserves the original function's name and documentation, making debugging easier (see <router-link to="/cheatsheet/decorators">Decorators cheatsheet</router-link> for examples).
 
 **Keep them simple** – If your decorator is getting complex, consider if it should be a class or separate function instead.
 
@@ -322,3 +324,17 @@ Decorators let you add functionality to functions without changing their code. T
 Start with the simple patterns shown here. Once you're comfortable, you can create more sophisticated decorators for your specific needs. The key is understanding that decorators are just functions that wrap other functions – everything else is just clever applications of that basic concept.
 
 Want to practice? Try adding the `@timer` decorator to some of your existing functions and see which ones are slower than you expected. You might be surprised at what you discover!
+
+## Relevant Links
+
+Add relevant internal documentation links below for further reading:
+
+- <router-link to="/cheatsheet/decorators">Decorators (cheatsheet)</router-link>
+- <router-link to="/cheatsheet/functions">Functions (cheatsheet)</router-link>
+- <router-link to="/cheatsheet/args-and-kwargs">Args & kwargs (cheatsheet)</router-link>
+- <router-link to="/cheatsheet/debugging">Debugging (cheatsheet)</router-link>
+- <router-link to="/cheatsheet/oop-basics">OOP basics (cheatsheet)</router-link>
+- <router-link to="/builtin/callable">callable() (builtin)</router-link>
+- <router-link to="/builtin/staticmethod">staticmethod (builtin)</router-link>
+- <router-link to="/blog/python-easy-args-kwargs">Python: Easy args & kwargs (blog)</router-link>
+- <router-link to="/blog/python-comprehensions-step-by-step">Python comprehensions (blog)</router-link>

@@ -8,7 +8,7 @@ Python Decorators
 </base-title>
 
 A Python Decorator provides a concise and reusable way for extending
-a function or a class.
+a function or a class. Read the companion article <router-link to="/blog/python-decorators-for-beginners">Python Decorators: Simple Patterns to Level Up Your Code</router-link> for practical examples and patterns.
 
 ## Bare bone decorator
 
@@ -182,9 +182,10 @@ say_hi("James")
 
 ## Relevant links
 
+- <router-link to="/blog/python-decorators-for-beginners">Python Decorators: Simple Patterns to Level Up Your Code</router-link>
+- <router-link to="/blog/python-easy-args-kwargs">Python *args and **kwargs Made Easy</router-link>
 - <router-link to="/cheatsheet/functions">Functions</router-link>
 - <router-link to="/cheatsheet/args-and-kwargs">Args and Kwargs</router-link>
-- <router-link to="/blog/python-easy-args-kwargs">Python *args and **kwargs Made Easy</router-link>
 - <router-link to="/builtin/classmethod">classmethod()</router-link>
 - <router-link to="/builtin/staticmethod">staticmethod()</router-link>
 - <router-link to="/builtin/property">property()</router-link>
