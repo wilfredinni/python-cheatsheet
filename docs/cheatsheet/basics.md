@@ -167,7 +167,7 @@ For a comprehensive guide with visual examples and detailed explanations of when
 String concatenation:
 
 ```python
->>> 'Alice' 'Bob'
+>>> 'Alice' + 'Bob'
 # 'AliceBob'
 ```
 
