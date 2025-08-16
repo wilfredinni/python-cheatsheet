@@ -100,8 +100,8 @@ importers:
         specifier: ^11.3.1
         version: 11.3.1
       happy-dom:
-        specifier: ^14.12.3
-        version: 14.12.3
+        specifier: ^15.0.0
+        version: 15.11.7
       markdown-it:
         specifier: ^14.1.0
         version: 14.1.0
@@ -161,7 +161,7 @@ importers:
         version: 0.6.1
       vitest:
         specifier: ^1.6.1
-        version: 1.6.1(@types/node@20.19.11)(happy-dom@14.12.3)(jsdom@24.1.3)(terser@5.43.1)
+        version: 1.6.1(@types/node@20.19.11)(happy-dom@15.11.7)(jsdom@24.1.3)(terser@5.43.1)
       vue-tsc:
         specifier: ^2.2.12
         version: 2.2.12(typescript@5.9.2)
@@ -2426,9 +2426,9 @@ packages:
     resolution: {integrity: sha512-5v6yZd4JK3eMI3FqqCouswVqwugaA9r4dNZB1wwcmrD02QkV5H0y7XBQW8QwQqEaZY1pM9aqORSORhJRdNK44Q==}
     engines: {node: '>=6.0'}
 
-  happy-dom@14.12.3:
-    resolution: {integrity: sha512-vsYlEs3E9gLwA1Hp+w3qzu+RUDFf4VTT8cyKqVICoZ2k7WM++Qyd2LwzyTi5bqMJFiIC/vNpTDYuxdreENRK/g==}
-    engines: {node: '>=16.0.0'}
+  happy-dom@15.11.7:
+    resolution: {integrity: sha512-KyrFvnl+J9US63TEzwoiJOQzZBJY7KgBushJA8X61DMbNsH+2ONkDuLDnCnwUiPTF42tLoEmrPyoqbenVA5zrg==}
+    engines: {node: '>=18.0.0'}
 
   has-bigints@1.1.0:
     resolution: {integrity: sha512-R3pbpkcIqv2Pm3dUwgjclDRVmWpTJW2DcMzcIhEXEx1oh/CEMObMm3KLmRJOdvhM7o4uQBnwr8pzRK2sJWIqfg==}
@@ -6560,7 +6560,7 @@ snapshots:
       section-matter: 1.0.0
       strip-bom-string: 1.0.0
 
-  happy-dom@14.12.3:
+  happy-dom@15.11.7:
     dependencies:
       entities: 4.5.0
       webidl-conversions: 7.0.0
@@ -7998,7 +7998,7 @@ snapshots:
       fsevents: 2.3.3
       terser: 5.43.1
 
-  vitest@1.6.1(@types/node@20.19.11)(happy-dom@14.12.3)(jsdom@24.1.3)(terser@5.43.1):
+  vitest@1.6.1(@types/node@20.19.11)(happy-dom@15.11.7)(jsdom@24.1.3)(terser@5.43.1):
     dependencies:
       '@vitest/expect': 1.6.1
       '@vitest/runner': 1.6.1
@@ -8022,7 +8022,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 20.19.11
-      happy-dom: 14.12.3
+      happy-dom: 15.11.7
       jsdom: 24.1.3
     transitivePeerDependencies:
       - less
