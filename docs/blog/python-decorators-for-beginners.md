@@ -1,6 +1,6 @@
 ---
 title: 'Python Decorators - Simple Patterns to Level Up Your Code - Python Cheatsheet'
-description: Decorators are one of Python's most elegant features, allowing you to modify the behavior of functions or methods in a clean and readable way.
+description: If you can write a function, you can write a decorator. Learn to add features like timers and loggers to your code with these easy, beginner-friendly patterns.
 date: Aug 16, 2025
 updated: Aug 16, 2025
 tags: python, intermediate, decorators
@@ -11,7 +11,7 @@ socialImage: /blog/python-decorators.jpg
 meta:
     layout: article
     title: 'Python Decorators - Simple Patterns to Level Up Your Code'
-    description: Decorators are one of Python's most elegant features, allowing you to modify the behavior of functions or methods in a clean and readable way.
+    description: If you can write a function, you can write a decorator. Learn to add features like timers and loggers to your code with these easy, beginner-friendly patterns.
     date: Aug 16, 2025
     updated: Aug 16, 2025
     socialImage: /blog/python-decorators.jpg

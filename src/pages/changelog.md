@@ -2,12 +2,17 @@
 title: 'Changelog - Python Cheatsheet'
 description: See what is new, what got fixed, and what is coming.
 date: July 19, 2022
-updated: August 2, 2025
+updated: August 16, 2025
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
 Changelog
 </base-title>
+
+## 2025-08-16
+
+- Added new blog post <router-link to="/blog/python-decorators-for-beginners">Python Decorators: Simple Patterns to Level Up Your Code</router-link>
+- Cross-referenced the decorators cheatsheet with the new blog post for practical examples and inline guidance.
 
 ## 2025-08-03
 
