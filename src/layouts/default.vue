@@ -25,9 +25,6 @@ const rootRepositoryRoutes = ['contributing', 'changelog']
           <div
             class="absolute bottom-0 right-0 top-16 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block"
           />
-          <div
-            class="absolute bottom-0 right-0 top-28 hidden w-px bg-slate-800 dark:block"
-          />
           <div class="w-64 pr-8 xl:w-72 xl:pr-16">
             <the-sidebar-desktop />
           </div>
